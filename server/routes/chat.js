@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { client, MODEL } = require("../lib/anthropic");
+const { client, MODEL } = require("../lib/gemini");
 const { loadCase } = require("../lib/caseLoader");
 
 /**
@@ -45,22 +45,25 @@ ATURAN PERAN:
 6. Jika mahasiswa bertanya hal di luar konteks anamnesis (basa-basi ringan itu wajar dan boleh dijawab singkat, tapi jangan menyimpang jauh).
 7. Jawaban singkat dan natural, seperti percakapan dokter-pasien sungguhan, 1-4 kalimat.`;
 
-    const messages = [
-      ...history.map((h) => ({ role: h.role, content: h.content })),
-      { role: "user", content: message },
+    const contents = [
+      // Gemini uses role "model" instead of "assistant"
+      ...history.map((h) => ({
+        role: h.role === "assistant" ? "model" : "user",
+        parts: [{ text: h.content }],
+      })),
+      { role: "user", parts: [{ text: message }] },
     ];
 
-    const response = await client.messages.create({
+    const response = await client.models.generateContent({
       model: MODEL,
-      max_tokens: 400,
-      system: systemPrompt,
-      messages,
+      contents,
+      config: {
+        systemInstruction: systemPrompt,
+        maxOutputTokens: 400,
+      },
     });
 
-    const text = response.content
-      .filter((b) => b.type === "text")
-      .map((b) => b.text)
-      .join("\n");
+    const text = response.text || "";
 
     res.json({ reply: text });
   } catch (err) {

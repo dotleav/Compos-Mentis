@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { client, MODEL } = require("../lib/anthropic");
+const { client, MODEL } = require("../lib/gemini");
 const { loadCase } = require("../lib/caseLoader");
 
 /**
@@ -37,20 +37,24 @@ router.post("/perform", async (req, res) => {
     const catalog = list.map((item) => ({ id: item.id, nama: item.nama }));
 
     const tool = {
-      name: "select_findings",
-      description:
-        "Pilih satu atau lebih pemeriksaan dari daftar yang tersedia yang paling cocok dengan permintaan mahasiswa. Jika tidak ada yang benar-benar cocok/relevan secara klinis, kembalikan array kosong.",
-      input_schema: {
-        type: "object",
-        properties: {
-          matched_ids: {
-            type: "array",
-            items: { type: "string", enum: catalog.map((c) => c.id) },
-            description: "id pemeriksaan yang cocok dengan permintaan mahasiswa, dari daftar yang diberikan",
+      functionDeclarations: [
+        {
+          name: "select_findings",
+          description:
+            "Pilih satu atau lebih pemeriksaan dari daftar yang tersedia yang paling cocok dengan permintaan mahasiswa. Jika tidak ada yang benar-benar cocok/relevan secara klinis, kembalikan array kosong.",
+          parametersJsonSchema: {
+            type: "object",
+            properties: {
+              matched_ids: {
+                type: "array",
+                items: { type: "string", enum: catalog.map((c) => c.id) },
+                description: "id pemeriksaan yang cocok dengan permintaan mahasiswa, dari daftar yang diberikan",
+              },
+            },
+            required: ["matched_ids"],
           },
         },
-        required: ["matched_ids"],
-      },
+      ],
     };
 
     const systemPrompt = `Kamu adalah sistem pencocokan permintaan pemeriksaan ${
@@ -62,17 +66,25 @@ ${catalog.map((c) => `- ${c.id}: ${c.nama}`).join("\n")}
 
 Cocokkan secara semantik/klinis (misalnya "denyut jantung" = nadi, "dada difoto" = foto thorax, "jantung didengerin" = auskultasi jantung). Jika permintaan mahasiswa relevan secara klinis tapi tidak ada di daftar (misalnya organ/tempat yang tidak berkaitan dengan kasus ini), kembalikan array kosong.`;
 
-    const response = await client.messages.create({
+    const response = await client.models.generateContent({
       model: MODEL,
-      max_tokens: 300,
-      system: systemPrompt,
-      tools: [tool],
-      tool_choice: { type: "tool", name: "select_findings" },
-      messages: [{ role: "user", content: query }],
+      contents: [{ role: "user", parts: [{ text: query }] }],
+      config: {
+        systemInstruction: systemPrompt,
+        maxOutputTokens: 300,
+        tools: [tool],
+        // Force a call to select_findings, same as Anthropic's tool_choice:{type:"tool",...}
+        toolConfig: {
+          functionCallingConfig: {
+            mode: "ANY",
+            allowedFunctionNames: ["select_findings"],
+          },
+        },
+      },
     });
 
-    const toolUse = response.content.find((b) => b.type === "tool_use");
-    const matchedIds = toolUse?.input?.matched_ids || [];
+    const call = (response.functionCalls || [])[0];
+    const matchedIds = call?.args?.matched_ids || [];
 
     if (matchedIds.length === 0) {
       return res.json({

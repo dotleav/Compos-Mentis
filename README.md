@@ -27,7 +27,7 @@ server-graded steps so the answer key never leaks to the browser.
 ## Why this fixes the "unstable search engine"
 
 The old app matched typed text against item names with brittle string
-matching. Here, a **forced tool-use call to Claude** does the semantic
+matching. Here, a **forced tool-use call to Gemini** does the semantic
 matching ("jantung didengerin" → `auskultasi_jantung`), but the actual
 clinical finding text is always pulled verbatim from your case JSON — the
 model is never allowed to generate a lab value or exam finding on its own. If
@@ -44,7 +44,7 @@ server/
     chat.js             anamnesis roleplay (patient persona)
     exam.js              PF/penunjang matching (forced tool-use, deterministic lookup)
   lib/
-    anthropic.js        Anthropic SDK client
+    gemini.js            Google Gemini (@google/genai) client
     caseLoader.js        loads case JSON, strips answer keys before sending to client
 data/
   cases/<kategori>/<id>.json     case content (see data/cases/_SCHEMA.md)
@@ -59,7 +59,7 @@ scripts/
 
 ```bash
 npm install
-cp .env.example .env      # add your ANTHROPIC_API_KEY
+cp .env.example .env      # add your GEMINI_API_KEY
 npm start                 # http://localhost:3000
 ```
 
@@ -88,7 +88,7 @@ this way from your uploaded file.
 ```bash
 node scripts/docx-to-case.js "CR_Kardiovaskular_OSCE_KOMPRE.docx" --kategori kardio --ai
 ```
-Same extraction, plus Claude drafts a first-pass JSON array into
+Same extraction, plus Gemini drafts a first-pass JSON array into
 `_draft_....json`. **Treat this as a draft only** — verify every clinical
 fact (values, DD, drug doses) before promoting it to a real `<id>.json` case
 file. The AI is asked to restructure, not invent, but medical content still
@@ -102,7 +102,7 @@ in that case's `penunjang[].image` field.
 ## Deployment
 
 This is a normal Node/Express app — deploy it the same way you'd deploy
-Soalin (a VPS, Render, Railway, Fly.io, etc.), just make sure `ANTHROPIC_API_KEY`
+Soalin (a VPS, Render, Railway, Fly.io, etc.), just make sure `GEMINI_API_KEY`
 is set as an environment variable on the host and never committed to git
 (`.env` is already in `.gitignore`).
 

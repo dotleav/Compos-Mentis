@@ -70,27 +70,33 @@ async function main() {
   }
 
   // 3. AI draft
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.error("ANTHROPIC_API_KEY not set — cannot use --ai. Copy .env.example to .env first.");
+  if (!process.env.GEMINI_API_KEY) {
+    console.error("GEMINI_API_KEY not set — cannot use --ai. Copy .env.example to .env first.");
     process.exit(1);
   }
-  const { client, MODEL } = require("../server/lib/anthropic");
+  const { client, MODEL } = require("../server/lib/gemini");
   const schema = fs.readFileSync(path.join(ROOT, "data", "cases", "_SCHEMA.md"), "utf-8");
 
-  console.log("\nAsking Claude to draft case JSON — this may take a bit for large tables...");
-  const response = await client.messages.create({
+  console.log("\nAsking Gemini to draft case JSON — this may take a bit for large tables...");
+  const response = await client.models.generateContent({
     model: MODEL,
-    max_tokens: 8000,
-    system: `Kamu membantu mengubah tabel kasus OSCE mentah menjadi JSON terstruktur sesuai skema berikut. Jangan mengubah/menambah fakta medis apa pun dari teks asli — hanya restrukturisasi ke format JSON. Jika suatu field tidak ada di teks asli, isi dengan string kosong atau array kosong, JANGAN mengarang. Keluarkan HANYA JSON array valid (array of case objects sesuai skema), tanpa teks lain, tanpa markdown code fences.\n\nSKEMA:\n${schema}`,
-    messages: [
+    contents: [
       {
         role: "user",
-        content: `Berikut teks mentah dari dokumen (mungkin berisi banyak kasus dalam satu tabel). Kategori: "${kategori}". Ubah setiap kasus menjadi satu object JSON sesuai skema. Untuk field "id", buat slug singkat dari nama diagnosis (lowercase, underscore). Untuk "pemeriksaanFisik" dan "penunjang", pecah setiap baris/poin temuan menjadi item terpisah dengan id singkat unik. Untuk "image", biarkan null kecuali teks eksplisit menyebut ada gambar — cek juga apakah ada gambar yang sudah diekstrak (lihat nama file di folder _extracted_${base}, jika relevan sebutkan nama filenya, kalau tidak yakin biarkan null dan beri catatan di komentar terpisah, bukan di dalam JSON).\n\nTEKS MENTAH:\n${rawText.slice(0, 40000)}`,
+        parts: [
+          {
+            text: `Berikut teks mentah dari dokumen (mungkin berisi banyak kasus dalam satu tabel). Kategori: "${kategori}". Ubah setiap kasus menjadi satu object JSON sesuai skema. Untuk field "id", buat slug singkat dari nama diagnosis (lowercase, underscore). Untuk "pemeriksaanFisik" dan "penunjang", pecah setiap baris/poin temuan menjadi item terpisah dengan id singkat unik. Untuk "image", biarkan null kecuali teks eksplisit menyebut ada gambar — cek juga apakah ada gambar yang sudah diekstrak (lihat nama file di folder _extracted_${base}, jika relevan sebutkan nama filenya, kalau tidak yakin biarkan null dan beri catatan di komentar terpisah, bukan di dalam JSON).\n\nTEKS MENTAH:\n${rawText.slice(0, 40000)}`,
+          },
+        ],
       },
     ],
+    config: {
+      systemInstruction: `Kamu membantu mengubah tabel kasus OSCE mentah menjadi JSON terstruktur sesuai skema berikut. Jangan mengubah/menambah fakta medis apa pun dari teks asli — hanya restrukturisasi ke format JSON. Jika suatu field tidak ada di teks asli, isi dengan string kosong atau array kosong, JANGAN mengarang. Keluarkan HANYA JSON array valid (array of case objects sesuai skema), tanpa teks lain, tanpa markdown code fences.\n\nSKEMA:\n${schema}`,
+      maxOutputTokens: 8000,
+    },
   });
 
-  const text = response.content.filter((b) => b.type === "text").map((b) => b.text).join("\n");
+  const text = response.text || "";
   const draftOut = path.join(casesDir, `_draft_${base}.json`);
   fs.writeFileSync(draftOut, text, "utf-8");
   console.log(`\nDraft written to ${path.relative(ROOT, draftOut)}`);
