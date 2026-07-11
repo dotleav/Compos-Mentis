@@ -1,0 +1,230 @@
+{
+  "id": "psi_13",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "identitas": "Bpk Heru, 30 tahun, supir",
+  "keluhanUtama": "Merasa loyo dan tidak bergairah sejak menikah 2 bulan lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Loyo, sejak menikah 2 bulan lalu",
+        "Hubungan suami istri terganggu karena malu dan minder",
+        "Istri ingin agar suami dapat vitamin antiloyo",
+        "Terganggu tidur, jam 3 pagi tidak dapat tidur lagi karena cemas dan rasa bersalah",
+        "Kalau lihat konten 18+ bergairah"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "Vs",
+        "temuan": "TD 140/90, HR 88x/min, RR 26x/min, Suhu 36.8C",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kesadaran",
+        "kelompok": "pemeriksaan",
+        "nama": "Kesadaran",
+        "temuan": "Compos mentis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_orientasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Orientasi",
+        "temuan": "Baik",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_penampilan",
+        "kelompok": "pemeriksaan",
+        "nama": "Penampilan",
+        "temuan": "Rapi",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_sikap",
+        "kelompok": "pemeriksaan",
+        "nama": "Sikap",
+        "temuan": "Kooperatif",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_atensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Atensi",
+        "temuan": "Baik",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_mood",
+        "kelompok": "pemeriksaan",
+        "nama": "Mood",
+        "temuan": "Cemas, malu",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_afek",
+        "kelompok": "pemeriksaan",
+        "nama": "Afek",
+        "temuan": "Appropriate",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_persepsi",
+        "kelompok": "pemeriksaan",
+        "nama": "Persepsi",
+        "temuan": "Normal, tidak halusinasi, tidak ada ilusi",
+        "signifikan": true
+      },
+      {
+        "id": "statuspsikiatri_perilakumotorik",
+        "kelompok": "pemeriksaan",
+        "nama": "Perilaku motorik",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bentukpikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Bentuk pikir",
+        "temuan": "Logis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_isipikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Isi pikir",
+        "temuan": "Putus asa, merasa bodoh, tertekan",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_aruspikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Arus pikir",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bicara",
+        "kelompok": "pemeriksaan",
+        "nama": "Bicara",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_memori",
+        "kelompok": "pemeriksaan",
+        "nama": "Memori",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_tilikan",
+        "kelompok": "pemeriksaan",
+        "nama": "Tilikan",
+        "temuan": "5/6",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Keinginan dan Gairah Seksual",
+    "differensialBenar": [
+      "Disfungsi Ereksi Psikogenik",
+      "Gangguan Campuran Cemas Depresi"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Amitriptilin tab mg 25 No. XXX\nS.1.d.d tab III h.s",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Sildenafil sitrat tab mg 25 No. X\nS.p.r.n 1.d.d tab. I (before sex)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Testosteron gel mg 50 No. XXX\nS.u.e 1.d.d aplic (oleskan di kulit)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amitriptilin tab mg 25 No. XL\nS.1.d.d tab III h.s",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Sildenafil sitrat tab mg 50 No. X\nS.p.r.n 1.d.d tab. I (before sex)",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Testosteron gel tab mg 50 No. XXV\nS.u.e 1.d.d aplic (oleskan di kulit)",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ibuprofen tab mg 400 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ranitidine tab mg 150 No. XX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Paracetamol tab mg 500 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Cetirizine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Amoxicillin tab mg 500 No. XV\nS.3.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Loratadine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk untuk Psikososial Terapi",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
+      "benar": false
+    },
+    {
+      "opsi": "Pengobatan cukup dilakukan tanpa perlu evaluasi ulang jangka panjang",
+      "benar": false
+    },
+    {
+      "opsi": "Keluhan ini pasti akan sembuh total dalam waktu 24 jam",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
+      "benar": false
+    },
+    {
+      "opsi": "Obat herbal dapat sepenuhnya menggantikan pengobatan medis yang diberikan",
+      "benar": false
+    }
+  ]
+}

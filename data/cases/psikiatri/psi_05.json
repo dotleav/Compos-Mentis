@@ -1,0 +1,235 @@
+{
+  "id": "psi_05",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "identitas": "Aldy, 34 tahun, pendidikan SMA, driver ojol, pengantar Budi (ipar)",
+  "keluhanUtama": "Berbicara tidak wajar/tidak benar sejak 3 bulan terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Berkata tidak benar sejak 3 bulan yang lalu",
+        "Jika disanggah, marah",
+        "Istri dikira sudah tidak perawan",
+        "Merasa jadi manager bank",
+        "Pola tidur dan makan baik"
+      ],
+      "rpd": "DBN",
+      "rpk": "Pakde pernah mengalami hal yang sama; pamannya diabetes dan hipertensi; paman dari ayah mengalami keluhan serupa",
+      "lifestyle": [
+        "S, A, D (-)",
+        "Rawat diri normal"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "Compos Mentis",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "Vs",
+        "temuan": "DBN (TD 120/80, HR 90x/min, RR 16x/min, Suhu 36.5C)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kesadaran",
+        "kelompok": "pemeriksaan",
+        "nama": "Kesadaran",
+        "temuan": "Compos mentis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_orientasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Orientasi",
+        "temuan": "Baik",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_penampilan",
+        "kelompok": "pemeriksaan",
+        "nama": "Penampilan",
+        "temuan": "Rapi",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_sikap",
+        "kelompok": "pemeriksaan",
+        "nama": "Sikap",
+        "temuan": "Kooperatif",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_atensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Atensi",
+        "temuan": "Buruk, mudah teralihkan",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_mood",
+        "kelompok": "pemeriksaan",
+        "nama": "Mood",
+        "temuan": "Datar - biasa",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_afek",
+        "kelompok": "pemeriksaan",
+        "nama": "Afek",
+        "temuan": "Appropriate",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_persepsi",
+        "kelompok": "pemeriksaan",
+        "nama": "Persepsi",
+        "temuan": "Waham sistematis (membuat alur meyakinkan) - curiga istri sudah tidak suci, kerja jadi manager, curiga adiknya mencelakai karena warisan",
+        "signifikan": true
+      },
+      {
+        "id": "statuspsikiatri_perilakumotorik",
+        "kelompok": "pemeriksaan",
+        "nama": "Perilaku motorik",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bentukpikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Bentuk pikir",
+        "temuan": "Non-realistis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_isipikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Isi pikir",
+        "temuan": "Waham",
+        "signifikan": true
+      },
+      {
+        "id": "statuspsikiatri_aruspikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Arus pikir",
+        "temuan": "Asosiasi longgar",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bicara",
+        "kelompok": "pemeriksaan",
+        "nama": "Bicara",
+        "temuan": "Emosional",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_memori",
+        "kelompok": "pemeriksaan",
+        "nama": "Memori",
+        "temuan": "Baik",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_tilikan",
+        "kelompok": "pemeriksaan",
+        "nama": "Tilikan",
+        "temuan": "1",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kalkulasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Kalkulasi",
+        "temuan": "Tidak dapat dinilai",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_intelegensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Intelegensi",
+        "temuan": "Tidak dapat dinilai",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Waham Menetap",
+    "differensialBenar": [
+      "Skizoafektif",
+      "Skizofrenia Tipe Paranoid"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Risperidone tab mg 2 No. X\nS.1.d.d tab I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Risperidone tab mg 2 No. V\nS.1.d.d tab I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ibuprofen tab mg 400 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Cetirizine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Amoxicillin tab mg 500 No. XV\nS.3.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ranitidine tab mg 150 No. XX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Omeprazole caps mg 20 No. XIV\nS.2.d.d caps. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Waham menetap adalah kondisi gangguan psikiatri dimana pasien memiliki keyakinan palsu",
+      "benar": true
+    },
+    {
+      "opsi": "Penyebabnya idiopatik, tapi bisa diinduksi oleh penggunaan zat, kondisi medis, atau faktor lingkungan",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
+      "benar": false
+    },
+    {
+      "opsi": "Pengobatan cukup dilakukan tanpa perlu evaluasi ulang jangka panjang",
+      "benar": false
+    },
+    {
+      "opsi": "Keluhan ini pasti akan sembuh total dalam waktu 24 jam",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
+      "benar": false
+    },
+    {
+      "opsi": "Obat herbal dapat sepenuhnya menggantikan pengobatan medis yang diberikan",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "id": "neu_05",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Budi, 50 tahun, polisi",
+  "keluhanUtama": "Tangan dan kaki kiri kesemutan, wajah perot, dan bicara pelo sejak 5 jam yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sejak 5 jam yang lalu tiba-tiba",
+        "Ngomong cadel (susah bicara), dan susah menelan",
+        "Wajah perot ke kanan",
+        "Wajah kiri kesemutan",
+        "Ada hipertensi, konsumsi obat (tanyakan terkontrol atau tidak)",
+        "Merokok",
+        "Kurang makan sayur, suka daging"
+      ],
+      "rpd": "Tidak ada riwayat trauma kepala",
+      "rpk": "Ayahnya meninggal serangan jantung dan hipertensi",
+      "lifestyle": [
+        "Merokok 1 bungkus sehari dan narkotika",
+        "Suka daging merah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "primarysurvey",
+        "kelompok": "pemeriksaan",
+        "nama": "Primary survey",
+        "temuan": "Elevasi bed 30 derajat, ABCDE, SpO2 94%, Nasal canul 4L",
+        "signifikan": false
+      },
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "Vs",
+        "temuan": "dbn, TD 160/90",
+        "signifikan": false
+      },
+      {
+        "id": "pfncranialis_n3_4_6",
+        "kelompok": "pemeriksaan",
+        "nama": "N3 4 6",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "pfncranialis_n7",
+        "kelompok": "pemeriksaan",
+        "nama": "N7",
+        "temuan": "Perot sebelah kanan",
+        "signifikan": false
+      },
+      {
+        "id": "pfncranialis_n8",
+        "kelompok": "pemeriksaan",
+        "nama": "N8",
+        "temuan": "Romberg normal",
+        "signifikan": false
+      },
+      {
+        "id": "pfncranialis_n12",
+        "kelompok": "pemeriksaan",
+        "nama": "N12",
+        "temuan": "Deviasi lidah ke kiri",
+        "signifikan": true
+      },
+      {
+        "id": "reflekfisiologis",
+        "kelompok": "pemeriksaan",
+        "nama": "Reflek fisiologis",
+        "temuan": "Meningkat pada sisi yang kiri (lesi UMN)",
+        "signifikan": true
+      },
+      {
+        "id": "reflekpatologis",
+        "kelompok": "pemeriksaan",
+        "nama": "Reflek patologis",
+        "temuan": "Hoffman (+), Babinski (+)",
+        "signifikan": true
+      },
+      {
+        "id": "klonus",
+        "kelompok": "pemeriksaan",
+        "nama": "Klonus",
+        "temuan": "(+)",
+        "signifikan": true
+      },
+      {
+        "id": "kekuatanotot",
+        "kelompok": "pemeriksaan",
+        "nama": "Kekuatan otot",
+        "temuan": "(+++) tidak bisa menahan tahanan",
+        "signifikan": false
+      },
+      {
+        "id": "sensorik",
+        "kelompok": "pemeriksaan",
+        "nama": "Sensorik",
+        "temuan": "Sisi kiri hipoestesia",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "darahrutin",
+        "nama": "Darahrutin",
+        "temuan": "Neutrofilia 80%, Leukositosis ringan 11rb, Hb normal, Profil Lipid: HDL 35 (turun), LDL 135 (naik), Trigliserid 160 (naik), Total 334 (naik)",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "ekg",
+        "nama": "Ekg",
+        "temuan": "LVH",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "ctscan",
+        "nama": "Ctscan",
+        "temuan": "Hipodens temporal sinistra, ada perubahan warna di dekat falx cerebri dan meluas ke capsula interna, juga meluas ke bagian hemisfer dextra periventrikuler. Bandingkan kanan kiri",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Stroke Iskemik",
+    "differensialBenar": [
+      "TIA",
+      "Subdural Hemorrhage"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ O2 Nasal canul No. I\ns.i.m.m",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Clopidogrel tab mg 75 No. XXX\ns.1.d.d.tab I. p.c",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Aspirin tab mg 80 No. II\ns.1.d.d tab II. p.c",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Clopidogrel tab mg 150 No. XXX\ns.1.d.d.tab I. p.c",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Aspirin tab mg 160 No. II\ns.1.d.d tab II. p.c",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Amoxicillin tab mg 500 No. XV\nS.3.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Omeprazole caps mg 20 No. XIV\nS.2.d.d caps. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Simvastatin tab mg 20 No. XXX\nS.1.d.d tab. I n.h",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Vitamin B Kompleks tab No. XXX\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ibuprofen tab mg 400 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "RUJUK Sp.S",
+      "benar": true
+    },
+    {
+      "opsi": "Stroke disebabkan oleh penyumbatan pembuluh darah",
+      "benar": true
+    },
+    {
+      "opsi": "Perbaiki lifestyle",
+      "benar": true
+    },
+    {
+      "opsi": "Sembuhnya lama",
+      "benar": true
+    },
+    {
+      "opsi": "Notes: Obat hanya bisa diberikan oleh Sp.S!",
+      "benar": true
+    },
+    {
+      "opsi": "Obat herbal dapat sepenuhnya menggantikan pengobatan medis yang diberikan",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
+      "benar": false
+    },
+    {
+      "opsi": "Kondisi ini menular melalui kontak fisik biasa sehari-hari",
+      "benar": false
+    },
+    {
+      "opsi": "Boleh menaikkan dosis obat sendiri jika gejala belum hilang",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien dianjurkan berhenti total dari seluruh aktivitas maupun pekerjaan selamanya",
+      "benar": false
+    }
+  ]
+}

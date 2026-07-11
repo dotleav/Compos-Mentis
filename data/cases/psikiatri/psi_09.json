@@ -1,0 +1,254 @@
+{
+  "id": "psi_09",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "identitas": "Ratu, 25 tahun, model (cuti), diantar suaminya Putra (30 tahun, Jl. Kaliurang, sales marketing)",
+  "keluhanUtama": "Sering menangis dan sulit mengurus bayi sejak melahirkan 1 bulan lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sering menangis sejak anak pertama lahir (1 bulan)",
+        "Kalau anaknya menangis, ibu ikut menangis, bahkan sampai memukul dan menendang suaminya",
+        "Teriak sejak 1-2 hari sejak melahirkan",
+        "Ringan jika ada anggota keluarga lain yang berkunjung dan membawa oleh-oleh + bantu urus bayi",
+        "Buruk jika bayinya menangis",
+        "Merasa tidak berguna, khawatir, ASI tidak mau keluar",
+        "Merasa tertekan jika ada yang menyuruh menyusui",
+        "Takut kehilangan pekerjaan karena berat badan meningkat",
+        "Takut suami tidak cinta lagi",
+        "Takut tidak bisa menjadi ibu yang baik"
+      ],
+      "rpd": "Sudah konsultasi ke bidan mengenai ASI tidak lancar dan diberi tahu caranya tapi belum puas; persalinan normal, anak pertama; suami tinggal di luar kota",
+      "rpk": "Ibunya pernah depresi postpartum",
+      "lifestyle": [
+        "Sejak hamil tua sering di rumah, jarang kegiatan",
+        "Sering diet, pola makan tidak teratur, terbiasa konsumsi obat diet pelangsing",
+        "Tidur terganggu karena anak sering menangis malam hari"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "Vs",
+        "temuan": "TD 120/80, HR 70x/min, RR 20x/min, Suhu 36.8C",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kesadaran",
+        "kelompok": "pemeriksaan",
+        "nama": "Kesadaran",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_orientasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Orientasi",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_penampilan",
+        "kelompok": "pemeriksaan",
+        "nama": "Penampilan",
+        "temuan": "Rapi",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_sikap",
+        "kelompok": "pemeriksaan",
+        "nama": "Sikap",
+        "temuan": "Kooperatif",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_atensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Atensi",
+        "temuan": "Baik",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_mood",
+        "kelompok": "pemeriksaan",
+        "nama": "Mood",
+        "temuan": "Sedih ke arah depresif, kesal (anak digendong malah nangis), sedih terus menerus, marah (karena suami tidak ada)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_afek",
+        "kelompok": "pemeriksaan",
+        "nama": "Afek",
+        "temuan": "Appropriate",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_persepsi",
+        "kelompok": "pemeriksaan",
+        "nama": "Persepsi",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_perilakumotorik",
+        "kelompok": "pemeriksaan",
+        "nama": "Perilaku motorik",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bentukpikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Bentuk pikir",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_isipikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Isi pikir",
+        "temuan": "Merasa tidak berguna, khawatir, ASI tidak mau keluar - jika ada yang menyuruh menyusui pasien tertekan",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_aruspikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Arus pikir",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bicara",
+        "kelompok": "pemeriksaan",
+        "nama": "Bicara",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kalkulasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Kalkulasi",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_memori",
+        "kelompok": "pemeriksaan",
+        "nama": "Memori",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_tilikan",
+        "kelompok": "pemeriksaan",
+        "nama": "Tilikan",
+        "temuan": "5 (sadar akan penyakit + penyebab, namun belum tahu cara mengatasinya)",
+        "signifikan": false
+      },
+      {
+        "id": "noteskhusus",
+        "kelompok": "pemeriksaan",
+        "nama": "Notes khusus",
+        "temuan": "SIRS Score: 0. Tanyakan apakah ibu merasa butuh bantuan atau tidak",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Post Partum Depression",
+    "differensialBenar": [
+      "Depresi Ringan",
+      "Baby Blues Syndrome",
+      "Gangguan Mood (Bipolar)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Sertralin tab sal mg 50 No. XXX\nS.1.d.d tab. I (diminum di waktu yang sama setiap hari, boleh pagi/sore/malam)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Diazepam tab 2 mg No. X\nS.1.d.d tab. I.h.s",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Sertralin tab mg 100 No. XXX\nS.1.d.d tab. I (diminum di waktu yang sama setiap hari, boleh pagi/sore/malam)",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Paracetamol tab mg 500 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Loratadine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Amoxicillin tab mg 500 No. XV\nS.3.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Vitamin B Kompleks tab No. XXX\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ondansetron tab mg 4 No. X\nS.3.d.d tab. I",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jauhkan benda tajam dari pasien",
+      "benar": true
+    },
+    {
+      "opsi": "Lakukan hal yang disukai",
+      "benar": true
+    },
+    {
+      "opsi": "Konseling suami-istri",
+      "benar": true
+    },
+    {
+      "opsi": "Non-Farmakologi: Family Therapy, Verbal Ventilation, CBT",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menghentikan obat sendiri begitu gejala membaik tanpa konsultasi dokter",
+      "benar": false
+    },
+    {
+      "opsi": "Obat herbal dapat sepenuhnya menggantikan pengobatan medis yang diberikan",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
+      "benar": false
+    },
+    {
+      "opsi": "Boleh menaikkan dosis obat sendiri jika gejala belum hilang",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien dianjurkan berhenti total dari seluruh aktivitas maupun pekerjaan selamanya",
+      "benar": false
+    }
+  ]
+}

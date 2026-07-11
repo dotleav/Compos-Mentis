@@ -1,0 +1,230 @@
+{
+  "id": "psi_08",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "identitas": "Anggi, 25 tahun, kerja di bank, sedang cuti",
+  "keluhanUtama": "Sering berdebar-debar dan pusing menyeluruh sejak beberapa bulan terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sering berdebar/deg-degan dan pusing",
+        "Berdebar setahun, parah 6 bulan terakhir",
+        "Pusing menyeluruh, cekot-cekot",
+        "Memperberat: melihat cicak jatuh dan anjing menggonggong",
+        "Memperingan: spiritual dan olahraga",
+        "Membuat kerja tidak nyaman",
+        "Kadang badan pegal-pegal tanpa sebab"
+      ],
+      "rpd": "Tidak ada trauma, baru pertama kali tiba-tiba; minum obat herbal saja; merasa hidupnya di ujung tanduk",
+      "rpk": "Riwayat hipertiroid",
+      "lifestyle": [
+        "Olahraga akhir-akhir ini jarang"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "Vs",
+        "temuan": "DBN",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kesadaran",
+        "kelompok": "pemeriksaan",
+        "nama": "Kesadaran",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_orientasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Orientasi",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_penampilan",
+        "kelompok": "pemeriksaan",
+        "nama": "Penampilan",
+        "temuan": "Rapi, gelisah",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_sikap",
+        "kelompok": "pemeriksaan",
+        "nama": "Sikap",
+        "temuan": "Kooperatif",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_atensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Atensi",
+        "temuan": "Konsentrasi sedikit terganggu",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_mood",
+        "kelompok": "pemeriksaan",
+        "nama": "Mood",
+        "temuan": "Tidak enak, pusing, cemas, hidup berasa di ujung tanduk (tanya mengapa)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_afek",
+        "kelompok": "pemeriksaan",
+        "nama": "Afek",
+        "temuan": "Apropiate",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_persepsi",
+        "kelompok": "pemeriksaan",
+        "nama": "Persepsi",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_perilakumotorik",
+        "kelompok": "pemeriksaan",
+        "nama": "Perilaku motorik",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bentukpikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Bentuk pikir",
+        "temuan": "Logis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_isipikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Isi pikir",
+        "temuan": "Fobia cicak dan anjing, was-was, cemas (tanya apakah orang lain juga mendengar suara lolongan anjing)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_aruspikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Arus pikir",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bicara",
+        "kelompok": "pemeriksaan",
+        "nama": "Bicara",
+        "temuan": "Baik",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_memori",
+        "kelompok": "pemeriksaan",
+        "nama": "Memori",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_tilikan",
+        "kelompok": "pemeriksaan",
+        "nama": "Tilikan",
+        "temuan": "6",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Cemas Menyeluruh",
+    "differensialBenar": [
+      "Depresi Ringan",
+      "Gangguan Somatoform"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Amitriptilin tab mg 25 No. XXX\nS.1.d.d tab III h.s",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Tab Diazepam 2 mg No. X\nS.1.d.d. Tab. I.h.s",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amitriptilin tab mg 25 No. XXXV\nS.1.d.d tab III h.s",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Simvastatin tab mg 20 No. XXX\nS.1.d.d tab. I n.h",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Vitamin B Kompleks tab No. XXX\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Omeprazole caps mg 20 No. XIV\nS.2.d.d caps. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Metformin tab mg 500 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ibuprofen tab mg 400 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk Sp. KJ",
+      "benar": true
+    },
+    {
+      "opsi": "Merupakan gangguan kecemasan yang berlangsung hampir setiap hari, penyebabnya banyak faktor tapi terutama stimulus berlebihan",
+      "benar": true
+    },
+    {
+      "opsi": "Terapi perilaku (Behaviour Therapy) untuk menghilangkan rasa takut atau mengganti pola pikir negatif jadi positif",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga sebaiknya menjauhi dan mengisolasi pasien sepenuhnya",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
+      "benar": false
+    },
+    {
+      "opsi": "Keluhan ini pasti akan sembuh total dalam waktu 24 jam",
+      "benar": false
+    },
+    {
+      "opsi": "Obat herbal dapat sepenuhnya menggantikan pengobatan medis yang diberikan",
+      "benar": false
+    },
+    {
+      "opsi": "Pengobatan cukup dilakukan tanpa perlu evaluasi ulang jangka panjang",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "osce-ai-sim",
+  "version": "1.0.0",
+  "description": "OSCE simulator with AI-driven patient/examiner roleplay (anamnesis, PF, penunjang)",
+  "main": "server/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "docx2case": "node scripts/docx-to-case.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mammoth": "^1.8.0"
+  }
+}

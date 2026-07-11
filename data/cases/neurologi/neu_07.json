@@ -1,0 +1,315 @@
+{
+  "id": "neu_07",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Vincent, 40 tahun, buruh pabrik",
+  "keluhanUtama": "Nyeri punggung bawah yang menjalar ke tungkai kaki kiri sejak 2 bulan terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri sejak 2 bulan yang lalu",
+        "Nyeri punggung bawah seperti kesetrum dan tersentak selama 2 bulan",
+        "Menjalar ke tungkai kaki kiri",
+        "Makin lama makin nyeri",
+        "Keluhan terkait keluhan utama: kelemahan (-), gangguan berkemih (-), demam (-), penurunan BB (-)",
+        "Memburuk saat membungkuk, aktivitas",
+        "Kalau istirahat membaik",
+        "Skala nyeri 6-8",
+        "Konsumsi jamu pereda nyeri namun tidak membaik"
+      ],
+      "rpd": "Baru pertama mengalami sakit ini, riwayat terjatuh (+) 6 bulan yang lalu saat hujan, punggung bawah terbentur",
+      "rpk": "Kanker (-)",
+      "lifestyle": [
+        "Merokok 1 bungkus 1 hari, sudah lama",
+        "Alkohol (-)",
+        "Buruh pabrik: 8-10 jam sehari, 20 tahun sudah bekerja, suka angkat benda berat dengan posisi bungkuk (salah posisi angkat)",
+        "Makanan normal, beragam",
+        "Olahraga (-)",
+        "Jam tidur normal"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "Compos mentis",
+        "signifikan": false
+      },
+      {
+        "id": "ttv",
+        "kelompok": "pemeriksaan",
+        "nama": "Ttv",
+        "temuan": "TD 120/80, HR 82x/min, RR 20x/min, Suhu 37C",
+        "signifikan": false
+      },
+      {
+        "id": "gcs",
+        "kelompok": "pemeriksaan",
+        "nama": "Gcs",
+        "temuan": "E4V5M6",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_kepala",
+        "kelompok": "pemeriksaan",
+        "nama": "Kepala",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_pxneurologis",
+        "kelompok": "pemeriksaan",
+        "nama": "Px neurologis",
+        "temuan": "Pasien jalan jinjit dan jalan dengan tumit - kelemahan anggota gerak (-)",
+        "signifikan": true
+      },
+      {
+        "id": "pfheadtotoe_pxlumbal_inspeksi",
+        "kelompok": "pemeriksaan",
+        "nama": "Inspeksi",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_pxlumbal_palpasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Palpasi",
+        "temuan": "Nyeri tekan di tengah vertebra, tidak nyeri pada paravertebral",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_pxlumbal_pergerakanspinal",
+        "kelompok": "pemeriksaan",
+        "nama": "Pergerakan spinal",
+        "temuan": "Fleksi anterior nyeri (+), fleksi posterior & lateral (-)",
+        "signifikan": true
+      },
+      {
+        "id": "pfheadtotoe_pxlumbal_reflekfisiologis",
+        "kelompok": "pemeriksaan",
+        "nama": "Reflek fisiologis",
+        "temuan": "Bicep (+), Tricep (+)",
+        "signifikan": true
+      },
+      {
+        "id": "pfheadtotoe_posisisupinasi_pxneurologis",
+        "kelompok": "pemeriksaan",
+        "nama": "Px neurologis",
+        "temuan": "Inspeksi: atrofi (-), Gerak: kelemahan (-), Kekuatan 5/5, Refleks fisiologis (+/+), Refleks patologis (Babinski, Chaddock) (-), Clonus (-/-)",
+        "signifikan": true
+      },
+      {
+        "id": "pfheadtotoe_posisisupinasi_straightlegra",
+        "kelompok": "pemeriksaan",
+        "nama": "Straight leg raising test",
+        "temuan": "Radicular pain kiri (+)",
+        "signifikan": true
+      },
+      {
+        "id": "pfheadtotoe_posisisupinasi_faber",
+        "kelompok": "pemeriksaan",
+        "nama": "Faber",
+        "temuan": "(-)",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_posisisupinasi_fadir",
+        "kelompok": "pemeriksaan",
+        "nama": "Fadir",
+        "temuan": "(-)",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_posisipronasi_palpasitrigger",
+        "kelompok": "pemeriksaan",
+        "nama": "Palpasi trigger point",
+        "temuan": "Nyeri (+) pada area L3-L4",
+        "signifikan": true
+      },
+      {
+        "id": "pfheadtotoe_posisipronasi_femoralstretch",
+        "kelompok": "pemeriksaan",
+        "nama": "Femoral stretch test",
+        "temuan": "Nyeri pada ipsilateral anterior paha (-/+)",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_posisipronasi_palpasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Palpasi",
+        "temuan": "Nyeri tekan sekitar L3, tidak menjalar",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_posisipronasi_fleksispinal",
+        "kelompok": "pemeriksaan",
+        "nama": "Fleksi spinal",
+        "temuan": "(+)",
+        "signifikan": true
+      },
+      {
+        "id": "pfheadtotoe_posisipronasi_faberfadir",
+        "kelompok": "pemeriksaan",
+        "nama": "Faber fadir",
+        "temuan": "(+)",
+        "signifikan": true
+      },
+      {
+        "id": "pfheadtotoe_posisipronasi_slrt",
+        "kelompok": "pemeriksaan",
+        "nama": "Slrt",
+        "temuan": "Nyeri menjalar sampai jempol kiri dan kanan",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_posisipronasi_femoralstretch_2",
+        "kelompok": "pemeriksaan",
+        "nama": "Femoral stretch test2",
+        "temuan": "Ekstensi femoral (+), nyeri ipsilateral",
+        "signifikan": true
+      },
+      {
+        "id": "pfheadtotoe_posisipronasi_tesprovokasiny",
+        "kelompok": "pemeriksaan",
+        "nama": "Tes provokasi nyeri",
+        "temuan": "Tes valsava, Naffziger, lasegue",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_posisipronasi_pemeriksaansen",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan sensoris",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "pfheadtotoe_posisipronasi_reflekpatela",
+        "kelompok": "pemeriksaan",
+        "nama": "Reflek patela",
+        "temuan": "Normal, Babinski normal",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "rontgenvertebra",
+        "nama": "Rontgenvertebra",
+        "temuan": "Tidak tampak fraktur ataupun massa",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "mrictscan",
+        "nama": "Mrictscan",
+        "temuan": "Terlihat bulging/penonjolan dari herniasi diskus (kalau tersedia)",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Low Back Pain (Suspek HNP)",
+    "differensialBenar": [
+      "Sprain",
+      "Spondylolisthesis",
+      "Myofascial Pain Syndrome"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Na Diclofenac tab mg 25 No. XIV\ns.p.r.n 2.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Eperison tab mg 50 No. X\ns.1.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Na Diclofenac tab mg 25 No. XIX\ns.p.r.n 2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Eperison tab mg 25 No. X\ns.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Vitamin B Kompleks tab No. XXX\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ondansetron tab mg 4 No. X\nS.3.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Loratadine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Simvastatin tab mg 20 No. XXX\nS.1.d.d tab. I n.h",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Paracetamol tab mg 500 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kena saraf kejepit, karena bantalan tulang belakang melemah karena aktivitas berat/usia/trauma",
+      "benar": true
+    },
+    {
+      "opsi": "Bisa sembuh sendiri sebenarnya, jadi ini diobatin nyerinya dulu",
+      "benar": true
+    },
+    {
+      "opsi": "Istirahat",
+      "benar": true
+    },
+    {
+      "opsi": "Olahraganya sepeda atau renang",
+      "benar": true
+    },
+    {
+      "opsi": "Peregangan sebelum aktivitas berat",
+      "benar": true
+    },
+    {
+      "opsi": "Kompres es",
+      "benar": true
+    },
+    {
+      "opsi": "RUJUK Sp.S",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menghentikan obat sendiri begitu gejala membaik tanpa konsultasi dokter",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien dianjurkan berhenti total dari seluruh aktivitas maupun pekerjaan selamanya",
+      "benar": false
+    },
+    {
+      "opsi": "Kondisi ini menular melalui kontak fisik biasa sehari-hari",
+      "benar": false
+    },
+    {
+      "opsi": "Obat herbal dapat sepenuhnya menggantikan pengobatan medis yang diberikan",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "id": "psi_06",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "identitas": "Budi, 26 tahun, karyawan swasta asing",
+  "keluhanUtama": "Merasa selalu lelah, gampang capek, dan cemas berlebihan sejak 1 bulan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Selalu lelah, gampang capek",
+        "Sering cemas dan khawatir sudah 1 bulan",
+        "Rasa sakit nyeri di seluruh badan dan tertusuk-tusuk",
+        "Merokok dan pakai sabu sudah 6 tahun",
+        "Sudah minum parasetamol dan ibuprofen tapi tidak mempan",
+        "Pernah mencoba menyilet tangan"
+      ],
+      "rpd": "Pakai sejak 6 tahun lalu di Australia, ikut teman-teman; sudah tidak pakai sejak 2 minggu tapi malah sakit; sudah 3 bulan menjauh dari orang tua karena agresif di rumah, semakin kurus, sering keluar malam; pindah kerja dan dekat dengan perempuan",
+      "rpk": "Tanyakan gangguan mental keluarga, riwayat pengobatan; hipertensi/DM keluarga (delirium)",
+      "lifestyle": [
+        "Merokok 2 batang sehari",
+        "Cara pakai sabu + dosis (tanyakan detail)",
+        "Sex bebas, tanyakan pakai kondom, ganti-ganti pasangan, alkohol"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "Vs",
+        "temuan": "TD 130/90, HR 90x/min, RR 26x/min, Suhu 36.8C",
+        "signifikan": false
+      },
+      {
+        "id": "inspeksi",
+        "kelompok": "pemeriksaan",
+        "nama": "Inspeksi",
+        "temuan": "Tampak suntikan di lengan",
+        "signifikan": false
+      },
+      {
+        "id": "inspeksi_2",
+        "kelompok": "pemeriksaan",
+        "nama": "Inspeksi",
+        "temuan": "Tampak goresan",
+        "signifikan": false
+      },
+      {
+        "id": "inspeksi_3",
+        "kelompok": "pemeriksaan",
+        "nama": "Inspeksi",
+        "temuan": "Tampak tato lengan kanan",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kesadaran",
+        "kelompok": "pemeriksaan",
+        "nama": "Kesadaran",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_orientasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Orientasi",
+        "temuan": "Baik",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_penampilan",
+        "kelompok": "pemeriksaan",
+        "nama": "Penampilan",
+        "temuan": "Pasien gelisah, rapi",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_sikap",
+        "kelompok": "pemeriksaan",
+        "nama": "Sikap",
+        "temuan": "Kooperatif",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_atensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Atensi",
+        "temuan": "Konsentrasi mudah teralihkan",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_mood",
+        "kelompok": "pemeriksaan",
+        "nama": "Mood",
+        "temuan": "Cemas, khawatir",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_afek",
+        "kelompok": "pemeriksaan",
+        "nama": "Afek",
+        "temuan": "Appropriate",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_persepsi",
+        "kelompok": "pemeriksaan",
+        "nama": "Persepsi",
+        "temuan": "Normal; tanyakan ada rasa putus asa/ide bunuh diri",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_perilakumotorik",
+        "kelompok": "pemeriksaan",
+        "nama": "Perilaku motorik",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bentukpikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Bentuk pikir",
+        "temuan": "Logis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_isipikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Isi pikir",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_aruspikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Arus pikir",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bicara",
+        "kelompok": "pemeriksaan",
+        "nama": "Bicara",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_memori",
+        "kelompok": "pemeriksaan",
+        "nama": "Memori",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_tilikan",
+        "kelompok": "pemeriksaan",
+        "nama": "Tilikan",
+        "temuan": "6 (ada motivasi untuk sembuh)",
+        "signifikan": false
+      },
+      {
+        "id": "pp",
+        "kelompok": "pemeriksaan",
+        "nama": "Pp",
+        "temuan": "Cek urin: ditemukan Amfetamin (+) jika penggunaan obat 1 minggu sebelumnya",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Cek Urin - Amfetamin (+)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Adiksi / Ketergantungan Narkoba",
+    "differensialBenar": [
+      "Gangguan cemas",
+      "Gangguan Panik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Amitriptilin tab mg 25 No. XXX\nS.1.d.d tab III h.s",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Tab Diazepam 5 mg No. X\nS.1.d.d. Tab. I.h.s (diminum sebelum tidur)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amitriptilin tab mg 25 No. XL\nS.1.d.d tab III h.s",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ibuprofen tab mg 400 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Loratadine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Simvastatin tab mg 20 No. XXX\nS.1.d.d tab. I n.h",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Omeprazole caps mg 20 No. XIV\nS.2.d.d caps. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Amoxicillin tab mg 500 No. XV\nS.3.d.d tab. I",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Diazepam efek sampingnya ngantuk",
+      "benar": true
+    },
+    {
+      "opsi": "Rehabilitasi karena sudah 6 tahun",
+      "benar": true
+    },
+    {
+      "opsi": "Terapi relaksasi, perkuat keagamaan",
+      "benar": true
+    },
+    {
+      "opsi": "Edukasi bahaya pakai narkoba",
+      "benar": true
+    },
+    {
+      "opsi": "Rujuk Psikiatri",
+      "benar": true
+    },
+    {
+      "opsi": "RUJUK",
+      "benar": true
+    },
+    {
+      "opsi": "Kondisi ini menular melalui kontak fisik biasa sehari-hari",
+      "benar": false
+    },
+    {
+      "opsi": "Keluhan ini pasti akan sembuh total dalam waktu 24 jam",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
+      "benar": false
+    },
+    {
+      "opsi": "Keluarga sebaiknya menjauhi dan mengisolasi pasien sepenuhnya",
+      "benar": false
+    }
+  ]
+}

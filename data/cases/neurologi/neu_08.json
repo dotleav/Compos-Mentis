@@ -1,0 +1,186 @@
+{
+  "id": "neu_08",
+  "kategori": "neurologi",
+  "level": "4",
+  "identitas": "-",
+  "keluhanUtama": "Wajah kanan mencong dan mata kanan tidak bisa dipejamkan sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Mata kanan tidak dapat dipejamkan, perih, berair, sudut bibir tertarik ke kiri - sejak 1 minggu yang lalu",
+        "Kesulitan minum air ketika baru bangun tidur",
+        "Wajah kanan terasa tebal dan tidak terasa jika dipegang",
+        "Mulut mencong dan bicara pelo",
+        "Tidak bisa mengangkat alis",
+        "Berdenging di salah satu/kedua telinga, nyeri pada telinga",
+        "Sulit makan, minum, dan berbicara",
+        "Salivasi",
+        "Tidak ada kelemahan ekstremitas/anggota gerak atas dan bawah",
+        "Riwayat infeksi (+), biasanya virus"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "nv",
+        "kelompok": "pemeriksaan",
+        "nama": "N v",
+        "temuan": "Fungsi sensibilitas sensorik menurun",
+        "signifikan": true
+      },
+      {
+        "id": "nvii_inspeksi",
+        "kelompok": "pemeriksaan",
+        "nama": "Inspeksi",
+        "temuan": "Asimetris",
+        "signifikan": true
+      },
+      {
+        "id": "nvii_temuan",
+        "kelompok": "pemeriksaan",
+        "nama": "Temuan",
+        "temuan": "Kesulitan menutup mata kanan (salah satu mata yang terkena), salah satu pipi tidak kuat untuk menggembungkan, mulut mencong saat menyeringai, alis sulit diangkat, kerutan dahi (-) - membedakan dengan stroke, lagophtalmus - tidak dapat menutup mata",
+        "signifikan": false
+      },
+      {
+        "id": "reflekfisiologis",
+        "kelompok": "pemeriksaan",
+        "nama": "Reflek fisiologis",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "reflekpatologis",
+        "kelompok": "pemeriksaan",
+        "nama": "Reflek patologis",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "catatan",
+        "kelompok": "pemeriksaan",
+        "nama": "Catatan",
+        "temuan": "Kemampuan mengerutkan dahi perlu diperhatikan untuk membedakan lesi saraf perifer vs sentral",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Pemeriksaan Darah Lengkap",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Bell's Palsy",
+    "differensialBenar": [
+      "GBS",
+      "Stroke Iskemik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Prednison tab mg 5 No. XC\ns.u.c (3x4 tablet [60mg] selama 5 hari, lalu diturunkan 2 tablet [10mg] tiap harinya sampai 10 hari)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Prednison tab mg 5 No. LX\ns.3.d.d tab. IV (kalau cuma mau resep yang 5 hari saja tanpa tapering off)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Acyclovir tab mg 400 No. XXXV\ns.5.d.d tab. I (kalau ada indikasi infeksi virus)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cendolyteers eyedrops 15mL lag. I\ns.3.d.d gtt. II OD (artificial eyedrops)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Prednison tab mg 2.5 No. XC\ns.u.c (3x4 tablet [60mg] selama 5 hari, lalu diturunkan 2 tablet [10mg] tiap harinya sampai 10 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Prednison tab mg 10 No. LX\ns.3.d.d tab. IV (kalau cuma mau resep yang 5 hari saja tanpa tapering off)",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Acyclovir tab mg 800 No. XXXV\ns.5.d.d tab. I (kalau ada indikasi infeksi virus)",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Loratadine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Omeprazole caps mg 20 No. XIV\nS.2.d.d caps. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ibuprofen tab mg 400 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Paracetamol tab mg 500 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Cetirizine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kelemahan otot karena ada inflamasi pada sistem saraf",
+      "benar": true
+    },
+    {
+      "opsi": "Bisa sembuh walaupun tanpa treatment, dalam 6 bulan",
+      "benar": true
+    },
+    {
+      "opsi": "Pijat-pijat, sering-sering gerakin wajahnya biar ototnya tidak mengecil",
+      "benar": true
+    },
+    {
+      "opsi": "Pakai tetes mata untuk lubrikasi mata yang tidak bisa merem",
+      "benar": true
+    },
+    {
+      "opsi": "Steroid untuk anti inflamasi sarafnya",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga sebaiknya menjauhi dan mengisolasi pasien sepenuhnya",
+      "benar": false
+    },
+    {
+      "opsi": "Boleh menaikkan dosis obat sendiri jika gejala belum hilang",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
+      "benar": false
+    },
+    {
+      "opsi": "Pengobatan cukup dilakukan tanpa perlu evaluasi ulang jangka panjang",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "neu_01",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Yudi, 25 tahun, bekerja (kasus asli bisa pria/wanita, umumnya sekitar 50 tahun)",
+  "keluhanUtama": "Nyeri kepala hebat sebelah yang hilang timbul sejak 6 minggu terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri kepala, seluruh kepala",
+        "6 minggu yang lalu, 4 minggu yang lalu semakin memburuk, malam hari juga",
+        "1 minggu lalu mata kemerahan dan mulai berair",
+        "Nyeri hilang timbul",
+        "Tidak menjalar",
+        "Nyeri berdenyut",
+        "Skala nyeri 9",
+        "Keluhan lain: mata kemerahan dan keluar air mata (1 minggu yang lalu)",
+        "Sudah konsumsi obat warung"
+      ],
+      "rpd": "6 bulan yang lalu pernah mengalami keluhan yang sama, kambuh lagi, dulu durasi 6 minggu lalu nyeri hilang sendiri, tidak ada riwayat cedera",
+      "rpk": "Hipertensi (-)",
+      "lifestyle": [
+        "Konsumsi rokok dan alkohol (+) 1 minggu sekali, rokok 1 bungkus/hari"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "Vs",
+        "temuan": "DBN",
+        "signifikan": false
+      },
+      {
+        "id": "pfnervuscranialis",
+        "kelompok": "pemeriksaan",
+        "nama": "Pf nervus cranialis",
+        "temuan": "DBN",
+        "signifikan": false
+      },
+      {
+        "id": "reflekfisiologispatologis",
+        "kelompok": "pemeriksaan",
+        "nama": "Reflek fisiologis patologis",
+        "temuan": "DBN",
+        "signifikan": false
+      },
+      {
+        "id": "meningealsign",
+        "kelompok": "pemeriksaan",
+        "nama": "Meningeal sign",
+        "temuan": "(-) Kaku kuduk DBN, Brudzinski DBN, Kernig DBN",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "-",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Cluster Headache",
+    "differensialBenar": [
+      "Tension Type Headache",
+      "Migrain"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Sumatriptan inj 6mg/0,5ml vial No. I\nS.pro. inj. SC",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Ranitidine tab mg 150 No. XX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Amoxicillin tab mg 500 No. XV\nS.3.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Omeprazole caps mg 20 No. XIV\nS.2.d.d caps. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Loratadine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Cetirizine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ibuprofen tab mg 400 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Berhenti merokok dan konsumsi alkohol",
+      "benar": true
+    },
+    {
+      "opsi": "Istirahat yang cukup",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menghentikan obat sendiri begitu gejala membaik tanpa konsultasi dokter",
+      "benar": false
+    },
+    {
+      "opsi": "Kondisi ini menular melalui kontak fisik biasa sehari-hari",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien dianjurkan berhenti total dari seluruh aktivitas maupun pekerjaan selamanya",
+      "benar": false
+    },
+    {
+      "opsi": "Obat herbal dapat sepenuhnya menggantikan pengobatan medis yang diberikan",
+      "benar": false
+    }
+  ]
+}

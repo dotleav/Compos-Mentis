@@ -1,0 +1,126 @@
+{
+  "id": "neu_09",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "-",
+  "keluhanUtama": "Nyeri wajah hebat mendadak seperti tersengat listrik sejak beberapa waktu terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Serangan nyeri paroksismal yang berlangsung beberapa detik hingga kurang dari 2 menit",
+        "Nyeri dirasakan sepanjang N. V (satu/lebih cabang)",
+        "Onset nyeri tiba-tiba, berat, tajam seperti ditikam, tajam atau tersetrum",
+        "Allodynia: rasa nyeri seperti terbakar dan tajam, biasanya distimulasi oleh kegiatan seperti gosok gigi, makan, mengunyah, mencuci wajah"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "Kesakitan",
+        "signifikan": false
+      },
+      {
+        "id": "nv",
+        "kelompok": "pemeriksaan",
+        "nama": "N v",
+        "temuan": "Peningkatan sensibilitas (jika disentuhkan kapas, pasien merasakan nyeri)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "mrikepala",
+        "nama": "Mrikepala",
+        "temuan": "Dilakukan",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "mra",
+        "nama": "Mra",
+        "temuan": "Pada N. Trigeminus dan batang otak",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Neuralgia Trigeminal",
+    "differensialBenar": [
+      "Nyeri Wajah Atipikal"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Carbamazepine tab mg 200 No. XV\ns.3.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Carbamazepine tab mg 100 No. XV\ns.3.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ranitidine tab mg 150 No. XX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Omeprazole caps mg 20 No. XIV\nS.2.d.d caps. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Simvastatin tab mg 20 No. XXX\nS.1.d.d tab. I n.h",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ibuprofen tab mg 400 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Amoxicillin tab mg 500 No. XV\nS.3.d.d tab. I",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Karena penekanan saraf wajah karena pembuluh darah",
+      "benar": true
+    },
+    {
+      "opsi": "Konsumsi obat teratur",
+      "benar": true
+    },
+    {
+      "opsi": "Pengobatan cukup dilakukan tanpa perlu evaluasi ulang jangka panjang",
+      "benar": false
+    },
+    {
+      "opsi": "Boleh menghentikan obat sendiri begitu gejala membaik tanpa konsultasi dokter",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
+      "benar": false
+    },
+    {
+      "opsi": "Keluarga sebaiknya menjauhi dan mengisolasi pasien sepenuhnya",
+      "benar": false
+    }
+  ]
+}
