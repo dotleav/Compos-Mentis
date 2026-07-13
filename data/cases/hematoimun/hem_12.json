@@ -1,0 +1,99 @@
+{
+  "id": "hem_12",
+  "kategori": "hematoimun",
+  "level": "4",
+  "identitas": "Mia, 34 tahun, karyawan swasta",
+  "keluhanUtama": "Datang ke poli dengan keluhan demam dan lemas sejak 2 bulan terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Demam naik turun, BB turun drastis meski nafsu makan tetap",
+        "Bulan pertama: sariawan disertai demam",
+        "Bulan kedua: diare disertai demam"
+      ],
+      "rpd": "Perlu ditanyakan riwayat seksual: belum menikah, berhubungan seksual berganti-ganti pasangan tanpa pengaman; tidak ada riwayat transfusi, jarum suntik, tato, atau narkoba",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Tidak ada kebiasaan khusus lain yang dilaporkan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "Suhu 38°C, TD/Nadi/RR dalam batas normal",
+        "signifikan": true
+      },
+      {
+        "id": "kepala_mulut",
+        "kelompok": "khas",
+        "nama": "Kepala & Mulut",
+        "temuan": "Konjungtiva anemis, plak putih di mukosa lidah dan tenggorokan (kandidiasis oral)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukopenia",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "elisa",
+        "nama": "Tes ELISA/Skrining HIV",
+        "temuan": "Positif (PITC)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "cd4",
+        "nama": "Tes CD4",
+        "temuan": "CD4 137 (indikasi ARV, stadium III-IV)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "HIV AIDS Tanpa Komplikasi",
+    "differensialBenar": [
+      "Kandidiasis Oral",
+      "Anemia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Terapi ARV (Zidovudin + Lamivudine + Nevirapine), obat kumur klorheksidin untuk ulkus mulut, simptomatik demam dan diare, rujuk Sp.PD",
+      "benar": true
+    },
+    {
+      "opsi": "Tunda ARV sampai muncul komplikasi berat",
+      "benar": false
+    },
+    {
+      "opsi": "Terapi ARV tunggal tanpa kombinasi obat",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Sampaikan diagnosis dengan breaking bad news yang baik, jelaskan tidak bisa sembuh namun terkontrol dengan ARV rutin, dukung dengan komunitas ODHA dan keluarga",
+      "benar": true
+    },
+    {
+      "opsi": "Sampaikan bahwa penyakit ini bisa sembuh total dalam beberapa bulan",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu melibatkan keluarga atau support system",
+      "benar": false
+    }
+  ]
+}

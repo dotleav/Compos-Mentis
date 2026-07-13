@@ -1,0 +1,238 @@
+{
+  "id": "psi_16",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "identitas": "Pak Broto, 34 tahun, pegawai swasta, datang bersama istri",
+  "keluhanUtama": "Datang ke poli dengan keluhan sulit tidur sejak beberapa minggu terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Terbangun sekitar jam 3 pagi dan tidak bisa tidur lagi karena cemas dan rasa bersalah",
+        "Merasa minder dan malu terkait relasi dengan istri",
+        "Istri berharap suami mendapat 'vitamin penambah stamina', pasien merasa tertekan karenanya",
+        "Merasa putus asa, merasa bodoh, dan tertekan hampir setiap hari",
+        "Nafsu makan sedikit menurun, mudah lelah di siang hari",
+        "Sulit berkonsentrasi bekerja karena pikiran terus kembali ke masalah ini"
+      ],
+      "rpd": "Tidak ada riwayat penyakit medis kronis atau gangguan jiwa sebelumnya, tidak pernah konsultasi ke psikiater/psikolog sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan riwayat gangguan jiwa",
+      "lifestyle": [
+        "Pernikahan dijodohkan/dipaksa keluarga, sempat memiliki calon pasangan lain sebelumnya",
+        "Istri 2 tahun lebih tua dan lebih mapan secara ekonomi, membuat pasien minder",
+        "Riwayat masa kecil kurang mendapat pengasuhan yang hangat (merasa ditelantarkan)",
+        "Jarang bercerita ke teman/keluarga tentang masalah ini karena malu"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "KU",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "VS",
+        "temuan": "Dalam batas normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kesadaran",
+        "kelompok": "pemeriksaan",
+        "nama": "Kesadaran",
+        "temuan": "Compos mentis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_orientasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Orientasi",
+        "temuan": "Baik (waktu, tempat, orang)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_penampilan",
+        "kelompok": "pemeriksaan",
+        "nama": "Penampilan",
+        "temuan": "Rapi",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_sikap",
+        "kelompok": "pemeriksaan",
+        "nama": "Sikap",
+        "temuan": "Kooperatif, sedikit malu-malu saat ditanya hal pribadi",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_atensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Atensi",
+        "temuan": "Baik, mudah dialihkan saat topik sensitif dibahas",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_mood",
+        "kelompok": "pemeriksaan",
+        "nama": "Mood",
+        "temuan": "Cemas dan sedih",
+        "signifikan": true
+      },
+      {
+        "id": "statuspsikiatri_afek",
+        "kelompok": "pemeriksaan",
+        "nama": "Afek",
+        "temuan": "Appropriate (serasi dengan isi pembicaraan)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_persepsi",
+        "kelompok": "pemeriksaan",
+        "nama": "Persepsi",
+        "temuan": "Normal, tidak ada halusinasi atau ilusi",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_perilakumotorik",
+        "kelompok": "pemeriksaan",
+        "nama": "Perilaku motorik",
+        "temuan": "Normal, tidak ada agitasi atau retardasi psikomotor",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bentukpikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Bentuk pikir",
+        "temuan": "Logis dan realistis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_isipikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Isi pikir",
+        "temuan": "Putus asa, merasa bodoh dan tidak berharga, tidak ada ide bunuh diri",
+        "signifikan": true
+      },
+      {
+        "id": "statuspsikiatri_aruspikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Arus pikir",
+        "temuan": "Koheren",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bicara",
+        "kelompok": "pemeriksaan",
+        "nama": "Bicara",
+        "temuan": "Normal, volume dan kecepatan wajar",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_memori",
+        "kelompok": "pemeriksaan",
+        "nama": "Memori",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_tilikan",
+        "kelompok": "pemeriksaan",
+        "nama": "Tilikan",
+        "temuan": "5 (sadar sakit tapi belum sepenuhnya memahami penyebabnya)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pemeriksaan penunjang khusus; skrining dengan instrumen seperti HADS/DASS-21 dapat membantu menilai derajat keparahan bila tersedia",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Campuran Cemas Depresi",
+    "differensialBenar": [
+      "Gangguan Cemas Menyeluruh",
+      "Depresi Ringan",
+      "Gangguan Penyesuaian",
+      "Disfungsi Ereksi Psikogenik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rujuk Sp.KJ untuk psikoterapi (misalnya CBT) dan evaluasi lebih lanjut",
+      "benar": true
+    },
+    {
+      "opsi": "Farmakoterapi lini pertama (SSRI) dipertimbangkan oleh Sp.KJ sesuai derajat keparahan gejala",
+      "benar": true
+    },
+    {
+      "opsi": "Edukasi dan libatkan pasangan dalam konseling bila pasien bersedia",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan hormon testosteron tanpa evaluasi psikiatri dan tanpa pemeriksaan kadar hormon lebih dahulu",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Diazepam dosis tinggi jangka panjang sebagai terapi tunggal tanpa psikoterapi",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup edukasi tanpa rujukan meski ada gejala cemas dan depresi yang mengganggu tidur dan fungsi sehari-hari",
+      "benar": false
+    },
+    {
+      "opsi": "Sarankan pasien menonton konten dewasa lebih sering untuk mengatasi keluhannya",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Antipsikotik sebagai lini pertama tanpa adanya gejala psikotik",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan bahwa keluhan cemas dan sedih yang dialami adalah kondisi kejiwaan yang bisa ditangani, bukan aib",
+      "benar": true
+    },
+    {
+      "opsi": "Rujuk ke Sp.KJ untuk psikoterapi dan tata laksana lebih lanjut",
+      "benar": true
+    },
+    {
+      "opsi": "Libatkan pasangan dalam konseling bila pasien bersedia, karena masalah ini berkaitan dengan relasi pernikahan",
+      "benar": true
+    },
+    {
+      "opsi": "Sampaikan bahwa kondisi ini bisa membaik dengan penanganan yang tepat dan waktu",
+      "benar": true
+    },
+    {
+      "opsi": "Sampaikan bahwa keluhan ini memalukan dan sebaiknya tidak dibicarakan dengan siapapun termasuk tenaga medis",
+      "benar": false
+    },
+    {
+      "opsi": "Katakan bahwa kondisi ini tidak ada hubungannya dengan kondisi psikologis dan hanya perlu suplemen fisik",
+      "benar": false
+    },
+    {
+      "opsi": "Sarankan pasien menyembunyikan kondisi ini dari istri agar tidak menambah masalah rumah tangga",
+      "benar": false
+    },
+    {
+      "opsi": "Katakan bahwa kondisi ini akan hilang sendiri tanpa perlu penanganan apapun",
+      "benar": false
+    }
+  ]
+}

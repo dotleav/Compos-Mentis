@@ -1,0 +1,94 @@
+{
+  "id": "mat_04",
+  "kategori": "mata",
+  "level": "3",
+  "identitas": "Ikhsan, 25 tahun, mahasiswa biologi, tinggal di Baciro",
+  "keluhanUtama": "Datang ke poli dengan keluhan kedua mata merah sejak 2 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Muncul tiba-tiba setelah kuliah lapangan tanpa pelindung mata",
+        "Tidak nyeri, tapi mata kabur sejak muncul merah",
+        "Gatal terutama di ruangan berdebu, terasa mengganjal",
+        "Mata berair dengan cairan bening",
+        "Sudah pakai Cendo Xitrol, sedikit mengurangi",
+        "Tidak ada mual muntah atau silau"
+      ],
+      "rpd": "Pernah seperti ini usia 10 tahun dan sembuh sendiri, ada riwayat asma, alergi amoksisilin",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Merokok 1-2 bungkus/hari",
+        "Sering bekerja di depan laptop"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, HR 80x/menit, RR 16x/menit, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "pemeriksaan",
+        "nama": "Visus",
+        "temuan": "OD 6/6, OS 6/6",
+        "signifikan": false
+      },
+      {
+        "id": "segmen_anterior",
+        "kelompok": "khas",
+        "nama": "Segmen Anterior",
+        "temuan": "Cobblestone appearance pada konjungtiva palpebra superior, konjungtiva bulbi hiperemis, corneal scarring (+), Trantas dots (+)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan kecuali dicurigai konjungtivitis gonore",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Keratokonjungtivitis Alergi Vernal",
+    "differensialBenar": [
+      "Keratokonjungtivitis Atopik",
+      "Konjungtivitis Virus",
+      "Ulkus Kornea",
+      "Giant Papillary Conjunctivitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ketotifen 0,025% eyedrop (mast cell stabilizer/antihistamin topikal), rujuk Sp.M",
+      "benar": true
+    },
+    {
+      "opsi": "Lanjutkan Cendo Xitrol jangka panjang karena sudah sedikit membaik",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Antibiotik topikal sebagai terapi utama tanpa antihistamin",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jangan mengucek mata, pakai kacamata pelindung, kurangi paparan laptop dan debu, hentikan Cendo Xitrol karena berisiko meningkatkan TIO jangka panjang",
+      "benar": true
+    },
+    {
+      "opsi": "Aman melanjutkan kortikosteroid topikal jangka panjang tanpa pemantauan TIO",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "hem_03",
+  "kategori": "hematoimun",
+  "level": "3B",
+  "identitas": "Perempuan, 24 tahun, karyawan bank",
+  "keluhanUtama": "Datang ke UGD dengan keluhan demam sejak 7 hari yang lalu disertai lemas dan keringat dingin",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Hari ke-5 demam sempat turun, hari ke-6 demam naik lagi",
+        "Keringat dingin",
+        "Lemas",
+        "Sulit BAB"
+      ],
+      "rpd": "Tidak ada riwayat khusus",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Tetangga ada yang mengalami penyakit serupa"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "primary_survey",
+        "kelompok": "vital",
+        "nama": "Primary Survey",
+        "temuan": "Airway clear, saturasi O2 90% dengan RR 22x/menit (perlu oksigen NRM 10L/menit), GCS dalam batas normal",
+        "signifikan": true
+      },
+      {
+        "id": "sirkulasi",
+        "kelompok": "vital",
+        "nama": "Sirkulasi",
+        "temuan": "TD rendah/menyempit, nadi cepat lemah, CRT memanjang, akral dingin - tanda syok, perlu resusitasi cairan segera",
+        "signifikan": true
+      },
+      {
+        "id": "torax_abdomen",
+        "kelompok": "khas",
+        "nama": "Thorax & Abdomen",
+        "temuan": "Asites (+), Rumple Leed (+)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Trombosit menurun, hematokrit meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "serologi_dengue",
+        "nama": "Serologi Dengue",
+        "temuan": "IgM Anti-Dengue (+)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "foto_thorax",
+        "nama": "Foto Thorax",
+        "temuan": "Efusi pleura ringan",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Dengue Shock Syndrome",
+    "differensialBenar": [
+      "DHF",
+      "Malaria",
+      "Demam Tifoid"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Oksigen NRM 10L/menit, resusitasi cairan kristaloid RL 500ml habis 30 menit, evaluasi ketat, rawat ICU",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan cairan maintenance biasa tanpa bolus cepat meski ada tanda syok",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup rawat jalan dengan observasi ketat oleh keluarga",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Harus rawat inap ICU untuk observasi dan resusitasi cairan lebih lanjut",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menunda rawat inap sampai kondisi memburuk lebih jauh",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "hem_11",
+  "kategori": "hematoimun",
+  "level": "3B",
+  "identitas": "Yono, 23 tahun",
+  "keluhanUtama": "Datang ke UGD dengan keluhan demam tinggi sejak 3 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Demam tinggi hingga 39°C semalam",
+        "Mual",
+        "Perut terasa penuh dan sakit",
+        "Bintik merah di perut",
+        "Memberat jika banyak gerak",
+        "Sudah diberi paracetamol"
+      ],
+      "rpd": "Riwayat operasi apendektomi 3 hari lalu dengan bius general dan pemasangan kateter",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Makan dan minum tidak teratur"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, Nadi 110x, RR 16x, Suhu 39,8°C",
+        "signifikan": true
+      },
+      {
+        "id": "thorax",
+        "kelompok": "pemeriksaan",
+        "nama": "Thorax",
+        "temuan": "Takikardi",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Nyeri di seluruh abdomen dan area suprapubik",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukositosis 25.000",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "urinalisa",
+        "nama": "Urinalisa & Kultur Urin",
+        "temuan": "Bakteri (+), eritrosit (+); kultur urin menunjukkan bakteri Gram positif",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Bakteremia Post Appendectomy e.c Kateterisasi",
+    "differensialBenar": [
+      "Sepsis",
+      "Peritonitis",
+      "ISK"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "IVFD Ringer Laktat, simptomatik demam dan mual, rawat inap, rujuk Sp.PD untuk alih rawat",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup rawat jalan dengan antipiretik saja meski leukositosis tinggi",
+      "benar": false
+    },
+    {
+      "opsi": "Lepas kateter tanpa terapi lain dan pulangkan pasien",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rawat inap, rujuk Sp.PD untuk alih rawat, jaga pola makan dan minum teratur",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu evaluasi lanjutan karena sudah pernah dioperasi",
+      "benar": false
+    }
+  ]
+}

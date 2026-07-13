@@ -1,0 +1,90 @@
+{
+  "id": "tht_09",
+  "kategori": "tht",
+  "level": "4",
+  "identitas": "Mahasiswa yang tinggal di kos",
+  "keluhanUtama": "Datang ke poli dengan keluhan sakit tenggorokan sejak 6 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri terus menerus terutama saat menelan, sangat mengganggu",
+        "Nafsu makan menurun, hanya bisa minum air hangat",
+        "Lemas, pusing, batuk, suara serak"
+      ],
+      "rpd": "Pernah mengalami hal serupa, kambuh terutama saat kelelahan",
+      "rpk": "Tinggal di kos, tidak ada teman dengan keluhan serupa",
+      "lifestyle": [
+        "Sering makan gorengan",
+        "Tidak merokok, tidak minum alkohol",
+        "Jarang olahraga"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "Nadi 90x/menit, TD 120/80 mmHg, RR 22x/menit, Suhu 38,2°C",
+        "signifikan": true
+      },
+      {
+        "id": "tenggorokan",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Mulut & Tenggorokan",
+        "temuan": "Tonsil T3 (membesar), hiperemis, terdapat bercak putih pada tonsil, pembesaran dan nyeri tekan limfonodi",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "swab",
+        "nama": "Swab Orofaring/Nasofaring & Kultur Tonsil",
+        "temuan": "Swab COVID non-reaktif; kultur tonsil dengan pengecatan Gram menunjukkan Streptococcus",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Dalam batas normal",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tonsilitis Akut",
+    "differensialBenar": [
+      "Laringitis",
+      "Faringitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Amoksisilin tab 500mg (dihabiskan) + Paracetamol + Vitamin C",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup obat kumur antiseptik tanpa antibiotik sistemik meski ada tanda infeksi bakteri (Streptococcus)",
+      "benar": false
+    },
+    {
+      "opsi": "Rujuk operasi tonsilektomi segera pada episode akut pertama",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kurangi konsumsi gorengan, habiskan antibiotik, istirahat cukup, jaga kebersihan mulut",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh berhenti antibiotik begitu nyeri berkurang",
+      "benar": false
+    }
+  ]
+}

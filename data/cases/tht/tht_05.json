@@ -1,0 +1,83 @@
+{
+  "id": "tht_05",
+  "kategori": "tht",
+  "level": "4A",
+  "identitas": "Tn. Samak, 30 tahun, admin, riwayat hipertensi",
+  "keluhanUtama": "Datang ke Puskesmas dengan keluhan hidung berdarah sejak 4 jam yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Darah mengalir dari hidung kanan dan kiri, hidung kiri sudah berhenti setelah dipencet dan dikompres air dingin",
+        "Mulai berdarah setelah bersin-bersin terus menerus karena tidak tahan bau masakan sambal terasi"
+      ],
+      "rpd": "Hipertensi, konsumsi Amlodipine 1x10mg, tadi pagi lupa minum obat",
+      "rpk": "Orang tua memiliki riwayat jantung dan hipertensi",
+      "lifestyle": [
+        "Tidak merokok, tidak olahraga rutin",
+        "Bekerja sebagai admin"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 150/100 mmHg (meningkat), Nadi 100x/menit, RR 28x/menit, Suhu 37°C",
+        "signifikan": true
+      },
+      {
+        "id": "rhinoskopi",
+        "kelompok": "khas",
+        "nama": "Rhinoskopi Anterior",
+        "temuan": "Cavitas nasi dextra: darah mengalir, septum deviasi ke kanan, perdarahan dari 1/3 anterior septum, mukosa hiperemis, konka inferior hipertrofi bilateral; sinistra: perdarahan sudah berhenti",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Rutin",
+        "temuan": "Hb, leukosit, dan trombosit dalam batas normal",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Epistaksis Anterior e.c Hipertensi",
+    "differensialBenar": [
+      "Tumor Daerah Hidung",
+      "Rhinitis Kronik",
+      "Rhinitis Medikamentosa",
+      "Trauma Hidung"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Anestesi lokal lidocaine spray, pasang tampon sementara (kasa+NaCl) lalu tampon padat bila perlu, R/ Asam Traneksamat + lanjutkan Amlodipin",
+      "benar": true
+    },
+    {
+      "opsi": "Langsung pasang tampon padat tanpa anestesi lokal dan tanpa evaluasi TTV lebih dulu",
+      "benar": false
+    },
+    {
+      "opsi": "Hentikan obat hipertensi karena dianggap penyebab perdarahan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Bila tampon padat dipasang, wajib rawat inap 3 hari, lanjutkan terapi hipertensi rutin, jangan mengutak-atik tampon",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh melepas tampon sendiri di rumah bila dirasa sudah tidak berdarah",
+      "benar": false
+    }
+  ]
+}

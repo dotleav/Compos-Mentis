@@ -1,0 +1,95 @@
+{
+  "id": "mat_14",
+  "kategori": "mata",
+  "level": "3A",
+  "identitas": "Budi, 48 tahun, pengajar",
+  "keluhanUtama": "Datang ke poli dengan keluhan pandangan kabur pada kedua mata sejak 3 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Mata kiri lebih parah dari kanan",
+        "Suka silau",
+        "Mudah haus dan lapar sejak 2 bulan lalu (curiga DM tidak terkontrol)"
+      ],
+      "rpd": "Belum pernah mengalami gejala serupa, tidak pakai kacamata, riwayat DM (+)",
+      "rpk": "Ayah memiliki riwayat DM",
+      "lifestyle": [
+        "Dulu merokok, berhenti sejak 2 tahun lalu"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, tidak tampak sakit",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 72x/menit, RR 20x/menit, Suhu 36,2°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "khas",
+        "nama": "Visus",
+        "temuan": "OD 3/60, OS 1/300",
+        "signifikan": true
+      },
+      {
+        "id": "lensa",
+        "kelompok": "khas",
+        "nama": "Lensa & Shadow Test",
+        "temuan": "Lensa keruh, shadow test membantu tentukan derajat kekeruhan (imatur vs matur)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Perlu dicek gula darah untuk evaluasi kontrol DM sebagai faktor risiko",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Katarak Senilis",
+    "differensialBenar": [
+      "Presbiopi",
+      "Retinopati Diabetik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rujuk Sp.M untuk operasi katarak",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup kacamata koreksi tanpa rujukan operasi meski visus sangat menurun",
+      "benar": false
+    },
+    {
+      "opsi": "Tetes mata pelarut katarak sebagai terapi utama",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Katarak dapat diperbaiki dengan operasi, rujuk Sp.M, kontrol gula darah karena DM mempercepat progresi katarak",
+      "benar": true
+    },
+    {
+      "opsi": "Katarak akan membaik sendiri tanpa operasi",
+      "benar": false
+    }
+  ]
+}

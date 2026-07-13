@@ -1,0 +1,101 @@
+{
+  "id": "kar_ppok",
+  "kategori": "kardio",
+  "level": "3B",
+  "identitas": "Yudho, 65 tahun, penjaga toko kelontong",
+  "keluhanUtama": "Datang ke UGD dengan keluhan sesak napas yang memburuk sejak 5 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sesak terus menerus, saat istirahat pun masih sesak",
+        "Batuk 1 minggu terus menerus dengan dahak kental putih",
+        "Gejala memburuk saat kerja lembur"
+      ],
+      "rpd": "Dulu pernah sesak dan membaik, sekarang kambuh kembali; tidak ada alergi/asma/DM/hipertensi",
+      "rpk": "Ibu memiliki riwayat asma",
+      "lifestyle": [
+        "Merokok 2 bungkus/hari sejak usia 25 tahun",
+        "Lingkungan rumah bersih, ventilasi baik",
+        "Olahraga kadang"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "primary_survey",
+        "kelompok": "vital",
+        "nama": "Primary Survey",
+        "temuan": "Airway clear, RR 28x/menit SpO2 94% (perlu nasal kanul 3L/menit), TD 130/90 mmHg, HR 110x/menit, GCS 15",
+        "signifikan": true
+      },
+      {
+        "id": "paru",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Paru",
+        "temuan": "Barrel chest, retraksi m. intercostalis (+), fremitus menurun kedua lapang paru, perkusi hipersonor, suara napas vesikuler menurun dengan wheezing (+) bilateral, ronki (-)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Dalam batas normal",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "spirometri",
+        "nama": "Spirometri",
+        "temuan": "FEV1/FVC 0,7 (turun), FEV1 50-80% (turun), FVC normal - pola obstruktif, tidak reversibel dengan bronkodilator",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "foto_thorax",
+        "nama": "Foto Thorax",
+        "temuan": "SIC melebar, corakan bronkovaskuler meningkat, gambaran hiperlusen",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "PPOK Persisten Sedang Eksaserbasi Akut",
+    "differensialBenar": [
+      "Asma Bronkial",
+      "Bronkiektasis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Oksigen nasal kanul, inhaler Combivent (Ipratropium+Salbutamol), Ambroxol untuk dahak, rujuk Sp.Paru",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan bronkodilator oral (tablet) sebagai pilihan utama, bukan inhaler",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu suplementasi oksigen meski SpO2 94% dengan sesak berat",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Berhenti merokok total, kurangi aktivitas fisik berat, rujuk Sp.Paru untuk evaluasi lanjutan",
+      "benar": true
+    },
+    {
+      "opsi": "PPOK bisa sembuh total bila rutin minum obat",
+      "benar": false
+    },
+    {
+      "opsi": "Boleh terus merokok asal memakai obat inhaler",
+      "benar": false
+    }
+  ]
+}

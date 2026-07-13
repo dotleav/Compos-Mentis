@@ -1,0 +1,97 @@
+{
+  "id": "mat_13",
+  "kategori": "mata",
+  "level": "4",
+  "identitas": "Mr. X, 45 tahun, pembuat kaligrafi",
+  "keluhanUtama": "Datang ke poli dengan keluhan penglihatan kabur sejak 1 tahun terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Kabur di kedua mata, terus menerus",
+        "Kadang mata mudah berair, disertai pusing",
+        "Sudah minum Paracetamol, tidak membaik"
+      ],
+      "rpd": "Pertama kali seperti ini, tidak ada riwayat kontak lens/operasi/trauma/alergi",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Bekerja membuat kaligrafi 4-8 jam/hari, biasanya malam hari",
+        "Olahraga 1x/minggu"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, tidak tampak sakit",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 72x/menit, RR 20x/menit, Suhu 36,2°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus_jauh",
+        "kelompok": "pemeriksaan",
+        "nama": "Visus Snellen",
+        "temuan": "OD 6/6, OS 6/6 (penglihatan jauh normal)",
+        "signifikan": false
+      },
+      {
+        "id": "visus_dekat",
+        "kelompok": "khas",
+        "nama": "Visus Jaeger",
+        "temuan": "Pasien menjauhkan bacaan saat membaca, memerlukan koreksi +1,5 Dioptri",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pada kasus ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Presbiopi",
+    "differensialBenar": [
+      "Hipermetropi",
+      "Astigmatisma",
+      "Dry Eye Syndrome"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Koreksi dengan kacamata lensa positif (+1,5 Dioptri) sesuai usia",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Obat tetes mata sebagai terapi utama presbiopia",
+      "benar": false
+    },
+    {
+      "opsi": "Operasi katarak karena usia di atas 40 tahun",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Presbiopi adalah proses degeneratif normal setelah usia 40 tahun, perlu koreksi kacamata, kerjakan kaligrafi di pencahayaan terang, kontrol tahunan, rujuk Sp.M",
+      "benar": true
+    },
+    {
+      "opsi": "Presbiopi bisa dicegah sepenuhnya dengan senam mata",
+      "benar": false
+    }
+  ]
+}

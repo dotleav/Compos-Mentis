@@ -1,0 +1,84 @@
+{
+  "id": "int_10",
+  "kategori": "integumen",
+  "level": "4A",
+  "identitas": "Laki-laki, pemulung",
+  "keluhanUtama": "Datang ke poli dengan keluhan kedua kaki melepuh dan bernanah sejak 2 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Awalnya hanya vesikel berisi nanah",
+        "Terasa sangat gatal, digaruk hingga luka mengering",
+        "Rasa gatal terus menerus, belum pernah membaik",
+        "Belum diobati"
+      ],
+      "rpd": "Tidak ada alergi atau obat rutin",
+      "rpk": "Tidak ada anggota keluarga dengan hal serupa (istri tidak sakit serupa)",
+      "lifestyle": [
+        "Memulung sampah sehari-hari di TPA",
+        "Rumah dipenuhi barang hasil memulung"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/80 mmHg, HR 72x/menit, RR 16x/menit, Suhu 36,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi kedua kaki, patch dengan krusta dan central healing (+), eritem di dasar krusta, batas tegas bentuk bulat ukuran 1-2cm multipel tersebar lokalisata, teraba hangat",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "gram",
+        "nama": "Pengecatan Gram",
+        "temuan": "Kokus Gram positif berderet dan berkelompok, sebukan neutrofil",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Pioderma Ektima",
+    "differensialBenar": [
+      "Impetigo Krustosa",
+      "Impetigo Bulosa",
+      "Varicella"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Mupirocin 2% krim topikal + Cetirizine (gatal)",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup antihistamin tanpa antibiotik topikal meski Gram menunjukkan kokus Gram positif",
+      "benar": false
+    },
+    {
+      "opsi": "Pecahkan krusta secara paksa untuk mempercepat penyembuhan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga higiene, hindari menggaruk lesi karena bisa menular lewat jari dan kuku",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit ini tidak menular meski melalui kontak lesi",
+      "benar": false
+    }
+  ]
+}

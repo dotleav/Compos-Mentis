@@ -1,0 +1,92 @@
+{
+  "id": "mat_10",
+  "kategori": "mata",
+  "level": "4A",
+  "identitas": "Andi, 45 tahun, guru",
+  "keluhanUtama": "Datang ke poli dengan keluhan kelopak mata kanan bengkak dan nyeri sejak beberapa hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bengkak, merah, disertai rasa sakit dan mengganjal",
+        "Nyeri terus menerus saat ditekan, skala 5",
+        "Terasa tidak nyaman dan terbakar",
+        "Tidak ada gatal, sekret, atau demam",
+        "Tidak ada penurunan penglihatan"
+      ],
+      "rpd": "Pernah mengalami keluhan serupa usia 15 tahun, membaik tanpa terapi",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Tidak ada kebiasaan khusus dilaporkan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 88x/menit, RR 22x/menit, Suhu 37°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "pemeriksaan",
+        "nama": "Visus",
+        "temuan": "OD 6/6, OS 6/6",
+        "signifikan": false
+      },
+      {
+        "id": "kelopak_mata",
+        "kelompok": "khas",
+        "nama": "Kelopak Mata",
+        "temuan": "Bengkak, merah, nyeri pada perabaan, nanah dapat keluar dari pangkal rambut (folikel), konjungtiva palpebra normal (menandakan eksternal)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pada kasus ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Hordeolum Eksterna",
+    "differensialBenar": [
+      "Hordeolum Interna",
+      "Chalazion",
+      "Blefaritis",
+      "Selulitis Preseptal"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Chloramphenicol 1% eye ointment 3-4x/hari, kompres hangat, kontrol 3 hari untuk evaluasi",
+      "benar": true
+    },
+    {
+      "opsi": "Insisi dan drainase segera tanpa terapi konservatif dahulu",
+      "benar": false
+    },
+    {
+      "opsi": "Tekan atau tusuk hordeolum untuk mengeluarkan nanah",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Cara pemakaian salep yang benar, kompres hangat 4-6x/hari selama 15 menit untuk membantu drainase, jangan menekan/menusuk lesi",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh dipencet sendiri di rumah untuk mempercepat penyembuhan",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "hem_08",
+  "kategori": "hematoimun",
+  "level": "3A",
+  "identitas": "Perempuan muda",
+  "keluhanUtama": "Datang ke poli dengan keluhan badan pegal dan lelah sejak 3 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri sendi berpindah-pindah di seluruh tubuh",
+        "Sariawan tidak sembuh-sembuh",
+        "Tidak tahan panas matahari (fotosensitivitas)",
+        "Rambut rontok, BB turun drastis",
+        "Ada ruam di wajah"
+      ],
+      "rpd": "Gejala kambuh-kambuhan lalu sembuh sendiri, tidak ada riwayat alergi/trauma/opname",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Tinggal di kos yang bersih dengan makanan cukup",
+        "BAB BAK lancar",
+        "BB turun 3kg dalam 2 bulan meski nafsu makan normal"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, Suhu 38,7°C",
+        "signifikan": true
+      },
+      {
+        "id": "kepala",
+        "kelompok": "khas",
+        "nama": "Kepala",
+        "temuan": "Malar rash (+), alopecia (+), 3 ulkus di mulut, limfadenopati",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Hepatosplenomegali, nyeri tekan epigastrium",
+        "signifikan": true
+      },
+      {
+        "id": "ekstremitas",
+        "kelompok": "khas",
+        "nama": "Ekstremitas",
+        "temuan": "Nyeri tekan sendi lutut",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukopenia, anemia, MCV/MCH/MCHC turun",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "ana",
+        "nama": "ANA Test",
+        "temuan": "Positif",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Lupus Eritematosus Sistemik (SLE)",
+    "differensialBenar": [
+      "HIV",
+      "Still's Disease",
+      "Limfoma Non-Hodgkin"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Terapi simptomatik: Paracetamol untuk demam, Na Diklofenak untuk nyeri sendi, rujuk Sp.PD",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan antibiotik spektrum luas sebagai terapi utama",
+      "benar": false
+    },
+    {
+      "opsi": "Katakan pada pasien bahwa penyakit ini pasti bisa sembuh total dengan obat simptomatik",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk Sp.PD, jelaskan ini penyakit autoimun kronis yang tidak bisa sembuh total namun gejalanya bisa dikontrol",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit ini akan sembuh sendiri tanpa perlu kontrol rutin",
+      "benar": false
+    }
+  ]
+}

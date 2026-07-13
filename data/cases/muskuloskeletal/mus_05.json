@@ -1,0 +1,111 @@
+{
+  "id": "mus_05",
+  "kategori": "muskuloskeletal",
+  "level": "2",
+  "identitas": "Hari, 30 tahun, atlet",
+  "keluhanUtama": "Datang ke poli dengan keluhan nyeri lutut kiri seperti terkunci",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bertambah sakit jika berubah posisi",
+        "Sudah coba kompres dan istirahat, belum membaik",
+        "Nyeri hilang timbul, skala 5",
+        "Awalnya terjatuh",
+        "Tidak ada bengkak"
+      ],
+      "rpd": "Tidak ada riwayat khusus",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Kadang makan jeroan dan emping"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, tampak sakit",
+        "signifikan": false
+      },
+      {
+        "id": "gait",
+        "kelompok": "khas",
+        "nama": "Gait",
+        "temuan": "Kaki tampak diseret",
+        "signifikan": true
+      },
+      {
+        "id": "look",
+        "kelompok": "pemeriksaan",
+        "nama": "Look",
+        "temuan": "Bengkak minimal",
+        "signifikan": false
+      },
+      {
+        "id": "feel",
+        "kelompok": "pemeriksaan",
+        "nama": "Feel",
+        "temuan": "Tidak ada massa, tidak nyeri tekan",
+        "signifikan": false
+      },
+      {
+        "id": "tes_khusus",
+        "kelompok": "khas",
+        "nama": "Tes Khusus Lutut",
+        "temuan": "McMurray test (+), Apley compression test (+), Apley distraction (-), Drawer test (-), Lachman test (-), Valgus/Varus stress test (-)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "rontgen",
+        "nama": "Rontgen Genu Sinistra AP Lateral",
+        "temuan": "Dalam batas normal (tulang tidak menunjukkan kelainan)",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "mri",
+        "nama": "MRI Genu",
+        "temuan": "Diperlukan untuk konfirmasi lesi meniskus lebih lanjut",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Lesi Meniskus Genu Sinistra",
+    "differensialBenar": [
+      "Ruptur ACL",
+      "Ruptur PCL"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Natrium Diklofenak, rujuk Sp.OT untuk evaluasi dan tatalaksana lanjutan (MRI/artroskopi)",
+      "benar": true
+    },
+    {
+      "opsi": "Sarankan operasi rekonstruksi ligamen tanpa evaluasi lebih lanjut",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup istirahat total tanpa rujukan meski McMurray dan Apley compression positif",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Terapkan prinsip RICE (Rest, Ice, Compression, Elevation), ice 2-4x sehari selama 5 menit",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh langsung kembali berlatih olahraga berat sebelum dievaluasi Sp.OT",
+      "benar": false
+    }
+  ]
+}

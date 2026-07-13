@@ -1,0 +1,89 @@
+{
+  "id": "int_08",
+  "kategori": "integumen",
+  "level": "4A",
+  "identitas": "Pasien dengan riwayat kontak penderita cacar air",
+  "keluhanUtama": "Datang ke poli dengan keluhan plenting berair di seluruh tubuh sejak 2-3 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Disertai demam dan gatal",
+        "Malaise dan nyeri kepala",
+        "Sudah minum Panadol untuk pusing"
+      ],
+      "rpd": "Tidak pernah mengalami keluhan serupa, belum pernah cacar sebelumnya, tidak ada riwayat gigitan serangga",
+      "rpk": "Tidak ada riwayat keluarga",
+      "lifestyle": [
+        "Kontak dengan anak tetangga kos yang sedang cacar air beberapa hari lalu"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Compos mentis, nyeri ringan",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/80 mmHg, HR 68x/menit, RR 18x/menit, Suhu 38°C",
+        "signifikan": true
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi seluruh tubuh, vesikel berisi cairan bening/keruh ukuran miliar (1-2mm) multipel susunan herpetiformis distribusi generalisata sentral tubuh, krusta coklat kehitaman (sekunder), teraba hangat",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "tzank",
+        "nama": "Tzank Test (Giemsa)",
+        "temuan": "Sel datia berinti banyak (+)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Varicella Zoster",
+    "differensialBenar": [
+      "Variola",
+      "Herpes Zoster",
+      "Drug Eruption"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Acyclovir tab 400mg (dihabiskan) + Lotion Kalamin (gatal) + Paracetamol (demam)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik sistemik sebagai terapi utama tanpa antivirus",
+      "benar": false
+    },
+    {
+      "opsi": "Pecahkan vesikel untuk mempercepat pengeringan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Isolasi mandiri karena menular, jaga higiene, jangan pecahkan vesikel, jangan pakai handuk bersama, konsumsi makanan protein tinggi",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak menular sehingga tidak perlu isolasi",
+      "benar": false
+    }
+  ]
+}

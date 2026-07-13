@@ -1,0 +1,125 @@
+{
+  "id": "end_07",
+  "kategori": "endokrin",
+  "level": "3A",
+  "identitas": "Siska, 33 tahun, mahasiswa",
+  "keluhanUtama": "Datang ke poli dengan keluhan mudah lelah sejak 3 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Badan lemas, sering cemas dan gugup",
+        "Tiba-tiba berkeringat, sulit konsentrasi",
+        "Tangan sering gemetar",
+        "Mudah kepanasan meski di suhu ruang (heat intolerance)",
+        "Jantung berdebar",
+        "Sudah minum multivitamin tanpa perbaikan",
+        "BAB lebih sering namun konsistensi normal"
+      ],
+      "rpd": "Tidak ada riwayat khusus",
+      "rpk": "Perlu ditanyakan riwayat benjolan leher di lingkungan sekitar (skrining endemis)",
+      "lifestyle": [
+        "Nafsu makan meningkat namun BB turun (dari 60kg)",
+        "Makan 4-5x/hari",
+        "Olahraga minimal"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Sedang",
+        "signifikan": false
+      },
+      {
+        "id": "status_gizi",
+        "kelompok": "vital",
+        "nama": "Status Gizi",
+        "temuan": "TB 170cm, BB 52kg (sebelumnya 60kg)",
+        "signifikan": true
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 140/80 mmHg, Denyut 130x, RR 22x, Suhu 37,8°C",
+        "signifikan": true
+      },
+      {
+        "id": "tiroid",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Tiroid",
+        "temuan": "Eksoftalmus (+), benjolan difus bilateral tanpa nyeri tekan, tidak ada kesulitan menelan, bruit tiroid (+) pada auskultasi",
+        "signifikan": true
+      },
+      {
+        "id": "ekstremitas",
+        "kelompok": "khas",
+        "nama": "Ekstremitas",
+        "temuan": "Hangat dan lembab, tremor (+), tidak ada pretibial myxoedema",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "pemeriksaan",
+        "nama": "Abdomen",
+        "temuan": "Bising usus meningkat",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "tft",
+        "nama": "Tes Fungsi Tiroid",
+        "temuan": "TSH 0,03 (menurun), FT4 2,7 (meningkat), T4 144, T3 3,2",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Hipertiroid Suspek Grave's Disease",
+    "differensialBenar": [
+      "Hashimoto's Disease",
+      "Tiroiditis",
+      "Tirotoksikosis",
+      "Hipoglikemia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Karbimazol tab 5mg (obat anti tiroid) + Propranolol tab 10mg untuk nadi >90x/menit, rujuk Sp.PD",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Levotiroksin untuk menggantikan hormon tiroid",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup observasi tanpa obat anti tiroid meski nadi >90x/menit",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk Sp.PD, lama pengobatan 1,5-2 tahun, obat harus rutin tanpa terputus",
+      "benar": true
+    },
+    {
+      "opsi": "Waspadai komplikasi badai tiroid berupa peningkatan TD, suhu, dan detak jantung ekstrem",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh berhenti obat begitu gejala berkurang sedikit",
+      "benar": false
+    },
+    {
+      "opsi": "Penyakit ini tidak memerlukan pemantauan jangka panjang",
+      "benar": false
+    }
+  ]
+}

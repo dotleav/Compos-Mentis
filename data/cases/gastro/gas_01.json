@@ -1,0 +1,134 @@
+{
+  "id": "gas_01",
+  "kategori": "gastro",
+  "level": "3B",
+  "identitas": "Mas Ali, 20 tahun, tinggal di Klitren",
+  "keluhanUtama": "Datang ke UGD dengan keluhan nyeri perut kanan bawah sejak 6 jam yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri perut kanan bawah sejak 6 jam yang lalu",
+        "Nyeri seperti diremas, awalnya di sekitar pusar lalu berpindah ke perut kanan bawah",
+        "Nyeri terus menerus, membaik jika berbaring",
+        "Nyeri makin parah saat berjalan dan batuk",
+        "Sempat demam tidak tinggi, belum diberi obat",
+        "Muntah 2 kali",
+        "VAS 8/10"
+      ],
+      "rpd": "Belum pernah sakit seperti ini sebelumnya, riwayat maag (+)",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa, DM/kanker/hipertensi (-)",
+      "lifestyle": [
+        "Merokok 1-2 batang/hari",
+        "Olahraga 2x/minggu",
+        "Suka makanan pedas, kurang suka sayur",
+        "BAB terakhir 2 hari lalu"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU/Kesadaran",
+        "temuan": "Tampak lemah kesakitan, CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 130/80 mmHg, HR 90x/menit, RR 20x/menit, Suhu 38°C",
+        "signifikan": true
+      },
+      {
+        "id": "mata_bibir",
+        "kelompok": "survei_sekunder",
+        "nama": "Mata & Bibir",
+        "temuan": "Ikterik (-), anemis (-), sianosis (-)",
+        "signifikan": false
+      },
+      {
+        "id": "abdomen_inspeksi",
+        "kelompok": "khas",
+        "nama": "Abdomen - Inspeksi/Auskultasi/Perkusi",
+        "temuan": "Dalam batas normal, bising usus 10x/menit, tidak ada nyeri ketok kostovertebra",
+        "signifikan": false
+      },
+      {
+        "id": "abdomen_palpasi",
+        "kelompok": "khas",
+        "nama": "Abdomen - Palpasi",
+        "temuan": "Nyeri tekan di iliaca dextra, rebound tenderness (+) di titik McBurney, Rovsing sign (+), Obturator sign (+), Psoas sign (-), hepar dan lien tidak teraba",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukositosis dengan neutrofilia, eosinofil turun",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "usg_abdomen",
+        "nama": "USG Abdomen",
+        "temuan": "Penebalan dinding dan distensi lumen appendix, organ lain (hepar, lien, ginjal, VU) normal tanpa batu/massa",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Appendisitis Akut",
+    "differensialBenar": [
+      "Peritonitis",
+      "ISK",
+      "Urolithiasis",
+      "Kehamilan Ektopik Terganggu"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Pasang IVFD Ringer Laktat, puasakan, rujuk Sp.B untuk apendektomi cito",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan analgetik kuat dahulu sebelum konsul Sp.B agar pasien nyaman",
+      "benar": false
+    },
+    {
+      "opsi": "Berikan antibiotik oral dan pulangkan dengan kontrol rawat jalan",
+      "benar": false
+    },
+    {
+      "opsi": "Observasi 3 hari di rumah tanpa rujukan bila nyeri belum terlalu berat",
+      "benar": false
+    },
+    {
+      "opsi": "Berikan obat pencahar untuk mengatasi konstipasi yang dicurigai",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Perlu rawat inap dan operasi (apendektomi) segera untuk mencegah perforasi/peritonitis",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh ditunda operasinya asal minum antinyeri rutin",
+      "benar": false
+    },
+    {
+      "opsi": "Penyakit ini tidak berbahaya dan akan sembuh sendiri",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup rawat jalan dengan antibiotik oral",
+      "benar": false
+    }
+  ]
+}

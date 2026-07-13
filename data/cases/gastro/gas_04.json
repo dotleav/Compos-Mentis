@@ -1,0 +1,116 @@
+{
+  "id": "gas_04",
+  "kategori": "gastro",
+  "level": "4",
+  "identitas": "Bambang, 45 tahun, pegawai bank",
+  "keluhanUtama": "Datang ke poli dengan keluhan BAB berdarah sejak 1 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sulit BAB, harus mengejan, konsistensi normal",
+        "Ada benjolan saat mengejan yang masuk sendiri setelahnya"
+      ],
+      "rpd": "Pertama kali mengalami keluhan seperti ini, tidak ada alergi atau riwayat rawat inap",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Duduk 8-10 jam/hari untuk bekerja",
+        "Jarang makan sayur dan buah",
+        "Jarang minum air putih"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU/Kesadaran",
+        "temuan": "CM, sakit sedang",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, HR 80x/menit, RR 16x/menit, Suhu 36,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "pemeriksaan",
+        "nama": "Abdomen",
+        "temuan": "Dalam batas normal, bising usus 12x/menit",
+        "signifikan": false
+      },
+      {
+        "id": "inspeksi_anus",
+        "kelompok": "khas",
+        "nama": "Inspeksi Anus",
+        "temuan": "Sebelum mengejan tidak ada benjolan, saat mengejan tampak benjolan yang masuk sendiri setelahnya",
+        "signifikan": true
+      },
+      {
+        "id": "rectal_touche",
+        "kelompok": "khas",
+        "nama": "Rectal Touche",
+        "temuan": "Tonus sfingter ani baik, mukosa recti licin, benjolan arah jam 6 ukuran 1x1cm batas tegas lunak tidak nyeri, prostat tidak membesar, tidak ada darah pada sarung tangan",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Dalam batas normal",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Hemoroid Interna Grade II",
+    "differensialBenar": [
+      "Polip Rektal",
+      "Chron's Disease",
+      "Hemoroid Eksterna"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Bisacodyl tab 5 mg (pelunak BAB) + Ibuprofen tab 400 mg p.r.n",
+      "benar": true
+    },
+    {
+      "opsi": "Langsung rujuk untuk hemoroidektomi tanpa terapi konservatif dahulu",
+      "benar": false
+    },
+    {
+      "opsi": "Berikan antibiotik spektrum luas rutin",
+      "benar": false
+    },
+    {
+      "opsi": "Sarankan puasa total beberapa hari",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Tingkatkan asupan serat, minum air putih 6-8 gelas/hari, kurangi duduk lama, hindari mengejan berlebihan",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menahan BAB bila sedang sibuk kerja",
+      "benar": false
+    },
+    {
+      "opsi": "Grade tidak akan bertambah berat apapun kebiasaannya",
+      "benar": false
+    },
+    {
+      "opsi": "Jika grade bertambah, tetap tidak perlu tindakan medis",
+      "benar": false
+    }
+  ]
+}

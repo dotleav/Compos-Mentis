@@ -1,0 +1,92 @@
+{
+  "id": "gen_06",
+  "kategori": "genitourinaria",
+  "level": "4",
+  "identitas": "Budi, 21 tahun, baru lulus kuliah",
+  "keluhanUtama": "Datang ke poli dengan keluhan keluar nanah dari kelamin sejak 4 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Tidak ada darah pada discharge",
+        "BAK sedikit dan nyeri",
+        "Urine berwarna putih kekuningan",
+        "Sudah konsumsi obat (supratetra), tidak membaik"
+      ],
+      "rpd": "Tidak ada riwayat penyakit, obat, atau trauma sebelumnya",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Riwayat hubungan seksual 5 hari lalu tanpa kondom",
+        "Belum menikah, memiliki pacar baru 2 bulan dan berhubungan aktif"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 180/80 mmHg (perlu evaluasi lebih lanjut), HR 80x/menit, RR 20x/menit",
+        "signifikan": false
+      },
+      {
+        "id": "genital",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Genital Eksterna",
+        "temuan": "Keluar cairan mukopurulen tidak berbau, skrotum dalam batas normal, RT dalam batas normal",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "LED meningkat",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "kultur_gram",
+        "nama": "Kultur Urin & Pengecatan Gram",
+        "temuan": "Ditemukan diplococcus Gram negatif (GO/gonokokus positif)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Urethritis Gonorrhoea Tanpa Komplikasi",
+    "differensialBenar": [
+      "Urethritis Non-Gonorrhoea",
+      "Urolithiasis",
+      "Pielonefritis",
+      "Prostatitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Cefixime tab 100mg dosis tunggal sesuai regimen gonorrhoea",
+      "benar": true
+    },
+    {
+      "opsi": "Ulangi lagi obat tetrasiklin (supratetra) dosis lebih tinggi meski sudah gagal sebelumnya",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup observasi tanpa antibiotik karena discharge bisa membaik sendiri",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Ini infeksi menular seksual, pasangan harus ikut diperiksa, hindari hubungan seksual dulu, terapkan safe sex",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu memeriksakan pasangan karena gejala hanya muncul pada pasien",
+      "benar": false
+    }
+  ]
+}

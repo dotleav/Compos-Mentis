@@ -1,0 +1,129 @@
+{
+  "id": "gas_02",
+  "kategori": "gastro",
+  "level": "4",
+  "identitas": "Mas Ali, 25 tahun, pegawai fotokopi",
+  "keluhanUtama": "Datang ke poli dengan keluhan diare sejak 3 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Diare cair 5-7x/hari, hari ini baru 2x",
+        "Perut melilit",
+        "Demam",
+        "Mual dan muntah 3 kali",
+        "Sudah minum obat diare warung, tidak membaik",
+        "BAK normal"
+      ],
+      "rpd": "Pernah diare sebelumnya tapi tidak sampai 3 hari",
+      "rpk": "Tidak ada gejala serupa di keluarga, DM/hipertensi/kanker/alergi (-)",
+      "lifestyle": [
+        "Suka makan di warung/pinggir jalan",
+        "Jarang cuci tangan sebelum makan",
+        "Tidak ada riwayat bepergian"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU/Kesadaran",
+        "temuan": "Tampak sakit sedang, CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/80 mmHg, HR 76x/menit, RR 20x/menit, Suhu 37,9°C",
+        "signifikan": false
+      },
+      {
+        "id": "mata_bibir",
+        "kelompok": "survei_sekunder",
+        "nama": "Mata & Bibir",
+        "temuan": "Ikterik (-), anemis (-), sianosis (-), bibir tidak kering, lidah tidak kotor",
+        "signifikan": false
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Bising usus meningkat (35x/menit), timpani seluruh lapang perut, nyeri tekan abdomen bawah, hepar/lien tidak teraba",
+        "signifikan": true
+      },
+      {
+        "id": "dehidrasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Status Dehidrasi",
+        "temuan": "Akral hangat, CRT <2 detik, turgor kulit baik, terasa haus ringan",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Dalam batas normal, neutrofil batang sedikit meningkat",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "feses_rutin",
+        "nama": "Pemeriksaan Feses Rutin",
+        "temuan": "Ditemukan leukosit dan eritrosit pada feses, mendukung disentri basiler",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Disentri Basiler Tanpa Dehidrasi",
+    "differensialBenar": [
+      "Disentri Amoeba",
+      "Inflammatory Bowel Disease",
+      "Diare e.c E.coli",
+      "Gastroenteritis",
+      "IBS"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ciprofloxacin tab 500 mg + Domperidon tab 10 mg + Paracetamol tab 500 mg p.r.n",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Loperamide sebagai lini pertama untuk menghentikan diare secepatnya",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Metronidazole tab 500 mg untuk disentri amoeba",
+      "benar": false
+    },
+    {
+      "opsi": "Puasakan total tanpa rehidrasi oral",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Antibiotik dihabiskan, cukupi asupan cairan, jaga kebersihan dan cuci tangan sebelum makan",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh berhenti minum obat begitu diare berkurang",
+      "benar": false
+    },
+    {
+      "opsi": "Hindari makanan keras, pedas, dan asam selama masa penyembuhan",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang bila sudah tidak diare 1 hari",
+      "benar": false
+    }
+  ]
+}

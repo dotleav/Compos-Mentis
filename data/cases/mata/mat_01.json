@@ -1,0 +1,112 @@
+{
+  "id": "mat_01",
+  "kategori": "mata",
+  "level": "3A",
+  "identitas": "Irma, 50 tahun, ibu rumah tangga",
+  "keluhanUtama": "Datang ke poli dengan keluhan penglihatan menurun sejak 2 tahun yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Dimulai dari mata kanan lalu mata kiri",
+        "Awalnya kabur, lama-lama menjadi gelap",
+        "Fotofobia, melihat cahaya seperti pelangi",
+        "Penyempitan lapang pandang perifer, sering menabrak saat berjalan",
+        "Sudah pakai tetes mata insto setiap hari, hanya sedikit berpengaruh"
+      ],
+      "rpd": "Riwayat DM tidak rutin minum obat, riwayat miopia OD -2.00D sudah pakai kacamata",
+      "rpk": "Ibu memiliki riwayat glaukoma dan memakai kacamata, sudah meninggal",
+      "lifestyle": [
+        "Kegiatan sehari-hari bertanam di rumah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/70 mmHg, HR 80x/menit, RR 18x/menit, Suhu 36,3°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "khas",
+        "nama": "Visus",
+        "temuan": "OD 1/60, OS 6/30",
+        "signifikan": true
+      },
+      {
+        "id": "segmen_anterior",
+        "kelompok": "pemeriksaan",
+        "nama": "Segmen Anterior",
+        "temuan": "Konjungtiva tidak hiperemis, kornea jernih, pupil isokor, lensa jernih, COA dalam",
+        "signifikan": false
+      },
+      {
+        "id": "segmen_posterior",
+        "kelompok": "khas",
+        "nama": "Segmen Posterior",
+        "temuan": "Rasio cup-disc >0,3 (melebar), arteri retina dilatasi",
+        "signifikan": true
+      },
+      {
+        "id": "lapang_pandang",
+        "kelompok": "khas",
+        "nama": "Tes Lapang Pandang",
+        "temuan": "OD menyempit, OS normal",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "tonometri",
+        "nama": "Tonometri",
+        "temuan": "OD 24 mmHg (meningkat), OS 16 mmHg (normal 12-22 mmHg)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "funduskopi",
+        "nama": "Funduskopi",
+        "temuan": "Optic disc ratio >0,5",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Glaukoma Kronis Sudut Terbuka",
+    "differensialBenar": [
+      "Retinopati Diabetik",
+      "Hipertensi Okuli",
+      "Katarak"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Timolol 0,5% eyedrop (beta-blocker) + Acetazolamide tab 250mg (diuretik), rujuk Sp.M",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik topikal sebagai terapi utama",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup observasi tanpa terapi penurun TIO",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Turunkan asupan cairan untuk menurunkan TIO, rujuk Sp.Mata, kontrol pola tidur, waspadai efek samping Acetazolamide berupa kesemutan",
+      "benar": true
+    },
+    {
+      "opsi": "Glaukoma yang sudah terjadi kerusakan lapang pandang bisa pulih sepenuhnya",
+      "benar": false
+    }
+  ]
+}

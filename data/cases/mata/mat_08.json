@@ -1,0 +1,89 @@
+{
+  "id": "mat_08",
+  "kategori": "mata",
+  "level": "4A",
+  "identitas": "Sella, 28 tahun, programmer",
+  "keluhanUtama": "Datang ke poli dengan keluhan mata gatal sejak seminggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Rasa seperti terbakar dan berpasir pada mata",
+        "Sering melihat layar komputer dalam waktu lama karena pekerjaan",
+        "Sudah diobati dengan Insto, tidak membaik"
+      ],
+      "rpd": "Tidak ada riwayat alergi",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Tidak ada kebiasaan khusus dilaporkan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 170/80 mmHg (perlu evaluasi lebih lanjut), HR 88x/menit, RR 16x/menit, Suhu 37,1°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "pemeriksaan",
+        "nama": "Visus",
+        "temuan": "OD 6/6, OS 6/6",
+        "signifikan": false
+      },
+      {
+        "id": "segmen_anterior",
+        "kelompok": "pemeriksaan",
+        "nama": "Segmen Anterior",
+        "temuan": "Kornea jernih, tidak ada bitot spot, lensa jernih",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "schirmer",
+        "nama": "Tes Schirmer",
+        "temuan": "7mL (menurun dari nilai normal 15-20mL)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Mata Kering (Dry Eye Syndrome)",
+    "differensialBenar": [
+      "Konjungtivitis Alergi",
+      "Skleritis",
+      "Benda Asing Konjungtiva"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Cendo Lyteers eye drop (air mata buatan), hentikan penggunaan Insto sebelumnya",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik topikal sebagai terapi utama",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Kortikosteroid topikal jangka panjang tanpa indikasi inflamasi",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jangan terlalu lama di depan komputer, istirahatkan mata secara berkala, hentikan tetes mata sebelumnya dan ganti sesuai resep",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh terus pakai Insto bersamaan dengan obat baru",
+      "benar": false
+    }
+  ]
+}

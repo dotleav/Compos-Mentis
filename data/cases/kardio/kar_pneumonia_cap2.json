@@ -1,0 +1,93 @@
+{
+  "id": "kar_pneumonia_cap2",
+  "kategori": "kardio",
+  "level": "4A",
+  "identitas": "Pak Slamet, perokok berat dengan riwayat batuk kronis 2 tahun",
+  "keluhanUtama": "Datang ke UGD dengan keluhan sesak napas mendadak saat bangun tidur pagi ini",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Batuk sejak 2 tahun namun episode ini yang terparah (progresif memburuk)",
+        "Sudah beli obat batuk warung, tidak membaik"
+      ],
+      "rpd": "Batuk kronis 2 tahun, tidak ada alergi atau asma",
+      "rpk": "Tidak ada anggota keluarga dengan gejala serupa",
+      "lifestyle": [
+        "Merokok 1 bungkus/hari",
+        "Lingkungan rumah bersih, ventilasi baik",
+        "Nafsu makan turun"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "mulut",
+        "kelompok": "survei_sekunder",
+        "nama": "Mulut",
+        "temuan": "Pursed lip breathing (+)",
+        "signifikan": true
+      },
+      {
+        "id": "paru",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Paru",
+        "temuan": "Fremitus meningkat di basal paru kiri, perkusi redup di basal paru kiri (lainnya sonor), suara napas bronkial dengan ronki (+) di basal paru kiri",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "foto_thorax",
+        "nama": "Foto Thorax",
+        "temuan": "Diafragma licin, sudut costophrenicus lancip, konsolidasi di basal paru kiri",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "kultur_sputum",
+        "nama": "Kultur Sputum",
+        "temuan": "Streptococcus pneumoniae (+); pemeriksaan BTA negatif",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Pneumonia Komunitas (CAP)",
+    "differensialBenar": [
+      "Tuberkulosis Paru",
+      "Bronkopneumonia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Eritromisin tab 500mg tiap 6 jam (dihabiskan) + Paracetamol untuk demam; nilai skor CURB-65 untuk tentukan perlu rawat inap",
+      "benar": true
+    },
+    {
+      "opsi": "Rawat jalan tanpa mempertimbangkan skor keparahan (CURB-65) meski usia lanjut dan riwayat batuk kronis",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup terapi simptomatik tanpa antibiotik karena kultur baru diketahui belakangan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Bisa menular lewat batuk/bersin/bicara jadi pakai masker, bisa sembuh 1-2 minggu dengan antibiotik teratur dan istirahat cukup, waspada tanda sepsis/distres napas",
+      "benar": true
+    },
+    {
+      "opsi": "Setelah sembuh dijamin tidak akan terkena penyakit ini lagi",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu memakai masker karena tidak menular",
+      "benar": false
+    }
+  ]
+}

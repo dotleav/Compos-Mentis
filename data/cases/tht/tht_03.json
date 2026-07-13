@@ -1,0 +1,101 @@
+{
+  "id": "tht_03",
+  "kategori": "tht",
+  "level": "4A",
+  "identitas": "Satpam yang bekerja shift malam",
+  "keluhanUtama": "Datang ke poli dengan keluhan nyeri telinga kiri sejak 3-4 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Skala nyeri 6, memberat saat shift malam",
+        "Penurunan pendengaran (+)"
+      ],
+      "rpd": "Belum pernah mengalami hal serupa, sering pilek dan hidung tersumbat sebelum nyeri telinga muncul, sudah minum pereda nyeri tidak membaik, ada ISPA",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Bekerja shift malam sebagai satpam"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, Suhu 37,8°C, HR 90x/menit, RR 22x/menit",
+        "signifikan": true
+      },
+      {
+        "id": "palpasi_mastoid",
+        "kelompok": "khas",
+        "nama": "Palpasi Mastoid",
+        "temuan": "Nyeri tekan (+)",
+        "signifikan": true
+      },
+      {
+        "id": "otoskopi",
+        "kelompok": "khas",
+        "nama": "Otoskopi Telinga Kiri",
+        "temuan": "Membran timpani intak, hiperemis, cone of light sulit dinilai, tidak ada bulging",
+        "signifikan": true
+      },
+      {
+        "id": "garpu_tala",
+        "kelompok": "khas",
+        "nama": "Tes Garpu Tala",
+        "temuan": "Rinne kanan positif, kiri negatif; Weber lateralisasi kiri; Schwabach memanjang telinga kiri",
+        "signifikan": true
+      },
+      {
+        "id": "hidung",
+        "kelompok": "khas",
+        "nama": "Rhinoskopi Anterior",
+        "temuan": "Konka hidung hiperemis, sekret purulen",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pada kasus ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "OMA Stadium Hiperemis Auris Sinistra",
+    "differensialBenar": [
+      "Otitis Eksterna Difusa",
+      "Otitis Media Kronik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Amoksisilin tab 500mg + Pseudoefedrin (dekongestan) + Paracetamol (nyeri/demam)",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup dekongestan tanpa antibiotik meski ada tanda infeksi telinga tengah",
+      "benar": false
+    },
+    {
+      "opsi": "Tetes telinga antibiotik topikal saja tanpa terapi sistemik",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jangan mengorek telinga, jangan berenang dulu, jelaskan OMA sebagai komplikasi ISPA akibat tuba eustachius tersumbat",
+      "benar": true
+    },
+    {
+      "opsi": "OMA tidak berhubungan dengan ISPA/pilek sebelumnya",
+      "benar": false
+    }
+  ]
+}

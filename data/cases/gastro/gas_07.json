@@ -1,0 +1,121 @@
+{
+  "id": "gas_07",
+  "kategori": "gastro",
+  "level": "4",
+  "identitas": "Andre, 8 tahun",
+  "keluhanUtama": "Dibawa orang tua ke poli dengan keluhan nyeri perut hilang timbul sejak 6 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri perut hilang timbul di tengah, skala 6-7",
+        "Malaise",
+        "Kunang-kunang/pusing",
+        "Mual dan muntah"
+      ],
+      "rpd": "Belum pernah seperti ini sebelumnya",
+      "rpk": "Dalam batas normal",
+      "lifestyle": [
+        "Jajan langsung dimakan tanpa cuci tangan",
+        "Sering main tanpa alas kaki di tanah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU/Kesadaran",
+        "temuan": "Sedang, CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "HR 96x/menit, RR 16x/menit, Suhu 36,8°C; BB 20kg, TB 120cm",
+        "signifikan": false
+      },
+      {
+        "id": "mata",
+        "kelompok": "survei_sekunder",
+        "nama": "Mata",
+        "temuan": "Konjungtiva anemis",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Nyeri tekan tumpul skor 5 di seluruh regio, hepar dan lien dalam batas normal",
+        "signifikan": true
+      },
+      {
+        "id": "kulit",
+        "kelompok": "survei_sekunder",
+        "nama": "Kulit kaki",
+        "temuan": "Ground itch (-)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Hb 8 g/dL (anemia ringan), leukosit 8000, trombosit 200.000, eosinofil 15% (menandakan infeksi parasit)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "feses",
+        "nama": "Pemeriksaan Feses",
+        "temuan": "Makroskopis kuning konsistensi lembek; mikroskopis ditemukan telur Ascaris (+)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Askariasis",
+    "differensialBenar": [
+      "Trikuriasis",
+      "Taeniasis",
+      "Ankilostomiasis",
+      "Skistosomiasis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Albendazole syr 200mg/5ml + Domperidon syr 5mg/5ml p.r.n untuk mual",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik spektrum luas sebagai lini pertama",
+      "benar": false
+    },
+    {
+      "opsi": "Rujuk bedah untuk laparotomi tanpa terapi obat cacing dahulu",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup edukasi tanpa pemberian obat cacing",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gunakan jamban keluarga, cuci tangan sebelum-sesudah aktivitas, gunakan alas kaki, hindari kontak tanah tercemar tinja",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu cuci tangan bila jajanan sudah dibungkus",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup diobati satu kali seumur hidup tanpa perlu menjaga higiene",
+      "benar": false
+    }
+  ]
+}

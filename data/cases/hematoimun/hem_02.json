@@ -1,0 +1,111 @@
+{
+  "id": "hem_02",
+  "kategori": "hematoimun",
+  "level": "4",
+  "identitas": "Perempuan, tinggal di kos dekat sawah",
+  "keluhanUtama": "Datang ke poli dengan keluhan demam tinggi sejak 5 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Demam terus menerus sepanjang hari, tiba-tiba tinggi",
+        "Mata terasa panas",
+        "Pusing dan mual",
+        "Nyeri di pinggang belakang, memberat saat beraktivitas",
+        "Sudah minum paracetamol, awalnya membaik lalu kambuh lagi",
+        "BAB BAK normal"
+      ],
+      "rpd": "Riwayat tifoid lama",
+      "rpk": "Dalam batas normal",
+      "lifestyle": [
+        "Tinggal di kos dekat sawah",
+        "Teman satu kos ada gejala serupa dan sudah dirawat"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Tampak lemah",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 98x, RR 22x, Suhu 38°C, Rumple Leed (+)",
+        "signifikan": true
+      },
+      {
+        "id": "htt",
+        "kelompok": "survei_sekunder",
+        "nama": "Head to Toe",
+        "temuan": "Konjungtiva normal, sklera tidak ikterik, bibir/lidah normal, tidak ada limfadenopati, akral hangat",
+        "signifikan": false
+      },
+      {
+        "id": "torax_abdomen",
+        "kelompok": "pemeriksaan",
+        "nama": "Thorax & Abdomen",
+        "temuan": "Dalam batas normal, tidak ada asites atau petekie",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Hb 13 g/dL, trombosit 95.000 (turun), Hct 49%, MCV/MCH/MCHC normal",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "serologi_dengue",
+        "nama": "Serologi Dengue",
+        "temuan": "IgM/IgG Anti-Dengue (+); NS1 hanya positif pada hari 1-2 sehingga bisa negatif pada fase ini",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "DHF Stage I",
+    "differensialBenar": [
+      "Malaria",
+      "Demam Tifoid",
+      "Leptospirosis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rawat inap, IVFD Ringer Laktat, simptomatik (Domperidon, Paracetamol), pantau trombosit",
+      "benar": true
+    },
+    {
+      "opsi": "Rawat jalan tanpa pemantauan trombosit karena gejala ringan",
+      "benar": false
+    },
+    {
+      "opsi": "Berikan antibiotik sebagai terapi utama",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rawat inap untuk pemantauan trombosit, waspada tanda dehidrasi dan perdarahan, cukupi cairan dan gizi",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit ini pasti butuh transfusi trombosit segera walau tidak ada perdarahan aktif",
+      "benar": false
+    },
+    {
+      "opsi": "Boleh pulang begitu demam turun satu hari tanpa evaluasi trombosit",
+      "benar": false
+    }
+  ]
+}

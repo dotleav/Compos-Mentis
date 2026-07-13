@@ -1,0 +1,110 @@
+{
+  "id": "gen_02",
+  "kategori": "genitourinaria",
+  "level": "3B",
+  "identitas": "Joko, 35 tahun, security, tinggal di Babarsari",
+  "keluhanUtama": "Datang ke UGD dengan keluhan nyeri pinggang kiri mendadak sejak 1 jam yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri seperti diremas, hilang timbul, menyebar sampai punggung",
+        "Mual muntah, muntah 1 kali",
+        "Sudah minum obat antinyeri, membaik",
+        "BAB BAK normal",
+        "Skala nyeri 7-8"
+      ],
+      "rpd": "Pernah nyeri serupa 1 tahun lalu, mereda dengan banyak minum; kebiasaan sering menahan kencing",
+      "rpk": "Tidak ada riwayat serupa di keluarga, DM/hipertensi (-)",
+      "lifestyle": [
+        "Jam kerja 6 jam",
+        "Jarang minum air putih",
+        "Setiap hari minum kopi dan minuman kaleng",
+        "Jarang olahraga",
+        "Suka minuman bersoda dan cemilan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, tampak kesakitan",
+        "signifikan": true
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 130/90 mmHg, HR 92x/menit, RR 18x/menit, Suhu 36,7°C",
+        "signifikan": false
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Nyeri ketok kostovertebra sinistra (+), nyeri palpasi suprapubik (-), ballotement (+)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Dalam batas normal",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "urinalisis",
+        "nama": "Urinalisis",
+        "temuan": "Kristal (+++), mikroorganisme (+), leukosit esterase (+), nitrit (+), hematuria (-)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "bno_ivp",
+        "nama": "BNO IVP",
+        "temuan": "Tampak batu radiopak setinggi VL3 sinistra ukuran 0,5x0,5 cm, fungsi ginjal normal",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Ureterolithiasis Sinistra (BSK Ureter)",
+    "differensialBenar": [
+      "Urolithiasis",
+      "ISK",
+      "Kolik Renal",
+      "Pielonefritis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rujuk Sp.U untuk evaluasi ukuran batu, R/ Asam Mefenamat (analgesik yang lebih aman untuk ginjal) + Domperidon untuk mual",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Na Diklofenak dosis tinggi jangka panjang sebagai pilihan utama tanpa mempertimbangkan fungsi ginjal",
+      "benar": false
+    },
+    {
+      "opsi": "Lakukan pemeriksaan genitalia eksterna dan rectal touche rutin meski tidak ada keluhan berkemih",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kurangi minuman bersoda/teh/kopi, perbanyak air putih minimal 2L/hari, kurangi protein hewani dan makanan tinggi kalsium, kontrol ke Sp.U",
+      "benar": true
+    },
+    {
+      "opsi": "Batu saluran kemih tidak ada hubungannya dengan pola minum atau kebiasaan menahan kencing",
+      "benar": false
+    }
+  ]
+}

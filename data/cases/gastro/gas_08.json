@@ -1,0 +1,114 @@
+{
+  "id": "gas_08",
+  "kategori": "gastro",
+  "level": "4",
+  "identitas": "Tari, 25 tahun",
+  "keluhanUtama": "Datang ke poli dengan keluhan diare berdarah dan berlendir sejak 5 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Diare persisten frekuensi 3-5x/hari",
+        "Diare disertai darah dan lendir",
+        "Mual terus menerus, muntah 3 hari terakhir",
+        "Perut nyeri melilit seperti kebelet BAB, VAS 6-7",
+        "Suhu badan agak hangat"
+      ],
+      "rpd": "Biasa diare tapi tidak pernah separah ini",
+      "rpk": "Tidak ada riwayat serupa di keluarga",
+      "lifestyle": [
+        "Makan di luar (jajan) 3x sehari",
+        "Kadang tidak cuci tangan sebelum makan",
+        "Tinggal di kos, tidak ada yang mengalami gejala serupa"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU/Kesadaran",
+        "temuan": "CM, kesakitan sedang",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/80 mmHg, HR 84x/menit, RR 14x/menit, Suhu 38,2°C",
+        "signifikan": false
+      },
+      {
+        "id": "head_neck",
+        "kelompok": "survei_sekunder",
+        "nama": "Head & Neck",
+        "temuan": "Anemis (-), mata cowong (-), sianosis (-), lidah tidak kotor",
+        "signifikan": false
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Bising usus meningkat (32x/menit), hepar 7cm, nyeri tekan abdomen bawah, lien tidak teraba",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukositosis",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "feses",
+        "nama": "Pemeriksaan Feses",
+        "temuan": "Makroskopis kuning lembek, darah (+2), lendir (+); mikroskopis telur cacing (-), trofozoit (+)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Disentri Amoeba",
+    "differensialBenar": [
+      "Disentri Basiler",
+      "Demam Tifoid"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Metronidazole tab 500 mg (dihabiskan) + Domperidon + Paracetamol p.r.n + Oralit",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Ciprofloxacin sebagai lini pertama disentri amoeba",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup rehidrasi oral tanpa antibiotik/antiparasit",
+      "benar": false
+    },
+    {
+      "opsi": "Puasakan total selama masa pengobatan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Cuci tangan sebelum makan, diet lunak, hindari makanan cepat saji dan minuman bersoda",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh berhenti obat begitu darah pada feses hilang meski belum habis",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu menjaga kebersihan makanan karena penyebabnya bukan dari makanan",
+      "benar": false
+    }
+  ]
+}

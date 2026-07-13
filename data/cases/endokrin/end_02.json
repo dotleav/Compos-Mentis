@@ -1,0 +1,111 @@
+{
+  "id": "end_02",
+  "kategori": "endokrin",
+  "level": "4",
+  "identitas": "Budi, 40 tahun, karyawan kantor, tinggal di Bantul",
+  "keluhanUtama": "Datang ke poli dengan keluhan pusing di tengkuk sejak 1 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sakit kepala dan tengkuk, skala nyeri 2",
+        "Pusing berputar, hilang timbul",
+        "Sudah minum obat warung",
+        "Sekarang tidak nyeri tapi berat di tengkuk"
+      ],
+      "rpd": "Tidak ada riwayat khusus",
+      "rpk": "Ayah hipertensi, ibu DM",
+      "lifestyle": [
+        "Merokok lebih dari 1 bungkus/hari sejak 25 tahun",
+        "Kerja di depan komputer",
+        "Olahraga minimal",
+        "Suka makan kambing dan gorengan porsi banyak"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Sedang",
+        "signifikan": false
+      },
+      {
+        "id": "status_gizi",
+        "kelompok": "vital",
+        "nama": "Status Gizi",
+        "temuan": "BB 75kg, TB 165cm, lingkar pinggang 85cm, IMT 27,5 (Obesitas I)",
+        "signifikan": true
+      },
+      {
+        "id": "htt",
+        "kelompok": "pemeriksaan",
+        "nama": "Head to Toe",
+        "temuan": "Dalam batas normal",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Dalam batas normal",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "profil_lipid",
+        "nama": "Profil Lipid",
+        "temuan": "Total 420 mg/dL, HDL 32 mg/dL, LDL 356 mg/dL, Trigliserida 300 mg/dL",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "gula_darah",
+        "nama": "Gula Darah",
+        "temuan": "GDS 140 mg/dL",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Dislipidemia",
+    "differensialBenar": [
+      "Sindrom Metabolik",
+      "Diabetes Melitus",
+      "Hipertensi"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Simvastatin tab 10 mg No. XXX S.1.d.d tab I h.s",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Metformin sebagai lini pertama meski gula darah normal",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu farmakoterapi, cukup observasi tanpa target waktu",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Ubah gaya hidup, kurangi makan kambing dan gorengan, olahraga rutin untuk turunkan BB",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh tetap makan tinggi lemak asal rajin minum obat",
+      "benar": false
+    },
+    {
+      "opsi": "Statin tidak perlu diminum rutin, cukup saat gejala muncul",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "end_03",
+  "kategori": "endokrin",
+  "level": "4",
+  "identitas": "Resti, 40 tahun, pemilik warung makan",
+  "keluhanUtama": "Datang ke poli dengan keluhan sering kencing sejak 3 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Frekuensi BAK >8x/hari",
+        "Minum meningkat dari 6 gelas menjadi 18 gelas/hari, cepat haus",
+        "Mudah lelah dan mengantuk",
+        "Kaki kesemutan dan kebas",
+        "Tidak ada pandangan kabur atau gatal",
+        "BB turun 3kg dalam 1 bulan"
+      ],
+      "rpd": "Tidak pernah sebelumnya, tidak ada alergi, tidak ada pengobatan rutin",
+      "rpk": "Ayah hipertensi dan obesitas, ibu DM",
+      "lifestyle": [
+        "Merokok 3 bungkus/hari",
+        "Porsi makan dominan nasi, kurang suka sayur",
+        "Suka fast food, gorengan, jeroan",
+        "Jarang olahraga"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Compos mentis",
+        "signifikan": false
+      },
+      {
+        "id": "status_gizi",
+        "kelompok": "vital",
+        "nama": "Status Gizi",
+        "temuan": "BB 88kg, TB 165cm, IMT 32,32, lingkar pinggang 90cm",
+        "signifikan": true
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 80x/menit, RR 16x/menit, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "oftalmoskopi",
+        "kelompok": "khas",
+        "nama": "Oftalmoskopi",
+        "temuan": "Normal, tidak ada tanda retinopati diabetikum",
+        "signifikan": false
+      },
+      {
+        "id": "ekstremitas",
+        "kelompok": "khas",
+        "nama": "Ekstremitas",
+        "temuan": "Akral hangat, CRT normal, kekuatan otot kuat, tidak ada edema/luka, arteri dorsalis pedis teraba, sensibilitas normal",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "gula_darah",
+        "nama": "Gula Darah",
+        "temuan": "GDS 272 mg/dL, GDP 162 mg/dL, GD2PP 273 mg/dL, HbA1c 7,5%",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "profil_lipid",
+        "nama": "Profil Lipid",
+        "temuan": "Dalam batas normal",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Diabetes Melitus Tipe 2",
+    "differensialBenar": [
+      "Hiperglikemia",
+      "Diabetes Insipidus"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Metformin tab 500mg No. XC S.3.d.d tab I d.c, obat tunggal untuk kontrol pertama kali",
+      "benar": true
+    },
+    {
+      "opsi": "Langsung berikan kombinasi insulin rapid-acting sejak kontrol pertama",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Glimepiride diberikan 3x sehari",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga pola makan, kurangi gula dan karbohidrat sederhana, olahraga 3-5x/minggu 30 menit, obat teratur sesuai resep",
+      "benar": true
+    },
+    {
+      "opsi": "Lindungi kaki dari luka dan kontrol rutin minimal 3 bulan sekali",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menyesuaikan dosis obat sendiri tanpa konsultasi dokter",
+      "benar": false
+    },
+    {
+      "opsi": "Penyakit ini bisa sembuh total dalam beberapa bulan",
+      "benar": false
+    }
+  ]
+}

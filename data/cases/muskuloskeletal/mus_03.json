@@ -1,0 +1,112 @@
+{
+  "id": "mus_03",
+  "kategori": "muskuloskeletal",
+  "level": "3A",
+  "identitas": "Wanto, 55 tahun, pensiunan pedagang, tinggal di Condong Catur",
+  "keluhanUtama": "Datang ke poli dengan keluhan nyeri kaki kanan sejak 6 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri di lutut, hilang timbul, makin lama makin parah, skala 6-7",
+        "Memberat saat perubahan posisi duduk ke berdiri",
+        "Sudah minum jamu 2 bulan, tidak ada pengaruh",
+        "Jari tangan kanan juga sering bengkak dan nyeri kambuhan skala <5"
+      ],
+      "rpd": "Dulu saat masih berdagang pernah merasakan hal serupa, dikira kecapekan",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Jarang olahraga",
+        "BB berlebih (BB 80kg, TB 155cm)",
+        "Aktivitas membantu istri berdagang dan bersih rumah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 130/70 mmHg, Nadi 64x/menit, RR 16x/menit, Suhu 36°C",
+        "signifikan": false
+      },
+      {
+        "id": "look",
+        "kelompok": "pemeriksaan",
+        "nama": "Look Regio Genu",
+        "temuan": "Tidak bengkak, tidak memar, tidak hiperemis, tidak deformitas",
+        "signifikan": false
+      },
+      {
+        "id": "feel",
+        "kelompok": "khas",
+        "nama": "Feel Regio Genu",
+        "temuan": "Suhu normal, krepitasi (+) bilateral",
+        "signifikan": true
+      },
+      {
+        "id": "move",
+        "kelompok": "khas",
+        "nama": "Move",
+        "temuan": "ROM aktif menurun bilateral, ROM pasif normal bilateral",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "rf",
+        "nama": "Rheumatoid Factor",
+        "temuan": "Negatif",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "asam_urat",
+        "nama": "Asam Urat",
+        "temuan": "4 mg/dL (normal)",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "xray",
+        "nama": "X-Ray Genu",
+        "temuan": "Celah sendi menyempit, terdapat osteofit",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Osteoarthritis",
+    "differensialBenar": [
+      "Rheumatoid Arthritis",
+      "Gout Arthritis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Natrium Diklofenak tab 50mg p.r.n untuk nyeri, rujuk Sp.OT",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Kolkisin sebagai terapi utama osteoarthritis",
+      "benar": false
+    },
+    {
+      "opsi": "Sarankan operasi penggantian sendi segera tanpa terapi konservatif dahulu",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gunakan pelindung lutut, olahraga rendah dampak (berenang), turunkan BB, jelaskan OA adalah proses degeneratif yang tidak bisa sembuh total namun nyeri bisa berkurang, rujuk Sp.OT",
+      "benar": true
+    },
+    {
+      "opsi": "OA bisa sembuh total dengan jamu rutin",
+      "benar": false
+    }
+  ]
+}

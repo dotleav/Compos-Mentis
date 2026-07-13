@@ -1,0 +1,113 @@
+{
+  "id": "gen_01",
+  "kategori": "genitourinaria",
+  "level": "4",
+  "identitas": "Bobi, 30 tahun, resepsionis",
+  "keluhanUtama": "Datang ke poli dengan keluhan sering BAK sedikit-sedikit dan nyeri sejak 2 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri perut bawah hilang timbul, tidak menjalar",
+        "Terasa panas di perut bawah",
+        "Nyeri berkurang setelah selesai BAK",
+        "Demam 2 hari",
+        "Kencing sedikit-sedikit, tidak tuntas",
+        "Sering menahan kencing",
+        "VAS 5"
+      ],
+      "rpd": "Pernah mengalami keluhan sama 1 bulan lalu, membaik dengan minum air putih banyak",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Pekerjaan sedang banyak pengunjung sehingga sering menahan kencing",
+        "Jarang minum air agar tidak sering kencing",
+        "Makan teratur"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/70 mmHg, HR 99x/menit, RR 16x/menit, Suhu 36,7°C",
+        "signifikan": false
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Nyeri tekan suprapubik (+), nyeri ketok kostovertebra (-), ballotement (-) - menyingkirkan pielonefritis",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "urinalisis",
+        "nama": "Urinalisis",
+        "temuan": "Protein +++, nitrit ++, leukosit esterase ++, leukosit 6/LPB, mikroorganisme +++",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "kultur_urin",
+        "nama": "Kultur Urin",
+        "temuan": "E. coli 250.000/mL",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Hb 12, leukosit 12.000, neutrofil 80%",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "ISK - Sistitis",
+    "differensialBenar": [
+      "Urethritis",
+      "Batu Saluran Kemih",
+      "Pielonefritis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ciprofloxacin tab 500mg tiap 12 jam (dihabiskan) + Paracetamol untuk demam",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup minum air putih tanpa antibiotik meski kultur urin menunjukkan bakteriuria signifikan",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Antibiotik dosis tunggal tanpa perlu dihabiskan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Minum air putih banyak, jangan tahan kencing, jaga kebersihan genital, antibiotik dihabiskan, kontrol 5 hari lagi",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menahan kencing asal minum antibiotik",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah gejala mereda",
+      "benar": false
+    }
+  ]
+}

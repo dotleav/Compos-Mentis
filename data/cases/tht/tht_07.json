@@ -1,0 +1,88 @@
+{
+  "id": "tht_07",
+  "kategori": "tht",
+  "level": "4A",
+  "identitas": "Mahasiswa yang tinggal di kos lembab",
+  "keluhanUtama": "Datang ke poli dengan keluhan bersin-bersin sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Pencetus setelah bersih-bersih kos berdebu",
+        "Memberat saat bangun tidur, pagi hari, dan cuaca dingin"
+      ],
+      "rpd": "Pernah mengalami hal serupa, diberi obat lalu sembuh sendiri, alergi dingin dan debu",
+      "rpk": "Dalam batas normal",
+      "lifestyle": [
+        "Kos terletak di gang, lembab"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "telinga",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Telinga",
+        "temuan": "Tidak ada kelainan, gendang telinga normal",
+        "signifikan": false
+      },
+      {
+        "id": "hidung",
+        "kelompok": "khas",
+        "nama": "Rhinoskopi Anterior",
+        "temuan": "Edema mukosa, konka tampak pucat, sekret bening sedang, tidak ada deviasi septum",
+        "signifikan": true
+      },
+      {
+        "id": "mulut_tenggorokan",
+        "kelompok": "pemeriksaan",
+        "nama": "Mulut & Tenggorokan",
+        "temuan": "Tidak ada luka mukosa atau pembesaran tonsil",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pada kasus ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Rhinitis Alergi",
+    "differensialBenar": [
+      "Rhinitis Akut",
+      "Rhinitis Vasomotor",
+      "Rhinosinusitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Cetirizine tab 10mg + Pseudoefedrin tab 30mg + Budesonide nasal spray",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik oral sebagai lini pertama rhinitis alergi",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Dekongestan nasal spray topikal jangka panjang tanpa batas waktu",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Pakai masker saat membersihkan kamar, jaga suhu ruangan stabil, minum obat rutin, perbaiki ventilasi kamar agar tidak lembab",
+      "benar": true
+    },
+    {
+      "opsi": "Dekongestan nasal spray boleh digunakan terus menerus tanpa batas waktu",
+      "benar": false
+    }
+  ]
+}

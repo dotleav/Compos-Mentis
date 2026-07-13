@@ -1,0 +1,98 @@
+{
+  "id": "gen_07",
+  "kategori": "genitourinaria",
+  "level": "4",
+  "identitas": "Toni, 20 tahun, mahasiswa",
+  "keluhanUtama": "Datang ke poli dengan keluhan anyang-anyangan sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Saat mau pipis terdapat cairan kering kekuningan",
+        "Hesitansi berkemih",
+        "Kencing berwarna keruh",
+        "Perut bagian bawah tidak nyaman",
+        "Sudah diberi obat supratetra, anyang-anyangan berkurang"
+      ],
+      "rpd": "Tidak ada riwayat khusus",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Cukup minum air",
+        "Riwayat hubungan seksual 3 minggu lalu dengan PSK tanpa pengaman"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, sakit sedang, gizi cukup",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, HR 80x/menit, RR 20x/menit, Suhu 37°C",
+        "signifikan": false
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "pemeriksaan",
+        "nama": "Abdomen",
+        "temuan": "Nyeri tekan suprapubik (+), nyeri ketok kostovertebra (-)",
+        "signifikan": true
+      },
+      {
+        "id": "genital",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Genitalia",
+        "temuan": "Discharge seromukous di area OUE, bulging dan eritem di sekitar OUE dan testis, nyeri tekan limfonodi inguinal dan testis (+)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "mikroskopis",
+        "nama": "Mikroskopis Duh Uretra",
+        "temuan": "Leukosit PMN >5/lapang pandang, tidak ditemukan diplococcus Gram negatif",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Urethritis Non-Gonorrhoea Tanpa Komplikasi",
+    "differensialBenar": [
+      "Urethritis Gonorrhoea",
+      "Sistitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Azitromisin tab 250mg dosis sesuai regimen non-gonokokus",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cefixime sebagai lini pertama urethritis non-gonokokus",
+      "benar": false
+    },
+    {
+      "opsi": "Lanjutkan obat supratetra dosis tinggi tanpa ganti regimen",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Tidak berhubungan seksual dan tidak masturbasi selama pengobatan, gunakan kondom, ajak pasangan kontrol, kontrol lagi 7 hari",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh berhubungan seksual lagi begitu gejala berkurang meski belum genap 7 hari",
+      "benar": false
+    }
+  ]
+}

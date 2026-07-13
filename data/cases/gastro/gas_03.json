@@ -1,0 +1,117 @@
+{
+  "id": "gas_03",
+  "kategori": "gastro",
+  "level": "4",
+  "identitas": "Raka, 25 tahun, tinggal di Jl. Kabupaten",
+  "keluhanUtama": "Datang ke poli dengan keluhan demam sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Demam naik turun, lebih parah di sore hari hingga menggigil",
+        "4 hari lalu minum obat flu (Procold) tidak membaik",
+        "Nyeri di seluruh perut, mual",
+        "Diare 3-4x/hari, konsistensi tidak diperhatikan",
+        "Diare belum diobati"
+      ],
+      "rpd": "Tidak pernah rawat inap, tidak konsumsi obat rutin, tidak ada alergi",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa, hipertensi/DM/kanker (-)",
+      "lifestyle": [
+        "Suka beli makan di warung, kebersihan tidak dipastikan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU/Kesadaran",
+        "temuan": "Tampak sakit sedang, CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, HR 78x/menit, RR 22x/menit, Suhu 38,9°C dengan bradikardia relatif (khas demam tifoid)",
+        "signifikan": true
+      },
+      {
+        "id": "mulut",
+        "kelompok": "survei_sekunder",
+        "nama": "Mata & Mulut",
+        "temuan": "Ikterik (-), anemis (-), lidah kotor (coated tongue) (+)",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Rose spot di perut, bising usus meningkat, hepatomegali 16 cm, splenomegali di Schuffner 2, nyeri epigastrik, rebound tenderness (-)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukopenia dengan neutrofil meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "widal",
+        "nama": "Widal Test",
+        "temuan": "Titer Salmonella typhi O 1/320 (+)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Demam Tifoid",
+    "differensialBenar": [
+      "Demam Dengue",
+      "Malaria",
+      "Hepatitis A"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ciprofloxacin tab 500 mg + Domperidon tab 10 mg + Paracetamol tab 500 mg p.r.n",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antipiretik saja tanpa antibiotik karena diduga infeksi virus",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Amoxicillin dosis tunggal cukup 1 hari",
+      "benar": false
+    },
+    {
+      "opsi": "Rawat inap ICU segera tanpa indikasi tanda bahaya",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Bed rest, makan makanan lunak tinggi protein, antibiotik dihabiskan, kontrol kembali",
+      "benar": true
+    },
+    {
+      "opsi": "Gunakan alat makan sendiri karena penularan bisa lewat alat makan",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh langsung beraktivitas berat begitu demam turun satu hari",
+      "benar": false
+    },
+    {
+      "opsi": "Penyakit ini tidak menular ke orang lain",
+      "benar": false
+    }
+  ]
+}

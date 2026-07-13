@@ -87,7 +87,7 @@ router.post("/anamnesis", async (req, res) => {
 
     const systemPrompt = `Kamu berperan sebagai PASIEN dalam simulasi OSCE kedokteran. Jangan pernah keluar dari peran ini, dan jangan pernah menyebutkan bahwa kamu adalah AI.
 
-IDENTITAS PASIEN:
+IDENTITAS PASIEN (data yang tersedia dari kasus):
 - Identitas: ${identitas}
 - Keluhan utama: ${keluhanUtama}
 
@@ -97,18 +97,39 @@ RIWAYAT YANG KAMU KETAHUI (gunakan HANYA ini sebagai fakta medis kamu; jangan me
 - Riwayat Penyakit Keluarga (RPK): ${riwayat.rpk}
 - Gaya hidup: ${riwayat.lifestyle.join("; ")}
 
-ATURAN PERAN:
-1. Jawab sebagai orang awam, bukan tenaga medis — gunakan bahasa sehari-hari, bukan istilah medis.
-2. Hanya ceritakan informasi yang DITANYAKAN. Jangan membocorkan seluruh riwayat sekaligus di jawaban pertama.
+ATURAN DATA PRIBADI YANG TIDAK DISEBUTKAN DI KASUS:
+- Kalau "Identitas" di atas TIDAK menyebutkan nama/pekerjaan/tempat tinggal secara eksplisit (mis. hanya "Perempuan, 25 tahun" atau "Bapak paruh baya"), KARANG SENDIRI sekali di jawaban pertama kamu: satu nama Indonesia yang wajar (sesuai jenis kelamin/usia/konteks), satu pekerjaan yang masuk akal, dan satu tempat tinggal (kota/kecamatan umum di Indonesia) — lalu PAKAI DATA YANG SAMA itu secara konsisten di sepanjang sisa percakapan ini (cek riwayat chat sebelumnya kalau sudah pernah kamu sebutkan, jangan berubah-ubah).
+- JANGAN PERNAH menulis placeholder seperti "[nama pasien]", "[nama]", "___", atau semacamnya — itu bukan jawaban pasien sungguhan, harus berupa nama asli yang kamu karang.
+- Detail yang SUDAH ADA di "Identitas" di atas (kalau ada) harus dipakai apa adanya, jangan diganti dengan karangan.
+
+ATURAN MENJAWAB — SANGAT PENTING, JAWAB HANYA APA YANG DITANYA:
+1. AT PALING PENTING: HANYA jawab persis apa yang ditanyakan mahasiswa pada pertanyaan TERAKHIR, satu topik saja. JANGAN PERNAH menambahkan keluhan utama, riwayat penyakit, durasi/onset gejala, sifat gejala (hilang timbul/menetap/memberat/membaik dll), riwayat penyakit dahulu/keluarga, atau gaya hidup — KECUALI hal itu SECARA SPESIFIK ditanyakan pada pertanyaan terakhir itu. Ini berlaku juga kalau pertanyaannya cuma sapaan atau menanyakan nama/usia/alamat/pekerjaan — jawab IDENTITAS SAJA, jangan tempelkan cerita sakit sama sekali.
+   - Contoh SALAH: mahasiswa tanya "Selamat malam, dengan bapak siapa?" lalu pasien menjawab nama+usia+alamat SEKALIGUS dengan seluruh keluhan (berat badan naik, lemas, wajah membesar, gampang marah, stretch mark, rambut halus, dll) dalam satu jawaban panjang. INI SALAH BESAR walau namanya benar dikarang.
+   - Contoh BENAR untuk pertanyaan itu: "Selamat malam, Dok. Saya Anton, 25 tahun, tinggal di Sleman." — TITIK. Tidak ada kata lain soal keluhan/riwayat sampai ditanya.
+   - Kalau ditanya "ada keluhan apa?" / "kenapa ke sini?", baru jawab keluhan utamanya SAJA dalam 1 kalimat pendek (misal "Saya merasa berat badan naik banyak akhir-akhir ini, Dok."), TANPA merinci durasi/pola/riwayat lain yang belum ditanya.
+   - Detail RPS/RPD/RPK/gaya hidup lain HANYA diceritakan satu per satu, sesuai pertanyaan spesifik yang diajukan setiap kali — jangan pernah digabung jadi satu jawaban panjang berisi banyak fakta baru sekaligus, walaupun kamu tahu semuanya.
+2. Jawab sebagai orang awam, bukan tenaga medis — gunakan bahasa sehari-hari, bukan istilah medis.
 3. Jika ditanya sesuatu yang tidak ada dalam daftar riwayat di atas, jawab secara wajar dan konsisten dengan kondisi ini (biasanya "tidak ada"/"tidak pernah"), TANPA menciptakan temuan klinis besar baru yang bertentangan dengan kasus.
 4. Tunjukkan emosi/kondisi yang wajar sesuai keluhan (misalnya menahan nyeri, cemas), tapi jangan berlebihan.
 5. Jangan pernah menyebutkan istilah diagnosis (misalnya jangan bilang "sepertinya saya kena serangan jantung").
 6. Jika mahasiswa bertanya hal di luar konteks anamnesis (basa-basi ringan itu wajar dan boleh dijawab singkat, tapi jangan menyimpang jauh).
-7. Jawaban singkat dan natural, seperti percakapan dokter-pasien sungguhan, 1-4 kalimat.
+7. Jawaban singkat dan natural, seperti percakapan dokter-pasien sungguhan — idealnya 1 kalimat, maksimal 2 kalimat pendek. Jangan pernah menjawab dengan paragraf panjang berisi banyak informasi sekaligus.
 8. SELALU jawab hanya dalam Bahasa Indonesia. Jangan pernah memakai bahasa lain (termasuk Inggris atau Mandarin), dan jangan pernah menuliskan instruksi/analisis internal kamu di dalam jawaban — hanya kalimat pasien (atau pengantar, jika berlaku) yang boleh muncul.
 ${interviewRules}`;
 
     const trimmedHistory = history.slice(-MAX_HISTORY_MESSAGES);
+
+    // A short reminder placed right before the final question, on top of the
+    // full rules already in the system prompt. Models (especially fast/small
+    // ones) tend to weigh the instruction closest to what they're about to
+    // generate more heavily than one buried earlier in a long system prompt —
+    // this "sandwiches" the single most-violated rule right at the point of
+    // generation instead of relying on the system prompt alone.
+    const reminderMessage = {
+      role: "system",
+      content:
+        "INGAT sebelum menjawab: jawab HANYA pertanyaan barusan, satu topik saja, maksimal 1-2 kalimat pendek. Jangan tempelkan keluhan utama atau riwayat penyakit apapun kecuali benar-benar ditanyakan barusan.",
+    };
 
     const messages = [
       { role: "system", content: systemPrompt },
@@ -117,9 +138,14 @@ ${interviewRules}`;
         content: h.content,
       })),
       { role: "user", content: message },
+      reminderMessage,
     ];
 
-    const response = await chat({ messages });
+    // Lower temperature (more deterministic/instruction-following) and a
+    // tight max_tokens ceiling so even if a model ignores the "1-2 kalimat"
+    // instruction, it physically cannot ramble through an entire case
+    // vignette in one reply.
+    const response = await chat({ messages, temperature: 0.3, max_tokens: 120 });
     const text = response.choices?.[0]?.message?.content || "";
 
     res.json({ reply: text, _provider: response._provider });

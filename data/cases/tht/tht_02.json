@@ -1,0 +1,90 @@
+{
+  "id": "tht_02",
+  "kategori": "tht",
+  "level": "4A",
+  "identitas": "Pasien dengan kebiasaan mengorek telinga",
+  "keluhanUtama": "Datang ke poli dengan keluhan nyeri telinga kanan sejak 3-4 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri terus menerus, skala 5-6, di lubang telinga kanan tidak menjalar",
+        "Penurunan pendengaran (+), tinnitus (+)",
+        "Tidak demam, tidak pusing, tidak ada otorea",
+        "Sudah diobati obat warung, tidak mempan"
+      ],
+      "rpd": "Belum pernah mengalami keluhan serupa, tidak ada trauma",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Suka mengorek telinga sendiri saat gatal"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "telinga",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Telinga",
+        "temuan": "Otoskop kanan: kanalis auditoris edema, membran timpani tidak tervisualisasi; kiri normal",
+        "signifikan": true
+      },
+      {
+        "id": "garpu_tala",
+        "kelompok": "khas",
+        "nama": "Tes Garpu Tala",
+        "temuan": "Rinne kanan negatif, kiri normal; Weber lateralisasi kanan; Schwabach kanan memanjang - tuli konduktif kanan",
+        "signifikan": true
+      },
+      {
+        "id": "leher",
+        "kelompok": "pemeriksaan",
+        "nama": "Leher",
+        "temuan": "Nyeri tekan limfonodi (+)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pada kasus ini, diagnosis ditegakkan secara klinis",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Otitis Eksterna Difusa Auris Dextra",
+    "differensialBenar": [
+      "Otitis Eksterna Sirkumskripta",
+      "Benda Asing Telinga",
+      "Otitis Eksterna Furunkel"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ofloxacin ear drops 0,3% + analgesik (Ibuprofen/Paracetamol)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik oral spektrum luas sebagai lini pertama tanpa tetes telinga topikal",
+      "benar": false
+    },
+    {
+      "opsi": "Bersihkan liang telinga dengan cotton bud secara rutin selama pengobatan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hentikan kebiasaan mengorek telinga, jaga telinga tetap kering, hindari berenang dulu, jangan tusuk sekret dengan cotton bud",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh berenang asal telinga ditutup kapas",
+      "benar": false
+    }
+  ]
+}

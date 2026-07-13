@@ -1,0 +1,97 @@
+{
+  "id": "mat_07",
+  "kategori": "mata",
+  "level": "4A",
+  "identitas": "Aril, 32 tahun, karyawan swasta, tinggal di Gondomanan",
+  "keluhanUtama": "Datang ke poli dengan keluhan nyeri mata kiri sejak 5 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Terasa seperti mengganjal",
+        "Merah (+), cairan jernih (+)",
+        "Sudah diberi Insto, tidak membaik",
+        "Membaik saat istirahat"
+      ],
+      "rpd": "Pernah mengalami sakit mata serupa 2 tahun lalu, sembuh sendiri; persendian sering bengkak dan nyeri sejak 5 bulan lalu (curiga RA)",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Lingkungan bersih, bekerja indoor",
+        "Mata tidak nyeri karena menatap layar laptop"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/80 mmHg, HR 72x/menit, RR 20x/menit, Suhu 36,2°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "pemeriksaan",
+        "nama": "Visus",
+        "temuan": "OD 6/6, OS 6/6",
+        "signifikan": false
+      },
+      {
+        "id": "sklera",
+        "kelompok": "khas",
+        "nama": "Sklera OS",
+        "temuan": "Hiperemis dengan nodul",
+        "signifikan": true
+      },
+      {
+        "id": "tes_fenilefrin",
+        "kelompok": "khas",
+        "nama": "Tes Fenilefrin 2,5%",
+        "temuan": "Ada perbaikan (pembuluh darah vasokonstriksi) - membedakan dari skleritis",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pada kasus ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Episkleritis",
+    "differensialBenar": [
+      "Skleritis",
+      "Konjungtivitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ibuprofen tab 400mg (nyeri) + Cendo Xitrol (kortikosteroid) OS, hentikan tetes mata setelah sembuh",
+      "benar": true
+    },
+    {
+      "opsi": "Lanjutkan kortikosteroid topikal jangka panjang tanpa batas waktu",
+      "benar": false
+    },
+    {
+      "opsi": "Rujuk operasi mata segera tanpa terapi medikamentosa",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari mengucek mata, biasanya bisa sembuh, sarankan konsul Sp.PD karena berkaitan dengan radang sendi (curiga RA), konsul Sp.M bila nyeri bertambah atau penglihatan kabur",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu evaluasi lebih lanjut meski ada keluhan sendi berulang",
+      "benar": false
+    }
+  ]
+}

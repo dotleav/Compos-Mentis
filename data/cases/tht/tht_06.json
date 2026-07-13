@@ -1,0 +1,88 @@
+{
+  "id": "tht_06",
+  "kategori": "tht",
+  "level": "4A",
+  "identitas": "Somat, 4 tahun, dibawa ibunya (Bella)",
+  "keluhanUtama": "Dibawa ke UGD dengan keluhan hidung tersumbat sejak 3 jam yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Anak bermain manik-manik dadu yang masuk ke hidung kanan",
+        "Ada bercak merah (darah)",
+        "Sudah dicoba dikeluarkan ayahnya dengan ujung garpu, belum berhasil"
+      ],
+      "rpd": "Baru kejadian pertama kali, anak alergi ibuprofen",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Anak usia 4 tahun, bermain tanpa pengawasan penuh"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Kesakitan, CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "Nadi 70x/menit, RR 20x/menit, Suhu 36,8°C; BB 25kg",
+        "signifikan": false
+      },
+      {
+        "id": "hidung",
+        "kelompok": "khas",
+        "nama": "Rhinoskopi Anterior",
+        "temuan": "Corpus alienum (manik-manik) di lubang hidung kanan di antara konka inferior dan septum, discharge minimal berwarna merah",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pada kasus ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Corpus Alienum e.c Manik-manik Nasal Dextra",
+    "differensialBenar": [
+      "Epistaksis Anterior",
+      "Rhinitis Alergi"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Ekstraksi benda asing menggunakan hook/loop, R/ Amoxicillin syr + Paracetamol syr (hindari Ibuprofen karena alergi)",
+      "benar": true
+    },
+    {
+      "opsi": "Gunakan garpu atau alat rumah tangga lain untuk mengeluarkan benda asing",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ibuprofen syr sebagai analgesik pilihan utama",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Awasi anak saat bermain, hindari benda kecil dijangkau anak, segera ke dokter bila nyeri bertambah atau ada perdarahan",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh mencoba mengeluarkan sendiri di rumah dengan alat tajam",
+      "benar": false
+    }
+  ]
+}

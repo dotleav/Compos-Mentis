@@ -1,0 +1,125 @@
+{
+  "id": "gas_06",
+  "kategori": "gastro",
+  "level": "4",
+  "identitas": "Tasya, 22 tahun, mahasiswa, tinggal di Babarsari",
+  "keluhanUtama": "Datang ke poli dengan keluhan muntah-muntah sejak 3 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Begah, lemas/malaise",
+        "Demam",
+        "BAK berwarna kemerahan/gelap",
+        "Nafsu makan berkurang",
+        "Sudah minum vitamin, tidak ada perbaikan"
+      ],
+      "rpd": "Dalam batas normal, tidak ada riwayat serupa",
+      "rpk": "Dalam batas normal",
+      "lifestyle": [
+        "Teman kos memiliki keluhan serupa",
+        "Sering makan di luar"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU/Kesadaran",
+        "temuan": "Kesakitan sedang",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 96x/menit, RR 22x/menit, Suhu 38°C",
+        "signifikan": false
+      },
+      {
+        "id": "kepala",
+        "kelompok": "survei_sekunder",
+        "nama": "Kepala",
+        "temuan": "Sklera ikterik",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Perkusi timpani dengan hepar 15 cm, palpasi hepar teraba",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Hb 12,7; leukosit 10.000; LED meningkat; trombosit 250.000",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "fungsi_hati",
+        "nama": "Fungsi Hati",
+        "temuan": "SGOT 692, SGPT sangat meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "serologi",
+        "nama": "Serologi Hepatitis",
+        "temuan": "HBsAg (-), IgM Anti-HAV (+)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Hepatitis A",
+    "differensialBenar": [
+      "Hepatitis B",
+      "Demam Tifoid",
+      "Alcoholic Hepatitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Terapi suportif: R/ Domperidon (mual), Ibuprofen p.r.n (demam), Curcuma FCT (hepatoprotektor)",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan antivirus hepatitis rutin",
+      "benar": false
+    },
+    {
+      "opsi": "Berikan antibiotik spektrum luas",
+      "benar": false
+    },
+    {
+      "opsi": "Rawat inap ICU wajib untuk semua kasus hepatitis A",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Self-limiting disease, sembuh 3-6 bulan dengan istirahat cukup dan gizi baik, jangan bertukar alat makan",
+      "benar": true
+    },
+    {
+      "opsi": "Ajak teman kos untuk turut memeriksakan diri",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu kembali kontrol apapun kondisinya",
+      "benar": false
+    },
+    {
+      "opsi": "Penyakit ini menular lewat hubungan seksual, bukan fekal-oral",
+      "benar": false
+    }
+  ]
+}

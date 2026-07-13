@@ -1,0 +1,128 @@
+{
+  "id": "gas_05",
+  "kategori": "gastro",
+  "level": "3A",
+  "identitas": "Juki, seorang musisi",
+  "keluhanUtama": "Datang ke poli dengan keluhan mata dan telapak tangan berwarna kuning sejak 2 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Demam hilang timbul sebelum mata kuning muncul",
+        "Badan lemas",
+        "Mual tanpa muntah",
+        "Sudah minum obat warung, demam sedikit membaik",
+        "Feses normal, urine berwarna seperti teh"
+      ],
+      "rpd": "Pertama kali seperti ini, tidak ada alergi atau riwayat rawat inap",
+      "rpk": "Tidak ada anggota keluarga/lingkungan dengan gejala serupa",
+      "lifestyle": [
+        "Tato 2 bulan dan 1 bulan lalu",
+        "Hubungan seksual dengan 1 pasangan, tidak menggunakan kondom",
+        "Tidak ada riwayat transfusi darah atau penggunaan jarum bersama",
+        "Merokok 1 bungkus/hari",
+        "Jarang olahraga"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU/Kesadaran",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 88x/menit, RR 16x/menit, Suhu 37,4°C",
+        "signifikan": false
+      },
+      {
+        "id": "kepala",
+        "kelompok": "survei_sekunder",
+        "nama": "Kepala",
+        "temuan": "Sklera ikterik",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Hepatomegali 16 cm, hepar teraba tajam permukaan licin dengan nyeri tekan, Murphy sign (-), asites (-)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Limfosit sedikit meningkat",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "fungsi_liver",
+        "nama": "Fungsi Hati",
+        "temuan": "SGOT/SGPT meningkat, bilirubin total/direct/indirect meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "serologi",
+        "nama": "Serologi Hepatitis",
+        "temuan": "HBsAg (+), HBeAg (+), DNA HBV 1,2x10^3",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Hepatitis B Akut",
+    "differensialBenar": [
+      "Cholecystitis",
+      "Cholelithiasis",
+      "Hepatitis A"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Terapi suportif: R/ Domperidon tab 10 mg (mual) + Ibuprofen tab 400 mg p.r.n (demam), rujuk Sp.PD",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan antibiotik spektrum luas karena dicurigai infeksi bakteri",
+      "benar": false
+    },
+    {
+      "opsi": "Langsung mulai terapi antivirus tanpa evaluasi Sp.PD lebih lanjut",
+      "benar": false
+    },
+    {
+      "opsi": "Rawat jalan tanpa pemantauan HBeAg berkala",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Pantau HBeAg tiap 3 bulan, gunakan kondom, jangan donor darah, hindari berbagi alat pribadi seperti pisau cukur",
+      "benar": true
+    },
+    {
+      "opsi": "Pasangan tidak perlu diperiksa karena sudah menikah",
+      "benar": false
+    },
+    {
+      "opsi": "Boleh donor darah selama tidak ada gejala",
+      "benar": false
+    },
+    {
+      "opsi": "Penyakit ini tidak bisa menular lewat hubungan seksual",
+      "benar": false
+    }
+  ]
+}

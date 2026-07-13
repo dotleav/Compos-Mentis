@@ -1,0 +1,91 @@
+{
+  "id": "int_09",
+  "kategori": "integumen",
+  "level": "4A",
+  "identitas": "Pak Nito, 32 tahun, buruh pabrik",
+  "keluhanUtama": "Datang ke poli dengan keluhan bercak merah di selangkangan sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Tidak nyeri dan tidak gatal",
+        "Lesi makin melebar terutama saat berkeringat"
+      ],
+      "rpd": "Tidak pernah mengalami keluhan serupa, tidak ada alergi",
+      "rpk": "Perlu ditanyakan riwayat hubungan seksual untuk menyingkirkan penyebab lain",
+      "lifestyle": [
+        "Mandi 1x/hari",
+        "Celana dalam jarang ganti",
+        "Seragam kerja diganti 3 hari sekali",
+        "Area selangkangan sering berkeringat/basah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "Dalam batas normal",
+        "signifikan": false
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi regio inguinal kanan, patch eritem dengan skuama, tidak ada central healing, batas tegas tepi asinar ukuran 15x8cm tunggal lokalisata, teraba hangat dan basah tidak nyeri",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "wood_lamp",
+        "nama": "Wood Lamp",
+        "temuan": "Fluoresensi merah bata, khas eritrasma",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "koh",
+        "nama": "Pewarnaan KOH",
+        "temuan": "Negatif - menyingkirkan tinea",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Eritrasma",
+    "differensialBenar": [
+      "Kandidiasis Intertriginosa",
+      "Tinea Cruris",
+      "Pitiriasis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Mupirocin 2% krim topikal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antijamur topikal sebagai terapi utama meski KOH negatif",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Antivirus topikal",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Mandi teratur 2x/hari, ganti celana dalam minimal 2x sehari terutama bila lembab, gunakan pakaian longgar, hindari berbagi handuk/sabun",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu mengganti pakaian lebih sering karena bukan penyakit menular",
+      "benar": false
+    }
+  ]
+}

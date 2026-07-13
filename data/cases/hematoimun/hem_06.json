@@ -1,0 +1,108 @@
+{
+  "id": "hem_06",
+  "kategori": "hematoimun",
+  "level": "4",
+  "identitas": "Sinta, 20 tahun, mahasiswa",
+  "keluhanUtama": "Datang ke poli dengan keluhan lemas dan mudah lelah sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Mata berkunang-kunang",
+        "Membaik dengan istirahat, memberat dengan aktivitas"
+      ],
+      "rpd": "Tidak ada riwayat rawat inap, transfusi, atau trauma",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Sedang diet karena merasa gemuk",
+        "4 bulan terakhir jarang makan daging",
+        "Menstruasi banyak dengan nyeri haid di hari pertama",
+        "Jogging yang biasanya kuat sekarang tidak kuat"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, Nadi 100x, RR 18x, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "kepala_mulut",
+        "kelompok": "khas",
+        "nama": "Kepala & Mulut",
+        "temuan": "Wajah pucat, konjungtiva anemis, bibir tidak sianosis",
+        "signifikan": true
+      },
+      {
+        "id": "ekstremitas",
+        "kelompok": "khas",
+        "nama": "Ekstremitas",
+        "temuan": "Telapak tangan dan bawah kuku pucat",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Eritrosit, Hb, Hct, MCH, MCHC semua turun; LED meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "apusan",
+        "nama": "Apusan Darah Tepi",
+        "temuan": "Gambaran mikrositik hipokromik",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "besi",
+        "nama": "Serum Feritin & TIBC",
+        "temuan": "Serum feritin turun, TIBC meningkat",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Anemia Defisiensi Besi",
+    "differensialBenar": [
+      "Anemia Hemolitik",
+      "Anemia Penyakit Kronik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Sulfat Ferrous tab 300mg + Vitamin C tab 50mg (membantu penyerapan besi)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Asam folat dan Vitamin B12 sebagai terapi utama pada kasus ini",
+      "benar": false
+    },
+    {
+      "opsi": "Transfusi darah rutin tanpa indikasi Hb yang sangat rendah",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hentikan diet ketat, konsumsi zat besi (sayur hijau, daging), evaluasi ulang Hb 1 minggu lagi",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu evaluasi ulang Hb karena sudah minum obat",
+      "benar": false
+    },
+    {
+      "opsi": "Boleh melanjutkan diet ketat asal minum tablet besi",
+      "benar": false
+    }
+  ]
+}

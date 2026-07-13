@@ -1,0 +1,111 @@
+{
+  "id": "hem_07",
+  "kategori": "hematoimun",
+  "level": "3A",
+  "identitas": "Perempuan, vegetarian sejak 4 tahun",
+  "keluhanUtama": "Datang ke poli dengan keluhan lemas sejak beberapa waktu terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Mudah lelah",
+        "Nafsu makan menurun",
+        "Kulit pucat",
+        "Belum diobati"
+      ],
+      "rpd": "Belum pernah mengalami gejala serupa, tidak ada alergi",
+      "rpk": "Tidak ada riwayat DM/hipertensi",
+      "lifestyle": [
+        "Vegetarian sejak 4 tahun lalu",
+        "Jarang olahraga"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, sakit sedang",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, Nadi 100x, RR 18x, Suhu 36,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "kepala",
+        "kelompok": "khas",
+        "nama": "Kepala",
+        "temuan": "Konjungtiva anemis, sklera tidak ikterik, lidah tampak glositis (kemerahan)",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Hepatomegali 13cm, splenomegali",
+        "signifikan": true
+      },
+      {
+        "id": "ekstremitas",
+        "kelompok": "pemeriksaan",
+        "nama": "Ekstremitas",
+        "temuan": "Akral hangat, tampak pucat",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "MCV >96fl, MCH >32, MCHC >32 (makrositik)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "apusan",
+        "nama": "Apusan Darah Tepi",
+        "temuan": "Eritrosit makrositik hiperkromik, hipersegmentasi neutrofil",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Anemia Megaloblastik/Makrositik",
+    "differensialBenar": [
+      "Anemia Defisiensi Besi",
+      "Anemia Hemolitik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Cyanocobalamin tab 50mcg + Asam folat tab 5mg",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Sulfat Ferrous sebagai terapi utama pada anemia makrositik",
+      "benar": false
+    },
+    {
+      "opsi": "Transfusi darah rutin sebagai lini pertama tanpa suplementasi vitamin",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Konsumsi makanan tinggi B12 (daging, telur) dan asam folat (sayuran hijau, kacang-kacangan), masak sayur tidak lebih dari 15 menit agar folat tidak rusak",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu suplementasi bila tetap menjalani pola makan vegetarian ketat",
+      "benar": false
+    }
+  ]
+}

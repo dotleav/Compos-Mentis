@@ -1,0 +1,130 @@
+{
+  "id": "hem_01",
+  "kategori": "hematoimun",
+  "level": "4A",
+  "identitas": "Juki, 25 tahun, mahasiswa, tinggal di Baciro",
+  "keluhanUtama": "Datang ke poli dengan keluhan demam sejak 6 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Demam hilang timbul, sehari demam sehari tidak (pola tertiana)",
+        "Menggigil dan berkeringat",
+        "Sakit kepala",
+        "Nyeri otot dan sendi",
+        "Mual tanpa muntah",
+        "Urine berwarna coklat kehitaman"
+      ],
+      "rpd": "Riwayat bepergian ke Papua, perlu ditanyakan konsumsi obat profilaksis",
+      "rpk": "Tinggal sendiri",
+      "lifestyle": [
+        "Sehari-hari mengerjakan thesis"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, tampak lemah",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 130/80 mmHg, Nadi 92x, RR 22x, Suhu 38,8°C, GCS 15",
+        "signifikan": true
+      },
+      {
+        "id": "kepala",
+        "kelompok": "survei_sekunder",
+        "nama": "Kepala",
+        "temuan": "Sklera tidak ikterik, konjungtiva tidak anemis, tidak sianosis, tidak ada perdarahan mulut",
+        "signifikan": false
+      },
+      {
+        "id": "thorax",
+        "kelompok": "pemeriksaan",
+        "nama": "Thorax",
+        "temuan": "Taktil fremitus menurun, perkusi redup, suara apex paru melemah",
+        "signifikan": false
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Hepatomegali 3cm di bawah arcus costae, splenomegali di titik Schuffner 2, tidak ada asites",
+        "signifikan": true
+      },
+      {
+        "id": "ekstremitas",
+        "kelompok": "pemeriksaan",
+        "nama": "Ekstremitas",
+        "temuan": "Akral dingin",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukositosis, Hb turun",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "apusan",
+        "nama": "Hapusan Darah Tepi",
+        "temuan": "Parasit (+3) bentuk tebal, tipis eritrosit normositik normokrom dengan Plasmodium vivax",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "serologi_dengue",
+        "nama": "IgM/IgG Anti-Dengue & Widal",
+        "temuan": "Negatif",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Malaria Tertiana e.c Plasmodium vivax",
+    "differensialBenar": [
+      "Demam Dengue",
+      "Demam Tifoid"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ DHP (Dihidroartemisinin+Piperakuin) 3 hari + Primakuin 14 hari + simptomatik",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Klorokuin sebagai lini pertama tanpa konfirmasi spesies",
+      "benar": false
+    },
+    {
+      "opsi": "Rawat inap ICU wajib meski gejala terkontrol dan tidak ada tanda bahaya",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Disebabkan gigitan nyamuk (parasit Plasmodium), pakai kelambu dan repelan, kontrol bila ada warning sign (penurunan kesadaran, diare/muntah terus-menerus, ikterus, urin gelap, perdarahan)",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menghentikan primakuin begitu demam turun meski belum 14 hari",
+      "benar": false
+    },
+    {
+      "opsi": "Penyakit ini menular antar manusia lewat kontak langsung",
+      "benar": false
+    }
+  ]
+}

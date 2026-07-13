@@ -1,0 +1,91 @@
+{
+  "id": "int_01",
+  "kategori": "integumen",
+  "level": "4A",
+  "identitas": "Cendy, 19 tahun, mahasiswa",
+  "keluhanUtama": "Datang ke poli dengan keluhan gatal di sela-sela jari tangan sejak 1 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Gatal menyebar ke pergelangan tangan, perut, lalu seluruh tubuh",
+        "Gatal terus menerus, memburuk malam hari (pruritus nokturnal)"
+      ],
+      "rpd": "Sudah minum CTM untuk mengurangi gatal, belum pernah mengalami gejala seperti ini, tidak ada alergi",
+      "rpk": "Tidak ada riwayat penyakit metabolik/alergi",
+      "lifestyle": [
+        "Tinggal di kos, kamar mandi dalam, ventilasi baik",
+        "Teman satu kos ada yang mengalami gejala serupa namun belum diobati",
+        "Ganti sprei setiap 3 minggu-1 bulan sekali",
+        "Suka menggaruk malam hari"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 88x/menit, RR 16x/menit, Suhu 37°C",
+        "signifikan": false
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi seluruh tubuh, UKK primer papul eritem batas tegas bentuk bulat ukuran lentikular multipel tersebar generalisata, UKK sekunder skuama dan ekskoriasi akibat garukan, UKK khusus berupa burrow (terowongan tungau)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "kerokan_kulit",
+        "nama": "Mikroskopis Kerokan Kulit",
+        "temuan": "Ditemukan tungau Sarcoptes scabiei, telur, larva, nimfa, dan skibala (feses)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "burrow_ink",
+        "nama": "Burrow Ink Test",
+        "temuan": "Positif",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Skabies",
+    "differensialBenar": [
+      "Reaksi Gigitan Serangga",
+      "Pedikulosis",
+      "Dermatitis Kontak Iritan"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Permetrin 5% krim, oleskan tipis ke seluruh tubuh kecuali wajah sebelum tidur, diamkan 8-10 jam lalu bilas saat mandi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik sistemik sebagai terapi utama skabies",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup oleskan pada bagian yang gatal saja tanpa ke seluruh tubuh",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Perlu kerja sama pengelola kos dan seluruh penghuni, cuci pakaian/sprei dengan air panas dan jemur di matahari, pengobatan ulang setelah 7 hari",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu mencuci sprei atau pakaian selama pengobatan",
+      "benar": false
+    }
+  ]
+}
