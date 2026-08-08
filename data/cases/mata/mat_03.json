@@ -1,0 +1,92 @@
+{
+  "id": "mat_03",
+  "kategori": "mata",
+  "level": "4A",
+  "identitas": "Dani, 25 tahun, wartawan, tinggal di Sagan",
+  "keluhanUtama": "Datang ke poli dengan keluhan mata merah sejak 3 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Awalnya mata kanan lalu mata kiri",
+        "Gatal dan panas, tidak nyeri",
+        "Sekret kuning kental, terutama saat bangun tidur",
+        "Penglihatan normal",
+        "Membaik dengan Insto, memburuk terkena debu saat naik motor"
+      ],
+      "rpd": "Belum pernah seperti ini sebelumnya, tidak ada alergi",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Tempat tinggal bersih",
+        "Terakhir meliput berita kriminal di kantor polisi"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, Nadi 80x/menit, RR 20x/menit, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "pemeriksaan",
+        "nama": "Visus",
+        "temuan": "OD 6/6, OS 6/6",
+        "signifikan": false
+      },
+      {
+        "id": "segmen_anterior",
+        "kelompok": "khas",
+        "nama": "Segmen Anterior",
+        "temuan": "Sekret berlebih menempel di bulu mata, konjungtiva palpebra superior dan bulbi hiperemis, kornea jernih",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "swab",
+        "nama": "Swab Konjungtiva",
+        "temuan": "Tidak dilakukan pada kasus ini, diagnosis ditegakkan secara klinis",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Konjungtivitis Bakterial",
+    "differensialBenar": [
+      "Blefaritis",
+      "Episkleritis",
+      "Dry Eye Syndrome"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Chloramphenicol 0,5% eyedrop, tiap 2 jam untuk 2 hari pertama lalu tiap 4 jam untuk 3 hari berikutnya, gunakan penuh 5-7 hari meski sudah tidak merah",
+      "benar": true
+    },
+    {
+      "opsi": "Hentikan obat begitu mata sudah tidak merah meski belum 5 hari",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Kortikosteroid topikal sebagai lini pertama",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga kebersihan mata, jangan mengucek dengan tangan kotor, jangan berbagi handuk karena bisa menular lewat kontak langsung",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit ini menular hanya lewat udara/melihat mata orang lain",
+      "benar": false
+    }
+  ]
+}

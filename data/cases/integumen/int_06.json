@@ -1,0 +1,81 @@
+{
+  "id": "int_06",
+  "kategori": "integumen",
+  "level": "4A",
+  "identitas": "Laki-laki, 30 tahun, petani",
+  "keluhanUtama": "Datang ke poli dengan keluhan gatal di punggung kaki kanan sejak 2 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Awalnya di sela jari kaki kanan, lalu menjalar ke punggung kaki",
+        "Paling gatal saat bangun tidur pagi dan sebelum tidur malam",
+        "Sudah minum CTM, tidak membaik"
+      ],
+      "rpd": "Tidak ada alergi/obat rutin, tidak pernah seperti ini sebelumnya",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Bertani tanpa alas kaki, kaki terkena lumpur dan dibersihkan dengan air selokan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "Dalam batas normal",
+        "signifikan": false
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi dorsum pedis kanan, papul dengan eritem di tepi, bentuk serpiginosa (jejak liku-liku) ukuran ±7cm tunggal, ekskoriasi dan krusta kehitaman (sekunder), teraba hangat",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "burrow_ink",
+        "nama": "Burrow Ink Test",
+        "temuan": "Positif, terdapat sisa tinta menandakan terowongan larva",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Cutaneous Larva Migrans",
+    "differensialBenar": [
+      "Skabies",
+      "Tinea Pedis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Albendazole tab 400mg + Hidrokortison 2,5% krim (anti-inflamasi) + Cetirizine (gatal), semprotkan etil klorida pada lesi untuk imobilisasi larva",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik sistemik sebagai terapi utama tanpa obat cacing",
+      "benar": false
+    },
+    {
+      "opsi": "Eksisi bedah pada seluruh jejak lesi sebagai lini pertama",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga lesi tetap kering, gunakan sepatu boot tertutup saat bertani, bersihkan kaki dengan air mengalir bersih bukan air selokan",
+      "benar": true
+    },
+    {
+      "opsi": "Aman terus membersihkan kaki dengan air selokan selama pakai obat cacing",
+      "benar": false
+    }
+  ]
+}

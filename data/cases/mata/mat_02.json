@@ -1,0 +1,98 @@
+{
+  "id": "mat_02",
+  "kategori": "mata",
+  "level": "3B",
+  "identitas": "Adi, 50 tahun, tinggal di Sleman",
+  "keluhanUtama": "Datang ke UGD dengan keluhan mata merah dan nyeri tertusuk mendadak sejak 2 jam yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri kepala skala 3/10",
+        "Fotofobia, melihat gambaran seperti pelangi",
+        "Penglihatan kabur",
+        "Sudah pakai tetes mata insto, tidak membaik",
+        "Mual dan muntah"
+      ],
+      "rpd": "Riwayat mata minus",
+      "rpk": "Ibu memiliki riwayat glaukoma",
+      "lifestyle": [
+        "Tidak ada kebiasaan khusus dilaporkan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 130/90 mmHg, HR 90x/menit, RR 22x/menit, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "khas",
+        "nama": "Visus",
+        "temuan": "OD 1/300, OS 4/60",
+        "signifikan": true
+      },
+      {
+        "id": "segmen_anterior",
+        "kelompok": "khas",
+        "nama": "Segmen Anterior OD",
+        "temuan": "Konjungtiva bulbi merah dengan injeksi silier, kornea keruh dan edema, COA dangkal, sudut iridokornealis tertutup, pupil mid-dilatasi dengan refleks (-)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "tonometri",
+        "nama": "Tonometri",
+        "temuan": "OD meningkat, OS normal",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "funduskopi",
+        "nama": "Funduskopi",
+        "temuan": "Optic disc ratio >0,5",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Glaukoma Akut Sudut Tertutup",
+    "differensialBenar": [
+      "Keratitis",
+      "Ulkus Kornea",
+      "Cluster Headache"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Timolol 0,5% eyedrop + Acetazolamide (loading dose 500mg lanjut 250mg tiap 6 jam), rujuk Sp.M segera (emergensi)",
+      "benar": true
+    },
+    {
+      "opsi": "Tunggu observasi 24 jam sebelum merujuk ke Sp.M meski TIO sangat meningkat",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup analgesik oral tanpa terapi penurun TIO",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Ini kegawatdaruratan mata, segera rujuk Sp.M, turunkan asupan cairan, jelaskan efek samping Acetazolamide (bibir kering, kesemutan)",
+      "benar": true
+    },
+    {
+      "opsi": "Bisa ditunda beberapa hari karena tidak mengancam penglihatan",
+      "benar": false
+    }
+  ]
+}

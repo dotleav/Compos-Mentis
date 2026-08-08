@@ -1,0 +1,227 @@
+{
+  "id": "psi_01",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "identitas": "Mbak Bella, 25 tahun, dibawa oleh suaminya (Bastian)",
+  "keluhanUtama": "Keluarga membawa pasien karena perubahan perilaku - lebih energik, banyak bicara, dan sulit tidur sejak beberapa hari terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Suka keluar malam-malam",
+        "Ngobrol-ngobrol dengan tetangga jam 12 malam, saat pergi nanti balik sendiri",
+        "Energik di pagi hari setelah aktif saat malam",
+        "Tidur hanya 3-4 jam",
+        "Datang dengan marah-marah dan rewel (ngomel sama suami)",
+        "Suka membelanjakan uang untuk anak-anak di kompleks",
+        "Gejalanya membaik saat dipuji",
+        "1 bulan yang lalu: lemas, lesu, mengurungkan diri, nafsu makan turun"
+      ],
+      "rpd": "Tidak pernah rawat inap",
+      "rpk": "Pamannya diabetes dan hipertensi; paman dari ayah mengalami keluhan serupa",
+      "lifestyle": [
+        "S, A, D (-)"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "Compos mentis",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "Vs",
+        "temuan": "DBN (TD 120/80, HR 90x/min, RR 16x/min, Suhu 36.5C)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kesadaran",
+        "kelompok": "pemeriksaan",
+        "nama": "Kesadaran",
+        "temuan": "Compos mentis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_orientasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Orientasi",
+        "temuan": "Baik (orang, alamat, waktu)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_penampilan",
+        "kelompok": "pemeriksaan",
+        "nama": "Penampilan",
+        "temuan": "Rapi",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_sikap",
+        "kelompok": "pemeriksaan",
+        "nama": "Sikap",
+        "temuan": "Kooperatif",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_atensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Atensi",
+        "temuan": "Buruk, mudah teralihkan",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_mood",
+        "kelompok": "pemeriksaan",
+        "nama": "Mood",
+        "temuan": "Capek dan senang",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_afek",
+        "kelompok": "pemeriksaan",
+        "nama": "Afek",
+        "temuan": "Appropriate",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_persepsi",
+        "kelompok": "pemeriksaan",
+        "nama": "Persepsi",
+        "temuan": "Normal (waham perlu dikonfirmasi ke pengantar)",
+        "signifikan": true
+      },
+      {
+        "id": "statuspsikiatri_perilakumotorik",
+        "kelompok": "pemeriksaan",
+        "nama": "Perilaku motorik",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bentukpikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Bentuk pikir",
+        "temuan": "Logis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_isipikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Isi pikir",
+        "temuan": "Flight of ideas",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_aruspikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Arus pikir",
+        "temuan": "Asosiasi longgar",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bicara",
+        "kelompok": "pemeriksaan",
+        "nama": "Bicara",
+        "temuan": "Cepat, keras",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_memori",
+        "kelompok": "pemeriksaan",
+        "nama": "Memori",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_tilikan",
+        "kelompok": "pemeriksaan",
+        "nama": "Tilikan",
+        "temuan": "1",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Bipolar Episode Manik",
+    "differensialBenar": [
+      "Gangguan Bipolar Episode Hipomanik",
+      "Gangguan Sindrom Mania Skizoafektif"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Asam valproat tab lepas lambat mg 500 No. XX\nS.2.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Asam valproat tab lepas lambat tab mg 500 No. XV\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Vitamin B Kompleks tab No. XXX\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Omeprazole caps mg 20 No. XIV\nS.2.d.d caps. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Amoxicillin tab mg 500 No. XV\nS.3.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Cetirizine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Simvastatin tab mg 20 No. XXX\nS.1.d.d tab. I n.h",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk ke Sp. KJ",
+      "benar": true
+    },
+    {
+      "opsi": "Family Therapy",
+      "benar": true
+    },
+    {
+      "opsi": "Edukasi ke pengantar bahwa kondisi pasien bukanlah kehendak dirinya, mohon dimengerti",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menaikkan dosis obat sendiri jika gejala belum hilang",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
+      "benar": false
+    },
+    {
+      "opsi": "Pengobatan cukup dilakukan tanpa perlu evaluasi ulang jangka panjang",
+      "benar": false
+    },
+    {
+      "opsi": "Keluhan ini pasti akan sembuh total dalam waktu 24 jam",
+      "benar": false
+    },
+    {
+      "opsi": "Kondisi ini menular melalui kontak fisik biasa sehari-hari",
+      "benar": false
+    }
+  ]
+}

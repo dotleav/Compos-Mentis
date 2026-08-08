@@ -1,0 +1,90 @@
+{
+  "id": "tht_08",
+  "kategori": "tht",
+  "level": "4A",
+  "identitas": "Sahid, 30 tahun, karyawan, ketua RT",
+  "keluhanUtama": "Datang ke poli dengan keluhan nyeri tenggorokan sejak 1 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Demam sejak 3 hari yang lalu",
+        "Hidung tidak nyaman namun tidak tersumbat/meler",
+        "Lemas",
+        "Sakit saat menelan"
+      ],
+      "rpd": "Belum pernah mengalami penyakit serupa, sudah vaksin Covid",
+      "rpk": "Anak demam dan pilek; kontak dengan orang dengan Covid-19",
+      "lifestyle": [
+        "Aktif sebagai ketua RT, sering menjenguk warga isolasi mandiri"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Tampak sakit sedang, CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, Nadi 70x/menit, RR 30x/menit, Suhu 38,2°C",
+        "signifikan": true
+      },
+      {
+        "id": "tenggorokan",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Tenggorokan",
+        "temuan": "Mukosa faring hiperemis, tidak ada discharge, uvula/tonsil dalam batas normal",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "swab_antigen",
+        "nama": "Swab Antigen COVID-19",
+        "temuan": "Negatif",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Faringitis Akut",
+    "differensialBenar": [
+      "Tonsilitis Akut",
+      "COVID-19",
+      "Laringitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Paracetamol (demam/nyeri) + Pseudoefedrin (dekongestan) + Vitamin C",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik spektrum luas sebagai lini pertama tanpa tanda infeksi bakteri",
+      "benar": false
+    },
+    {
+      "opsi": "Isolasi mandiri wajib meski swab antigen negatif",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Istirahat cukup, makan bergizi, hindari makanan yang mengiritasi tenggorokan, kembali periksa bila demam tidak turun",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang meski demam menetap",
+      "benar": false
+    }
+  ]
+}

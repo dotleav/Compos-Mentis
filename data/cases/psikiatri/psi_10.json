@@ -1,0 +1,248 @@
+{
+  "id": "psi_10",
+  "kategori": "psikiatri",
+  "level": "4",
+  "identitas": "Rika, 29 tahun, karyawan",
+  "keluhanUtama": "Susah tidur sejak 2 minggu dan merasa lemas, malas beraktivitas",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Susah tidur, 2 minggu",
+        "Tidur jam 10 malam, tengah malam bangun, lalu subuh tidur lagi",
+        "Lemas, malas ngapa-ngapain, tidak fokus",
+        "Terjadi tiap hari",
+        "Sedih berkurang karena mengobrol bersama teman",
+        "Tanyakan susah tidur di awal, tengah, atau akhir; kebangun pagi",
+        "Tanyakan faktor yang mempengaruhi: teh, kopi",
+        "Ayah susah tidur juga hilang"
+      ],
+      "rpd": "Minum vitamin, tidak memiliki keturunan",
+      "rpk": "-",
+      "lifestyle": [
+        "Makan teratur",
+        "Tinggal sendiri"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "Vs",
+        "temuan": "TD 120/80, HR 90x/min, RR 12x/min, Suhu 36.5C",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kesadaran",
+        "kelompok": "pemeriksaan",
+        "nama": "Kesadaran",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_orientasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Orientasi",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_penampilan",
+        "kelompok": "pemeriksaan",
+        "nama": "Penampilan",
+        "temuan": "Rapi, gelisah",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_sikap",
+        "kelompok": "pemeriksaan",
+        "nama": "Sikap",
+        "temuan": "Kooperatif",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_atensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Atensi",
+        "temuan": "Konsentrasi sedikit terganggu",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_mood",
+        "kelompok": "pemeriksaan",
+        "nama": "Mood",
+        "temuan": "Tidak enak, pusing, cemas, hidup berasa di ujung tanduk (tanya mengapa)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_afek",
+        "kelompok": "pemeriksaan",
+        "nama": "Afek",
+        "temuan": "Apropiate",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_persepsi",
+        "kelompok": "pemeriksaan",
+        "nama": "Persepsi",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_perilakumotorik",
+        "kelompok": "pemeriksaan",
+        "nama": "Perilaku motorik",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bentukpikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Bentuk pikir",
+        "temuan": "Logis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_isipikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Isi pikir",
+        "temuan": "Fobia cicak dan anjing, was-was, cemas",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_aruspikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Arus pikir",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bicara",
+        "kelompok": "pemeriksaan",
+        "nama": "Bicara",
+        "temuan": "Baik",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_memori",
+        "kelompok": "pemeriksaan",
+        "nama": "Memori",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_tilikan",
+        "kelompok": "pemeriksaan",
+        "nama": "Tilikan",
+        "temuan": "6",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Depresi Ringan",
+    "differensialBenar": [
+      "Insomnia",
+      "Gangguan Cemas Menyeluruh"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Amitriptilin tab mg 25 No. XXX\nS.1.d.d tab III h.s",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Diazepam tab 2 mg No. X\nS.1.d.d tab. I.h.s",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amitriptilin tab mg 50 No. XXX\nS.1.d.d tab III h.s",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ibuprofen tab mg 400 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Loratadine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Simvastatin tab mg 20 No. XXX\nS.1.d.d tab. I n.h",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Ranitidine tab mg 150 No. XX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Paracetamol tab mg 500 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Olahraga",
+      "benar": true
+    },
+    {
+      "opsi": "Banyak bersosialisasi/ngobrol-ngobrol",
+      "benar": true
+    },
+    {
+      "opsi": "Terapi relaksasi",
+      "benar": true
+    },
+    {
+      "opsi": "Lakukan hobi",
+      "benar": true
+    },
+    {
+      "opsi": "Obat tidur diminum 1-2 jam sebelum tidur",
+      "benar": true
+    },
+    {
+      "opsi": "Jauhkan dari alat elektronik",
+      "benar": true
+    },
+    {
+      "opsi": "Lemas karena energi tidak terkumpul saat tidur",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga sebaiknya menjauhi dan mengisolasi pasien sepenuhnya",
+      "benar": false
+    },
+    {
+      "opsi": "Boleh menaikkan dosis obat sendiri jika gejala belum hilang",
+      "benar": false
+    },
+    {
+      "opsi": "Keluhan ini pasti akan sembuh total dalam waktu 24 jam",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
+      "benar": false
+    }
+  ]
+}

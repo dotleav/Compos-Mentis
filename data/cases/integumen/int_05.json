@@ -1,0 +1,91 @@
+{
+  "id": "int_05",
+  "kategori": "integumen",
+  "level": "4A",
+  "identitas": "Mas Budi, 22 tahun, baru lulus kuliah, tinggal di Condong Catur",
+  "keluhanUtama": "Datang ke poli dengan keluhan bercak merah, perih, dan panas di betis kiri sejak kemarin pagi",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Lesi melepuh bernanah, tidak gatal",
+        "Muncul saat bangun tidur, hari ini terdapat nanah",
+        "Tidak menyebar, terlokalisir di area lesi",
+        "Belum diberi penanganan apapun"
+      ],
+      "rpd": "Tidak ada alergi atau obat rutin",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Rumah dekat sawah, rajin memakai repellent",
+        "Akhir-akhir ini banyak ditemukan tomcat di halaman dan rumah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 80x/menit, RR 20x/menit, Suhu 36,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi betis kiri medial, patch dan pustul multipel, eritem di tepi dengan nekrosis di tengah lesi, bentuk linear memanjang ukuran 10cm, teraba hangat",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "gram",
+        "nama": "Pengecatan Gram dari Pustul",
+        "temuan": "Bakteri (-), leukosit (-)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "tzank",
+        "nama": "Tzank Test",
+        "temuan": "Sel datia berinti banyak (-) - menyingkirkan herpes zoster",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Dermatitis Kontak Iritan e.c Toxin Serangga (Tomcat)",
+    "differensialBenar": [
+      "Varicella Zoster",
+      "Herpes Zoster",
+      "Dermatitis Atopik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Hidrokortison 2,5% krim, dioleskan tiap habis mandi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antivirus sebagai terapi utama karena dicurigai herpes zoster",
+      "benar": false
+    },
+    {
+      "opsi": "Pecahkan lepuhan untuk mempercepat pengeringan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gunakan obat rutin hingga sembuh, hindari menggaruk lesi karena bisa menimbulkan luka baru, hindari kontak dengan tomcat",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menggaruk lesi untuk mengurangi rasa panas",
+      "benar": false
+    }
+  ]
+}

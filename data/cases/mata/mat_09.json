@@ -1,0 +1,89 @@
+{
+  "id": "mat_09",
+  "kategori": "mata",
+  "level": "4A",
+  "identitas": "Aldo, 35 tahun, pedagang, tinggal di Bantul",
+  "keluhanUtama": "Datang ke poli dengan keluhan mata kanan merah sejak 30 menit yang lalu setelah ditinju teman",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Merah pada sklera, tidak gatal/berair/perih",
+        "Tidak ada mual muntah, sakit kepala, atau pandangan kabur",
+        "Belum mencoba pengobatan"
+      ],
+      "rpd": "Belum pernah mengalami keluhan serupa, riwayat hipertensi terkontrol captopril",
+      "rpk": "Ayah memiliki riwayat hipertensi",
+      "lifestyle": [
+        "Jarang berolahraga"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 130/80 mmHg, HR 90x/menit, RR 20x/menit, Suhu 36,2°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "pemeriksaan",
+        "nama": "Visus",
+        "temuan": "OD 6/6, OS 6/6",
+        "signifikan": false
+      },
+      {
+        "id": "sklera",
+        "kelompok": "khas",
+        "nama": "Sklera",
+        "temuan": "Tampak perdarahan (+) pada mata kanan, segmen anterior lain dalam batas normal",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pemeriksaan penunjang khusus",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Perdarahan Subkonjungtiva",
+    "differensialBenar": [
+      "Hifema",
+      "Hipertensi Okuli",
+      "Episkleritis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Cendo Lyteers eye drop untuk kenyamanan, kompres dingin",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik topikal sebagai terapi utama",
+      "benar": false
+    },
+    {
+      "opsi": "Rujuk operasi segera meski tidak ada tanda hifema atau kerusakan struktur mata",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kompres dingin 10-15 menit, sembuh sendiri dalam 1-2 minggu, kontrol tekanan darah, hindari benturan/trauma",
+      "benar": true
+    },
+    {
+      "opsi": "Kondisi ini selalu memerlukan tindakan bedah",
+      "benar": false
+    }
+  ]
+}

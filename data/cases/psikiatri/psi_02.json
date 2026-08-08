@@ -1,0 +1,276 @@
+{
+  "id": "psi_02",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "identitas": "Adik Sinta, 25 tahun, diantar kakaknya Juki",
+  "keluhanUtama": "Sudah 1 bulan tidak mau bicara, diam, mengurung diri, dan ada percobaan bunuh diri",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Mencoba menenggelamkan diri di sungai depan rumah tapi diselamatkan",
+        "Memburuk sejak 1 tahun lalu, lebih parah 6 bulan terakhir",
+        "Ingin bunuh diri sejak 1 bulan terakhir",
+        "Sulit tidur",
+        "Ngomong sendiri 'HARUS MATI', mengaku ada yang membisiki dia harus mati",
+        "Tidak mau bicara, diam, mengurung diri sejak 1 bulan lalu",
+        "Dulu tidak seperti itu, awalnya malas kuliah, sekarang tidak mau bicara sama sekali",
+        "Tidak ada kronologi/penyebab jelas",
+        "Tidak mau mandi, makan minum harus dibantu"
+      ],
+      "rpd": "6 bulan yang lalu sempat dibawa ke dukun",
+      "rpk": "Buyut dari ibu memiliki kondisi yang sama",
+      "lifestyle": [
+        "S, A, D (-)",
+        "Makan dan minum harus dibantu",
+        "Sulit tidur gampang terbangun"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "pemeriksaan",
+        "nama": "Ku",
+        "temuan": "Compos mentis",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "pemeriksaan",
+        "nama": "Vs",
+        "temuan": "DBN (TD 120/80, HR 90x/min, RR 16x/min, Suhu 36.5C)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kesadaran",
+        "kelompok": "pemeriksaan",
+        "nama": "Kesadaran",
+        "temuan": "Compos mentis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_orientasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Orientasi",
+        "temuan": "Tidak dapat dinilai (N/A)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_penampilan",
+        "kelompok": "pemeriksaan",
+        "nama": "Penampilan",
+        "temuan": "Rapi (didandani)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_sikap",
+        "kelompok": "pemeriksaan",
+        "nama": "Sikap",
+        "temuan": "Tidak kooperatif",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_atensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Atensi",
+        "temuan": "Buruk",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_mood",
+        "kelompok": "pemeriksaan",
+        "nama": "Mood",
+        "temuan": "Sedih",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_afek",
+        "kelompok": "pemeriksaan",
+        "nama": "Afek",
+        "temuan": "Depresif, appropriate",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_persepsi",
+        "kelompok": "pemeriksaan",
+        "nama": "Persepsi",
+        "temuan": "Halusinasi auditorik (tidak selalu ada, tergantung probandus); pastikan apakah ide bunuh diri atas kemauan sendiri atau ada yang menyuruh",
+        "signifikan": true
+      },
+      {
+        "id": "statuspsikiatri_perilakumotorik",
+        "kelompok": "pemeriksaan",
+        "nama": "Perilaku motorik",
+        "temuan": "Normal",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bentukpikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Bentuk pikir",
+        "temuan": "Non-realistis",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_isipikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Isi pikir",
+        "temuan": "Halusinasi, dan ingin mati",
+        "signifikan": true
+      },
+      {
+        "id": "statuspsikiatri_aruspikir",
+        "kelompok": "pemeriksaan",
+        "nama": "Arus pikir",
+        "temuan": "Miskin",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_bicara",
+        "kelompok": "pemeriksaan",
+        "nama": "Bicara",
+        "temuan": "Cenderung diam",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_memori",
+        "kelompok": "pemeriksaan",
+        "nama": "Memori",
+        "temuan": "Tidak dapat dinilai",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_tilikan",
+        "kelompok": "pemeriksaan",
+        "nama": "Tilikan",
+        "temuan": "1 (karena dibawa keluarganya, tidak sadar kalau sakit)",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_kalkulasi",
+        "kelompok": "pemeriksaan",
+        "nama": "Kalkulasi",
+        "temuan": "Tidak dapat dinilai",
+        "signifikan": false
+      },
+      {
+        "id": "statuspsikiatri_intelegensi",
+        "kelompok": "pemeriksaan",
+        "nama": "Intelegensi",
+        "temuan": "Tidak dapat dinilai",
+        "signifikan": false
+      },
+      {
+        "id": "noteskhusus",
+        "kelompok": "pemeriksaan",
+        "nama": "Notes khusus",
+        "temuan": "Gunakan skala SIRS (Suicidal Intention Rating Scale): 0=tidak ada ide bunuh diri; 1=ada ide, tidak ada percobaan; 2=memikirkan aktif, tidak ada percobaan; 3=mengancam bunuh diri; 4=aktif mencoba bunuh diri",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Depresi Berat dengan Gejala Psikotik",
+    "differensialBenar": [
+      "Depresi Berat Tanpa Gejala Psikotik",
+      "Bipolar Fase Depresif",
+      "Skizofrenia Katatonik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Amitriptilin tab mg 25 No. XXX\nS.1.d.d tab III h.s",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Asam valproat tab lepas lambat mg 500 No. XX\nS.2.d.d tab. I (ada di faskes 1)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Risperidone tab mg 2 No. X\nS.1.d.d tab I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amitriptilin tab mg 50 No. XXX\nS.1.d.d tab III h.s",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Asam valproat tab lepas lambat tab mg 500 No. XXV\nS.2.d.d tab. I (ada di faskes 1)",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Risperidone tab mg 4 No. X\nS.1.d.d tab I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Amoxicillin tab mg 500 No. XV\nS.3.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Simvastatin tab mg 20 No. XXX\nS.1.d.d tab. I n.h",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Omeprazole caps mg 20 No. XIV\nS.2.d.d caps. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril tab mg 25 No. XXX\nS.2.d.d tab. I",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Paracetamol tab mg 500 No. X\nS.3.d.d tab. I p.r.n",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Cetirizine tab mg 10 No. X\nS.1.d.d tab. I",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk ke Sp. KJ",
+      "benar": true
+    },
+    {
+      "opsi": "Family Therapy",
+      "benar": true
+    },
+    {
+      "opsi": "Diawasi, jangan ditinggal sendirian",
+      "benar": true
+    },
+    {
+      "opsi": "Jauhi dari benda-benda berbahaya yang berisiko jadi alat bunuh diri (benda tajam, cairan pembersih, tali, ketinggian)",
+      "benar": true
+    },
+    {
+      "opsi": "Keinginan bunuh diri itu bukan kemauan dari dirinya namun dari kondisi kejiwaannya",
+      "benar": true
+    },
+    {
+      "opsi": "Pasien dianjurkan berhenti total dari seluruh aktivitas maupun pekerjaan selamanya",
+      "benar": false
+    },
+    {
+      "opsi": "Boleh menghentikan obat sendiri begitu gejala membaik tanpa konsultasi dokter",
+      "benar": false
+    },
+    {
+      "opsi": "Kondisi ini menular melalui kontak fisik biasa sehari-hari",
+      "benar": false
+    },
+    {
+      "opsi": "Obat herbal dapat sepenuhnya menggantikan pengobatan medis yang diberikan",
+      "benar": false
+    },
+    {
+      "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
+      "benar": false
+    }
+  ]
+}

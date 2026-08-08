@@ -1,0 +1,105 @@
+{
+  "id": "mus_07",
+  "kategori": "muskuloskeletal",
+  "level": "3B",
+  "identitas": "Bu Siska, 60 tahun, pensiunan PNS",
+  "keluhanUtama": "Datang ke poli dengan keluhan nyeri punggung menyebar ke perut sejak 3 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri sepanjang hari seperti diinjak, skala 3",
+        "Bertambah sakit jika bergerak/beraktivitas, berkurang saat berbaring"
+      ],
+      "rpd": "Riwayat patah tulang karena jatuh di kamar mandi 3 tahun lalu, kaki patah 2 tahun lalu, jatuh 1 tahun lalu dan hanya minum jamu, tidak pernah berobat ke dokter",
+      "rpk": "Ibu memiliki riwayat nyeri punggung",
+      "lifestyle": [
+        "Aktivitas sehari-hari di rumah saja",
+        "Merokok 1 bungkus/hari",
+        "Riwayat konsumsi alkohol, berhenti sejak usia 50 tahun",
+        "Tidak olahraga"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, tampak sakit",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/70 mmHg, Nadi 72x/menit, RR 20x/menit, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "gait",
+        "kelompok": "khas",
+        "nama": "Gait",
+        "temuan": "Perubahan cara berjalan (postural change area lumbal)",
+        "signifikan": true
+      },
+      {
+        "id": "tulang_belakang",
+        "kelompok": "khas",
+        "nama": "Tulang Belakang",
+        "temuan": "Kifosis di daerah thorakolumbal, nyeri tekan pada L1-L2, ROM aktif nyeri",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "rontgen",
+        "nama": "Rontgen Lumbosacral",
+        "temuan": "Fraktur pada VL2 anterior, patahan di Lumbal 1, peninggian korpus, korteks tulang lebih tipis; BMD <-2,5 SD (osteoporosis)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Hb 11,5 g/dL, leukosit dan trombosit dalam batas normal",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Fraktur Kompresi pada Osteoporosis",
+    "differensialBenar": [
+      "HNP",
+      "Low Back Pain",
+      "Spondilitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Pasang korset lumbal untuk fiksasi/imobilisasi, R/ Natrium Diklofenak + Kalsium Laktat, rujuk Sp.OT",
+      "benar": true
+    },
+    {
+      "opsi": "Sarankan operasi vertebroplasti segera tanpa terapi konservatif dan rujukan Sp.OT",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup jamu dan istirahat tanpa rujukan Sp.OT meski ada fraktur kompresi terkonfirmasi",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kurangi aktivitas berat, dirujuk untuk penanganan Sp.OT, jelaskan osteoporosis terkait faktor penuaan",
+      "benar": true
+    },
+    {
+      "opsi": "Fraktur kompresi ini tidak berhubungan dengan riwayat jatuh berulang sebelumnya",
+      "benar": false
+    }
+  ]
+}

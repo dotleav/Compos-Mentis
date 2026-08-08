@@ -1,0 +1,99 @@
+{
+  "id": "gen_04",
+  "kategori": "genitourinaria",
+  "level": "3A",
+  "identitas": "Agus, 55 tahun, petani",
+  "keluhanUtama": "Datang ke poli dengan keluhan nyeri saat kencing sejak 3 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Frekuensi BAK makin sering namun tidak puas (pollakiuria)",
+        "Nokturia, BAK 2-3x/jam",
+        "Harus mengejan saat pipis, pancaran menetes",
+        "Tidak ada darah atau nanah",
+        "Sering menahan pipis",
+        "VAS 5-6"
+      ],
+      "rpd": "Pernah mengalami keluhan serupa 1 tahun lalu, membaik dengan minum air putih",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Aktivitas sehari-hari sebagai petani"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, sakit sedang, gizi cukup",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 98x/menit, RR 19x/menit, Suhu 36,2°C",
+        "signifikan": false
+      },
+      {
+        "id": "genital",
+        "kelompok": "pemeriksaan",
+        "nama": "Genitalia Eksterna",
+        "temuan": "Tidak ada luka, darah, discharge, atau benjolan; tidak ada pembesaran limfonodi inguinal",
+        "signifikan": false
+      },
+      {
+        "id": "rectal_touche",
+        "kelompok": "khas",
+        "nama": "Rectal Touche",
+        "temuan": "Teraba massa kenyal (prostat membesar), tidak ada nyeri tekan",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl_urin",
+        "nama": "Darah Lengkap & Urinalisa",
+        "temuan": "Dalam batas normal, tidak ada tanda infeksi",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Benign Prostate Hyperplasia (BPH)",
+    "differensialBenar": [
+      "Prostatitis",
+      "ISK",
+      "Ca Prostat"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Finasteride tab 5mg 1x sehari, rujuk Sp.U; bila retensi berat pasang kateter atau pungsi suprapubik di linea alba",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik sebagai lini pertama tanpa tanda infeksi",
+      "benar": false
+    },
+    {
+      "opsi": "Sarankan operasi prostatektomi segera tanpa terapi medikamentosa dahulu",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan penyebab karena pembesaran kelenjar prostat terkait usia, jangan menahan kencing, hindari mengejan saat BAK, kontrol Sp.U",
+      "benar": true
+    },
+    {
+      "opsi": "Kondisi ini selalu merupakan tanda kanker prostat",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "int_03",
+  "kategori": "integumen",
+  "level": "4A",
+  "identitas": "Anna, 40 tahun, guru, tinggal di Sagan",
+  "keluhanUtama": "Datang ke poli dengan keluhan bercak merah di jari kelingking kaki kanan sejak 1 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Tidak menyebar, hanya di sela jari kelingking kanan",
+        "Tidak gatal dan tidak panas",
+        "Perih saat mandi/terkena air",
+        "Sudah diobati salep 88, tidak membaik"
+      ],
+      "rpd": "Belum pernah mengalami hal serupa, tidak ada riwayat alergi",
+      "rpk": "Tidak ada anggota keluarga dengan hal serupa",
+      "lifestyle": [
+        "Bekerja menggunakan sepatu pantofel dan kaus kaki >12 jam",
+        "Baru cuci kaki setelah pulang ke rumah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "HR 80x/menit, RR 20x/menit, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi sela jari kelingking kaki kanan, UKK primer patch eritem di tengah dengan hipopigmentasi di dasar lesi, erosi di bagian tengah, batas tegas bentuk teratur ukuran 1cm tunggal soliter, tidak teraba hangat",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "koh",
+        "nama": "Pewarnaan KOH 10%",
+        "temuan": "Positif, ditemukan pseudohifa dan blastospora",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Kandidiasis Interdigitalis",
+    "differensialBenar": [
+      "Dermatitis Kontak Alergi",
+      "Tinea Manus"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ketokonazole 2% krim topikal, digunakan sehabis mandi selama 2 minggu",
+      "benar": true
+    },
+    {
+      "opsi": "Lanjutkan salep 88 dosis lebih tinggi meski sudah gagal sebelumnya",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Antibiotik topikal sebagai terapi utama kandidiasis",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga area infeksi tetap kering, sering ganti kaos kaki, keringkan kaki/sepatu bila lembab, mandi dengan sabun hingga sela jari minimal 2x/hari",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh terus memakai sepatu tertutup tanpa ganti kaos kaki selama diobati",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "hem_10",
+  "kategori": "hematoimun",
+  "level": "4",
+  "identitas": "Perempuan, 25 tahun",
+  "keluhanUtama": "Datang ke UGD dengan keluhan sesak napas mendadak sejak beberapa menit yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Gatal dan bintik merah (ruam) di wajah",
+        "Awalnya pusing, lalu minum ibuprofen dan langsung sesak napas"
+      ],
+      "rpd": "Riwayat alergi debu dan dingin",
+      "rpk": "Adik memiliki riwayat asma",
+      "lifestyle": [
+        "Tidak ada kebiasaan khusus"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, Nadi 100x, RR 28x (takipnea), Suhu 37,8°C",
+        "signifikan": true
+      },
+      {
+        "id": "thorax",
+        "kelompok": "khas",
+        "nama": "Thorax",
+        "temuan": "Vesikuler dengan wheezing samar",
+        "signifikan": true
+      },
+      {
+        "id": "ekstremitas_kulit",
+        "kelompok": "khas",
+        "nama": "Kulit",
+        "temuan": "Ruam berupa urtika, makula, dan eritem",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pemeriksaan penunjang tambahan, diagnosis ditegakkan secara klinis pada kegawatdaruratan",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Reaksi Anafilaktik e.c Ibuprofen",
+    "differensialBenar": [
+      "Syok Anafilaktik",
+      "Asma Akut",
+      "Urtikaria"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Oksigenasi 8L/menit, IVFD RL, Epinefrin IM 0,5ml di vastus lateralis (ulangi tiap 5-15 menit bila belum membaik), antihistamin Cetirizine",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan antihistamin oral saja tanpa epinefrin meski ada sesak napas dan wheezing",
+      "benar": false
+    },
+    {
+      "opsi": "Tunggu observasi 30 menit dahulu sebelum memberi epinefrin",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari alergen dan obat yang belum pernah diminum sebelumnya, selalu informasikan riwayat alergi ke tenaga medis",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh mencoba ibuprofen lagi di dosis lebih rendah untuk memastikan alergi",
+      "benar": false
+    }
+  ]
+}

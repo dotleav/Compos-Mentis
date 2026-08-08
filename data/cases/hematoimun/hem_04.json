@@ -1,0 +1,135 @@
+{
+  "id": "hem_04",
+  "kategori": "hematoimun",
+  "level": "4A",
+  "identitas": "Putri, 23 tahun, mahasiswa, tinggal di Sewon",
+  "keluhanUtama": "Datang ke poli dengan keluhan demam tinggi sejak 3 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Demam tinggi dengan menggigil, naik turun",
+        "Nyeri kepala sejak 2 hari",
+        "Mual tanpa muntah sejak 2 hari",
+        "Nyeri kaki sejak semalam hingga sulit berdiri",
+        "Sudah minum paracetamol, demam turun lalu naik lagi",
+        "Mata merah sejak 1 hari disertai fotofobia",
+        "Nyeri sendi terutama paha dan betis, VAS 7/10"
+      ],
+      "rpd": "Belum pernah seperti ini, tidak ada alergi; riwayat arung jeram seminggu lalu dengan luka di kaki yang sudah diobati",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Merokok 5 batang/hari",
+        "Hobi berkegiatan di alam",
+        "Nafsu makan normal"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, Nadi 100x, RR 16x, Suhu 39°C",
+        "signifikan": true
+      },
+      {
+        "id": "kepala",
+        "kelompok": "khas",
+        "nama": "Kepala",
+        "temuan": "Conjunctival suffusion (+)",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Hepatomegali",
+        "signifikan": true
+      },
+      {
+        "id": "ekstremitas",
+        "kelompok": "khas",
+        "nama": "Ekstremitas",
+        "temuan": "Luka lecet di betis, nyeri tekan M. gastrocnemius (+), ROM menurun, tidak ada bengkak",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukositosis, LED meningkat, Hct meningkat, trombosit menurun, neutrofil meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "urinalisa",
+        "nama": "Urinalisa",
+        "temuan": "Protein (++)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "fungsi_hati_ginjal",
+        "nama": "Fungsi Hati & Ginjal",
+        "temuan": "SGPT meningkat, ureum meningkat, kreatinin meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "serologi",
+        "nama": "Serologi Leptospira",
+        "temuan": "IgM/IgG Anti-Leptospira (+)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Leptospirosis",
+    "differensialBenar": [
+      "Demam Dengue",
+      "Chikungunya",
+      "Malaria",
+      "Toxoplasmosis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Doksisiklin caps 100mg (dihabiskan) + Paracetamol + Domperidon simptomatik",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amoxicillin sebagai lini pertama leptospirosis",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup obat simptomatik tanpa antibiotik",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari perairan (sawah/sungai/rawa) tanpa alas kaki, jaga kebersihan makanan/minuman, cuci tangan sebelum makan",
+      "benar": true
+    },
+    {
+      "opsi": "Waspada komplikasi gagal ginjal akut dan gagal hati, kontrol bila muncul ikterus atau produksi urin menurun",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit ini tidak berhubungan dengan aktivitas air/lumpur",
+      "benar": false
+    }
+  ]
+}

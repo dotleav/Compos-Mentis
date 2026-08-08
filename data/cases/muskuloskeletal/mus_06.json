@@ -1,0 +1,104 @@
+{
+  "id": "mus_06",
+  "kategori": "muskuloskeletal",
+  "level": "3A",
+  "identitas": "Sintha, 20 tahun, atlet badminton",
+  "keluhanUtama": "Datang ke UGD dengan keluhan nyeri lutut kiri sejak 6 jam yang lalu setelah cedera olahraga",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Jatuh setelah melompat saat bermain badminton",
+        "Nyeri nyut-nyutan terus menerus, tidak menjalar, skala 7",
+        "Lutut bengkak, sulit berjalan karena tidak stabil",
+        "Membaik dengan istirahat dan kompres es"
+      ],
+      "rpd": "Tidak ada riwayat khusus",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Sering berolahraga (atlet badminton)"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "gait",
+        "kelompok": "khas",
+        "nama": "Gait",
+        "temuan": "Jalan tidak stabil",
+        "signifikan": true
+      },
+      {
+        "id": "look",
+        "kelompok": "khas",
+        "nama": "Look",
+        "temuan": "Bengkak dan kemerahan pada genu sinistra",
+        "signifikan": true
+      },
+      {
+        "id": "feel",
+        "kelompok": "khas",
+        "nama": "Feel",
+        "temuan": "Nyeri tekan (+), krepitasi (-)",
+        "signifikan": true
+      },
+      {
+        "id": "move",
+        "kelompok": "khas",
+        "nama": "Move",
+        "temuan": "ROM aktif dan pasif menurun genu sinistra",
+        "signifikan": true
+      },
+      {
+        "id": "tes_khusus",
+        "kelompok": "khas",
+        "nama": "Tes Khusus Lutut",
+        "temuan": "Anterior drawer test (+), Lachman test (+), posterior drawer (-), McMurray (-), Apley (-)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "xray",
+        "nama": "X-Ray Genu Sinistra AP Lateral",
+        "temuan": "Tidak tersedia data spesifik pada kasus ini, digunakan untuk menyingkirkan fraktur",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Ruptur ACL",
+    "differensialBenar": [
+      "Ruptur PCL",
+      "Lesi Meniskus",
+      "Ruptur Tendon Achilles"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Natrium Diklofenak, pasang elastic bandage, rujuk Sp.OT",
+      "benar": true
+    },
+    {
+      "opsi": "Operasi rekonstruksi ACL langsung di UGD tanpa rujukan Sp.OT",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup elastic bandage tanpa rujukan meski Lachman dan anterior drawer test positif",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Terapkan RICE, kurangi mobilitas berlebih, kontrol rutin 2-3 minggu sekali, rujuk Sp.OT",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh kembali bermain badminton segera setelah bengkak mereda tanpa rehabilitasi",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "int_11",
+  "kategori": "integumen",
+  "level": "4A",
+  "identitas": "Laki-laki, 30 tahun, PNS, tinggal di Sagan",
+  "keluhanUtama": "Datang ke poli dengan keluhan bercak putih mati rasa di lengan kiri atas sejak 6 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Mati rasa (+) pada bercak",
+        "Tidak gatal",
+        "Belum diobati"
+      ],
+      "rpd": "Tidak pernah mengalami keluhan serupa, tidak ada alergi; perlu ditanyakan riwayat bepergian ke wilayah endemik lepra",
+      "rpk": "Tidak ada anggota keluarga dengan hal serupa, tidak ada DM/hipertensi",
+      "lifestyle": [
+        "Tidak ada kebiasaan khusus dilaporkan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/80 mmHg, HR 72x/menit, RR 16x/menit, Suhu 36,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi lengan kiri atas unilateral, patch hipopigmentasi batas tegas bentuk bulat diameter 5cm tunggal soliter, tidak teraba (baal/anestesi)",
+        "signifikan": true
+      },
+      {
+        "id": "saraf_tepi",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Saraf Tepi",
+        "temuan": "Hanya 1 saraf tepi yang terlibat, mendukung tipe Paucibacillary (PB)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "bta",
+        "nama": "BTA Kerokan Kulit (Ziehl Neelsen)",
+        "temuan": "Indeks bakteri 0, negatif - mendukung tipe PB",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Lepra Paucibacillary (PB)",
+    "differensialBenar": [
+      "Pitiriasis Alba",
+      "Tinea Versikolor"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Rifampisin (diminum langsung di depan dokter) + Dapsone tab 100mg harian selama 6 bulan sesuai regimen PB",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Regimen MB (3 obat) diberikan meski BTA negatif dan hanya 1 saraf terlibat (kasus PB)",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup antihistamin karena tidak ada gatal",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Minum obat rutin tanpa putus (bisa sembuh namun pengobatan minimal 6 bulan), keluarga disarankan turut diperiksa",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menghentikan obat begitu bercak memudar sebelum 6 bulan",
+      "benar": false
+    }
+  ]
+}

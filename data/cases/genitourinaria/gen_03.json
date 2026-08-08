@@ -1,0 +1,104 @@
+{
+  "id": "gen_03",
+  "kategori": "genitourinaria",
+  "level": "3B",
+  "identitas": "Yanto, 40 tahun, kuli bangunan",
+  "keluhanUtama": "Datang ke UGD dengan keluhan nyeri di selangkangan setelah kecelakaan kerja sejak 1 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Penis mengeluarkan darah",
+        "Kencing berdarah dan nyeri saat BAK",
+        "Nyeri setelah jatuh dari ketinggian 2 meter, selangkangan terbentur meja",
+        "Belum ke dokter, belum minum obat",
+        "VAS 8"
+      ],
+      "rpd": "Belum pernah mengalami hal serupa",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Bekerja sebagai kuli bangunan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "primary_survey",
+        "kelompok": "vital",
+        "nama": "Primary Survey",
+        "temuan": "Airway clear, RR 20x/menit SpO2 99%, TD 90/60 mmHg, HR 90x/menit (perlu IVFD RL 20 tpm), GCS 15",
+        "signifikan": true
+      },
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Tampak kesakitan berat",
+        "signifikan": true
+      },
+      {
+        "id": "genital",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Genital",
+        "temuan": "Butterfly hematoma (+), milking test darah (+), nyeri inguinal (+), tidak ada massa",
+        "signifikan": true
+      },
+      {
+        "id": "rectal_touche",
+        "kelompok": "khas",
+        "nama": "Rectal Touche",
+        "temuan": "Prostat melayang (high riding prostate)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Hb 11, leukosit 11.000",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "uretrografi",
+        "nama": "Uretrografi Retrograde",
+        "temuan": "Dilakukan di rumah sakit rujukan untuk konfirmasi lokasi dan luas ruptur uretra",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Ruptur Uretra Anterior",
+    "differensialBenar": [
+      "Striktur Uretra",
+      "Ruptur Vesika Urinaria"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Jangan pasang kateter transuretra (risiko memperberat cedera), pasang IVFD RL, analgesik Ketorolac, pertimbangkan pungsi suprapubik, rujuk segera Sp.U",
+      "benar": true
+    },
+    {
+      "opsi": "Segera pasang kateter uretra secara paksa untuk mengatasi retensi urin",
+      "benar": false
+    },
+    {
+      "opsi": "Tunda rujukan sampai nyeri mereda dengan analgesik oral",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Ini kondisi emergensi, segera dirujuk ke spesialis urologi, umumnya bisa membaik dengan penanganan tepat",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menunggu di rumah beberapa hari sebelum ke rumah sakit",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "end_04",
+  "kategori": "endokrin",
+  "level": "4",
+  "identitas": "Anak laki-laki, 15 tahun, kelas 3 SMP",
+  "keluhanUtama": "Datang ke poli dengan keluhan berat badan turun sejak beberapa waktu terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "BB awal 62kg, turun signifikan",
+        "Tenggorokan kering di awal keluhan",
+        "Rasa lelah",
+        "Sering pipis dan sering haus"
+      ],
+      "rpd": "Belum pernah seperti ini sebelumnya",
+      "rpk": "Dalam batas normal",
+      "lifestyle": [
+        "Aktivitas sehari-hari sebagai pelajar"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Compos mentis",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "Dalam batas normal",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "gula_darah",
+        "nama": "Gula Darah",
+        "temuan": "GDS tinggi mendukung hiperglikemia",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "urinalisa",
+        "nama": "Urinalisa",
+        "temuan": "Glukosuria (+), keton dapat positif",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Diabetes Melitus Tipe 1",
+    "differensialBenar": [
+      "Diabetes Melitus Tipe 2",
+      "Grave's Disease",
+      "Hiperglikemia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Terapi insulin sebagai lini utama pada anak dengan DM tipe 1, rujuk Sp.A/Sp.PD",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Metformin sebagai terapi tunggal tanpa insulin",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup modifikasi diet tanpa insulin karena masih usia remaja",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Insulin harus digunakan seumur hidup, edukasi keluarga tentang tanda hipoglikemia dan hiperglikemia",
+      "benar": true
+    },
+    {
+      "opsi": "Insulin bisa dihentikan begitu gejala membaik",
+      "benar": false
+    },
+    {
+      "opsi": "Anak tidak perlu kontrol rutin ke dokter spesialis",
+      "benar": false
+    }
+  ]
+}

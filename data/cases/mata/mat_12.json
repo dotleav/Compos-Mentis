@@ -1,0 +1,97 @@
+{
+  "id": "mat_12",
+  "kategori": "mata",
+  "level": "4",
+  "identitas": "Wartawan yang sering bekerja di depan komputer",
+  "keluhanUtama": "Datang ke poli dengan keluhan pandangan kabur pada kedua mata sejak 2 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Kabur terutama melihat jauh, memburuk",
+        "Sudah pakai tetes mata insto, tidak membaik",
+        "Tidak ada gatal, nyeri, merah, atau silau"
+      ],
+      "rpd": "Belum pernah mengalami gejala serupa, belum pernah pakai kacamata/softlens, tidak ada penyakit metabolik/autoimun/alergi",
+      "rpk": "Tidak ada keluarga yang memakai kacamata",
+      "lifestyle": [
+        "Sering bekerja dengan komputer, jarang istirahat",
+        "Sering membaca sambil tiduran"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, tampak baik",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 88x/menit, RR 16x/menit, Suhu 37,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "khas",
+        "nama": "Visus",
+        "temuan": "OD 6/60, OS 3/60 (menurun signifikan)",
+        "signifikan": true
+      },
+      {
+        "id": "segmen_anterior_posterior",
+        "kelompok": "pemeriksaan",
+        "nama": "Segmen Anterior & Posterior",
+        "temuan": "Dalam batas normal",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "schirmer",
+        "nama": "Tes Schirmer",
+        "temuan": "Dalam batas normal",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Refraksi - Miopi",
+    "differensialBenar": [
+      "Dry Eye Syndrome",
+      "Hipermetropi",
+      "Astigmatisma"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rujuk Sp.M untuk koreksi refraksi dan resep kacamata (sesuai kompetensi 4)",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan obat tetes mata sebagai terapi utama miopia",
+      "benar": false
+    },
+    {
+      "opsi": "Operasi lasik langsung tanpa evaluasi refraksi",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jangan membaca di tempat gelap atau sambil tiduran, terapkan aturan 20-20-20, kontrol refraksi 1 tahun sekali, rujuk Sp.M",
+      "benar": true
+    },
+    {
+      "opsi": "Miopia akan sembuh sendiri tanpa kacamata bila dibiasakan",
+      "benar": false
+    }
+  ]
+}

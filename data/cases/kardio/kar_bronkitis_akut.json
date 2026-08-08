@@ -1,0 +1,94 @@
+{
+  "id": "kar_bronkitis_akut",
+  "kategori": "kardio",
+  "level": "4",
+  "identitas": "Budi, 20 tahun, mahasiswa",
+  "keluhanUtama": "Datang ke poli dengan keluhan batuk sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Batuk sepanjang hari, paling sering sore dan malam",
+        "Batuk berdahak warna kuning",
+        "Sempat bersin dan demam namun sudah membaik",
+        "Membaik dengan istirahat dan minum air putih tapi memburuk lagi",
+        "Memburuk saat di luar kos",
+        "Lelah, nyeri otot, dan nyeri tenggorokan"
+      ],
+      "rpd": "Tidak pernah mengalami seperti ini, tidak ada alergi",
+      "rpk": "Teman kuliah memiliki gejala serupa",
+      "lifestyle": [
+        "Lingkungan baik",
+        "Pola makan tidak teratur, banyak makan mie instan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, HR 80x/menit, RR 22x/menit, Suhu 37,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "paru",
+        "kelompok": "khas",
+        "nama": "Auskultasi Paru",
+        "temuan": "Ronki basah (+) dan wheezing (+) di paru bilateral",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "foto_thorax",
+        "nama": "Foto Thorax AP",
+        "temuan": "Kedua apex paru tenang, air bronkogram (+), corakan bronkovaskuler meningkat, sinus dan diafragma normal, CTR normal, tidak ada tanda TB",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap & Sputum",
+        "temuan": "Eosinofil turun, sputum dalam batas normal",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Bronkitis Akut",
+    "differensialBenar": [
+      "Bronkopneumonia",
+      "Pneumonia",
+      "Bronkiektasis",
+      "Asma Bronkial"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ambroxol tab 30mg untuk batuk berdahak + Paracetamol tab 500mg p.r.n untuk demam",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik spektrum luas sebagai lini pertama karena penyebab biasanya bakteri",
+      "benar": false
+    },
+    {
+      "opsi": "R/ OAT karena dicurigai tuberkulosis tanpa konfirmasi BTA",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gunakan masker, terapkan etika batuk yang benar, jelaskan penyebab biasanya virus seperti flu biasa",
+      "benar": true
+    },
+    {
+      "opsi": "Wajib minum antibiotik sampai habis meski penyebabnya virus",
+      "benar": false
+    }
+  ]
+}

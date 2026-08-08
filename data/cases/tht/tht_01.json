@@ -1,0 +1,97 @@
+{
+  "id": "tht_01",
+  "kategori": "tht",
+  "level": "4A",
+  "identitas": "Sahid, 30 tahun",
+  "keluhanUtama": "Datang ke poli dengan keluhan telinga kanan terasa tersumbat dan berdengung sejak 1 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Ada riwayat manipulasi dengan kunci sepeda motor karena telinga tidak nyaman",
+        "Beberapa jam kemudian telinga terasa tersumbat dan sedikit nyeri"
+      ],
+      "rpd": "Jarang sakit, tidak ada penyakit kronis",
+      "rpk": "Orang tua lansia, ayah dan ibu DM, ayah mengalami penurunan pendengaran",
+      "lifestyle": [
+        "Merokok 1 bungkus/hari",
+        "Kerja shift malam, jarang olahraga"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Tampak sakit sedang, CM",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, Nadi 70x/menit, RR 30x/menit, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "otoskopi",
+        "kelompok": "khas",
+        "nama": "Otoskopi",
+        "temuan": "AD: CAE penuh serumen terdorong ke medial, ada laserasi minimal di dinding posterior CAE; AS: dalam batas normal",
+        "signifikan": true
+      },
+      {
+        "id": "garpu_tala",
+        "kelompok": "khas",
+        "nama": "Tes Garpu Tala",
+        "temuan": "AD: Rinne negatif (BC>AC), Weber lateralisasi ke kanan, Schwabach memanjang di telinga kanan - kesan CHL (Conductive Hearing Loss)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "garpu_tala_pp",
+        "nama": "Interpretasi Garpu Tala",
+        "temuan": "Mendukung tuli konduktif telinga kanan akibat sumbatan serumen",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Serumen Impaksi (Serumen Prop)",
+    "differensialBenar": [
+      "Otitis Eksterna Difusa",
+      "Keratosis Obturans",
+      "Kolesteatoma",
+      "Corpus Alienum CAE"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Ekstraksi serumen dengan loop/hook/spoon, R/ Karbogliserin 10% tetes telinga bila belum tuntas, analgesik bila nyeri",
+      "benar": true
+    },
+    {
+      "opsi": "Gunakan kunci atau benda tajam untuk mengorek serumen agar cepat keluar",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup antibiotik oral tanpa evakuasi serumen",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari manipulasi telinga dengan alat atau jari untuk mencegah luka dan penumpukan serumen berulang",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh terus menggunakan kunci motor untuk membersihkan telinga asal hati-hati",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "stemi_anteroseptal",
+  "kategori": "kardio",
+  "level": "3B",
+  "nama": "Kasus 1 – Kardiovaskular",
+  "judulKasus": "Pak Indra, 40 tahun, riwayat hipertensi & hiperkolesterol, datang dengan nyeri dada mendadak",
+  "identitas": { "nama": "Indra", "usia": 40, "pekerjaan": "-", "alamat": "-" },
+  "keluhanUtama": "Nyeri dada mendadak",
+
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri dada kiri tiba-tiba, mulai 3 jam yang lalu",
+        "Nyeri muncul saat bangun tidur pagi, tidak sedang beraktivitas",
+        "Riwayat hipertensi & hiperkolesterol tidak terkontrol",
+        "Belum melakukan apapun untuk meredakan nyeri",
+        "2 tahun lalu pernah nyeri dada serupa selama 30 menit lalu hilang sendiri"
+      ],
+      "rpd": "Hipertensi sejak 10 tahun lalu, hiperkolesterol sejak 8 tahun lalu",
+      "rpk": "Tidak ada riwayat penyakit serupa di keluarga",
+      "lifestyle": [
+        "Merokok 1 bungkus/hari, sudah lama",
+        "Jarang minum obat rutin untuk hipertensi/kolesterol"
+      ]
+    },
+
+    "pemeriksaanFisik": [
+      { "id": "airway", "kelompok": "survei_primer", "nama": "Airway", "temuan": "Jalan napas bebas (clear)", "signifikan": false },
+      { "id": "breathing", "kelompok": "survei_primer", "nama": "Breathing", "temuan": "SpO2 tidak terukur di lapangan, RR 24x/menit", "signifikan": true },
+      { "id": "circulation", "kelompok": "survei_primer", "nama": "Circulation", "temuan": "TD 140/70 mmHg, CRT <2 detik, HR 90x/menit kuat angkat, akral hangat", "signifikan": false },
+      { "id": "vs_td", "kelompok": "vital", "nama": "Tekanan Darah", "temuan": "140/70 mmHg", "signifikan": false },
+      { "id": "vs_hr", "kelompok": "vital", "nama": "Nadi", "temuan": "90x/menit, kuat angkat", "signifikan": false },
+      { "id": "vs_rr", "kelompok": "vital", "nama": "Laju Napas", "temuan": "24x/menit", "signifikan": true },
+      { "id": "jvp", "kelompok": "survei_sekunder", "nama": "JVP", "temuan": "5+2 cmH2O (normal)", "signifikan": false },
+      { "id": "thorax_perkusi", "kelompok": "survei_sekunder", "nama": "Perkusi Thorax", "temuan": "Sonor pada kedua lapang paru", "signifikan": false },
+      { "id": "thorax_auskultasi", "kelompok": "khas", "nama": "Auskultasi Jantung & Paru", "temuan": "Vesikuler, ronki (-), wheezing (-), tidak ada pembesaran jantung", "signifikan": false },
+      { "id": "ekstremitas", "kelompok": "survei_sekunder", "nama": "Ekstremitas", "temuan": "Dalam batas normal", "signifikan": false }
+    ],
+
+    "penunjang": [
+      {
+        "id": "ekg",
+        "nama": "EKG",
+        "temuan": "Irama sinus reguler. Elevasi segmen ST di sadapan V1-V4 — khas STEMI Anteroseptal.",
+        "signifikan": true,
+        "image": "ekg_stemi_anteroseptal.png"
+      },
+      { "id": "ckmb", "nama": "CKMB", "temuan": "Meningkat — mendukung infark miokard akut", "signifikan": true },
+      { "id": "troponin", "nama": "Troponin I", "temuan": "Meningkat — mendukung infark miokard akut", "signifikan": true },
+      { "id": "darah_lengkap", "nama": "Darah Lengkap", "temuan": "Eosinofil sedikit menurun, sisanya dalam batas normal", "signifikan": false },
+      { "id": "profil_lipid", "nama": "Profil Lipid", "temuan": "Trigliserida meningkat, HDL menurun, LDL meningkat", "signifikan": true },
+      { "id": "gds", "nama": "Gula Darah Sewaktu", "temuan": "Dalam batas normal", "signifikan": false },
+      {
+        "id": "foto_thorax",
+        "nama": "Foto Thorax",
+        "temuan": "Dalam batas normal, tidak tampak kardiomegali maupun infiltrat",
+        "signifikan": false,
+        "image": "rontgen_thorax_normal.png"
+      }
+    ],
+
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+
+  "dd": {
+    "benar": "STEMI Anteroseptal (V1-V4)",
+    "pilihan": [
+      "STEMI Anteroseptal (V1-V4)",
+      "NSTEMI",
+      "UAP (Unstable Angina Pectoris)",
+      "GERD",
+      "Angina Pektoris Stabil"
+    ]
+  },
+
+  "tatalaksana": [
+    { "opsi": "MONA (Morfin-Oksigen-Nitrat-Aspirin) + antiplatelet dual + rujuk segera Sp.JP", "benar": true },
+    { "opsi": "Oksigen nasal kanul, pasang jalur infus NaCl 0,9%", "benar": true },
+    { "opsi": "ISDN sublingual 5mg, dapat diulang tiap 5 menit maksimal 3x", "benar": true },
+    { "opsi": "Aspirin kunyah 80mg + Clopidogrel loading dose 300-600mg", "benar": true },
+    { "opsi": "Morfin IV bila nyeri menetap setelah nitrat", "benar": true },
+    { "opsi": "Rujuk untuk PCI (pasang ring) sesegera mungkin", "benar": true },
+    { "opsi": "Amlodipin sebagai tatalaksana lini pertama", "benar": false },
+    { "opsi": "Pulangkan dan kontrol rawat jalan minggu depan", "benar": false },
+    { "opsi": "Cukup diberi antasida karena curiga GERD", "benar": false }
+  ],
+
+  "edukasi": [
+    { "opsi": "STEMI adalah penyumbatan total pembuluh darah jantung, kondisi gawat darurat", "benar": true },
+    { "opsi": "Perlu segera dirujuk untuk tindakan pemasangan ring (PCI)", "benar": true },
+    { "opsi": "Berhenti merokok dan kontrol tekanan darah serta kolesterol secara rutin", "benar": true },
+    { "opsi": "Ikuti program rehabilitasi jantung setelah kondisi stabil", "benar": true },
+    { "opsi": "Boleh menunda pengobatan selama nyeri masih bisa ditahan", "benar": false },
+    { "opsi": "Setelah nyeri hilang, tidak perlu pemeriksaan atau pengobatan lanjutan", "benar": false }
+  ]
+}

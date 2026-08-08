@@ -1,0 +1,99 @@
+{
+  "id": "mat_06",
+  "kategori": "mata",
+  "level": "3A",
+  "identitas": "Juki, 45 tahun, wirausaha, tinggal di Baciro",
+  "keluhanUtama": "Datang ke poli dengan keluhan mata merah, nyeri, dan berair sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bilateral, memerah mulai siang hari",
+        "Fotofobia",
+        "Discharge cair bening",
+        "Penglihatan kabur",
+        "Nyeri seperti ditusuk menjalar ke alis, VAS 7/10",
+        "Sudah pakai Cendo Xitrol, belum membaik"
+      ],
+      "rpd": "Baru pertama kali seperti ini, tidak ada alergi, riwayat sakit rematik (RA)",
+      "rpk": "Kakak memiliki riwayat SLE",
+      "lifestyle": [
+        "Tidak ada kebiasaan khusus dilaporkan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, HR 80x/menit, RR 16x/menit, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "pemeriksaan",
+        "nama": "Visus",
+        "temuan": "OD 6/12, OS 5/12 (penurunan ringan akibat mata berair)",
+        "signifikan": false
+      },
+      {
+        "id": "sklera",
+        "kelompok": "khas",
+        "nama": "Sklera",
+        "temuan": "Tampak kebiruan (skleritis sedang-berat), konjungtiva hiperemis, TIO dengan nyeri tekan",
+        "signifikan": true
+      },
+      {
+        "id": "tes_fenilefrin",
+        "kelompok": "khas",
+        "nama": "Tes Fenilefrin 2,5%",
+        "temuan": "Tetap hiperemis (tidak membaik) - membedakan dari episkleritis",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "schirmer",
+        "nama": "Tes Schirmer",
+        "temuan": "Normal",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Skleritis",
+    "differensialBenar": [
+      "Episkleritis",
+      "Keratitis",
+      "Konjungtivitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ibuprofen tab 400mg (NSAID nyeri) + Cendo Xitrol atau Fluorometholone (kortikosteroid), tangani penyakit autoimun yang mendasari, rujuk Sp.M",
+      "benar": true
+    },
+    {
+      "opsi": "Tes fenilefrin positif membaik jadi cukup edukasi tanpa terapi lanjutan",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup obat tetes lubrikasi tanpa NSAID atau kortikosteroid",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari mengucek mata, rujuk Sp.M, evaluasi kemungkinan penyakit autoimun sistemik yang mendasari",
+      "benar": true
+    },
+    {
+      "opsi": "Skleritis selalu idiopatik dan tidak perlu dicari penyakit dasarnya",
+      "benar": false
+    }
+  ]
+}

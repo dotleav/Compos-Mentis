@@ -1,0 +1,97 @@
+{
+  "id": "mat_05",
+  "kategori": "mata",
+  "level": "4A",
+  "identitas": "Juki, 20 tahun, mahasiswa, tinggal di Baciro",
+  "keluhanUtama": "Datang ke poli dengan keluhan mata merah kanan-kiri sejak 2 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Mata berair, nyeri, dan gatal",
+        "Penglihatan normal",
+        "Sudah diobati kloramfenikol tetes, tidak membaik",
+        "Terdapat sekret cair"
+      ],
+      "rpd": "Tidak ada riwayat alergi atau operasi mata; ada ISPA (batuk pilek radang tenggorokan) 3 hari sebelumnya",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Tempat tinggal dan kuliah bersih",
+        "Riwayat pakai softlens 8 jam saat keluar rumah sejak 1 tahun terakhir"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, HR 80x/menit, RR 16x/menit, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "limfonodi",
+        "kelompok": "khas",
+        "nama": "Palpasi Limfonodi",
+        "temuan": "Limfonodi preaurikular membesar",
+        "signifikan": true
+      },
+      {
+        "id": "visus",
+        "kelompok": "pemeriksaan",
+        "nama": "Visus",
+        "temuan": "OD 6/6, OS 6/6",
+        "signifikan": false
+      },
+      {
+        "id": "segmen_anterior",
+        "kelompok": "khas",
+        "nama": "Segmen Anterior",
+        "temuan": "Konjungtiva palpebra hiperemis dengan cobblestone, konjungtiva bulbi hiperemis, kornea jernih",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "swab",
+        "nama": "Swab Konjungtiva",
+        "temuan": "Negatif pada pengecatan Gram (menyingkirkan penyebab bakteri)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Konjungtivitis Viral",
+    "differensialBenar": [
+      "Mata Kering",
+      "Konjungtivitis Bakterial"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Artificial tears (Cendo Lyteers) untuk kenyamanan, edukasi bahwa ini self-limiting",
+      "benar": true
+    },
+    {
+      "opsi": "Lanjutkan antibiotik kloramfenikol dosis tinggi karena belum membaik",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Acyclovir eye ointment rutin tanpa indikasi herpes simpleks",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jangan mengucek mata, jaga higienitas, jangan berbagi handuk/pakaian, pakai kacamata agar tidak menular, bersifat self-limited",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit ini butuh antibiotik untuk sembuh",
+      "benar": false
+    }
+  ]
+}

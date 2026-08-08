@@ -1,0 +1,124 @@
+{
+  "id": "mus_02",
+  "kategori": "muskuloskeletal",
+  "level": "3A",
+  "identitas": "Anne, 36 tahun, teller bank",
+  "keluhanUtama": "Datang ke poli dengan keluhan nyeri sendi lutut dan jari tangan bilateral sejak 4 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bengkak pada jari-jari tangan, lutut, dan siku",
+        "Nyeri tidak menjalar, biasa terjadi pagi hari durasi ~1 jam (kaku sendi pagi)",
+        "BB turun 4kg",
+        "Sudah diberi Ibuprofen dan jamu pegal linu, membaik sesaat lalu kambuh lagi"
+      ],
+      "rpd": "Belum pernah mengalami hal ini, tidak ada riwayat opname/trauma",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Pola makan 4 sehat 5 sempurna"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 130/70 mmHg, Suhu 36°C, HR 64x/menit, RR 16x/menit, IMT 23-24 (belum obesitas)",
+        "signifikan": false
+      },
+      {
+        "id": "gait",
+        "kelompok": "khas",
+        "nama": "Gait",
+        "temuan": "Nyeri saat berjalan",
+        "signifikan": true
+      },
+      {
+        "id": "look",
+        "kelompok": "khas",
+        "nama": "Look",
+        "temuan": "Swan neck deformity di IFP 2-4 manus bilateral, lutut bengkak kemerahan bilateral",
+        "signifikan": true
+      },
+      {
+        "id": "feel",
+        "kelompok": "khas",
+        "nama": "Feel",
+        "temuan": "Nyeri tekan (+), teraba hangat",
+        "signifikan": true
+      },
+      {
+        "id": "move",
+        "kelompok": "khas",
+        "nama": "Move",
+        "temuan": "ROM aktif dan pasif menurun disertai nyeri",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "asam_urat",
+        "nama": "Kadar Asam Urat",
+        "temuan": "Dalam batas normal",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "rf",
+        "nama": "Rheumatoid Factor",
+        "temuan": "Positif",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "ana",
+        "nama": "ANA Test",
+        "temuan": "Negatif",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "xray",
+        "nama": "X-Ray Manus Bilateral",
+        "temuan": "Marginal erosion pada MTP joint, soft tissue swelling periartikular, hiperekstensi proksimal IFP joint, abnormal fleksi DIP joint",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Rheumatoid Arthritis",
+    "differensialBenar": [
+      "Osteoarthritis",
+      "Gout Arthritis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Natrium Diklofenak untuk nyeri sementara, rujuk Sp.PD untuk terapi DMARD lanjutan",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup NSAID jangka panjang tanpa rujukan Sp.PD",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Allopurinol sebagai terapi utama RA",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk Sp.PD, jelaskan ini penyakit autoimun kronis yang tidak sembuh total namun gejala bisa dikontrol, istirahat cukup, hindari pekerjaan berat",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit ini bisa sembuh total dengan NSAID rutin",
+      "benar": false
+    }
+  ]
+}

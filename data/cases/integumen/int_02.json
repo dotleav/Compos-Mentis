@@ -1,0 +1,84 @@
+{
+  "id": "int_02",
+  "kategori": "integumen",
+  "level": "4A",
+  "identitas": "Mas Juki, 25 tahun, baru lulus kuliah, tinggal di Baciro",
+  "keluhanUtama": "Datang ke poli dengan keluhan bintil kecil bernanah di paha kanan sejak 3 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Diawali nyeri, sekarang hanya gatal",
+        "Tidak menyebar, namun bertambah banyak bila digaruk",
+        "Tidak demam"
+      ],
+      "rpd": "Baru kali ini mengalami gejala serupa, tidak konsumsi obat rutin, tidak ada alergi",
+      "rpk": "Tidak ada anggota keluarga dengan hal serupa",
+      "lifestyle": [
+        "Rumah cukup bersih",
+        "Makan teratur 3x/hari"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, HR 80x/menit, RR 20x/menit, Suhu 36,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi paha kanan, UKK primer pustul eritem batas tegas bentuk bulat teratur ukuran 0,5-1cm multipel susunan polisiklik distribusi lokalisata, UKK sekunder krusta kuning kehitaman, teraba hangat",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "gram",
+        "nama": "Pewarnaan Gram Sekret Lesi",
+        "temuan": "Staphylococcus aureus (+)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Pioderma - Folikulitis Superfisialis",
+    "differensialBenar": [
+      "Acne Vulgaris",
+      "Furunkel",
+      "Karbunkel",
+      "Hidradenitis Supuratif"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Cetirizine (gatal) + Mupirocin 2% krim topikal 3-5 hari + Eritromisin sistemik 7 hari",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup antihistamin tanpa antibiotik meski kultur menunjukkan S. aureus",
+      "benar": false
+    },
+    {
+      "opsi": "Pecahkan pustul untuk mengeluarkan nanah agar cepat sembuh",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Antibiotik dihabiskan, mandi dengan sabun minimal 2x/hari, hindari menggaruk/memecahkan nanah, jangan cukur area lesi, pakai pakaian longgar",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh mencukur rambut area lesi selama masih ada nanah",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": "end_06",
+  "kategori": "endokrin",
+  "level": "3B",
+  "identitas": "Anton, 25 tahun, belum bekerja, tinggal di Sleman",
+  "keluhanUtama": "Datang ke poli dengan keluhan berat badan meningkat sejak 6 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Kelelahan disertai kenaikan BB",
+        "Wajah, perut, dan tengkuk terasa lebih gemuk",
+        "Energi menurun, sulit berdiri dari posisi duduk/jongkok",
+        "Emosi sensitif, cepat marah",
+        "Kelemahan otot",
+        "Rambut halus tumbuh di punggung dan dada, alis menebal",
+        "Muncul stretch mark keunguan di badan"
+      ],
+      "rpd": "Belum pernah seperti ini, tidak pernah rawat inap, tidak ada obat rutin/alergi",
+      "rpk": "Dalam batas normal",
+      "lifestyle": [
+        "Aktivitas sehari-hari di rumah",
+        "Makan 3x/hari tidak berlebihan",
+        "Tidak olahraga karena mudah lemas"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, sedikit lemas, obesitas sentral",
+        "signifikan": true
+      },
+      {
+        "id": "status_gizi",
+        "kelompok": "vital",
+        "nama": "Status Gizi",
+        "temuan": "TB 155cm, BB 65kg",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 135/85 mmHg, HR 88x, RR 16x, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "kepala_leher",
+        "kelompok": "khas",
+        "nama": "Kepala & Leher",
+        "temuan": "Pertumbuhan rambut di alis lebih banyak, tampak buffalo hump",
+        "signifikan": true
+      },
+      {
+        "id": "thorax_abdomen",
+        "kelompok": "khas",
+        "nama": "Thorax & Abdomen",
+        "temuan": "Rambut halus di sekitar thorax, kontur perut lebih tinggi dari dinding dada, stretch mark (+)",
+        "signifikan": true
+      },
+      {
+        "id": "ekstremitas",
+        "kelompok": "pemeriksaan",
+        "nama": "Ekstremitas",
+        "temuan": "Akral hangat, kekuatan otot kuat, tidak ada edema",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "kortisol",
+        "nama": "Kortisol",
+        "temuan": "100 mcg/dL (N <30)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "gds",
+        "nama": "GDS",
+        "temuan": "180 mg/dL",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "acth",
+        "nama": "ACTH",
+        "temuan": "54 (N 9-52), sedikit meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "dst",
+        "nama": "Tes Supresi Deksametason (DST)",
+        "temuan": "Kortisol tidak tersupresi (menurun minimal)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Cushing's Disease",
+    "differensialBenar": [
+      "Obesitas",
+      "Sindrom Metabolik",
+      "Tumor Hipofisis",
+      "PCOS"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rujuk Sp.PD untuk evaluasi dan terapi hormon lanjutan",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup terapi simtomatik obesitas tanpa rujukan spesialis",
+      "benar": false
+    },
+    {
+      "opsi": "Berikan kortikosteroid tambahan untuk mengatasi kelelahan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan bahwa gejala timbul akibat produksi kortisol berlebihan, olahraga rutin 3-5x/minggu, kontrol rutin",
+      "benar": true
+    },
+    {
+      "opsi": "Kondisi ini akan membaik sendiri tanpa penanganan spesialis",
+      "benar": false
+    },
+    {
+      "opsi": "Stretch mark dan buffalo hump adalah tanda obesitas biasa, bukan hal yang perlu dievaluasi lebih lanjut",
+      "benar": false
+    }
+  ]
+}

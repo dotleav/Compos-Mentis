@@ -1,0 +1,98 @@
+{
+  "id": "gen_05",
+  "kategori": "genitourinaria",
+  "level": "3B",
+  "identitas": "Budi, 21 tahun, mahasiswa",
+  "keluhanUtama": "Datang ke UGD dengan keluhan nyeri pada testis kiri mendadak sejak 6 jam yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri muncul saat bangun tidur, menetap, menjalar ke kiri bawah",
+        "Mual muntah 3 kali",
+        "VAS 9"
+      ],
+      "rpd": "Belum pernah ada keluhan serupa, kemarin habis gym, tidak ada riwayat cedera",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Rutin gym dan gulat",
+        "Tidak ada riwayat hubungan seksual"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Tampak kesakitan",
+        "signifikan": true
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 140/80 mmHg, Nadi 100x/menit, RR 22x/menit, Suhu 36,8°C",
+        "signifikan": false
+      },
+      {
+        "id": "lokalisata",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Lokalisata Testis",
+        "temuan": "Testis kiri posisi lebih tinggi, edema dan nyeri tekan testis kiri, tidak ada eritema",
+        "signifikan": true
+      },
+      {
+        "id": "reflek_kremaster",
+        "kelompok": "khas",
+        "nama": "Tes Spesifik",
+        "temuan": "Refleks kremaster (-)/hilang (normalnya positif), Prehn sign (-)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Diagnosis ditegakkan secara klinis, tidak perlu menunda tindakan untuk menunggu hasil penunjang pada kasus emergensi ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Torsio Testis",
+    "differensialBenar": [
+      "Epididimitis",
+      "Orchitis",
+      "Hernia Skrotalis",
+      "Tumor Testis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rujuk emergensi (<8 jam) ke Sp.U untuk eksplorasi/detorsi, sementara nyeri diberikan Ketorolac injeksi dan mual dengan Domperidon",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan analgesik kuat dan pulangkan pasien untuk kontrol besok",
+      "benar": false
+    },
+    {
+      "opsi": "Tunda rujukan untuk menunggu hasil USG doppler terlebih dahulu meski risiko iskemia testis tinggi",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Ini kondisi emergensi (testis terpelintir), biasanya setelah aktivitas berat, minimalkan gerak dan segera dirujuk",
+      "benar": true
+    },
+    {
+      "opsi": "Kondisi ini tidak berbahaya dan bisa ditunggu beberapa hari",
+      "benar": false
+    }
+  ]
+}

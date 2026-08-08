@@ -1,0 +1,121 @@
+{
+  "id": "mus_01",
+  "kategori": "muskuloskeletal",
+  "level": "4",
+  "identitas": "Reni, 35 tahun, akuntan, tinggal di Monjali",
+  "keluhanUtama": "Datang ke poli dengan keluhan nyeri di jempol kaki kiri sejak semalam",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri muncul tiba-tiba, tidak menyebar, VAS 7/10",
+        "Sudah diberi minyak dan balsem, tidak membaik",
+        "Nyeri menetap mengganggu aktivitas",
+        "Nyeri punggung kaki kanan dan kiri"
+      ],
+      "rpd": "Belum pernah mengalami keluhan serupa, riwayat rawat inap karena batu ginjal, tidak ada alergi",
+      "rpk": "Ayah memiliki riwayat DM",
+      "lifestyle": [
+        "Suka sayur bayam dan nangka",
+        "Suka minuman bersoda",
+        "Jarang olahraga"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 130/70 mmHg, Nadi 64x/menit, RR 16x/menit, Suhu 36,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "gait",
+        "kelompok": "khas",
+        "nama": "Gait",
+        "temuan": "Nyeri saat berjalan",
+        "signifikan": true
+      },
+      {
+        "id": "look",
+        "kelompok": "khas",
+        "nama": "Look (Inspeksi)",
+        "temuan": "Bengkak, eritem, tofus (+) pada MTP 1 sinistra, dextra normal",
+        "signifikan": true
+      },
+      {
+        "id": "feel",
+        "kelompok": "khas",
+        "nama": "Feel (Palpasi)",
+        "temuan": "Massa keras, teraba hangat, mobile, nyeri tekan (+) - curiga tofus",
+        "signifikan": true
+      },
+      {
+        "id": "move",
+        "kelompok": "khas",
+        "nama": "Move (ROM)",
+        "temuan": "ROM aktif dan pasif MTP 1 sinistra menurun",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "asam_urat",
+        "nama": "Kadar Asam Urat",
+        "temuan": "12 mg/dL (meningkat, normal wanita <6-7)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "rf",
+        "nama": "Rheumatoid Factor",
+        "temuan": "Negatif",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "xray",
+        "nama": "X-Ray Pedis Sinistra",
+        "temuan": "Soft tissue swelling pada MTP I sinistra",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gout Arthritis Akut",
+    "differensialBenar": [
+      "Rheumatoid Arthritis",
+      "Osteoarthritis",
+      "Bursitis",
+      "Septic Arthritis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Kolkisin tab 0,5mg tiap nyeri (max 6mg/hari) + Natrium Diklofenak, Allopurinol setelah radang akut reda",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Allopurinol diberikan segera saat serangan akut masih berlangsung",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup analgesik topikal (balsem/minyak) tanpa obat antigout sistemik",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kurangi konsumsi BENJOL (bayam, emping, nangka, jeroan, otak-otak), kurangi minuman bersoda, cek asam urat rutin tiap 2 minggu-1 bulan, perbanyak air putih",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh terus konsumsi jeroan dan bayam asal minum obat rutin",
+      "benar": false
+    }
+  ]
+}

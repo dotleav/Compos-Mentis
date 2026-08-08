@@ -1,0 +1,89 @@
+{
+  "id": "tht_04",
+  "kategori": "tht",
+  "level": "4",
+  "identitas": "Pengemudi ojek online dengan kebiasaan mengorek telinga",
+  "keluhanUtama": "Datang ke UGD dengan keluhan perdarahan telinga kanan sejak 1 jam yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Suka mengorek telinga dengan cotton bud bahkan kunci motor",
+        "Darah awalnya menetes hingga ke jaket, sempat berhenti",
+        "Belum diapa-apakan karena panik"
+      ],
+      "rpd": "Belum pernah mengalami hal serupa, tidak ada trauma sebelumnya, tidak ada alergi",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Sering mengorek telinga saat menunggu orderan (kebiasaan gabut)"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, Nadi 78x/menit, RR 20x/menit, Suhu 37,6°C",
+        "signifikan": false
+      },
+      {
+        "id": "otoskopi",
+        "kelompok": "khas",
+        "nama": "Otoskopi",
+        "temuan": "Telinga kanan: laserasi di posterior CAE, terdapat bekuan darah, edema, membran timpani sulit diperiksa; telinga kiri normal dengan sedikit serumen",
+        "signifikan": true
+      },
+      {
+        "id": "garpu_tala",
+        "kelompok": "khas",
+        "nama": "Tes Garpu Tala",
+        "temuan": "Bisa menunjukkan tuli konduktif ringan sisi kanan akibat sumbatan bekuan darah/edema",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pemeriksaan lab khusus pada kasus ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Perdarahan Telinga et causa Laserasi CAE",
+    "differensialBenar": [
+      "Serumen Prop",
+      "Otitis Eksterna",
+      "Otomikosis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Suction bekuan darah, inspeksi ulang, beri krim kloramfenikol+epinefrin, pasang tampon telinga berantibiotik, R/ Ibuprofen + Asam Traneksamat",
+      "benar": true
+    },
+    {
+      "opsi": "Biarkan luka tanpa tampon karena perdarahan sudah berhenti sendiri",
+      "benar": false
+    },
+    {
+      "opsi": "Bersihkan luka dengan cotton bud untuk memastikan tidak ada sisa darah",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kontrol 2 hari untuk lepas tampon, segera ke faskes bila ada tanda inflamasi (nyeri/berdarah/bau), hentikan kebiasaan mengorek telinga",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh melanjutkan kebiasaan mengorek telinga asal lebih hati-hati",
+      "benar": false
+    }
+  ]
+}

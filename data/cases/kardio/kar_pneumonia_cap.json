@@ -1,0 +1,100 @@
+{
+  "id": "kar_pneumonia_cap",
+  "kategori": "kardio",
+  "level": "4A",
+  "identitas": "Budi, 40 tahun, supir bus, tinggal di Godean",
+  "keluhanUtama": "Datang ke poli dengan keluhan batuk terus menerus sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Batuk berdahak, awalnya kuning kemudian hijau kental, tidak ada darah",
+        "Demam dan menggigil sejak 3 hari yang lalu",
+        "Dada terasa berat"
+      ],
+      "rpd": "Tidak ada riwayat khusus yang dilaporkan",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Bekerja sebagai supir bus, sering terpapar polusi jalan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Tampak sesak, CM",
+        "signifikan": true
+      },
+      {
+        "id": "status_gizi",
+        "kelompok": "vital",
+        "nama": "Status Gizi",
+        "temuan": "BB 65kg, TB 175cm, BMI normal",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 130/80 mmHg, HR 110x/menit, RR 24x/menit, Suhu 38,7°C",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukositosis 14.000",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "foto_thorax",
+        "nama": "Foto Thorax AP",
+        "temuan": "Infiltrat pada paru basal kiri, corakan bronkovaskuler meningkat di hiler, CTR normal",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Pneumonia Lobaris Basal Sinistra (CAP)",
+    "differensialBenar": [
+      "Tuberkulosis Paru",
+      "Bronkitis Kronis",
+      "Bronkiektasis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ambroxol tab 30mg (batuk berdahak) + Co-amoxiclav tab 625mg (antibiotik lini pertama, dihabiskan), alternatif Azithromycin bila tidak tersedia",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup antipiretik tanpa antibiotik karena diduga infeksi virus",
+      "benar": false
+    },
+    {
+      "opsi": "R/ OAT (obat anti-TB) langsung tanpa konfirmasi BTA",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Perbanyak istirahat dan minum air putih, hentikan sementara rokok, antibiotik dihabiskan, kontrol dengan foto rontgen ulang setelah obat habis",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh berhenti antibiotik begitu demam turun",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu foto rontgen ulang setelah pengobatan",
+      "benar": false
+    }
+  ]
+}

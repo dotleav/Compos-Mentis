@@ -1,0 +1,127 @@
+{
+  "id": "mus_04",
+  "kategori": "muskuloskeletal",
+  "level": "3A",
+  "identitas": "Joko, 64 tahun, pensiunan, riwayat OA lutut kanan 15 tahun",
+  "keluhanUtama": "Datang ke UGD dengan keluhan nyeri dan bengkak lutut kanan sejak 10 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri sepanjang hari tidak menurun kualitasnya, skala 7-8",
+        "Memberat saat jalan, turun tangga, tekuk lutut; membaik dengan kompres dingin",
+        "Demam dan pusing sejak 10 hari lalu",
+        "Sudah minum paracetamol dan glucosamine, nyeri tidak membaik"
+      ],
+      "rpd": "OA lutut kanan sejak 15 tahun lalu (pernah disuntik obat radang sendi dan disedot cairan sendi berulang kali), riwayat patah tulang 2x di tangan dan 1x di kaki",
+      "rpk": "Ayah menderita hipertensi",
+      "lifestyle": [
+        "Merokok sejak usia 20 tahun, berhenti 10 tahun lalu",
+        "Pola makan baik"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, tampak sakit sedang",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, Nadi 98x/menit, RR 22x/menit, Suhu 38,8°C",
+        "signifikan": true
+      },
+      {
+        "id": "gait",
+        "kelompok": "khas",
+        "nama": "Gait",
+        "temuan": "Tampak pincang",
+        "signifikan": true
+      },
+      {
+        "id": "look",
+        "kelompok": "khas",
+        "nama": "Look",
+        "temuan": "Kemerahan dan bengkak pada genu dextra, tidak ada deformitas",
+        "signifikan": true
+      },
+      {
+        "id": "feel",
+        "kelompok": "khas",
+        "nama": "Feel",
+        "temuan": "Teraba hangat, nyeri tekan (+), krepitasi (+)",
+        "signifikan": true
+      },
+      {
+        "id": "move",
+        "kelompok": "khas",
+        "nama": "Move",
+        "temuan": "ROM aktif dan pasif menurun",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukosit 12.400/mmk (meningkat), neutrofil segmen 85% (meningkat)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "cairan_sinovial",
+        "nama": "Analisis Cairan Sinovial",
+        "temuan": "Volume 10ml (N<3,5ml), keruh, kuning, leukosit ~80.000 dengan predominan PMN, kultur (+) bakteri; CRP 225mg/L sangat meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "asam_urat",
+        "nama": "Asam Urat",
+        "temuan": "5,1 mg/dL (normal)",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Septic Arthritis",
+    "differensialBenar": [
+      "Osteomyelitis",
+      "Gout Arthritis",
+      "Osteoarthritis",
+      "Hemarthrosis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rawat inap, rujuk Sp.OT/Sp.B, IVFD NaCl 0,9% + analgesik Ketorolac injeksi sementara menunggu rujukan",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup rawat jalan dengan NSAID oral saja meski ada demam tinggi dan cairan sinovial purulen",
+      "benar": false
+    },
+    {
+      "opsi": "Sedot cairan sendi sendiri di puskesmas tanpa rujukan ke spesialis",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Wajib rawat inap dan rujuk, batasi gerak pada kaki yang sakit",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menunda rawat inap dan hanya kontrol rawat jalan",
+      "benar": false
+    }
+  ]
+}

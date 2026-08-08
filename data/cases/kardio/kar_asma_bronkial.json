@@ -1,0 +1,93 @@
+{
+  "id": "kar_asma_bronkial",
+  "kategori": "kardio",
+  "level": "4",
+  "identitas": "Deni, 25 tahun, tinggal di Jogja, riwayat asma",
+  "keluhanUtama": "Datang ke UGD dengan keluhan sesak napas mendadak sejak 20 menit yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sesak muncul setelah main ke rumah teman yang memelihara anjing dan kucing",
+        "Sudah mencoba inhaler tapi hanya sedikit membaik"
+      ],
+      "rpd": "Sudah pernah sesak sebelumnya sekitar 1x/bulan sejak 1 tahun lalu, biasa membaik dengan inhaler Salbutamol (Ventolin), tidak ada alergi obat tapi anak (pasien) alergi udang",
+      "rpk": "Ayah memiliki riwayat asma",
+      "lifestyle": [
+        "Tidak merokok tapi lingkungan pertemanan merokok (perokok pasif)",
+        "Tinggal bersama keluarga, lingkungan bersih",
+        "Nafsu makan baik"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "primary_survey",
+        "kelompok": "vital",
+        "nama": "Primary Survey",
+        "temuan": "Airway clear masih bisa bicara, RR 30x/menit dengan SpO2 91% (perlu nasal kanul 4L/menit), TD 120/80 mmHg, HR 104x regular, CRT <2 detik, akral hangat, GCS 15",
+        "signifikan": true
+      },
+      {
+        "id": "paru",
+        "kelompok": "khas",
+        "nama": "Auskultasi Paru",
+        "temuan": "Wheezing (+) di lapang paru bilateral, suara napas bronkovesikuler, ronki (-); otot bantu napas dan retraksi dinding dada (+)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "LED meningkat",
+        "signifikan": false,
+        "image": null
+      },
+      {
+        "id": "foto_thorax",
+        "nama": "Foto Thorax",
+        "temuan": "Corakan bronkovaskuler, diafragma, sudut costophrenicus, dan CTR dalam batas normal",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Asma Bronkial Intermittent dengan Serangan Akut Derajat Sedang",
+    "differensialBenar": [
+      "PPOK",
+      "Hiperventilasi"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Oksigen nasal kanul, nebulizer Salbutamol 2,5mg (dapat diulang hingga 3x tiap 20 menit), bila belum membaik injeksi kortikosteroid SC, take home: Methylprednisolone (controller) + Salbutamol inhaler (reliever)",
+      "benar": true
+    },
+    {
+      "opsi": "Posisikan pasien berbaring datar agar lebih rileks",
+      "benar": false
+    },
+    {
+      "opsi": "Berikan antibiotik sebagai terapi utama serangan asma akut",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari pencetus (bulu kucing/anjing, asap rokok), kontrol teratur, segera ke RS bila sesak menetap/tangan dingin/bibir membiru",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh menghentikan obat controller begitu tidak ada gejala",
+      "benar": false
+    },
+    {
+      "opsi": "Serangan asma tidak berbahaya sehingga tidak perlu ke RS meski sesak menetap",
+      "benar": false
+    }
+  ]
+}

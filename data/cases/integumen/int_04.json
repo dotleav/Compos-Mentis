@@ -1,0 +1,83 @@
+{
+  "id": "int_04",
+  "kategori": "integumen",
+  "level": "4",
+  "identitas": "Ibu rumah tangga, 35 tahun",
+  "keluhanUtama": "Datang ke poli dengan keluhan gatal dan merah di lengan kiri sejak 5 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Awalnya titik kecil lalu membesar karena digaruk terus",
+        "Gatal memberat bila gerah dan berkeringat",
+        "Sudah diberi minyak kayu putih, tidak membaik"
+      ],
+      "rpd": "Tidak pernah mengalami keluhan serupa, tidak ada alergi",
+      "rpk": "Tidak ada riwayat DM/hipertensi/asam urat di keluarga",
+      "lifestyle": [
+        "Renang 2x/minggu di kolam umum bersama anak-anak (anak tidak sakit serupa)",
+        "Suka bermain dengan kucing liar di sekitar rumah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "Dalam batas normal",
+        "signifikan": false
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi lengan bawah kiri, UKK primer makula/patch eritem dengan tepi aktif berpapul dan pustul, central healing (+), bentuk anular/sirsinar batas tegas ukuran 4-5cm tunggal, skuama putih tipis (sekunder)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "koh",
+        "nama": "Pewarnaan KOH 10%",
+        "temuan": "Positif, ditemukan hifa panjang bersekat",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tinea Korporis",
+    "differensialBenar": [
+      "Pityriasis Rosea",
+      "Kandidiasis Kutis",
+      "Dermatitis Numularis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Ketokonazole 2% krim topikal, digunakan sehabis mandi selama 2 minggu",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Kortikosteroid topikal sebagai terapi utama tanpa antijamur",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup obat herbal (minyak kayu putih) dilanjutkan lebih lama",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga kebersihan diri, jaga lesi tetap kering, hindari bermain dengan kucing liar dulu, jangan berbagi handuk/pakaian",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh terus berenang di kolam umum tanpa keringkan tubuh sesudahnya",
+      "benar": false
+    }
+  ]
+}

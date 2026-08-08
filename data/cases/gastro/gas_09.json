@@ -1,0 +1,115 @@
+{
+  "id": "gas_09",
+  "kategori": "gastro",
+  "level": "4",
+  "identitas": "Juki, 20 tahun",
+  "keluhanUtama": "Datang ke UGD dengan keluhan diare cair sejak 3 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Diare cair, frekuensi hingga 10x/hari",
+        "Muntah beberapa kali",
+        "Riwayat makan makanan basi 4 hari yang lalu",
+        "Badan sangat lemas",
+        "Belum BAK hari ini"
+      ],
+      "rpd": "Pernah diare sebelumnya tapi tidak separah ini",
+      "rpk": "Dalam batas normal",
+      "lifestyle": [
+        "Riwayat makan makanan basi diikuti diare keesokan paginya",
+        "Teman-teman tidak ada yang mengalami gejala serupa",
+        "Higienitas sehari-hari baik"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU/Kesadaran",
+        "temuan": "Tampak lemah",
+        "signifikan": true
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 80/60 mmHg, HR 120x/menit, RR 16x/menit, Suhu 36,5°C",
+        "signifikan": true
+      },
+      {
+        "id": "head_neck",
+        "kelompok": "survei_sekunder",
+        "nama": "Head & Neck",
+        "temuan": "Mata cowong, bibir kering",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "pemeriksaan",
+        "nama": "Abdomen",
+        "temuan": "Bising usus meningkat (32x/menit), hepar 7cm, palpasi dalam batas normal",
+        "signifikan": false
+      },
+      {
+        "id": "ekstremitas",
+        "kelompok": "khas",
+        "nama": "Status Dehidrasi/Ekstremitas",
+        "temuan": "Turgor kulit menurun, CRT <2 detik, akral hangat",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak dilakukan pemeriksaan penunjang khusus pada kasus ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Keracunan Makanan dengan Dehidrasi Berat",
+    "differensialBenar": [
+      "Disentri Amoeba",
+      "Disentri Basiler",
+      "Diare Akut"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Pasang IVFD Ringer Laktat abbocath 18-20, guyur 500ml, evaluasi tiap 15 menit hingga maksimal 2000ml sesuai derajat dehidrasi",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup berikan oralit oral saja tanpa cairan infus meski tanda dehidrasi berat",
+      "benar": false
+    },
+    {
+      "opsi": "Berikan antibiotik spektrum luas sebagai prioritas utama sebelum resusitasi cairan",
+      "benar": false
+    },
+    {
+      "opsi": "Tunda resusitasi cairan sampai hasil laboratorium keluar",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rawat inap untuk observasi, jaga kebersihan makanan, dan cukupi asupan cairan",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh langsung pulang tanpa observasi karena gejala akan membaik sendiri",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu waspada terhadap tanda dehidrasi ulang setelah rehidrasi awal",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "int_07",
+  "kategori": "integumen",
+  "level": "4A",
+  "identitas": "Perempuan, sekretaris",
+  "keluhanUtama": "Datang ke poli dengan keluhan gatal di wajah sejak 1 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Kulit kering dan kemerahan",
+        "Terdapat sisik kuning pada wajah",
+        "Tidak nyeri",
+        "Belum pernah diobati"
+      ],
+      "rpd": "Tidak pernah mengalami keluhan serupa, tidak ada alergi",
+      "rpk": "Tidak ada riwayat keluarga",
+      "lifestyle": [
+        "Sering menggunakan makeup karena pekerjaan",
+        "Sering bekerja dalam ruangan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, HR 68x/menit, RR 16x/menit, Suhu 36,7°C",
+        "signifikan": false
+      },
+      {
+        "id": "ukk",
+        "kelompok": "khas",
+        "nama": "Deskripsi UKK",
+        "temuan": "Lokasi wajah, patch eritem dengan skuama berwarna kuning, batas tidak tegas bentuk irreguler, tunggal, tidak teraba hangat",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "koh_gram",
+        "nama": "Pengecatan KOH & Gram Kerokan Skuama",
+        "temuan": "Tidak ditemukan hifa/spora dan tidak ada hasil bermakna pada Gram - menyingkirkan infeksi jamur/bakteri",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Dermatitis Seboroik",
+    "differensialBenar": [
+      "Psoriasis",
+      "Dermatitis Atopik",
+      "Tinea Fasialis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Cetirizine (gatal) + Hidrokortison 2,5% krim (anti-inflamasi), dioleskan tiap habis mandi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antijamur topikal sebagai terapi utama meski KOH negatif",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Antibiotik sistemik sebagai terapi utama",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari stres, bersihkan makeup dengan benar, jelaskan penyakit ini rentan kambuh",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit ini pasti sembuh total dan tidak akan kambuh lagi",
+      "benar": false
+    }
+  ]
+}

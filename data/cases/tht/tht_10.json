@@ -1,0 +1,96 @@
+{
+  "id": "tht_10",
+  "kategori": "tht",
+  "level": "3A",
+  "identitas": "Anna, 30 tahun, karyawan, tinggal di Jl. Solo",
+  "keluhanUtama": "Datang ke poli dengan keluhan tenggorokan mengganjal sejak 3 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sering batuk pilek, kadang berdahak",
+        "2 minggu lalu sempat radang lalu sembuh, namun tenggorokan tetap mengganjal"
+      ],
+      "rpd": "Sering kambuh-kambuhan, sebelum 3 bulan lalu tidak pernah mengganjal seperti ini",
+      "rpk": "Suami pilek 2 minggu (sudah sembuh), ayah perokok dan pernah operasi amandel",
+      "lifestyle": [
+        "Merokok 1 bungkus/hari",
+        "Kerja shift malam terus",
+        "Pemukiman padat penduduk"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Compos Mentis",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/70 mmHg, HR 80x/menit, RR 20x/menit, Suhu 37,6°C (subfebris)",
+        "signifikan": false
+      },
+      {
+        "id": "tenggorokan",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Tenggorokan",
+        "temuan": "Tonsil T3/T3 dengan kripta melebar, tidak ada detritus, hiperemis",
+        "signifikan": true
+      },
+      {
+        "id": "hidung",
+        "kelompok": "pemeriksaan",
+        "nama": "Rhinoskopi",
+        "temuan": "Konka sedikit hiperemis, tidak ada sekret",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pada kasus ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tonsilitis Kronis",
+    "differensialBenar": [
+      "Abses Peritonsiler",
+      "Tumor Tonsil"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Amoksisilin + Paracetamol + Vitamin C untuk eksaserbasi, rujuk Sp.THT untuk pertimbangan tonsilektomi karena kronis T3/T3",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup antibiotik tanpa rujukan meski sudah kronis 3 bulan dengan tonsil T3/T3",
+      "benar": false
+    },
+    {
+      "opsi": "Tonsilektomi langsung tanpa terapi medikamentosa dahulu untuk episode eksaserbasi",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk Sp.THT untuk tonsilektomi guna mencegah gangguan jalan napas mengingat ukuran tonsil yang besar dan kronis",
+      "benar": true
+    },
+    {
+      "opsi": "Tonsil yang besar tidak perlu dievaluasi lebih lanjut selama tidak nyeri",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "hem_09",
+  "kategori": "hematoimun",
+  "level": "3A",
+  "identitas": "Budi, 28 tahun, karyawan klinik hewan",
+  "keluhanUtama": "Datang ke poli dengan keluhan demam tinggi sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sakit kepala terus menerus sejak 2 hari",
+        "Nyeri persendian (artralgia)",
+        "Lemas",
+        "Sudah minum obat warung, tidak membaik"
+      ],
+      "rpd": "Tidak ada riwayat khusus",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Bekerja di klinik hewan (kucing) selama 1 tahun",
+        "Rekan kerja tidak mengalami keluhan serupa"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "Suhu 39°C, TD/Nadi/RR dalam batas normal",
+        "signifikan": true
+      },
+      {
+        "id": "leher",
+        "kelompok": "khas",
+        "nama": "Leher",
+        "temuan": "Pembesaran kelenjar getah bening (+)",
+        "signifikan": true
+      },
+      {
+        "id": "thorax",
+        "kelompok": "pemeriksaan",
+        "nama": "Thorax",
+        "temuan": "Sedikit takikardi pada auskultasi",
+        "signifikan": false
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Hepatomegali",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Eosinofil meningkat, leukosit meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "serologi",
+        "nama": "Serologi Toxoplasma",
+        "temuan": "IgM Anti-Toxo (+), IgG Anti-Toxo (+)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Toxoplasmosis Tanpa Komplikasi",
+    "differensialBenar": [
+      "Demam Dengue",
+      "Demam Tifoid",
+      "Leptospirosis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rujuk Sp.PD; bila diperlukan terapi definitif: Pirimetamin + Sulfadiazin dengan loading dose",
+      "benar": true
+    },
+    {
+      "opsi": "Cukup antipiretik tanpa rujukan meski ada limfadenopati dan hepatomegali",
+      "benar": false
+    },
+    {
+      "opsi": "Berikan antibiotik spektrum luas sebagai terapi utama toxoplasmosis",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan penularan melalui perantara kucing, bisa sembuh 1-3 bulan dengan pengobatan rutin, jaga kebersihan makanan",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit ini tidak ada hubungannya dengan paparan hewan peliharaan",
+      "benar": false
+    }
+  ]
+}

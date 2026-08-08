@@ -1,0 +1,96 @@
+{
+  "id": "mat_11",
+  "kategori": "mata",
+  "level": "3A",
+  "identitas": "Sarah, 19 tahun, mahasiswa, tinggal di Bausasran",
+  "keluhanUtama": "Datang ke poli dengan keluhan mata kiri bengkak sejak 5 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Tidak berair, tidak nyeri, tidak merah, tidak gatal",
+        "Tidak ada gangguan penglihatan",
+        "Sudah diobati Insto, belum membaik"
+      ],
+      "rpd": "Tidak ada riwayat khusus",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Tidak ada kebiasaan khusus dilaporkan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, tampak baik",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 110/80 mmHg, HR 72x/menit, RR 20x/menit, Suhu 36,2°C",
+        "signifikan": false
+      },
+      {
+        "id": "visus",
+        "kelompok": "pemeriksaan",
+        "nama": "Visus",
+        "temuan": "OD 6/6, OS 6/6",
+        "signifikan": false
+      },
+      {
+        "id": "kelopak_mata",
+        "kelompok": "khas",
+        "nama": "Kelopak Mata",
+        "temuan": "Bengkak pada kelopak mata kiri, tidak nyeri, tidak merah, COA dalam, lensa jernih",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak diperlukan pada kasus ini",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Chalazion",
+    "differensialBenar": [
+      "Hordeolum",
+      "Blefaritis",
+      "Dakriosistitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Kompres hangat rutin sambil massage, antibiotik topikal (Kloramfenikol) bila diperlukan, tidak wajib operasi kecuali menetap",
+      "benar": true
+    },
+    {
+      "opsi": "Insisi/eksisi segera tanpa mencoba kompres hangat dahulu",
+      "benar": false
+    },
+    {
+      "opsi": "Pencet benjolan untuk mengeluarkan isinya",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kompres hangat 4-6x/hari sambil massage sekitar benjolan, jangan dipencet, kembali bila tidak kempes dalam sebulan atau ada tanda infeksi",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh dipencet di rumah bila mengganggu penampilan",
+      "benar": false
+    }
+  ]
+}

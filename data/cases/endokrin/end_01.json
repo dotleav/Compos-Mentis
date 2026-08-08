@@ -1,0 +1,125 @@
+{
+  "id": "end_01",
+  "kategori": "endokrin",
+  "level": "4A",
+  "identitas": "Andre, 35 tahun, guru, tinggal di Piyungan",
+  "keluhanUtama": "Datang ke poli dengan keluhan mudah lelah sejak 2 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "BAK malam hari sering",
+        "Cepat lemah saat beraktivitas cepat",
+        "6 bulan terakhir sering gatal seluruh tubuh, terutama di selangkangan"
+      ],
+      "rpd": "Tidak pernah rawat inap, konsumsi multivitamin dan jamu rutin, tidak ada alergi",
+      "rpk": "Ibu dan kakek riwayat kencing manis (DM), ayah hipertensi",
+      "lifestyle": [
+        "Merokok 1 bungkus/hari",
+        "Tidak minum alkohol",
+        "Makan 4-5x/hari, suka gorengan",
+        "Jarang olahraga"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Sedang, CM, gizi berlebih",
+        "signifikan": false
+      },
+      {
+        "id": "status_gizi",
+        "kelompok": "vital",
+        "nama": "Status Gizi",
+        "temuan": "TB/BB 165cm/95kg, lingkar pinggang 120cm, BMI 34,8 (obesitas)",
+        "signifikan": true
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 160/90 mmHg, Nadi 80x, RR 16x, Suhu 36,8°C",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Kontur permukaan perut lebih tinggi dibanding dinding dada (obesitas sentral)",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "gula_darah",
+        "nama": "Gula Darah",
+        "temuan": "GDS 217 mg/dL, GDP 277 mg/dL, GD2PP 350 mg/dL, HbA1c 8,6%",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "profil_lipid",
+        "nama": "Profil Lipid",
+        "temuan": "Kolesterol total 420 mg/dL, HDL 32 mg/dL, LDL 356 mg/dL, Trigliserida 300 mg/dL",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "urinalisa",
+        "nama": "Urinalisa",
+        "temuan": "Glukosa (+)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Sindrom Metabolik",
+    "differensialBenar": [
+      "Diabetes Melitus Tipe 2",
+      "Obesitas",
+      "Dislipidemia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Metformin tab 500mg + Simvastatin tab 10mg + Captopril tab 25mg sesuai target masing-masing komponen",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amlodipin sebagai lini pertama hipertensi pada pasien ini",
+      "benar": false
+    },
+    {
+      "opsi": "R/ ARB sebagai lini pertama sebelum mencoba ACE Inhibitor",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup modifikasi gaya hidup tanpa farmakoterapi meski parameter sudah sangat tinggi",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Turunkan BB, berhenti merokok, olahraga 3-5x/minggu, kontrol rutin tiap bulan",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit ini bisa sembuh total dan obat bisa dihentikan permanen",
+      "benar": false
+    },
+    {
+      "opsi": "Bila pusing dan lemas setelah minum metformin, segera minum teh manis hangat dan periksa ke dokter",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh berhenti kontrol jika gula darah sudah turun sekali",
+      "benar": false
+    }
+  ]
+}

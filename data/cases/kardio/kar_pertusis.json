@@ -1,0 +1,99 @@
+{
+  "id": "kar_pertusis",
+  "kategori": "kardio",
+  "level": "4",
+  "identitas": "Anak, usia bayi/balita, belum imunisasi DPT lengkap",
+  "keluhanUtama": "Dibawa orang tua ke poli dengan keluhan batuk sejak 1 minggu yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Batuk memburuk 2 hari terakhir dengan episode batuk yang berhenti lama (whooping cough)",
+        "Saat batuk lidah seperti keluar disertai muntah",
+        "Tidak ada dahak",
+        "Sudah beli obat batuk, tidak sembuh",
+        "Demam dan pilek sempat ada, sudah membaik"
+      ],
+      "rpd": "Belum pernah mengalami seperti ini, tidak ada alergi, imunisasi DPT belum lengkap",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Minum susu formula sejak lahir",
+        "Sudah mulai makan bubur pisang"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "status_gizi",
+        "kelompok": "vital",
+        "nama": "Status Gizi",
+        "temuan": "BB 10kg, TB 75cm",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "RR 40x/menit (takipnea pada anak), Suhu 36,7°C, SpO2 92% (perlu nasal kanul 1-2L/menit)",
+        "signifikan": true
+      },
+      {
+        "id": "dada",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Dada",
+        "temuan": "Batuk khas whooping, otot bantu napas (+) ketika sesak, auskultasi dalam batas normal",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "foto_thorax",
+        "nama": "Foto Thorax AP",
+        "temuan": "Air bronkogram (+), corakan bronkovaskuler meningkat, infiltrat reguler, CTR normal",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukositosis dengan limfositosis relatif, Hb meningkat, eosinofil menurun",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Pertusis",
+    "differensialBenar": [
+      "Bronkitis",
+      "Bronkiolitis",
+      "Tuberkulosis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Eritromisin syr 200mg/5ml + Paracetamol syr untuk demam, oksigen bila SpO2 rendah",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antitusif kuat untuk menekan batuk sepenuhnya",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup observasi tanpa antibiotik karena dahak tidak ada",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Antibiotik harus dihabiskan, disebabkan bakteri Bordetella pertussis, hindari asap rokok, lengkapi imunisasi DPT, gunakan masker saat bepergian",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu melengkapi imunisasi DPT setelah sembuh",
+      "benar": false
+    }
+  ]
+}

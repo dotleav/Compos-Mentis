@@ -1,0 +1,124 @@
+{
+  "id": "hem_05",
+  "kategori": "hematoimun",
+  "level": "3A",
+  "identitas": "Anita, 25 tahun, staf kantor pajak",
+  "keluhanUtama": "Datang ke poli dengan keluhan demam hilang timbul sejak 10 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Lemas sejak 7 hari lalu dan mudah mengantuk",
+        "Mual tanpa muntah",
+        "Nafsu makan turun",
+        "BAK berwarna gelap, BAB normal",
+        "Sudah konsumsi obat, membaik lalu kambuh lagi"
+      ],
+      "rpd": "Riwayat tifus, dirawat 2 bulan lalu",
+      "rpk": "Tidak ada riwayat khusus",
+      "lifestyle": [
+        "Pola makan menurun",
+        "Jarang olahraga"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "CM, lemas, gizi cukup",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 120/80 mmHg, Suhu 38°C, Nadi 100x, RR 16x",
+        "signifikan": true
+      },
+      {
+        "id": "kepala",
+        "kelompok": "khas",
+        "nama": "Kepala",
+        "temuan": "Konjungtiva anemis, bibir kering dan pucat, sklera ikterik pada kedua mata",
+        "signifikan": true
+      },
+      {
+        "id": "abdomen",
+        "kelompok": "khas",
+        "nama": "Abdomen",
+        "temuan": "Bising usus meningkat, hepatosplenomegali dengan lien di Schuffner 3",
+        "signifikan": true
+      },
+      {
+        "id": "ekstremitas",
+        "kelompok": "pemeriksaan",
+        "nama": "Ekstremitas",
+        "temuan": "CRT <2 detik, turgor kulit baik, tidak ada koilonychia",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Hb turun, eosinofil meningkat, MCV/MCHC normal, retikulosit meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "apusan",
+        "nama": "Apusan Darah Tepi",
+        "temuan": "Tampak defek dan ruptur eritrosit (tanda hemolisis)",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "faal_hepar",
+        "nama": "Urinalisis & Faal Hepar",
+        "temuan": "Bilirubin urin (+), SGPT/SGOT dan bilirubin total meningkat",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Anemia Hemolitik",
+    "differensialBenar": [
+      "Anemia Defisiensi Besi",
+      "Anemia Penyakit Kronik",
+      "Talasemia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rujuk Sp.PD konsultan hematologi, terapi simptomatik demam dan mual sementara",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan suplemen besi dosis tinggi sebagai terapi utama",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup observasi tanpa rujukan meski ada tanda hemolisis dan organomegali",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan bahwa sel darah merah hancur lebih cepat dari biasanya, bisa karena infeksi atau autoimun, obat jangan diminum sembarangan",
+      "benar": true
+    },
+    {
+      "opsi": "Semua anemia hemolitik pasti bisa sembuh total dengan obat sederhana",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol ulang setelah gejala membaik",
+      "benar": false
+    }
+  ]
+}

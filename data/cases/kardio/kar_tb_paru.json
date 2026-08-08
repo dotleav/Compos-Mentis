@@ -1,0 +1,121 @@
+{
+  "id": "kar_tb_paru",
+  "kategori": "kardio",
+  "level": "4A",
+  "identitas": "Bambang, 30 tahun, karyawan swasta, riwayat tinggal di Papua",
+  "keluhanUtama": "Datang ke poli dengan keluhan batuk berdahak sejak 2 bulan yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Dahak berwarna hijau kental, tidak ada darah",
+        "Demam dan berkeringat malam hari",
+        "Nafsu makan turun, BB turun 3kg",
+        "Tidak sesak napas, tapi mudah lelah",
+        "Sudah minum obat warung dan vitamin, tidak membaik"
+      ],
+      "rpd": "Belum pernah seperti ini, tidak ada asma/penyakit metabolik/alergi",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Lingkungan rumah bersih, ventilasi dan pencahayaan baik",
+        "Tidak ada rekan kerja dengan gejala serupa",
+        "Riwayat sering bepergian ke Papua"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Lemas, CM",
+        "signifikan": false
+      },
+      {
+        "id": "status_gizi",
+        "kelompok": "vital",
+        "nama": "Status Gizi",
+        "temuan": "BB 65kg, TB 175cm, BMI normal, BB turun 3kg",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 130/90 mmHg, HR 88x, RR 20x, Suhu 37,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "paru",
+        "kelompok": "khas",
+        "nama": "Pemeriksaan Paru",
+        "temuan": "Fremitus meningkat, perkusi redup di apex paru bilateral, suara napas bronkial dengan ronki (+) di apex paru bilateral",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pdl",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukositosis 14.000, LED meningkat",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "foto_thorax",
+        "nama": "Foto Thorax AP",
+        "temuan": "Corakan bronkovaskuler menebal, infiltrat di apex paru bilateral, diafragma licin, sudut costophrenicus lancip",
+        "signifikan": true,
+        "image": null
+      },
+      {
+        "id": "bta",
+        "nama": "Kultur Sputum BTA",
+        "temuan": "Sewaktu I (+), Pagi (+), Sewaktu II (-)",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tuberkulosis Paru - Kasus Baru",
+    "differensialBenar": [
+      "Bronkitis Kronik",
+      "Bronkiektasis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ 4KDT OAT Kategori I Fase Intensif (Rifampisin+Isoniazid+Pirazinamid+Etambutol) 1x sehari selama 2 bulan + Vitamin B6 untuk cegah neuropati",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Antibiotik spektrum luas biasa tanpa regimen OAT khusus",
+      "benar": false
+    },
+    {
+      "opsi": "Cukup terapi simptomatik tanpa OAT karena BTA sewaktu II negatif",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Pengobatan jangka panjang 6 bulan harus teratur tanpa putus untuk cegah resistensi, perlu PMO (pengawas minum obat), kontrol 2 minggu lalu 1 bulan",
+      "benar": true
+    },
+    {
+      "opsi": "Jelaskan efek samping tiap obat (rifampisin: urin merah; etambutol: gangguan penglihatan; isoniazid: kesemutan; pirazinamid: nyeri sendi)",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh berhenti obat sendiri begitu gejala membaik dalam 2 minggu",
+      "benar": false
+    },
+    {
+      "opsi": "Penyakit ini tidak menular ke orang sekitar selama masa pengobatan awal",
+      "benar": false
+    }
+  ]
+}

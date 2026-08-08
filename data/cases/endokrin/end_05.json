@@ -1,0 +1,103 @@
+{
+  "id": "end_05",
+  "kategori": "endokrin",
+  "level": "4",
+  "identitas": "Tono, 50 tahun, pedagang sayur, tinggal di Bantul",
+  "keluhanUtama": "Datang ke UGD dengan keluhan lemas mendadak sejak 1 jam yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Rasa seperti mau pingsan saat sedang berjualan",
+        "Keringat dingin dan pusing",
+        "Sedikit gemetar",
+        "Belum konsumsi obat apapun",
+        "Tadi pagi tidak sarapan, hanya minum teh tawar"
+      ],
+      "rpd": "Diagnosis DM sejak 1 bulan lalu, obat tidak diminum rutin; tadi pagi minum obat tanpa sarapan",
+      "rpk": "Ibu DM",
+      "lifestyle": [
+        "Makan tidak teratur",
+        "Jarang makan/minum manis"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "ku",
+        "kelompok": "vital",
+        "nama": "KU",
+        "temuan": "Sedang, CM",
+        "signifikan": false
+      },
+      {
+        "id": "status_gizi",
+        "kelompok": "vital",
+        "nama": "Status Gizi",
+        "temuan": "TB 155cm, BB 40kg",
+        "signifikan": false
+      },
+      {
+        "id": "vs",
+        "kelompok": "vital",
+        "nama": "Vital Sign",
+        "temuan": "TD 100/70 mmHg, Nadi 96x, RR 20x, Suhu 36,8°C",
+        "signifikan": true
+      },
+      {
+        "id": "kulit_ekstremitas",
+        "kelompok": "khas",
+        "nama": "Kulit & Ekstremitas",
+        "temuan": "Kulit pucat dan berkeringat, akral dingin, CRT melambat, turgor kulit normal",
+        "signifikan": true
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "gds",
+        "nama": "Gula Darah Sewaktu",
+        "temuan": "GDS 60 mg/dL",
+        "signifikan": true,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Hipoglikemia Ringan",
+    "differensialBenar": [
+      "Diabetes Tidak Terkontrol",
+      "Insulinemia",
+      "Sinkop"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Minum air gula 20-30 gram, evaluasi tiap 15 menit; hentikan obat DM sementara 72 jam lalu evaluasi ulang",
+      "benar": true
+    },
+    {
+      "opsi": "Segera berikan dosis obat DM tambahan agar gula darah terkontrol",
+      "benar": false
+    },
+    {
+      "opsi": "Puasakan pasien sampai gula darah dicek ulang esok hari",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Selalu bawa permen/gula, cek gula darah rutin tiap bulan, jangan lewatkan sarapan bila minum obat DM",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh melewatkan sarapan asal tetap minum obat DM",
+      "benar": false
+    },
+    {
+      "opsi": "Tidak perlu kontrol gula darah rutin setelah episode ini",
+      "benar": false
+    }
+  ]
+}
