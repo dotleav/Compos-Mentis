@@ -1,0 +1,119 @@
+{
+  "id": "respi_03",
+  "kategori": "respi",
+  "level": "3A",
+  "nama": "Bronkiektasis",
+  "judulKasus": "Joko, 42 tahun, buruh pabrik, berdahak 6 tahun dengan batuk darah",
+  "identitas": {
+    "nama": "Joko",
+    "usia": 42,
+    "pekerjaan": "Buruh pabrik",
+    "alamat": "-"
+  },
+  "keluhanUtama": "Batuk berdahak berulang sejak 6 tahun",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sudah sejak 6 tahun, berdahak, dahak warna putih keruh",
+        "Karakteristik dahak seperti berlapis, lengket, dan kental",
+        "3 hari kambuh ada bercak merah (kadang ada darah, darah keluar lebih banyak di pagi, disertai gejala sesak)",
+        "Nyeri tapi tidak terlalu, mudah lelah, penurunan nafsu makan"
+      ],
+      "rpd": "Belum pernah seperti ini sebelumnya, tidak ada minum obat apa-apa Riwayat vaksin lupa Ada riwayat sakit TB tapi sudah agak lama dan sudah dinyatakan sembuh Riwayat asma (-)",
+      "rpk": "Riwayat keluarga (-)",
+      "lifestyle": [
+        "Riwayat merokok sejak remaja 1 bungkus per hari tapi sudah berhenti sejak 1 tahun yang lalu",
+        "Makan teratur tapi nafsu makan menurun, jarang olahraga",
+        "Kadang-kadang pakai masker"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "CM 110/70, SpO2 94%, Nadi 103, Suhu 37,8°C, RR 28 Fremitus normal Pengembangan normal Sonor *Ronki basah ⅔ inferior *Wheezing ⅔ inferior *Clubbing finger",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_darah_rutin",
+        "nama": "Darah rutin",
+        "temuan": "(lihat lampiran)",
+        "signifikan": false
+      },
+      {
+        "id": "pnj_dahak",
+        "nama": "Dahak",
+        "temuan": "(lihat lampiran)",
+        "signifikan": false
+      },
+      {
+        "id": "pnj_rontgen",
+        "nama": "Rontgen",
+        "temuan": "Tram track app, Signet ring, Honeycomb app CT Scan juga diminta",
+        "signifikan": true
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Bronkiektasis",
+    "pilihan": [
+      "Bronkiektasis",
+      "PPOK",
+      "Asma Bronkial"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Cipcofloxacin IV",
+      "benar": true
+    },
+    {
+      "opsi": "Asetilsistein buat batuk",
+      "benar": true
+    },
+    {
+      "opsi": "Kortikosteroid budesonide inhalasi",
+      "benar": true
+    },
+    {
+      "opsi": "Berikan O2 nasal canule 4L, simulasi untuk pantau 15 menit ada perubahan 15",
+      "benar": true
+    },
+    {
+      "opsi": "Minta CT scan juga",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Pakai masker",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari paparan asap",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak berkumpul dengan orang batuk",
+      "benar": true
+    },
+    {
+      "opsi": "Vaksin flu",
+      "benar": true
+    },
+    {
+      "opsi": "Konsul spesialis",
+      "benar": true
+    },
+    {
+      "opsi": "Rujuk fisioterapi dada biar dahak cepat hilang",
+      "benar": true
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "respi_05",
+  "kategori": "respi",
+  "level": "3A",
+  "nama": "TB (Kasus Baru)",
+  "judulKasus": "Pasien dengan batuk berdahak 2 bulan, dahak ada darah",
+  "identitas": {
+    "nama": "-",
+    "usia": "-",
+    "pekerjaan": "-",
+    "alamat": "-"
+  },
+  "keluhanUtama": "Batuk berdahak",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Batuk berdahak sejak 2 bulan yang lalu",
+        "Dahak warna kuning hingga hijau kental; ada darahnya",
+        "Sudah minum obat warung + vitamin, tapi tidak membaik"
+      ],
+      "rpd": "Belum pernah seperti ini sebelumnya Asma (-) Metabolic disease (-) Alergi (-)",
+      "rpk": "",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_auskultasi",
+        "nama": "Auskultasi",
+        "temuan": "Ronki di apex paru",
+        "signifikan": true
+      },
+      {
+        "id": "pf_perkusi",
+        "nama": "Perkusi",
+        "temuan": "sonor semua (harus ada pekak di apex paru tapi gua lupa) Fremitus meningkat",
+        "signifikan": false
+      },
+      {
+        "id": "pf_abdomen",
+        "nama": "Abdomen",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pf_ekstremitas",
+        "nama": "Ekstremitas",
+        "temuan": "dbn",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_kultur_sputum_bta",
+        "nama": "Kultur Sputum BTA",
+        "temuan": "Sewaktu I → + (Positif); Pagi → - (negatif)",
+        "signifikan": true
+      },
+      {
+        "id": "pnj_tcm",
+        "nama": "TCM",
+        "temuan": "Mycobacterium tuberculosis DETECTED; Rifampicin Resistance: NOT DETECTED",
+        "signifikan": true
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "TB (Kasus Baru)",
+    "pilihan": [
+      "TB (Kasus Baru)",
+      "Pneumonia",
+      "Pneumonia Lobaris"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "TB (OAT): R/ 4KDT TB Kategori I Fase Intensif tab. No. CXX s.1.d.d tab. IV p.c",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Rifampisin tab mg 150 No. XXX s.1.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Isoniazid tab mg 75 No. XXX s.1.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Pirazinamid tab mg 400 No. XXX s.1.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Etambutol tab mg 275 No. XXX s.1.d.d tab. I",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Efek samping obat dijelaskan dari masing-masing:",
+      "benar": true
+    },
+    {
+      "opsi": "Rifampisin → Pipis merah, kulitnya menghitam, mual sakit perut",
+      "benar": true
+    },
+    {
+      "opsi": "Etambutol → Gangguan Penglihatan, kulitnya menghitam",
+      "benar": true
+    },
+    {
+      "opsi": "Isoniazid → Kesemutan, kaki panas, telinga berdenging, tangannya kesemutan, gatal-gatal",
+      "benar": true
+    },
+    {
+      "opsi": "Pirazinamid → nyeri sendi",
+      "benar": true
+    },
+    {
+      "opsi": "Bilang akan dicek HIV karena sesuai anjuran WHO semua pasien yang diduga TB harus melakukan pengecekan untuk HIV",
+      "benar": true
+    }
+  ]
+}

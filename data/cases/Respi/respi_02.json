@@ -1,0 +1,152 @@
+{
+  "id": "respi_02",
+  "kategori": "respi",
+  "level": "3A",
+  "nama": "Pneumonia Lobaris Basal Sinistra",
+  "judulKasus": "Budi, 40 tahun, supir bus, batuk berdahak 1 minggu disertai demam",
+  "identitas": {
+    "nama": "Budi",
+    "usia": 40,
+    "pekerjaan": "Supir Bus",
+    "alamat": "Godean"
+  },
+  "keluhanUtama": "Batuk",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Batuk sudah 1 minggu, terus-menerus",
+        "Dahak awalnya kuning, sekarang hijau kental; Darah (-)",
+        "Demam + menggigil sejak 3 hari; dada terasa berat dan sesak saat bangun tidur pagi ini",
+        "Sudah beli obat batuk di warung, tidak membaik"
+      ],
+      "rpd": "Batuk sejak 2 tahun, tapi ini terparah (progresif) Alergi (-), Asma (-)",
+      "rpk": "Tidak ada yang mengalami gejala serupa",
+      "lifestyle": [
+        "Merokok 1 bungkus/hari",
+        "Alkohol (-), Drugs (-)",
+        "Lingkungan bersih, ventilasi baik",
+        "Nafsu makan turun"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_status_kesadaran",
+        "nama": "Status Kesadaran",
+        "temuan": "CM, KU: Tampak sesak",
+        "signifikan": false
+      },
+      {
+        "id": "pf_status_gizi",
+        "nama": "Status Gizi",
+        "temuan": "BB 65 kg, TB 175 cm, BMI Normal",
+        "signifikan": false
+      },
+      {
+        "id": "pf_td",
+        "nama": "TD",
+        "temuan": "130/80 mmHg, HR: 110x/mnt, RR: 24x/mnt, Suhu: 38,7°C",
+        "signifikan": false
+      },
+      {
+        "id": "pf_head_to_toe_-_mata",
+        "nama": "Head to Toe - Mata",
+        "temuan": "dbn, Bibir: Pursed lip breathing (+)",
+        "signifikan": false
+      },
+      {
+        "id": "pf_px_dada_posterior",
+        "nama": "Px. Dada Posterior",
+        "temuan": "Inspeksi dbn, *Palpasi: Fremitus naik di paru basal kiri, *Perkusi: Redup di basal paru kiri, *Auskultasi: Suara napas bronkial; ronki (+) basal paru kiri",
+        "signifikan": false
+      },
+      {
+        "id": "pf_px_dada_anterior",
+        "nama": "Px. Dada Anterior",
+        "temuan": "Inspeksi dbn, Palpasi: Fremitus naik basal kiri, Perkusi: Redup di basal paru kiri, Auskultasi: Suara napas bronkial; ronki (+) basal paru kiri",
+        "signifikan": false
+      },
+      {
+        "id": "pf_jantung",
+        "nama": "Jantung",
+        "temuan": "S1 S2 dbn, CTR normal",
+        "signifikan": false
+      },
+      {
+        "id": "pf_abdomen",
+        "nama": "Abdomen",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pf_ekstremitas",
+        "nama": "Ekstremitas",
+        "temuan": "Edema (-), Akral hangat",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_foto_thorax_ap",
+        "nama": "Foto Thorax (AP)",
+        "temuan": "Infiltrat pada paru basal kiri, Corakan bronkovaskular meningkat di hiler, CTR normal, Diafragma licin, Sudut costophrenicus lancip",
+        "signifikan": true
+      },
+      {
+        "id": "pnj_darah_lengkap",
+        "nama": "Darah Lengkap",
+        "temuan": "Leukositosis 14.000",
+        "signifikan": true
+      },
+      {
+        "id": "pnj_kultur_sputum",
+        "nama": "Kultur Sputum",
+        "temuan": "S. Pneumoniae (+)",
+        "signifikan": true
+      },
+      {
+        "id": "pnj_pemeriksaan_bta",
+        "nama": "Pemeriksaan BTA",
+        "temuan": "Negatif",
+        "signifikan": false
+      },
+      {
+        "id": "pnj_analisis_curb-65",
+        "nama": "Analisis CURB-65",
+        "temuan": "(Confusion, Urea >7 mmol/L, RR ≥30, Sistol <90/Diastol ≤60, Usia ≥65) → Jika ada: Rawat Inap",
+        "signifikan": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Pneumonia Lobaris Basal Sinistra",
+    "pilihan": [
+      "Pneumonia Lobaris Basal Sinistra",
+      "TB",
+      "Bronkitis Kronis",
+      "Bronkiektasis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Batuk Berdahak: R/ Ambroxol tab mg 30 No. XXI s.p.r.n. 3.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "Antibiotik Lini 1: R/ Co-amoxiclav tab mg 625 No. XV s.o.8.h tab. I (habiskan)",
+      "benar": true
+    },
+    {
+      "opsi": "Alternatif: R/ Azithromycin 500mg hari-1, lalu 250mg hari 2-5",
+      "benar": true
+    },
+    {
+      "opsi": "Atau: R/ Eritromisin tab mg 500 No. VII s.o.6.h tab. I (habiskan)",
+      "benar": true
+    }
+  ],
+  "edukasi": []
+}

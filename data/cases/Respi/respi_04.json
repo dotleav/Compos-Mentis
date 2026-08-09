@@ -1,0 +1,152 @@
+{
+  "id": "respi_04",
+  "kategori": "respi",
+  "level": "3A",
+  "nama": "Bronkitis Akut",
+  "judulKasus": "Budi, 20 tahun, mahasiswa, batuk 1 minggu dengan dahak kuning",
+  "identitas": {
+    "nama": "Budi",
+    "usia": 20,
+    "pekerjaan": "Mahasiswa",
+    "alamat": "-"
+  },
+  "keluhanUtama": "Batuk",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Batuk sudah 1 minggu, sepanjang hari, paling sering sore dan malam",
+        "Batuk berdahak berwarna kuning",
+        "Sempat bersin dan demam, sudah tidak",
+        "Memperingan: istirahat dan minum air putih, tapi memburuk lagi",
+        "Memburuk di luar kos",
+        "Keluhan lain: lelah, nyeri otot, tenggorokan nyeri",
+        "Belum pernah diobati"
+      ],
+      "rpd": "Tidak pernah mengalami seperti ini Alergi (-)",
+      "rpk": "Ada teman kuliah yang memiliki gejala serupa",
+      "lifestyle": [
+        "SAD (-)",
+        "Lingkungan baik",
+        "Pola makan tidak teratur, banyak makan mie instan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_status_kesadaran",
+        "nama": "Status Kesadaran",
+        "temuan": "CM",
+        "signifikan": false
+      },
+      {
+        "id": "pf_vs",
+        "nama": "VS",
+        "temuan": "TD 110/70 mmHg, HR 80x/mnt, RR 22x/mnt, Suhu 37,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "pf_kepala-leher",
+        "nama": "Kepala-leher",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pf_px_dada_posterior",
+        "nama": "Px. Dada Posterior",
+        "temuan": "Inspeksi dbn, Palpasi dbn, Perkusi dbn, *Auskultasi: Ronki basah (+), Wheezing (+) bilateral",
+        "signifikan": false
+      },
+      {
+        "id": "pf_px_dada_anterior",
+        "nama": "Px. Dada Anterior",
+        "temuan": "Inspeksi dbn, Palpasi dbn, Perkusi dbn, Auskultasi: Ronki (+), Wheezing (+) bilateral",
+        "signifikan": false
+      },
+      {
+        "id": "pf_jantung",
+        "nama": "Jantung",
+        "temuan": "S1 S2 dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pf_abdomen",
+        "nama": "Abdomen",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pf_ekstremitas",
+        "nama": "Ekstremitas",
+        "temuan": "Edema (-), Akral hangat",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_foto_thorax_ap",
+        "nama": "Foto Thorax (AP)",
+        "temuan": "Kedua apex paru tenang, Air bronkogram (+), Corakan bronkovaskular meningkat di hiler, Kedua sinus lancip, Diafragma licin, COR: CTR <0,5, Tak tampak jelas tanda TB paru",
+        "signifikan": true
+      },
+      {
+        "id": "pnj_darah_lengkap",
+        "nama": "Darah Lengkap",
+        "temuan": "Eosinofil turun",
+        "signifikan": false
+      },
+      {
+        "id": "pnj_sputum",
+        "nama": "Sputum",
+        "temuan": "dbn",
+        "signifikan": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Bronkitis Akut",
+    "pilihan": [
+      "Bronkitis Akut",
+      "Bronkitis Kronik",
+      "Asma Bronchial"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Batuk Berdahak: R/ Ambroxol tab mg 30 No. XXI s.p.r.n. 3.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "Demam: R/ Paracetamol tab mg 500 No. XXI s.p.r.n 3.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "Notes: Bronkitis akut umumnya disebabkan virus, tidak perlu antibiotik kecuali ada bukti infeksi bakteri",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Pakai masker",
+      "benar": true
+    },
+    {
+      "opsi": "Etika batuk yang benar",
+      "benar": true
+    },
+    {
+      "opsi": "Biasanya disebabkan oleh virus (sama seperti flu)",
+      "benar": true
+    },
+    {
+      "opsi": "Perbanyak istirahat dan minum air putih",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol jika tidak membaik dalam 1-2 minggu",
+      "benar": true
+    }
+  ]
+}
