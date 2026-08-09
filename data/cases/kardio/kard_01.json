@@ -1,0 +1,179 @@
+{
+  "id": "kard_01",
+  "kategori": "kardio",
+  "level": "3B",
+  "nama": "Atrial Fibrilasi",
+  "judulKasus": "Wiyoto, 43 tahun, karyawan swasta, dada berdebar berulang",
+  "identitas": {
+    "nama": "Wiyoto",
+    "usia": 43,
+    "pekerjaan": "Karyawan swasta",
+    "alamat": "-"
+  },
+  "keluhanUtama": "Dada berdebar",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Dada berdebar sejak 1 hari - seminggu",
+        "Semakin terasa berdebar, terus menerus",
+        "Semakin berdebar saat beraktivitas; saat istirahat tetap berdebar",
+        "Keluhan lain (-)"
+      ],
+      "rpd": "Pernah seperti ini sebelumnya selama 5 bulan Alergi (-) Riwayat hipertensi (+) 2 tahun Merokok sudah berhenti, 10 tahun lalu Makanan bervariasi: lemak, gorengan",
+      "rpk": "Riwayat hipertensi ayah (+)",
+      "lifestyle": [
+        "Bisa biasa aja"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_td",
+        "nama": "TD",
+        "temuan": "130/80 mmHg",
+        "signifikan": false
+      },
+      {
+        "id": "pf_suhu",
+        "nama": "Suhu",
+        "temuan": "36,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "pf_nadi",
+        "nama": "Nadi",
+        "temuan": "155x/menit",
+        "signifikan": false
+      },
+      {
+        "id": "pf_nafas",
+        "nama": "Nafas",
+        "temuan": "22x/menit",
+        "signifikan": false
+      },
+      {
+        "id": "pf_spo2",
+        "nama": "SpO2",
+        "temuan": "96%",
+        "signifikan": false
+      },
+      {
+        "id": "pf_mulut",
+        "nama": "Mulut",
+        "temuan": "sianosis (-)",
+        "signifikan": false
+      },
+      {
+        "id": "pf_inspeksi",
+        "nama": "Inspeksi",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pf_palpasi",
+        "nama": "Palpasi",
+        "temuan": "iktus kordis teraba SIC 5, impuls tidak teraba, kardiomegali (-)",
+        "signifikan": false
+      },
+      {
+        "id": "pf_auskultasi",
+        "nama": "Auskultasi",
+        "temuan": "S1 & S2 irregular (suara tambahan sulit dievaluasi), pulmo: ronki (-), wheezing (-) *Pulsus Defisit (+)",
+        "signifikan": false
+      },
+      {
+        "id": "pf_jvp",
+        "nama": "JVP",
+        "temuan": "5+2",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "",
+        "signifikan": true,
+        "image": "pnj_ekg.png"
+      },
+      {
+        "id": "pnj_darah_lengkap",
+        "nama": "Darah lengkap",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pnj_elektrolit_k_na_cl",
+        "nama": "Elektrolit (K, Na, Cl)",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pnj_fungsi_tiroid",
+        "nama": "Fungsi Tiroid",
+        "temuan": "dbn",
+        "signifikan": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Atrial Fibrilasi",
+    "pilihan": [
+      "Atrial Fibrilasi",
+      "Atrial Flutter",
+      "Hiperkalemia",
+      "PAC"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Kontrol Laju (Rate Control) - jika stabil",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Bisoprolol tab mg 5 No. XXX s.1.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "Antikoagulan (CHA2DS2-VASc score)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Warfarin tab mg 2 No. XXX s.1.d.d tab. I",
+      "benar": true
+    },
+    {
+      "opsi": "Kardioversi tanpa evaluasi terlebih dahulu",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk Sp.JP",
+      "benar": true
+    },
+    {
+      "opsi": "Minum obat secara teratur",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan menghentikan obat sendiri",
+      "benar": false
+    },
+    {
+      "opsi": "Kontrol rutin",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari pemicu (stres, kafein berlebih)",
+      "benar": true
+    },
+    {
+      "opsi": "Segera ke IGD kalau ada tanda perburukan",
+      "benar": true
+    }
+  ]
+}

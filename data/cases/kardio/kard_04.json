@@ -1,0 +1,162 @@
+{
+  "id": "kard_04",
+  "kategori": "kardio",
+  "level": "3B",
+  "nama": "Krisis Hipertensi Urgensi",
+  "judulKasus": "Rudi, 23 tahun, PNS, kepala dan leher nyeri, TD ≥ 180/110 mmHg",
+  "identitas": {
+    "nama": "Rudi",
+    "usia": 23,
+    "pekerjaan": "PNS",
+    "alamat": "-"
+  },
+  "keluhanUtama": "Kepala dan leher nyeri",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri terasa di seluruh kepala, menjalar ke leher terasa kaku, 2 hari yang lalu terasa memberat",
+        "Mulai terasa sejak 1 minggu yang lalu",
+        "Karakteristik nyeri seperti ditekan, memberat ketika beraktivitas"
+      ],
+      "rpd": "Pernah seperti ini 1 minggu yang lalu, belum diobati Ada minum obat hipertensi yaitu amlodipine sejak lama",
+      "rpk": "Riwayat bapak: kolesterol dan hipertensi, karena sakit jantung Riwayat ibu: hipertensi dan DM",
+      "lifestyle": [
+        "Riwayat merokok 12 batang",
+        "Suka makan gorengan dan fast food",
+        "Suka yang asin-asin",
+        "Jarang olahraga",
+        "Jarang minum air"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_td",
+        "nama": "TD",
+        "temuan": "200/110 mmHg (≥180/110 mmHg syarat krisis HT)",
+        "signifikan": true
+      },
+      {
+        "id": "pf_suhu",
+        "nama": "Suhu",
+        "temuan": "37°C",
+        "signifikan": false
+      },
+      {
+        "id": "pf_rr",
+        "nama": "RR",
+        "temuan": "20x/menit",
+        "signifikan": false
+      },
+      {
+        "id": "pf_hr",
+        "nama": "HR",
+        "temuan": "88x/menit",
+        "signifikan": false
+      },
+      {
+        "id": "pf_htt_-_cek_visus_dan_funduskopi",
+        "nama": "HTT - cek visus dan funduskopi",
+        "temuan": "ada lateralisasi tapi masih normal",
+        "signifikan": false
+      },
+      {
+        "id": "pf_fungsi_motorik_dan_sensorik",
+        "nama": "Fungsi Motorik dan Sensorik",
+        "temuan": "Periksa kekuatan otot keempat ekstremitas (tangan dan kaki) secara simetris Nyeri ketok kostovertebra (+)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "",
+        "signifikan": true,
+        "image": "pnj_ekg.jpg"
+      },
+      {
+        "id": "pnj_rontgenxray",
+        "nama": "rontgen/Xray",
+        "temuan": "*darah rutin:*:fungsi ginjal:",
+        "signifikan": true,
+        "image": "pnj_rontgenxray.jpg"
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Krisis Hipertensi Urgensi",
+    "pilihan": [
+      "Krisis Hipertensi Urgensi",
+      "Hipertensi Emergensi",
+      "Syok Kardiogenik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Short acting antihipertensi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Captopril 25mg tab No. X s.p.r.n tab 1",
+      "benar": true
+    },
+    {
+      "opsi": "Diuretik: R/ Furosemide tab mg 40 No. X S 1.d.d tab I (pagi)",
+      "benar": true
+    },
+    {
+      "opsi": "Langsung intravena tanpa evaluasi klinis dahulu",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Minum obat antihipertensi sesuai resep dan teratur",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan menghentikan atau mengubah dosis obat tanpa anjuran dokter",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol tekanan darah secara rutin sesuai jadwal",
+      "benar": true
+    },
+    {
+      "opsi": "Batasi konsumsi garam (diet rendah garam) dan hindari makanan tinggi natrium",
+      "benar": true
+    },
+    {
+      "opsi": "Perbanyak konsumsi buah, sayur, dan makanan bergizi seimbang",
+      "benar": true
+    },
+    {
+      "opsi": "Lakukan aktivitas fisik atau olahraga secara teratur sesuai kondisi",
+      "benar": true
+    },
+    {
+      "opsi": "Jaga berat badan ideal",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari merokok, alkohol, dan batasi konsumsi kafein berlebihan",
+      "benar": true
+    },
+    {
+      "opsi": "Kelola stres dan istirahat yang cukup",
+      "benar": true
+    },
+    {
+      "opsi": "Minum obat penyakit penyerta (misal diabetes atau kolesterol) secara teratur bila ada",
+      "benar": true
+    },
+    {
+      "opsi": "Segera ke IGD bila muncul tanda bahaya: nyeri dada, sesak napas, sakit kepala hebat, gangguan penglihatan, kelemahan/baal salah satu sisi tubuh, sulit bicara, kejang, atau penurunan kesadaran",
+      "benar": true
+    }
+  ]
+}

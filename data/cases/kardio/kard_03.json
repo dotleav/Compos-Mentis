@@ -1,0 +1,159 @@
+{
+  "id": "kard_03",
+  "kategori": "kardio",
+  "level": "3B",
+  "nama": "CHF (Congestive Heart Failure)",
+  "judulKasus": "Sudharma, 73 tahun, pensiunan, sesak napas 6 bulan terakhir",
+  "identitas": {
+    "nama": "Sudharma",
+    "usia": 73,
+    "pekerjaan": "Pensiunan",
+    "alamat": "-"
+  },
+  "keluhanUtama": "Sesak napas / napas tidak lega",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sesak napas sejak 6 bulan terakhir",
+        "Tiap malam hari terasa sesak",
+        "Tidak ada nyeri dada",
+        "Tidak ada jantung berdebar-debar",
+        "Jika beraktivitas sedang-berat memburuk",
+        "Membaik jika istirahat, tapi nanti gitu lagi"
+      ],
+      "rpd": "Tidak ada riwayat serupa sebelumnya Tidak pernah pingsan Punya DM & Hipertensi Obat rutin: Amlodipine + Metformin",
+      "rpk": "Ibu: DM Ayah: gagal jantung, gagal ginjal",
+      "lifestyle": [
+        "Kegiatan sehari-hari biasa"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "CM, tampak sesak",
+        "signifikan": false
+      },
+      {
+        "id": "pf_suhu",
+        "nama": "Suhu",
+        "temuan": "36,7°C",
+        "signifikan": false
+      },
+      {
+        "id": "pf_td",
+        "nama": "TD",
+        "temuan": "160/80 mmHg",
+        "signifikan": false
+      },
+      {
+        "id": "pf_spo2",
+        "nama": "SpO2",
+        "temuan": "95%",
+        "signifikan": false
+      },
+      {
+        "id": "pf_rr",
+        "nama": "RR",
+        "temuan": "24x/menit Tidak sianosis Edema tungkai bilateral (+) CRT dbn Akral teraba hangat *Iktus Kordis di SIC 6 linea axilaris anterior",
+        "signifikan": false
+      },
+      {
+        "id": "pf_perkusi",
+        "nama": "Perkusi",
+        "temuan": "Batas jantung kanan dbn, Batas kiri jantung pembesaran SIC6 Perut timpani",
+        "signifikan": false
+      },
+      {
+        "id": "pf_auskultasi",
+        "nama": "Auskultasi",
+        "temuan": "Ada bunyi Gallop di katup pulmonal (diperiksa katup aorta, pulmonal, tricuspid, mitral) Ada ronki positif pada setengah basal paru bilateral Fremitus meningkat",
+        "signifikan": false
+      },
+      {
+        "id": "pf_jvp",
+        "nama": "JVP",
+        "temuan": "5 + 4 (abnormal)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_nt-probnp",
+        "nama": "NT-proBNP",
+        "temuan": "200",
+        "signifikan": true
+      },
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "",
+        "signifikan": true,
+        "image": "pnj_ekg.png"
+      },
+      {
+        "id": "pnj_x-ray",
+        "nama": "X-ray",
+        "temuan": "",
+        "signifikan": true,
+        "image": "pnj_x-ray.png"
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gagal Jantung (CHF)",
+    "pilihan": [
+      "Gagal Jantung (CHF)",
+      "Hipertensi Pulmoner",
+      "Pneumonia berat"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "4 Pilar CHF:",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Tab. Furosemide 40 mg No. X S 1 d d tab I (Pagi)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Tab. Captopril 12,5 mg No. XXX S 3 d d tab I (1 jam sebelum makan)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Tab. Bisoprolol 1,25 mg No. X S 1 d d tab I (Pagi)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Tab. Dapagliflozin 10 mg No. X S 1 d d tab I (Pagi)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk Sp.JP untuk ekokardiografi dll",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan terlalu banyak minum agar jantungnya ga terlalu berat kerjanya dan biar gak makin sesek, minum 1,5-2 liter/hari",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari makan terlalu banyak garam/MSG/kemasan",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari gorengan",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol rutin, jangan stop obat sendiri",
+      "benar": true
+    }
+  ]
+}

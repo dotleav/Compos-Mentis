@@ -1,0 +1,211 @@
+{
+  "id": "kard_05",
+  "kategori": "kardio",
+  "level": "3A",
+  "nama": "Hipertensi Esensial dengan Dislipidemia",
+  "judulKasus": "Andri, 47 tahun, karyawan swasta, nyeri leher tidak menjalar",
+  "identitas": {
+    "nama": "Andri",
+    "usia": 47,
+    "pekerjaan": "Karyawan swasta",
+    "alamat": "-"
+  },
+  "keluhanUtama": "Nyeri leher tidak menjalar",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri leher tidak menjalar",
+        "Sudah 2 minggu",
+        "Memburuk saat lagi cape",
+        "Belum pernah seperti ini",
+        "Pusing saat nyeri leher",
+        "Udah minum obat amlodipin → ga membaik",
+        "Ada hipertensi sejak 1 tahun lalu"
+      ],
+      "rpd": "Ibu: hipertensi Ayah: meninggal karena stroke",
+      "rpk": "Ibu: hipertensi Ayah: meninggal karena stroke",
+      "lifestyle": [
+        "Suka makan gorengan & minum soda & minum kopi (gapake gula) 1 cangkir sehari",
+        "Jarang makan sayur hijau",
+        "Merokok sehari 12 batang",
+        "Jarang olahraga",
+        "Alergi obat: ada alergi obat (perlu ditanyakan)"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_td",
+        "nama": "TD",
+        "temuan": "170/100 (minum amlodipine tetap tinggi)",
+        "signifikan": false
+      },
+      {
+        "id": "pf_suhu",
+        "nama": "Suhu",
+        "temuan": "36,5°C",
+        "signifikan": false
+      },
+      {
+        "id": "pf_nadi",
+        "nama": "Nadi",
+        "temuan": "80x/menit",
+        "signifikan": false
+      },
+      {
+        "id": "pf_nafas",
+        "nama": "Nafas",
+        "temuan": "20x/menit",
+        "signifikan": false
+      },
+      {
+        "id": "pf_klasifikasi_jnc",
+        "nama": "Klasifikasi JNC",
+        "temuan": "",
+        "signifikan": false
+      },
+      {
+        "id": "pf_-_normal",
+        "nama": "- Normal",
+        "temuan": "<120/<80",
+        "signifikan": false
+      },
+      {
+        "id": "pf_-_prehipertensi",
+        "nama": "- Prehipertensi",
+        "temuan": "(120-139)/(80-89)",
+        "signifikan": false
+      },
+      {
+        "id": "pf_-_hipertensi_kelas_1",
+        "nama": "- Hipertensi Kelas 1",
+        "temuan": "(140-159)/(90-99)",
+        "signifikan": false
+      },
+      {
+        "id": "pf_-_hipertensi_kelas_2",
+        "nama": "- Hipertensi Kelas 2",
+        "temuan": ">160/>100",
+        "signifikan": false
+      },
+      {
+        "id": "pf_inspeksi",
+        "nama": "Inspeksi",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pf_palpasi",
+        "nama": "Palpasi",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pf_perkusi",
+        "nama": "Perkusi",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pf_auskultasi",
+        "nama": "Auskultasi",
+        "temuan": "dbn",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_profil_lipid",
+        "nama": "Profil lipid",
+        "temuan": "",
+        "signifikan": false,
+        "image": "pnj_profil_lipid.jpg"
+      },
+      {
+        "id": "pnj_darah_rutin",
+        "nama": "Darah rutin",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pnj_rontgen",
+        "nama": "Rontgen",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "dbn",
+        "signifikan": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Hipertensi Esensial dengan Dislipidemia",
+    "pilihan": [
+      "Hipertensi Esensial dengan Dislipidemia",
+      "Tension Headache",
+      "Hipertensi Sekunder (ada penyakit yang mendasar)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Hipertensi:",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amlodiplin tab mg 5 No X s.1.d.d tab 1",
+      "benar": true
+    },
+    {
+      "opsi": "Atau",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Captopril 25mg tab No. X s.p.r.n tab 1",
+      "benar": true
+    },
+    {
+      "opsi": "Atau",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Candesartan tab mg 16 No. XXI s.1.d.d tab 1 h.s",
+      "benar": true
+    },
+    {
+      "opsi": "Dislipidemia:",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Simvastatin tab mg 10 No X s.1.d.d tab 1 h.s",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Mengatur pola makan",
+      "benar": true
+    },
+    {
+      "opsi": "Olahraga",
+      "benar": true
+    },
+    {
+      "opsi": "Makan sayur buah",
+      "benar": true
+    },
+    {
+      "opsi": "Jelaskan cara mengukur tensi berapa kali sehari",
+      "benar": true
+    },
+    {
+      "opsi": "Evaluasi → perlu kontrol atau tidak",
+      "benar": true
+    }
+  ]
+}

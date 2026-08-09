@@ -1,0 +1,716 @@
+Case Bank OSCE — Kardiologi
+
+1. Atrial Fibrilasi
+
+ID
+
+kard_01
+
+Kategori
+
+kardio
+
+Nama
+
+Atrial Fibrilasi
+
+Level
+
+3B
+
+Judul Kasus
+
+Wiyoto, 43 tahun, karyawan swasta, dada berdebar berulang
+
+Identitas
+
+Nama: Wiyoto, Usia: 43, Pekerjaan: Karyawan swasta, Alamat: -
+
+Keluhan Utama
+
+Dada berdebar
+
+RPS
+
+Dada berdebar sejak 1 hari - seminggu
+
+Semakin terasa berdebar, terus menerus
+
+Semakin berdebar saat beraktivitas; saat istirahat tetap berdebar
+
+Keluhan lain (-)
+
+RPD
+
+Pernah seperti ini sebelumnya selama 5 bulan
+
+Alergi (-)
+
+Riwayat hipertensi (+) 2 tahun
+
+Merokok sudah berhenti, 10 tahun lalu
+
+Makanan bervariasi: lemak, gorengan
+
+RPK
+
+Riwayat hipertensi ayah (+)
+
+Lifestyle
+
+Bisa biasa aja
+
+Pemeriksaan Fisik
+
+TD: 130/80 mmHg
+
+Suhu: 36,5°C
+
+Nadi: 155x/menit
+
+Nafas: 22x/menit
+
+SpO2: 96%
+
+Mulut: sianosis (-)
+
+Inspeksi: dbn
+
+Palpasi: iktus kordis teraba SIC 5, impuls tidak teraba, kardiomegali (-)
+
+Auskultasi: S1 & S2 irregular (suara tambahan sulit dievaluasi), pulmo: ronki (-), wheezing (-)
+
+*Pulsus Defisit (+)
+
+JVP: 5+2
+
+Pemeriksaan Penunjang
+
+*EKG: 
+
+Darah lengkap: dbn
+
+Elektrolit (K, Na, Cl): dbn
+
+Fungsi Tiroid: dbn
+
+DD Benar
+
+Atrial Fibrilasi
+
+DD Pilihan
+
+Atrial Fibrilasi
+
+Atrial Flutter
+
+Hiperkalemia
+
+PAC
+
+Tatalaksana
+
++Kontrol Laju (Rate Control) - jika stabil
+
++R/ Bisoprolol tab mg 5 No. XXX s.1.d.d tab. I
+
++Antikoagulan (CHA2DS2-VASc score)
+
++R/ Warfarin tab mg 2 No. XXX s.1.d.d tab. I
+
+-Kardioversi tanpa evaluasi terlebih dahulu
+
+Edukasi
+
++Rujuk Sp.JP
+
++Minum obat secara teratur
+
+-Jangan menghentikan obat sendiri
+
++Kontrol rutin
+
++Hindari pemicu (stres, kafein berlebih)
+
++Segera ke IGD kalau ada tanda perburukan
+
+
+
+
+
+2. SVT (Supraventrikular Takikardia)
+
+ID
+
+kard_02
+
+Kategori
+
+kardio
+
+Nama
+
+SVT (Supraventrikular Takikardia)
+
+Level
+
+3B
+
+Judul Kasus
+
+Boy, 37 tahun, karyawan swasta, dada berdebar saat aktivitas
+
+Identitas
+
+Nama: Boy, Usia: 37, Pekerjaan: Karyawan swasta, Alamat: Jetis
+
+Keluhan Utama
+
+Dada berdebar
+
+RPS
+
+Berdebar saat beraktivitas
+
+Sudah 2 jam, terus menerus
+
+Tidak sesak
+
+Tidak menjalar
+
+Tidak pingsan (sinkop negatif)
+
+Belum diobati
+
+RPD
+
+Sebelumnya sudah pernah tapi tidak dibawa ke RS
+
+Trauma: -
+
+RPK
+
+Hipertensi: -
+
+DM: -
+
+Lifestyle
+
+HT: -
+
+Rokok: -
+
+Kopi: -
+
+Pemeriksaan Fisik
+
+KU: Kompos mentis
+
+Suhu: 36,8°C
+
+TD: 115/79 mmHg
+
+HR: 160 bpm, reguler
+
+RR: 22x/menit
+
+Thorax Inspeksi: pergerakan dada simetris, ictus cordis terlihat
+
+Palpasi: pulsasi ventrikel dextra teraba, sistolik epigastrium
+
+Perkusi: aorta dbn, batas jantung dextra et sinistra dbn
+
+Auskultasi: napas vesikuler, aorta bruit, ictus cordis dbn, katup aorta dbn, katup pulmonal dbn
+
+CRT dan akral: periksa
+
+Pemeriksaan Penunjang
+
+*EKG: 
+
+Pemeriksaan Elektrolit: dbn
+
+Pemeriksaan Darah rutin: dbn
+
+Cek fungsi ginjal: dbn
+
+Rontgen: biasanya dbn
+
+DD Benar
+
+Supraventrikular Takikardia (SVT)
+
+DD Pilihan
+
+Supraventrikular Takikardia (SVT)
+
+Atrial Flutter
+
+Atrial Fibrilasi
+
+Tatalaksana
+
++TAHAP PERTAMA: Pijat Karotis (cek bruit dulu) → 2 jari, 5-10 detik
+
++TAHAP KEDUA: Modified Valsalva Maneuver → mengejan 15 detik lalu baringkan dengan kaki diangkat
+
++FARMAKO jika gagal: Adenosin IV bolus cepat 6mg/2mL No. II, flush NaCl 0.9% 20cc
+
++Jika gagal ulang: Adenosin 12mg/4mL No. II (maks 2x 12mg)
+
++Jika adenosin gagal: R/ Inj. Diltiazem 5mg/mL, 5mL No. I, bolus IV pelan 2 menit
+
++Oral take-home (pencegahan kambuh): R/ Bisoprolol tab mg 2,5 No. X s.1.d.d tab I (pagi)
+
+-Tidak dilakukan manuver vagal sebelum farmako
+
+Edukasi
+
++Rujuk Sp.JP untuk observasi
+
++Ajarkan pasien vagal maneuver jika perlu
+
++Gangguan jalur listrik kecil di jantung yang bikin jantung berdenyut terlalu cepat dan beraturan, namanya SVT. Ini biasanya tidak berbahaya/mengancam nyawa, tapi memang bisa mengganggu kenyamanan
+
++Hindari pemicu: kafein, alkohol, kurang tidur, stres berlebihan
+
+-Berhenti obat sendiri
+
+
+
+
+
+3. CHF (Congestive Heart Failure)
+
+ID
+
+kard_03
+
+Kategori
+
+kardio
+
+Nama
+
+CHF (Congestive Heart Failure)
+
+Level
+
+3B
+
+Judul Kasus
+
+Sudharma, 73 tahun, pensiunan, sesak napas 6 bulan terakhir
+
+Identitas
+
+Nama: Sudharma, Usia: 73, Pekerjaan: Pensiunan, Alamat: -
+
+Keluhan Utama
+
+Sesak napas / napas tidak lega
+
+RPS
+
+Sesak napas sejak 6 bulan terakhir
+
+Tiap malam hari terasa sesak
+
+Tidak ada nyeri dada
+
+Tidak ada jantung berdebar-debar
+
+Jika beraktivitas sedang-berat memburuk
+
+Membaik jika istirahat, tapi nanti gitu lagi
+
+RPD
+
+Tidak ada riwayat serupa sebelumnya
+
+Tidak pernah pingsan
+
+Punya DM & Hipertensi
+
+Obat rutin: Amlodipine + Metformin
+
+RPK
+
+Ibu: DM
+
+Ayah: gagal jantung, gagal ginjal
+
+Lifestyle
+
+Kegiatan sehari-hari biasa
+
+Pemeriksaan Fisik
+
+KU: CM, tampak sesak
+
+Suhu: 36,7°C
+
+TD: 160/80 mmHg
+
+SpO2: 95%
+
+RR: 24x/menit
+
+Tidak sianosis
+
+Edema tungkai bilateral (+)
+
+CRT dbn
+
+Akral teraba hangat
+
+*Iktus Kordis di SIC 6 linea axilaris anterior
+
+Perkusi: Batas jantung kanan dbn, Batas kiri jantung pembesaran SIC6
+
+Perut timpani
+
+Auskultasi: Ada bunyi Gallop di katup pulmonal (diperiksa katup aorta, pulmonal, tricuspid, mitral)
+
+Ada ronki positif pada setengah basal paru bilateral
+
+Fremitus meningkat
+
+JVP: 5 + 4 (abnormal)
+
+Pemeriksaan Penunjang
+
+*NT-proBNP: 200
+
+*EKG: 
+
+*X-ray: 
+
+
+
+DD Benar
+
+Gagal Jantung (CHF)
+
+DD Pilihan
+
+Gagal Jantung (CHF)
+
+Hipertensi Pulmoner
+
+Pneumonia berat
+
+Tatalaksana
+
+4 Pilar CHF:
+
++R/ Tab. Furosemide 40 mg No. X S 1 d d tab I (Pagi)
+
++R/ Tab. Captopril 12,5 mg No. XXX S 3 d d tab I (1 jam sebelum makan)
+
++R/ Tab. Bisoprolol 1,25 mg No. X S 1 d d tab I (Pagi)
+
++R/ Tab. Dapagliflozin 10 mg No. X S 1 d d tab I (Pagi)
+
+Edukasi
+
++Rujuk Sp.JP untuk ekokardiografi dll
+
++Jangan terlalu banyak minum agar jantungnya ga terlalu berat kerjanya dan biar gak makin sesek, minum 1,5-2 liter/hari
+
++Hindari makan terlalu banyak garam/MSG/kemasan
+
++Hindari gorengan
+
++Kontrol rutin, jangan stop obat sendiri
+
+
+
+
+
+4. Krisis Hipertensi Urgensi
+
+ID
+
+kard_04
+
+Kategori
+
+kardio
+
+Nama
+
+Krisis Hipertensi Urgensi
+
+Level
+
+3B
+
+Judul Kasus
+
+Rudi, 23 tahun, PNS, kepala dan leher nyeri, TD ≥ 180/110 mmHg
+
+Identitas
+
+Nama: Rudi, Usia: 23, Pekerjaan: PNS, Alamat: -
+
+Keluhan Utama
+
+Kepala dan leher nyeri
+
+RPS
+
+Nyeri terasa di seluruh kepala, menjalar ke leher terasa kaku, 2 hari yang lalu terasa memberat
+
+Mulai terasa sejak 1 minggu yang lalu
+
+Karakteristik nyeri seperti ditekan, memberat ketika beraktivitas
+
+RPD
+
+Pernah seperti ini 1 minggu yang lalu, belum diobati
+
+Ada minum obat hipertensi yaitu amlodipine sejak lama
+
+RPK
+
+Riwayat bapak: kolesterol dan hipertensi, karena sakit jantung
+
+Riwayat ibu: hipertensi dan DM
+
+Lifestyle
+
+Riwayat merokok 12 batang
+
+Suka makan gorengan dan fast food
+
+Suka yang asin-asin
+
+Jarang olahraga
+
+Jarang minum air
+
+Pemeriksaan Fisik
+
+*TD: 200/110 mmHg (≥180/110 mmHg syarat krisis HT)
+
+Suhu: 37°C
+
+RR: 20x/menit
+
+HR: 88x/menit
+
+HTT - cek visus dan funduskopi: ada lateralisasi tapi masih normal
+
+Fungsi Motorik dan Sensorik: Periksa kekuatan otot keempat ekstremitas (tangan dan kaki) secara simetris
+
+Nyeri ketok kostovertebra (+)
+
+Pemeriksaan Penunjang
+
+*EKG: 
+
+*rontgen/Xray: *darah rutin: *:fungsi ginjal: 
+
+DD Benar
+
+Krisis Hipertensi Urgensi
+
+DD Pilihan
+
+Krisis Hipertensi Urgensi
+
+Hipertensi Emergensi
+
+Syok Kardiogenik
+
+Tatalaksana
+
++Short acting antihipertensi
+
++R/ Captopril 25mg tab No. X s.p.r.n tab 1
+
++Diuretik: R/ Furosemide tab mg 40 No. X S 1.d.d tab I (pagi)
+
+-Langsung intravena tanpa evaluasi klinis dahulu
+
+Edukasi
+
++Minum obat antihipertensi sesuai resep dan teratur
+
++Jangan menghentikan atau mengubah dosis obat tanpa anjuran dokter
+
++Kontrol tekanan darah secara rutin sesuai jadwal
+
++Batasi konsumsi garam (diet rendah garam) dan hindari makanan tinggi natrium
+
++Perbanyak konsumsi buah, sayur, dan makanan bergizi seimbang
+
++Lakukan aktivitas fisik atau olahraga secara teratur sesuai kondisi
+
++Jaga berat badan ideal
+
++Hindari merokok, alkohol, dan batasi konsumsi kafein berlebihan
+
++Kelola stres dan istirahat yang cukup
+
++Minum obat penyakit penyerta (misal diabetes atau kolesterol) secara teratur bila ada
+
++Segera ke IGD bila muncul tanda bahaya: nyeri dada, sesak napas, sakit kepala hebat, gangguan penglihatan, kelemahan/baal salah satu sisi tubuh, sulit bicara, kejang, atau penurunan kesadaran
+
+
+
+
+
+5. Hipertensi Esensial dengan Dislipidemia
+
+ID
+
+kard_05
+
+Kategori
+
+kardio
+
+Nama
+
+Hipertensi Esensial dengan Dislipidemia
+
+Level
+
+3A
+
+Judul Kasus
+
+Andri, 47 tahun, karyawan swasta, nyeri leher tidak menjalar
+
+Identitas
+
+Nama: Andri, Usia: 47, Pekerjaan: Karyawan swasta, Alamat: -
+
+Keluhan Utama
+
+Nyeri leher tidak menjalar
+
+RPS
+
+Nyeri leher tidak menjalar
+
+Sudah 2 minggu
+
+Memburuk saat lagi cape
+
+Belum pernah seperti ini
+
+Pusing saat nyeri leher
+
+Udah minum obat amlodipin → ga membaik
+
+Ada hipertensi sejak 1 tahun lalu
+
+RPD
+
+Ibu: hipertensi
+
+Ayah: meninggal karena stroke
+
+RPK
+
+Ibu: hipertensi
+
+Ayah: meninggal karena stroke
+
+Lifestyle
+
+Suka makan gorengan & minum soda & minum kopi (gapake gula) 1 cangkir sehari
+
+Jarang makan sayur hijau
+
+Merokok sehari 12 batang
+
+Jarang olahraga
+
+Alergi obat: ada alergi obat (perlu ditanyakan)
+
+Pemeriksaan Fisik
+
+TD: 170/100 (minum amlodipine tetap tinggi)
+
+Suhu: 36,5°C
+
+Nadi: 80x/menit
+
+Nafas: 20x/menit
+
+Klasifikasi JNC:
+
+- Normal: <120/<80
+
+- Prehipertensi: (120-139)/(80-89)
+
+- Hipertensi Kelas 1: (140-159)/(90-99)
+
+- Hipertensi Kelas 2: >160/>100
+
+Inspeksi: dbn
+
+Palpasi: dbn
+
+Perkusi: dbn
+
+Auskultasi: dbn
+
+Pemeriksaan Penunjang
+
+Profil lipid: 
+
+Darah rutin: dbn
+
+Rontgen: dbn
+
+EKG: dbn
+
+DD Benar
+
+Hipertensi Esensial dengan Dislipidemia
+
+DD Pilihan
+
+Hipertensi Esensial dengan Dislipidemia
+
+Tension Headache
+
+Hipertensi Sekunder (ada penyakit yang mendasar)
+
+Tatalaksana
+
++Hipertensi:
+
++R/ Amlodiplin tab mg 5 No X s.1.d.d tab 1
+
+Atau
+
++R/ Captopril 25mg tab No. X s.p.r.n tab 1
+
+Atau
+
++R/ Candesartan tab mg 16 No. XXI s.1.d.d tab 1 h.s
+
++Dislipidemia:
+
++R/ Simvastatin tab mg 10 No X s.1.d.d tab 1 h.s
+
+Edukasi
+
++Mengatur pola makan
+
++Olahraga
+
++Makan sayur buah
+
++Jelaskan cara mengukur tensi berapa kali sehari
+
++Evaluasi → perlu kontrol atau tidak
+
+
+
