@@ -44,8 +44,10 @@ router.post("/perform", async (req, res) => {
       step === "pf"
         ? kasus.groundTruth.defaultNormal.pemeriksaanFisik
         : kasus.groundTruth.defaultNormal.penunjang;
+    const NO_DATA_TEXT = "Tidak ada data.";
 
     const catalog = list.map((item) => ({ id: item.id, nama: item.nama }));
+    const doneCatalog = catalog.filter((c) => done.includes(c.id));
 
     // OpenAI-style tool schema — works across Groq/Cerebras/OpenRouter/NVIDIA/Ollama since
     // they all expose an OpenAI-compatible endpoint. Same idea as before:
@@ -56,14 +58,20 @@ router.post("/perform", async (req, res) => {
         function: {
           name: "select_findings",
           description:
-            "Pilih satu atau lebih pemeriksaan dari daftar yang tersedia yang paling cocok dengan permintaan mahasiswa. Jika tidak ada yang benar-benar cocok/relevan secara klinis, kembalikan array kosong.",
+            "Pilih satu atau lebih pemeriksaan dari daftar yang tersedia yang paling cocok dengan permintaan mahasiswa. Jika tidak ada yang benar-benar cocok/relevan secara klinis, kembalikan array kosong dan isi unmatched_reason.",
           parameters: {
             type: "object",
             properties: {
               matched_ids: {
                 type: "array",
                 items: { type: "string", enum: catalog.map((c) => c.id) },
-                description: "id pemeriksaan yang cocok dengan permintaan mahasiswa, dari daftar yang diberikan",
+                description: "id pemeriksaan yang cocok dengan permintaan mahasiswa, dari daftar yang diberikan. Pilih HANYA entri yang paling spesifik/sempit yang sesuai persis dengan permintaan — jangan pilih entri gabungan/lengkap kecuali mahasiswa secara eksplisit meminta hal yang luas/menyeluruh.",
+              },
+              unmatched_reason: {
+                type: "string",
+                enum: ["not_applicable", "specific_test_not_available"],
+                description:
+                  "WAJIB diisi kalau matched_ids kosong (abaikan kalau matched_ids ada isinya). 'specific_test_not_available' = mahasiswa meminta pemeriksaan/tes tertentu yang bernama spesifik (mis. EKG, HbA1c, USG, foto rontgen tertentu) ATAU teknik pemeriksaan spesifik pada region yang SUDAH pernah diperiksa dengan teknik lain (mis. minta 'palpasi abdomen' padahal yang tercatat cuma 'inspeksi abdomen' sebagai entri gabungan, dan tidak ada entri terpisah untuk palpasi) — dan kasus ini TIDAK punya data terpisah untuk itu. 'not_applicable' = permintaan itu manuver rutin/umum yang wajar diasumsikan normal walau tidak didaftar terpisah di kasus ini (mis. pemeriksaan dasar yang lazim otomatis dilakukan tapi tidak spesifik/bernama tes tertentu).",
               },
             },
             required: ["matched_ids"],
@@ -78,8 +86,15 @@ router.post("/perform", async (req, res) => {
 
 Daftar pemeriksaan yang tersedia di kasus ini:
 ${catalog.map((c) => `- ${c.id}: ${c.nama}`).join("\n")}
+${
+  doneCatalog.length
+    ? `\nPemeriksaan yang SUDAH PERNAH diambil mahasiswa sebelumnya di sesi ini (jangan asal kembalikan id yang sama ini lagi untuk permintaan yang jelas-jelas menanyakan TEKNIK/KOMPONEN BERBEDA pada region yang sama — lihat aturan unmatched_reason di atas):\n${doneCatalog.map((c) => `- ${c.id}: ${c.nama}`).join("\n")}`
+    : ""
+}
 
-Cocokkan secara semantik/klinis (misalnya "denyut jantung" = nadi, "dada difoto" = foto thorax, "jantung didengerin" = auskultasi jantung). Jika permintaan mahasiswa relevan secara klinis tapi tidak ada di daftar (misalnya organ/tempat yang tidak berkaitan dengan kasus ini), kembalikan array kosong.`;
+Cocokkan secara semantik/klinis (misalnya "denyut jantung" = nadi, "dada difoto" = foto thorax, "jantung didengerin" = auskultasi jantung). Jika permintaan mahasiswa relevan secara klinis tapi tidak ada di daftar (misalnya organ/tempat yang tidak berkaitan dengan kasus ini), kembalikan array kosong.
+
+PENTING SOAL GRANULARITAS — mahasiswa OSCE bisa meminta pemeriksaan secara SEMPIT (satu nilai spesifik, mis. "GDS saja", "tensi aja", "nadi") atau LUAS (satu panel/profil lengkap, mis. "cek gula darah", "tanda-tanda vital", "profil lipid"). Kalau di daftar ADA entri sempit yang cocok persis DAN entri luas yang mencakupnya, pilih HANYA entri paling sempit yang sesuai permintaan mahasiswa — JANGAN kembalikan entri luas kecuali mahasiswa secara eksplisit meminta hal yang luas/lengkap/menyeluruh. Kalau di daftar HANYA ada satu entri gabungan (tidak ada versi sempitnya), boleh kembalikan entri gabungan itu apa adanya.`;
 
     const messages = [
       { role: "system", content: systemPrompt },
@@ -92,17 +107,24 @@ Cocokkan secara semantik/klinis (misalnya "denyut jantung" = nadi, "dada difoto"
     const call = toolCalls.find((c) => c.function?.name === "select_findings");
 
     let matchedIds = [];
+    let unmatchedReason = null;
     if (call) {
       const rawArgs = call.function.arguments;
       // OpenAI-style APIs return arguments as a JSON string; parse defensively.
       const args = typeof rawArgs === "string" ? JSON.parse(rawArgs) : rawArgs;
       matchedIds = args?.matched_ids || [];
+      unmatchedReason = args?.unmatched_reason || null;
     }
 
     if (matchedIds.length === 0) {
+      // Only fall back to the case's generic "dalam batas normal" text for
+      // routine/generic maneuvers. A named/specific test the model flagged
+      // as genuinely unavailable in this case should say so honestly
+      // instead of quietly presenting a fabricated "normal" result.
+      const text = unmatchedReason === "specific_test_not_available" ? NO_DATA_TEXT : defaultText;
       return res.json({
         matched: [],
-        results: [{ nama: cleanQuery, temuan: defaultText, signifikan: false, image: null }],
+        results: [{ nama: cleanQuery, temuan: text, signifikan: false, image: null }],
       });
     }
 

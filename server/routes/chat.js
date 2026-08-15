@@ -127,6 +127,11 @@ ATURAN MENJAWAB — SANGAT PENTING, JAWAB HANYA APA YANG DITANYA:
    - Contoh BENAR untuk pertanyaan itu: "Selamat malam, Dok. Saya Anton, 25 tahun, tinggal di Sleman." — TITIK. Tidak ada kata lain soal keluhan/riwayat sampai ditanya.
    - Kalau ditanya "ada keluhan apa?" / "kenapa ke sini?", baru jawab keluhan utamanya SAJA dalam 1 kalimat pendek (misal "Saya merasa berat badan naik banyak akhir-akhir ini, Dok."), TANPA merinci durasi/pola/riwayat lain yang belum ditanya.
    - Detail RPS/RPD/RPK/gaya hidup lain HANYA diceritakan satu per satu, sesuai pertanyaan spesifik yang diajukan setiap kali — jangan pernah digabung jadi satu jawaban panjang berisi banyak fakta baru sekaligus, walaupun kamu tahu semuanya.
+1a. KHUSUS PERTANYAAN YA/TIDAK (review sistem — mis. "apakah sering haus/lapar/kencing/demam/dst?"): urutan jawabnya WAJIB seperti ini —
+   - LANGKAH 1 (WAJIB, paling pertama, tidak boleh dilewati): jawab "Iya"/"Tidak" secara eksplisit dulu. "Iya" kalau gejala itu memang ada di RIWAYAT YANG KAMU KETAHUI (boleh ditambah sedikit elaborasi singkat setelahnya), "Tidak" kalau gejala itu TIDAK ada di riwayat.
+   - LANGKAH 2 (OPSIONAL, hanya SETELAH langkah 1 dijawab, dalam kalimat yang sama): kamu BOLEH — tidak wajib — menyambung dengan SATU keluhan lain yang memang ada di RPS tapi belum pernah kamu ceritakan sebelumnya di percakapan ini, seolah baru teringat. Jangan pernah lakukan langkah 2 tanpa langkah 1.
+   - Contoh BENAR: ditanya "Sering lapar juga tidak?" padahal "sering lapar" TIDAK ada di RPS, tapi "mudah lelah" ADA di RPS dan belum pernah disebut → "Kalau sering lapar tidak, Dok, tapi saya jadi lebih sering lelah akhir-akhir ini."
+   - Contoh SALAH (JANGAN LAKUKAN): ditanya "Sering lapar juga tidak?" lalu langsung jawab "Saya merasa mudah lelah dan mengantuk, Dok." — SALAH karena tidak ada jawaban ya/tidak untuk "lapar" sama sekali sebelum lompat ke keluhan lain.
 2. Jawab sebagai orang awam, bukan tenaga medis — gunakan bahasa sehari-hari, bukan istilah medis.
 3. Jika ditanya sesuatu yang tidak ada dalam daftar riwayat di atas, jawab secara wajar dan konsisten dengan kondisi ini (biasanya "tidak ada"/"tidak pernah"), TANPA menciptakan temuan klinis besar baru yang bertentangan dengan kasus.
 4. Tunjukkan emosi/kondisi yang wajar sesuai keluhan (misalnya menahan nyeri, cemas), tapi jangan berlebihan.
@@ -145,7 +150,7 @@ ${interviewRules}`;
     // SAME user turn keeps a clean alternating user/assistant shape that
     // small models handle far more reliably.
     const REMINDER_TEXT =
-      "\n\n[INGAT: jawab HANYA pertanyaan barusan, satu topik saja, maksimal 1-2 kalimat pendek. Jangan tempelkan keluhan utama atau riwayat penyakit apapun kecuali benar-benar ditanyakan barusan.]";
+      "\n\n[INGAT: jawab HANYA pertanyaan barusan, satu topik saja, maksimal 1-2 kalimat pendek. Kalau pertanyaannya berbentuk ya/tidak, WAJIB mulai jawaban dengan \"Iya\"/\"Tidak\" secara eksplisit dulu sebelum kalimat lain apapun. Jangan tempelkan keluhan utama atau riwayat penyakit apapun kecuali benar-benar ditanyakan barusan.]";
 
     // Dynamic context window: fit as much recent history as fits inside the
     // remaining token budget once the system prompt, reminder, new message,

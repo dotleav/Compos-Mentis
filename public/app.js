@@ -45,6 +45,9 @@ function resetState(kasus) {
     ddInitial: [],
     ddRevisi1: [],
     ddRevisi2: [],
+    ddRevisi1Seeded: false,
+    ddRevisi2Seeded: false,
+    ddFinalSeeded: false,
     diagnosisKerja: "",
     diagnosisBanding: [],
     anamnesisHistory: [],
@@ -154,14 +157,27 @@ function renderSession() {
     <div id="stepBody"></div>
   `;
   document.getElementById("backBtn").addEventListener("click", (e) => { e.preventDefault(); showLanding(); });
+  // Let a vertical mouse wheel/trackpad scroll the step tabs horizontally
+  // (desktop/web). Touch devices already scroll it natively by dragging —
+  // this only kicks in for wheel input, so it doesn't fight touch scrolling.
+  const stepNavEl = app.querySelector(".step-nav");
+  if (stepNavEl) {
+    stepNavEl.addEventListener("wheel", (e) => {
+      if (stepNavEl.scrollWidth <= stepNavEl.clientWidth) return; // nothing to scroll
+      const delta = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+      if (delta === 0) return;
+      e.preventDefault();
+      stepNavEl.scrollLeft += delta;
+    }, { passive: false });
+  }
   const body = document.getElementById("stepBody");
   const renderers = {
     read: renderRead,
     dd1: renderDDStep("ddInitial", "Penyakit apa saja yang muncul di benakmu...?", "Tuliskan sebanyak mungkin diagnosis banding yang terpikirkan hanya dari keluhan utama di atas. Gunakan kolom pencarian untuk menemukan nama penyakit."),
     anamnesis: renderAnamnesis,
-    dd2: renderDDStep("ddRevisi1", "DD Revisi 1", "Setelah anamnesis, revisi daftar diagnosis bandingmu — eliminasi yang tidak relevan, tambahkan yang baru terpikirkan."),
+    dd2: renderDDStep("ddRevisi1", "DD Revisi 1", "Setelah anamnesis, revisi daftar diagnosis bandingmu — eliminasi yang tidak relevan, tambahkan yang baru terpikirkan.", { carryFromKey: "ddInitial", seededFlagKey: "ddRevisi1Seeded" }),
     pf: renderExamStep("pf"),
-    dd3: renderDDStep("ddRevisi2", "DD Revisi 2", "Setelah pemeriksaan fisik, revisi lagi daftar diagnosis bandingmu."),
+    dd3: renderDDStep("ddRevisi2", "DD Revisi 2", "Setelah pemeriksaan fisik, revisi lagi daftar diagnosis bandingmu.", { carryFromKey: "ddRevisi1", seededFlagKey: "ddRevisi2Seeded" }),
     penunjang: renderExamStep("penunjang"),
     final: renderFinal,
     plan: renderPlan,
@@ -327,8 +343,17 @@ function renderDiagnosisPicker(container, opts) {
 }
 
 // ---------- DD STEPS (dd1 / dd2 / dd3) ----------
-function renderDDStep(stateKey, title, instructions) {
+function renderDDStep(stateKey, title, instructions, { carryFromKey, seededFlagKey } = {}) {
   return (body) => {
+    // Carry the previous DD list forward exactly once, the first time this
+    // step is shown — so "DD Revisi" starts as a REVISION of the prior
+    // list, not a blank slate. Guarded by a one-shot flag (not just an
+    // empty-array check) so it doesn't re-seed if the student deliberately
+    // clears the list later and navigates back/forward.
+    if (carryFromKey && seededFlagKey && !state[seededFlagKey]) {
+      state[stateKey] = [...state[carryFromKey]];
+      state[seededFlagKey] = true;
+    }
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `<h2 style="font-size:1.05rem;">${title}</h2><p class="muted" style="margin:6px 0 14px;">${instructions}</p>`;
@@ -477,6 +502,15 @@ function renderExamResults(found) {
 
 // ---------- STEP 8: FINAL DIAGNOSIS (1 DK + 2 DB) ----------
 function renderFinal(body) {
+  // Same one-shot carry-forward as the DD revision steps: seed Diagnosis
+  // Banding (DD Akhir) from DD Revisi 2 the first time this step is shown.
+  // This list is capped at 2 selections here (unlike the earlier DD steps),
+  // so if Revisi 2 had more than 2, only the first 2 carry over — the
+  // student can still adjust from there like any other revision.
+  if (!state.ddFinalSeeded) {
+    state.diagnosisBanding = state.ddRevisi2.slice(0, 2);
+    state.ddFinalSeeded = true;
+  }
   const dkCard = document.createElement("div");
   dkCard.className = "card";
   dkCard.innerHTML = `<h2 style="font-size:1.05rem;">Diagnosis Kerja</h2><p class="muted" style="margin:6px 0 14px;">Pilih SATU diagnosis kerja utama berdasarkan seluruh temuan.</p>`;
@@ -679,6 +713,36 @@ async function renderReveal(body) {
         <div class="answer-label">Kunci Jawaban</div>
         <div class="answer-body">${(truth.edukasi || []).filter((e) => e.benar).map((e) => escapeHtml(e.opsi)).join("\n\n") || "-"}</div>
       </div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:0.95rem; margin-bottom:10px;">Anamnesis Kamu</h3>
+      <div class="chat-log" style="max-height:none;">
+        ${state.anamnesisHistory.length
+          ? state.anamnesisHistory.map((h) => `<div class="bubble ${h.role === "user" ? "user" : "patient"}">${escapeHtml(h.content)}</div>`).join("")
+          : `<p class="muted">Tidak ada percakapan anamnesis yang dilakukan.</p>`}
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:0.95rem; margin-bottom:10px;">Pemeriksaan Fisik yang Kamu Lakukan</h3>
+      ${state.pfFound.length
+        ? state.pfFound.map((f) => `
+          <div class="finding-card ${f.signifikan ? "signifikan" : ""}">
+            <div class="nama">${f.nama}</div>
+            <div>${f.temuan}</div>
+            ${f.image ? `<img src="${f.image}" alt="${f.nama}">` : ""}
+          </div>`).join("")
+        : `<p class="muted">Tidak ada pemeriksaan fisik yang dilakukan.</p>`}
+    </div>
+    <div class="card">
+      <h3 style="font-size:0.95rem; margin-bottom:10px;">Pemeriksaan Penunjang yang Kamu Lakukan</h3>
+      ${state.penunjangFound.length
+        ? state.penunjangFound.map((f) => `
+          <div class="finding-card ${f.signifikan ? "signifikan" : ""}">
+            <div class="nama">${f.nama}</div>
+            <div>${f.temuan}</div>
+            ${f.image ? `<img src="${f.image}" alt="${f.nama}">` : ""}
+          </div>`).join("")
+        : `<p class="muted">Tidak ada pemeriksaan penunjang yang dilakukan.</p>`}
     </div>
     <div class="card">
       <h3 style="font-size:0.95rem; margin-bottom:10px;">Riwayat Lengkap (Ground Truth)</h3>

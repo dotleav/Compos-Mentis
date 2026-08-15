@@ -4,11 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OSCE AI Simulator</title>
+<script>
+  // Applied before first paint (blocking, tiny) so there's no flash of the
+  // wrong theme on load. Default stays dark unless the user has explicitly
+  // switched to light before — matches the "default tetap dark mode" ask.
+  (function () {
+    try {
+      var saved = localStorage.getItem("osce-theme");
+      if (saved === "light") document.documentElement.setAttribute("data-theme", "light");
+    } catch (e) {}
+  })();
+</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
   :root {
-    /* ---- clinical monitor palette ---- */
+    /* ---- clinical monitor palette (dark, default) ---- */
     --bg: #0a0f0e;
     --surface: #101b18;
     --surface2: #16241f;
@@ -23,8 +34,36 @@
     --green: #2fe0a0;
     --red: #ff6b6b;
     --yellow: #ffcf6b;
+    --red-soft: rgba(255, 107, 107, 0.15);
+    --grid-line: rgba(255,255,255,0.028);
+    --radial-glow: rgba(47,224,160,0.09);
+    --ekg-stroke: #2fe0a0;
     --font-display: 'JetBrains Mono', 'Consolas', monospace;
     --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  }
+
+  /* ---- light mode: daylight chart / paper — same tokens, different values.
+     Everything below already references var(--...), so overriding the
+     tokens here is all that's needed; no component rules are duplicated. ---- */
+  [data-theme="light"] {
+    --bg: #f3f7f5;
+    --surface: #ffffff;
+    --surface2: #eaf2ee;
+    --border: #cfe0d8;
+    --border-soft: #dbe9e2;
+    --text: #10231c;
+    --muted: #5c7369;
+    --accent: #0e9f6e;
+    --accent-soft: rgba(14, 159, 110, 0.1);
+    --accent-dim: rgba(14, 159, 110, 0.35);
+    --accent2: #b9790a;
+    --green: #0e9f6e;
+    --red: #d1453b;
+    --yellow: #b9790a;
+    --red-soft: rgba(209, 69, 59, 0.13);
+    --grid-line: rgba(16,35,28,0.045);
+    --radial-glow: rgba(14,159,110,0.07);
+    --ekg-stroke: #0e9f6e;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -34,13 +73,14 @@
   body {
     background-color: var(--bg);
     background-image:
-      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(47,224,160,0.09), transparent 60%),
-      linear-gradient(rgba(255,255,255,0.028) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px);
+      radial-gradient(ellipse 900px 500px at 50% -10%, var(--radial-glow), transparent 60%),
+      linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
     background-size: auto, 26px 26px, 26px 26px;
     color: var(--text);
     font-family: var(--font-body);
     min-height: 100vh;
+    transition: background-color .2s ease, color .2s ease;
   }
 
   /* decorative EKG trace strip along the very top of the page */
@@ -51,13 +91,21 @@
     width: 100%;
     background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='100'%20height='40'%20viewBox='0%200%20100%2040'%3E%3Cpath%20d='M0,22%20H28%20L34,8%20L40,34%20L46,20%20H60%20L66,14%20L72,22%20H100'%20fill='none'%20stroke='%232fe0a0'%20stroke-width='2'%20stroke-opacity='0.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E");
     background-repeat: repeat-x;
-    background-size: 110px 26px;
+    background-size: 90px 26px;
     background-position: 0 center;
     opacity: 0.8;
-    animation: trace-scroll 9s linear infinite;
+    animation: trace-scroll 8s linear infinite;
+  }
+  [data-theme="light"] body::before {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='100'%20height='40'%20viewBox='0%200%20100%2040'%3E%3Cpath%20d='M0,22%20H28%20L34,8%20L40,34%20L46,20%20H60%20L66,14%20L72,22%20H100'%20fill='none'%20stroke='%230e9f6e'%20stroke-width='2'%20stroke-opacity='0.55'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E");
+    opacity: 0.9;
   }
 
-  @keyframes trace-scroll { from { background-position: 0 center; } to { background-position: -220px center; } }
+  @keyframes trace-scroll { from { background-position: 0 center; } to { background-position: -180px center; } }
+
+  @media (max-width: 480px) {
+    body::before { background-size: 64px 24px; height: 26px; }
+  }
 
   #app {
     max-width: 900px;
@@ -140,10 +188,17 @@
     overflow-x: auto;
     margin-bottom: 22px;
     border-bottom: 2px solid var(--border);
-    scrollbar-width: thin;
+    /* scrollbar fully hidden — scroll is still there (drag on touch, or
+       mouse wheel converted to horizontal via JS in app.js), just no
+       visible track/thumb cluttering the tab-divider look */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* fade the last ~28px so a partially-cut-off tab visually reads as
+       "more to scroll" instead of looking like a rendering glitch */
+    -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent 100%);
+    mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent 100%);
   }
-  .step-nav::-webkit-scrollbar { height: 4px; }
-  .step-nav::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  .step-nav::-webkit-scrollbar { display: none; }
   .step-pill {
     flex: 0 0 auto;
     position: relative;
@@ -189,8 +244,8 @@
   .chip { display: inline-flex; align-items: center; gap: 6px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 7px 14px; font-size: 0.85rem; cursor: pointer; transition: border-color .15s ease, background .15s ease; }
   .chip:hover { border-color: var(--accent-dim); }
   .chip.selected { border-color: var(--accent); background: var(--accent-soft); }
-  .chip.correct { border-color: var(--green); background: rgba(47,224,160,0.15); }
-  .chip.incorrect { border-color: var(--red); background: rgba(255,107,107,0.15); }
+  .chip.correct { border-color: var(--green); background: var(--accent-soft); }
+  .chip.incorrect { border-color: var(--red); background: var(--red-soft); }
   .chip.rx { border-radius: 8px; white-space: pre-line; font-family: var(--font-display); font-size: 0.78rem; line-height: 1.5; text-align: left; max-width: 320px; }
 
   #ddSearch { width: 100%; }
@@ -263,10 +318,57 @@
     body::before { animation: none; }
     .step-pill.active { animation: none; }
   }
+
+  /* ---- theme toggle button ---- */
+  #themeToggle {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 100;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    transition: border-color .15s ease, transform .1s ease;
+  }
+  #themeToggle:hover { border-color: var(--accent); }
+  #themeToggle:active { transform: scale(0.94); }
 </style>
 </head>
 <body>
+  <button id="themeToggle" type="button" aria-label="Ganti tema terang/gelap" title="Ganti tema terang/gelap">🌙</button>
   <div id="app"></div>
   <script src="app.js"></script>
+  <script>
+    (function () {
+      var btn = document.getElementById("themeToggle");
+      var root = document.documentElement;
+      function sync() {
+        var isLight = root.getAttribute("data-theme") === "light";
+        btn.textContent = isLight ? "☀️" : "🌙";
+      }
+      sync();
+      btn.addEventListener("click", function () {
+        var isLight = root.getAttribute("data-theme") === "light";
+        if (isLight) {
+          root.removeAttribute("data-theme");
+          try { localStorage.setItem("osce-theme", "dark"); } catch (e) {}
+        } else {
+          root.setAttribute("data-theme", "light");
+          try { localStorage.setItem("osce-theme", "light"); } catch (e) {}
+        }
+        sync();
+      });
+    })();
+  </script>
 </body>
 </html>
