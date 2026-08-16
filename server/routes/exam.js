@@ -17,7 +17,7 @@ const { sanitizeText, isSafeSlug, MAX_QUERY_LENGTH } = require("../lib/sanitize"
  */
 router.post("/perform", async (req, res) => {
   try {
-    const { kategori, id, step, query, done = [] } = req.body;
+    const { kategori, id, step, query, done = [], forceProvider } = req.body;
     if (!kategori || !id || !step || !query) {
       return res.status(400).json({ error: "kategori, id, step, and query are required" });
     }
@@ -101,7 +101,7 @@ PENTING SOAL GRANULARITAS — mahasiswa OSCE bisa meminta pemeriksaan secara SEM
       { role: "user", content: cleanQuery },
     ];
 
-    const response = await chat({ messages, tools, max_tokens: 300 });
+    const response = await chat({ messages, tools, max_tokens: 300, forceProvider });
 
     const toolCalls = response.choices?.[0]?.message?.tool_calls || [];
     const call = toolCalls.find((c) => c.function?.name === "select_findings");

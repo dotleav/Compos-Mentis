@@ -342,10 +342,154 @@
   }
   #themeToggle:hover { border-color: var(--accent); }
   #themeToggle:active { transform: scale(0.94); }
+
+  /* ---- dev mode ---- */
+  #devToggle {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 100;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    transition: border-color .15s ease, transform .1s ease;
+  }
+  #devToggle.on { border-color: var(--accent); color: var(--accent); }
+  #devToggle:active { transform: scale(0.94); }
+
+  .dev-tag {
+    display: inline-block;
+    margin-top: 5px;
+    font-family: var(--font-display);
+    font-size: 0.62rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    opacity: 0.85;
+  }
+
+  #devOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(0,0,0,0.55);
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  #devOverlay.show { display: flex; }
+  #devPasswordCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    max-width: 320px;
+    width: 100%;
+  }
+  #devPasswordCard h3 { font-family: var(--font-display); font-size: 0.95rem; margin-bottom: 10px; }
+  #devPasswordCard input {
+    width: 100%;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  #devPasswordError { color: var(--red); font-size: 0.78rem; margin-bottom: 8px; min-height: 1em; }
+
+  #devPanel {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 150;
+    max-height: 52vh;
+    background: var(--surface);
+    border-top: 2px solid var(--accent);
+    box-shadow: 0 -6px 24px rgba(0,0,0,0.35);
+    padding: 12px 14px 16px;
+    overflow-y: auto;
+    font-family: var(--font-display);
+  }
+  #devPanel.show { display: block; }
+  #devPanel h3 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
+  #devPanel .dev-close { cursor: pointer; color: var(--muted); font-family: var(--font-body); font-size: 0.85rem; }
+  #devPanel .dev-row { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+  #devPanel select {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    padding: 5px 8px;
+  }
+  #devPanel .dev-log-entry {
+    display: grid;
+    grid-template-columns: 62px 1fr 78px 50px;
+    gap: 6px;
+    font-size: 0.68rem;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border-soft);
+    align-items: start;
+  }
+  #devPanel .dev-log-entry.fail { color: var(--red); }
+  #devPanel .dev-log-entry.ok .dev-provider { color: var(--accent); }
+  #devPanel .dev-time { color: var(--muted); }
+  #devPanel .dev-detail { word-break: break-word; color: var(--muted); font-size: 0.65rem; grid-column: 1 / -1; }
 </style>
 </head>
 <body>
   <button id="themeToggle" type="button" aria-label="Ganti tema terang/gelap" title="Ganti tema terang/gelap">🌙</button>
+  <button id="devToggle" type="button" aria-label="Dev mode" title="Dev mode">🛠️</button>
+
+  <div id="devOverlay">
+    <div id="devPasswordCard">
+      <h3>Dev Mode</h3>
+      <p class="muted" style="margin-bottom:10px;">Masukkan password untuk melihat provider AI &amp; log pemanggilan.</p>
+      <input type="password" id="devPasswordInput" placeholder="Password">
+      <div id="devPasswordError"></div>
+      <div class="row" style="gap:8px;">
+        <button class="btn secondary" id="devCancelBtn" style="flex:1;">Batal</button>
+        <button class="btn" id="devSubmitBtn" style="flex:1;">Masuk</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="devPanel">
+    <h3>Dev Log <span class="dev-close" id="devCloseBtn">Tutup ✕</span></h3>
+    <div class="dev-row">
+      <span class="muted" style="font-size:0.72rem;">Paksa provider:</span>
+      <select id="devProviderSelect">
+        <option value="">Auto (fallback normal)</option>
+        <option value="groq">groq</option>
+        <option value="cerebras">cerebras</option>
+        <option value="openrouter">openrouter</option>
+        <option value="nvidia">nvidia</option>
+        <option value="deepseek">deepseek</option>
+        <option value="huggingface">huggingface</option>
+        <option value="cloudflare">cloudflare</option>
+        <option value="ollama">ollama</option>
+      </select>
+      <button class="btn secondary" id="devClearLogBtn" style="font-size:0.68rem; padding:6px 10px;">Bersihkan log</button>
+    </div>
+    <div id="devLogList"></div>
+  </div>
+
   <div id="app"></div>
   <script src="app.js"></script>
   <script>
@@ -368,6 +512,98 @@
         }
         sync();
       });
+    })();
+
+    (function () {
+      // Lightweight client-side gate — NOT real security (the password
+      // check happens in the browser, visible to anyone who opens
+      // devtools). It's just meant to keep casual cohort-mates from
+      // poking at internals, not to protect anything sensitive. Don't put
+      // real secrets behind this.
+      var DEV_PASSWORD = "Admin123";
+      var devToggle = document.getElementById("devToggle");
+      var overlay = document.getElementById("devOverlay");
+      var panel = document.getElementById("devPanel");
+      var input = document.getElementById("devPasswordInput");
+      var errorEl = document.getElementById("devPasswordError");
+      var providerSelect = document.getElementById("devProviderSelect");
+
+      function isUnlocked() {
+        try { return sessionStorage.getItem("devModeUnlocked") === "1"; } catch (e) { return false; }
+      }
+      function setUnlocked() {
+        try { sessionStorage.setItem("devModeUnlocked", "1"); } catch (e) {}
+      }
+      function showPanel() {
+        window.__devModeOn = true;
+        devToggle.classList.add("on");
+        panel.classList.add("show");
+        renderLog();
+      }
+      function hidePanel() {
+        panel.classList.remove("show");
+      }
+
+      devToggle.addEventListener("click", function () {
+        if (panel.classList.contains("show")) { hidePanel(); return; }
+        if (isUnlocked()) { showPanel(); return; }
+        overlay.classList.add("show");
+        input.value = "";
+        errorEl.textContent = "";
+        input.focus();
+      });
+      document.getElementById("devCancelBtn").addEventListener("click", function () {
+        overlay.classList.remove("show");
+      });
+      document.getElementById("devSubmitBtn").addEventListener("click", trySubmit);
+      input.addEventListener("keydown", function (e) { if (e.key === "Enter") trySubmit(); });
+      function trySubmit() {
+        if (input.value === DEV_PASSWORD) {
+          setUnlocked();
+          overlay.classList.remove("show");
+          showPanel();
+        } else {
+          errorEl.textContent = "Password salah.";
+        }
+      }
+
+      providerSelect.addEventListener("change", function () {
+        window.__forceProvider = providerSelect.value || null;
+      });
+
+      document.getElementById("devClearLogBtn").addEventListener("click", function () {
+        window.__devLog = [];
+        renderLog();
+      });
+      document.getElementById("devCloseBtn").addEventListener("click", hidePanel);
+
+      function renderLog() {
+        var list = document.getElementById("devLogList");
+        var log = window.__devLog || [];
+        if (!log.length) {
+          list.innerHTML = '<p class="muted" style="font-size:0.75rem;">Belum ada pemanggilan API di sesi ini.</p>';
+          return;
+        }
+        list.innerHTML = log.map(function (e) {
+          var cls = e.status === "OK" ? "ok" : "fail";
+          var providerOrStatus = e.status === "OK" ? (e.provider || "-") : "GAGAL";
+          return '<div class="dev-log-entry ' + cls + '">' +
+            '<span class="dev-time">' + e.time + '</span>' +
+            '<span>' + e.endpoint + '</span>' +
+            '<span class="dev-provider">' + providerOrStatus + '</span>' +
+            '<span>' + (e.latency != null ? e.latency + "ms" : "") + '</span>' +
+            (e.detail ? '<span class="dev-detail">' + String(e.detail).slice(0, 220) + '</span>' : '') +
+            '</div>';
+        }).join("");
+      }
+
+      window.addEventListener("devlog:update", function () {
+        if (panel.classList.contains("show")) renderLog();
+      });
+
+      // Auto-restore panel state if already unlocked from a previous
+      // action this session (e.g. user re-rendered the page).
+      if (isUnlocked()) { window.__devModeOn = true; devToggle.classList.add("on"); }
     })();
   </script>
 </body>

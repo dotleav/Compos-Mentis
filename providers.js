@@ -156,8 +156,22 @@ async function callProvider(provider, { messages, tools, temperature, max_tokens
  * Returns an OpenAI-style completion object, plus which provider answered
  * (useful for logging/debugging which one is actually being used).
  */
-async function chat({ messages, tools, temperature, max_tokens }) {
-  const active = PROVIDERS.filter((p) => p.alwaysAvailable || p.apiKey);
+async function chat({ messages, tools, temperature, max_tokens, forceProvider }) {
+  let active = PROVIDERS.filter((p) => p.alwaysAvailable || p.apiKey);
+
+  if (forceProvider) {
+    // Dev-mode override: isolate a single named provider with NO fallback,
+    // so its raw behavior (including failures) is visible for testing —
+    // this is what lets you tell which provider is actually good/bad at
+    // roleplay, instead of the fallback chain masking a weak one behind a
+    // stronger one that happened to answer first.
+    const only = PROVIDERS.find((p) => p.name === forceProvider);
+    if (!only) throw new Error(`Unknown provider "${forceProvider}"`);
+    if (!only.alwaysAvailable && !only.apiKey) {
+      throw new Error(`Provider "${forceProvider}" has no API key configured in .env`);
+    }
+    active = [only];
+  }
 
   if (active.length === 0) {
     throw new Error(
@@ -166,17 +180,28 @@ async function chat({ messages, tools, temperature, max_tokens }) {
   }
 
   let lastErr;
+  const attempts = [];
   for (const provider of active) {
     try {
       const data = await callProvider(provider, { messages, tools, temperature, max_tokens });
       return { ...data, _provider: provider.name };
     } catch (err) {
       console.warn(`[provider fallback] ${provider.name} failed, trying next. Reason: ${err.message}`);
+      attempts.push(`${provider.name}: ${err.message}`);
       lastErr = err;
     }
   }
 
-  throw lastErr;
+  // Every active provider failed. Surface exactly which ones were tried and
+  // why each one failed (not just the last one) — this is the detail that
+  // shows up in the dev-mode call log, and it's the difference between
+  // "something broke" and actually being able to tell, e.g., "Groq and
+  // Cerebras are both rate-limited right now, DeepSeek's key is invalid".
+  const combined = new Error(
+    `All ${active.length} provider(s) failed. ${attempts.join(" | ")}`
+  );
+  combined.attempts = attempts;
+  throw combined;
 }
 
 module.exports = { chat, PROVIDERS };

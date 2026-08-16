@@ -78,7 +78,7 @@ Pasien ini TIDAK kooperatif. ATURAN TAMBAHAN (lebih tinggi prioritasnya dari atu
  */
 router.post("/anamnesis", async (req, res) => {
   try {
-    const { kategori, id, history = [], message } = req.body;
+    const { kategori, id, history = [], message, forceProvider } = req.body;
     if (!kategori || !id || !message) {
       return res.status(400).json({ error: "kategori, id, and message are required" });
     }
@@ -177,7 +177,7 @@ ${interviewRules}`;
     // tight max_tokens ceiling so even if a model ignores the "1-2 kalimat"
     // instruction, it physically cannot ramble through an entire case
     // vignette in one reply.
-    const response = await chat({ messages, temperature: 0.3, max_tokens: 120 });
+    const response = await chat({ messages, temperature: 0.3, max_tokens: 120, forceProvider });
     const text = response.choices?.[0]?.message?.content || "";
 
     res.json({ reply: text, _provider: response._provider });

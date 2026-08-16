@@ -62,15 +62,46 @@ function resetState(kasus) {
 }
 
 async function api(path, opts) {
-  const res = await fetch(`/api${path}`, {
-    headers: { "Content-Type": "application/json" },
-    ...opts,
-  });
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    throw new Error(err.error || `Request failed (${res.status})`);
+  const startedAt = performance.now();
+  const logEntry = { time: new Date().toLocaleTimeString("id-ID"), endpoint: path, status: "…", provider: null, detail: null, latency: null };
+  try {
+    const res = await fetch(`/api${path}`, {
+      headers: { "Content-Type": "application/json" },
+      ...opts,
+    });
+    logEntry.latency = Math.round(performance.now() - startedAt);
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      logEntry.status = "GAGAL";
+      logEntry.detail = err.detail || err.error || `HTTP ${res.status}`;
+      pushDevLog(logEntry);
+      const e = new Error(err.error || `Request failed (${res.status})`);
+      e.detail = err.detail;
+      e.status = res.status;
+      throw e;
+    }
+    const data = await res.json();
+    logEntry.status = "OK";
+    logEntry.provider = data._provider || null;
+    pushDevLog(logEntry);
+    return data;
+  } catch (err) {
+    if (logEntry.status === "…") {
+      // Failed before we even got an HTTP response (network error, CORS, etc).
+      logEntry.status = "GAGAL";
+      logEntry.detail = err.message;
+      logEntry.latency = Math.round(performance.now() - startedAt);
+      pushDevLog(logEntry);
+    }
+    throw err;
   }
-  return res.json();
+}
+
+function pushDevLog(entry) {
+  window.__devLog = window.__devLog || [];
+  window.__devLog.unshift(entry);
+  if (window.__devLog.length > 60) window.__devLog.length = 60;
+  window.dispatchEvent(new CustomEvent("devlog:update"));
 }
 
 // ---------- ROUTING ----------
@@ -397,12 +428,14 @@ function renderAnamnesis(body) {
           kategori: state.kategori, id: state.id,
           history: state.anamnesisHistory.slice(0, -1),
           message,
+          forceProvider: window.__forceProvider || undefined,
         }),
       });
       console.debug("[anamnesis] answered by provider:", _provider);
-      state.anamnesisHistory.push({ role: "assistant", content: reply });
+      state.anamnesisHistory.push({ role: "assistant", content: reply, _provider });
     } catch (e) {
-      state.anamnesisHistory.push({ role: "assistant", content: `[Error: ${e.message}]` });
+      const shown = (window.__devModeOn && e.detail) ? `[Error: ${e.message} — ${e.detail}]` : `[Error: ${e.message}]`;
+      state.anamnesisHistory.push({ role: "assistant", content: shown });
     }
     renderChatLog();
   };
@@ -419,7 +452,9 @@ function renderChatLog() {
   const log = document.getElementById("chatLog");
   if (!log) return;
   log.innerHTML = state.anamnesisHistory.map((h) =>
-    `<div class="bubble ${h.role === "user" ? "user" : "patient"}">${escapeHtml(h.content)}</div>`
+    `<div class="bubble ${h.role === "user" ? "user" : "patient"}">${escapeHtml(h.content)}${
+      window.__devModeOn && h._provider ? `<div class="dev-tag">${h._provider}</div>` : ""
+    }</div>`
   ).join("") || `<div class="bubble system">Mulai dengan menyapa pasien...</div>`;
   log.scrollTop = log.scrollHeight;
 }
@@ -463,14 +498,15 @@ function renderExamStep(step) {
         const doneIds = found.map((f) => f.id);
         const { results } = await api("/exam/perform", {
           method: "POST",
-          body: JSON.stringify({ kategori: state.kategori, id: state.id, step, query, done: doneIds }),
+          body: JSON.stringify({ kategori: state.kategori, id: state.id, step, query, done: doneIds, forceProvider: window.__forceProvider || undefined }),
         });
         results.forEach((r) => {
           if (r.id && doneIds.includes(r.id)) return; // already revealed
           found.push(r);
         });
       } catch (e) {
-        found.push({ nama: query, temuan: `[Error: ${e.message}]`, signifikan: false });
+        const shown = (window.__devModeOn && e.detail) ? `[Error: ${e.message} — ${e.detail}]` : `[Error: ${e.message}]`;
+        found.push({ nama: query, temuan: shown, signifikan: false });
       }
       status.style.display = "none";
       renderExamResults(found);
@@ -718,7 +754,7 @@ async function renderReveal(body) {
       <h3 style="font-size:0.95rem; margin-bottom:10px;">Anamnesis Kamu</h3>
       <div class="chat-log" style="max-height:none;">
         ${state.anamnesisHistory.length
-          ? state.anamnesisHistory.map((h) => `<div class="bubble ${h.role === "user" ? "user" : "patient"}">${escapeHtml(h.content)}</div>`).join("")
+          ? state.anamnesisHistory.map((h) => `<div class="bubble ${h.role === "user" ? "user" : "patient"}">${escapeHtml(h.content)}${window.__devModeOn && h._provider ? `<div class="dev-tag">${h._provider}</div>` : ""}</div>`).join("")
           : `<p class="muted">Tidak ada percakapan anamnesis yang dilakukan.</p>`}
       </div>
     </div>
