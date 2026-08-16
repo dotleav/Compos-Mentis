@@ -64,8 +64,8 @@ router.post("/perform", async (req, res) => {
             properties: {
               matched_ids: {
                 type: "array",
-                items: { type: "string", enum: catalog.map((c) => c.id) },
-                description: "id pemeriksaan yang cocok dengan permintaan mahasiswa, dari daftar yang diberikan. Pilih HANYA entri yang paling spesifik/sempit yang sesuai persis dengan permintaan — jangan pilih entri gabungan/lengkap kecuali mahasiswa secara eksplisit meminta hal yang luas/menyeluruh.",
+                items: { type: "string" },
+                description: `id pemeriksaan yang cocok dengan permintaan mahasiswa. HARUS salah satu dari id berikut (jangan mengarang id lain): ${catalog.map((c) => c.id).join(", ")}. Pilih HANYA entri yang paling spesifik/sempit yang sesuai persis dengan permintaan — jangan pilih entri gabungan/lengkap kecuali mahasiswa secara eksplisit meminta hal yang luas/menyeluruh.`,
               },
               unmatched_reason: {
                 type: "string",
@@ -101,7 +101,7 @@ PENTING SOAL GRANULARITAS — mahasiswa OSCE bisa meminta pemeriksaan secara SEM
       { role: "user", content: cleanQuery },
     ];
 
-    const response = await chat({ messages, tools });
+    const response = await chat({ messages, tools, max_tokens: 300 });
 
     const toolCalls = response.choices?.[0]?.message?.tool_calls || [];
     const call = toolCalls.find((c) => c.function?.name === "select_findings");
@@ -110,10 +110,25 @@ PENTING SOAL GRANULARITAS — mahasiswa OSCE bisa meminta pemeriksaan secara SEM
     let unmatchedReason = null;
     if (call) {
       const rawArgs = call.function.arguments;
-      // OpenAI-style APIs return arguments as a JSON string; parse defensively.
-      const args = typeof rawArgs === "string" ? JSON.parse(rawArgs) : rawArgs;
-      matchedIds = args?.matched_ids || [];
-      unmatchedReason = args?.unmatched_reason || null;
+      // OpenAI-style APIs return arguments as a JSON string. Weaker/free
+      // models occasionally return truncated or malformed JSON here
+      // (especially if the reply got cut off by max_tokens, or the model
+      // just isn't great at strict tool-calling). That used to throw all
+      // the way out to the outer catch and surface as a generic
+      // "Exam matching failed" with no useful detail — instead, treat a
+      // parse failure the same as "the model didn't return a match": fall
+      // back to the case's default text below, and log the raw (truncated)
+      // output so it's visible in the server logs for debugging which
+      // provider/model is flaking here.
+      try {
+        const args = typeof rawArgs === "string" ? JSON.parse(rawArgs) : rawArgs;
+        matchedIds = args?.matched_ids || [];
+        unmatchedReason = args?.unmatched_reason || null;
+      } catch (parseErr) {
+        console.warn(
+          `[exam/perform] malformed tool_call JSON from provider "${response._provider}": ${parseErr.message}. Raw arguments: ${String(rawArgs).slice(0, 300)}`
+        );
+      }
     }
 
     if (matchedIds.length === 0) {
@@ -141,6 +156,18 @@ PENTING SOAL GRANULARITAS — mahasiswa OSCE bisa meminta pemeriksaan secara SEM
           : null,
         alreadyDone: done.includes(item.id),
       }));
+
+    // Defensive: if the model returned id(s) that don't actually exist in
+    // this case's catalog (shouldn't happen given the enum constraint, but
+    // not every provider enforces it strictly), don't silently return an
+    // empty results array — the query would just vanish from the student's
+    // view with zero feedback. Fall back to the same default text path.
+    if (results.length === 0) {
+      return res.json({
+        matched: [],
+        results: [{ nama: cleanQuery, temuan: defaultText, signifikan: false, image: null }],
+      });
+    }
 
     res.json({ matched: matchedIds, results, _provider: response._provider });
   } catch (err) {
