@@ -4,12 +4,7 @@
   "level": "3A",
   "nama": "Pneumonia Lobaris Basal Sinistra",
   "judulKasus": "Budi, 40 tahun, supir bus, batuk berdahak 1 minggu disertai demam",
-  "identitas": {
-    "nama": "Budi",
-    "usia": 40,
-    "pekerjaan": "Supir Bus",
-    "alamat": "Godean"
-  },
+  "identitas": "Budi, 40 tahun, Supir Bus, tinggal di Godean",
   "keluhanUtama": "Batuk",
   "groundTruth": {
     "riwayat": {
@@ -123,8 +118,7 @@
   },
   "dd": {
     "benar": "Pneumonia Lobaris Basal Sinistra",
-    "pilihan": [
-      "Pneumonia Lobaris Basal Sinistra",
+    "differensialBenar": [
       "TB",
       "Bronkitis Kronis",
       "Bronkiektasis"
@@ -146,7 +140,24 @@
     {
       "opsi": "Atau: R/ Eritromisin tab mg 500 No. VII s.o.6.h tab. I (habiskan)",
       "benar": true
+    },
+    {
+      "opsi": "R/ Ciprofloxacin tab mg 500 No. X s.2.d.d tab. I (cakupan terhadap pneumokokus kurang baik, bukan pilihan lini pertama)",
+      "benar": false
     }
   ],
-  "edukasi": []
+  "edukasi": [
+    {
+      "opsi": "Habiskan antibiotik sesuai anjuran meski gejala sudah membaik",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol ulang bila demam tidak turun dalam 48-72 jam setelah mulai antibiotik",
+      "benar": true
+    },
+    {
+      "opsi": "Antibiotik boleh dihentikan begitu demam turun",
+      "benar": false
+    }
+  ]
 }

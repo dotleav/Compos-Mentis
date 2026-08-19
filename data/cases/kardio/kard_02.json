@@ -4,12 +4,7 @@
   "level": "3B",
   "nama": "SVT (Supraventrikular Takikardia)",
   "judulKasus": "Boy, 37 tahun, karyawan swasta, dada berdebar saat aktivitas",
-  "identitas": {
-    "nama": "Boy",
-    "usia": 37,
-    "pekerjaan": "Karyawan swasta",
-    "alamat": "Jetis"
-  },
+  "identitas": "Boy, 37 tahun, Karyawan swasta, tinggal di Jetis",
   "keluhanUtama": "Dada berdebar",
   "groundTruth": {
     "riwayat": {
@@ -95,7 +90,7 @@
       {
         "id": "pnj_ekg",
         "nama": "EKG",
-        "temuan": "",
+        "temuan": "Takikardi reguler, kompleks QRS sempit (narrow complex), gelombang P sulit diidentifikasi (tertutup gelombang T), HR ±160x/menit — gambaran khas Supraventrikular Takikardia (SVT).",
         "signifikan": true,
         "image": "pnj_ekg.png"
       },
@@ -131,8 +126,7 @@
   },
   "dd": {
     "benar": "Supraventrikular Takikardia (SVT)",
-    "pilihan": [
-      "Supraventrikular Takikardia (SVT)",
+    "differensialBenar": [
       "Atrial Flutter",
       "Atrial Fibrilasi"
     ]

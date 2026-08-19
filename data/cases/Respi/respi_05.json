@@ -4,12 +4,7 @@
   "level": "3A",
   "nama": "TB (Kasus Baru)",
   "judulKasus": "Pasien dengan batuk berdahak 2 bulan, dahak ada darah",
-  "identitas": {
-    "nama": "-",
-    "usia": "-",
-    "pekerjaan": "-",
-    "alamat": "-"
-  },
+  "identitas": "Pasien",
   "keluhanUtama": "Batuk berdahak",
   "groundTruth": {
     "riwayat": {
@@ -69,8 +64,7 @@
   },
   "dd": {
     "benar": "TB (Kasus Baru)",
-    "pilihan": [
-      "TB (Kasus Baru)",
+    "differensialBenar": [
       "Pneumonia",
       "Pneumonia Lobaris"
     ]
@@ -95,6 +89,10 @@
     {
       "opsi": "R/ Etambutol tab mg 275 No. XXX s.1.d.d tab. I",
       "benar": true
+    },
+    {
+      "opsi": "OAT boleh dihentikan sendiri begitu gejala membaik meski durasi terapi belum genap 6 bulan",
+      "benar": false
     }
   ],
   "edukasi": [
@@ -121,6 +119,10 @@
     {
       "opsi": "Bilang akan dicek HIV karena sesuai anjuran WHO semua pasien yang diduga TB harus melakukan pengecekan untuk HIV",
       "benar": true
+    },
+    {
+      "opsi": "Rifampisin aman dikombinasi bebas dengan pil KB hormonal tanpa perlu kontrasepsi tambahan",
+      "benar": false
     }
   ]
 }

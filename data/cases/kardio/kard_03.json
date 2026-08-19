@@ -4,12 +4,7 @@
   "level": "3B",
   "nama": "CHF (Congestive Heart Failure)",
   "judulKasus": "Sudharma, 73 tahun, pensiunan, sesak napas 6 bulan terakhir",
-  "identitas": {
-    "nama": "Sudharma",
-    "usia": 73,
-    "pekerjaan": "Pensiunan",
-    "alamat": "-"
-  },
+  "identitas": "Sudharma, 73 tahun, Pensiunan",
   "keluhanUtama": "Sesak napas / napas tidak lega",
   "groundTruth": {
     "riwayat": {
@@ -87,14 +82,14 @@
       {
         "id": "pnj_ekg",
         "nama": "EKG",
-        "temuan": "",
+        "temuan": "Sinus takikardi, tanda hipertrofi ventrikel kiri (LVH) dengan strain pattern, tidak tampak ST elevasi akut.",
         "signifikan": true,
         "image": "pnj_ekg.png"
       },
       {
         "id": "pnj_x-ray",
         "nama": "X-ray",
-        "temuan": "",
+        "temuan": "Kardiomegali (cardiothoracic ratio >50%), tanda bendungan paru (kongesti vaskular/edema interstisial), kesan sesuai gagal jantung.",
         "signifikan": true,
         "image": "pnj_x-ray.png"
       }
@@ -106,8 +101,7 @@
   },
   "dd": {
     "benar": "Gagal Jantung (CHF)",
-    "pilihan": [
-      "Gagal Jantung (CHF)",
+    "differensialBenar": [
       "Hipertensi Pulmoner",
       "Pneumonia berat"
     ]
@@ -154,6 +148,10 @@
     {
       "opsi": "Kontrol rutin, jangan stop obat sendiri",
       "benar": true
+    },
+    {
+      "opsi": "Tidak perlu timbang berat badan rutin di rumah",
+      "benar": false
     }
   ]
 }

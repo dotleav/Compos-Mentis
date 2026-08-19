@@ -4,12 +4,7 @@
   "level": "3B",
   "nama": "Atrial Fibrilasi",
   "judulKasus": "Wiyoto, 43 tahun, karyawan swasta, dada berdebar berulang",
-  "identitas": {
-    "nama": "Wiyoto",
-    "usia": 43,
-    "pekerjaan": "Karyawan swasta",
-    "alamat": "-"
-  },
+  "identitas": "Wiyoto, 43 tahun, Karyawan swasta",
   "keluhanUtama": "Dada berdebar",
   "groundTruth": {
     "riwayat": {
@@ -91,7 +86,7 @@
       {
         "id": "pnj_ekg",
         "nama": "EKG",
-        "temuan": "",
+        "temuan": "Irama fibrilasi atrium: gelombang P tidak tampak (digantikan gelombang fibrilasi/fibrillatory waves), respons ventrikel ireguler (irregularly irregular), interval R-R bervariasi, HR ±150x/menit.",
         "signifikan": true,
         "image": "pnj_ekg.png"
       },
@@ -121,8 +116,7 @@
   },
   "dd": {
     "benar": "Atrial Fibrilasi",
-    "pilihan": [
-      "Atrial Fibrilasi",
+    "differensialBenar": [
       "Atrial Flutter",
       "Hiperkalemia",
       "PAC"

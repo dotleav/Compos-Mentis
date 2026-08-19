@@ -57,7 +57,7 @@
         "kelompok": "pemeriksaan",
         "nama": "Meningeal sign",
         "temuan": "(-) Kaku kuduk DBN, Brudzinski DBN, Kernig DBN",
-        "signifikan": false
+        "signifikan": true
       }
     ],
     "penunjang": [

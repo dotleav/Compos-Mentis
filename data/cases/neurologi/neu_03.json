@@ -47,7 +47,7 @@
         "kelompok": "pemeriksaan",
         "nama": "Pf",
         "temuan": "HTT dbn, PF Cranialis dbn, Tonus otot ekstremitas atas bawah normal, Refleks fisiologis dbn, Refleks patologis (-), Meningeal sign (-)",
-        "signifikan": false
+        "signifikan": true
       }
     ],
     "penunjang": [

@@ -4,12 +4,7 @@
   "level": "3A",
   "nama": "PPOK",
   "judulKasus": "Pasien 65-70 tahun, sesak napas persisten memberat saat aktivitas",
-  "identitas": {
-    "nama": "-",
-    "usia": 65,
-    "pekerjaan": "-",
-    "alamat": "-"
-  },
+  "identitas": "Pasien, 65 tahun",
   "keluhanUtama": "Sesak napas",
   "groundTruth": {
     "riwayat": {
@@ -125,8 +120,7 @@
   },
   "dd": {
     "benar": "PPOK",
-    "pilihan": [
-      "PPOK",
+    "differensialBenar": [
       "Asma Bronkial",
       "Bronkitis",
       "Bronkiektasis"
@@ -148,6 +142,10 @@
     {
       "opsi": "Ambroxol untuk batuk",
       "benar": true
+    },
+    {
+      "opsi": "Antibiotik rutin diberikan meski tidak ada tanda eksaserbasi/infeksi",
+      "benar": false
     }
   ],
   "edukasi": [
@@ -158,6 +156,10 @@
     {
       "opsi": "Penyakit bersifat progresif, persisten, irreversible",
       "benar": true
+    },
+    {
+      "opsi": "Penyakit bisa sembuh total hanya dengan berhenti merokok",
+      "benar": false
     }
   ]
 }

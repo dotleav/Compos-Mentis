@@ -81,7 +81,7 @@
         "kelompok": "pemeriksaan",
         "nama": "Mood",
         "temuan": "Sedih ke arah depresif, kesal (anak digendong malah nangis), sedih terus menerus, marah (karena suami tidak ada)",
-        "signifikan": false
+        "signifikan": true
       },
       {
         "id": "statuspsikiatri_afek",
@@ -116,7 +116,7 @@
         "kelompok": "pemeriksaan",
         "nama": "Isi pikir",
         "temuan": "Merasa tidak berguna, khawatir, ASI tidak mau keluar - jika ada yang menyuruh menyusui pasien tertekan",
-        "signifikan": false
+        "signifikan": true
       },
       {
         "id": "statuspsikiatri_aruspikir",

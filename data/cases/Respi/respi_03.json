@@ -4,12 +4,7 @@
   "level": "3A",
   "nama": "Bronkiektasis",
   "judulKasus": "Joko, 42 tahun, buruh pabrik, berdahak 6 tahun dengan batuk darah",
-  "identitas": {
-    "nama": "Joko",
-    "usia": 42,
-    "pekerjaan": "Buruh pabrik",
-    "alamat": "-"
-  },
+  "identitas": "Joko, 42 tahun, Buruh pabrik",
   "keluhanUtama": "Batuk berdahak berulang sejak 6 tahun",
   "groundTruth": {
     "riwayat": {
@@ -62,8 +57,7 @@
   },
   "dd": {
     "benar": "Bronkiektasis",
-    "pilihan": [
-      "Bronkiektasis",
+    "differensialBenar": [
       "PPOK",
       "Asma Bronkial"
     ]
@@ -88,6 +82,10 @@
     {
       "opsi": "Minta CT scan juga",
       "benar": true
+    },
+    {
+      "opsi": "Antitusif (penekan batuk) diberikan rutin agar batuk berkurang",
+      "benar": false
     }
   ],
   "edukasi": [
@@ -114,6 +112,10 @@
     {
       "opsi": "Rujuk fisioterapi dada biar dahak cepat hilang",
       "benar": true
+    },
+    {
+      "opsi": "Batasi minum air putih supaya dahak tidak terlalu banyak",
+      "benar": false
     }
   ]
 }

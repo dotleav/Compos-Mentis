@@ -76,7 +76,7 @@
         "kelompok": "pemeriksaan",
         "nama": "Mood",
         "temuan": "Tidak enak, pusing, cemas, hidup berasa di ujung tanduk (tanya mengapa)",
-        "signifikan": false
+        "signifikan": true
       },
       {
         "id": "statuspsikiatri_afek",
@@ -111,7 +111,7 @@
         "kelompok": "pemeriksaan",
         "nama": "Isi pikir",
         "temuan": "Fobia cicak dan anjing, was-was, cemas (tanya apakah orang lain juga mendengar suara lolongan anjing)",
-        "signifikan": false
+        "signifikan": true
       },
       {
         "id": "statuspsikiatri_aruspikir",

@@ -4,12 +4,7 @@
   "level": "3A",
   "nama": "Bronkitis Akut",
   "judulKasus": "Budi, 20 tahun, mahasiswa, batuk 1 minggu dengan dahak kuning",
-  "identitas": {
-    "nama": "Budi",
-    "usia": 20,
-    "pekerjaan": "Mahasiswa",
-    "alamat": "-"
-  },
+  "identitas": "Budi, 20 tahun, Mahasiswa",
   "keluhanUtama": "Batuk",
   "groundTruth": {
     "riwayat": {
@@ -107,8 +102,7 @@
   },
   "dd": {
     "benar": "Bronkitis Akut",
-    "pilihan": [
-      "Bronkitis Akut",
+    "differensialBenar": [
       "Bronkitis Kronik",
       "Asma Bronchial"
     ]
@@ -147,6 +141,10 @@
     {
       "opsi": "Kontrol jika tidak membaik dalam 1-2 minggu",
       "benar": true
+    },
+    {
+      "opsi": "Perlu antibiotik rutin karena umumnya disebabkan bakteri",
+      "benar": false
     }
   ]
 }

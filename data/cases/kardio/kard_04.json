@@ -4,12 +4,7 @@
   "level": "3B",
   "nama": "Krisis Hipertensi Urgensi",
   "judulKasus": "Rudi, 23 tahun, PNS, kepala dan leher nyeri, TD ≥ 180/110 mmHg",
-  "identitas": {
-    "nama": "Rudi",
-    "usia": 23,
-    "pekerjaan": "PNS",
-    "alamat": "-"
-  },
+  "identitas": "Rudi, 23 tahun, PNS",
   "keluhanUtama": "Kepala dan leher nyeri",
   "groundTruth": {
     "riwayat": {
@@ -70,14 +65,14 @@
       {
         "id": "pnj_ekg",
         "nama": "EKG",
-        "temuan": "",
+        "temuan": "Tanda hipertrofi ventrikel kiri (LVH), irama sinus, tidak tampak tanda iskemia akut.",
         "signifikan": true,
         "image": "pnj_ekg.jpg"
       },
       {
         "id": "pnj_rontgenxray",
         "nama": "rontgen/Xray",
-        "temuan": "*darah rutin:*:fungsi ginjal:",
+        "temuan": "Cor dan pulmo dalam batas normal, tidak tampak tanda edema paru akut atau kardiomegali.",
         "signifikan": true,
         "image": "pnj_rontgenxray.jpg"
       }
@@ -89,8 +84,7 @@
   },
   "dd": {
     "benar": "Krisis Hipertensi Urgensi",
-    "pilihan": [
-      "Krisis Hipertensi Urgensi",
+    "differensialBenar": [
       "Hipertensi Emergensi",
       "Syok Kardiogenik"
     ]
@@ -157,6 +151,10 @@
     {
       "opsi": "Segera ke IGD bila muncul tanda bahaya: nyeri dada, sesak napas, sakit kepala hebat, gangguan penglihatan, kelemahan/baal salah satu sisi tubuh, sulit bicara, kejang, atau penurunan kesadaran",
       "benar": true
+    },
+    {
+      "opsi": "Karena tekanan darah sangat tinggi, harus diturunkan secepat mungkin dalam hitungan menit",
+      "benar": false
     }
   ]
 }

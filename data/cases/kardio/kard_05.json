@@ -4,12 +4,7 @@
   "level": "3A",
   "nama": "Hipertensi Esensial dengan Dislipidemia",
   "judulKasus": "Andri, 47 tahun, karyawan swasta, nyeri leher tidak menjalar",
-  "identitas": {
-    "nama": "Andri",
-    "usia": 47,
-    "pekerjaan": "Karyawan swasta",
-    "alamat": "-"
-  },
+  "identitas": "Andri, 47 tahun, Karyawan swasta",
   "keluhanUtama": "Nyeri leher tidak menjalar",
   "groundTruth": {
     "riwayat": {
@@ -60,7 +55,7 @@
       {
         "id": "pf_klasifikasi_jnc",
         "nama": "Klasifikasi JNC",
-        "temuan": "",
+        "temuan": "TD pasien 170/100 mmHg → termasuk kategori Hipertensi Kelas 2 (lihat tabel klasifikasi di bawah).",
         "signifikan": false
       },
       {
@@ -116,8 +111,8 @@
       {
         "id": "pnj_profil_lipid",
         "nama": "Profil lipid",
-        "temuan": "",
-        "signifikan": false,
+        "temuan": "Kolesterol total 240 mg/dL (tinggi), LDL 165 mg/dL (tinggi), HDL 38 mg/dL (rendah), Trigliserida 190 mg/dL (tinggi) — gambaran dislipidemia.",
+        "signifikan": true,
         "image": "pnj_profil_lipid.jpg"
       },
       {
@@ -146,8 +141,7 @@
   },
   "dd": {
     "benar": "Hipertensi Esensial dengan Dislipidemia",
-    "pilihan": [
-      "Hipertensi Esensial dengan Dislipidemia",
+    "differensialBenar": [
       "Tension Headache",
       "Hipertensi Sekunder (ada penyakit yang mendasar)"
     ]
@@ -206,6 +200,10 @@
     {
       "opsi": "Evaluasi → perlu kontrol atau tidak",
       "benar": true
+    },
+    {
+      "opsi": "Obat boleh dihentikan sendiri kalau tensi sudah normal beberapa hari",
+      "benar": false
     }
   ]
 }
