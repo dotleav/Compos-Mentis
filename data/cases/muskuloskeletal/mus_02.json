@@ -120,5 +120,6 @@
       "opsi": "Penyakit ini bisa sembuh total dengan NSAID rutin",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 36 tahun, datang ke poli dengan keluhan datang ke poli dengan keluhan nyeri sendi lutut dan jari tangan bilateral sejak 4 bulan yang lalu."
 }

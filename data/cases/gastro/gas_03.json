@@ -113,5 +113,6 @@
       "opsi": "Penyakit ini tidak menular ke orang lain",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 25 tahun, datang ke poli dengan keluhan datang ke poli dengan keluhan demam sejak 1 minggu yang lalu."
 }

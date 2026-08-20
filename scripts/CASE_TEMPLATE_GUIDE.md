@@ -13,31 +13,37 @@
 | Nama | label singkat di daftar kasus, contoh `Kasus 8 - Endokrin` |
 | Level | level SKDI, opsional |
 | Judul Kasus | satu kalimat ringkasan kasus |
-| Identitas | `Nama: x, Usia: y, Pekerjaan: z, Alamat: w` dalam satu baris |
-| Keluhan Utama | satu kalimat |
+| Identitas | `Nama: x, Usia: y, Pekerjaan: z, Alamat: w` dalam satu baris. **Ini TIDAK ditampilkan ke mahasiswa di awal sesi** — hanya dipakai AI pasien untuk menjawab kalau ditanya langsung saat anamnesis. |
+| Skenario Awal | satu-dua kalimat NETRAL yang ditampilkan ke mahasiswa SEBELUM anamnesis, contoh: `Seorang pria 23 tahun, datang ke poli dengan keluhan nyeri kepala dan leher.` Sebutkan jenis kelamin + usia + alasan datang secara umum saja — JANGAN sebut nama/pekerjaan/alamat/detail keluhan di sini, itu harus digali lewat anamnesis. Boleh dikosongkan → dibuat otomatis dari Usia + Keluhan Utama (tanpa jenis kelamin, netral) — tapi lebih baik diisi manual kalau jenis kelamin pasien penting untuk kasusnya. |
+| Keluhan Utama | satu kalimat. **Juga TIDAK ditampilkan di awal** — baru terungkap saat mahasiswa bertanya "ada keluhan apa?" ke AI pasien. |
 | RPS | satu baris = satu poin riwayat penyakit sekarang |
 | RPD | riwayat penyakit dahulu |
 | RPK | riwayat penyakit keluarga |
 | Lifestyle | satu baris = satu poin gaya hidup/sosial |
-| Pemeriksaan Fisik | satu baris = satu temuan, format `Nama: Temuan`. Awali `*` kalau signifikan. |
-| Pemeriksaan Penunjang | sama seperti di atas. **Untuk taruh gambar** (EKG, rontgen, USG dll): sisipkan gambar sebagai paragraf baru **tepat di bawah** baris temuan itu, masih di sel yang sama. |
-| DD Benar | diagnosis yang benar |
-| DD Pilihan | satu baris = satu opsi (termasuk yang benar, ditulis ulang) |
+| Pemeriksaan Fisik | satu baris = satu temuan, format `Nama: Temuan`. Awali `*` kalau signifikan. **Bisa ditempeli gambar juga** (lihat bagian gambar di bawah — sekarang berlaku sama untuk PF maupun Penunjang, tidak hanya EKG/rontgen). |
+| Pemeriksaan Penunjang | sama seperti di atas. |
+| DD Benar | diagnosis kerja yang benar |
+| DD Diferensial Benar | satu baris = satu diagnosis banding yang **secara klinis valid** untuk kasus ini (bukan pengecoh MCQ) — ini yang dicocokkan saat menilai jawaban diagnosis banding mahasiswa. |
 | Tatalaksana | satu baris = satu opsi. Awali `+` = benar, `-` = salah. |
 | Edukasi | sama seperti Tatalaksana |
 
-### Soal gambar (EKG/rontgen/dsb)
+### Soal gambar (EKG/rontgen/ruam kulit/deformitas sendi/dsb — SEMUA temuan bisa)
 
 Word menyimpan tiap gambar sebagai paragraf tersendiri di dalam sel tabel.
 Konverter membaca sel **paragraf demi paragraf, sesuai urutan di dokumen** —
 begitu ia menemukan gambar, gambar itu langsung ditempelkan ke baris temuan
-paling akhir yang dibaca sebelumnya. Jadi urutannya harus:
+paling akhir yang dibaca sebelumnya. Berlaku di **Pemeriksaan Fisik maupun
+Pemeriksaan Penunjang** — bukan cuma EKG/rontgen, foto ruam kulit di baris PF
+"Kulit: ..." atau foto deformitas sendi di baris PF "Ekstremitas: ..." juga
+akan ikut tertempel dengan cara yang sama. Jadi urutannya harus:
 
 ```
 *EKG: Sinus takikardia ringan
 [gambar EKG di sini]
 Foto Thorax: Dalam batas normal
 [gambar rontgen di sini]
+*Kulit: Ruam eritematosa dengan skuama di ekstremitas fleksor
+[gambar ruam kulit di sini]
 ```
 
 Kalau satu temuan tidak ada gambarnya, cukup lanjut ke baris temuan berikutnya

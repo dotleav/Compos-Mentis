@@ -236,5 +236,6 @@
       "opsi": "Pengobatan cukup dilakukan tanpa perlu evaluasi ulang jangka panjang",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 40 tahun, datang ke poli dengan keluhan nyeri kepala dan ulu hati berulang sejak 1 tahun tanpa penyebab organik yang jelas."
 }

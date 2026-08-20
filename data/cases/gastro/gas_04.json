@@ -112,5 +112,6 @@
       "opsi": "Jika grade bertambah, tetap tidak perlu tindakan medis",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 45 tahun, datang ke poli dengan keluhan datang ke poli dengan keluhan BAB berdarah sejak 1 bulan yang lalu."
 }

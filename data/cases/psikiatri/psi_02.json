@@ -272,5 +272,6 @@
       "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 25 tahun, datang ke poli dengan keluhan sudah 1 bulan tidak mau bicara, diam, mengurung diri, dan ada percobaan bunuh diri."
 }

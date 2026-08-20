@@ -100,5 +100,6 @@
       "opsi": "Boleh menunggu di rumah beberapa hari sebelum ke rumah sakit",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 40 tahun, datang ke poli dengan keluhan datang ke UGD dengan keluhan nyeri di selangkangan setelah kecelakaan kerja sejak 1 hari yang lalu."
 }

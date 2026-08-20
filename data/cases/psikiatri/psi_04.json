@@ -237,5 +237,6 @@
       "opsi": "Pengobatan cukup dilakukan tanpa perlu evaluasi ulang jangka panjang",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 25 tahun, datang ke poli dengan keluhan perilaku kacau, bicara dan tertawa sendiri sejak beberapa bulan terakhir."
 }

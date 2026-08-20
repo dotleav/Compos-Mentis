@@ -85,5 +85,6 @@
       "opsi": "Kondisi ini selalu memerlukan tindakan bedah",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 35 tahun, datang ke poli dengan keluhan datang ke poli dengan keluhan mata kanan merah sejak 30 menit yang lalu setelah ditinju teman."
 }

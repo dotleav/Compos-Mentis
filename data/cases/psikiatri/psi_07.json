@@ -247,5 +247,6 @@
       "opsi": "Boleh menaikkan dosis obat sendiri jika gejala belum hilang",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 27 tahun, datang ke poli dengan keluhan lelah, cemas, khawatir sejak 1 bulan dan nyeri badan yang sangat mengganggu aktivitas."
 }

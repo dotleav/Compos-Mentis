@@ -244,5 +244,6 @@
       "opsi": "Pasien tidak perlu dirujuk ke dokter spesialis dalam kondisi apapun",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 29 tahun, datang ke poli dengan keluhan susah tidur sejak 2 minggu dan merasa lemas, malas beraktivitas."
 }

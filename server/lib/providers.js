@@ -52,6 +52,16 @@ const PROVIDERS = [
     baseURL: "https://generativelanguage.googleapis.com/v1beta/openai",
     apiKey: process.env.GEMINI_API_KEY,
     model: process.env.GEMINI_MODEL || "gemini-2.5-flash",
+    // Google is mid-migration from "AIza..." Standard keys to "AQ." Auth
+    // keys (all new keys from AI Studio are AQ. as of mid-2026). AQ. keys
+    // sent via the usual "Authorization: Bearer <key>" header get
+    // rejected with 401 ACCESS_TOKEN_TYPE_UNSUPPORTED — Google's auth
+    // layer reads a Bearer header as an OAuth2 token attempt, and AQ. keys
+    // aren't OAuth2 tokens. Google's own API reference (ai.google.dev/api)
+    // states plainly: "All requests to the Gemini API must include a
+    // x-goog-api-key header with your API key" — so send it that way
+    // instead. See authHeader() in callProvider() below.
+    authHeaderName: "x-goog-api-key",
   },
   {
     name: "openrouter",
@@ -192,12 +202,18 @@ async function callProvider(provider, { messages, tools, temperature, max_tokens
 
   let res;
   try {
+    // Almost every provider here wants "Authorization: Bearer <key>" — the
+    // one exception is Gemini (see its authHeaderName comment above), which
+    // wants the raw key under its own header instead of a Bearer token.
+    const headers = { "Content-Type": "application/json" };
+    if (provider.authHeaderName) {
+      headers[provider.authHeaderName] = provider.apiKey;
+    } else {
+      headers.Authorization = `Bearer ${provider.apiKey}`;
+    }
     res = await fetch(`${provider.baseURL}/chat/completions`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${provider.apiKey}`,
-      },
+      headers,
       body: JSON.stringify(body),
     });
   } catch (err) {

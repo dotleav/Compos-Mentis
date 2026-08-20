@@ -230,5 +230,6 @@
       "opsi": "Pasien dianjurkan berhenti total dari seluruh aktivitas maupun pekerjaan selamanya",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 50 tahun, datang ke poli dengan keluhan tangan dan kaki kiri kesemutan, wajah perot, dan bicara pelo sejak 5 jam yang lalu."
 }

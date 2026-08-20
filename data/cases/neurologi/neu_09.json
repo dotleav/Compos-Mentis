@@ -122,5 +122,6 @@
       "opsi": "Keluarga sebaiknya menjauhi dan mengisolasi pasien sepenuhnya",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien, datang ke poli dengan keluhan nyeri wajah hebat mendadak seperti tersengat listrik sejak beberapa waktu terakhir."
 }

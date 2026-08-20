@@ -126,5 +126,6 @@
       "opsi": "Penyakit ini menular antar manusia lewat kontak langsung",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 25 tahun, datang ke poli dengan keluhan datang ke poli dengan keluhan demam sejak 6 hari yang lalu."
 }

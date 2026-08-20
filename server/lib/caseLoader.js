@@ -54,10 +54,16 @@ function loadDdMaster() {
   return JSON.parse(fs.readFileSync(file, "utf-8"));
 }
 
-/** Return a copy of a case safe to send to the browser (no ground truth / no answers) */
+/** Return a copy of a case safe to send to the browser (no ground truth / no answers).
+ * identitas and keluhanUtama are ALSO withheld here — not just hidden in the
+ * UI — so a curious student checking the network tab can't just read them
+ * off the initial case-load response. They're only ever revealed through
+ * the roleplay itself (server/routes/chat.js) or at the final reveal step
+ * (GET /reveal, which returns the untouched full case on purpose). Only
+ * skenarioAwal (a deliberately vague one-liner) is shown up front. */
 function stripGroundTruth(fullCase) {
   if (!fullCase) return null;
-  const { groundTruth, dd, tatalaksana, edukasi, ...rest } = fullCase;
+  const { groundTruth, dd, tatalaksana, edukasi, identitas, keluhanUtama, ...rest } = fullCase;
   return {
     ...rest,
     // options are shown, but not which are "benar" (checked server-side on submit)

@@ -59,6 +59,7 @@ const FIELD_ALIASES = {
   level: ["level", "level skdi", "skdi"],
   judulKasus: ["judul kasus", "judul"],
   identitas: ["identitas", "identitas pasien"],
+  skenarioAwal: ["skenario awal", "skenario", "vinyet awal", "vignette"],
   keluhanUtama: ["keluhan utama"],
   rps: ["rps", "riwayat penyakit sekarang", "anamnesis"],
   rpd: ["rpd", "riwayat penyakit dahulu"],
@@ -67,7 +68,7 @@ const FIELD_ALIASES = {
   pemeriksaanFisik: ["pemeriksaan fisik", "pf"],
   penunjang: ["pemeriksaan penunjang", "penunjang"],
   ddBenar: ["dd benar", "diagnosis benar", "diagnosis"],
-  ddPilihan: ["dd pilihan", "pilihan dd", "differential diagnosis"],
+  ddDifferensial: ["dd diferensial", "diferensial benar", "dd differensial", "differensial benar", "diagnosis banding benar", "dd pilihan", "pilihan dd", "differential diagnosis"],
   tatalaksana: ["tatalaksana"],
   edukasi: ["edukasi"],
 };
@@ -301,22 +302,27 @@ function parseOptionList(paragraphs) {
 }
 
 function parseIdentitas(paragraphs) {
-  // Accepts either one line "Nama: x, Usia: y, Pekerjaan: z, Alamat: w"
-  // or multiple lines, one field each.
+  // Returns a plain string, e.g. "Rudi, 23 tahun, PNS" — matches the schema
+  // every case in data/cases/ actually uses. (An earlier version of this
+  // script emitted {nama, usia, pekerjaan, alamat} as a nested object —
+  // that silently broke the app: identitas gets template-interpolated
+  // directly as a string both in the UI and in the AI patient's system
+  // prompt, so an object rendered as literal "[object Object]" in both
+  // places. Only accepts either format from the docx (see below) but
+  // always OUTPUTS a string now.)
   const text = linesOf(paragraphs).join(", ");
-  const get = (key, fallback = "-") => {
+  // Accepts either "Nama: x, Usia: y, Pekerjaan: z, Alamat: w" labeled
+  // form, or a single free-text line typed directly ("Rudi, 23 tahun,
+  // PNS") — if no "Nama:"-style labels are found, use the line as-is.
+  if (!/nama\s*:/i.test(text)) return text || "-";
+  const get = (key) => {
     const re = new RegExp(key + "\\s*:\\s*([^,]+)", "i");
     const m = text.match(re);
-    return m ? m[1].trim() : fallback;
+    return m ? m[1].trim() : null;
   };
-  const usiaStr = get("usia", "");
-  const usia = parseInt(usiaStr, 10);
-  return {
-    nama: get("nama", "-"),
-    usia: Number.isFinite(usia) ? usia : usiaStr || "-",
-    pekerjaan: get("pekerjaan", "-"),
-    alamat: get("alamat", "-"),
-  };
+  const parts = [get("nama"), get("usia") ? `${get("usia")} tahun` : null, get("pekerjaan"), get("alamat")]
+    .filter((v) => v && v !== "-");
+  return parts.join(", ") || "-";
 }
 
 // ---------- Main conversion ----------
@@ -358,35 +364,63 @@ async function main() {
     const judulKasus = fields.judulKasus ? linesOf(fields.judulKasus).join(" ") : "";
     let id = fields.id ? slugify(linesOf(fields.id).join("")) : "";
     if (!id) id = `${kategori}_${slugify(nama) || t + 1}`;
+    const identitas = fields.identitas ? parseIdentitas(fields.identitas) : "-";
+    const keluhanUtama = fields.keluhanUtama ? linesOf(fields.keluhanUtama).join(" ") : "";
+    // "Skenario Awal" is the ONLY thing shown to the student before the
+    // session starts — identitas/keluhanUtama are withheld until asked
+    // during anamnesis (see server/routes/chat.js). If the docx doesn't
+    // have an explicit "Skenario Awal" row, fall back to a generic
+    // gender-neutral sentence built from age (parsed out of identitas) +
+    // keluhan utama — reusing already-authored data rather than inventing
+    // new clinical content. Authors should fill in "Skenario Awal"
+    // explicitly whenever they know the patient's gender, since this
+    // fallback can't infer that from "Nama: x, Usia: y" alone.
+    let skenarioAwal = fields.skenarioAwal ? linesOf(fields.skenarioAwal).join(" ") : "";
+    if (!skenarioAwal) {
+      const usiaMatch = identitas.match(/(\d+)\s*tahun/);
+      const usiaTxt = usiaMatch ? `${usiaMatch[1]} tahun` : "";
+      const keluhanTxt = keluhanUtama ? keluhanUtama.charAt(0).toLowerCase() + keluhanUtama.slice(1) : "keluhan yang belum diketahui";
+      skenarioAwal = `Seorang pasien${usiaTxt ? " " + usiaTxt : ""}, datang ke poli dengan${keluhanUtama ? " keluhan " + keluhanTxt : " " + keluhanTxt}.`;
+      console.warn(`  ⚠ [${id}] Tidak ada baris "Skenario Awal" — dibuat otomatis (netral gender): "${skenarioAwal}". Isi manual kalau jenis kelamin pasien penting.`);
+    }
 
     const pfItems = fields.pemeriksaanFisik ? parseFindingList(fields.pemeriksaanFisik, "pf") : [];
     const penunjangItems = fields.penunjang ? parseFindingList(fields.penunjang, "pnj") : [];
 
-    // Resolve + copy images for penunjang items that have attached image rel IDs.
+    // Resolve + copy images for ANY finding that has one attached — Pemeriksaan
+    // Fisik and Pemeriksaan Penunjang are treated identically. (Previously
+    // only penunjangItems images were ever written to disk; pfItems images
+    // were extracted from the docx but then silently discarded — so e.g. a
+    // photo of a rash or a joint deformity attached to a PF line never made
+    // it into the case at all. Any finding can carry an image now, not just
+    // EKG/rontgen under Penunjang.)
     const imgOutDir = path.join(ROOT, "data", "images", kategori, id);
     let imagesWritten = 0;
-    for (const item of penunjangItems) {
-      if (item._images && item._images.length) {
-        const relId = item._images[0]; // one image per finding is the expected case
-        const mediaPath = relMap[relId];
-        if (mediaPath) {
-          const entry = zip.getEntry(mediaPath);
-          if (entry) {
-            fs.mkdirSync(imgOutDir, { recursive: true });
-            const ext = path.extname(mediaPath) || ".png";
-            const fname = `${item.id}${ext}`;
-            fs.writeFileSync(path.join(imgOutDir, fname), zip.readFile(entry));
-            item.image = fname;
-            imagesWritten++;
+    function writeAttachedImages(items) {
+      for (const item of items) {
+        if (item._images && item._images.length) {
+          const relId = item._images[0]; // one image per finding is the expected case
+          const mediaPath = relMap[relId];
+          if (mediaPath) {
+            const entry = zip.getEntry(mediaPath);
+            if (entry) {
+              fs.mkdirSync(imgOutDir, { recursive: true });
+              const ext = path.extname(mediaPath) || ".png";
+              const fname = `${item.id}${ext}`;
+              fs.writeFileSync(path.join(imgOutDir, fname), zip.readFile(entry));
+              item.image = fname;
+              imagesWritten++;
+            }
+          }
+          if (item._images.length > 1) {
+            console.warn(`  ⚠ [${id}] "${item.nama}" has more than one image attached — only the first was used.`);
           }
         }
-        if (item._images.length > 1) {
-          console.warn(`  ⚠ [${id}] "${item.nama}" has more than one image attached — only the first was used.`);
-        }
+        delete item._images;
       }
-      delete item._images;
     }
-    for (const item of pfItems) delete item._images;
+    writeAttachedImages(pfItems);
+    writeAttachedImages(penunjangItems);
 
     const caseObj = {
       id,
@@ -394,10 +428,9 @@ async function main() {
       level: fields.level ? linesOf(fields.level).join(" ") : "",
       nama,
       judulKasus,
-      identitas: fields.identitas
-        ? parseIdentitas(fields.identitas)
-        : { nama: "-", usia: "-", pekerjaan: "-", alamat: "-" },
-      keluhanUtama: fields.keluhanUtama ? linesOf(fields.keluhanUtama).join(" ") : "",
+      identitas,
+      skenarioAwal,
+      keluhanUtama,
       groundTruth: {
         riwayat: {
           rps: fields.rps ? parseBulletList(fields.rps) : [],
@@ -414,7 +447,7 @@ async function main() {
       },
       dd: {
         benar: fields.ddBenar ? linesOf(fields.ddBenar).join(" ") : "",
-        pilihan: fields.ddPilihan ? parseBulletList(fields.ddPilihan) : [],
+        differensialBenar: fields.ddDifferensial ? parseBulletList(fields.ddDifferensial) : [],
       },
       tatalaksana: fields.tatalaksana ? parseOptionList(fields.tatalaksana) : [],
       edukasi: fields.edukasi ? parseOptionList(fields.edukasi) : [],

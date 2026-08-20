@@ -245,5 +245,6 @@
       "opsi": "Pengobatan cukup dilakukan tanpa perlu evaluasi ulang jangka panjang",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 55 tahun, datang ke poli dengan keluhan penurunan kesadaran dan anggota gerak kiri lemas sejak beberapa jam yang lalu."
 }

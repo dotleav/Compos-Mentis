@@ -68,6 +68,26 @@ Pasien ini TIDAK kooperatif. ATURAN TAMBAHAN (lebih tinggi prioritasnya dari atu
   return "";
 }
 
+// Pool of example identities used ONLY to demonstrate the answer FORMAT in
+// the system prompt below. Rotated per-request (not fixed to one name) —
+// otherwise the model tends to copy the literal example verbatim instead
+// of inventing its own identity, e.g. every uninstructed case ending up
+// with a patient named "Anton, 25 tahun, Sleman" because that exact string
+// sat in the prompt every single time.
+const EXAMPLE_IDENTITIES = [
+  { nama: "Bambang", usia: 42, kota: "Bantul" },
+  { nama: "Siti", usia: 31, kota: "Depok" },
+  { nama: "Made", usia: 58, kota: "Denpasar" },
+  { nama: "Yuni", usia: 25, kota: "Sleman" },
+  { nama: "Hendra", usia: 47, kota: "Cimahi" },
+  { nama: "Ratna", usia: 36, kota: "Malang" },
+  { nama: "Fajar", usia: 29, kota: "Bekasi" },
+  { nama: "Dewi", usia: 52, kota: "Surabaya" },
+];
+function randomExampleIdentity() {
+  return EXAMPLE_IDENTITIES[Math.floor(Math.random() * EXAMPLE_IDENTITIES.length)];
+}
+
 /**
  * POST /api/chat/anamnesis
  * body: { kategori, id, history: [{role:'user'|'assistant', content:string}], message: string }
@@ -103,6 +123,7 @@ router.post("/anamnesis", async (req, res) => {
     const { riwayat } = groundTruth;
     const interviewCtx = assessInterviewStatus(groundTruth.pemeriksaanFisik);
     const interviewRules = buildInterviewRules(interviewCtx);
+    const ex = randomExampleIdentity();
 
     const systemPrompt = `Kamu berperan sebagai PASIEN dalam simulasi OSCE kedokteran. Jangan pernah keluar dari peran ini, dan jangan pernah menyebutkan bahwa kamu adalah AI.
 
@@ -117,14 +138,16 @@ RIWAYAT YANG KAMU KETAHUI (gunakan HANYA ini sebagai fakta medis kamu; jangan me
 - Gaya hidup: ${riwayat.lifestyle.join("; ")}
 
 ATURAN DATA PRIBADI YANG TIDAK DISEBUTKAN DI KASUS:
-- Kalau "Identitas" di atas TIDAK menyebutkan nama/pekerjaan/tempat tinggal secara eksplisit (mis. hanya "Perempuan, 25 tahun" atau "Bapak paruh baya"), KARANG SENDIRI sekali di jawaban pertama kamu: satu nama Indonesia yang wajar (sesuai jenis kelamin/usia/konteks), satu pekerjaan yang masuk akal, dan satu tempat tinggal (kota/kecamatan umum di Indonesia) — lalu PAKAI DATA YANG SAMA itu secara konsisten di sepanjang sisa percakapan ini (cek riwayat chat sebelumnya kalau sudah pernah kamu sebutkan, jangan berubah-ubah).
+- Kalau "Identitas" di atas TIDAK menyebutkan nama/pekerjaan/tempat tinggal secara eksplisit (mis. hanya "Perempuan, 25 tahun" atau "Bapak paruh baya"), KARANG SENDIRI sekali di jawaban PERTAMA KALI hal itu ditanyakan: satu nama Indonesia yang wajar (sesuai jenis kelamin/usia/konteks), satu pekerjaan yang masuk akal, satu tempat tinggal (kota/kecamatan umum di Indonesia), dan — kalau ditanya — satu orang pendamping yang wajar (mis. anak, suami/istri, tetangga, atau "sendirian saja, Dok" kalau itu lebih masuk akal untuk kasusnya) — lalu PAKAI DATA YANG SAMA itu secara konsisten di sepanjang sisa percakapan ini (cek riwayat chat sebelumnya kalau sudah pernah kamu sebutkan, jangan berubah-ubah).
+- PENTING: nama "${ex.nama}" dan kota "${ex.kota}" di CONTOH FORMAT pada aturan di bawah HANYA untuk menunjukkan bentuk kalimatnya — JANGAN pernah memakai nama/kota itu sendiri kecuali kebetulan itu yang paling wajar kamu pikirkan. Wajib karang nama, usia, pekerjaan, kota, dan pendamping yang BERBEDA dan bervariasi sendiri, jangan meniru contoh.
 - JANGAN PERNAH menulis placeholder seperti "[nama pasien]", "[nama]", "___", atau semacamnya — itu bukan jawaban pasien sungguhan, harus berupa nama asli yang kamu karang.
 - Detail yang SUDAH ADA di "Identitas" di atas (kalau ada) harus dipakai apa adanya, jangan diganti dengan karangan.
+- SANGAT PENTING — jangan pernah SUKARELA membocorkan nama/pekerjaan/alamat/pendamping di awal percakapan (mis. langsung memperkenalkan diri lengkap tanpa ditanya). Detail-detail ini HANYA boleh disebutkan satu per satu, TEPAT saat masing-masing secara spesifik ditanyakan — lihat ATURAN MENJAWAB nomor 1 dan 1b di bawah untuk cara persisnya.
 
 ATURAN MENJAWAB — SANGAT PENTING, JAWAB HANYA APA YANG DITANYA:
-1. AT PALING PENTING: HANYA jawab persis apa yang ditanyakan mahasiswa pada pertanyaan TERAKHIR, satu topik saja. JANGAN PERNAH menambahkan keluhan utama, riwayat penyakit, durasi/onset gejala, sifat gejala (hilang timbul/menetap/memberat/membaik dll), riwayat penyakit dahulu/keluarga, atau gaya hidup — KECUALI hal itu SECARA SPESIFIK ditanyakan pada pertanyaan terakhir itu. Ini berlaku juga kalau pertanyaannya cuma sapaan atau menanyakan nama/usia/alamat/pekerjaan — jawab IDENTITAS SAJA, jangan tempelkan cerita sakit sama sekali.
-   - Contoh SALAH: mahasiswa tanya "Selamat malam, dengan bapak siapa?" lalu pasien menjawab nama+usia+alamat SEKALIGUS dengan seluruh keluhan (berat badan naik, lemas, wajah membesar, gampang marah, stretch mark, rambut halus, dll) dalam satu jawaban panjang. INI SALAH BESAR walau namanya benar dikarang.
-   - Contoh BENAR untuk pertanyaan itu: "Selamat malam, Dok. Saya Anton, 25 tahun, tinggal di Sleman." — TITIK. Tidak ada kata lain soal keluhan/riwayat sampai ditanya.
+1. PALING PENTING: HANYA jawab persis apa yang ditanyakan mahasiswa pada pertanyaan TERAKHIR, satu topik saja. JANGAN PERNAH menambahkan keluhan utama, riwayat penyakit, durasi/onset gejala, sifat gejala (hilang timbul/menetap/memberat/membaik dll), riwayat penyakit dahulu/keluarga, atau gaya hidup — KECUALI hal itu SECARA SPESIFIK ditanyakan pada pertanyaan terakhir itu. Berlaku juga untuk identitas: nama, usia, pekerjaan, alamat/tempat tinggal, dan pendamping adalah 5 hal TERPISAH — kalau mahasiswa cuma tanya SATU dari kelimanya (mis. cuma "siapa namanya?"), jawab CUMA nama itu saja, JANGAN sekaligus menyebutkan usia/pekerjaan/alamat/pendamping walau kamu sudah tahu semuanya.
+   - Contoh SALAH: ditanya "Dengan bapak siapa?" (HANYA menanyakan nama) lalu pasien menjawab "Saya ${ex.nama}, ${ex.usia} tahun, tinggal di ${ex.kota}, kerja sebagai buruh." — SALAH, karena usia/alamat/pekerjaan TIDAK ditanyakan, hanya nama yang ditanyakan.
+   - Contoh BENAR untuk pertanyaan itu: "Saya ${ex.nama}, Dok." — TITIK. Field lain (usia/pekerjaan/alamat/pendamping) baru disebutkan kalau ditanya terpisah nanti.
    - Kalau ditanya "ada keluhan apa?" / "kenapa ke sini?", baru jawab keluhan utamanya SAJA dalam 1 kalimat pendek (misal "Saya merasa berat badan naik banyak akhir-akhir ini, Dok."), TANPA merinci durasi/pola/riwayat lain yang belum ditanya.
    - Detail RPS/RPD/RPK/gaya hidup lain HANYA diceritakan satu per satu, sesuai pertanyaan spesifik yang diajukan setiap kali — jangan pernah digabung jadi satu jawaban panjang berisi banyak fakta baru sekaligus, walaupun kamu tahu semuanya.
 1a. KHUSUS PERTANYAAN YA/TIDAK (review sistem — mis. "apakah sering haus/lapar/kencing/demam/dst?"): urutan jawabnya WAJIB seperti ini —
@@ -132,6 +155,10 @@ ATURAN MENJAWAB — SANGAT PENTING, JAWAB HANYA APA YANG DITANYA:
    - LANGKAH 2 (OPSIONAL, hanya SETELAH langkah 1 dijawab, dalam kalimat yang sama): kamu BOLEH — tidak wajib — menyambung dengan SATU keluhan lain yang memang ada di RPS tapi belum pernah kamu ceritakan sebelumnya di percakapan ini, seolah baru teringat. Jangan pernah lakukan langkah 2 tanpa langkah 1.
    - Contoh BENAR: ditanya "Sering lapar juga tidak?" padahal "sering lapar" TIDAK ada di RPS, tapi "mudah lelah" ADA di RPS dan belum pernah disebut → "Kalau sering lapar tidak, Dok, tapi saya jadi lebih sering lelah akhir-akhir ini."
    - Contoh SALAH (JANGAN LAKUKAN): ditanya "Sering lapar juga tidak?" lalu langsung jawab "Saya merasa mudah lelah dan mengantuk, Dok." — SALAH karena tidak ada jawaban ya/tidak untuk "lapar" sama sekali sebelum lompat ke keluhan lain.
+1b. KHUSUS PERTANYAAN YANG BERISI BEBERAPA SUB-PERTANYAAN SEKALIGUS DALAM SATU KALIMAT (mis. "Halo, dengan siapa?", "Nama, usia, sama alamatnya apa, Bu?", "Ibu ke sini kerja apa dan tinggal di mana?"): jawab SEMUA bagian yang ditanyakan dalam kalimat itu SEKALIGUS dalam satu balasan pendek — jangan cuma jawab sebagian lalu diam soal bagian lainnya, tapi juga JANGAN menambahkan bagian yang TIDAK ditanyakan (tetap ikuti aturan #1). Hitung persis berapa sub-pertanyaan yang benar-benar ada di kalimat itu, lalu jawab TEPAT sejumlah itu, tidak kurang tidak lebih.
+   - Contoh: ditanya "Halo, dengan siapa?" (2 bagian: sapaan + nama) → "Halo, Dok. Saya ${ex.nama}." (2 bagian dijawab, tidak lebih)
+   - Contoh: ditanya "Nama, usia, sama alamatnya apa, Bu?" (3 bagian: nama+usia+alamat, TIDAK termasuk pekerjaan/pendamping) → "Saya ${ex.nama}, ${ex.usia} tahun, tinggal di ${ex.kota}, Dok." (3 bagian dijawab, TANPA pekerjaan/pendamping karena tidak ditanya)
+   - Contoh SALAH: ditanya "Halo, dengan siapa?" lalu pasien HANYA menjawab "Halo, Dok." tanpa menyebutkan nama — SALAH, "dengan siapa" jelas ditanyakan juga.
 2. Jawab sebagai orang awam, bukan tenaga medis — gunakan bahasa sehari-hari, bukan istilah medis.
 3. Jika ditanya sesuatu yang tidak ada dalam daftar riwayat di atas, jawab secara wajar dan konsisten dengan kondisi ini (biasanya "tidak ada"/"tidak pernah"), TANPA menciptakan temuan klinis besar baru yang bertentangan dengan kasus.
 4. Tunjukkan emosi/kondisi yang wajar sesuai keluhan (misalnya menahan nyeri, cemas), tapi jangan berlebihan.
@@ -184,6 +211,77 @@ ${interviewRules}`;
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Chat failed", detail: String(err.message || err) });
+  }
+});
+
+/**
+ * POST /api/chat/empati
+ * body: { history: [{role, content}, ...] }  (the anamnesis chat log)
+ *
+ * "Nilai Empati" — detects whether the student, at ANY point during
+ * anamnesis, asked the patient about 4 rapport-building things that are
+ * good practice but not strictly clinical: nama, pekerjaan, tempat
+ * tinggal, dan siapa yang mengantar/menemani. Keyword matching is
+ * deliberately NOT used here — real questions are phrased far too many
+ * ways ("namanya siapa", "boleh tahu namanya", "dengan siapa saya bicara
+ * ini") for a fixed pattern list to catch reliably. Instead this reuses
+ * the same small-model chat() call the rest of the app uses, asking it to
+ * classify the transcript and return strict JSON.
+ */
+router.post("/empati", async (req, res) => {
+  try {
+    const { history = [], forceProvider } = req.body;
+    const cleanHistory = sanitizeHistory(history);
+
+    const studentQuestions = cleanHistory
+      .filter((h) => h.role === "user")
+      .map((h, i) => `${i + 1}. ${h.content}`)
+      .join("\n");
+
+    if (!studentQuestions) {
+      return res.json({ nama: false, pekerjaan: false, tempatTinggal: false, pendamping: false });
+    }
+
+    const systemPrompt = `Kamu adalah penilai (rater) simulasi OSCE. Tugasmu HANYA membaca daftar pertanyaan yang diajukan mahasiswa kepada pasien selama sesi anamnesis, lalu menentukan apakah mahasiswa itu MENANYAKAN (bukan menjawab, bukan mengasumsikan) 4 hal berikut, kapan saja selama sesi — boleh dengan kalimat apapun, tidak harus persis sama:
+1. "nama": menanyakan nama pasien (mis. "Namanya siapa, Bu?", "Boleh tahu nama Bapak?", "Dengan siapa saya bicara ini?")
+2. "pekerjaan": menanyakan pekerjaan/aktivitas sehari-hari pasien (mis. "Sehari-hari kerja apa?", "Kesehariannya ngapain aja, Pak?")
+3. "tempatTinggal": menanyakan di mana pasien tinggal (mis. "Sekarang tinggal di mana?", "Rumahnya di daerah mana?")
+4. "pendamping": menanyakan siapa yang mengantar/menemani pasien ke tempat periksa (mis. "Ke sini diantar siapa?", "Datang sendiri atau ditemani?")
+
+Jawab HANYA dengan JSON valid, tanpa teks lain, tanpa markdown, format persis:
+{"nama": true/false, "pekerjaan": true/false, "tempatTinggal": true/false, "pendamping": true/false}`;
+
+    const messages = [
+      { role: "system", content: systemPrompt },
+      { role: "user", content: `Daftar pertanyaan mahasiswa selama sesi ini:\n${studentQuestions}` },
+    ];
+
+    const response = await chat({ messages, temperature: 0, max_tokens: 150, forceProvider });
+    const raw = response.choices?.[0]?.message?.content || "{}";
+    // Small/reasoning models sometimes wrap JSON in ```json fences or add a
+    // stray sentence despite the instruction — pull out just the {...}.
+    const match = raw.match(/\{[\s\S]*\}/);
+    let parsed = { nama: false, pekerjaan: false, tempatTinggal: false, pendamping: false };
+    if (match) {
+      try {
+        const j = JSON.parse(match[0]);
+        parsed = {
+          nama: !!j.nama,
+          pekerjaan: !!j.pekerjaan,
+          tempatTinggal: !!j.tempatTinggal,
+          pendamping: !!j.pendamping,
+        };
+      } catch {
+        // keep default all-false if the model didn't return valid JSON
+      }
+    }
+
+    res.json({ ...parsed, _provider: response._provider });
+  } catch (err) {
+    console.error(err);
+    // Empathy scoring is a nice-to-have on top of the core session — never
+    // let it block the student from reaching the reveal screen. Fail soft.
+    res.json({ nama: false, pekerjaan: false, tempatTinggal: false, pendamping: false, _error: String(err.message || err) });
   }
 });
 

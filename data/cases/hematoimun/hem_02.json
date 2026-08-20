@@ -107,5 +107,6 @@
       "opsi": "Boleh pulang begitu demam turun satu hari tanpa evaluasi trombosit",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang wanita, datang ke poli dengan keluhan datang ke poli dengan keluhan demam tinggi sejak 5 hari yang lalu."
 }

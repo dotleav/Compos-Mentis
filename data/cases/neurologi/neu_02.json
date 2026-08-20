@@ -153,5 +153,6 @@
       "opsi": "Keluhan ini pasti akan sembuh total dalam waktu 24 jam",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 30 tahun, datang ke poli dengan keluhan nyeri kepala berulang sebelah sejak beberapa waktu terakhir."
 }

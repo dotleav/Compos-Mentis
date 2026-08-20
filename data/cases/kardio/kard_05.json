@@ -205,5 +205,6 @@
       "opsi": "Obat boleh dihentikan sendiri kalau tensi sudah normal beberapa hari",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 47 tahun, datang ke poli dengan keluhan nyeri leher tidak menjalar."
 }

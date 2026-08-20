@@ -236,11 +236,11 @@ function renderRead(body) {
   body.innerHTML = `
     <div class="card">
       <h2 style="font-size:1.2rem;">Bacalah kasus!</h2>
-      <p class="muted" style="margin-top:8px;">Identitas: ${k.identitas}</p>
       <div class="card" style="background:var(--surface2); margin-top:14px;">
-        <div class="muted" style="text-transform:uppercase; font-size:0.72rem; margin-bottom:6px;">Keluhan Utama</div>
-        <div>${k.keluhanUtama}</div>
+        <div class="muted" style="text-transform:uppercase; font-size:0.72rem; margin-bottom:6px;">Skenario</div>
+        <div>${k.skenarioAwal}</div>
       </div>
+      <p class="muted" style="margin-top:10px; font-size:0.82rem;">Identitas lengkap (nama, pekerjaan, alamat) dan keluhan detail pasien belum diketahui — gali semuanya lewat anamnesis.</p>
       <div class="card" style="background:var(--surface2); margin-top:14px;">
         <div class="muted" style="text-transform:uppercase; font-size:0.72rem; margin-bottom:6px;">Tugas Anda</div>
         <div>Tentukan <strong>1 diagnosis kerja</strong> dan <strong>1 diagnosis banding</strong>, lakukan anamnesis, berikan pemeriksaan fisik dan pemeriksaan penunjang yang relevan, serta berikan tatalaksana yang lege artis dan edukasi yang tepat.</div>
@@ -716,8 +716,26 @@ async function renderReveal(body) {
   if (!state.revealData) {
     state.revealData = await api(`/cases/${state.kategori}/${state.id}/reveal`);
   }
+  if (!state.empatiData) {
+    try {
+      state.empatiData = await api("/chat/empati", {
+        method: "POST",
+        body: JSON.stringify({ history: state.anamnesisHistory, forceProvider: window.__forceProvider || undefined }),
+      });
+    } catch (e) {
+      state.empatiData = { nama: false, pekerjaan: false, tempatTinggal: false, pendamping: false };
+    }
+  }
   const truth = state.revealData;
   const ev = state.evaluation;
+  const empati = state.empatiData;
+  const empatiItems = [
+    { key: "nama", label: "Menanyakan nama pasien" },
+    { key: "pekerjaan", label: "Menanyakan pekerjaan pasien" },
+    { key: "tempatTinggal", label: "Menanyakan tempat tinggal pasien" },
+    { key: "pendamping", label: "Menanyakan siapa yang mengantar/menemani pasien" },
+  ];
+  const empatiScore = empatiItems.filter((it) => empati[it.key]).length;
   body.innerHTML = `
     <div class="card">
       <h2 style="font-size:1.1rem; color:${ev.dk.correct ? "var(--green)" : "var(--red)"};">
@@ -727,6 +745,16 @@ async function renderReveal(body) {
       <h3 style="font-size:0.95rem; margin-top:14px; margin-bottom:8px;">Diagnosis Banding Anda</h3>
       ${ev.db.result.length ? ev.db.result.map((r) => `<div class="chip ${r.benar ? "correct" : "incorrect"}" style="margin:4px 6px 4px 0; display:inline-flex;">${r.opsi} ${r.benar ? "✓" : "✗"}</div>`).join("") : `<p class="muted">(belum dipilih)</p>`}
       ${ev.db.missed.length ? `<p class="muted" style="margin-top:10px;">Diagnosis banding relevan lain: ${ev.db.missed.join("; ")}</p>` : ""}
+    </div>
+    <div class="card">
+      <h3 style="font-size:0.95rem; margin-bottom:4px;">Nilai Empati (${empatiScore}/4)</h3>
+      <p class="muted" style="margin-bottom:10px; font-size:0.82rem;">Apakah kamu membangun rapport dengan menanyakan hal-hal berikut selama anamnesis?</p>
+      ${empatiItems.map((it) => `
+        <div class="row" style="align-items:center; gap:8px; margin-bottom:6px;">
+          <span style="color:${empati[it.key] ? "var(--green)" : "var(--red)"}; font-size:1.05rem; width:1.2em; display:inline-block;">${empati[it.key] ? "✓" : "✗"}</span>
+          <span>${it.label}</span>
+        </div>`).join("")}
+      <p class="muted" style="margin-top:10px; font-size:0.8rem;">Identitas asli pasien: <strong style="color:var(--text);">${truth.identitas}</strong></p>
     </div>
     <div class="card">
       <h3 style="font-size:0.95rem; margin-bottom:10px;">Tatalaksana</h3>

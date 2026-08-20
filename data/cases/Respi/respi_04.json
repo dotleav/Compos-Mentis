@@ -146,5 +146,6 @@
       "opsi": "Perlu antibiotik rutin karena umumnya disebabkan bakteri",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 20 tahun, datang ke poli dengan keluhan batuk."
 }

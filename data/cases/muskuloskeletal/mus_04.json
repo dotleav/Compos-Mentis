@@ -123,5 +123,6 @@
       "opsi": "Boleh menunda rawat inap dan hanya kontrol rawat jalan",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 64 tahun, datang ke poli dengan keluhan datang ke UGD dengan keluhan nyeri dan bengkak lutut kanan sejak 10 hari yang lalu."
 }

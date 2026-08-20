@@ -146,5 +146,6 @@
       "opsi": "Pasien dianjurkan berhenti total dari seluruh aktivitas maupun pekerjaan selamanya",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 20 tahun, datang ke poli dengan keluhan nyeri kepala menyeluruh seperti diikat sejak 5 hari terakhir."
 }

@@ -231,5 +231,6 @@
       "opsi": "Obat herbal dapat sepenuhnya menggantikan pengobatan medis yang diberikan",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 34 tahun, datang ke poli dengan keluhan berbicara tidak wajar/tidak benar sejak 3 bulan terakhir."
 }

@@ -235,5 +235,6 @@
       "opsi": "Pasien dianjurkan berhenti total dari seluruh aktivitas maupun pekerjaan selamanya",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 30 tahun, datang ke poli dengan keluhan sulit tidur sejak 1 bulan terakhir."
 }

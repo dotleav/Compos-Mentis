@@ -125,5 +125,6 @@
       "opsi": "Tidak perlu kontrol ulang bila sudah tidak diare 1 hari",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 25 tahun, datang ke poli dengan keluhan datang ke poli dengan keluhan diare sejak 3 hari yang lalu."
 }

@@ -161,5 +161,6 @@
       "opsi": "Penyakit bisa sembuh total hanya dengan berhenti merokok",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 65 tahun, datang ke poli dengan keluhan sesak napas."
 }

@@ -159,5 +159,6 @@
       "opsi": "Antibiotik boleh dihentikan begitu demam turun",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 40 tahun, datang ke poli dengan keluhan batuk."
 }

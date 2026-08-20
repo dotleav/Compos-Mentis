@@ -156,5 +156,6 @@
       "opsi": "Karena tekanan darah sangat tinggi, harus diturunkan secepat mungkin dalam hitungan menit",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 23 tahun, datang ke poli dengan keluhan kepala dan leher nyeri."
 }

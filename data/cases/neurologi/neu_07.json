@@ -311,5 +311,6 @@
       "opsi": "Obat herbal dapat sepenuhnya menggantikan pengobatan medis yang diberikan",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 40 tahun, datang ke poli dengan keluhan nyeri punggung bawah yang menjalar ke tungkai kaki kiri sejak 2 bulan terakhir."
 }

@@ -230,5 +230,6 @@
       "opsi": "Keluhan ini pasti akan sembuh total dalam waktu 24 jam",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 21 tahun, datang ke poli dengan keluhan lesu, murung, dan sering teringat kejadian traumatis sejak 8 bulan terakhir."
 }

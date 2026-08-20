@@ -182,5 +182,6 @@
       "opsi": "Berhenti obat sendiri",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 37 tahun, datang ke poli dengan keluhan dada berdebar."
 }

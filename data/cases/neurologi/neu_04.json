@@ -200,5 +200,6 @@
       "opsi": "Tidak perlu kontrol ulang setelah minum obat sekali",
       "benar": false
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 30 tahun, datang ke poli dengan keluhan pusing berputar mendadak sejak 3 jam yang lalu."
 }
