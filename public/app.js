@@ -33,6 +33,34 @@ const STEPS = [
 
 let state = null;
 
+// ---------- SESSION PERSISTENCE (sessionStorage) ----------
+// sessionStorage (not localStorage) is used on purpose: it's scoped to
+// this one tab, lives in memory rather than being written into the
+// browser's disk cache/history, and disappears automatically the moment
+// the tab is closed — no manual cleanup needed for the "don't bloat
+// Chrome" concern. We still explicitly clear it the moment a session
+// legitimately ends (back to landing / starts a new session) so a
+// half-finished attempt never lingers even within the same tab.
+const SESSION_STORAGE_KEY = "osce-active-session";
+
+function saveSessionToStorage() {
+  if (!state) return;
+  try { sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(state)); } catch (e) { /* storage full/unavailable — session just won't survive a refresh, not fatal */ }
+}
+function loadSessionFromStorage() {
+  try {
+    const raw = sessionStorage.getItem(SESSION_STORAGE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch (e) { return null; }
+}
+function clearSessionStorage() {
+  try { sessionStorage.removeItem(SESSION_STORAGE_KEY); } catch (e) {}
+}
+// Safety net: catch any in-progress edit (a checkbox ticked, text typed
+// into a textarea) that hasn't hit an explicit save point yet, right
+// before an accidental refresh/close actually happens.
+window.addEventListener("beforeunload", saveSessionToStorage);
+
 function resetState(kasus) {
   state = {
     screen: "session",
@@ -119,10 +147,10 @@ async function showLanding() {
     <div class="cat-toolbar">
       <button class="btn secondary" id="selectAllBtn">${allSelectLabel()}</button>
     </div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;" id="catGrid">
-      ${cats.map((c) => `<div class="card clickable selected" data-cat="${c}" style="cursor:pointer;">
-        <div style="font-size:1.5rem;">📋</div>
-        <h2 style="margin-top:8px;">${STASE_LABELS[c] || c}</h2>
+    <div style="display:flex; flex-direction:column; gap:8px;" id="catGrid">
+      ${cats.map((c) => `<div class="cat-check selected" data-cat="${c}">
+        <span class="box"></span>
+        <span class="label">${STASE_LABELS[c] || c}</span>
       </div>`).join("")}
     </div>
     <div class="row" style="margin-top:22px;">
@@ -146,8 +174,7 @@ async function showLanding() {
       else { el.classList.remove("selected"); }
     });
     document.getElementById("selectAllBtn").textContent = allSelectLabel();
-  });
-  document.getElementById("startBtn").addEventListener("click", async () => {
+  });  document.getElementById("startBtn").addEventListener("click", async () => {
     if (selected.size === 0) {
       document.getElementById("warnMsg").style.display = "block";
       return;
@@ -187,7 +214,7 @@ function renderSession() {
     </div>
     <div id="stepBody"></div>
   `;
-  document.getElementById("backBtn").addEventListener("click", (e) => { e.preventDefault(); showLanding(); });
+  document.getElementById("backBtn").addEventListener("click", (e) => { e.preventDefault(); clearSessionStorage(); showLanding(); });
   // Let a vertical mouse wheel/trackpad scroll the step tabs horizontally
   // (desktop/web). Touch devices already scroll it natively by dragging —
   // this only kicks in for wheel input, so it doesn't fight touch scrolling.
@@ -215,6 +242,7 @@ function renderSession() {
     reveal: renderReveal,
   };
   renderers[stepKey](body);
+  saveSessionToStorage();
 }
 
 function stepNav(container, { back, next, nextLabel = "Lanjut →", nextDisabled = false }) {
@@ -420,6 +448,7 @@ function renderAnamnesis(body) {
     input.value = "";
     state.anamnesisHistory.push({ role: "user", content: message });
     renderChatLog();
+    saveSessionToStorage();
     appendLoadingBubble();
     try {
       const { reply, _provider } = await api("/chat/anamnesis", {
@@ -438,6 +467,7 @@ function renderAnamnesis(body) {
       state.anamnesisHistory.push({ role: "assistant", content: shown });
     }
     renderChatLog();
+    saveSessionToStorage();
   };
   document.getElementById("chatSend").addEventListener("click", send);
   input.addEventListener("keydown", (e) => { if (e.key === "Enter") send(); });
@@ -820,7 +850,7 @@ async function renderReveal(body) {
   nav.style.marginTop = "20px";
   nav.innerHTML = `<button class="btn secondary" id="restart">Sesi Baru</button>`;
   body.appendChild(nav);
-  document.getElementById("restart").addEventListener("click", () => showLanding());
+  document.getElementById("restart").addEventListener("click", () => { clearSessionStorage(); showLanding(); });
 }
 
 // ---------- utils ----------
@@ -829,5 +859,18 @@ function escapeHtml(str) {
   div.textContent = str;
   return div.innerHTML;
 }
+// ---------- INIT ----------
+// Resume an in-progress session if the tab was refreshed/reloaded mid-way
+// through — sessionStorage survives a same-tab reload by design. A fresh
+// tab (or one after "Selesai sesi"/"Sesi Baru", which explicitly clear it)
+// finds nothing here and just shows the landing screen as usual.
+(function init() {
+  const saved = loadSessionFromStorage();
+  if (saved && saved.screen === "session" && saved.kasus) {
+    state = saved;
+    renderSession();
+  } else {
+    showLanding();
+  }
+})();
 
-showLanding();

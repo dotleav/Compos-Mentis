@@ -70,6 +70,7 @@
 
   ::selection { background: var(--accent-soft); color: var(--text); }
 
+  html { overflow-x: hidden; }
   body {
     background-color: var(--bg);
     background-image:
@@ -80,6 +81,8 @@
     color: var(--text);
     font-family: var(--font-body);
     min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
     transition: background-color .2s ease, color .2s ease;
   }
 
@@ -109,6 +112,7 @@
 
   #app {
     max-width: 900px;
+    width: 100%;
     margin: 0 auto;
     padding: 28px 16px 80px;
     animation: rise-in .5s ease both;
@@ -143,6 +147,44 @@
   }
   .card:hover.clickable { border-color: var(--accent-dim); border-left-color: var(--accent); cursor: pointer; }
   .card.clickable.selected { border-color: var(--accent-dim); border-left-color: var(--accent); background: var(--accent-soft); }
+
+  /* ---- category checklist (landing screen) ---- */
+  .cat-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: border-color .12s ease, background .12s ease;
+    min-width: 0; /* let long labels ellipsize instead of forcing the grid track wider than the screen */
+  }
+  .cat-check:hover { border-color: var(--accent-dim); }
+  .cat-check.selected { border-color: var(--accent-dim); background: var(--accent-soft); }
+  .cat-check .box {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1.5px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    color: var(--accent);
+    transition: border-color .12s ease, background .12s ease;
+  }
+  .cat-check.selected .box { border-color: var(--accent); background: var(--accent-soft); }
+  .cat-check.selected .box::after { content: "✓"; }
+  .cat-check .label {
+    font-size: 0.88rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+  }
 
   .btn {
     background: var(--accent);
@@ -319,8 +361,8 @@
     .step-pill.active { animation: none; }
   }
 
-  /* ---- theme toggle button ---- */
-  #themeToggle {
+  /* ---- settings button + panel ---- */
+  #settingsToggle {
     position: fixed;
     top: 12px;
     right: 12px;
@@ -331,7 +373,7 @@
     border: 1px solid var(--border);
     background: var(--surface);
     color: var(--text);
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1;
     display: flex;
     align-items: center;
@@ -340,31 +382,68 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.25);
     transition: border-color .15s ease, transform .1s ease;
   }
-  #themeToggle:hover { border-color: var(--accent); }
-  #themeToggle:active { transform: scale(0.94); }
+  #settingsToggle:hover { border-color: var(--accent); }
+  #settingsToggle:active { transform: scale(0.94); }
+  #settingsToggle.on { border-color: var(--accent); color: var(--accent); }
 
-  /* ---- dev mode ---- */
-  #devToggle {
+  #settingsOverlay {
+    display: none;
     position: fixed;
-    top: 12px;
-    left: 12px;
-    z-index: 100;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: 1px solid var(--border);
+    inset: 0;
+    z-index: 190;
+    background: rgba(0,0,0,0.4);
+  }
+  #settingsOverlay.show { display: block; }
+  #settingsPanel {
+    display: none;
+    position: fixed;
+    top: 58px;
+    right: 12px;
+    z-index: 195;
+    width: min(300px, calc(100vw - 24px));
     background: var(--surface);
-    color: var(--text);
-    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+    padding: 14px;
+  }
+  #settingsPanel.show { display: block; }
+  #settingsPanel h3 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 12px; color: var(--muted); }
+  .settings-row {
     display: flex;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-    transition: border-color .15s ease, transform .1s ease;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+    border-top: 1px solid var(--border-soft);
   }
-  #devToggle.on { border-color: var(--accent); color: var(--accent); }
-  #devToggle:active { transform: scale(0.94); }
+  .settings-row:first-of-type { border-top: none; }
+  .settings-row .settings-label { font-size: 0.9rem; }
+  .settings-row .settings-sub { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
+  .switch {
+    position: relative;
+    flex: 0 0 auto;
+    width: 42px;
+    height: 24px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    cursor: pointer;
+    transition: border-color .15s ease, background .15s ease;
+  }
+  .switch::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--muted);
+    transition: transform .15s ease, background .15s ease;
+  }
+  .switch.on { border-color: var(--accent); background: var(--accent-soft); }
+  .switch.on::after { transform: translateX(18px); background: var(--accent); }
 
   .dev-tag {
     display: inline-block;
@@ -410,22 +489,45 @@
   }
   #devPasswordError { color: var(--red); font-size: 0.78rem; margin-bottom: 8px; min-height: 1em; }
 
+  /* ---- dev log panel: resizable bottom sheet, capped by default so it
+     never grows taller just because more anamnesis/PF/PP calls piled up
+     into the log — only #devLogList scrolls internally. Drag the handle
+     at the top to resize if you want more room. ---- */
   #devPanel {
     display: none;
+    flex-direction: column;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 150;
-    max-height: 52vh;
+    height: 34vh;
+    min-height: 120px;
+    max-height: 85vh;
     background: var(--surface);
     border-top: 2px solid var(--accent);
     box-shadow: 0 -6px 24px rgba(0,0,0,0.35);
-    padding: 12px 14px 16px;
-    overflow-y: auto;
     font-family: var(--font-display);
   }
-  #devPanel.show { display: block; }
+  #devPanel.show { display: flex; }
+  #devResizeHandle {
+    flex: 0 0 auto;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: ns-resize;
+    touch-action: none;
+  }
+  #devResizeHandle::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--border);
+  }
+  #devResizeHandle:hover::after, #devResizeHandle.dragging::after { background: var(--accent); }
+  #devPanel .dev-panel-inner { flex: 0 0 auto; padding: 0 14px; }
   #devPanel h3 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
   #devPanel .dev-close { cursor: pointer; color: var(--muted); font-family: var(--font-body); font-size: 0.85rem; }
   #devPanel .dev-row { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
@@ -437,6 +539,12 @@
     font-family: var(--font-display);
     font-size: 0.72rem;
     padding: 5px 8px;
+  }
+  #devLogList {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0; /* required for a flex child to actually shrink/scroll instead of forcing the parent taller */
+    padding: 0 14px 16px;
   }
   #devPanel .dev-log-entry {
     display: grid;
@@ -454,8 +562,23 @@
 </style>
 </head>
 <body>
-  <button id="themeToggle" type="button" aria-label="Ganti tema terang/gelap" title="Ganti tema terang/gelap">🌙</button>
-  <button id="devToggle" type="button" aria-label="Dev mode" title="Dev mode">🛠️</button>
+  <button id="settingsToggle" type="button" aria-label="Pengaturan" title="Pengaturan">⚙️</button>
+
+  <div id="settingsOverlay"></div>
+  <div id="settingsPanel">
+    <h3>Pengaturan</h3>
+    <div class="settings-row">
+      <span class="settings-label" id="settingsThemeLabel">Tema Gelap</span>
+      <span class="switch" id="settingsThemeSwitch" role="switch" aria-label="Ganti tema terang/gelap"></span>
+    </div>
+    <div class="settings-row">
+      <div>
+        <div class="settings-label">Developer Mode</div>
+        <div class="settings-sub">Log pemanggilan AI &amp; paksa provider</div>
+      </div>
+      <span class="switch" id="settingsDevSwitch" role="switch" aria-label="Aktifkan developer mode"></span>
+    </div>
+  </div>
 
   <div id="devOverlay">
     <div id="devPasswordCard">
@@ -471,22 +594,25 @@
   </div>
 
   <div id="devPanel">
-    <h3>Dev Log <span class="dev-close" id="devCloseBtn">Tutup ✕</span></h3>
-    <div class="dev-row">
-      <span class="muted" style="font-size:0.72rem;">Paksa provider:</span>
-      <select id="devProviderSelect">
-        <option value="">Auto (fallback normal)</option>
-        <option value="groq">groq</option>
-        <option value="cerebras">cerebras</option>
-        <option value="gemini">gemini</option>
-        <option value="openrouter">openrouter</option>
-        <option value="nvidia">nvidia</option>
-        <option value="deepseek">deepseek</option>
-        <option value="huggingface">huggingface</option>
-        <option value="cloudflare">cloudflare</option>
-        <option value="ollama">ollama</option>
-      </select>
-      <button class="btn secondary" id="devClearLogBtn" style="font-size:0.68rem; padding:6px 10px;">Bersihkan log</button>
+    <div id="devResizeHandle"></div>
+    <div class="dev-panel-inner">
+      <h3>Dev Log <span class="dev-close" id="devCloseBtn">Tutup ✕</span></h3>
+      <div class="dev-row">
+        <span class="muted" style="font-size:0.72rem;">Paksa provider:</span>
+        <select id="devProviderSelect">
+          <option value="">Auto (fallback normal)</option>
+          <option value="groq">groq</option>
+          <option value="cerebras">cerebras</option>
+          <option value="gemini">gemini</option>
+          <option value="openrouter">openrouter</option>
+          <option value="nvidia">nvidia</option>
+          <option value="deepseek">deepseek</option>
+          <option value="huggingface">huggingface</option>
+          <option value="cloudflare">cloudflare</option>
+          <option value="ollama">ollama</option>
+        </select>
+        <button class="btn secondary" id="devClearLogBtn" style="font-size:0.68rem; padding:6px 10px;">Bersihkan log</button>
+      </div>
     </div>
     <div id="devLogList"></div>
   </div>
@@ -494,40 +620,42 @@
   <div id="app"></div>
   <script src="app.js"></script>
   <script>
-    (function () {
-      var btn = document.getElementById("themeToggle");
+    var Theme = (function () {
       var root = document.documentElement;
-      function sync() {
-        var isLight = root.getAttribute("data-theme") === "light";
-        btn.textContent = isLight ? "☀️" : "🌙";
-      }
-      sync();
-      btn.addEventListener("click", function () {
-        var isLight = root.getAttribute("data-theme") === "light";
-        if (isLight) {
-          root.removeAttribute("data-theme");
-          try { localStorage.setItem("osce-theme", "dark"); } catch (e) {}
-        } else {
+      function isLight() { return root.getAttribute("data-theme") === "light"; }
+      function set(light) {
+        if (light) {
           root.setAttribute("data-theme", "light");
           try { localStorage.setItem("osce-theme", "light"); } catch (e) {}
+        } else {
+          root.removeAttribute("data-theme");
+          try { localStorage.setItem("osce-theme", "dark"); } catch (e) {}
         }
         sync();
-      });
+      }
+      function toggle() { set(!isLight()); }
+      function sync() {
+        var sw = document.getElementById("settingsThemeSwitch");
+        var label = document.getElementById("settingsThemeLabel");
+        if (sw) sw.classList.toggle("on", isLight());
+        if (label) label.textContent = isLight() ? "Tema Terang" : "Tema Gelap";
+      }
+      return { toggle: toggle, sync: sync };
     })();
 
-    (function () {
+    var DevMode = (function () {
       // Lightweight client-side gate — NOT real security (the password
       // check happens in the browser, visible to anyone who opens
       // devtools). It's just meant to keep casual cohort-mates from
       // poking at internals, not to protect anything sensitive. Don't put
       // real secrets behind this.
       var DEV_PASSWORD = "Admin123";
-      var devToggle = document.getElementById("devToggle");
       var overlay = document.getElementById("devOverlay");
       var panel = document.getElementById("devPanel");
       var input = document.getElementById("devPasswordInput");
       var errorEl = document.getElementById("devPasswordError");
       var providerSelect = document.getElementById("devProviderSelect");
+      var devSwitch = document.getElementById("settingsDevSwitch");
 
       function isUnlocked() {
         try { return sessionStorage.getItem("devModeUnlocked") === "1"; } catch (e) { return false; }
@@ -535,24 +663,29 @@
       function setUnlocked() {
         try { sessionStorage.setItem("devModeUnlocked", "1"); } catch (e) {}
       }
+      function isPanelOpen() { return panel.classList.contains("show"); }
+      function syncSwitch() { devSwitch.classList.toggle("on", isPanelOpen()); }
       function showPanel() {
         window.__devModeOn = true;
-        devToggle.classList.add("on");
         panel.classList.add("show");
+        syncSwitch();
         renderLog();
       }
       function hidePanel() {
         panel.classList.remove("show");
+        syncSwitch();
       }
 
-      devToggle.addEventListener("click", function () {
-        if (panel.classList.contains("show")) { hidePanel(); return; }
+      function toggleFromSettings() {
+        if (isPanelOpen()) { hidePanel(); return; }
         if (isUnlocked()) { showPanel(); return; }
+        SettingsPanel.hide();
         overlay.classList.add("show");
         input.value = "";
         errorEl.textContent = "";
         input.focus();
-      });
+      }
+
       document.getElementById("devCancelBtn").addEventListener("click", function () {
         overlay.classList.remove("show");
       });
@@ -599,13 +732,68 @@
       }
 
       window.addEventListener("devlog:update", function () {
-        if (panel.classList.contains("show")) renderLog();
+        if (isPanelOpen()) renderLog();
       });
 
+      // ---- resize handle: drag the top bar to change panel height ----
+      (function () {
+        var handle = document.getElementById("devResizeHandle");
+        var dragging = false;
+        function clampHeight(h) {
+          var min = 120, max = window.innerHeight * 0.85;
+          return Math.max(min, Math.min(max, h));
+        }
+        function onMove(clientY) {
+          panel.style.height = clampHeight(window.innerHeight - clientY) + "px";
+        }
+        handle.addEventListener("pointerdown", function (e) {
+          dragging = true;
+          handle.classList.add("dragging");
+          handle.setPointerCapture(e.pointerId);
+        });
+        handle.addEventListener("pointermove", function (e) {
+          if (!dragging) return;
+          onMove(e.clientY);
+        });
+        function stopDrag() { dragging = false; handle.classList.remove("dragging"); }
+        handle.addEventListener("pointerup", stopDrag);
+        handle.addEventListener("pointercancel", stopDrag);
+      })();
+
       // Auto-restore panel state if already unlocked from a previous
-      // action this session (e.g. user re-rendered the page).
-      if (isUnlocked()) { window.__devModeOn = true; devToggle.classList.add("on"); }
+      // action this session (e.g. user re-rendered the page). The panel
+      // itself starts CLOSED even if unlocked — only the log list re-opens
+      // on demand, so it never pops back open unexpectedly mid-session —
+      // but dev tags on chat bubbles still show, matching prior behavior.
+      if (isUnlocked()) { window.__devModeOn = true; }
+      syncSwitch();
+
+      return { toggleFromSettings: toggleFromSettings };
     })();
+
+    var SettingsPanel = (function () {
+      var toggleBtn = document.getElementById("settingsToggle");
+      var overlay = document.getElementById("settingsOverlay");
+      var panel = document.getElementById("settingsPanel");
+      function show() {
+        overlay.classList.add("show");
+        panel.classList.add("show");
+        toggleBtn.classList.add("on");
+      }
+      function hide() {
+        overlay.classList.remove("show");
+        panel.classList.remove("show");
+        toggleBtn.classList.remove("on");
+      }
+      function toggle() { panel.classList.contains("show") ? hide() : show(); }
+      toggleBtn.addEventListener("click", toggle);
+      overlay.addEventListener("click", hide);
+      document.getElementById("settingsThemeSwitch").addEventListener("click", function () { Theme.toggle(); });
+      document.getElementById("settingsDevSwitch").addEventListener("click", function () { DevMode.toggleFromSettings(); });
+      return { show: show, hide: hide };
+    })();
+
+    Theme.sync();
   </script>
 </body>
 </html>
