@@ -14,11 +14,17 @@
  *   - Pemeriksaan Fisik / Pemeriksaan Penunjang lines use:
  *       Nama: Temuan
  *     Prefix the line with "*" to mark it `signifikan: true`.
- *   - To attach an image (EKG, rontgen, etc.) to a Pemeriksaan Penunjang
- *     item, insert the picture as its OWN paragraph directly under that
- *     item's line, still inside the same table cell. The script walks the
- *     cell paragraph-by-paragraph in document order and attaches any image
- *     it finds to the most recent item line above it.
+ *     Prefix the line with "!" to mark it `wajibLapor: true` — only meaningful
+ *     on a line that also has an image attached (see below). When set, the
+ *     app withholds the `temuan` text at exam time and instead makes the
+ *     student write their own free-text report under the image; the real
+ *     `temuan` is only shown next to that report at the final answer-key
+ *     reveal. "*" and "!" can be combined in either order ("*!" / "!*").
+ *   - To attach an image (EKG, rontgen, etc.) to a Pemeriksaan Fisik or
+ *     Pemeriksaan Penunjang item, insert the picture as its OWN paragraph
+ *     directly under that item's line, still inside the same table cell.
+ *     The script walks the cell paragraph-by-paragraph in document order
+ *     and attaches any image it finds to the most recent item line above it.
  *   - Tatalaksana / Edukasi lines: prefix "+" = correct option, "-" = wrong
  *     option (defaults to wrong if no prefix given).
  *
@@ -248,8 +254,9 @@ function parseBulletList(paragraphs) {
   return linesOf(paragraphs).map((l) => l.replace(/^[-*•]\s*/, "").trim());
 }
 
-// "Nama: Temuan" lines -> [{nama, temuan, signifikan}], attaching any image
-// paragraph that follows a line (before the next labeled line) to that item.
+// "Nama: Temuan" lines -> [{nama, temuan, signifikan, wajibLapor}], attaching
+// any image paragraph that follows a line (before the next labeled line) to
+// that item.
 function parseFindingList(paragraphs, idPrefix) {
   const items = [];
   let current = null;
@@ -259,9 +266,22 @@ function parseFindingList(paragraphs, idPrefix) {
     if (para.text && hasColon) {
       let text = para.text.trim();
       let signifikan = false;
-      if (text.startsWith("*")) {
-        signifikan = true;
-        text = text.slice(1).trim();
+      let wajibLapor = false;
+      // "*" (signifikan) and "!" (wajibLapor — mandatory student report,
+      // only meaningful when the line also gets an image attached below)
+      // can appear in either order, e.g. "*!EKG: ..." or "!*EKG: ...".
+      let stripped = true;
+      while (stripped) {
+        stripped = false;
+        if (text.startsWith("*")) {
+          signifikan = true;
+          text = text.slice(1).trim();
+          stripped = true;
+        } else if (text.startsWith("!")) {
+          wajibLapor = true;
+          text = text.slice(1).trim();
+          stripped = true;
+        }
       }
       const idx = text.indexOf(":");
       const nama = text.slice(0, idx).trim();
@@ -271,6 +291,7 @@ function parseFindingList(paragraphs, idPrefix) {
         nama,
         temuan,
         signifikan,
+        wajibLapor,
         _images: [],
       };
       counter++;
@@ -421,6 +442,19 @@ async function main() {
     }
     writeAttachedImages(pfItems);
     writeAttachedImages(penunjangItems);
+
+    // "!" (wajibLapor) only means anything paired with an image — the app
+    // withholds `temuan` and asks the student to report it themselves
+    // instead. A line marked "!" that never got an image attached would
+    // silently just behave like a normal finding (see exam.js), so flag it
+    // here rather than let it pass through quietly.
+    for (const item of [...pfItems, ...penunjangItems]) {
+      if (item.wajibLapor && !item.image) {
+        console.warn(
+          `  ⚠ [${id}] "${item.nama}" ditandai "!" (wajib lapor) tapi tidak ada gambar yang berhasil ditempel — tanda ini akan diabaikan di aplikasi (temuan akan langsung tampil seperti biasa).`
+        );
+      }
+    }
 
     const caseObj = {
       id,

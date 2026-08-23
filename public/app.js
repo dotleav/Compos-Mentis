@@ -84,6 +84,7 @@ function resetState(kasus) {
     resepCards: [],        // {id, invocatio, signatura}
     activeResepId: null,
     edukasiJawaban: "",
+    temuanLaporan: {},     // { [findingId]: essayText } — student's own report for image findings with wajibLapor
     evaluation: null,
     revealData: null,
   };
@@ -554,16 +555,65 @@ function renderExamStep(step) {
 function renderExamResults(found) {
   const el = document.getElementById("examResults");
   if (!el) return;
+  if (!state.temuanLaporan) state.temuanLaporan = {}; // guard old sessions resumed from storage
   if (found.length === 0) {
     el.innerHTML = `<p class="muted">Belum ada pemeriksaan yang dilakukan.</p>`;
     return;
   }
-  el.innerHTML = found.map((f) => `
+  el.innerHTML = found.map((f) => findingCardHtml(f, { hideTemuan: true })).join("");
+  el.querySelectorAll("[data-report-key]").forEach((ta) => {
+    ta.addEventListener("input", (e) => {
+      state.temuanLaporan[e.target.dataset.reportKey] = e.target.value;
+    });
+  });
+}
+
+// Renders one PF/Penunjang finding card. Normal findings show the text
+// result (+ image if any) right away, same as always.
+//
+// A finding with `wajibLapor` (only ever true when it also has an `image` —
+// see server/routes/exam.js) is treated differently depending on `opts`:
+//   - hideTemuan: true  (exam step, while the student is still working) —
+//     show ONLY the image plus a free-text "Laporkan temuan Anda" essay
+//     card. The real `temuan` is deliberately withheld here; it is never
+//     auto-graded and only shown later at the reveal step.
+//   - hideTemuan: false (reveal step) — show the image plus the student's
+//     own report side-by-side with the real `temuan` ("Jawabanmu" vs "Kunci
+//     Jawaban"), the same treatment Tatalaksana/Edukasi already get.
+function findingCardHtml(f, opts = {}) {
+  const { hideTemuan = false } = opts;
+  if (f.wajibLapor) {
+    if (hideTemuan) {
+      const laporan = (state.temuanLaporan && state.temuanLaporan[f.id]) || "";
+      return `
+        <div class="finding-card ${f.signifikan ? "signifikan" : ""}">
+          <div class="nama">${f.nama}</div>
+          <img src="${f.image}" alt="${f.nama}">
+          <p class="muted" style="margin:10px 0 6px; font-size:0.82rem;">Laporkan temuan Anda dari gambar di atas. Jawaban ini tidak dinilai langsung — akan dibandingkan dengan kunci jawaban di layar Kunci Jawaban nanti.</p>
+          <textarea class="essay-input" style="min-height:100px;" data-report-key="${f.id}" placeholder="Laporkan temuan Anda...">${escapeHtml(laporan)}</textarea>
+        </div>`;
+    }
+    const laporan = (state.temuanLaporan && state.temuanLaporan[f.id]) || "";
+    return `
+      <div class="finding-card ${f.signifikan ? "signifikan" : ""}">
+        <div class="nama">${f.nama}</div>
+        <img src="${f.image}" alt="${f.nama}">
+        <div class="answer-block" style="margin-top:10px;">
+          <div class="answer-label">Jawabanmu</div>
+          <div class="answer-body">${laporan.trim() ? escapeHtml(laporan) : "(belum diisi)"}</div>
+        </div>
+        <div class="answer-block key">
+          <div class="answer-label">Kunci Jawaban</div>
+          <div class="answer-body">${escapeHtml(f.temuan)}</div>
+        </div>
+      </div>`;
+  }
+  return `
     <div class="finding-card ${f.signifikan ? "signifikan" : ""}">
       <div class="nama">${f.nama}</div>
       <div>${f.temuan}</div>
       ${f.image ? `<img src="${f.image}" alt="${f.nama}">` : ""}
-    </div>`).join("");
+    </div>`;
 }
 
 // ---------- STEP 8: FINAL DIAGNOSIS (1 DK + 2 DB) ----------
@@ -742,6 +792,7 @@ function renderRxWorkspace(container) {
 
 // ---------- STEP 10: REVEAL ----------
 async function renderReveal(body) {
+  if (!state.temuanLaporan) state.temuanLaporan = {}; // guard old sessions resumed from storage
   body.innerHTML = `<p class="loading">Memuat kunci jawaban...</p>`;
   if (!state.revealData) {
     state.revealData = await api(`/cases/${state.kategori}/${state.id}/reveal`);
@@ -819,23 +870,13 @@ async function renderReveal(body) {
     <div class="card">
       <h3 style="font-size:0.95rem; margin-bottom:10px;">Pemeriksaan Fisik yang Kamu Lakukan</h3>
       ${state.pfFound.length
-        ? state.pfFound.map((f) => `
-          <div class="finding-card ${f.signifikan ? "signifikan" : ""}">
-            <div class="nama">${f.nama}</div>
-            <div>${f.temuan}</div>
-            ${f.image ? `<img src="${f.image}" alt="${f.nama}">` : ""}
-          </div>`).join("")
+        ? state.pfFound.map((f) => findingCardHtml(f, { hideTemuan: false })).join("")
         : `<p class="muted">Tidak ada pemeriksaan fisik yang dilakukan.</p>`}
     </div>
     <div class="card">
       <h3 style="font-size:0.95rem; margin-bottom:10px;">Pemeriksaan Penunjang yang Kamu Lakukan</h3>
       ${state.penunjangFound.length
-        ? state.penunjangFound.map((f) => `
-          <div class="finding-card ${f.signifikan ? "signifikan" : ""}">
-            <div class="nama">${f.nama}</div>
-            <div>${f.temuan}</div>
-            ${f.image ? `<img src="${f.image}" alt="${f.nama}">` : ""}
-          </div>`).join("")
+        ? state.penunjangFound.map((f) => findingCardHtml(f, { hideTemuan: false })).join("")
         : `<p class="muted">Tidak ada pemeriksaan penunjang yang dilakukan.</p>`}
     </div>
     <div class="card">

@@ -14,6 +14,11 @@ const { sanitizeText, isSafeSlug, MAX_QUERY_LENGTH } = require("../lib/sanitize"
  * The actual finding text/image is looked up deterministically from the case
  * JSON. If nothing matches well, we fall back to a canned "normal" result so
  * the AI never invents a number.
+ *
+ * `wajibLapor` (an instructor-set modifier on the case JSON item, only
+ * meaningful when the item also has an `image`) is passed through on each
+ * result so the frontend knows to withhold `temuan` and make the student
+ * write their own report instead — see data/cases/_SCHEMA.md.
  */
 router.post("/perform", async (req, res) => {
   try {
@@ -154,6 +159,12 @@ PENTING SOAL GRANULARITAS — mahasiswa OSCE bisa meminta pemeriksaan secara SEM
         image: item.image
           ? `/data/images/${kategori}/${id}/${item.image}`
           : null,
+        // Instructor-set modifier ("!" in the docx source) — only meaningful
+        // when an image is also present. The frontend uses this to withhold
+        // `temuan` and ask the student to report the image finding
+        // themselves instead; the value is looked up deterministically here
+        // exactly like `temuan`, never invented by the model.
+        wajibLapor: !!(item.wajibLapor && item.image),
         alreadyDone: done.includes(item.id),
       }));
 

@@ -20,7 +20,7 @@
 | RPD | riwayat penyakit dahulu |
 | RPK | riwayat penyakit keluarga |
 | Lifestyle | satu baris = satu poin gaya hidup/sosial |
-| Pemeriksaan Fisik | satu baris = satu temuan, format `Nama: Temuan`. Awali `*` kalau signifikan. **Bisa ditempeli gambar juga** (lihat bagian gambar di bawah — sekarang berlaku sama untuk PF maupun Penunjang, tidak hanya EKG/rontgen). |
+| Pemeriksaan Fisik | satu baris = satu temuan, format `Nama: Temuan`. Awali `*` kalau signifikan, awali `!` kalau mahasiswa harus melaporkan sendiri temuannya (lihat bagian "Wajib lapor" di bawah). **Bisa ditempeli gambar juga** (lihat bagian gambar di bawah — sekarang berlaku sama untuk PF maupun Penunjang, tidak hanya EKG/rontgen). |
 | Pemeriksaan Penunjang | sama seperti di atas. |
 | DD Benar | diagnosis kerja yang benar |
 | DD Diferensial Benar | satu baris = satu diagnosis banding yang **secara klinis valid** untuk kasus ini (bukan pengecoh MCQ) — ini yang dicocokkan saat menilai jawaban diagnosis banding mahasiswa. |
@@ -48,6 +48,42 @@ Foto Thorax: Dalam batas normal
 
 Kalau satu temuan tidak ada gambarnya, cukup lanjut ke baris temuan berikutnya
 — tidak perlu paragraf kosong.
+
+### Wajib lapor (`!`) — temuan bergambar yang harus dilaporkan mahasiswa sendiri
+
+Secara default, begitu mahasiswa mencocokkan sebuah temuan (misalnya minta
+"EKG"), teks temuannya langsung tampil — gambar cuma pelengkap. Untuk
+temuan-temuan tertentu (foto ulkus, foto wajah pasien, rontgen, EKG, dsb) kamu
+bisa memaksa mahasiswa **menginterpretasikan gambarnya sendiri dulu** sebelum
+tahu jawabannya:
+
+- Awali baris temuan dengan `!`, contoh: `!EKG: Elevasi ST V1-V4`. Baris itu
+  **wajib** juga ditempeli gambar (lihat bagian di atas) — kalau tidak ada
+  gambarnya, tanda `!` diabaikan begitu saja dan temuan tampil seperti biasa
+  (konverter akan mengingatkan lewat warning ⚠ kalau ini terjadi).
+- Bisa digabung dengan `*` (signifikan), urutan bebas: `*!EKG: ...` atau
+  `!*EKG: ...` sama-sama valid.
+- Ini **modifier opsional per baris** — tidak semua temuan bergambar harus
+  diberi tanda ini. Kalau tidak diberi tanda `!`, gambar & teks temuan tetap
+  langsung tampil seperti biasa (perilaku lama, tidak berubah). Pasang `!`
+  hanya di temuan yang memang kamu mau mahasiswa latihan membaca/interpretasi
+  gambarnya sendiri.
+- Efeknya di aplikasi: saat mahasiswa memicu temuan itu, yang tampil hanya
+  gambarnya + kartu esai dengan instruksi "Laporkan temuan Anda" (jawaban
+  tidak dinilai otomatis). Teks temuan yang sebenarnya baru muncul di layar
+  Kunci Jawaban di akhir sesi, berdampingan dengan laporan mahasiswa —
+  perlakuan yang sama seperti Tatalaksana dan Edukasi.
+
+```
+!EKG: Irama fibrilasi atrium, respons ventrikel ireguler, HR ±150x/menit
+[gambar EKG di sini]
+*Foto Thorax: Kardiomegali dengan CTR 60%
+[gambar rontgen di sini]
+```
+
+Di contoh di atas, EKG akan meminta laporan mahasiswa dulu (baru dibandingkan
+di Kunci Jawaban), sedangkan Foto Thorax langsung tampil seperti biasa (cuma
+ditandai signifikan).
 
 ## 2. Jalankan konverter
 

@@ -32,6 +32,14 @@ live at `data/images/<kategori>/<id>/<filename>`.
         "nama": "Tekanan Darah",
         "temuan": "140/70 mmHg",
         "signifikan": false
+      },
+      {
+        "id": "pf_wajah",
+        "nama": "Wajah Pasien",
+        "temuan": "Edema periorbital bilateral, konjungtiva pucat",
+        "signifikan": true,
+        "image": "wajah_pasien.png",   // optional, filename in data/images/<kategori>/<id>/
+        "wajibLapor": true             // optional, default false — see note below
       }
     ],
 
@@ -41,7 +49,8 @@ live at `data/images/<kategori>/<id>/<filename>`.
         "nama": "EKG",
         "temuan": "Irama sinus reguler, elevasi ST di V1-V4 (khas STEMI Anteroseptal)",
         "signifikan": true,
-        "image": "ekg_stemi_anteroseptal.png"   // optional, filename in data/images/<kategori>/<id>/
+        "image": "ekg_stemi_anteroseptal.png",  // optional, filename in data/images/<kategori>/<id>/
+        "wajibLapor": true                       // optional, default false — see note below
       }
     ],
 
@@ -83,5 +92,27 @@ live at `data/images/<kategori>/<id>/<filename>`.
   well, it falls back to `defaultNormal`. This is what fixes the old "unstable
   search engine" — matching is now semantic (LLM-driven) instead of brittle
   string search, while findings themselves stay deterministic and instructor-authored.
-- If a `penunjang` item has an `image`, the frontend displays it alongside the
-  text finding whenever that item is revealed.
+- If a `pemeriksaanFisik` or `penunjang` item has an `image`, the frontend
+  displays it alongside the text finding whenever that item is revealed.
+- `wajibLapor` (boolean, optional, default `false`) is an **instructor-set
+  modifier** — it's never turned on automatically just because an item has
+  an `image`. It's only meaningful on an item that also has an `image`
+  (e.g. an ulcer photo, a patient's face, a rontgen, an EKG strip). When
+  `true`:
+  - At exam time, the backend still returns the real `temuan` text in the
+    `/api/exam/perform` response (the AI never has to invent anything —
+    same deterministic lookup as always), but the frontend does **not**
+    display that text next to the image. Instead it shows an essay card
+    right under the image with the instruction "Laporkan temuan Anda",
+    where the student writes their own free-text interpretation.
+  - That essay is **never auto-graded** — at the final answer-key reveal
+    step it's simply shown side-by-side with the real `temuan` ("Jawabanmu"
+    vs "Kunci Jawaban"), the same treatment `tatalaksana`/`edukasi` already
+    get.
+  - An item with `wajibLapor: true` but no `image` is treated as a normal
+    finding (temuan shown immediately) — the flag only ever changes
+    behavior for image-bearing findings.
+  - Not every image-bearing finding needs this — leave `wajibLapor` unset
+    (or `false`) for a finding you're happy to reveal as plain text+image
+    right away; only set it on the specific findings you want the student
+    to interpret themselves first.
