@@ -1,0 +1,160 @@
+{
+  "id": "kard_08",
+  "kategori": "kardio",
+  "level": "3B",
+  "nama": "Edema Paru Akut",
+  "judulKasus": "Laki-laki 65 tahun, sesak napas berat mendadak tengah malam, duduk tegak, batuk berbusa merah muda",
+  "identitas": "Pasien, laki-laki, 65 tahun",
+  "skenarioAwal": "Seorang pasien laki-laki 65 tahun, diantar ke IGD tengah malam dengan sesak napas berat mendadak.",
+  "keluhanUtama": "Sesak napas berat mendadak",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sesak napas berat mendadak saat tidur 2 jam lalu, sampai duduk tegak karena tidak bisa berbaring (ortopnea)",
+        "Batuk dahak berbusa warna merah muda (pink frothy sputum)",
+        "Berkeringat dingin",
+        "Tidak ada demam",
+        "Riwayat sesak makin berat 1 minggu ini saat naik tangga",
+        "Kaki bengkak bilateral sejak 2 minggu"
+      ],
+      "rpd": "CHF sudah diketahui 3 tahun (EF 30%). HT, DM. Biasa minum furosemid, ramipril, bisoprolol — 3 hari terakhir tidak minum furosemid karena obat habis.",
+      "rpk": "Tidak ada penyakit keluarga yang relevan",
+      "lifestyle": [
+        "Minum garam berlebihan 3 hari terakhir",
+        "Tidak olahraga",
+        "Perokok mantan (berhenti 5 tahun lalu)"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "Tampak sangat sesak, duduk tegak (tripod position), tidak bisa berbaring",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ttv",
+        "nama": "TTV",
+        "temuan": "TD 180/110 mmHg, HR 120x/mnt, RR 36x/mnt, Suhu 36,7°C, SpO2 80% udara ruangan",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_auskultasi_paru",
+        "nama": "Auskultasi paru",
+        "temuan": "ronki basah kasar di seluruh lapang paru bilateral — tanda edema alveolar",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_jantung",
+        "nama": "Jantung",
+        "temuan": "S3 gallop (+), JVP meningkat (5cm di atas sudut sternum)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ekstremitas",
+        "nama": "Ekstremitas",
+        "temuan": "edema pitting tungkai bilateral sampai lutut, akral dingin",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_foto_thorax_ap",
+        "nama": "Foto Thorax AP",
+        "temuan": "edema paru (opasitas butterfly/bat wing bilateral), kardiomegali, efusi pleura bilateral, garis Kerley B (+)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "sinus takikardia, LVH, tidak ada elevasi ST akut",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_bnpnt-probnp",
+        "nama": "BNP/NT-proBNP",
+        "temuan": "sangat meningkat (>5000 pg/mL) — konfirmasi gagal jantung akut",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_troponin",
+        "nama": "Troponin",
+        "temuan": "negatif — menyingkirkan ACS sebagai pemicu",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_agd",
+        "nama": "AGD",
+        "temuan": "PaO2 52 mmHg, hipoksemia berat",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Edema Paru Akut",
+    "differensialBenar": [
+      "Edema Paru Akut",
+      "Eksaserbasi PPOK",
+      "Asma Bronkial",
+      "Pneumonia Berat"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Posisi duduk tegak (90°), oksigen aliran tinggi via NRM atau NIV (CPAP/BiPAP) untuk SpO2 ≥94%",
+      "benar": true
+    },
+    {
+      "opsi": "Furosemid IV 40-80mg bolus segera — diuretik adalah tulang punggung terapi",
+      "benar": true
+    },
+    {
+      "opsi": "Nitrogliserin IV atau sublingual bila TD sistolik >100 mmHg — vasodilator untuk mengurangi preload dan afterload",
+      "benar": true
+    },
+    {
+      "opsi": "Morfin IV 2-4mg untuk mengurangi kecemasan dan preload (gunakan dengan hati-hati)",
+      "benar": true
+    },
+    {
+      "opsi": "Rawat ICU/ICCU, monitoring SpO2, tekanan darah, dan urin output ketat",
+      "benar": true
+    },
+    {
+      "opsi": "Beta bloker dosis tinggi diberikan segera untuk menurunkan denyut jantung pada edema paru akut",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jangan pernah berhenti minum furosemid tanpa konsultasi dokter — penghentian mendadak bisa menyebabkan edema paru",
+      "benar": true
+    },
+    {
+      "opsi": "Batasi garam <2g/hari dan cairan <1,5 liter/hari",
+      "benar": true
+    },
+    {
+      "opsi": "Timbang badan tiap pagi — kenaikan >2kg dalam 2 hari = tanda retensi cairan, segera ke dokter",
+      "benar": true
+    },
+    {
+      "opsi": "Edema paru akut cukup ditangani di rumah dengan menambah dosis furosemid sendiri",
+      "benar": false
+    }
+  ]
+}

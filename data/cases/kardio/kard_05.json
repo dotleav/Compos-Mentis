@@ -5,6 +5,7 @@
   "nama": "Hipertensi Esensial dengan Dislipidemia",
   "judulKasus": "Andri, 47 tahun, karyawan swasta, nyeri leher tidak menjalar",
   "identitas": "Andri, 47 tahun, Karyawan swasta",
+  "skenarioAwal": "Seorang pasien 47 tahun, datang ke poli dengan keluhan nyeri leher tidak menjalar.",
   "keluhanUtama": "Nyeri leher tidak menjalar",
   "groundTruth": {
     "riwayat": {
@@ -32,106 +33,91 @@
         "id": "pf_td",
         "nama": "TD",
         "temuan": "170/100 (minum amlodipine tetap tinggi)",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_suhu",
         "nama": "Suhu",
         "temuan": "36,5°C",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_nadi",
         "nama": "Nadi",
         "temuan": "80x/menit",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_nafas",
         "nama": "Nafas",
         "temuan": "20x/menit",
-        "signifikan": false
-      },
-      {
-        "id": "pf_klasifikasi_jnc",
-        "nama": "Klasifikasi JNC",
-        "temuan": "TD pasien 170/100 mmHg → termasuk kategori Hipertensi Kelas 2 (lihat tabel klasifikasi di bawah).",
-        "signifikan": false
-      },
-      {
-        "id": "pf_-_normal",
-        "nama": "- Normal",
-        "temuan": "<120/<80",
-        "signifikan": false
-      },
-      {
-        "id": "pf_-_prehipertensi",
-        "nama": "- Prehipertensi",
-        "temuan": "(120-139)/(80-89)",
-        "signifikan": false
-      },
-      {
-        "id": "pf_-_hipertensi_kelas_1",
-        "nama": "- Hipertensi Kelas 1",
-        "temuan": "(140-159)/(90-99)",
-        "signifikan": false
-      },
-      {
-        "id": "pf_-_hipertensi_kelas_2",
-        "nama": "- Hipertensi Kelas 2",
-        "temuan": ">160/>100",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_inspeksi",
         "nama": "Inspeksi",
-        "temuan": "dbn",
-        "signifikan": false
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_palpasi",
         "nama": "Palpasi",
-        "temuan": "dbn",
-        "signifikan": false
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_perkusi",
         "nama": "Perkusi",
-        "temuan": "dbn",
-        "signifikan": false
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_auskultasi",
         "nama": "Auskultasi",
-        "temuan": "dbn",
-        "signifikan": false
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
       }
     ],
     "penunjang": [
       {
         "id": "pnj_profil_lipid",
         "nama": "Profil lipid",
-        "temuan": "Kolesterol total 240 mg/dL (tinggi), LDL 165 mg/dL (tinggi), HDL 38 mg/dL (rendah), Trigliserida 190 mg/dL (tinggi) — gambaran dislipidemia.",
+        "temuan": "dislipidemia",
         "signifikan": true,
-        "image": "pnj_profil_lipid.jpg"
+        "wajibLapor": true,
+        "image": "pnj_profil_lipid.png"
       },
       {
         "id": "pnj_darah_rutin",
         "nama": "Darah rutin",
         "temuan": "dbn",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_darah_rutin.png"
       },
       {
         "id": "pnj_rontgen",
         "nama": "Rontgen",
-        "temuan": "dbn",
-        "signifikan": false
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": true,
+        "image": "pnj_rontgen.png"
       },
       {
         "id": "pnj_ekg",
         "nama": "EKG",
-        "temuan": "dbn",
-        "signifikan": false
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": true,
+        "image": "pnj_ekg.png"
       }
     ],
     "defaultNormal": {
@@ -205,6 +191,5 @@
       "opsi": "Obat boleh dihentikan sendiri kalau tensi sudah normal beberapa hari",
       "benar": false
     }
-  ],
-  "skenarioAwal": "Seorang pasien 47 tahun, datang ke poli dengan keluhan nyeri leher tidak menjalar."
+  ]
 }

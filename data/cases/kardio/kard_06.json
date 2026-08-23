@@ -1,0 +1,191 @@
+{
+  "id": "kard_06",
+  "kategori": "kardio",
+  "level": "3B",
+  "nama": "Sindrom Koroner Akut — STEMI",
+  "judulKasus": "Laki-laki 58 tahun, nyeri dada kiri menjalar ke lengan kiri mendadak saat istirahat",
+  "identitas": "Pasien, laki-laki, 58 tahun",
+  "skenarioAwal": "Seorang pasien laki-laki 58 tahun, datang ke IGD dengan nyeri dada kiri mendadak yang menjalar ke lengan kiri.",
+  "keluhanUtama": "Nyeri dada kiri mendadak",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri dada kiri seperti ditekan batu besar, menjalar ke lengan kiri dan rahang, sejak 1 jam",
+        "Nyeri terus-menerus, tidak membaik dengan istirahat atau perubahan posisi",
+        "Berkeringat dingin, mual, lemas",
+        "Sesak napas ringan",
+        "Tidak ada riwayat nyeri serupa sebelumnya"
+      ],
+      "rpd": "Hipertensi 10 tahun (minum amlodipine). DM tipe 2 (metformin). Perokok aktif 30 pak-tahun.",
+      "rpk": "Ayah meninggal mendadak usia 55 tahun, diduga serangan jantung",
+      "lifestyle": [
+        "Perokok aktif 1,5 pak/hari sejak usia 20 tahun",
+        "Diet tinggi lemak dan garam",
+        "Jarang olahraga",
+        "Stres pekerjaan tinggi sebagai supervisor pabrik"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_kesan_umum",
+        "nama": "Kesan Umum",
+        "temuan": "Tampak kesakitan, pucat, berkeringat dingin",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ttv",
+        "nama": "TTV",
+        "temuan": "TD 90/60 mmHg",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_hr",
+        "nama": "HR",
+        "temuan": "104x/mnt *RR 24x/mnt",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_suhu",
+        "nama": "Suhu",
+        "temuan": "36,8°C",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_spo2",
+        "nama": "SpO2",
+        "temuan": "Sp02 94%",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_auskultasi_jantung",
+        "nama": "Auskultasi Jantung",
+        "temuan": "S1 S2 melemah, S3 gallop (+)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_auskultasi_paru",
+        "nama": "Auskultasi Paru",
+        "temuan": "ronki basah halus di basal bilateral",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ekstremitas",
+        "nama": "Ekstremitas",
+        "temuan": "akral dingin",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_crt",
+        "nama": "CRT",
+        "temuan": ">3 detik",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "Elevasi segmen ST ≥2mm di lead II, III, aVF (ST elevasi inferior) dengan ST depresi resiprokal di lead I dan aVL",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pnj_foto_thorax_ap",
+        "nama": "Foto Thorax AP",
+        "temuan": "kardiomegali, corakan vaskular paru meningkat (redistribusi), tidak ada pneumothorax",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pnj_enzim_jantungbiomarker_jantungtroponinck",
+        "nama": "Enzim jantung/Biomarker jantung/Troponin/CKMB",
+        "temuan": "",
+        "signifikan": true,
+        "wajibLapor": false,
+        "image": "pnj_enzim_jantungbiomarker_jantungtroponinck.png"
+      },
+      {
+        "id": "pnj_darah_rutin",
+        "nama": "Darah rutin",
+        "temuan": "",
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_darah_rutin.png"
+      },
+      {
+        "id": "pnj_gds",
+        "nama": "GDS",
+        "temuan": "",
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_gds.png"
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "STEMI (ST-Elevation Myocardial Infarction)",
+    "differensialBenar": [
+      "STEMI (ST-Elevation Myocardial Infarction)",
+      "NSTEMI",
+      "Angina Tidak Stabil",
+      "Diseksi Aorta"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "MONA: Morfin IV 2-4 mg (nyeri), Oksigen bila SpO2 <94%, Nitrat sublingual (bila TD>90), Aspirin 320mg loading",
+      "benar": true
+    },
+    {
+      "opsi": "Antiplatelet ganda (DAPT): aspirin 320mg + tikagrelol 180mg (atau klopidogrel 600mg) loading segera",
+      "benar": true
+    },
+    {
+      "opsi": "Antikoagulan: heparin IV bolus 60 IU/kgBB (maks 4000 IU) lanjut infus",
+      "benar": true
+    },
+    {
+      "opsi": "Reperfusi SEGERA: PCI primer (target door-to-balloon <90 menit) — pilihan utama bila fasilitas tersedia",
+      "benar": true
+    },
+    {
+      "opsi": "Trombolitik (streptokinase/alteplase) bila PCI tidak tersedia dalam 120 menit dan tidak ada kontraindikasi",
+      "benar": true
+    },
+    {
+      "opsi": "Tunggu hasil troponin serial 6 jam sebelum memulai terapi pada STEMI",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Henti merokok total — merokok melipatgandakan risiko serangan jantung ulang",
+      "benar": true
+    },
+    {
+      "opsi": "Minum obat jantung (aspirin, statin, beta blocker, ACE inhibitor) seumur hidup — jangan berhenti tanpa konsultasi",
+      "benar": true
+    },
+    {
+      "opsi": "Kenali tanda serangan jantung ulang dan segera ke IGD — jangan tunggu",
+      "benar": true
+    },
+    {
+      "opsi": "Setelah STEMI, aktivitas fisik harus dihentikan total seumur hidup",
+      "benar": false
+    }
+  ]
+}

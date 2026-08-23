@@ -1,0 +1,161 @@
+{
+  "id": "kard_07",
+  "kategori": "kardio",
+  "level": "3B",
+  "nama": "NSTEMI / Angina Tidak Stabil",
+  "judulKasus": "Perempuan 62 tahun, nyeri dada saat jalan kaki 100 meter, makin sering, pernah hilang sendiri",
+  "identitas": "Pasien, perempuan, 62 tahun",
+  "skenarioAwal": "Seorang pasien perempuan 62 tahun, datang ke poli dengan keluhan nyeri dada yang makin sering terjadi saat aktivitas ringan.",
+  "keluhanUtama": "Nyeri dada saat aktivitas",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri dada seperti tertekan saat jalan kaki 100 meter atau naik tangga sejak 3 minggu",
+        "Nyeri membaik dalam 5-10 menit dengan istirahat",
+        "Makin sering — dulu hanya saat olahraga berat, kini saat jalan pelan pun nyeri",
+        "Tadi malam nyeri muncul saat istirahat (rest angina) — baru pertama kali",
+        "Tidak menjalar, tidak ada keringat dingin berlebihan",
+        "Sesak napas ringan saat nyeri"
+      ],
+      "rpd": "Hipertensi 5 tahun (amlodipin). Kolesterol tinggi tidak diobati. Tidak ada DM.",
+      "rpk": "Ibu meninggal karena penyakit jantung usia 65 tahun",
+      "lifestyle": [
+        "Tidak merokok",
+        "Jarang olahraga sejak pensiun",
+        "Diet tinggi lemak jenuh",
+        "Stres mengurus cucu sendirian"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "Tampak cemas, tidak sesak saat istirahat",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ttv",
+        "nama": "TTV",
+        "temuan": "TD 155/95 mmHg, HR 88x/mnt, RR 18x/mnt, Suhu 36,6°C, SpO2 97%",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_jantung",
+        "nama": "Jantung",
+        "temuan": "S1 S2 reguler, tidak ada murmur atau gallop",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_paru",
+        "nama": "Paru",
+        "temuan": "vesikuler normal, tidak ada ronki",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ekstremitas",
+        "nama": "Ekstremitas",
+        "temuan": "akral hangat, tidak ada edema",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "ST depresi horizontal 1,5mm di lead V4-V6 dan II, III, aVF — iskemia aktif",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_troponin_i",
+        "nama": "Troponin I",
+        "temuan": "0,08 ng/mL (borderline meningkat) — NSTEMI vs UA tergantung nilai ambang laboratorium",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_foto_thorax",
+        "nama": "Foto Thorax",
+        "temuan": "kardiomegali ringan, tidak ada edema paru",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_profil_lipid",
+        "nama": "Profil lipid",
+        "temuan": "LDL 198 mg/dL, HDL 38 mg/dL (risiko tinggi)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ekokardiografi",
+        "nama": "Ekokardiografi",
+        "temuan": "hipokinesia dinding inferior ringan, EF 50%",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Angina Tidak Stabil (Unstable Angina)",
+    "differensialBenar": [
+      "Angina Tidak Stabil (Unstable Angina)",
+      "NSTEMI",
+      "STEMI",
+      "Refluks Gastroesofageal"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Rawat inap, tirah baring, monitoring EKG kontinu dan troponin serial",
+      "benar": true
+    },
+    {
+      "opsi": "DAPT: aspirin 160mg + klopidogrel 300mg loading, lanjut aspirin 80mg + klopidogrel 75mg",
+      "benar": true
+    },
+    {
+      "opsi": "Antikoagulan: fondaparinux SC 2,5mg/hari atau heparin",
+      "benar": true
+    },
+    {
+      "opsi": "Beta bloker (bisoprolol 2,5-5mg) dan statin intensitas tinggi (atorvastatin 40-80mg)",
+      "benar": true
+    },
+    {
+      "opsi": "Rujuk kardiologi untuk pertimbangan kateterisasi (angiografi koroner) dan revaskularisasi",
+      "benar": true
+    },
+    {
+      "opsi": "Nitrat sublingual bisa diberikan seumur hidup sebagai satu-satunya terapi angina",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Angina tidak stabil adalah peringatan pra-serangan jantung — harus ditangani segera",
+      "benar": true
+    },
+    {
+      "opsi": "Minum statin dan antiplatelet sesuai resep — jangan berhenti sendiri",
+      "benar": true
+    },
+    {
+      "opsi": "Pantau tekanan darah dan kolesterol secara rutin",
+      "benar": true
+    },
+    {
+      "opsi": "Angina yang hilang sendiri tidak berbahaya dan tidak perlu diobati",
+      "benar": false
+    }
+  ]
+}

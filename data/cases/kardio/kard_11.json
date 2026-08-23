@@ -1,0 +1,148 @@
+{
+  "id": "kard_11",
+  "kategori": "kardio",
+  "level": "3A",
+  "nama": "Perikarditis Akut",
+  "judulKasus": "Laki-laki 28 tahun, nyeri dada tajam membaik condong ke depan, demam ringan, setelah flu 2 minggu lalu",
+  "identitas": "Pasien, laki-laki, 28 tahun",
+  "skenarioAwal": "Seorang pasien laki-laki 28 tahun, datang ke IGD dengan nyeri dada yang aneh — membaik saat membungkuk ke depan.",
+  "keluhanUtama": "Nyeri dada yang membaik saat membungkuk ke depan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri dada tajam, seperti ditusuk, sejak 2 hari",
+        "Nyeri memburuk saat berbaring telentang dan menarik napas dalam",
+        "Nyeri MEMBAIK saat duduk membungkuk ke depan (posisi tripod) — sangat khas perikarditis",
+        "Demam ringan 37,8°C",
+        "Pernah flu dan batuk pilek 2 minggu lalu, sudah sembuh",
+        "Tidak menjalar ke lengan, tidak ada keringat dingin"
+      ],
+      "rpd": "Tidak ada riwayat penyakit jantung atau autoimun. Tidak ada riwayat TB.",
+      "rpk": "Tidak ada penyakit keluarga yang relevan",
+      "lifestyle": [
+        "Mahasiswa, aktif olahraga",
+        "Tidak merokok, tidak alkohol"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "Tampak kesakitan saat berbaring, membaik saat duduk membungkuk",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ttv",
+        "nama": "TTV",
+        "temuan": "TD 120/80 mmHg, HR 98x/mnt, RR 20x/mnt, Suhu 37,9°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_auskultasi_jantung",
+        "nama": "Auskultasi jantung",
+        "temuan": "pericardial friction rub (+) — terdengar 3 komponen (sistolik, diastolik awal, diastolik akhir) — PATOGNOMONIK",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_paru",
+        "nama": "Paru",
+        "temuan": "vesikuler normal Tidak ada JVP meningkat, tidak ada pulsus paradoksus (menyingkirkan tamponade)",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "elevasi ST konkaf (saddle-shaped/cekung ke atas) di hampir semua lead, depresi PR interval — khas perikarditis",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_crp_dan_led",
+        "nama": "CRP dan LED",
+        "temuan": "meningkat — tanda inflamasi",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_troponin_i",
+        "nama": "Troponin I",
+        "temuan": "sedikit meningkat (0,4 ng/mL) — mioperikarditis tidak bisa disingkirkan",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ekokardiografi",
+        "nama": "Ekokardiografi",
+        "temuan": "efusi perikard minimal, fungsi sistolik normal, tidak ada tamponade",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_darah_rutin",
+        "nama": "Darah rutin",
+        "temuan": "leukositosis ringan",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Perikarditis Akut",
+    "differensialBenar": [
+      "Perikarditis Akut",
+      "STEMI",
+      "Pleuritis",
+      "Diseksi Aorta"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "NSAID: aspirin 750mg-1000mg tiap 8 jam selama 1-2 minggu (lini pertama perikarditis viral)",
+      "benar": true
+    },
+    {
+      "opsi": "Kolkisin 0,5mg 2x/hari selama 3 bulan — terbukti mencegah rekurensi perikarditis",
+      "benar": true
+    },
+    {
+      "opsi": "Batasi aktivitas fisik berat sampai gejala hilang dan CRP normal",
+      "benar": true
+    },
+    {
+      "opsi": "Kortikosteroid hanya bila NSAID gagal atau ada kontraindikasi — bukan lini pertama karena meningkatkan risiko rekurensi",
+      "benar": true
+    },
+    {
+      "opsi": "Kortikosteroid dosis tinggi adalah terapi utama semua perikarditis akut",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Perikarditis viral biasanya sembuh dalam 2-6 minggu dengan terapi yang tepat",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari olahraga berat sampai gejala hilang dan CRP kembali normal",
+      "benar": true
+    },
+    {
+      "opsi": "Minum kolkisin sampai habis — menghentikan lebih awal meningkatkan risiko kambuh",
+      "benar": true
+    },
+    {
+      "opsi": "Perikarditis tidak perlu diobati karena sembuh sendiri dalam beberapa hari",
+      "benar": false
+    }
+  ]
+}
