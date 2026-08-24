@@ -5,6 +5,7 @@
   "nama": "SVT (Supraventrikular Takikardia)",
   "judulKasus": "Boy, 37 tahun, karyawan swasta, dada berdebar saat aktivitas",
   "identitas": "Boy, 37 tahun, Karyawan swasta, tinggal di Jetis",
+  "skenarioAwal": "Seorang pasien 37 tahun, datang ke poli dengan keluhan dada berdebar.",
   "keluhanUtama": "Dada berdebar",
   "groundTruth": {
     "riwayat": {
@@ -29,94 +30,113 @@
         "id": "pf_ku",
         "nama": "KU",
         "temuan": "Kompos mentis",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_suhu",
         "nama": "Suhu",
         "temuan": "36,8°C",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_td",
         "nama": "TD",
         "temuan": "115/79 mmHg",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_hr",
         "nama": "HR",
         "temuan": "160 bpm, reguler",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_rr",
         "nama": "RR",
         "temuan": "22x/menit",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_thorax_inspeksi",
         "nama": "Thorax Inspeksi",
         "temuan": "pergerakan dada simetris, ictus cordis terlihat",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_palpasi",
         "nama": "Palpasi",
         "temuan": "pulsasi ventrikel dextra teraba, sistolik epigastrium",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_perkusi",
         "nama": "Perkusi",
-        "temuan": "aorta dbn, batas jantung dextra et sinistra dbn",
-        "signifikan": false
+        "temuan": "aorta dalam batas normal, batas jantung dextra et sinistra dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_auskultasi",
         "nama": "Auskultasi",
-        "temuan": "napas vesikuler, aorta bruit, ictus cordis dbn, katup aorta dbn, katup pulmonal dbn",
-        "signifikan": false
+        "temuan": "napas vesikuler, aorta bruit, ictus cordis dalam batas normal, katup aorta dalam batas normal, katup pulmonal dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_crt_dan_akral",
         "nama": "CRT dan akral",
         "temuan": "periksa",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       }
     ],
     "penunjang": [
       {
         "id": "pnj_ekg",
         "nama": "EKG",
-        "temuan": "Takikardi reguler, kompleks QRS sempit (narrow complex), gelombang P sulit diidentifikasi (tertutup gelombang T), HR ±160x/menit — gambaran khas Supraventrikular Takikardia (SVT).",
+        "temuan": "Takikardi reguler, kompleks QRS sempit (narrow complex), gelombang P sulit diidentifikasi (tertutup gelombang T), HR ±160x/menit.",
         "signifikan": true,
+        "wajibLapor": true,
         "image": "pnj_ekg.png"
       },
       {
         "id": "pnj_pemeriksaan_elektrolit",
         "nama": "Pemeriksaan Elektrolit",
-        "temuan": "dbn",
-        "signifikan": false
+        "temuan": "",
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_pemeriksaan_elektrolit.png"
       },
       {
         "id": "pnj_pemeriksaan_darah_rutin",
         "nama": "Pemeriksaan Darah rutin",
-        "temuan": "dbn",
-        "signifikan": false
+        "temuan": "",
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_pemeriksaan_darah_rutin.png"
       },
       {
         "id": "pnj_cek_fungsi_ginjal",
         "nama": "Cek fungsi ginjal",
-        "temuan": "dbn",
-        "signifikan": false
+        "temuan": "",
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_cek_fungsi_ginjal.png"
       },
       {
         "id": "pnj_rontgen",
         "nama": "Rontgen",
-        "temuan": "biasanya dbn",
-        "signifikan": false
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": true,
+        "image": "pnj_rontgen.png"
       }
     ],
     "defaultNormal": {
@@ -182,6 +202,5 @@
       "opsi": "Berhenti obat sendiri",
       "benar": false
     }
-  ],
-  "skenarioAwal": "Seorang pasien 37 tahun, datang ke poli dengan keluhan dada berdebar."
+  ]
 }

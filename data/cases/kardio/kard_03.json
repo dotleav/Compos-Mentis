@@ -5,6 +5,7 @@
   "nama": "CHF (Congestive Heart Failure)",
   "judulKasus": "Sudharma, 73 tahun, pensiunan, sesak napas 6 bulan terakhir",
   "identitas": "Sudharma, 73 tahun, Pensiunan",
+  "skenarioAwal": "Seorang pasien 73 tahun, datang ke poli dengan keluhan sesak napas / napas tidak lega.",
   "keluhanUtama": "Sesak napas / napas tidak lega",
   "groundTruth": {
     "riwayat": {
@@ -27,70 +28,103 @@
         "id": "pf_ku",
         "nama": "KU",
         "temuan": "CM, tampak sesak",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_suhu",
         "nama": "Suhu",
         "temuan": "36,7°C",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_td",
         "nama": "TD",
         "temuan": "160/80 mmHg",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_spo2",
         "nama": "SpO2",
         "temuan": "95%",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_rr",
         "nama": "RR",
-        "temuan": "24x/menit Tidak sianosis Edema tungkai bilateral (+) CRT dbn Akral teraba hangat *Iktus Kordis di SIC 6 linea axilaris anterior",
-        "signifikan": false
+        "temuan": "24x/menit Tidak sianosis Edema tungkai bilateral (+)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_crt",
+        "nama": "CRT",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_akral",
+        "nama": "Akral",
+        "temuan": "teraba hangat",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_palpasi_iktus_kordis",
+        "nama": "Palpasi Iktus Kordis",
+        "temuan": "di SIC 6 linea axillaris anterior",
+        "signifikan": true,
+        "wajibLapor": false
       },
       {
         "id": "pf_perkusi",
         "nama": "Perkusi",
-        "temuan": "Batas jantung kanan dbn, Batas kiri jantung pembesaran SIC6 Perut timpani",
-        "signifikan": false
+        "temuan": "Batas jantung kanan dalam batas normal, Batas kiri jantung pembesaran SIC6 Perut timpani",
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_auskultasi",
         "nama": "Auskultasi",
         "temuan": "Ada bunyi Gallop di katup pulmonal (diperiksa katup aorta, pulmonal, tricuspid, mitral) Ada ronki positif pada setengah basal paru bilateral Fremitus meningkat",
-        "signifikan": false
+        "signifikan": true,
+        "wajibLapor": false
       },
       {
         "id": "pf_jvp",
         "nama": "JVP",
         "temuan": "5 + 4 (abnormal)",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       }
     ],
     "penunjang": [
       {
         "id": "pnj_nt-probnp",
         "nama": "NT-proBNP",
-        "temuan": "200",
-        "signifikan": true
+        "temuan": "",
+        "signifikan": true,
+        "wajibLapor": false,
+        "image": "pnj_nt-probnp.png"
       },
       {
         "id": "pnj_ekg",
         "nama": "EKG",
-        "temuan": "Sinus takikardi, tanda hipertrofi ventrikel kiri (LVH) dengan strain pattern, tidak tampak ST elevasi akut.",
+        "temuan": "Sinus takikardi, tanda hipertrofi ventrikel kiri (LVH) dengan strain pattern.",
         "signifikan": true,
+        "wajibLapor": true,
         "image": "pnj_ekg.png"
       },
       {
         "id": "pnj_x-ray",
         "nama": "X-ray",
-        "temuan": "Kardiomegali (cardiothoracic ratio >50%), tanda bendungan paru (kongesti vaskular/edema interstisial), kesan sesuai gagal jantung.",
+        "temuan": "Kardiomegali (cardiothoracic ratio >50%), tanda bendungan paru (kongesti vaskular/edema interstitial).",
         "signifikan": true,
+        "wajibLapor": true,
         "image": "pnj_x-ray.png"
       }
     ],
@@ -153,6 +187,5 @@
       "opsi": "Tidak perlu timbang berat badan rutin di rumah",
       "benar": false
     }
-  ],
-  "skenarioAwal": "Seorang pasien 73 tahun, datang ke poli dengan keluhan sesak napas / napas tidak lega."
+  ]
 }

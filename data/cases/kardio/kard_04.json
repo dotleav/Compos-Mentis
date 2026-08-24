@@ -5,6 +5,7 @@
   "nama": "Krisis Hipertensi Urgensi",
   "judulKasus": "Rudi, 23 tahun, PNS, kepala dan leher nyeri, TD ≥ 180/110 mmHg",
   "identitas": "Rudi, 23 tahun, PNS",
+  "skenarioAwal": "Seorang pasien 23 tahun, datang ke poli dengan keluhan kepala dan leher nyeri.",
   "keluhanUtama": "Kepala dan leher nyeri",
   "groundTruth": {
     "riwayat": {
@@ -28,37 +29,43 @@
         "id": "pf_td",
         "nama": "TD",
         "temuan": "200/110 mmHg (≥180/110 mmHg syarat krisis HT)",
-        "signifikan": true
+        "signifikan": true,
+        "wajibLapor": false
       },
       {
         "id": "pf_suhu",
         "nama": "Suhu",
         "temuan": "37°C",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_rr",
         "nama": "RR",
         "temuan": "20x/menit",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_hr",
         "nama": "HR",
         "temuan": "88x/menit",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_htt_-_cek_visus_dan_funduskopi",
         "nama": "HTT - cek visus dan funduskopi",
         "temuan": "ada lateralisasi tapi masih normal",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       },
       {
         "id": "pf_fungsi_motorik_dan_sensorik",
         "nama": "Fungsi Motorik dan Sensorik",
         "temuan": "Periksa kekuatan otot keempat ekstremitas (tangan dan kaki) secara simetris Nyeri ketok kostovertebra (+)",
-        "signifikan": false
+        "signifikan": false,
+        "wajibLapor": false
       }
     ],
     "penunjang": [
@@ -67,14 +74,16 @@
         "nama": "EKG",
         "temuan": "Tanda hipertrofi ventrikel kiri (LVH), irama sinus, tidak tampak tanda iskemia akut.",
         "signifikan": true,
-        "image": "pnj_ekg.jpg"
+        "wajibLapor": true,
+        "image": "pnj_ekg.png"
       },
       {
         "id": "pnj_rontgenxray",
         "nama": "rontgen/Xray",
         "temuan": "Cor dan pulmo dalam batas normal, tidak tampak tanda edema paru akut atau kardiomegali.",
         "signifikan": true,
-        "image": "pnj_rontgenxray.jpg"
+        "wajibLapor": true,
+        "image": "pnj_rontgenxray.png"
       }
     ],
     "defaultNormal": {
@@ -156,6 +165,5 @@
       "opsi": "Karena tekanan darah sangat tinggi, harus diturunkan secepat mungkin dalam hitungan menit",
       "benar": false
     }
-  ],
-  "skenarioAwal": "Seorang pasien 23 tahun, datang ke poli dengan keluhan kepala dan leher nyeri."
+  ]
 }
