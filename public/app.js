@@ -160,17 +160,15 @@ async function showLanding() {
     <p class="muted" id="warnMsg" style="margin-top:10px; display:none; color:var(--red);">Pilih minimal satu kategori.</p>
 
     <div class="card" id="devCasePicker" style="display:none; margin-top:22px;">
-      <h3 style="font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; margin-bottom:10px; color:var(--muted);">Dev Mode — Pilih Kasus Manual</h3>
-      <div class="row" style="gap:8px; margin-bottom:8px;">
-        <select id="devCatSelect" style="flex:1;">
-          ${cats.map((c) => `<option value="${c}">${STASE_LABELS[c] || c}</option>`).join("")}
-        </select>
-      </div>
-      <div class="row" style="gap:8px; margin-bottom:8px;">
-        <select id="devCaseSelect" style="flex:1;"><option>Memuat...</option></select>
-      </div>
-      <button class="btn secondary" id="devCaseStartBtn" style="width:100%;">Mulai dengan Kasus Ini →</button>
-      <p class="muted" id="devCaseWarn" style="margin-top:8px; display:none; color:var(--red); font-size:0.78rem;"></p>
+      <h3 class="dev-picker-title">Dev Mode — Pilih Kasus Manual</h3>
+      <label class="dev-picker-label muted" for="devCatSelect">Kategori</label>
+      <select id="devCatSelect">
+        ${cats.map((c) => `<option value="${c}">${STASE_LABELS[c] || c}</option>`).join("")}
+      </select>
+      <label class="dev-picker-label muted" for="devCaseSelect">Kasus</label>
+      <select id="devCaseSelect"><option>Memuat...</option></select>
+      <button class="btn secondary" id="devCaseStartBtn">Mulai dengan Kasus Ini →</button>
+      <p class="muted" id="devCaseWarn" style="margin-top:10px; display:none; color:var(--red); font-size:0.78rem;"></p>
     </div>
   `;
   app.querySelectorAll("[data-cat]").forEach((el) =>
