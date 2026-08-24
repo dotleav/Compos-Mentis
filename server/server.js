@@ -6,6 +6,8 @@ const cors = require("cors");
 const casesRouter = require("./routes/cases");
 const chatRouter = require("./routes/chat");
 const examRouter = require("./routes/exam");
+const customCasesRouter = require("./routes/customCases");
+const driveRouter = require("./routes/drive");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -23,6 +25,8 @@ app.use("/data/images", express.static(path.join(__dirname, "..", "data", "image
 app.use("/api/cases", casesRouter);
 app.use("/api/chat", chatRouter);
 app.use("/api/exam", examRouter);
+app.use("/api/custom-cases", customCasesRouter);
+app.use("/api/drive", driveRouter);
 
 app.get("/api/health", (req, res) => res.json({ ok: true }));
 

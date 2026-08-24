@@ -3,11 +3,17 @@ const path = require("path");
 
 const CASES_DIR = path.join(__dirname, "..", "..", "data", "cases");
 
-/** List all categories (subfolders of data/cases) */
+/** List all categories (subfolders of data/cases) shown as checkboxes on the
+ * landing screen. Folders starting with "_" (e.g. "_custom", where uploaded
+ * Custom Case docx conversions land — see server/routes/customCases.js) are
+ * deliberately excluded: they're still fully loadable via loadCase()/
+ * listCases() by anyone who knows the exact category+id (used for the
+ * "start this specific case" flows), just never offered as a pooled random
+ * category. */
 function listCategories() {
   return fs
     .readdirSync(CASES_DIR, { withFileTypes: true })
-    .filter((d) => d.isDirectory())
+    .filter((d) => d.isDirectory() && !d.name.startsWith("_"))
     .map((d) => d.name);
 }
 

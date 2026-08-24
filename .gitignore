@@ -1,3 +1,6 @@
 .env
 *.zip
 node_modules/
+data/custom-uploads/
+data/cases/_custom/
+data/images/_custom/

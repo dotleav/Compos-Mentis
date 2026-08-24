@@ -170,6 +170,29 @@ async function showLanding() {
       <button class="btn secondary" id="devCaseStartBtn">Mulai dengan Kasus Ini →</button>
       <p class="muted" id="devCaseWarn" style="margin-top:10px; display:none; color:var(--red); font-size:0.78rem;"></p>
     </div>
+
+    <div class="card" id="customCaseCard" style="margin-top:22px;">
+      <h3 class="dev-picker-title">Custom Case</h3>
+      <p class="muted" style="margin-bottom:14px;">
+        Upload file .docx yang sudah diisi pakai template kasus — akan otomatis dikonversi jadi kasus yang bisa langsung dimainkan. Tidak ikut kotak centang kategori di atas, tapi bisa langsung dimulai dari daftar di bawah.
+      </p>
+
+      <div id="customDropzone" class="custom-dropzone">
+        <input type="file" id="customFileInput" accept=".docx" hidden>
+        <p class="dropzone-text">Seret file <b>.docx</b> ke sini, atau <span class="dropzone-link">klik untuk pilih file</span></p>
+      </div>
+      <p class="muted" id="customUploadStatus" style="margin-top:10px; display:none; font-size:0.82rem;"></p>
+
+      <div class="custom-case-toggle" id="customCaseToggle">
+        <span class="chevron">▸</span>
+        <span>Kasus Custom Saya (<span id="customCaseCount">0</span>)</span>
+      </div>
+      <div id="customCaseList" class="custom-case-list" style="display:none;"></div>
+
+      <div class="dev-picker-divider"></div>
+
+      <div id="driveSection"></div>
+    </div>
   `;
   app.querySelectorAll("[data-cat]").forEach((el) =>
     el.addEventListener("click", () => {
@@ -295,6 +318,214 @@ async function showLanding() {
   // while the landing screen happens to be showing, so the picker can appear
   // without the user having to navigate away and back.
   window.__onDevModeChange = syncDevCasePicker;
+
+  // ---- Custom Case: upload-your-own docx ----
+  // No checkbox in the category grid above (pickRandomCase never pools from
+  // it — see caseLoader.listCategories()'s "_"-prefix exclusion), just an
+  // expandable list here and a per-case "Mulai" button, same launch path as
+  // the Dev Mode picker above (GET /cases/:kategori/:id -> resetState ->
+  // renderSession).
+  const customDropzone = document.getElementById("customDropzone");
+  const customFileInput = document.getElementById("customFileInput");
+  const customUploadStatus = document.getElementById("customUploadStatus");
+  const customCaseToggle = document.getElementById("customCaseToggle");
+  const customCaseList = document.getElementById("customCaseList");
+  const customCaseCount = document.getElementById("customCaseCount");
+
+  function setUploadStatus(text, isError) {
+    customUploadStatus.style.display = text ? "block" : "none";
+    customUploadStatus.textContent = text || "";
+    customUploadStatus.style.color = isError ? "var(--red)" : "var(--muted)";
+  }
+
+  async function uploadCustomFile(file) {
+    if (!file) return;
+    if (!file.name.toLowerCase().endsWith(".docx")) {
+      setUploadStatus("File harus berformat .docx.", true);
+      return;
+    }
+    customDropzone.classList.add("uploading");
+    setUploadStatus(`Mengonversi "${file.name}"...`, false);
+    const formData = new FormData();
+    formData.append("docx", file);
+    try {
+      const result = await api("/custom-cases/upload", { method: "POST", headers: {}, body: formData });
+      const n = result.cases.length;
+      let msg = `✔ ${n} kasus berhasil dibuat dari "${file.name}".`;
+      if (result.warnings.length) msg += ` (${result.warnings.length} peringatan — cek kasusnya sebelum dipakai.)`;
+      if (result.driveSynced) msg += " Tersimpan juga ke Google Drive.";
+      if (result.driveError) msg += ` (Gagal sync ke Drive: ${result.driveError})`;
+      setUploadStatus(msg, false);
+      await loadCustomCases();
+      customCaseList.style.display = "block";
+      customCaseToggle.classList.add("expanded");
+    } catch (e) {
+      setUploadStatus(`Gagal: ${e.message}`, true);
+    } finally {
+      customDropzone.classList.remove("uploading");
+      customFileInput.value = "";
+    }
+  }
+
+  customDropzone.addEventListener("click", () => customFileInput.click());
+  customFileInput.addEventListener("change", () => uploadCustomFile(customFileInput.files[0]));
+  ["dragenter", "dragover"].forEach((evt) =>
+    customDropzone.addEventListener(evt, (e) => {
+      e.preventDefault();
+      customDropzone.classList.add("dragover");
+    })
+  );
+  ["dragleave", "drop"].forEach((evt) =>
+    customDropzone.addEventListener(evt, (e) => {
+      e.preventDefault();
+      customDropzone.classList.remove("dragover");
+    })
+  );
+  customDropzone.addEventListener("drop", (e) => uploadCustomFile(e.dataTransfer.files[0]));
+
+  async function loadCustomCases() {
+    let uploads = [];
+    try {
+      uploads = await api("/custom-cases");
+    } catch {
+      // landing page shouldn't hard-fail just because this list couldn't load
+    }
+    customCaseCount.textContent = uploads.reduce((n, u) => n + u.cases.length, 0);
+    if (uploads.length === 0) {
+      customCaseList.innerHTML = `<p class="muted" style="font-size:0.85rem;">Belum ada kasus custom yang diupload.</p>`;
+      return;
+    }
+    customCaseList.innerHTML = uploads
+      .map(
+        (u) => `
+      <div class="custom-upload-group">
+        <div class="custom-upload-head">
+          <span class="custom-upload-name">📄 ${u.originalFilename}${u.driveFileId ? ' <span title="Tersinkron ke Google Drive">☁️</span>' : ""}</span>
+          <button class="custom-upload-delete" data-upload-id="${u.uploadId}" title="Hapus upload ini">Hapus</button>
+        </div>
+        <div class="muted" style="font-size:0.72rem; margin-bottom:8px;">${new Date(u.uploadedAt).toLocaleString("id-ID")}</div>
+        ${u.cases
+          .map(
+            (c) => `
+          <div class="custom-case-row">
+            <span>${c.id} — ${c.judulKasus || c.nama || "(tanpa judul)"}${c.level ? ` [${c.level}]` : ""}</span>
+            <button class="btn secondary custom-case-start" data-id="${c.id}">Mulai →</button>
+          </div>`
+          )
+          .join("")}
+      </div>`
+      )
+      .join("");
+
+    customCaseList.querySelectorAll(".custom-case-start").forEach((btn) =>
+      btn.addEventListener("click", async () => {
+        btn.disabled = true;
+        btn.textContent = "...";
+        try {
+          const kasus = await api(`/cases/_custom/${btn.dataset.id}`);
+          resetState(kasus);
+          if (state.ddMaster.length === 0) state.ddMaster = await api("/cases/dd-master");
+          if (!state.ddMasterGrouped) state.ddMasterGrouped = await api("/cases/dd-master-grouped");
+          renderSession();
+        } catch (e) {
+          btn.disabled = false;
+          btn.textContent = "Mulai →";
+          alert(`Gagal memuat kasus: ${e.message}`);
+        }
+      })
+    );
+    customCaseList.querySelectorAll(".custom-upload-delete").forEach((btn) =>
+      btn.addEventListener("click", async () => {
+        if (!confirm("Hapus upload ini beserta semua kasus yang dihasilkan darinya?")) return;
+        try {
+          await api(`/custom-cases/${btn.dataset.uploadId}`, { method: "DELETE" });
+          await loadCustomCases();
+        } catch (e) {
+          alert(`Gagal menghapus: ${e.message}`);
+        }
+      })
+    );
+  }
+
+  customCaseToggle.addEventListener("click", () => {
+    const expanded = customCaseToggle.classList.toggle("expanded");
+    customCaseList.style.display = expanded ? "block" : "none";
+  });
+  loadCustomCases();
+
+  // ---- Custom Case: optional Google Drive backup ----
+  const driveSection = document.getElementById("driveSection");
+
+  function renderDriveNotConfigured() {
+    driveSection.innerHTML = `<p class="muted" style="font-size:0.78rem;">Backup ke Google Drive belum dikonfigurasi di server ini (perlu GOOGLE_CLIENT_ID/SECRET di .env — lihat .env.example).</p>`;
+  }
+  function renderDriveConnectPrompt() {
+    driveSection.innerHTML = `
+      <p class="muted" style="font-size:0.85rem; margin-bottom:10px;">Hubungkan Google Drive supaya setiap docx yang kamu upload otomatis dibackup ke folder Drive-mu sendiri.</p>
+      <button class="btn secondary" id="driveConnectBtn">Hubungkan Google Drive</button>`;
+    document.getElementById("driveConnectBtn").addEventListener("click", async () => {
+      try {
+        const { url } = await api("/drive/auth-url");
+        window.open(url, "_blank", "noopener");
+        pollDriveStatus();
+      } catch (e) {
+        alert(`Gagal membuka Google Drive: ${e.message}`);
+      }
+    });
+  }
+  function renderDriveFolderPrompt() {
+    driveSection.innerHTML = `
+      <p class="muted" style="font-size:0.85rem; margin-bottom:10px;">Google Drive terhubung. Tempel link atau ID folder tujuan (folder harus sudah ada &amp; milikmu):</p>
+      <div class="row" style="gap:8px;">
+        <input type="text" id="driveFolderInput" placeholder="https://drive.google.com/drive/folders/..." style="flex:1;">
+        <button class="btn secondary" id="driveFolderSaveBtn">Simpan</button>
+      </div>
+      <p class="muted" id="driveFolderWarn" style="display:none; color:var(--red); font-size:0.78rem; margin-top:8px;"></p>`;
+    document.getElementById("driveFolderSaveBtn").addEventListener("click", async () => {
+      const val = document.getElementById("driveFolderInput").value.trim();
+      const warn = document.getElementById("driveFolderWarn");
+      if (!val) return;
+      try {
+        await api("/drive/folder", { method: "POST", body: JSON.stringify({ folder: val }) });
+        renderDriveSection();
+      } catch (e) {
+        warn.textContent = e.message;
+        warn.style.display = "block";
+      }
+    });
+  }
+  function renderDriveConnected(folder) {
+    driveSection.innerHTML = `
+      <p class="muted" style="font-size:0.85rem;">☁️ Tersambung ke folder Drive: <b style="color:var(--text);">${folder.name}</b></p>
+      <button class="btn secondary" id="driveDisconnectBtn" style="margin-top:10px;">Putuskan Sambungan</button>`;
+    document.getElementById("driveDisconnectBtn").addEventListener("click", async () => {
+      if (!confirm("Putuskan sambungan Google Drive? Kasus custom yang sudah ada tidak akan terhapus.")) return;
+      await api("/drive/disconnect", { method: "POST" });
+      renderDriveSection();
+    });
+  }
+  async function renderDriveSection() {
+    let status;
+    try {
+      status = await api("/drive/status");
+    } catch {
+      renderDriveNotConfigured();
+      return;
+    }
+    if (!status.configured) renderDriveNotConfigured();
+    else if (!status.connected) renderDriveConnectPrompt();
+    else if (!status.folder) renderDriveFolderPrompt();
+    else renderDriveConnected(status.folder);
+  }
+  function pollDriveStatus(triesLeft = 20) {
+    if (triesLeft <= 0) return;
+    setTimeout(async () => {
+      const status = await api("/drive/status").catch(() => null);
+      if (status && status.connected) renderDriveSection();
+      else pollDriveStatus(triesLeft - 1);
+    }, 3000);
+  }
+  renderDriveSection();
 }
 
 // ---------- SESSION SHELL ----------
