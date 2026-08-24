@@ -5,7 +5,6 @@
   "nama": "Atrial Fibrilasi",
   "judulKasus": "Wiyoto, 43 tahun, karyawan swasta, dada berdebar berulang",
   "identitas": "Wiyoto, 43 tahun, Karyawan swasta",
-  "skenarioAwal": "Seorang pasien 43 tahun, datang ke poli dengan keluhan dada berdebar.",
   "keluhanUtama": "Dada berdebar",
   "groundTruth": {
     "riwayat": {
@@ -26,105 +25,88 @@
         "id": "pf_td",
         "nama": "TD",
         "temuan": "130/80 mmHg",
-        "signifikan": false,
-        "wajibLapor": false
+        "signifikan": false
       },
       {
         "id": "pf_suhu",
         "nama": "Suhu",
         "temuan": "36,5°C",
-        "signifikan": false,
-        "wajibLapor": false
+        "signifikan": false
       },
       {
         "id": "pf_nadi",
         "nama": "Nadi",
         "temuan": "155x/menit",
-        "signifikan": false,
-        "wajibLapor": false
+        "signifikan": false
       },
       {
         "id": "pf_nafas",
         "nama": "Nafas",
         "temuan": "22x/menit",
-        "signifikan": false,
-        "wajibLapor": false
+        "signifikan": false
       },
       {
         "id": "pf_spo2",
         "nama": "SpO2",
         "temuan": "96%",
-        "signifikan": false,
-        "wajibLapor": false
+        "signifikan": false
       },
       {
         "id": "pf_mulut",
         "nama": "Mulut",
         "temuan": "sianosis (-)",
-        "signifikan": false,
-        "wajibLapor": false
+        "signifikan": false
       },
       {
         "id": "pf_inspeksi",
         "nama": "Inspeksi",
-        "temuan": "dalam batas normal",
-        "signifikan": false,
-        "wajibLapor": false
+        "temuan": "dbn",
+        "signifikan": false
       },
       {
         "id": "pf_palpasi",
         "nama": "Palpasi",
         "temuan": "iktus kordis teraba SIC 5, impuls tidak teraba, kardiomegali (-)",
-        "signifikan": false,
-        "wajibLapor": false
+        "signifikan": false
       },
       {
         "id": "pf_auskultasi",
         "nama": "Auskultasi",
         "temuan": "S1 & S2 irregular (suara tambahan sulit dievaluasi), pulmo: ronki (-), wheezing (-) *Pulsus Defisit (+)",
-        "signifikan": false,
-        "wajibLapor": false
+        "signifikan": false
       },
       {
         "id": "pf_jvp",
         "nama": "JVP",
         "temuan": "5+2",
-        "signifikan": false,
-        "wajibLapor": false
+        "signifikan": false
       }
     ],
     "penunjang": [
       {
         "id": "pnj_ekg",
         "nama": "EKG",
-        "temuan": "Gelombang P tidak tampak (digantikan gelombang fibrilasi/fibrillatory waves), respons ventrikel ireguler (irregularly irregular), interval R-R bervariasi, HR ±150x/menit.",
+        "temuan": "Irama fibrilasi atrium: gelombang P tidak tampak (digantikan gelombang fibrilasi/fibrillatory waves), respons ventrikel ireguler (irregularly irregular), interval R-R bervariasi, HR ±150x/menit.",
         "signifikan": true,
-        "wajibLapor": true,
         "image": "pnj_ekg.png"
       },
       {
         "id": "pnj_darah_lengkap",
         "nama": "Darah lengkap",
-        "temuan": "",
-        "signifikan": false,
-        "wajibLapor": false,
-        "image": "pnj_darah_lengkap.png"
+        "temuan": "dbn",
+        "signifikan": false
       },
       {
         "id": "pnj_elektrolit_k_na_cl",
         "nama": "Elektrolit (K, Na, Cl)",
-        "temuan": "",
-        "signifikan": false,
-        "wajibLapor": false,
-        "image": "pnj_elektrolit_k_na_cl.png"
+        "temuan": "dbn",
+        "signifikan": false
       },
       {
         "id": "pnj_fungsi_tiroid",
         "nama": "Fungsi Tiroid",
-        "temuan": "",
-        "signifikan": false,
-        "wajibLapor": false,
-        "image": "pnj_fungsi_tiroid.png"
+        "temuan": "dbn",
+        "signifikan": false
       }
     ],
     "defaultNormal": {
@@ -156,6 +138,10 @@
     {
       "opsi": "R/ Warfarin tab mg 2 No. XXX s.1.d.d tab. I",
       "benar": true
+    },
+    {
+      "opsi": "Kardioversi tanpa evaluasi terlebih dahulu",
+      "benar": false
     }
   ],
   "edukasi": [
@@ -183,5 +169,6 @@
       "opsi": "Segera ke IGD kalau ada tanda perburukan",
       "benar": true
     }
-  ]
+  ],
+  "skenarioAwal": "Seorang pasien 43 tahun, datang ke poli dengan keluhan dada berdebar."
 }

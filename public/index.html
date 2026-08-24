@@ -671,10 +671,14 @@
         panel.classList.add("show");
         syncSwitch();
         renderLog();
+        if (window.__onDevModeChange) window.__onDevModeChange();
       }
       function hidePanel() {
         panel.classList.remove("show");
         syncSwitch();
+        // __devModeOn deliberately stays true here — closing the log panel
+        // isn't "locking" dev mode again (that needs a page reload), it's
+        // still unlocked for the session; only the panel itself hides.
       }
 
       function toggleFromSettings() {

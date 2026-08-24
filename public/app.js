@@ -158,6 +158,20 @@ async function showLanding() {
       <button class="btn" id="startBtn">Mulai →</button>
     </div>
     <p class="muted" id="warnMsg" style="margin-top:10px; display:none; color:var(--red);">Pilih minimal satu kategori.</p>
+
+    <div class="card" id="devCasePicker" style="display:none; margin-top:22px;">
+      <h3 style="font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; margin-bottom:10px; color:var(--muted);">Dev Mode — Pilih Kasus Manual</h3>
+      <div class="row" style="gap:8px; margin-bottom:8px;">
+        <select id="devCatSelect" style="flex:1;">
+          ${cats.map((c) => `<option value="${c}">${STASE_LABELS[c] || c}</option>`).join("")}
+        </select>
+      </div>
+      <div class="row" style="gap:8px; margin-bottom:8px;">
+        <select id="devCaseSelect" style="flex:1;"><option>Memuat...</option></select>
+      </div>
+      <button class="btn secondary" id="devCaseStartBtn" style="width:100%;">Mulai dengan Kasus Ini →</button>
+      <p class="muted" id="devCaseWarn" style="margin-top:8px; display:none; color:var(--red); font-size:0.78rem;"></p>
+    </div>
   `;
   app.querySelectorAll("[data-cat]").forEach((el) =>
     el.addEventListener("click", () => {
@@ -202,6 +216,87 @@ async function showLanding() {
       alert(`Gagal memuat kasus: ${e.message}`);
     }
   });
+
+  // ---- Dev Mode: manual case picker ----
+  // Lets a dev-unlocked user (see DevMode in index.html) skip the random
+  // draw and jump straight into a specific case — handy for checking a
+  // case you just wrote/converted without rerolling until it comes up.
+  // Uses the same client-safe endpoints as the normal flow (GET
+  // /api/cases/:kategori and /:kategori/:id — both already withhold
+  // groundTruth), so there's nothing extra to lock down server-side.
+  const devPicker = document.getElementById("devCasePicker");
+  const devCatSelect = document.getElementById("devCatSelect");
+  const devCaseSelect = document.getElementById("devCaseSelect");
+  const devCaseWarn = document.getElementById("devCaseWarn");
+  let devCaseListCache = {}; // kategori -> stripped case list, so switching back and forth doesn't refetch
+
+  async function loadDevCaseOptions(kategori) {
+    devCaseSelect.innerHTML = `<option>Memuat...</option>`;
+    devCaseWarn.style.display = "none";
+    try {
+      if (!devCaseListCache[kategori]) {
+        devCaseListCache[kategori] = await api(`/cases/${kategori}`);
+      }
+      const list = devCaseListCache[kategori];
+      if (list.length === 0) {
+        devCaseSelect.innerHTML = `<option value="">(tidak ada kasus)</option>`;
+        return;
+      }
+      devCaseSelect.innerHTML = list
+        .map((c) => `<option value="${c.id}">${c.id} — ${c.judulKasus || c.nama || "(tanpa judul)"}${c.level ? ` [${c.level}]` : ""}</option>`)
+        .join("");
+    } catch (e) {
+      devCaseSelect.innerHTML = `<option value="">(gagal memuat)</option>`;
+      devCaseWarn.textContent = `Gagal memuat daftar kasus: ${e.message}`;
+      devCaseWarn.style.display = "block";
+    }
+  }
+
+  devCatSelect.addEventListener("change", () => loadDevCaseOptions(devCatSelect.value));
+
+  document.getElementById("devCaseStartBtn").addEventListener("click", async () => {
+    const kategori = devCatSelect.value;
+    const id = devCaseSelect.value;
+    if (!kategori || !id) {
+      devCaseWarn.textContent = "Pilih kategori dan kasus dulu.";
+      devCaseWarn.style.display = "block";
+      return;
+    }
+    const btn = document.getElementById("devCaseStartBtn");
+    btn.disabled = true;
+    btn.textContent = "Menyiapkan kasus...";
+    try {
+      const kasus = await api(`/cases/${kategori}/${id}`);
+      resetState(kasus);
+      if (state.ddMaster.length === 0) {
+        state.ddMaster = await api("/cases/dd-master");
+      }
+      if (!state.ddMasterGrouped) {
+        state.ddMasterGrouped = await api("/cases/dd-master-grouped");
+      }
+      renderSession();
+    } catch (e) {
+      btn.disabled = false;
+      btn.textContent = "Mulai dengan Kasus Ini →";
+      devCaseWarn.textContent = `Gagal memuat kasus: ${e.message}`;
+      devCaseWarn.style.display = "block";
+    }
+  });
+
+  function syncDevCasePicker() {
+    if (!devPicker) return;
+    const on = !!window.__devModeOn;
+    devPicker.style.display = on ? "block" : "none";
+    if (on && devCaseSelect.dataset.loaded !== "1") {
+      devCaseSelect.dataset.loaded = "1";
+      loadDevCaseOptions(devCatSelect.value);
+    }
+  }
+  syncDevCasePicker();
+  // DevMode (in index.html) calls this whenever the panel is unlocked/toggled
+  // while the landing screen happens to be showing, so the picker can appear
+  // without the user having to navigate away and back.
+  window.__onDevModeChange = syncDevCasePicker;
 }
 
 // ---------- SESSION SHELL ----------
