@@ -29,11 +29,11 @@
         "wajibLapor": false
       },
       {
-        "id": "pf_status_dermatologis",
-        "nama": "Status Dermatologis",
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
         "temuan": "papul dan vesikel kecil (1-2 mm) eritematosa multipel di regio colli, dorsum, dan dada, terutama pada area lipatan dan tertutup pakaian",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": true
       },
       {
         "id": "pf_tanda_vital",

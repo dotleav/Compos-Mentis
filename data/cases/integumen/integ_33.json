@@ -29,11 +29,11 @@
         "wajibLapor": false
       },
       {
-        "id": "pf_status_dermatologis",
-        "nama": "Status Dermatologis",
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
         "temuan": "kulit kering (xerosis) generalisata, plak likenifikasi dengan eritema ringan dan ekskoriasi di fossa cubiti dan fossa poplitea bilateral",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": true
       },
       {
         "id": "pf_dennie-morgan_fold_lipatan_infraorbital_",

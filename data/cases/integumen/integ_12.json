@@ -36,11 +36,12 @@
         "wajibLapor": false
       },
       {
-        "id": "pf_status_dermatologis",
-        "nama": "Status Dermatologis",
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
         "temuan": "plak eritematosa, edema, hangat pada perabaan, dengan batas tegas dan sedikit meninggi (peau d'orange) di regio cruris dekstra",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": true,
+        "image": "pf_status_dermatologisujud_kelainan_kulit_u.png"
       },
       {
         "id": "pf_gula_darah_sewaktu",
@@ -63,13 +64,6 @@
         "nama": "Gula Darah Sewaktu",
         "temuan": "210 mg/dL",
         "signifikan": true,
-        "wajibLapor": false
-      },
-      {
-        "id": "pnj_leukosit_bila_tersedia_point-of-care",
-        "nama": "Leukosit (bila tersedia point-of-care)",
-        "temuan": "leukositosis ringan",
-        "signifikan": false,
         "wajibLapor": false
       }
     ],

@@ -47,7 +47,7 @@
       {
         "id": "pnj_tes_serologi_treponemal_tphatppa",
         "nama": "Tes serologi treponemal (TPHA/TPPA)",
-        "temuan": "reaktif (konfirmasi)",
+        "temuan": "reaktif",
         "signifikan": false,
         "wajibLapor": false
       },

@@ -36,9 +36,17 @@
         "wajibLapor": false
       },
       {
-        "id": "pf_status_dermatologis",
-        "nama": "Status Dermatologis",
-        "temuan": "ulkus dengan tepi bergaung (undermined), dasar granulasi, disertai sinus yang mengeluarkan cairan seropurulen, di regio colli sinistra *Pembesaran KGB colli multipel, konsistensi kenyal, sebagian saling melekat (matted)",
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "ulkus dengan tepi bergaung (undermined), dasar granulasi, disertai sinus yang mengeluarkan cairan seropurulen, di regio colli sinistra.",
+        "signifikan": true,
+        "wajibLapor": true,
+        "image": "pf_status_dermatologisujud_kelainan_kulit_u.png"
+      },
+      {
+        "id": "pf_palpasi_kelenjar_getah_bening",
+        "nama": "Palpasi kelenjar getah bening",
+        "temuan": "Pembesaran KGB colli multipel, konsistensi kenyal, sebagian saling melekat (matted)",
         "signifikan": true,
         "wajibLapor": false
       }
@@ -54,16 +62,18 @@
       {
         "id": "pnj_foto_toraks",
         "nama": "Foto toraks",
-        "temuan": "dapat ditemukan gambaran TB paru primer/lesi lama",
+        "temuan": "gambaran TB paru primer/lesi lama",
         "signifikan": false,
-        "wajibLapor": false
+        "wajibLapor": true,
+        "image": "pnj_foto_toraks.png"
       },
       {
         "id": "pnj_bta_sputumpus",
         "nama": "BTA sputum/pus",
         "temuan": "dapat ditemukan BTA positif",
         "signifikan": false,
-        "wajibLapor": false
+        "wajibLapor": true,
+        "image": "pnj_bta_sputumpus.png"
       }
     ],
     "defaultNormal": {

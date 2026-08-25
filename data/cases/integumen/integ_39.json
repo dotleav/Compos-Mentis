@@ -29,11 +29,11 @@
         "wajibLapor": false
       },
       {
-        "id": "pf_status_dermatologis",
-        "nama": "Status Dermatologis",
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
         "temuan": "nodul inflamasi nyeri berulang, sebagian disertai sinus/abses yang mengeluarkan pus, serta jaringan parut (skar) dari lesi sebelumnya, di regio aksila bilateral",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": true
       },
       {
         "id": "pf_komedo_ganda_double_comedones",

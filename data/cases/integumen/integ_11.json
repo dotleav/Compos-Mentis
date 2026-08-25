@@ -29,25 +29,26 @@
         "wajibLapor": false
       },
       {
-        "id": "pf_status_dermatologis",
-        "nama": "Status Dermatologis",
-        "temuan": "patch eritematosa kecoklatan, berbatas tegas, dengan skuama halus di regio inguinal bilateral",
-        "signifikan": true,
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
         "wajibLapor": false
       },
       {
-        "id": "pf_pemeriksaan_lampu_wood",
-        "nama": "Pemeriksaan lampu Wood",
-        "temuan": "fluoresensi merah bata (coral red)",
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "patch eritematosa kecoklatan, berbatas tegas, dengan skuama halus di regio inguinal bilateral",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": true,
+        "image": "pf_status_dermatologisujud_kelainan_kulit_u.png"
       }
     ],
     "penunjang": [
       {
         "id": "pnj_pemeriksaan_lampu_wood",
         "nama": "Pemeriksaan lampu Wood",
-        "temuan": "fluoresensi merah bata (coral red) khas Corynebacterium minutissimum",
+        "temuan": "fluoresensi merah bata (coral red)",
         "signifikan": true,
         "wajibLapor": false
       }

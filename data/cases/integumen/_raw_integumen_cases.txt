@@ -58,7 +58,9 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik, tidak tampak sakit
 
-*Status Dermatologis: papul verukosa multipel, permukaan kasar/hiperkeratotik, warna sesuai kulit hingga keabuan, batas tegas, di dorsum digiti II-III manus dekstra
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul verukosa multipel, permukaan kasar/hiperkeratotik, warna sesuai kulit hingga keabuan, batas tegas, di dorsum digiti II-IV manus dekstra
+
+
 
 Tanda vital: dalam batas normal
 
@@ -164,7 +166,9 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: papul multipel bentuk kubah, mengkilat, dengan umbilikasi sentral, ukuran 2-5 mm, tersebar di regio abdomen dan lengan atas
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul multipel bentuk kubah, mengkilat, dengan umbilikasi sentral, ukuran 2-5 mm, tersebar di regio abdomen dan lengan atas
+
+
 
 Tanda vital: dalam batas normal
 
@@ -270,7 +274,9 @@ Keadaan umum: tampak sakit ringan, kesadaran compos mentis
 
 Tanda vital: suhu 37,8°C, lainnya dalam batas normal
 
-*Status Dermatologis: vesikel berkelompok di atas dasar eritema, tersusun sesuai dermatom torakal unilateral (setinggi Th10 kanan), tidak melewati garis tengah tubuh
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): vesikel berkelompok di atas dasar eritema, tersusun sesuai dermatom torakal unilateral (setinggi Th10 kanan), tidak melewati garis tengah tubuh
+
+
 
 Nyeri tekan pada area lesi: ada
 
@@ -384,7 +390,9 @@ Tanda vital: suhu 38,9°C, lainnya dalam batas normal
 
 *Rongga mulut: bercak Koplik (bintik putih keabuan dasar eritema di mukosa bukal)
 
-*Status Dermatologis: ruam makulopapular eritematosa generalisata, dimulai dari belakang telinga dan wajah, menyebar sentrifugal ke badan dan ekstremitas
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): ruam makulopapular eritematosa generalisata, dimulai dari belakang telinga dan wajah, menyebar sentrifugal ke badan dan ekstremitas
+
+
 
 Pemeriksaan Penunjang
 
@@ -492,7 +500,9 @@ Keadaan umum: tampak sakit ringan
 
 Tanda vital: suhu 37,9°C, lainnya dalam batas normal
 
-*Status Dermatologis: lesi polimorfik (makula, papul, vesikel, dan krusta dalam berbagai stadium sekaligus/'tear drop') tersebar generalisata termasuk kulit kepala, sentripetal (lebih banyak di badan)
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): lesi polimorfik (makula, papul, vesikel, dan krusta dalam berbagai stadium sekaligus/'tear drop') tersebar generalisata termasuk kulit kepala, sentripetal (lebih banyak di badan)
+
+
 
 Pemeriksaan Penunjang
 
@@ -602,7 +612,9 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: vesikel berkelompok di atas dasar eritema di area perioral kiri, sebagian sudah pecah membentuk erosi dan krusta
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): vesikel berkelompok di atas dasar eritema di area perioral, sebagian sudah pecah membentuk erosi dan krusta
+
+
 
 Tanda vital: dalam batas normal
 
@@ -708,7 +720,9 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: erosi dengan krusta tebal berwarna kuning keemasan seperti madu (honey-colored crust) di sekitar nares dan sudut mulut
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): erosi dengan krusta tebal berwarna kuning keemasan seperti madu (honey-colored crust) di sekitar nares dan sudut mulut
+
+
 
 Tanda vital: dalam batas normal
 
@@ -818,7 +832,9 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: ulkus dangkal berbentuk 'punched-out' tertutup krusta tebal berwarna kuning kehijauan, dikelilingi halo eritema, di regio tibia anterior dekstra
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): ulkus dangkal berbentuk 'punched-out' tertutup krusta tebal berwarna kuning kehijauan, dikelilingi halo eritema, di regio tibia anterior dekstra
+
+
 
 Nyeri tekan: ada
 
@@ -928,7 +944,9 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: papul dan pustul multipel miliar dengan dasar eritema di sekitar folikel rambut, tersebar di regio mandibula dan colli
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul dan pustul multipel miliar dengan dasar eritema di sekitar folikel rambut, tersebar di regio mandibula dan colli
+
+
 
 Tanda vital: dalam batas normal
 
@@ -1038,7 +1056,9 @@ Keadaan umum: tampak sakit ringan
 
 Tanda vital: suhu 37,7°C, lainnya dalam batas normal
 
-*Status Dermatologis: nodul eritematosa nyeri tekan dengan fluktuasi di regio nuchal, disertai pustul di puncak
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): nodul eritematosa nyeri tekan dengan fluktuasi di regio nuchal, disertai pustul di puncak
+
+
 
 *Gula Darah Sewaktu: 240 mg/dL
 
@@ -1144,13 +1164,15 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: patch eritematosa kecoklatan, berbatas tegas, dengan skuama halus di regio inguinal bilateral
+Tanda vital: dalam batas normal
 
-*Pemeriksaan lampu Wood: fluoresensi merah bata (coral red)
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): patch eritematosa kecoklatan, berbatas tegas, dengan skuama halus di regio inguinal bilateral
+
+
 
 Pemeriksaan Penunjang
 
-*Pemeriksaan lampu Wood: fluoresensi merah bata (coral red) khas Corynebacterium minutissimum
+*Pemeriksaan lampu Wood: fluoresensi merah bata (coral red)
 
 DD Benar
 
@@ -1252,7 +1274,9 @@ Keadaan umum: tampak sakit sedang
 
 Tanda vital: suhu 38,7°C, TD 130/80 mmHg, nadi 96x/menit
 
-*Status Dermatologis: plak eritematosa, edema, hangat pada perabaan, dengan batas tegas dan sedikit meninggi (peau d'orange) di regio cruris dekstra
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak eritematosa, edema, hangat pada perabaan, dengan batas tegas dan sedikit meninggi (peau d'orange) di regio cruris dekstra
+
+
 
 *Gula Darah Sewaktu: 210 mg/dL
 
@@ -1261,8 +1285,6 @@ Nyeri tekan: ada, disertai limfadenopati inguinal ipsilateral
 Pemeriksaan Penunjang
 
 *Gula Darah Sewaktu: 210 mg/dL
-
-Leukosit (bila tersedia point-of-care): leukositosis ringan
 
 DD Benar
 
@@ -1305,8 +1327,6 @@ Edukasi
 +Rawat dan lindungi luka kecil di kaki agar tidak menjadi pintu masuk infeksi
 
 -Menghentikan antibiotik saat gejala mulai membaik sebelum waktunya
-
-
 
 Kasus 13 — An. Putri, 9 tahun, benjolan di leher yang pecah menjadi luka bernanah
 
@@ -1368,17 +1388,23 @@ Keadaan umum: tampak sakit ringan, gizi kurang
 
 Tanda vital: suhu 37,3°C, lainnya dalam batas normal
 
-*Status Dermatologis: ulkus dengan tepi bergaung (undermined), dasar granulasi, disertai sinus yang mengeluarkan cairan seropurulen, di regio colli sinistra
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): ulkus dengan tepi bergaung (undermined), dasar granulasi, disertai sinus yang mengeluarkan cairan seropurulen, di regio colli sinistra. 
 
-*Pembesaran KGB colli multipel, konsistensi kenyal, sebagian saling melekat (matted)
+
+
+*Palpasi kelenjar getah bening: Pembesaran KGB colli multipel, konsistensi kenyal, sebagian saling melekat (matted)
 
 Pemeriksaan Penunjang
 
 *Uji tuberkulin (Mantoux): indurasi >10 mm (positif)
 
-Foto toraks: dapat ditemukan gambaran TB paru primer/lesi lama
+!Foto toraks: gambaran TB paru primer/lesi lama
 
-BTA sputum/pus: dapat ditemukan BTA positif
+
+
+!BTA sputum/pus: dapat ditemukan BTA positif
+
+
 
 DD Benar
 
@@ -1476,7 +1502,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: makula hipopigmentasi, batas tegas, permukaan kering, di regio brachium sinistra
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): makula hipopigmentasi, batas tegas, permukaan kering, di regio brachium sinistra
 
 *Tes sensibilitas (raba, nyeri, suhu) pada lesi: menurun/hilang
 
@@ -1592,7 +1618,7 @@ Pemeriksaan Penunjang
 
 *Tes serologi non-treponemal (VDRL/RPR): reaktif
 
-Tes serologi treponemal (TPHA/TPPA): reaktif (konfirmasi)
+Tes serologi treponemal (TPHA/TPPA): reaktif
 
 Mikroskop lapangan gelap dari dasar ulkus: dapat ditemukan Treponema pallidum
 
@@ -1696,7 +1722,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: patch alopesia dengan skuama, terdapat rambut yang patah setinggi permukaan kulit ('black dot'), di region parietal
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): patch alopesia dengan skuama, terdapat rambut yang patah setinggi permukaan kulit ('black dot'), di region parietal
 
 *Pemeriksaan lampu Wood: dapat berfluoresensi hijau kekuningan (tergantung spesies jamur)
 
@@ -1804,7 +1830,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: plak eritematosa berbatas tegas dengan skuama dan pustul folikular di area jenggot, disertai rambut yang mudah patah/rontok
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak eritematosa berbatas tegas dengan skuama dan pustul folikular di area jenggot, disertai rambut yang mudah patah/rontok
 
 Tanda vital: dalam batas normal
 
@@ -1910,7 +1936,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: plak anular eritematosa dengan tepi aktif meninggi berskuama dan central healing, di regio genae dekstra
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak anular eritematosa dengan tepi aktif meninggi berskuama dan central healing, di regio genae dekstra
 
 Tanda vital: dalam batas normal
 
@@ -2016,7 +2042,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: plak anular eritematosa dengan tepi aktif meninggi berskuama dan central clearing, multipel, di regio dorsum
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak anular eritematosa dengan tepi aktif meninggi berskuama dan central clearing, multipel, di regio dorsum
 
 Tanda vital: dalam batas normal
 
@@ -2122,7 +2148,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: hiperkeratosis dan skuama difus dengan aksentuasi garis kulit (skin lines) pada telapak tangan kanan, unilateral
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): hiperkeratosis dan skuama difus dengan aksentuasi garis kulit (skin lines) pada telapak tangan kanan, unilateral
 
 Tanda vital: dalam batas normal
 
@@ -2228,7 +2254,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: kuku hallux pedis dekstra menebal (hiperkeratosis subungual), rapuh, diskolorasi kuning kecoklatan, distrofik
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): kuku hallux pedis dekstra menebal (hiperkeratosis subungual), rapuh, diskolorasi kuning kecoklatan, distrofik
 
 Sela jari kaki: tampak maserasi ringan
 
@@ -2332,7 +2358,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: plak eritematosa dengan tepi aktif meninggi berskuama dan central clearing di regio inguinal bilateral meluas ke paha medial
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak eritematosa dengan tepi aktif meninggi berskuama dan central clearing di regio inguinal bilateral meluas ke paha medial
 
 Skrotum: tidak terlibat
 
@@ -2438,7 +2464,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: maserasi, skuama, dan fisura pada sela jari kaki III-IV bilateral, disertai eritema ringan
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): maserasi, skuama, dan fisura pada sela jari kaki III-IV bilateral, disertai eritema ringan
 
 Bau kaki (bromhidrosis): ada
 
@@ -2544,7 +2570,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: makula hipopigmentasi multipel, bulat-lonjong, dengan skuama halus (fine scale/collarette sign saat digores kuku), di regio punggung dan dada
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): makula hipopigmentasi multipel, bulat-lonjong, dengan skuama halus (fine scale/collarette sign saat digores kuku), di regio punggung dan dada
 
 *Pemeriksaan lampu Wood: fluoresensi kuning keemasan (golden yellow)
 
@@ -2656,7 +2682,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: plak eritematosa basah, berbatas tegas, dikelilingi papul-pustul satelit di sekitar lesi utama, di regio inframammae bilateral
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak eritematosa basah, berbatas tegas, dikelilingi papul-pustul satelit di sekitar lesi utama, di regio inframammae bilateral
 
 *Gula Darah Sewaktu: 260 mg/dL
 
@@ -2762,7 +2788,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: lesi berupa terowongan (burrow) linear serpiginosa, eritematosa, sedikit meninggi, di plantar pedis dekstra
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): lesi berupa terowongan (burrow) linear serpiginosa, eritematosa, sedikit meninggi, di plantar pedis dekstra
 
 Tanda vital: dalam batas normal
 
@@ -2984,7 +3010,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: ditemukan kutu (Pediculus humanus capitis) dan telur (nits) berwarna putih melekat kuat pada batang rambut, terutama di regio oksipital dan retroaurikular
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): ditemukan kutu (Pediculus humanus capitis) dan telur (nits) berwarna putih melekat kuat pada batang rambut, terutama di regio oksipital dan retroaurikular
 
 Terdapat ekskoriasi akibat garukan
 
@@ -3192,7 +3218,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: papul dan vesikel multipel disertai terowongan (kunikulus) berkelok halus, di sela-sela jari tangan, pergelangan tangan volar, dan periumbilikal
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul dan vesikel multipel disertai terowongan (kunikulus) berkelok halus, di sela-sela jari tangan, pergelangan tangan volar, dan periumbilikal
 
 Ekskoriasi akibat garukan: banyak
 
@@ -3300,7 +3326,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: papul urtika multipel dengan punctum sentral (bekas gigitan) di regio cruris bilateral, disertai eritema di sekitarnya
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul urtika multipel dengan punctum sentral (bekas gigitan) di regio cruris bilateral, disertai eritema di sekitarnya
 
 Tanda vital: dalam batas normal
 
@@ -3406,7 +3432,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: eritema, skuama, dan fisura pada kedua telapak tangan dan sela jari, batas tidak tegas, tanpa vesikel
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): eritema, skuama, dan fisura pada kedua telapak tangan dan sela jari, batas tidak tegas, tanpa vesikel
 
 Tanda vital: dalam batas normal
 
@@ -3514,7 +3540,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: kulit kering (xerosis) generalisata, plak likenifikasi dengan eritema ringan dan ekskoriasi di fossa cubiti dan fossa poplitea bilateral
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): kulit kering (xerosis) generalisata, plak likenifikasi dengan eritema ringan dan ekskoriasi di fossa cubiti dan fossa poplitea bilateral
 
 Dennie-Morgan fold (lipatan infraorbital ganda): ada
 
@@ -3626,7 +3652,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: plak berbentuk koin (numular), berbatas tegas, eritematosa dengan vesikel-papul dan eksudasi/krusta di permukaan, dikelilingi kulit kering, di regio pretibial dekstra
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak berbentuk koin (numular), berbatas tegas, eritematosa dengan vesikel-papul dan eksudasi/krusta di permukaan, dikelilingi kulit kering, di regio pretibial dekstra
 
 Tanda vital: dalam batas normal
 
@@ -3738,7 +3764,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: aktif, rewel bila area popok disentuh
 
-*Status Dermatologis: eritema konfluens pada area yang kontak langsung dengan popok (bokong, paha bagian dalam, area genital), dengan sedikit erosi, cekungan lipatan kulit relatif tidak terkena
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): eritema konfluens pada area yang kontak langsung dengan popok (bokong, paha bagian dalam, area genital), dengan sedikit erosi, cekungan lipatan kulit relatif tidak terkena
 
 Tanda vital: dalam batas normal
 
@@ -3844,7 +3870,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: skuama kekuningan berminyak di atas dasar eritema pada kulit kepala, glabela, alis, dan lipat nasolabial
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): skuama kekuningan berminyak di atas dasar eritema pada kulit kepala, glabela, alis, dan lipat nasolabial
 
 Tanda vital: dalam batas normal
 
@@ -3950,7 +3976,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: herald patch (plak oval soliter dengan skuama collarette) di regio dada, diikuti lesi-lesi lebih kecil serupa tersebar mengikuti garis lipatan kulit (Christmas tree pattern) di badan
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): herald patch (plak oval soliter dengan skuama collarette) di regio dada, diikuti lesi-lesi lebih kecil serupa tersebar mengikuti garis lipatan kulit (Christmas tree pattern) di badan
 
 Tanda vital: dalam batas normal
 
@@ -4054,7 +4080,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: komedo terbuka dan tertutup, beberapa papul dan pustul kecil, jumlah <20 lesi, tanpa nodul/kista, di regio frontal, nasal, dan malar
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): komedo terbuka dan tertutup, beberapa papul dan pustul kecil, jumlah <20 lesi, tanpa nodul/kista, di regio frontal, nasal, dan malar
 
 Skar/jaringan parut: tidak ada
 
@@ -4160,7 +4186,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: nodul inflamasi nyeri berulang, sebagian disertai sinus/abses yang mengeluarkan pus, serta jaringan parut (skar) dari lesi sebelumnya, di regio aksila bilateral
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): nodul inflamasi nyeri berulang, sebagian disertai sinus/abses yang mengeluarkan pus, serta jaringan parut (skar) dari lesi sebelumnya, di regio aksila bilateral
 
 Komedo ganda (double comedones): dapat ditemukan
 
@@ -4266,7 +4292,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: baik
 
-*Status Dermatologis: papul dan pustul kecil eritematosa di sekitar mulut, dagu, dan lipat nasolabial, dengan zona sempit kulit normal di sekitar vermilion bibir (perioral sparing)
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul dan pustul kecil eritematosa di sekitar mulut, dagu, dan lipat nasolabial, dengan zona sempit kulit normal di sekitar vermilion bibir (perioral sparing)
 
 Tanda vital: dalam batas normal
 
@@ -4374,7 +4400,7 @@ Pemeriksaan Fisik
 
 Keadaan umum: aktif, rewel
 
-*Status Dermatologis: papul dan vesikel kecil (1-2 mm) eritematosa multipel di regio colli, dorsum, dan dada, terutama pada area lipatan dan tertutup pakaian
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul dan vesikel kecil (1-2 mm) eritematosa multipel di regio colli, dorsum, dan dada, terutama pada area lipatan dan tertutup pakaian
 
 Tanda vital: dalam batas normal
 
@@ -4478,7 +4504,7 @@ Keadaan umum: baik, tidak tampak sesak
 
 Tanda vital: dalam batas normal, saturasi oksigen 99%
 
-*Status Dermatologis: wheal (urtika) multipel, eritematosa, batas tegas, ukuran bervariasi, tersebar generalisata, sebagian tampak menyatu (konfluens)
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): wheal (urtika) multipel, eritematosa, batas tegas, ukuran bervariasi, tersebar generalisata, sebagian tampak menyatu (konfluens)
 
 Angioedema wajah/bibir/lidah: tidak ada
 
@@ -4590,7 +4616,7 @@ Keadaan umum: baik, tidak tampak sesak
 
 Tanda vital: dalam batas normal
 
-*Status Dermatologis: makula dan papul eritematosa, simetris, konfluens sebagian, tersebar di badan dan ekstremitas atas, tanpa vesikel/bula
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): makula dan papul eritematosa, simetris, konfluens sebagian, tersebar di badan dan ekstremitas atas, tanpa vesikel/bula
 
 !Mukosa mulut dan mata: tidak ditemukan erosi/lesi (menyingkirkan tanda bahaya Stevens-Johnson Syndrome)
 
