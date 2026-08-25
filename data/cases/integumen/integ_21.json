@@ -1,0 +1,109 @@
+{
+  "id": "integ_21",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 21 - Integumen",
+  "judulKasus": "Bp. Rudi, 50 tahun, kuku kaki menebal dan rapuh sejak 1 tahun",
+  "identitas": "Rudi, 50 tahun, Petani",
+  "skenarioAwal": "Seorang laki-laki 50 tahun datang dengan keluhan kuku jempol kaki menebal dan berubah warna.",
+  "keluhanUtama": "Kuku jempol kaki kanan menebal, rapuh, dan berubah warna kekuningan sejak 1 tahun, perlahan meluas ke kuku lain",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Tidak nyeri",
+        "Kuku mudah rapuh dan terkelupas",
+        "Riwayat tinea pedis berulang"
+      ],
+      "rpd": "Riwayat tinea pedis kronik yang tidak diobati tuntas",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Sering bekerja di sawah tanpa alas kaki tertutup, kaki sering lembap"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "kuku hallux pedis dekstra menebal (hiperkeratosis subungual), rapuh, diskolorasi kuning kecoklatan, distrofik",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_sela_jari_kaki",
+        "nama": "Sela jari kaki",
+        "temuan": "tampak maserasi ringan",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_kerokan_subungual_koh_10-20",
+        "nama": "Kerokan subungual + KOH 10-20%",
+        "temuan": "tampak hifa bersepta",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tinea Unguium (Onikomikosis)",
+    "differensialBenar": [
+      "Tinea unguium",
+      "Onikomikosis kandida",
+      "Psoriasis kuku",
+      "Distrofi kuku traumatik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antijamur oral sistemik (terapi lini utama karena penetrasi topikal ke matriks kuku terbatas)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Terbinafine tab 250 mg No. XC",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I (kuku kaki selama 12 minggu, kuku tangan 6 minggu)",
+      "benar": false
+    },
+    {
+      "opsi": "Obati tinea pedis yang menyertai secara bersamaan",
+      "benar": true
+    },
+    {
+      "opsi": "Terapi cat kuku antijamur (nail lacquer) sebagai monoterapi tanpa obat oral pada kasus luas",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga kaki tetap kering, gunakan alas kaki terbuka/berbahan menyerap keringat",
+      "benar": true
+    },
+    {
+      "opsi": "Terapi memerlukan waktu lama (berbulan-bulan); kuku baru yang sehat tumbuh secara bertahap",
+      "benar": true
+    },
+    {
+      "opsi": "Menghentikan obat oral sebelum masa terapi selesai karena merasa sudah membaik",
+      "benar": false
+    },
+    {
+      "opsi": "Potong kuku yang terinfeksi secara berkala",
+      "benar": true
+    }
+  ]
+}

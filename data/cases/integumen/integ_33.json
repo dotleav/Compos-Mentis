@@ -1,0 +1,117 @@
+{
+  "id": "integ_33",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 33 - Integumen",
+  "judulKasus": "An. Zahra, 4 tahun, kulit kering gatal berulang sejak bayi",
+  "identitas": "Zahra, 4 tahun, Pelajar TK",
+  "skenarioAwal": "Seorang anak perempuan 4 tahun dibawa ibunya dengan keluhan kulit gatal dan kering berulang.",
+  "keluhanUtama": "Kulit gatal dan kering di lipat siku dan lipat lutut sejak bayi, hilang timbul, memberat saat cuaca dingin/kering",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Riwayat keluhan serupa sejak usia 6 bulan",
+        "Riwayat asma dan rinitis alergi pada ayah",
+        "Sering menggaruk hingga kulit menebal"
+      ],
+      "rpd": "Riwayat dermatitis atopik sejak bayi",
+      "rpk": "Ayah memiliki riwayat asma dan rinitis alergi",
+      "lifestyle": [
+        "Sering menggunakan sabun mandi dengan pewangi kuat"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "kulit kering (xerosis) generalisata, plak likenifikasi dengan eritema ringan dan ekskoriasi di fossa cubiti dan fossa poplitea bilateral",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_dennie-morgan_fold_lipatan_infraorbital_",
+        "nama": "Dennie-Morgan fold (lipatan infraorbital ganda)",
+        "temuan": "ada",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Dermatitis Atopik",
+    "differensialBenar": [
+      "Dermatitis atopik",
+      "Dermatitis kontak",
+      "Dermatitis numularis",
+      "Skabies"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Emolien digunakan rutin setiap hari sebagai dasar terapi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cetaphil moisturizing cream tube 100 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2-3 dd applic loc dol (seluruh tubuh, terutama setelah mandi)",
+      "benar": false
+    },
+    {
+      "opsi": "Kortikosteroid topikal potensi ringan saat fase aktif/flare",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Hydrocortisone cream 1% tube 10 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol pada lesi aktif (maksimal 1-2 minggu)",
+      "benar": false
+    },
+    {
+      "opsi": "Antihistamin bila gatal mengganggu tidur",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cetirizine syrup 5 mg/5 ml fl No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd Cth I malam hari",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Mandi dengan air hangat suam-suam kuku, gunakan sabun lembut tanpa pewangi, dan oleskan pelembap segera setelah mandi (dalam 3 menit)",
+      "benar": true
+    },
+    {
+      "opsi": "Kenali dan hindari faktor pencetus (udara kering, wol, keringat berlebih, stres)",
+      "benar": true
+    },
+    {
+      "opsi": "Menggaruk lesi hingga luka (dapat menyebabkan infeksi sekunder)",
+      "benar": false
+    },
+    {
+      "opsi": "Mandi dengan air panas dan sabun antiseptik/berpewangi kuat",
+      "benar": false
+    }
+  ]
+}

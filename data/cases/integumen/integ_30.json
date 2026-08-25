@@ -1,0 +1,109 @@
+{
+  "id": "integ_30",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 30 - Integumen",
+  "judulKasus": "An. Rafi, 12 tahun, gatal hebat malam hari di sela jari tangan",
+  "identitas": "Rafi, 12 tahun, Santri di pondok pesantren",
+  "skenarioAwal": "Seorang anak laki-laki 12 tahun, santri pondok pesantren, datang dengan keluhan gatal hebat di sela jari.",
+  "keluhanUtama": "Gatal hebat terutama malam hari di sela jari tangan, pergelangan tangan, dan perut sejak 3 minggu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Gatal dirasakan memberat malam hari sehingga mengganggu tidur",
+        "Beberapa teman sekamar di asrama memiliki keluhan serupa",
+        "Muncul bintil-bintil kecil di area gatal"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit kronis sebelumnya",
+      "rpk": "Tidak ada anggota keluarga di rumah dengan keluhan serupa",
+      "lifestyle": [
+        "Tinggal di asrama padat penghuni, berbagi handuk dan sarung dengan teman"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "papul dan vesikel multipel disertai terowongan (kunikulus) berkelok halus, di sela-sela jari tangan, pergelangan tangan volar, dan periumbilikal",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ekskoriasi_akibat_garukan",
+        "nama": "Ekskoriasi akibat garukan",
+        "temuan": "banyak",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Skabies",
+    "differensialBenar": [
+      "Skabies",
+      "Pedikulosis korporis",
+      "Dermatitis atopik",
+      "Reaksi gigitan serangga"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Permetrin krim sebagai lini pertama",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Permethrin 5% cream tube 30 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S ue, oleskan ke seluruh tubuh dari leher ke bawah (termasuk sela jari dan lipatan), diamkan 8-12 jam (semalam), bilas, ulangi setelah 1 minggu",
+      "benar": false
+    },
+    {
+      "opsi": "Antihistamin oral untuk mengurangi gatal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cetirizine tab 10 mg No. X",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I",
+      "benar": false
+    },
+    {
+      "opsi": "Obati seluruh kontak serumah/seasrama secara bersamaan meski tanpa gejala",
+      "benar": true
+    },
+    {
+      "opsi": "Mengobati hanya pasien tanpa mengobati kontak erat (menyebabkan reinfeksi berulang)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Cuci seluruh pakaian, sprei, dan handuk dengan air panas serta jemur di bawah sinar matahari",
+      "benar": true
+    },
+    {
+      "opsi": "Gatal dapat menetap 2-4 minggu setelah terapi berhasil akibat reaksi alergi terhadap tungau mati, bukan berarti terapi gagal",
+      "benar": true
+    },
+    {
+      "opsi": "Berbagi handuk, sarung, atau pakaian dengan teman satu kamar",
+      "benar": false
+    }
+  ]
+}

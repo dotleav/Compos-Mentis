@@ -1,0 +1,120 @@
+{
+  "id": "integ_10",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 10 - Integumen",
+  "judulKasus": "Bp. Joko, 40 tahun, benjolan nyeri bernanah di leher belakang",
+  "identitas": "Joko, 40 tahun, Sopir",
+  "skenarioAwal": "Seorang laki-laki 40 tahun datang dengan keluhan benjolan nyeri di leher belakang yang membesar.",
+  "keluhanUtama": "Benjolan merah nyeri di leher belakang sejak 5 hari, semakin membesar dan berisi nanah",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Benjolan awalnya kecil dan keras, lama-kelamaan melunak di tengah",
+        "Demam ringan",
+        "Nyeri bertambah saat leher digerakkan"
+      ],
+      "rpd": "Riwayat diabetes melitus tipe 2 tidak terkontrol",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Jarang mengganti pakaian saat berkeringat karena sering mengemudi jarak jauh"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "tampak sakit ringan",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "suhu 37,7°C, lainnya dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "nodul eritematosa nyeri tekan dengan fluktuasi di regio nuchal, disertai pustul di puncak",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_gula_darah_sewaktu",
+        "nama": "Gula Darah Sewaktu",
+        "temuan": "240 mg/dL",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula Darah Sewaktu",
+        "temuan": "240 mg/dL (mendukung kecurigaan DM tidak terkontrol sebagai faktor predisposisi)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Furunkel",
+    "differensialBenar": [
+      "Furunkel",
+      "Karbunkel",
+      "Kista epidermal terinfeksi",
+      "Hidradenitis supurativa"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Insisi dan drainase bila sudah fluktuatif",
+      "benar": true
+    },
+    {
+      "opsi": "Antibiotik oral sistemik",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cephalexin tab 500 mg No. XX",
+      "benar": false
+    },
+    {
+      "opsi": "S 4 dd tab I (selama 5-7 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Kompres hangat untuk mempercepat maturasi lesi",
+      "benar": true
+    },
+    {
+      "opsi": "Rujuk untuk evaluasi dan tatalaksana DM yang mendasari",
+      "benar": true
+    },
+    {
+      "opsi": "Memencet lesi sebelum matang/fluktuatif",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga kebersihan kulit dan segera obati luka kecil untuk mencegah infeksi",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol gula darah secara rutin karena DM meningkatkan risiko infeksi kulit berulang",
+      "benar": true
+    },
+    {
+      "opsi": "Memencet sendiri benjolan di rumah",
+      "benar": false
+    }
+  ]
+}

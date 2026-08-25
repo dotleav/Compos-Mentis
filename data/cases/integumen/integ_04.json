@@ -1,0 +1,123 @@
+{
+  "id": "integ_04",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 4 - Integumen",
+  "judulKasus": "An. Dimas, 5 tahun, demam dan ruam kemerahan di seluruh tubuh",
+  "identitas": "Dimas, 5 tahun, Pelajar TK",
+  "skenarioAwal": "Seorang anak laki-laki 5 tahun dibawa orang tuanya dengan keluhan demam tinggi disertai ruam kemerahan.",
+  "keluhanUtama": "Demam tinggi sejak 4 hari, diikuti ruam kemerahan yang dimulai dari wajah lalu menyebar ke tubuh sejak 1 hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Batuk pilek dan mata merah berair sejak awal demam",
+        "Ruam dimulai dari belakang telinga dan wajah lalu menyebar ke badan dan ekstremitas",
+        "Tidak ada riwayat imunisasi campak"
+      ],
+      "rpd": "Tidak ada riwayat penyakit serupa sebelumnya",
+      "rpk": "Ada teman sekolah dengan keluhan serupa 2 minggu lalu",
+      "lifestyle": [
+        "Belum mendapat imunisasi MR/campak lengkap"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "tampak sakit sedang, kesadaran compos mentis",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "suhu 38,9°C, lainnya dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_generalis",
+        "nama": "Status Generalis",
+        "temuan": "konjungtivitis, koriza",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_rongga_mulut",
+        "nama": "Rongga mulut",
+        "temuan": "bercak Koplik (bintik putih keabuan dasar eritema di mukosa bukal)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "ruam makulopapular eritematosa generalisata, dimulai dari belakang telinga dan wajah, menyebar sentrifugal ke badan dan ekstremitas",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Morbili (Campak) Tanpa Komplikasi",
+    "differensialBenar": [
+      "Morbili",
+      "Rubella",
+      "Eksantema virus lain (roseola, demam skarlatina)",
+      "Reaksi alergi obat"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Terapi suportif, tidak ada antivirus spesifik",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Paracetamol syrup 120 mg/5 ml fl No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 3-4 dd Cth I prn demam",
+      "benar": false
+    },
+    {
+      "opsi": "Suplementasi vitamin A sesuai usia untuk mengurangi risiko komplikasi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Vitamin A kapsul 200.000 IU No. II",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd kapsul I (hari 1 dan hari 2)",
+      "benar": false
+    },
+    {
+      "opsi": "Cukupi asupan cairan dan istirahat",
+      "benar": true
+    },
+    {
+      "opsi": "Pemberian antibiotik rutin tanpa tanda infeksi bakteri sekunder",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Isolasi di rumah selama masa penularan (4 hari sebelum sampai 4 hari sesudah ruam muncul)",
+      "benar": true
+    },
+    {
+      "opsi": "Segera kontrol bila timbul sesak napas, kejang, atau penurunan kesadaran (tanda komplikasi)",
+      "benar": true
+    },
+    {
+      "opsi": "Tetap masuk sekolah selama masih demam dan berruam",
+      "benar": false
+    }
+  ]
+}

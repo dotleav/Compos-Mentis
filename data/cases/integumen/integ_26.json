@@ -1,0 +1,105 @@
+{
+  "id": "integ_26",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 26 - Integumen",
+  "judulKasus": "An. Doni, 7 tahun, garis merah berkelok gatal hebat di telapak kaki",
+  "identitas": "Doni, 7 tahun, Pelajar SD",
+  "skenarioAwal": "Seorang anak laki-laki 7 tahun dibawa ibunya dengan keluhan garis kemerahan berkelok yang sangat gatal di kaki.",
+  "keluhanUtama": "Muncul garis kemerahan berkelok-kelok di telapak kaki kanan sejak 5 hari, sangat gatal terutama malam hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Garis merah tampak bergerak/memanjang setiap hari",
+        "Riwayat bermain di pasir pantai tanpa alas kaki 1 minggu lalu",
+        "Tidak demam"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Sering bermain di tanah/pasir tanpa alas kaki"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "lesi berupa terowongan (burrow) linear serpiginosa, eritematosa, sedikit meninggi, di plantar pedis dekstra",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Cutaneous Larva Migrans",
+    "differensialBenar": [
+      "Cutaneous larva migrans",
+      "Skabies",
+      "Dermatitis kontak",
+      "Larva currens (strongiloidiasis)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antihelmintik oral",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Albendazole tab 400 mg No. III",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I (selama 3 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Antihistamin untuk mengurangi gatal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cetirizine syrup 5 mg/5 ml fl No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd Cth I",
+      "benar": false
+    },
+    {
+      "opsi": "Membiarkan tanpa terapi menunggu sembuh sendiri (dapat berlangsung berminggu-minggu dan sangat mengganggu)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Selalu gunakan alas kaki saat berjalan di tanah/pasir yang mungkin terkontaminasi tinja hewan",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari duduk/berbaring langsung di pasir pantai tanpa alas",
+      "benar": true
+    },
+    {
+      "opsi": "Menggaruk lesi hingga luka terbuka (risiko infeksi sekunder)",
+      "benar": false
+    }
+  ]
+}

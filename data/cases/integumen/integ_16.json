@@ -1,0 +1,120 @@
+{
+  "id": "integ_16",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 16 - Integumen",
+  "judulKasus": "An. Bagas, 8 tahun, rambut rontok berbercak disertai gatal di kulit kepala",
+  "identitas": "Bagas, 8 tahun, Pelajar SD",
+  "skenarioAwal": "Seorang anak laki-laki 8 tahun dibawa ibunya dengan keluhan bercak botak di kepala.",
+  "keluhanUtama": "Muncul bercak botak disertai gatal di kulit kepala sejak 1 bulan, rambut mudah patah di area tersebut",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Gatal terutama saat berkeringat",
+        "Menggunakan sisir bersama dengan sepupu yang punya keluhan serupa",
+        "Tidak demam"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit sebelumnya",
+      "rpk": "Sepupu serumah memiliki keluhan serupa",
+      "lifestyle": [
+        "Sering bertukar topi dan sisir dengan teman"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "patch alopesia dengan skuama, terdapat rambut yang patah setinggi permukaan kulit ('black dot'), di region parietal",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_pemeriksaan_lampu_wood",
+        "nama": "Pemeriksaan lampu Wood",
+        "temuan": "dapat berfluoresensi hijau kekuningan (tergantung spesies jamur)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_pembesaran_kgb_oksipital",
+        "nama": "Pembesaran KGB oksipital",
+        "temuan": "dapat ditemukan",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_kerokan_kulit_kepala_koh_10-20",
+        "nama": "Kerokan kulit kepala + KOH 10-20%",
+        "temuan": "tampak hifa dan/atau spora pada batang rambut",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tinea Kapitis",
+    "differensialBenar": [
+      "Tinea kapitis",
+      "Alopesia areata",
+      "Dermatitis seboroik kapitis",
+      "Trikotilomania"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antijamur oral sistemik (terapi topikal tidak adekuat karena jamur menginfeksi folikel rambut)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Griseofulvin tab 500 mg No. XXX (dosis anak 15-20 mg/kgBB/hari)",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I (selama 4-6 minggu, diminum bersama makanan berlemak)",
+      "benar": false
+    },
+    {
+      "opsi": "Shampoo antijamur sebagai terapi tambahan",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Ketoconazole shampoo 2% fl 60 ml No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2-3x/minggu, dibiarkan 5 menit sebelum dibilas",
+      "benar": false
+    },
+    {
+      "opsi": "Terapi topikal (krim antijamur) saja tanpa obat oral",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jangan berbagi sisir, topi, bantal, atau handuk dengan orang lain selama masih terinfeksi",
+      "benar": true
+    },
+    {
+      "opsi": "Obati juga sumber penularan (hewan peliharaan atau anggota keluarga yang terinfeksi) bila ada",
+      "benar": true
+    },
+    {
+      "opsi": "Menghentikan obat begitu rambut mulai tumbuh sebelum 4-6 minggu",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "integ_08",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 8 - Integumen",
+  "judulKasus": "Bp. Yanto, 45 tahun, luka bernanah dan berkrusta tebal di tungkai",
+  "identitas": "Yanto, 45 tahun, Buruh bangunan",
+  "skenarioAwal": "Seorang laki-laki 45 tahun datang dengan keluhan luka di tungkai bawah yang tidak kunjung sembuh.",
+  "keluhanUtama": "Luka di tungkai bawah kanan sejak 2 minggu, awalnya lecet kecil kemudian membesar dan berkrusta tebal",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Riwayat tergores saat bekerja di proyek",
+        "Luka terasa nyeri dan tampak kotor",
+        "Tidak rutin membersihkan luka"
+      ],
+      "rpd": "Tidak ada riwayat diabetes melitus",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Bekerja di lingkungan kurang higienis, jarang memakai alas kaki tertutup"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "ulkus dangkal berbentuk 'punched-out' tertutup krusta tebal berwarna kuning kehijauan, dikelilingi halo eritema, di regio tibia anterior dekstra",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_nyeri_tekan",
+        "nama": "Nyeri tekan",
+        "temuan": "ada",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Impetigo Ulseratif (Ektima)",
+    "differensialBenar": [
+      "Ektima",
+      "Ulkus tropikum",
+      "Ulkus diabetikum",
+      "Pioderma gangrenosum"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antibiotik sistemik karena lesi lebih dalam dari impetigo biasa",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cefadroxil tab 500 mg No. XIV",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd tab I (selama 7 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Bersihkan luka dan angkat krusta secara perlahan, kompres NaCl 0,9%",
+      "benar": true
+    },
+    {
+      "opsi": "Antibiotik topikal setelah krusta terangkat",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Mupirocin cream 2% tube 5 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol",
+      "benar": false
+    },
+    {
+      "opsi": "Menutup luka rapat tanpa dibersihkan terlebih dahulu",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga luka tetap bersih dan kering, gunakan alas kaki tertutup saat bekerja",
+      "benar": true
+    },
+    {
+      "opsi": "Segera kontrol bila luka meluas, demam, atau nanah bertambah banyak",
+      "benar": true
+    },
+    {
+      "opsi": "Membiarkan luka tanpa perawatan",
+      "benar": false
+    }
+  ]
+}

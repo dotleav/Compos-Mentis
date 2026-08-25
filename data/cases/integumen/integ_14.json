@@ -1,0 +1,123 @@
+{
+  "id": "integ_14",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 14 - Integumen",
+  "judulKasus": "Bp. Slamet, 35 tahun, bercak putih baal di lengan sejak 6 bulan",
+  "identitas": "Slamet, 35 tahun, Petani",
+  "skenarioAwal": "Seorang laki-laki 35 tahun datang dengan keluhan bercak putih di lengan yang terasa baal.",
+  "keluhanUtama": "Muncul bercak putih di lengan kiri sejak 6 bulan, tidak gatal namun terasa baal bila disentuh",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bercak tidak nyeri dan tidak gatal",
+        "Area bercak tidak berkeringat dibanding kulit sekitar",
+        "Tidak ada riwayat kontak dengan penderita kusta yang diketahui"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit kronis sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa yang diketahui",
+      "lifestyle": [
+        "Tinggal di daerah endemis kusta"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "makula hipopigmentasi, batas tegas, permukaan kering, di regio brachium sinistra",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tes_sensibilitas_raba_nyeri_suhu_pada_le",
+        "nama": "Tes sensibilitas (raba, nyeri, suhu) pada lesi",
+        "temuan": "menurun/hilang",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_perabaan_saraf_tepi_n_ulnaris_sinistra",
+        "nama": "Perabaan saraf tepi (n. ulnaris sinistra)",
+        "temuan": "penebalan, tidak nyeri tekan",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_kekuatan_motorik_ekstremitas",
+        "nama": "Kekuatan motorik ekstremitas",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_pemeriksaan_bta_kerokan_kulit_skin_smear",
+        "nama": "Pemeriksaan BTA kerokan kulit (skin smear)",
+        "temuan": "untuk menentukan indeks basiler dan klasifikasi PB/MB",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Morbus Hansen (Lepra) tipe Pausibasilar",
+    "differensialBenar": [
+      "Lepra (kusta)",
+      "Pitiriasis versikolor",
+      "Tinea korporis",
+      "Vitiligo"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Multi Drug Therapy (MDT) sesuai klasifikasi PB (Pausibasilar), regimen dewasa 6 blister",
+      "benar": true
+    },
+    {
+      "opsi": "R/ MDT-PB (Rifampisin 600 mg + Dapson 100 mg) blister dewasa No. VI",
+      "benar": false
+    },
+    {
+      "opsi": "S: Rifampisin 600 mg diminum 1x/bulan secara diawasi (dosis pertama di depan petugas), Dapson 100 mg diminum 1x/hari selama 6 bulan",
+      "benar": false
+    },
+    {
+      "opsi": "Pemeriksaan kontak serumah untuk deteksi dini",
+      "benar": true
+    },
+    {
+      "opsi": "Menghentikan pengobatan begitu bercak memudar sebelum 6 bulan selesai",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Lindungi area mati rasa dari trauma, panas, dan benda tajam untuk mencegah luka dan kecacatan",
+      "benar": true
+    },
+    {
+      "opsi": "Minum obat teratur dan tuntas sesuai jadwal untuk mencegah resistensi dan kecacatan",
+      "benar": true
+    },
+    {
+      "opsi": "Mengucilkan diri karena stigma; kusta tidak menular setelah dosis pertama MDT diminum",
+      "benar": false
+    },
+    {
+      "opsi": "Kusta dapat disembuhkan total dengan MDT yang dituntaskan — bukan penyakit yang memalukan atau kutukan",
+      "benar": true
+    }
+  ]
+}

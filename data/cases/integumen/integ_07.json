@@ -1,0 +1,116 @@
+{
+  "id": "integ_07",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 7 - Integumen",
+  "judulKasus": "An. Fajar, 6 tahun, luka berkrusta kekuningan di sekitar hidung dan mulut",
+  "identitas": "Fajar, 6 tahun, Pelajar SD",
+  "skenarioAwal": "Seorang anak laki-laki 6 tahun dibawa ibunya dengan keluhan luka berkrusta di wajah.",
+  "keluhanUtama": "Muncul lepuh kecil di sekitar hidung yang cepat pecah dan mengering menjadi krusta kekuningan sejak 5 hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Awalnya berupa gelembung kecil berisi cairan, mudah pecah",
+        "Sedikit gatal",
+        "Tidak ada demam"
+      ],
+      "rpd": "Riwayat pilek dan sering mengorek hidung",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Kebersihan diri kurang terjaga, jarang cuci tangan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "erosi dengan krusta tebal berwarna kuning keemasan seperti madu (honey-colored crust) di sekitar nares dan sudut mulut",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_pembesaran_kgb_regional",
+        "nama": "Pembesaran KGB regional",
+        "temuan": "tidak ada",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Impetigo Krustosa",
+    "differensialBenar": [
+      "Impetigo",
+      "Herpes simpleks",
+      "Dermatitis perioral",
+      "Tinea fasialis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antibiotik topikal lini pertama untuk lesi terlokalisir",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Mupirocin cream 2% tube 5 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd applic loc dol (oleskan tipis setelah krusta dibersihkan)",
+      "benar": false
+    },
+    {
+      "opsi": "Bila lesi luas/multipel, tambahkan antibiotik oral",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cefadroxil syrup 125 mg/5 ml fl No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd Cth I (selama 7 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Bersihkan krusta dengan kompres NaCl 0,9% sebelum aplikasi salep",
+      "benar": true
+    },
+    {
+      "opsi": "Antibiotik topikal saja pada lesi yang sudah luas dan menyebar",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga kebersihan tangan dan potong kuku untuk mencegah penyebaran (autoinokulasi)",
+      "benar": true
+    },
+    {
+      "opsi": "Gunakan handuk dan alat mandi terpisah dari anggota keluarga lain selama sakit",
+      "benar": true
+    },
+    {
+      "opsi": "Kontak dekat dengan bayi atau anak lain selama lesi masih aktif",
+      "benar": false
+    }
+  ]
+}

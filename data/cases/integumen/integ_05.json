@@ -1,0 +1,117 @@
+{
+  "id": "integ_05",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 5 - Integumen",
+  "judulKasus": "An. Rara, 7 tahun, muncul bintil berair gatal di seluruh tubuh",
+  "identitas": "Rara, 7 tahun, Pelajar SD",
+  "skenarioAwal": "Seorang anak perempuan 7 tahun dibawa ke puskesmas dengan keluhan demam dan bintil berair yang gatal.",
+  "keluhanUtama": "Demam ringan disertai bintil-bintil berisi cairan yang gatal di badan sejak 2 hari, menyebar ke wajah dan tungkai",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bintil muncul bergelombang, ada yang masih berupa bintik merah, ada yang sudah berair, ada yang sudah berkrusta",
+        "Gatal terutama malam hari",
+        "Teman sekelas ada yang cacar air 2 minggu lalu"
+      ],
+      "rpd": "Belum pernah menderita cacar air sebelumnya",
+      "rpk": "Kakak kandung sedang menderita cacar air",
+      "lifestyle": [
+        "Belum imunisasi varisela"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "tampak sakit ringan",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "suhu 37,9°C, lainnya dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "lesi polimorfik (makula, papul, vesikel, dan krusta dalam berbagai stadium sekaligus/'tear drop') tersebar generalisata termasuk kulit kepala, sentripetal (lebih banyak di badan)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Varisela Tanpa Komplikasi",
+    "differensialBenar": [
+      "Varisela",
+      "Herpes zoster diseminata",
+      "Impetigo bulosa",
+      "Reaksi gigitan serangga multipel"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antivirus oral bila datang dalam 24-72 jam onset ruam",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Acyclovir tab 400 mg No. LI",
+      "benar": false
+    },
+    {
+      "opsi": "S 4 dd tab I (selama 7 hari, dosis anak 20 mg/kgBB/kali)",
+      "benar": false
+    },
+    {
+      "opsi": "Antipiretik",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Paracetamol syrup 120 mg/5 ml fl No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 3-4 dd Cth I prn demam",
+      "benar": false
+    },
+    {
+      "opsi": "Losio penenang untuk gatal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Calamine lotion fl No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S ue applic loc dol 3 dd (oleskan tipis pada lesi)",
+      "benar": false
+    },
+    {
+      "opsi": "Pemberian aspirin (berisiko Reye's syndrome pada anak)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Isolasi di rumah sampai seluruh lesi mengering menjadi krusta",
+      "benar": true
+    },
+    {
+      "opsi": "Potong kuku anak dan jaga kebersihan untuk mencegah infeksi sekunder akibat garukan",
+      "benar": true
+    },
+    {
+      "opsi": "Menggaruk lesi hingga pecah",
+      "benar": false
+    }
+  ]
+}

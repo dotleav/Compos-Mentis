@@ -1,0 +1,132 @@
+{
+  "id": "integ_27",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 27 - Integumen",
+  "judulKasus": "Bp. Karto, 48 tahun, kaki bengkak besar sejak 1 tahun disertai demam berulang",
+  "identitas": "Karto, 48 tahun, Petani",
+  "skenarioAwal": "Seorang laki-laki 48 tahun datang dengan keluhan tungkai kiri membengkak semakin besar.",
+  "keluhanUtama": "Tungkai kiri membengkak progresif sejak 1 tahun, disertai episode demam dan nyeri berulang di area selangkangan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bengkak awalnya hilang timbul, kini menetap dan semakin besar",
+        "Demam berulang disertai nyeri di lipat paha (limfadenitis)",
+        "Kulit tungkai menebal dan mengeras"
+      ],
+      "rpd": "Tidak ada riwayat penyakit jantung/ginjal",
+      "rpk": "Tetangga di kampung ada yang mengalami keluhan serupa",
+      "lifestyle": [
+        "Tinggal di daerah endemis filariasis, sering beraktivitas di luar rumah malam hari tanpa kelambu"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik, tampak tungkai membesar",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_lokalis",
+        "nama": "Status Lokalis",
+        "temuan": "limfedema tungkai kiri derajat sedang, kulit menebal dan mengeras (kutis verukosa) pada tahap lanjut *Pembesaran KGB inguinal kiri, nyeri tekan saat episode akut",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal saat pemeriksaan",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_apusan_darah_tebal_malam_hari_untuk_mikr",
+        "nama": "Apusan darah tebal malam hari (untuk mikrofilaria)",
+        "temuan": "dapat ditemukan mikrofilaria",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_rapid_test_antigen_filaria_bila_tersedia",
+        "nama": "Rapid test antigen filaria (bila tersedia)",
+        "temuan": "dapat reaktif",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Filariasis (Limfedema Filaria)",
+    "differensialBenar": [
+      "Filariasis",
+      "Limfedema non-filaria (post-trauma/infeksi lain)",
+      "Deep vein thrombosis kronik",
+      "Selulitis kronik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Program eliminasi filariasis: dietilkarbamazin (DEC) kombinasi albendazole",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Dietilkarbamazin sitrat tab 100 mg No. XXXVI",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd tab I (selama 12 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Albendazole tab 400 mg No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I (dosis tunggal, diminum bersama DEC hari pertama)",
+      "benar": false
+    },
+    {
+      "opsi": "Perawatan limfedema: kebersihan kaki, elevasi tungkai, dan latihan gerak untuk mencegah perburukan",
+      "benar": true
+    },
+    {
+      "opsi": "Antibiotik bila ada tanda infeksi bakteri sekunder/limfadenitis akut",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amoxicillin tab 500 mg No. XV",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd tab I selama 5 hari",
+      "benar": false
+    },
+    {
+      "opsi": "Menunda pengobatan sampai bengkak sangat besar (perawatan dini mencegah kecacatan permanen)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gunakan kelambu saat tidur dan lakukan pemberantasan sarang nyamuk untuk mencegah penularan",
+      "benar": true
+    },
+    {
+      "opsi": "Rawat kaki dengan baik (cuci, keringkan, gunakan alas kaki) untuk mencegah infeksi berulang yang memperburuk limfedema",
+      "benar": true
+    },
+    {
+      "opsi": "Menggaruk atau melukai kulit tungkai yang bengkak",
+      "benar": false
+    }
+  ]
+}

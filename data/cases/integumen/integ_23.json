@@ -1,0 +1,113 @@
+{
+  "id": "integ_23",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 23 - Integumen",
+  "judulKasus": "Bp. Anton, 27 tahun, gatal dan kulit mengelupas di sela jari kaki",
+  "identitas": "Anton, 27 tahun, Anggota TNI",
+  "skenarioAwal": "Seorang laki-laki 27 tahun datang dengan keluhan gatal di sela-sela jari kaki sejak 3 minggu.",
+  "keluhanUtama": "Gatal dan kulit mengelupas di sela jari kaki ke-3 dan ke-4 kedua kaki sejak 3 minggu, kadang basah dan berbau",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Gatal memberat setelah memakai sepatu bot seharian",
+        "Kulit tampak putih maserasi di sela jari",
+        "Sudah 2 tahun rutin memakai sepatu boot tertutup untuk dinas"
+      ],
+      "rpd": "Tidak ada riwayat DM",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Memakai sepatu tertutup dalam waktu lama setiap hari, kaki sering berkeringat"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "maserasi, skuama, dan fisura pada sela jari kaki III-IV bilateral, disertai eritema ringan",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_bau_kaki_bromhidrosis",
+        "nama": "Bau kaki (bromhidrosis)",
+        "temuan": "ada",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_kerokan_kulit_koh_10-20",
+        "nama": "Kerokan kulit + KOH 10-20%",
+        "temuan": "tampak hifa bersepta",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tinea Pedis",
+    "differensialBenar": [
+      "Tinea pedis",
+      "Kandidosis interdigital",
+      "Eritrasma interdigital",
+      "Dermatitis kontak"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antijamur topikal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Miconazole cream 2% tube 10 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol (selama 2-4 minggu)",
+      "benar": false
+    },
+    {
+      "opsi": "R/ Miconazole powder 2% fl 20 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd taburkan pada sela jari dan dalam sepatu",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Keringkan sela jari kaki dengan baik setelah mandi, gunakan kaus kaki katun dan ganti setiap hari",
+      "benar": true
+    },
+    {
+      "opsi": "Bila memungkinkan, gunakan sepatu berventilasi dan hindari sepatu tertutup terus-menerus",
+      "benar": true
+    },
+    {
+      "opsi": "Berjalan tanpa alas kaki di tempat umum lembap (kolam renang, kamar mandi umum)",
+      "benar": false
+    },
+    {
+      "opsi": "Bedak antijamur untuk menjaga kaki tetap kering",
+      "benar": true
+    },
+    {
+      "opsi": "Menggunakan sepatu yang sama tanpa dijemur/dikeringkan selama pengobatan",
+      "benar": false
+    }
+  ]
+}

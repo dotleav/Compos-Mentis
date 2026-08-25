@@ -1,0 +1,123 @@
+{
+  "id": "integ_42",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 42 - Integumen",
+  "judulKasus": "Bu Nita, 26 tahun, bentol-bentol gatal mendadak di seluruh tubuh setelah makan udang",
+  "identitas": "Nita, 26 tahun, Karyawan swasta",
+  "skenarioAwal": "Seorang wanita 26 tahun datang dengan keluhan bentol-bentol gatal mendadak di seluruh tubuh.",
+  "keluhanUtama": "Muncul bentol-bentol kemerahan gatal mendadak di seluruh tubuh sejak 2 jam setelah makan udang",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bentol berpindah-pindah lokasi dan hilang dalam beberapa jam lalu muncul lagi di tempat lain",
+        "Tidak ada sesak napas atau pembengkakan bibir/wajah",
+        "Riwayat alergi makanan laut sebelumnya"
+      ],
+      "rpd": "Riwayat alergi makanan laut (udang) sejak remaja",
+      "rpk": "Ibu memiliki riwayat alergi obat",
+      "lifestyle": [
+        "Baru pertama kali mencoba menu udang saus baru di restoran"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik, tidak tampak sesak",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal, saturasi oksigen 99%",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "wheal (urtika) multipel, eritematosa, batas tegas, ukuran bervariasi, tersebar generalisata, sebagian tampak menyatu (konfluens)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_angioedema_wajahbibirlidah",
+        "nama": "Angioedema wajah/bibir/lidah",
+        "temuan": "tidak ada",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_auskultasi_paru",
+        "nama": "Auskultasi paru",
+        "temuan": "vesikuler, tidak ada wheezing",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Urtikaria Akut",
+    "differensialBenar": [
+      "Urtikaria akut",
+      "Angioedema",
+      "Reaksi gigitan serangga multipel",
+      "Erupsi obat"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antihistamin H1 non-sedatif lini pertama",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Loratadine tab 10 mg No. X",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I",
+      "benar": false
+    },
+    {
+      "opsi": "Bila gatal berat dapat ditambah antihistamin sedatif malam hari",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cetirizine tab 10 mg No. V",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I malam hari",
+      "benar": false
+    },
+    {
+      "opsi": "Pemberian kortikosteroid sistemik rutin pada urtikaria akut tanpa komplikasi (bukan lini pertama)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Segera ke IGD bila muncul sesak napas, bengkak wajah/bibir/lidah, atau pusing hebat (tanda anafilaksis)",
+      "benar": true
+    },
+    {
+      "opsi": "Catat dan hindari makanan/obat yang menjadi pencetus di masa mendatang",
+      "benar": true
+    },
+    {
+      "opsi": "Mencoba kembali makanan pencetus untuk 'memastikan' alergi tanpa pengawasan medis",
+      "benar": false
+    },
+    {
+      "opsi": "Hindari makanan pencetus (udang/makanan laut) di kemudian hari",
+      "benar": true
+    }
+  ]
+}

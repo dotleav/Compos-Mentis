@@ -1,0 +1,109 @@
+{
+  "id": "integ_40",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 40 - Integumen",
+  "judulKasus": "Bu Fitri, 29 tahun, bintil-bintil merah kecil di sekitar mulut",
+  "identitas": "Fitri, 29 tahun, Karyawan swasta",
+  "skenarioAwal": "Seorang wanita 29 tahun datang dengan keluhan bintil kemerahan di sekitar mulut sejak 1 bulan.",
+  "keluhanUtama": "Muncul bintil-bintil kecil kemerahan di sekitar mulut sejak 1 bulan, terasa sedikit gatal dan perih",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Rutin menggunakan krim wajah mengandung steroid yang dibeli bebas selama 2 bulan terakhir",
+        "Keluhan memberat saat berhenti memakai krim tersebut",
+        "Area sekitar bibir (vermilion border) tidak terkena"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit kronis",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Sering mengganti-ganti produk skincare tanpa anjuran dokter"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "papul dan pustul kecil eritematosa di sekitar mulut, dagu, dan lipat nasolabial, dengan zona sempit kulit normal di sekitar vermilion bibir (perioral sparing)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Dermatitis Perioral",
+    "differensialBenar": [
+      "Dermatitis perioral",
+      "Akne vulgaris",
+      "Rosasea",
+      "Dermatitis kontak alergika"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Hentikan penggunaan kortikosteroid topikal wajah (langkah utama meskipun gejala dapat memburuk sementara/rebound)",
+      "benar": true
+    },
+    {
+      "opsi": "Antibiotik topikal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Metronidazole gel 0,75% tube 15 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol",
+      "benar": false
+    },
+    {
+      "opsi": "Bila berat/luas, antibiotik oral golongan tetrasiklin",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Doxycycline tab 100 mg No. XXVIII",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd tab I (selama 4-6 minggu)",
+      "benar": false
+    },
+    {
+      "opsi": "Melanjutkan atau mengganti dengan krim steroid lain untuk 'mengatasi' kekambuhan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari produk kosmetik/skincare yang berat dan mengandung steroid tanpa resep dokter",
+      "benar": true
+    },
+    {
+      "opsi": "Jelaskan bahwa gejala dapat memburuk sementara (2-4 minggu) setelah menghentikan steroid sebelum membaik",
+      "benar": true
+    },
+    {
+      "opsi": "Mencoba mengatasi kekambuhan dengan mengoleskan kembali krim steroid",
+      "benar": false
+    }
+  ]
+}

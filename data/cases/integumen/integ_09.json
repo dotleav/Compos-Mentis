@@ -1,0 +1,109 @@
+{
+  "id": "integ_09",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 9 - Integumen",
+  "judulKasus": "Bp. Andi, 30 tahun, bintil-bintil merah gatal di area jenggot",
+  "identitas": "Andi, 30 tahun, Wiraswasta",
+  "skenarioAwal": "Seorang laki-laki 30 tahun datang dengan keluhan bintil kemerahan gatal di area dagu setelah bercukur.",
+  "keluhanUtama": "Muncul bintil-bintil merah kecil disertai gatal di area dagu dan leher sejak 1 minggu setelah bercukur",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bintil terasa gatal dan sedikit nyeri",
+        "Menggunakan pisau cukur yang sama berulang kali",
+        "Tidak ada demam"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Rutin bercukur dengan pisau cukur manual, jarang mengganti pisau"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "papul dan pustul multipel miliar dengan dasar eritema di sekitar folikel rambut, tersebar di regio mandibula dan colli",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Folikulitis Superfisialis",
+    "differensialBenar": [
+      "Folikulitis superfisialis",
+      "Akne vulgaris",
+      "Tinea barbe",
+      "Pseudofolikulitis barbae"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antibiotik topikal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Clindamycin gel 1% tube 15 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol",
+      "benar": false
+    },
+    {
+      "opsi": "Kompres hangat pada area lesi",
+      "benar": true
+    },
+    {
+      "opsi": "Bila luas dapat ditambah antibiotik oral",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cephalexin tab 500 mg No. XX",
+      "benar": false
+    },
+    {
+      "opsi": "S 4 dd tab I (selama 5-7 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Ekstraksi paksa/memencet pustul",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Ganti pisau cukur secara rutin dan gunakan alat cukur bersih",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari bercukur terlalu dekat dengankulit (rapat) selama proses penyembuhan",
+      "benar": true
+    },
+    {
+      "opsi": "Berbagi alat cukur dengan orang lain",
+      "benar": false
+    }
+  ]
+}

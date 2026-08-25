@@ -1,0 +1,131 @@
+{
+  "id": "integ_45",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 45 - Integumen",
+  "judulKasus": "Bu Ratna, 34 tahun, luka bakar di tangan akibat tersiram air panas",
+  "identitas": "Ratna, 34 tahun, Ibu rumah tangga",
+  "skenarioAwal": "Seorang wanita 34 tahun datang dengan keluhan luka bakar di tangan setelah tersiram air panas saat memasak.",
+  "keluhanUtama": "Tangan kanan tersiram air panas 1 jam yang lalu saat memasak, terasa nyeri hebat dan muncul lepuhan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri hebat pada area yang terkena",
+        "Muncul lepuhan (bula) berisi cairan bening pada sebagian area",
+        "Sudah dialiri air keran sesaat setelah kejadian"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kronis",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Memasak menggunakan panci besar tanpa alas pelindung tangan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "tampak kesakitan, kesadaran compos mentis",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_lokalis",
+        "nama": "Status Lokalis",
+        "temuan": "pada dorsum manus dekstra tampak area eritema tanpa bula (derajat 1) seluas ±2%, serta area dengan bula berisi cairan jernih, dasar merah muda, nyeri saat disentuh (derajat 2 superfisial) seluas ±3%",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_total_luas_luka_bakar",
+        "nama": "Total luas luka bakar",
+        "temuan": "±5% total body surface area (Rule of Nine/telapak tangan pasien)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_jalan_napas_tanda_inhalation_injury",
+        "nama": "Jalan napas, tanda inhalation injury",
+        "temuan": "tidak ada",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Luka Bakar Derajat 1 dan 2 (Luas Terbatas)",
+    "differensialBenar": [
+      "Luka bakar termal derajat 1-2",
+      "Dermatitis kontak akut",
+      "Selulitis (bila terjadi infeksi sekunder)",
+      "Luka bakar derajat 3 (bila kedalaman lebih dalam)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Dinginkan area luka dengan air mengalir suhu ruang selama 15-20 menit bila masih dalam periode akut",
+      "benar": true
+    },
+    {
+      "opsi": "Krim antimikroba topikal untuk luka derajat 2",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Silver sulfadiazine cream 1% tube 20 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 1-2 dd applic loc dol setelah luka dibersihkan, tutup dengan kasa steril",
+      "benar": false
+    },
+    {
+      "opsi": "Analgetik",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Paracetamol tab 500 mg No. X",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd tab I prn nyeri",
+      "benar": false
+    },
+    {
+      "opsi": "Profilaksis tetanus sesuai status imunisasi",
+      "benar": true
+    },
+    {
+      "opsi": "Mengoleskan pasta gigi, kecap, atau bahan rumah tangga lain pada luka bakar",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga luka tetap bersih dan lakukan ganti balut sesuai anjuran hingga luka mengering",
+      "benar": true
+    },
+    {
+      "opsi": "Segera kontrol/rujuk bila luas luka bertambah, tanda infeksi (nanah, bau, demam), atau luka bakar mengenai wajah/tangan/genital/luas >10% (butuh penanganan lebih lanjut)",
+      "benar": true
+    },
+    {
+      "opsi": "Membiarkan luka terbuka tanpa penutup di lingkungan kotor",
+      "benar": false
+    },
+    {
+      "opsi": "Jangan pecahkan bula, biarkan sebagai pelindung alami; bula yang sudah pecah dibersihkan dan ditutup",
+      "benar": true
+    }
+  ]
+}

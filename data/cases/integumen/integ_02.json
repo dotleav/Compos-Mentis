@@ -1,0 +1,101 @@
+{
+  "id": "integ_02",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 2 - Integumen",
+  "judulKasus": "An. Bila, 6 tahun, muncul bintil-bintil kecil mengkilat di perut",
+  "identitas": "Bila, 6 tahun, Pelajar TK",
+  "skenarioAwal": "Seorang anak perempuan 6 tahun dibawa ke puskesmas dengan keluhan bintil-bintil kecil di badan.",
+  "keluhanUtama": "Muncul bintil-bintil kecil mengkilat di perut dan lengan sejak 1 bulan, jumlah bertambah banyak",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Tidak nyeri, kadang sedikit gatal",
+        "Anak memiliki riwayat dermatitis atopik",
+        "Tidak ada demam"
+      ],
+      "rpd": "Riwayat dermatitis atopik sejak bayi",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Sering berbagi handuk dengan saudara di rumah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "papul multipel bentuk kubah, mengkilat, dengan umbilikasi sentral, ukuran 2-5 mm, tersebar di regio abdomen dan lengan atas",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Moluskum Kontagiosum",
+    "differensialBenar": [
+      "Moluskum kontagiosum",
+      "Veruka vulgaris",
+      "Folikulitis",
+      "Milia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Tindakan enukleasi/kuretase lesi dengan kuret khusus setelah anestesi topikal bila lesi mengganggu",
+      "benar": true
+    },
+    {
+      "opsi": "Alternatif topikal: tretinoin krim untuk mempercepat resolusi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Tretinoin cream 0,05% tube 5 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd applic loc dol (oleskan malam hari pada tiap lesi, hindari kulit sehat)",
+      "benar": false
+    },
+    {
+      "opsi": "Insisi luas atau eksisi bedah (tidak diperlukan untuk lesi jinak self-limiting ini)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari menggaruk lesi karena dapat menyebar ke area lain (autoinokulasi)",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan berbagi handuk/pakaian dengan anggota keluarga lain selama lesi masih ada",
+      "benar": true
+    },
+    {
+      "opsi": "Boleh berenang bersama tanpa menutup lesi",
+      "benar": false
+    },
+    {
+      "opsi": "Moluskum kontangiosum disebabkan virus poxvirus dan akan sembuh sendiri dalam 6-12 bulan tanpa jaringan parut",
+      "benar": true
+    }
+  ]
+}

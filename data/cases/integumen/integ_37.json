@@ -1,0 +1,101 @@
+{
+  "id": "integ_37",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 37 - Integumen",
+  "judulKasus": "Nn. Intan, 22 tahun, muncul bercak di dada lalu menyebar ke badan berpola khas",
+  "identitas": "Intan, 22 tahun, Karyawan swasta",
+  "skenarioAwal": "Seorang wanita 22 tahun datang dengan keluhan bercak kemerahan yang menyebar ke seluruh badan.",
+  "keluhanUtama": "Muncul satu bercak besar di dada sekitar 10 hari lalu, diikuti bercak-bercak lebih kecil serupa di badan sejak 4 hari terakhir",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bercak pertama (herald patch) lebih besar dari bercak-bercak berikutnya",
+        "Gatal ringan",
+        "Riwayat flu ringan sebelum bercak muncul"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit kronis",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Aktivitas normal, tidak ada paparan bahan kimia baru"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "herald patch (plak oval soliter dengan skuama collarette) di regio dada, diikuti lesi-lesi lebih kecil serupa tersebar mengikuti garis lipatan kulit (Christmas tree pattern) di badan",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Pitiriasis Rosea",
+    "differensialBenar": [
+      "Pitiriasis rosea",
+      "Tinea korporis",
+      "Sifilis sekunder",
+      "Psoriasis gutata"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antihistamin oral bila gatal mengganggu",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cetirizine tab 10 mg No. X",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I prn gatal",
+      "benar": false
+    },
+    {
+      "opsi": "Emolien untuk mengurangi kekeringan kulit",
+      "benar": true
+    },
+    {
+      "opsi": "Kortikosteroid sistemik jangka panjang tanpa indikasi (tidak diperlukan pada kasus tanpa komplikasi)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan bahwa kondisi ini akan sembuh sendiri dalam beberapa minggu tanpa jaringan parut",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari paparan sinar matahari berlebihan dan mandi air panas yang dapat memperburuk gatal",
+      "benar": true
+    },
+    {
+      "opsi": "Khawatir berlebihan dan mencoba berbagai obat oles tanpa anjuran dokter",
+      "benar": false
+    },
+    {
+      "opsi": "Kondisi ini bersifat self-limiting dan akan sembuh sendiri dalam 6-8 minggu tanpa jaringan parut",
+      "benar": true
+    }
+  ]
+}

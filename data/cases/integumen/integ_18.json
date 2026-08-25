@@ -1,0 +1,113 @@
+{
+  "id": "integ_18",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 18 - Integumen",
+  "judulKasus": "Nn. Dewi, 20 tahun, bercak merah gatal berbentuk cincin di pipi",
+  "identitas": "Dewi, 20 tahun, Mahasiswa",
+  "skenarioAwal": "Seorang wanita 20 tahun datang dengan keluhan bercak merah gatal di pipi berbentuk cincin.",
+  "keluhanUtama": "Muncul bercak merah gatal berbentuk cincin di pipi kanan sejak 2 minggu, meluas perlahan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Gatal terutama malam hari dan saat berkeringat",
+        "Bagian tengah lesi tampak lebih tenang dibanding tepinya",
+        "Sempat memakai krim wajah baru sebelum muncul keluhan"
+      ],
+      "rpd": "Tidak ada riwayat alergi kulit sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Memiliki kucing peliharaan di rumah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "plak anular eritematosa dengan tepi aktif meninggi berskuama dan central healing, di regio genae dekstra",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_kerokan_kulit_koh_10-20",
+        "nama": "Kerokan kulit + KOH 10-20%",
+        "temuan": "tampak hifa bersepta",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tinea Fasialis",
+    "differensialBenar": [
+      "Tinea fasialis",
+      "Dermatitis kontak alergika",
+      "Dermatitis seboroik",
+      "Lupus eritematosus kutaneus"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antijamur topikal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Ketoconazole cream 2% tube 10 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol (selama 2-4 minggu, lanjutkan 1 minggu setelah lesi hilang)",
+      "benar": false
+    },
+    {
+      "opsi": "Bila luas/tidak respons topikal, tambahkan antijamur oral",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Griseofulvin tab 500 mg No. XXX",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I selama 4 minggu",
+      "benar": false
+    },
+    {
+      "opsi": "Kortikosteroid topikal poten tanpa antijamur (dapat memperburuk lesi/tinea inkognito)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Keringkan wajah dengan baik dan hindari produk perawatan wajah yang oklusif selama pengobatan",
+      "benar": true
+    },
+    {
+      "opsi": "Periksa dan obati hewan peliharaan bila dicurigai sebagai sumber penularan",
+      "benar": true
+    },
+    {
+      "opsi": "Menggunakan salep kortikosteroid dari apotek tanpa resep untuk gatal di wajah",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "integ_28",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 28 - Integumen",
+  "judulKasus": "An. Nayla, 8 tahun, gatal hebat di kulit kepala",
+  "identitas": "Nayla, 8 tahun, Pelajar SD",
+  "skenarioAwal": "Seorang anak perempuan 8 tahun dibawa ibunya dengan keluhan gatal hebat di kepala sejak 2 minggu.",
+  "keluhanUtama": "Gatal hebat di kulit kepala terutama di belakang telinga dan tengkuk sejak 2 minggu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sering menggaruk kepala hingga timbul luka lecet",
+        "Teman sekelas ada yang mengalami keluhan serupa",
+        "Tidak demam"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit kepala sebelumnya",
+      "rpk": "Kakak kandung memiliki keluhan serupa",
+      "lifestyle": [
+        "Sering bertukar sisir dan kerudung dengan teman sekolah"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "ditemukan kutu (Pediculus humanus capitis) dan telur (nits) berwarna putih melekat kuat pada batang rambut, terutama di regio oksipital dan retroaurikular Terdapat ekskoriasi akibat garukan",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Pedikulosis Kapitis",
+    "differensialBenar": [
+      "Pedikulosis kapitis",
+      "Dermatitis seboroik kapitis",
+      "Tinea kapitis",
+      "Skabies kepala (pada bayi)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Permetrin losion sebagai lini pertama",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Permethrin 1% lotion fl 60 ml No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S ue, aplikasikan ke rambut dan kulit kepala yang sudah dicuci dan agak kering, diamkan 10 menit, bilas, ulangi setelah 7 hari",
+      "benar": false
+    },
+    {
+      "opsi": "Sisir rambut dengan sisir bergigi rapat (nit comb) untuk mengangkat telur setelah aplikasi",
+      "benar": true
+    },
+    {
+      "opsi": "Cuci sisir, topi, sarung bantal dengan air panas",
+      "benar": true
+    },
+    {
+      "opsi": "Mencukur habis rambut sebagai satu-satunya terapi (tidak diperlukan, dapat menimbulkan trauma psikologis anak)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Obati serentak seluruh anggota keluarga yang terinfeksi untuk mencegah penularan berulang",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan berbagi sisir, topi, bantal, atau kerudung dengan orang lain",
+      "benar": true
+    },
+    {
+      "opsi": "Menggaruk kepala hingga luka terbuka",
+      "benar": false
+    }
+  ]
+}

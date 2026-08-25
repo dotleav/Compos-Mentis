@@ -1,0 +1,105 @@
+{
+  "id": "integ_36",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 36 - Integumen",
+  "judulKasus": "Bp. Wawan, 36 tahun, kulit kepala berketombe tebal dan gatal",
+  "identitas": "Wawan, 36 tahun, Karyawan kantor",
+  "skenarioAwal": "Seorang laki-laki 36 tahun datang dengan keluhan ketombe berlebih dan gatal di kulit kepala.",
+  "keluhanUtama": "Ketombe tebal berminyak disertai gatal di kulit kepala sejak 2 bulan, juga muncul kemerahan di sekitar alis dan lipat hidung",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Keluhan memberat saat stres dan kurang tidur",
+        "Kulit kepala terasa berminyak",
+        "Sisik kekuningan mudah terkelupas"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit kronis lain",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Sering begadang karena pekerjaan, jarang keramas"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologis",
+        "nama": "Status Dermatologis",
+        "temuan": "skuama kekuningan berminyak di atas dasar eritema pada kulit kepala, glabela, alis, dan lipat nasolabial",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Dermatitis Seboroik",
+    "differensialBenar": [
+      "Dermatitis seboroik",
+      "Psoriasis vulgaris",
+      "Tinea kapitis",
+      "Dermatitis atopik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Shampoo antijamur/antiseboroik untuk kulit kepala",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Ketoconazole shampoo 2% fl 60 ml No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2-3x/minggu, oleskan dan diamkan 5 menit sebelum dibilas",
+      "benar": false
+    },
+    {
+      "opsi": "Kortikosteroid topikal ringan untuk lesi wajah",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Hydrocortisone cream 1% tube 5 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 1-2 dd applic loc dol pada area wajah yang meradang",
+      "benar": false
+    },
+    {
+      "opsi": "Kortikosteroid poten jangka panjang di wajah (risiko atrofi kulit dan rebound)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kelola stres dan istirahat cukup karenadapat memicu kekambuhan",
+      "benar": true
+    },
+    {
+      "opsi": "Keramas secara teratur dan jaga kulit kepala tetap bersih",
+      "benar": true
+    },
+    {
+      "opsi": "Menggaruk kulit kepala hingga luka",
+      "benar": false
+    }
+  ]
+}
