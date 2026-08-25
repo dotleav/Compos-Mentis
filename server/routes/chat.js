@@ -68,6 +68,183 @@ Pasien ini TIDAK kooperatif. ATURAN TAMBAHAN (lebih tinggi prioritasnya dari atu
   return "";
 }
 
+/**
+ * Detects whether this case involves a pediatric patient (usia < 18).
+ * Parses `identitas` whether it is an object ({ usia: number }) or a
+ * free-form string (e.g. "Andre, 8 tahun" / "Somat, 4 tahun, dibawa ibunya (Bella)").
+ *
+ * Returns:
+ *   { isPediatric: false }                         — adult case, no change
+ *   { isPediatric: true, usia, namaAnak,
+ *     pengantarHint }                              — pediatric; pengantarHint may be
+ *                                                    a string like "ibunya (Bella)"
+ *                                                    extracted from identitas, or null.
+ */
+function detectPediatricCase(identitas) {
+  let usia = null;
+  let namaAnak = null;
+  let pengantarHint = null;
+
+  if (typeof identitas === "object" && identitas !== null) {
+    usia = Number(identitas.usia);
+    namaAnak = identitas.nama || null;
+  } else if (typeof identitas === "string") {
+    // Extract usia from strings like "Andre, 8 tahun" or "Anak laki-laki, 15 tahun"
+    const usiaMatch = identitas.match(/(\d+)\s*tahun/i);
+    if (usiaMatch) usia = parseInt(usiaMatch[1], 10);
+
+    // Extract nama — typically the first token before the comma, unless it
+    // starts with a generic label like "Anak", "Laki-laki", "Perempuan"
+    const parts = identitas.split(",").map((s) => s.trim());
+    if (parts.length > 0 && !/^(anak|laki-laki|perempuan|bayi|balita)/i.test(parts[0])) {
+      namaAnak = parts[0];
+    }
+
+    // Extract pengantar hint from patterns like "dibawa ibunya (Bella)" or
+    // "ditemani ayahnya" or "oleh orang tuanya"
+    const pengantarMatch = identitas.match(
+      /dibawa\s+([\w\s()]+?)(?:,|$)|ditemani\s+([\w\s()]+?)(?:,|$)|oleh\s+([\w\s()]+?)(?:,|$)/i
+    );
+    if (pengantarMatch) {
+      pengantarHint = (pengantarMatch[1] || pengantarMatch[2] || pengantarMatch[3] || "").trim();
+    }
+  }
+
+  if (usia !== null && !isNaN(usia) && usia < 18) {
+    return { isPediatric: true, usia, namaAnak, pengantarHint };
+  }
+  return { isPediatric: false };
+}
+
+/**
+ * Pool of guardian personas used in pediatric cases.
+ * Rotated per-request so we don't always land on the same name.
+ * Each entry has: relasi (relation label), panggilan (how the doctor might
+ * address them), and nama (a plausible Indonesian name for that role).
+ */
+const GUARDIAN_PERSONAS = [
+  { relasi: "ibu", panggilan: "Bu", nama: "Sri" },
+  { relasi: "ibu", panggilan: "Bu", nama: "Ratna" },
+  { relasi: "ibu", panggilan: "Bu", nama: "Dewi" },
+  { relasi: "ayah", panggilan: "Pak", nama: "Budi" },
+  { relasi: "ayah", panggilan: "Pak", nama: "Hendra" },
+  { relasi: "nenek", panggilan: "Nek", nama: "Sari" },
+  { relasi: "kakek", panggilan: "Kek", nama: "Marno" },
+];
+function randomGuardian() {
+  return GUARDIAN_PERSONAS[Math.floor(Math.random() * GUARDIAN_PERSONAS.length)];
+}
+
+/**
+ * Builds the system prompt for a pediatric case.
+ * The AI plays the GUARDIAN (orang tua/wali), NOT the child.
+ *
+ * Key behaviours enforced:
+ *  1. Opening "Ada keluhan apa?" → redirect that the child is the patient,
+ *     briefly introduce the child, then state the chief complaint.
+ *  2. Recall/uncertainty: guardian tries to remember details, uses phrases
+ *     like "kalau tidak salah", "saya kurang ingat persisnya", "kayaknya",
+ *     accompanied by pauses/thinking gestures (in italics) to simulate
+ *     realistic proxy reporting.
+ *  3. Third-person perspective: never says "saya merasa..." for symptoms;
+ *     uses "anak saya", "si kecil", the child's name.
+ *  4. All other existing rules (only answer what's asked, no diagnosis
+ *     disclosure, stay in character, Indonesian only) are preserved.
+ */
+function buildPediatricSystemPrompt({ identitas, keluhanUtama, riwayat, interviewRules, ex, pediatricCtx }) {
+  const { usia, namaAnak, pengantarHint } = pediatricCtx;
+
+  // Resolve guardian identity:
+  //  - If identitas already names the pengantar (e.g. "dibawa ibunya (Bella)"),
+  //    use that hint as the relasi/nama label.
+  //  - Otherwise, pick a random guardian persona.
+  let guardian;
+  if (pengantarHint) {
+    // e.g. "ibunya (Bella)" — extract relasi and possibly a name in parens
+    const relasiMatch = pengantarHint.match(/^(ibu|ayah|nenek|kakek|om|tante|kakak|paman|bibi)\w*/i);
+    const namaMatch = pengantarHint.match(/\(([^)]+)\)/);
+    guardian = {
+      relasi: relasiMatch ? relasiMatch[1].toLowerCase() : "orang tua",
+      panggilan: relasiMatch
+        ? /ibu|nenek|tante|bibi/i.test(relasiMatch[1]) ? "Bu" : "Pak"
+        : "Pak/Bu",
+      nama: namaMatch ? namaMatch[1] : null,
+    };
+  } else {
+    guardian = randomGuardian();
+  }
+
+  // Determine how to refer to the child throughout
+  const sebutanAnak = namaAnak || (usia <= 5 ? "si kecil" : "anak saya");
+  const genderHint = typeof identitas === "string"
+    ? (/perempuan|wanita/i.test(identitas) ? "perempuan" : /laki-laki|pria/i.test(identitas) ? "laki-laki" : null)
+    : null;
+  const sebutanPronoun = genderHint === "perempuan" ? "dia (perempuan)" : genderHint === "laki-laki" ? "dia (laki-laki)" : "dia";
+
+  // Guardian name/identity blurb for prompt
+  const guardianNama = guardian.nama ? `${guardian.relasi}nya (${guardian.nama})` : guardian.relasi;
+  const guardianSelf = guardian.nama
+    ? `Kamu adalah ${guardian.relasi}nya (nama kamu: ${guardian.nama})`
+    : `Kamu adalah ${guardian.relasi}nya`;
+
+  return `Kamu berperan sebagai ORANG TUA/WALI PASIEN dalam simulasi OSCE kedokteran. Pasien yang kamu bawa adalah seorang anak berusia ${usia} tahun. Kamu yang membawa dan mendampingi anak ini ke dokter. Jangan pernah keluar dari peran ini, dan jangan pernah menyebutkan bahwa kamu adalah AI.
+
+${guardianSelf}. Anakmu adalah ${sebutanAnak}${namaAnak ? `, ${usia} tahun` : `, ${usia} tahun`}.
+
+IDENTITAS PASIEN ANAK (data dari kasus):
+- Identitas anak: ${identitas}
+- Keluhan utama yang kamu bawa ke dokter: ${keluhanUtama}
+
+RIWAYAT YANG KAMU KETAHUI (sebagai orang tua/wali — kamu tahu ini karena mengamati anak dari luar, BUKAN dari dalam kepala/perasaan anak):
+- Riwayat Penyakit Sekarang (RPS): ${riwayat.rps.join("; ")}
+- Riwayat Penyakit Dahulu (RPD): ${riwayat.rpd}
+- Riwayat Penyakit Keluarga (RPK): ${riwayat.rpk}
+- Gaya hidup / kebiasaan anak: ${riwayat.lifestyle.join("; ")}
+
+ATURAN DATA PRIBADI YANG TIDAK DISEBUTKAN DI KASUS:
+- Kalau nama kamu (orang tua/wali) tidak disebutkan dalam data kasus, karang satu nama Indonesia yang wajar sesuai peranmu (${guardianNama}) — PAKAI KONSISTEN sepanjang percakapan ini.
+- Kalau nama anak tidak disebutkan, karang satu nama anak Indonesia yang wajar — PAKAI KONSISTEN.
+- Jangan pernah tulis placeholder seperti "[nama]", "___", dll — harus nama asli yang kamu karang.
+- Detail yang SUDAH ADA di "Identitas anak" di atas harus dipakai apa adanya.
+- SANGAT PENTING — jangan bocorkan nama/pekerjaan/alamat/pendamping sukarela di awal. Ungkap satu per satu hanya saat ditanya.
+
+ATURAN KHUSUS PASIEN ANAK — SANGAT PENTING:
+
+PERTAMA KALI DITANYA "Ada keluhan apa?" / "Kenapa ke sini?" / KALIMAT PEMBUKA PERTAMA DOKTER:
+Kamu WAJIB melakukan 3 hal ini SEKALIGUS dalam satu respons pertama itu:
+1. Alihkan bahwa yang sakit adalah anakmu, bukan kamu (mis. "Oh, bukan saya, Dok — anak saya yang sakit.")
+2. Perkenalkan anak secara singkat (nama dan usia jika tahu, atau cukup "anak saya yang [usia] tahun").
+3. Sebutkan keluhan utama anak dalam 1 kalimat pendek.
+Contoh: "Oh, bukan saya yang sakit, Dok — anak saya, ${sebutanAnak}, ${usia} tahun. Dia sudah demam beberapa hari ini."
+JANGAN langsung menjawab keluhan tanpa dulu menyebutkan bahwa yang sakit adalah sang anak.
+
+GAYA BERBICARA SEBAGAI ORANG TUA/WALI — RECALL & KETIDAKPASTIAN:
+Kamu bukan tenaga medis. Kamu mengamati dan mencoba mengingat kondisi anakmu. Tunjukkan ini secara alami:
+- Gunakan frasa recall/ragu seperti: "kalau tidak salah...", "kayaknya...", "saya kurang ingat persis...", "sepertinya iya...", "duh, sebentar saya pikir-pikir dulu..."
+- Sesekali tambahkan gestur berpikir dalam kurung miring sebelum atau di tengah jawaban, mis: *(mengingat-ingat)*, *(mengerutkan dahi)*, *(menoleh ke anak sebentar)*, *(garuk kepala)*.
+- Untuk pertanyaan yang kamu tahu pasti (mis. kapan mulai, frekuensi yang kamu amati langsung): jawab lebih tegas.
+- Untuk pertanyaan tentang detail internal anak (perasaan anak, skala nyeri versi anak, apa yang dirasakan anak dari dalam): akui bahwa kamu hanya tahu dari apa yang terlihat atau diceritakan anak.
+- JANGAN berlebihan ragu di setiap kalimat — gunakan ragu hanya saat memang realistis tidak ingat/tidak tahu persis.
+
+ATURAN SUDUT PANDANG:
+- JANGAN PERNAH berkata "saya merasa...", "saya sakit...", "saya nyeri..." untuk kondisi anak — kamu bukan yang sakit.
+- Selalu gunakan sudut pandang pengamat: "anak saya", "${sebutanAnak}", "dia", "si kecil".
+- Kalau ditanya tentang kondisi kamu sendiri (bukan anak), jawab sesuai kondisi orang tua normal.
+
+ATURAN MENJAWAB — SAMA SEPERTI SESI NORMAL, BERLAKU JUGA DI SINI:
+1. HANYA jawab persis apa yang ditanyakan mahasiswa, satu topik saja. Jangan menambahkan informasi yang belum ditanyakan.
+1a. PERTANYAAN YA/TIDAK: WAJIB jawab "Iya"/"Tidak" eksplisit dulu. Boleh tambah elaborasi singkat setelahnya. Boleh — tidak wajib — lanjutkan dengan SATU keluhan lain yang ada di RPS tapi belum pernah disebut, seolah baru teringat.
+1b. PERTANYAAN MULTI-BAGIAN: jawab SEMUA bagian yang ditanya, tidak kurang tidak lebih.
+2. Bahasa awam, bukan istilah medis. Bahasa sehari-hari orang tua Indonesia.
+3. Kalau ditanya sesuatu yang tidak ada di riwayat, jawab "tidak ada" / "tidak pernah" secara wajar.
+4. Tunjukkan ekspresi khawatir/cemas sebagai orang tua yang wajar — tidak berlebihan.
+5. Jangan pernah sebut istilah diagnosis.
+6. Basa-basi ringan boleh dijawab singkat, jangan menyimpang jauh.
+7. Jawaban singkat dan natural — idealnya 1-2 kalimat, maksimal 3 kalimat. Jangan paragraf panjang.
+8. SELALU jawab dalam Bahasa Indonesia. Jangan tulis instruksi/analisis internal — hanya kalimat orang tua yang boleh muncul.
+${interviewRules}`;
+}
+
 // Pool of example identities used ONLY to demonstrate the answer FORMAT in
 // the system prompt below. Rotated per-request (not fixed to one name) —
 // otherwise the model tends to copy the literal example verbatim instead
@@ -125,7 +302,24 @@ router.post("/anamnesis", async (req, res) => {
     const interviewRules = buildInterviewRules(interviewCtx);
     const ex = randomExampleIdentity();
 
-    const systemPrompt = `Kamu berperan sebagai PASIEN dalam simulasi OSCE kedokteran. Jangan pernah keluar dari peran ini, dan jangan pernah menyebutkan bahwa kamu adalah AI.
+    // --- PEDIATRIC DETECTION ---
+    // If the patient is under 18, the AI plays the guardian (orang tua/wali),
+    // not the patient themselves. All other logic (context window, reminders,
+    // provider routing) stays identical.
+    const pediatricCtx = detectPediatricCase(identitas);
+
+    let systemPrompt;
+    if (pediatricCtx.isPediatric) {
+      systemPrompt = buildPediatricSystemPrompt({
+        identitas,
+        keluhanUtama,
+        riwayat,
+        interviewRules,
+        ex,
+        pediatricCtx,
+      });
+    } else {
+    systemPrompt = `Kamu berperan sebagai PASIEN dalam simulasi OSCE kedokteran. Jangan pernah keluar dari peran ini, dan jangan pernah menyebutkan bahwa kamu adalah AI.
 
 IDENTITAS PASIEN (data yang tersedia dari kasus):
 - Identitas: ${identitas}
@@ -167,6 +361,7 @@ ATURAN MENJAWAB — SANGAT PENTING, JAWAB HANYA APA YANG DITANYA:
 7. Jawaban singkat dan natural, seperti percakapan dokter-pasien sungguhan — idealnya 1 kalimat, maksimal 2 kalimat pendek. Jangan pernah menjawab dengan paragraf panjang berisi banyak informasi sekaligus.
 8. SELALU jawab hanya dalam Bahasa Indonesia. Jangan pernah memakai bahasa lain (termasuk Inggris atau Mandarin), dan jangan pernah menuliskan instruksi/analisis internal kamu di dalam jawaban — hanya kalimat pasien (atau pengantar, jika berlaku) yang boleh muncul.
 ${interviewRules}`;
+    } // end else (adult)
 
     // The reminder used to be sent as its own `system` message tacked on
     // AFTER the user's turn (system -> ...history -> user -> system). That
@@ -176,8 +371,9 @@ ${interviewRules}`;
     // instead of answering in character. Folding the reminder into the
     // SAME user turn keeps a clean alternating user/assistant shape that
     // small models handle far more reliably.
-    const REMINDER_TEXT =
-      "\n\n[INGAT: jawab HANYA pertanyaan barusan, satu topik saja, maksimal 1-2 kalimat pendek. Kalau pertanyaannya berbentuk ya/tidak, WAJIB mulai jawaban dengan \"Iya\"/\"Tidak\" secara eksplisit dulu sebelum kalimat lain apapun. Jangan tempelkan keluhan utama atau riwayat penyakit apapun kecuali benar-benar ditanyakan barusan.]";
+    const REMINDER_TEXT = pediatricCtx.isPediatric
+      ? "\n\n[INGAT: kamu adalah ORANG TUA/WALI pasien anak. Jawab HANYA pertanyaan barusan, satu topik, maksimal 2-3 kalimat. Gunakan sudut pandang orang tua (\"anak saya\", bukan \"saya\"). Kalau pertanyaannya ya/tidak, WAJIB mulai dengan \"Iya\"/\"Tidak\" eksplisit dulu. Sesekali tambahkan gestur berpikir/mengingat dalam *italic* kalau pertanyaannya tentang detail yang mungkin kamu tidak ingat persis. Jangan bocorkan info yang belum ditanya.]"
+      : "\n\n[INGAT: jawab HANYA pertanyaan barusan, satu topik saja, maksimal 1-2 kalimat pendek. Kalau pertanyaannya berbentuk ya/tidak, WAJIB mulai jawaban dengan \"Iya\"/\"Tidak\" secara eksplisit dulu sebelum kalimat lain apapun. Jangan tempelkan keluhan utama atau riwayat penyakit apapun kecuali benar-benar ditanyakan barusan.]";
 
     // Dynamic context window: fit as much recent history as fits inside the
     // remaining token budget once the system prompt, reminder, new message,
