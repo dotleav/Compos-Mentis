@@ -45,14 +45,6 @@ const PROVIDERS = [
     model: process.env.CEREBRAS_MODEL || "gpt-oss-120b",
   },
   {
-    name: "gemini",
-    apiKey: process.env.GEMINI_API_KEY,
-    model: process.env.GEMINI_MODEL || "gemini-2.0-flash",
-    // Uses native Gemini endpoint (not OpenAI-compat) with key as query
-    // param — handled by callGemini() below instead of callProvider().
-    useNativeGemini: true,
-  },
-  {
     name: "openrouter",
     baseURL: "https://openrouter.ai/api/v1",
     apiKey: process.env.OPENROUTER_API_KEY,
@@ -88,6 +80,14 @@ const PROVIDERS = [
     // tool-call finding matching. Use deepseek-v4-pro only if you need
     // heavier reasoning — not needed for this app's use case.
     model: process.env.DEEPSEEK_MODEL || "deepseek-v4-flash",
+  },
+  {
+    name: "gemini",
+    apiKey: process.env.GEMINI_API_KEY,
+    model: process.env.GEMINI_MODEL || "gemini-3.6-flash",
+    // Uses native Gemini endpoint (not OpenAI-compat) with key as query
+    // param -- handled by callGemini() below instead of callProvider().
+    useNativeGemini: true,
   },
   {
     name: "huggingface",
