@@ -11,15 +11,16 @@
 // Ollama alone works fine.
 //
 // All of these expose an OpenAI-compatible endpoint, so one generic caller
-// works for all eight:
+// works for all of them:
 //   - Groq:         https://console.groq.com/keys
 //   - Cerebras:     https://cloud.cerebras.ai  (free tier, very fast inference)
 //   - Gemini:       https://aistudio.google.com/apikey (free tier via OpenAI-compat endpoint)
-//   - OpenRouter:   https://openrouter.ai/keys (routes to many models, some free)
+//   - Mistral:      https://console.mistral.ai/api-keys (free experiment tier ~1B tok/mo)
 //   - NVIDIA:       https://build.nvidia.com  (an API catalog key, free tier)
 //   - DeepSeek:     https://platform.deepseek.com/api_keys (cheap pay-as-you-go, 5M free tokens on signup)
 //   - Hugging Face: https://huggingface.co/settings/tokens (router in front of many hosted models, free monthly credits)
 //   - Cloudflare:   https://dash.cloudflare.com/profile/api-tokens (Workers AI, 10K neurons/day free, resets daily)
+//   - Ollama Cloud: https://ollama.com/settings/api-keys (free tier, resets every 5h/7d)
 //   - Ollama:       runs locally, no key needed
 
 const PROVIDERS = [
@@ -45,20 +46,51 @@ const PROVIDERS = [
     model: process.env.CEREBRAS_MODEL || "gpt-oss-120b",
   },
   {
-    name: "openrouter",
-    baseURL: "https://openrouter.ai/api/v1",
-    apiKey: process.env.OPENROUTER_API_KEY,
-    // CORRECTED (was: "meta-llama/llama-3.1-8b-instruct:free" — now a paid
-    // model, hence the 404 "unavailable for free" error). Individual
-    // ":free" slugs rotate/get pulled with no notice (OpenRouter's own
-    // free roster changes weekly), so pinning one is fragile by design.
-    // "openrouter/free" is OpenRouter's own auto-router (launched Feb
-    // 2026): it always resolves to whichever free model currently
-    // supports the request (including tool calls, which exam.js needs),
-    // so this provider entry doesn't need hand-updating every time the
-    // free lineup shuffles. Override via OPENROUTER_MODEL if you want to
-    // pin a specific model instead.
-    model: process.env.OPENROUTER_MODEL || "openrouter/free",
+    name: "gemini",
+    // Google's OpenAI-compatibility layer — same request/response shape as
+    // the rest of these, so no separate caller needed. Get a free key at
+    // https://aistudio.google.com/apikey
+    baseURL: "https://generativelanguage.googleapis.com/v1beta/openai",
+    apiKey: process.env.GEMINI_API_KEY,
+    model: process.env.GEMINI_MODEL || "gemini-2.5-flash",
+    // Google is mid-migration from "AIza..." Standard keys to "AQ." Auth
+    // keys (all new keys from AI Studio are AQ. as of mid-2026). AQ. keys
+    // sent via the usual "Authorization: Bearer <key>" header get
+    // rejected with 401 ACCESS_TOKEN_TYPE_UNSUPPORTED — Google's auth
+    // layer reads a Bearer header as an OAuth2 token attempt, and AQ. keys
+    // aren't OAuth2 tokens. Google's own API reference (ai.google.dev/api)
+    // states plainly: "All requests to the Gemini API must include a
+    // x-goog-api-key header with your API key" — so send it that way
+    // instead. See authHeader() in callProvider() below.
+    authHeaderName: "x-goog-api-key",
+  },
+  {
+    name: "mistral",
+    // Mistral's own API — OpenAI-compatible, no adapter needed.
+    // Get a key at: https://console.mistral.ai/api-keys
+    // New accounts on "La Plateforme" get a free experiment tier with
+    // monthly credits; after that it's pay-as-you-go at very low rates
+    // (~$0.10-0.30 per 1M tokens depending on model).
+    //
+    // Why use this instead of Mistral via OpenRouter?
+    //   - Direct API has no OpenRouter rate-limit overhead
+    //   - Responses are more consistent (no free-tier throttling)
+    //   - Full access to all Mistral models without :free suffix tricks
+    //
+    // MODEL OPTIONS (set via MISTRAL_MODEL in .env):
+    //   "mistral-small-latest"   — default; ~24B, fast, cheap, follows
+    //                              system prompts well, good Indonesian.
+    //                              Best balance for roleplay use case.
+    //   "mistral-medium-latest"  — larger, better reasoning, moderate cost
+    //   "open-mistral-nemo"      — 12B, smallest/cheapest, still decent
+    //                              for short roleplay turns
+    //   "mistral-large-latest"   — top-tier quality, higher cost; overkill
+    //                              for this app's short-reply use case
+    //
+    // To switch model: add  MISTRAL_MODEL=open-mistral-nemo  to .env
+    baseURL: "https://api.mistral.ai/v1",
+    apiKey: process.env.MISTRAL_API_KEY,
+    model: process.env.MISTRAL_MODEL || "mistral-small-latest",
   },
   {
     name: "nvidia",
@@ -80,14 +112,6 @@ const PROVIDERS = [
     // tool-call finding matching. Use deepseek-v4-pro only if you need
     // heavier reasoning — not needed for this app's use case.
     model: process.env.DEEPSEEK_MODEL || "deepseek-v4-flash",
-  },
-  {
-    name: "gemini",
-    apiKey: process.env.GEMINI_API_KEY,
-    model: process.env.GEMINI_MODEL || "gemini-3.6-flash",
-    // Uses native Gemini endpoint (not OpenAI-compat) with key as query
-    // param -- handled by callGemini() below instead of callProvider().
-    useNativeGemini: true,
   },
   {
     name: "huggingface",
@@ -125,6 +149,26 @@ const PROVIDERS = [
     // select_findings tool call) — a safer default than fighting an
     // undocumented spec mismatch.
     model: process.env.CLOUDFLARE_MODEL || "@cf/meta/llama-3.1-8b-instruct",
+  },
+  {
+    name: "ollama-cloud",
+    // Ollama Cloud — hosted version of Ollama, OpenAI-compatible endpoint.
+    // Free tier with rate limits that reset every 5 hours (session) and
+    // every 7 days (weekly cap). No credit card required.
+    // Get a key at: https://ollama.com/settings/api-keys
+    //
+    // MODEL OPTIONS (set via OLLAMA_CLOUD_MODEL in .env):
+    //   "llama3.3"           — default; 70B, strong instruction following,
+    //                          good Indonesian, best overall quality
+    //   "qwen2.5:72b"        — alternative 72B, excellent for roleplay
+    //   "qwen2.5:32b"        — lighter, still very capable
+    //   "mistral-small"      — 22B, fast, follows system prompts well
+    //   "gemma3:27b"         — Google Gemma 27B
+    //
+    // To switch: add  OLLAMA_CLOUD_MODEL=qwen2.5:72b  to .env
+    baseURL: "https://api.ollama.com/v1",
+    apiKey: process.env.OLLAMA_CLOUD_API_KEY,
+    model: process.env.OLLAMA_CLOUD_MODEL || "llama3.3",
   },
   {
     name: "ollama",
@@ -235,66 +279,6 @@ async function callProvider(provider, { messages, tools, temperature, max_tokens
  * Returns an OpenAI-style completion object, plus which provider answered
  * (useful for logging/debugging which one is actually being used).
  */
-/**
- * Calls Gemini via its native generateContent endpoint with the API key as a
- * query param — avoids the OpenAI-compat layer entirely, which is the only
- * path that reliably works with AQ.-prefix keys.
- * Returns a response shaped like an OpenAI chat completion so the rest of
- * the app doesn't need to know which path was taken.
- */
-async function callGemini(provider, { messages, temperature, max_tokens }) {
-  const model = provider.model;
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${provider.apiKey}`;
-
-  // Convert OpenAI-style messages to Gemini's "contents" format.
-  // System messages become the first "user" turn prefixed with context.
-  const systemMsg = messages.find((m) => m.role === "system");
-  const nonSystem = messages.filter((m) => m.role !== "system");
-
-  const contents = nonSystem.map((m) => ({
-    role: m.role === "assistant" ? "model" : "user",
-    parts: [{ text: m.content }],
-  }));
-
-  const body = {
-    contents,
-    generationConfig: {
-      temperature: temperature ?? 0.4,
-      maxOutputTokens: max_tokens ?? 150,
-    },
-  };
-
-  if (systemMsg) {
-    body.systemInstruction = { parts: [{ text: systemMsg.content }] };
-  }
-
-  let res;
-  try {
-    res = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    });
-  } catch (err) {
-    throw new Error(`[gemini] network error: ${err.message}`);
-  }
-
-  if (!res.ok) {
-    const text = await res.text().catch(() => "");
-    const err = new Error(`[gemini] request failed (${res.status}): ${text}`);
-    err.status = res.status;
-    throw err;
-  }
-
-  const data = await res.json();
-  const text = data.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
-
-  // Shape response like an OpenAI completion so callers don't need to branch.
-  return {
-    choices: [{ message: { role: "assistant", content: text } }],
-  };
-}
-
 async function chat({ messages, tools, temperature, max_tokens, forceProvider }) {
   let active = PROVIDERS.filter((p) => p.alwaysAvailable || p.apiKey);
 
@@ -314,7 +298,7 @@ async function chat({ messages, tools, temperature, max_tokens, forceProvider })
 
   if (active.length === 0) {
     throw new Error(
-      "No AI provider available. Set at least one API key in .env (GROQ_API_KEY, CEREBRAS_API_KEY, GEMINI_API_KEY, OPENROUTER_API_KEY, NVIDIA_API_KEY), or make sure Ollama is installed and running locally."
+      "No AI provider available. Set at least one API key in .env (GROQ_API_KEY, CEREBRAS_API_KEY, GEMINI_API_KEY, MISTRAL_API_KEY, NVIDIA_API_KEY, OLLAMA_CLOUD_API_KEY), or make sure Ollama is installed and running locally."
     );
   }
 
@@ -322,9 +306,7 @@ async function chat({ messages, tools, temperature, max_tokens, forceProvider })
   const attempts = [];
   for (const provider of active) {
     try {
-      const data = provider.useNativeGemini
-        ? await callGemini(provider, { messages, temperature, max_tokens })
-        : await callProvider(provider, { messages, tools, temperature, max_tokens });
+      const data = await callProvider(provider, { messages, tools, temperature, max_tokens });
       return { ...data, _provider: provider.name };
     } catch (err) {
       console.warn(`[provider fallback] ${provider.name} failed, trying next. Reason: ${err.message}`);
