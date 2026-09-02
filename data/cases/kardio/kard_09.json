@@ -3,8 +3,8 @@
   "kategori": "kardio",
   "level": "3B",
   "nama": "Endokarditis Infektif",
-  "judulKasus": "Laki-laki 35 tahun, demam 3 minggu, murmur baru, riwayat pengguna narkoba suntik",
-  "identitas": "Pasien, laki-laki, 35 tahun",
+  "judulKasus": "Aldrich, 35 tahun, demam 3 minggu, murmur baru, riwayat pengguna narkoba suntik",
+  "identitas": "Aldrich, laki-laki, 35 tahun",
   "skenarioAwal": "Seorang pasien laki-laki 35 tahun, datang dengan demam 3 minggu yang tidak membaik dan ditemukan murmur jantung baru.",
   "keluhanUtama": "Demam 3 minggu tidak membaik",
   "groundTruth": {
@@ -72,37 +72,42 @@
       {
         "id": "pnj_ekokardiografi_transtorakal_tte",
         "nama": "Ekokardiografi transtorakal (TTE)",
-        "temuan": "vegetasi (+) di katup trikuspid, regurgitasi trikuspid berat",
+        "temuan": "",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_ekokardiografi_transtorakal_tte.png"
       },
       {
         "id": "pnj_kultur_darah_3_set_dari_3_tempat_berbeda",
         "nama": "Kultur darah (3 set dari 3 tempat berbeda)",
-        "temuan": "S. aureus (+++) — positif pada >90% endokarditis akut",
+        "temuan": "",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_kultur_darah_3_set_dari_3_tempat_berbeda.png"
       },
       {
         "id": "pnj_darah_rutin",
         "nama": "Darah rutin",
-        "temuan": "leukositosis 22.000, anemia (Hb 9,5), LED meningkat",
+        "temuan": "",
         "signifikan": false,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_darah_rutin.png"
       },
       {
         "id": "pnj_urinalisis",
         "nama": "Urinalisis",
-        "temuan": "hematuria mikroskopik (+) — emboli ginjal",
+        "temuan": "",
         "signifikan": false,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_urinalisis.png"
       },
       {
         "id": "pnj_foto_thorax",
         "nama": "Foto Thorax",
         "temuan": "infiltrat multipel bilateral (emboli paru septik pada EI katup kanan)",
-        "signifikan": false,
-        "wajibLapor": false
+        "signifikan": true,
+        "wajibLapor": true,
+        "image": "pnj_foto_thorax.png"
       }
     ],
     "defaultNormal": {

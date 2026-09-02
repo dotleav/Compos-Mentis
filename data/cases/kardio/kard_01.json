@@ -3,8 +3,8 @@
   "kategori": "kardio",
   "level": "3B",
   "nama": "Atrial Fibrilasi",
-  "judulKasus": "Wiyoto, 43 tahun, karyawan swasta, dada berdebar berulang",
-  "identitas": "Wiyoto, 43 tahun, Karyawan swasta",
+  "judulKasus": "James, 43 tahun, karyawan swasta, dada berdebar berulang",
+  "identitas": "James, 43 tahun, Karyawan swasta",
   "skenarioAwal": "Seorang pasien 43 tahun, datang ke poli dengan keluhan dada berdebar.",
   "keluhanUtama": "Dada berdebar",
   "groundTruth": {

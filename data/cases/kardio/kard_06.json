@@ -3,8 +3,8 @@
   "kategori": "kardio",
   "level": "3B",
   "nama": "Sindrom Koroner Akut — STEMI",
-  "judulKasus": "Laki-laki 58 tahun, nyeri dada kiri menjalar ke lengan kiri mendadak saat istirahat",
-  "identitas": "Pasien, laki-laki, 58 tahun",
+  "judulKasus": "Ferlix 58 tahun, nyeri dada kiri menjalar ke lengan kiri mendadak saat istirahat",
+  "identitas": "Ferlix, laki-laki, 58 tahun",
   "skenarioAwal": "Seorang pasien laki-laki 58 tahun, datang ke IGD dengan nyeri dada kiri mendadak yang menjalar ke lengan kiri.",
   "keluhanUtama": "Nyeri dada kiri mendadak",
   "groundTruth": {
@@ -94,16 +94,18 @@
       {
         "id": "pnj_ekg",
         "nama": "EKG",
-        "temuan": "Elevasi segmen ST ≥2mm di lead II, III, aVF (ST elevasi inferior) dengan ST depresi resiprokal di lead I dan aVL",
+        "temuan": "irama sinusdenganelevasi segmen ST pada lead II, III, dan aVF. Elevasi ST yang lebih tinggi padalead III dibandingkan lead IImengarah padaoklusi arteri koroner kanan (RCA) dominan. Selain itu, tampakgelombang Q patologis pada lead II, III, dan aVF, yang menunjukkan bahwa STEMI telah memasukifase subakut.",
         "signifikan": true,
-        "wajibLapor": true
+        "wajibLapor": true,
+        "image": "pnj_ekg.png"
       },
       {
         "id": "pnj_foto_thorax_ap",
         "nama": "Foto Thorax AP",
         "temuan": "kardiomegali, corakan vaskular paru meningkat (redistribusi), tidak ada pneumothorax",
         "signifikan": true,
-        "wajibLapor": true
+        "wajibLapor": true,
+        "image": "pnj_foto_thorax_ap.png"
       },
       {
         "id": "pnj_enzim_jantungbiomarker_jantungtroponinck",

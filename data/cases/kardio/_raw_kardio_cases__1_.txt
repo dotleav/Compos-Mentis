@@ -18,11 +18,11 @@ Level
 
 Judul Kasus
 
-Wiyoto, 43 tahun, karyawan swasta, dada berdebar berulang
+James, 43 tahun, karyawan swasta, dada berdebar berulang
 
 Identitas
 
-Wiyoto, 43 tahun, Karyawan swasta
+James, 43 tahun, Karyawan swasta
 
 Skenario Awal
 
@@ -152,11 +152,11 @@ Level
 
 Judul Kasus
 
-Boy, 37 tahun, karyawan swasta, dada berdebar saat aktivitas
+Aldrik, 37 tahun, karyawan swasta, dada berdebar saat aktivitas
 
 Identitas
 
-Boy, 37 tahun, Karyawan swasta, tinggal di Jetis
+Aldrik, 37 tahun, Karyawan swasta, tinggal di Jetis
 
 Skenario Awal
 
@@ -302,15 +302,15 @@ Level
 
 Judul Kasus
 
-Sudharma, 73 tahun, pensiunan, sesak napas 6 bulan terakhir
+Siti, 73 tahun, pensiunan, sesak napas 6 bulan terakhir
 
 Identitas
 
-Sudharma, 73 tahun, Pensiunan
+Siti, 73 tahun, Pensiunan
 
 Skenario Awal
 
-Seorang pasien 73 tahun, datang ke poli dengan keluhan sesak napas / napas tidak lega.
+Seorang wanita 73 tahun, datang ke poli dengan keluhan sesak napas / napas tidak lega.
 
 Keluhan Utama
 
@@ -446,11 +446,11 @@ Level
 
 Judul Kasus
 
-Rudi, 23 tahun, PNS, kepala dan leher nyeri, TD ≥ 180/110 mmHg
+Ainz Ooal Gown, 23 tahun, PNS, kepala dan leher nyeri, TD ≥ 180/110 mmHg
 
 Identitas
 
-Rudi, 23 tahun, PNS
+Ainz Ooal Gown, 23 tahun, PNS
 
 Skenario Awal
 
@@ -732,11 +732,11 @@ Level
 
 Judul Kasus
 
-Laki-laki 58 tahun, nyeri dada kiri menjalar ke lengan kiri mendadak saat istirahat
+Ferlix 58 tahun, nyeri dada kiri menjalar ke lengan kiri mendadak saat istirahat
 
 Identitas
 
-Pasien, laki-laki, 58 tahun
+Ferlix, laki-laki, 58 tahun
 
 Skenario Awal
 
@@ -800,11 +800,15 @@ Pemeriksaan Fisik
 
 Pemeriksaan Penunjang
 
-!*EKG: Elevasi segmen ST ≥2mm di lead II, III, aVF (ST elevasi inferior) dengan ST depresi resiprokal di lead I dan aVL
+!*EKG: irama sinus dengan elevasi segmen ST pada lead II, III, dan aVF. Elevasi ST yang lebih tinggi pada lead III dibandingkan lead II mengarah pada oklusi arteri koroner kanan (RCA) dominan. Selain itu, tampak gelombang Q patologis pada lead II, III, dan aVF, yang menunjukkan bahwa STEMI telah memasuki fase subakut. 
+
+
 
 
 
 !*Foto Thorax AP: kardiomegali, corakan vaskular paru meningkat (redistribusi), tidak ada pneumothorax
+
+
 
 
 
@@ -882,11 +886,11 @@ Level
 
 Judul Kasus
 
-Perempuan 62 tahun, nyeri dada saat jalan kaki 100 meter, makin sering, pernah hilang sendiri
+Marciella, 62 tahun, nyeri dada saat jalan kaki 100 meter, makin sering, pernah hilang sendiri
 
 Identitas
 
-Pasien, perempuan, 62 tahun
+Marciella, perempuan, 62 tahun
 
 Skenario Awal
 
@@ -942,15 +946,25 @@ Ekstremitas: akral hangat, tidak ada edema
 
 Pemeriksaan Penunjang
 
-*EKG: ST depresi horizontal 1,5mm di lead V4-V6 dan II, III, aVF — iskemia aktif
+*EKG: depresi segmen ST horizontal pada lead inferior (II, III, aVF) dan prekordial lateral terutama V4–V6 
 
-*Troponin I: 0,08 ng/mL (borderline meningkat) — NSTEMI vs UA tergantung nilai ambang laboratorium
 
-*Foto Thorax: kardiomegali ringan, tidak ada edema paru
 
-Profil lipid: LDL 198 mg/dL, HDL 38 mg/dL (risiko tinggi)
+*Troponin I: 0,08 ng/mL 
 
-Ekokardiografi: hipokinesia dinding inferior ringan, EF 50%
+
+
+!*Foto Thorax: kardiomegali ringan, tidak ada edema paru
+
+
+
+Profil lipid: 
+
+
+
+Ekokardiografi: 
+
+
 
 DD Benar
 
@@ -1012,11 +1026,11 @@ Level
 
 Judul Kasus
 
-Laki-laki 65 tahun, sesak napas berat mendadak tengah malam, duduk tegak, batuk berbusa merah muda
+Subiowo 65 tahun, sesak napas berat mendadak tengah malam, duduk tegak, batuk berbusa merah muda
 
 Identitas
 
-Pasien, laki-laki, 65 tahun
+Subiowo, laki-laki, 65 tahun
 
 Skenario Awal
 
@@ -1070,15 +1084,27 @@ Pemeriksaan Fisik
 
 Pemeriksaan Penunjang
 
-*Foto Thorax AP: edema paru (opasitas butterfly/bat wing bilateral), kardiomegali, efusi pleura bilateral, garis Kerley B (+)
+!*Foto Thorax AP: edema paru (opasitas butterfly/bat wing bilateral), kardiomegali, efusi pleura bilateral, garis Kerley B (+)
+
+
 
 *EKG: sinus takikardia, LVH, tidak ada elevasi ST akut
 
-BNP/NT-proBNP: sangat meningkat (>5000 pg/mL) — konfirmasi gagal jantung akut
 
-Troponin: negatif — menyingkirkan ACS sebagai pemicu
 
-AGD: PaO2 52 mmHg, hipoksemia berat
+
+
+BNP/NT-proBNP: 
+
+
+
+Troponin: 
+
+
+
+AGD: 
+
+
 
 DD Benar
 
@@ -1140,11 +1166,11 @@ Level
 
 Judul Kasus
 
-Laki-laki 35 tahun, demam 3 minggu, murmur baru, riwayat pengguna narkoba suntik
+Aldrich, 35 tahun, demam 3 minggu, murmur baru, riwayat pengguna narkoba suntik
 
 Identitas
 
-Pasien, laki-laki, 35 tahun
+Aldrich, laki-laki, 35 tahun
 
 Skenario Awal
 
@@ -1200,15 +1226,27 @@ Kulit: bekas luka suntikan di lengan bilateral
 
 Pemeriksaan Penunjang
 
-*Ekokardiografi transtorakal (TTE): vegetasi (+) di katup trikuspid, regurgitasi trikuspid berat
+*Ekokardiografi transtorakal (TTE): 
 
-*Kultur darah (3 set dari 3 tempat berbeda): S. aureus (+++) — positif pada >90% endokarditis akut
 
-Darah rutin: leukositosis 22.000, anemia (Hb 9,5), LED meningkat
 
-Urinalisis: hematuria mikroskopik (+) — emboli ginjal
+*Kultur darah (3 set dari 3 tempat berbeda):
 
-Foto Thorax: infiltrat multipel bilateral (emboli paru septik pada EI katup kanan)
+
+
+Darah rutin: 
+
+
+
+
+
+Urinalisis:
+
+
+
+!*Foto Thorax: infiltrat multipel bilateral (emboli paru septik pada EI katup kanan)
+
+
 
 DD Benar
 

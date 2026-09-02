@@ -3,8 +3,8 @@
   "kategori": "kardio",
   "level": "3B",
   "nama": "SVT (Supraventrikular Takikardia)",
-  "judulKasus": "Boy, 37 tahun, karyawan swasta, dada berdebar saat aktivitas",
-  "identitas": "Boy, 37 tahun, Karyawan swasta, tinggal di Jetis",
+  "judulKasus": "Aldrik, 37 tahun, karyawan swasta, dada berdebar saat aktivitas",
+  "identitas": "Aldrik, 37 tahun, Karyawan swasta, tinggal di Jetis",
   "skenarioAwal": "Seorang pasien 37 tahun, datang ke poli dengan keluhan dada berdebar.",
   "keluhanUtama": "Dada berdebar",
   "groundTruth": {

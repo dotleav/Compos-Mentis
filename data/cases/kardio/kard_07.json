@@ -3,8 +3,8 @@
   "kategori": "kardio",
   "level": "3B",
   "nama": "NSTEMI / Angina Tidak Stabil",
-  "judulKasus": "Perempuan 62 tahun, nyeri dada saat jalan kaki 100 meter, makin sering, pernah hilang sendiri",
-  "identitas": "Pasien, perempuan, 62 tahun",
+  "judulKasus": "Marciella, 62 tahun, nyeri dada saat jalan kaki 100 meter, makin sering, pernah hilang sendiri",
+  "identitas": "Marciella, perempuan, 62 tahun",
   "skenarioAwal": "Seorang pasien perempuan 62 tahun, datang ke poli dengan keluhan nyeri dada yang makin sering terjadi saat aktivitas ringan.",
   "keluhanUtama": "Nyeri dada saat aktivitas",
   "groundTruth": {
@@ -67,37 +67,42 @@
       {
         "id": "pnj_ekg",
         "nama": "EKG",
-        "temuan": "ST depresi horizontal 1,5mm di lead V4-V6 dan II, III, aVF — iskemia aktif",
+        "temuan": "depresi segmen ST horizontal pada lead inferior (II, III, aVF) dan prekordial lateral terutama V4–V6",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_ekg.png"
       },
       {
         "id": "pnj_troponin_i",
         "nama": "Troponin I",
-        "temuan": "0,08 ng/mL (borderline meningkat) — NSTEMI vs UA tergantung nilai ambang laboratorium",
+        "temuan": "0,08 ng/mL",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_troponin_i.png"
       },
       {
         "id": "pnj_foto_thorax",
         "nama": "Foto Thorax",
         "temuan": "kardiomegali ringan, tidak ada edema paru",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": true,
+        "image": "pnj_foto_thorax.png"
       },
       {
         "id": "pnj_profil_lipid",
         "nama": "Profil lipid",
-        "temuan": "LDL 198 mg/dL, HDL 38 mg/dL (risiko tinggi)",
+        "temuan": "",
         "signifikan": false,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_profil_lipid.png"
       },
       {
         "id": "pnj_ekokardiografi",
         "nama": "Ekokardiografi",
-        "temuan": "hipokinesia dinding inferior ringan, EF 50%",
+        "temuan": "",
         "signifikan": false,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_ekokardiografi.png"
       }
     ],
     "defaultNormal": {

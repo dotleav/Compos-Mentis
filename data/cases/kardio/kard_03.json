@@ -3,9 +3,9 @@
   "kategori": "kardio",
   "level": "3B",
   "nama": "CHF (Congestive Heart Failure)",
-  "judulKasus": "Sudharma, 73 tahun, pensiunan, sesak napas 6 bulan terakhir",
-  "identitas": "Sudharma, 73 tahun, Pensiunan",
-  "skenarioAwal": "Seorang pasien 73 tahun, datang ke poli dengan keluhan sesak napas / napas tidak lega.",
+  "judulKasus": "Siti, 73 tahun, pensiunan, sesak napas 6 bulan terakhir",
+  "identitas": "Siti, 73 tahun, Pensiunan",
+  "skenarioAwal": "Seorang wanita 73 tahun, datang ke poli dengan keluhan sesak napas / napas tidak lega.",
   "keluhanUtama": "Sesak napas / napas tidak lega",
   "groundTruth": {
     "riwayat": {

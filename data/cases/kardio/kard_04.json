@@ -3,8 +3,8 @@
   "kategori": "kardio",
   "level": "3B",
   "nama": "Krisis Hipertensi Urgensi",
-  "judulKasus": "Rudi, 23 tahun, PNS, kepala dan leher nyeri, TD ≥ 180/110 mmHg",
-  "identitas": "Rudi, 23 tahun, PNS",
+  "judulKasus": "Ainz Ooal Gown, 23 tahun, PNS, kepala dan leher nyeri, TD ≥ 180/110 mmHg",
+  "identitas": "Ainz Ooal Gown, 23 tahun, PNS",
   "skenarioAwal": "Seorang pasien 23 tahun, datang ke poli dengan keluhan kepala dan leher nyeri.",
   "keluhanUtama": "Kepala dan leher nyeri",
   "groundTruth": {

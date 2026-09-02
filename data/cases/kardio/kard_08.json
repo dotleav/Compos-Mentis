@@ -3,8 +3,8 @@
   "kategori": "kardio",
   "level": "3B",
   "nama": "Edema Paru Akut",
-  "judulKasus": "Laki-laki 65 tahun, sesak napas berat mendadak tengah malam, duduk tegak, batuk berbusa merah muda",
-  "identitas": "Pasien, laki-laki, 65 tahun",
+  "judulKasus": "Subiowo 65 tahun, sesak napas berat mendadak tengah malam, duduk tegak, batuk berbusa merah muda",
+  "identitas": "Subiowo, laki-laki, 65 tahun",
   "skenarioAwal": "Seorang pasien laki-laki 65 tahun, diantar ke IGD tengah malam dengan sesak napas berat mendadak.",
   "keluhanUtama": "Sesak napas berat mendadak",
   "groundTruth": {
@@ -68,35 +68,40 @@
         "nama": "Foto Thorax AP",
         "temuan": "edema paru (opasitas butterfly/bat wing bilateral), kardiomegali, efusi pleura bilateral, garis Kerley B (+)",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": true,
+        "image": "pnj_foto_thorax_ap.png"
       },
       {
         "id": "pnj_ekg",
         "nama": "EKG",
         "temuan": "sinus takikardia, LVH, tidak ada elevasi ST akut",
         "signifikan": true,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_ekg.png"
       },
       {
         "id": "pnj_bnpnt-probnp",
         "nama": "BNP/NT-proBNP",
-        "temuan": "sangat meningkat (>5000 pg/mL) — konfirmasi gagal jantung akut",
+        "temuan": "",
         "signifikan": false,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_bnpnt-probnp.png"
       },
       {
         "id": "pnj_troponin",
         "nama": "Troponin",
-        "temuan": "negatif — menyingkirkan ACS sebagai pemicu",
+        "temuan": "",
         "signifikan": false,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_troponin.png"
       },
       {
         "id": "pnj_agd",
         "nama": "AGD",
-        "temuan": "PaO2 52 mmHg, hipoksemia berat",
+        "temuan": "",
         "signifikan": false,
-        "wajibLapor": false
+        "wajibLapor": false,
+        "image": "pnj_agd.png"
       }
     ],
     "defaultNormal": {
