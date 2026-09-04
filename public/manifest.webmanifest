@@ -1,12 +1,12 @@
 {
-  "name": "CR Simulator — Latihan OSCE dengan AI",
-  "short_name": "CR Sim",
+  "name": "Compos Mentis — Latihan OSCE dengan AI",
+  "short_name": "Compos Mentis",
   "description": "Simulator Clinical Reasoning / OSCE dengan AI berperan sebagai pasien.",
   "lang": "id",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0f0e",
-  "theme_color": "#0a0f0e",
+  "background_color": "#0a0e0d",
+  "theme_color": "#0a0e0d",
   "icons": [
     {
       "src": "icon.svg",

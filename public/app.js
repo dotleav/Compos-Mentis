@@ -162,8 +162,15 @@ async function showLanding() {
   }
 
   app.innerHTML = `
-    <h1>CR <span>Simulator</span></h1>
-    <p class="muted">Pilih kategori/Stase Clinical Reasoning yang ingin dilatih, lalu tekan Mulai. Kasus akan diacak dari kategori yang kamu pilih.</p>
+    <div class="hero-eyebrow"><span class="dot"></span>Simulator Clinical Reasoning</div>
+    <h1>Compos <span>Mentis</span></h1>
+    <p class="muted">Latih anamnesis, pemeriksaan fisik, penunjang, diagnosis, dan tatalaksana lewat kasus yang diperankan AI — pilih Stase di bawah, lalu mulai.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">${cats.length}</div><div class="label">Stase Tersedia</div></div>
+      <div class="hero-stat"><div class="num">10</div><div class="label">Tahap per Sesi</div></div>
+    </div>
+
+    <div class="section-label">Mulai Cepat</div>
     <div class="quick-start-presets" role="group" aria-label="Mulai cepat">
       ${presets.map((preset) => `<button type="button" class="btn secondary" data-preset="${preset.id}" aria-pressed="false">${preset.label}</button>`).join("")}
     </div>
@@ -193,7 +200,8 @@ async function showLanding() {
       <p class="muted" id="devCaseWarn" style="margin-top:10px; display:none; color:var(--red); font-size:0.78rem;"></p>
     </div>
 
-    <div class="card" id="customCaseCard" style="margin-top:22px;">
+    <div class="section-label">Kasus Anda Sendiri</div>
+    <div class="card" id="customCaseCard">
       <h3 class="dev-picker-title">Custom Case</h3>
       <p class="muted" style="margin-bottom:14px;">
         Upload file .docx yang sudah diisi pakai template kasus — akan otomatis dikonversi jadi kasus yang bisa langsung dimainkan. Tidak ikut kotak centang kategori di atas, tapi bisa langsung dimulai dari daftar di bawah.
