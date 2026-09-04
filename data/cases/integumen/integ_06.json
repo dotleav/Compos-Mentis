@@ -1,0 +1,106 @@
+{
+  "id": "integ_06",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 6 - Integumen",
+  "judulKasus": "Nn. Wulan, 24 tahun, muncul bintil berair nyeri di bibir",
+  "identitas": "Wulan, 24 tahun, Karyawan swasta",
+  "skenarioAwal": "Seorang wanita 24 tahun datang dengan keluhan bintil berair nyeri di sudut bibir yang berulang.",
+  "keluhanUtama": "Muncul bintil berkelompok berisi cairan di sudut bibir kiri sejak 2 hari disertai rasa nyeri dan panas",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Keluhan serupa pernah dialami sebelumnya terutama saat kelelahan atau demam",
+        "Diawali rasa gatal/kesemutan sebelum bintil muncul",
+        "Tidak ada demam saat ini"
+      ],
+      "rpd": "Riwayat keluhan serupa berulang sejak 2 tahun lalu",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Akhir-akhir ini kurang tidur karena beban kerja"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "vesikel berkelompok di atas dasar eritema di area perioral, sebagian sudah pecah membentuk erosi dan krusta",
+        "signifikan": true,
+        "wajibLapor": true,
+        "image": "pf_status_dermatologisujud_kelainan_kulit_u.png"
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Herpes Simpleks Tanpa Komplikasi",
+    "differensialBenar": [
+      "Herpes simpleks labialis",
+      "Impetigo",
+      "Stomatitis aftosa",
+      "Herpes zoster"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antivirus oral, paling efektif diberikan pada fase prodromal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Acyclovir tab 200 mg No. XXV",
+      "benar": false
+    },
+    {
+      "opsi": "S 5 dd tab I (selama 5 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Analgetik ringan bila nyeri",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Paracetamol tab 500 mg No. X",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd tab I prn nyeri",
+      "benar": false
+    },
+    {
+      "opsi": "Kompres dengan bahan tidak steril/tidak dianjurkan (misal air liur, odol)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari kontak langsung (berciuman, berbagi alat makan) selama lesi masih aktif",
+      "benar": true
+    },
+    {
+      "opsi": "Kenali gejala prodromal (kesemutan/gatal) agar terapi dapat dimulai lebih awal saat kambuh",
+      "benar": true
+    },
+    {
+      "opsi": "Memecahkan vesikel dengan jarum atau kuku",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "integ_39",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 39 - Integumen",
+  "judulKasus": "Bu Lestari, 33 tahun, benjolan nyeri berulang di ketiak",
+  "identitas": "Lestari, 33 tahun, Karyawan pabrik",
+  "skenarioAwal": "Seorang wanita 33 tahun datang dengan keluhan benjolan nyeri berulang di kedua ketiak.",
+  "keluhanUtama": "Benjolan nyeri di kedua ketiak yang hilang timbul dan berulang sejak 1 tahun, kadang pecah mengeluarkan nanah berbau",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Benjolan muncul di lokasi yang sama berulang kali",
+        "Meninggalkan bekas luka/jaringan parut setelah sembuh",
+        "Memberat saat berkeringat atau memakai deodoran tertentu"
+      ],
+      "rpd": "Obesitas, IMT 30 kg/m2",
+      "rpk": "Ibu kandung memiliki riwayat keluhan serupa",
+      "lifestyle": [
+        "Perokok aktif, obesitas, sering berkeringat berlebih di ketiak"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "nodul inflamasi nyeri berulang, sebagian disertai sinus/abses yang mengeluarkan pus, serta jaringan parut (skar) dari lesi sebelumnya, di regio aksila bilateral",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pf_komedo_ganda_double_comedones",
+        "nama": "Komedo ganda (double comedones)",
+        "temuan": "dapat ditemukan",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Hidradenitis Supurativa",
+    "differensialBenar": [
+      "Hidradenitis supurativa",
+      "Furunkel/karbunkel",
+      "Limfadenitis aksila",
+      "Kista epidermal terinfeksi"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antibiotik oral untuk mengendalikan peradangan dan infeksi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Clindamycin tab 300 mg No. XX",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd tab I (selama 10 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Kompres hangat pada lesi aktif",
+      "benar": true
+    },
+    {
+      "opsi": "Insisi drainase bila terdapat abses matang/fluktuatif",
+      "benar": true
+    },
+    {
+      "opsi": "Rujuk ke spesialis kulit bila rekuren berat/kronik untuk pertimbangan terapi lanjutan",
+      "benar": true
+    },
+    {
+      "opsi": "Menunggu lesi pecah sendiri tanpa evaluasi dan terapi (dapat memperberat jaringan parut)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Turunkan berat badan dan hentikan kebiasaan merokok karena keduanya faktor risiko utama",
+      "benar": true
+    },
+    {
+      "opsi": "Kenakan pakaian longgar dan hindari deodoran/produk iritan pada area ketiak",
+      "benar": true
+    },
+    {
+      "opsi": "Memencet atau mengorek benjolan sendiri",
+      "benar": false
+    }
+  ]
+}

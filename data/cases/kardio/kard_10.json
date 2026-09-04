@@ -1,0 +1,152 @@
+{
+  "id": "kard_10",
+  "kategori": "kardio",
+  "level": "3A",
+  "nama": "Penyakit Jantung Reumatik",
+  "judulKasus": "Perempuan 22 tahun, sesak progresif, murmur mitral, riwayat demam reumatik berulang masa kecil",
+  "identitas": "Pasien, perempuan, 22 tahun",
+  "skenarioAwal": "Seorang pasien perempuan 22 tahun, datang ke poli dengan sesak napas yang makin berat saat aktivitas.",
+  "keluhanUtama": "Sesak napas saat aktivitas",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sesak napas saat aktivitas makin berat 6 bulan terakhir — dulu hanya saat olahraga, kini saat berjalan 50 meter",
+        "Batuk kering sesekali, tidak ada hemoptisis",
+        "Berdebar-debar, kadang tidak beraturan",
+        "Tidak ada nyeri dada",
+        "Kedua kaki bengkak ringan"
+      ],
+      "rpd": "Riwayat demam reumatik (sakit tenggorokan berulang, sendi bengkak pindah-pindah, jantung berdebar) usia 8-15 tahun, tidak pernah mendapat profilaksis penisilin rutin.",
+      "rpk": "Ibu ada riwayat penyakit jantung",
+      "lifestyle": [
+        "Ibu rumah tangga, 2 anak kecil",
+        "Tidak merokok, tidak alkohol",
+        "Ekonomi menengah ke bawah, jarang kontrol ke dokter"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "Tampak sesak ringan, malar flush (+) — pipi kemerahan khas stenosis mitral",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ttv",
+        "nama": "TTV",
+        "temuan": "TD 110/70 mmHg, HR 96x/mnt (ireguler), RR 22x/mnt, SpO2 95%",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_jantung",
+        "nama": "Jantung",
+        "temuan": "opening snap (+), murmur diastolik rumbling di apex (mid-diastolik, low-pitched) — khas stenosis mitral JVP meningkat, tidak ada hepatomegali",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_paru",
+        "nama": "Paru",
+        "temuan": "ronki basah halus di basal bilateral (kongesti)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ekstremitas",
+        "nama": "Ekstremitas",
+        "temuan": "edema pitting bilateral ringan",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "Atrial fibrilasi (ireguler tanpa gelombang P), P mitrale tidak terlihat",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_foto_thorax_pa",
+        "nama": "Foto Thorax PA",
+        "temuan": "kardiomegali dengan pembesaran atrium kiri (double contour kanan), pinggang jantung hilang, edema interstitial",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ekokardiografi",
+        "nama": "Ekokardiografi",
+        "temuan": "area katup mitral 1,2 cm² (stenosis berat, normal >4cm²), gradien rata-rata 12 mmHg, skor Wilkins 8",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_darah_rutin",
+        "nama": "Darah rutin",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Penyakit Jantung Reumatik — Stenosis Mitral",
+    "differensialBenar": [
+      "Penyakit Jantung Reumatik — Stenosis Mitral",
+      "Kardiomiopati Dilatasi",
+      "Hipertensi Pulmonal",
+      "Endokarditis Infektif"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Profilaksis demam reumatik: benzatin penisilin G 1,2 juta IU IM tiap 3-4 minggu seumur hidup (atau minimal sampai usia 40 tahun)",
+      "benar": true
+    },
+    {
+      "opsi": "Diuretik (furosemid) untuk mengurangi kongesti",
+      "benar": true
+    },
+    {
+      "opsi": "Rate control untuk AF: beta bloker (bisoprolol) atau digoksin",
+      "benar": true
+    },
+    {
+      "opsi": "Antikoagulan warfarin (INR 2-3) karena AF pada stenosis mitral — risiko tromboemboli sangat tinggi",
+      "benar": true
+    },
+    {
+      "opsi": "Rujuk kardiologi untuk pertimbangan ballon mitral valvuloplasty (BMV) atau operasi",
+      "benar": true
+    },
+    {
+      "opsi": "Stenosis mitral ringan tidak perlu terapi apapun, cukup dipantau setiap 10 tahun",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Profilaksis penisilin harus dilanjutkan rutin untuk mencegah serangan demam reumatik ulang yang memperparah kerusakan katup",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak perlu membatasi aktivitas fisik ringan-sedang — pantau gejala",
+      "benar": true
+    },
+    {
+      "opsi": "Warfarin harus diminum rutin dan kontrol INR tiap bulan — jangan berhenti sendiri",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit jantung reumatik hanya terjadi pada orang tua dan tidak bisa mengenai anak muda",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": "kard_09",
+  "kategori": "kardio",
+  "level": "3B",
+  "nama": "Endokarditis Infektif",
+  "judulKasus": "Aldrich, 35 tahun, demam 3 minggu, murmur baru, riwayat pengguna narkoba suntik",
+  "identitas": "Aldrich, laki-laki, 35 tahun",
+  "skenarioAwal": "Seorang pasien laki-laki 35 tahun, datang dengan demam 3 minggu yang tidak membaik dan ditemukan murmur jantung baru.",
+  "keluhanUtama": "Demam 3 minggu tidak membaik",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Demam hilang timbul sejak 3 minggu, menggigil, keringat malam",
+        "Lemas dan penurunan nafsu makan",
+        "Sesak napas ringan saat aktivitas",
+        "Nyeri sendi berpindah-pindah",
+        "Tidak ada batuk darah, tidak ada batuk produktif bermakna"
+      ],
+      "rpd": "Pengguna narkoba suntik aktif. Tidak ada riwayat penyakit jantung sebelumnya. HIV belum pernah diperiksa.",
+      "rpk": "Tidak ada penyakit keluarga yang relevan",
+      "lifestyle": [
+        "Pengguna heroin IV, berbagi jarum suntik",
+        "Tidak bekerja tetap",
+        "Higiene buruk"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "Tampak sakit sedang-berat, pucat",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ttv",
+        "nama": "TTV",
+        "temuan": "TD 110/65 mmHg, HR 104x/mnt, RR 22x/mnt, Suhu 39,1°C",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_jantung",
+        "nama": "Jantung",
+        "temuan": "murmur regurgitasi trikuspid baru (bising holosistolik di tepi kiri sternum bawah, meningkat saat inspirasi)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_mata",
+        "nama": "Mata",
+        "temuan": "Roth spot (+) pada funduskopi — perdarahan retina dengan pusat pucat",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tangan",
+        "nama": "Tangan",
+        "temuan": "Osler nodes (+) di ujung jari (nyeri), Janeway lesion (+) di telapak tangan (tidak nyeri) Splenomegali ringan (+)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_kulit",
+        "nama": "Kulit",
+        "temuan": "bekas luka suntikan di lengan bilateral",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_ekokardiografi_transtorakal_tte",
+        "nama": "Ekokardiografi transtorakal (TTE)",
+        "temuan": "",
+        "signifikan": true,
+        "wajibLapor": false,
+        "image": "pnj_ekokardiografi_transtorakal_tte.png"
+      },
+      {
+        "id": "pnj_kultur_darah_3_set_dari_3_tempat_berbeda",
+        "nama": "Kultur darah (3 set dari 3 tempat berbeda)",
+        "temuan": "",
+        "signifikan": true,
+        "wajibLapor": false,
+        "image": "pnj_kultur_darah_3_set_dari_3_tempat_berbeda.png"
+      },
+      {
+        "id": "pnj_darah_rutin",
+        "nama": "Darah rutin",
+        "temuan": "",
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_darah_rutin.png"
+      },
+      {
+        "id": "pnj_urinalisis",
+        "nama": "Urinalisis",
+        "temuan": "",
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_urinalisis.png"
+      },
+      {
+        "id": "pnj_foto_thorax",
+        "nama": "Foto Thorax",
+        "temuan": "infiltrat multipel bilateral (emboli paru septik pada EI katup kanan)",
+        "signifikan": true,
+        "wajibLapor": true,
+        "image": "pnj_foto_thorax.png"
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Endokarditis Infektif",
+    "differensialBenar": [
+      "Endokarditis Infektif",
+      "TB Milier",
+      "Demam Reumatik Akut",
+      "Sepsis Bakteremia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antibiotik IV jangka panjang (4-6 minggu): oksasilin/kloksasilin 2g/4 jam (MSSA) atau vankomisin (MRSA) sesuai hasil sensitivitas",
+      "benar": true
+    },
+    {
+      "opsi": "Rawat inap ICU/bangsal jantung, monitoring komplikasi emboli (stroke, emboli paru, abses)",
+      "benar": true
+    },
+    {
+      "opsi": "Konsultasi kardiologi dan bedah toraks untuk evaluasi indikasi operasi (vegetasi besar, gagal terapi, gagal jantung berat)",
+      "benar": true
+    },
+    {
+      "opsi": "Rujuk program rehabilitasi adiksi narkoba",
+      "benar": true
+    },
+    {
+      "opsi": "Antibiotik oral 1 minggu sudah cukup untuk endokarditis infektif ringan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Berhenti menggunakan narkoba suntik — risiko kematian dari endokarditis sangat tinggi bila berlanjut",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan berbagi jarum suntik — risiko HIV dan hepatitis C juga sangat tinggi",
+      "benar": true
+    },
+    {
+      "opsi": "Periksa HIV dan hepatitis C setelah kondisi stabil",
+      "benar": true
+    },
+    {
+      "opsi": "Endokarditis yang sudah sembuh tidak bisa kambuh lagi",
+      "benar": false
+    }
+  ]
+}

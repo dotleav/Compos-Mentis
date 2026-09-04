@@ -1,0 +1,166 @@
+{
+  "id": "respi_01",
+  "kategori": "respi",
+  "level": "3A",
+  "nama": "PPOK",
+  "judulKasus": "Pasien 65-70 tahun, sesak napas persisten memberat saat aktivitas",
+  "identitas": "Pasien, 65 tahun",
+  "keluhanUtama": "Sesak napas",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Sesak napas terus menerus (persisten), memberat saat naik tangga dan beraktivitas",
+        "Gejala lemas, nyeri dada ringan",
+        "1 minggu yang lalu batuk, rasa seperti mau ngeluarin dahak",
+        "Sesak napas 2 tahun secara terus menerus",
+        "Batuk 1 minggu, makin parah",
+        "Susah mengeluarkan dahak",
+        "Istirahat dapat memperingan"
+      ],
+      "rpd": "Sudah minum obat tapi masih sesak 2 bulan yang lalu sesak parah dan lemas lalu dirawat di RS Sudah vaksin COVID Ibu asma",
+      "rpk": "Ibu asma",
+      "lifestyle": [
+        "Kalau panas suka buka kaca di jalan",
+        "Sering keluar kota 1-2 jam",
+        "Sudah berhenti merokok sejak 2 tahun lalu (merokok sudah dari remaja pas lulus SMA)"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "-",
+        "signifikan": false
+      },
+      {
+        "id": "pf_suhu",
+        "nama": "Suhu",
+        "temuan": "36,9°C, TD: -, Nadi: 150, Nafas: 28, O2: 92% (pakai nasal canul)",
+        "signifikan": false
+      },
+      {
+        "id": "pf_inspeksi",
+        "nama": "Inspeksi",
+        "temuan": "barrel chest (+)",
+        "signifikan": true
+      },
+      {
+        "id": "pf_palpasi",
+        "nama": "Palpasi",
+        "temuan": "nyeri (-), fremitus sedikit menurun di kanan kiri, pengembangan paru simetris",
+        "signifikan": true
+      },
+      {
+        "id": "pf_perkusi",
+        "nama": "Perkusi",
+        "temuan": "hipersomnor di kanan dan kiri",
+        "signifikan": true
+      },
+      {
+        "id": "pf_auskultasi",
+        "nama": "Auskultasi",
+        "temuan": "vesikuler menurun, wheezing (+)",
+        "signifikan": true
+      },
+      {
+        "id": "pf_ttv",
+        "nama": "TTV",
+        "temuan": "TD 130/90, HR 105 (masih masuk reguler), RR 28x/menit, Suhu 36,9°C",
+        "signifikan": false
+      },
+      {
+        "id": "pf_htt_khususnya_thorax",
+        "nama": "HTT (khususnya thorax)",
+        "temuan": "Inspeksi barrel chest (+), Palpasi nyeri (-) fremitus sedikit menurun di kanan kiri pengembangan paru simetris, Perkusi hipersomnor pengembangan paru 3-4 cm, Auskultasi vesikuler menurun wheezing di kedua lapang paru",
+        "signifikan": false
+      },
+      {
+        "id": "pf_mata",
+        "nama": "Mata",
+        "temuan": "dbn, Bibir: pursed lips breathing (-), sianosis (-)",
+        "signifikan": false
+      },
+      {
+        "id": "pf_abdomen",
+        "nama": "Abdomen",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pf_ekstremitas",
+        "nama": "Ekstremitas",
+        "temuan": "clubbing finger (-), CRT <2s, kak dbn",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_darah_rutin",
+        "nama": "Darah rutin",
+        "temuan": "dbn",
+        "signifikan": false
+      },
+      {
+        "id": "pnj_x_ray_ppok",
+        "nama": "X ray PPOK",
+        "temuan": "(lihat hasil rontgen)",
+        "signifikan": true
+      },
+      {
+        "id": "pnj_spirometri",
+        "nama": "Spirometri",
+        "temuan": "FEV 1 menurun",
+        "signifikan": true
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "PPOK",
+    "differensialBenar": [
+      "Asma Bronkial",
+      "Bronkitis",
+      "Bronkiektasis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Oksigenasi",
+      "benar": true
+    },
+    {
+      "opsi": "LABA (Long-Acting Beta Agonist)",
+      "benar": true
+    },
+    {
+      "opsi": "LAMA (Long-Acting Muscarinic Antagonist)",
+      "benar": true
+    },
+    {
+      "opsi": "Ambroxol untuk batuk",
+      "benar": true
+    },
+    {
+      "opsi": "Antibiotik rutin diberikan meski tidak ada tanda eksaserbasi/infeksi",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Faktor resiko karena usia, paparan asap, dan rokok",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit bersifat progresif, persisten, irreversible",
+      "benar": true
+    },
+    {
+      "opsi": "Penyakit bisa sembuh total hanya dengan berhenti merokok",
+      "benar": false
+    }
+  ],
+  "skenarioAwal": "Seorang pasien 65 tahun, datang ke poli dengan keluhan sesak napas."
+}

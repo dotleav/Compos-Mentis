@@ -1,0 +1,123 @@
+{
+  "id": "integ_43",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 43 - Integumen",
+  "judulKasus": "Bp. Surya, 41 tahun, ruam kemerahan gatal di seluruh tubuh setelah minum obat",
+  "identitas": "Surya, 41 tahun, Pegawai negeri",
+  "skenarioAwal": "Seorang laki-laki 41 tahun datang dengan keluhan ruam kemerahan gatal di seluruh tubuh sejak 1 hari setelah minum antibiotik.",
+  "keluhanUtama": "Muncul ruam kemerahan gatal simetris di badan dan lengan sejak 1 hari setelah mengonsumsi antibiotik amoxicillin untuk sakit gigi",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Ruam muncul 2 hari setelah mulai minum obat",
+        "Tidak ada sesak napas atau bengkak wajah",
+        "Tidak demam tinggi, tidak ada lepuh/luka pada mukosa mulut atau mata"
+      ],
+      "rpd": "Riwayat alergi penisilin ringan pernah dialami saat kecil (tidak dikonfirmasi)",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Baru pertama kali dalam beberapa tahun terakhir mengonsumsi antibiotik golongan penisilin"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik, tidak tampak sesak",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "makula dan papul eritematosa, simetris, konfluens sebagian, tersebar di badan dan ekstremitas atas, tanpa vesikel/bula",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pf_mukosa_mulut_dan_mata",
+        "nama": "Mukosa mulut dan mata",
+        "temuan": "tidak ditemukan erosi/lesi (menyingkirkan tanda bahaya Stevens-Johnson Syndrome)",
+        "signifikan": false,
+        "wajibLapor": true
+      },
+      {
+        "id": "pf_nikolsky_sign",
+        "nama": "Nikolsky sign",
+        "temuan": "negatif",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Exanthematous Drug Eruption",
+    "differensialBenar": [
+      "Exanthematous drug eruption",
+      "Urtikaria akut",
+      "Morbili",
+      "Sindrom Stevens-Johnson (bila ada keterlibatan mukosa/bula)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Hentikan segera obat yang dicurigai sebagai penyebab (amoxicillin)",
+      "benar": true
+    },
+    {
+      "opsi": "Antihistamin oral",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cetirizine tab 10 mg No. X",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I",
+      "benar": false
+    },
+    {
+      "opsi": "Kortikosteroid topikal ringan bila gatal signifikan",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Hydrocortisone cream 1% tube 10 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol",
+      "benar": false
+    },
+    {
+      "opsi": "Melanjutkan obat penyebab sambil 'menunggu' apakah ruam membaik sendiri",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Catat nama obat penyebab pada rekam medis dan sampaikan ke pasien agar dihindari di masa depan (termasuk golongan obat yang sama)",
+      "benar": true
+    },
+    {
+      "opsi": "Segera kembali ke fasilitas kesehatan bila muncul demam tinggi, lepuh/kulit mengelupas, atau luka di mulut/mata (tanda bahaya reaksi obat berat)",
+      "benar": true
+    },
+    {
+      "opsi": "Mengonsumsi kembali obat yang sama di kemudian hari tanpa konsultasi dokter",
+      "benar": false
+    }
+  ]
+}

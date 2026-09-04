@@ -1,0 +1,113 @@
+{
+  "id": "integ_19",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 19 - Integumen",
+  "judulKasus": "Bp. Agus, 29 tahun, bercak merah gatal berbentuk cincin di punggung",
+  "identitas": "Agus, 29 tahun, Kuli bangunan",
+  "skenarioAwal": "Seorang laki-laki 29 tahun datang dengan keluhan bercak gatal berbentuk cincin yang meluas di punggung.",
+  "keluhanUtama": "Bercak merah gatal berbentuk bulat seperti cincin di punggung sejak 3 minggu, semakin melebar",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Gatal terutama saat berkeringat",
+        "Bagian tengah lesi tampak lebih tenang dari tepinya",
+        "Sudah mencoba bedak namun tidak membaik"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit kronis",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Bekerja di luar ruangan dan sering berkeringat, jarang ganti baju"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "plak anular eritematosa dengan tepi aktif meninggi berskuama dan central clearing, multipel, di regio dorsum",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_kerokan_kulit_koh_10-20",
+        "nama": "Kerokan kulit + KOH 10-20%",
+        "temuan": "tampak hifa panjang bersepta",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tinea Korporis",
+    "differensialBenar": [
+      "Tinea korporis",
+      "Pitiriasis rosea",
+      "Dermatitis numularis",
+      "Psoriasis vulgaris"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antijamur topikal untuk lesi terbatas",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Miconazole cream 2% tube 10 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol (selama 2-4 minggu)",
+      "benar": false
+    },
+    {
+      "opsi": "Bila lesi luas (>3 area), antijamur oral",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Griseofulvin tab 500 mg No. XXX",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I selama 2-4 minggu",
+      "benar": false
+    },
+    {
+      "opsi": "Menghentikan obat segera setelah gatal hilang meski lesi kulit belum bersih total",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga kulit tetap kering, ganti pakaian yang basah oleh keringat sesegera mungkin",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan berbagi handuk atau pakaian dengan orang lain",
+      "benar": true
+    },
+    {
+      "opsi": "Menggunakan pakaian ketat dan lembap dalam waktu lama",
+      "benar": false
+    }
+  ]
+}

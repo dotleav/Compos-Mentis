@@ -1,0 +1,206 @@
+{
+  "id": "kard_02",
+  "kategori": "kardio",
+  "level": "3B",
+  "nama": "SVT (Supraventrikular Takikardia)",
+  "judulKasus": "Aldrik, 37 tahun, karyawan swasta, dada berdebar saat aktivitas",
+  "identitas": "Aldrik, 37 tahun, Karyawan swasta, tinggal di Jetis",
+  "skenarioAwal": "Seorang pasien 37 tahun, datang ke poli dengan keluhan dada berdebar.",
+  "keluhanUtama": "Dada berdebar",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Berdebar saat beraktivitas",
+        "Sudah 2 jam, terus menerus",
+        "Tidak sesak",
+        "Tidak menjalar",
+        "Tidak pingsan (sinkop negatif)",
+        "Belum diobati"
+      ],
+      "rpd": "Sebelumnya sudah pernah tapi tidak dibawa ke RS Trauma: -",
+      "rpk": "Hipertensi: - DM: -",
+      "lifestyle": [
+        "HT: -",
+        "Rokok: -",
+        "Kopi: -"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "Kompos mentis",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_suhu",
+        "nama": "Suhu",
+        "temuan": "36,8°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_td",
+        "nama": "TD",
+        "temuan": "115/79 mmHg",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_hr",
+        "nama": "HR",
+        "temuan": "160 bpm, reguler",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_rr",
+        "nama": "RR",
+        "temuan": "22x/menit",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_thorax_inspeksi",
+        "nama": "Thorax Inspeksi",
+        "temuan": "pergerakan dada simetris, ictus cordis terlihat",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_palpasi",
+        "nama": "Palpasi",
+        "temuan": "pulsasi ventrikel dextra teraba, sistolik epigastrium",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_perkusi",
+        "nama": "Perkusi",
+        "temuan": "aorta dalam batas normal, batas jantung dextra et sinistra dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_auskultasi",
+        "nama": "Auskultasi",
+        "temuan": "napas vesikuler, aorta bruit, ictus cordis dalam batas normal, katup aorta dalam batas normal, katup pulmonal dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_crt_dan_akral",
+        "nama": "CRT dan akral",
+        "temuan": "periksa",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "Takikardi reguler, kompleks QRS sempit (narrow complex), gelombang P sulit diidentifikasi (tertutup gelombang T), HR ±160x/menit.",
+        "signifikan": true,
+        "wajibLapor": true,
+        "image": "pnj_ekg.png"
+      },
+      {
+        "id": "pnj_pemeriksaan_elektrolit",
+        "nama": "Pemeriksaan Elektrolit",
+        "temuan": "",
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_pemeriksaan_elektrolit.png"
+      },
+      {
+        "id": "pnj_pemeriksaan_darah_rutin",
+        "nama": "Pemeriksaan Darah rutin",
+        "temuan": "",
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_pemeriksaan_darah_rutin.png"
+      },
+      {
+        "id": "pnj_cek_fungsi_ginjal",
+        "nama": "Cek fungsi ginjal",
+        "temuan": "",
+        "signifikan": false,
+        "wajibLapor": false,
+        "image": "pnj_cek_fungsi_ginjal.png"
+      },
+      {
+        "id": "pnj_rontgen",
+        "nama": "Rontgen",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": true,
+        "image": "pnj_rontgen.png"
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Supraventrikular Takikardia (SVT)",
+    "differensialBenar": [
+      "Atrial Flutter",
+      "Atrial Fibrilasi"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "TAHAP PERTAMA: Pijat Karotis (cek bruit dulu) → 2 jari, 5-10 detik",
+      "benar": true
+    },
+    {
+      "opsi": "TAHAP KEDUA: Modified Valsalva Maneuver → mengejan 15 detik lalu baringkan dengan kaki diangkat",
+      "benar": true
+    },
+    {
+      "opsi": "FARMAKO jika gagal: Adenosin IV bolus cepat 6mg/2mL No. II, flush NaCl 0.9% 20cc",
+      "benar": true
+    },
+    {
+      "opsi": "Jika gagal ulang: Adenosin 12mg/4mL No. II (maks 2x 12mg)",
+      "benar": true
+    },
+    {
+      "opsi": "Jika adenosin gagal: R/ Inj. Diltiazem 5mg/mL, 5mL No. I, bolus IV pelan 2 menit",
+      "benar": true
+    },
+    {
+      "opsi": "Oral take-home (pencegahan kambuh): R/ Bisoprolol tab mg 2,5 No. X s.1.d.d tab I (pagi)",
+      "benar": true
+    },
+    {
+      "opsi": "Tidak dilakukan manuver vagal sebelum farmako",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Rujuk Sp.JP untuk observasi",
+      "benar": true
+    },
+    {
+      "opsi": "Ajarkan pasien vagal maneuver jika perlu",
+      "benar": true
+    },
+    {
+      "opsi": "Gangguan jalur listrik kecil di jantung yang bikin jantung berdenyut terlalu cepat dan beraturan, namanya SVT. Ini biasanya tidak berbahaya/mengancam nyawa, tapi memang bisa mengganggu kenyamanan",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari pemicu: kafein, alkohol, kurang tidur, stres berlebihan",
+      "benar": true
+    },
+    {
+      "opsi": "Berhenti obat sendiri",
+      "benar": false
+    }
+  ]
+}

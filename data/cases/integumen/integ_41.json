@@ -1,0 +1,97 @@
+{
+  "id": "integ_41",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 41 - Integumen",
+  "judulKasus": "By. Kanaya, 3 bulan, bintil merah kecil di leher dan punggung",
+  "identitas": "Kanaya, 3 bulan tahun",
+  "skenarioAwal": "Seorang bayi perempuan 3 bulan dibawa ibunya dengan keluhan bintil-bintil merah kecil di leher dan punggung.",
+  "keluhanUtama": "Muncul bintil-bintil merah kecil di leher, punggung, dan dada sejak 3 hari, terutama saat cuaca panas",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bayi tampak rewel dan sering menangis karena gatal/panas",
+        "Bayi sering dibedong rapat dan dipakaikan baju tebal",
+        "Tidak demam"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Sering dibedong rapat, jarang di ruangan berventilasi baik"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "aktif, rewel",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "papul dan vesikel kecil (1-2 mm) eritematosa multipel di regio colli, dorsum, dan dada, terutama pada area lipatan dan tertutup pakaian",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Miliaria (Biang Keringat)",
+    "differensialBenar": [
+      "Miliaria",
+      "Dermatitis atopik infantil",
+      "Eritema toksikum neonatorum",
+      "Folikulitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Losio penenang bila diperlukan",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Calamine lotion fl 60 ml No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S ue applic loc dol 2-3 dd",
+      "benar": false
+    },
+    {
+      "opsi": "Menggunakan bedak tabur tebal pada kulit lembap/berkeringat (dapat menyumbat pori dan memperberat)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kenakan pakaian tipis dan longgar berbahan katun, hindari membedong terlalu rapat",
+      "benar": true
+    },
+    {
+      "opsi": "Jaga ruangan tetap sejuk dan berventilasi baik, mandikan bayi dengan air hangat suam-suam kuku",
+      "benar": true
+    },
+    {
+      "opsi": "Membedong bayi rapat sepanjang hari pada cuaca panas",
+      "benar": false
+    },
+    {
+      "opsi": "Jaga bayi tetap sejuk dan kering, kurangi pakaian berlapis",
+      "benar": true
+    }
+  ]
+}

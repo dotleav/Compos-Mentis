@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CR Simulator — Latihan OSCE dengan AI</title>
+<meta name="description" content="Simulator Clinical Reasoning / OSCE dengan AI berperan sebagai pasien — latihan anamnesis, pemeriksaan fisik, penunjang, diagnosis, dan tatalaksana.">
+<meta name="theme-color" content="#0a0f0e">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<script>
+  // Applied before first paint (blocking, tiny) so there's no flash of the
+  // wrong theme on load. Default stays dark unless the user has explicitly
+  // switched to light before — matches the "default tetap dark mode" ask.
+  (function () {
+    try {
+      var saved = localStorage.getItem("osce-theme");
+      if (saved === "light") document.documentElement.setAttribute("data-theme", "light");
+    } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button id="settingsToggle" type="button" aria-label="Pengaturan" title="Pengaturan">⚙️</button>
+
+  <div id="settingsOverlay"></div>
+  <div id="settingsPanel">
+    <h3>Pengaturan</h3>
+    <div class="settings-row">
+      <span class="settings-label" id="settingsThemeLabel">Tema Gelap</span>
+      <span class="switch" id="settingsThemeSwitch" role="switch" aria-label="Ganti tema terang/gelap"></span>
+    </div>
+    <div class="settings-row">
+      <div>
+        <div class="settings-label">Developer Mode</div>
+        <div class="settings-sub">Log pemanggilan AI &amp; paksa provider</div>
+      </div>
+      <span class="switch" id="settingsDevSwitch" role="switch" aria-label="Aktifkan developer mode"></span>
+    </div>
+  </div>
+
+  <div id="devOverlay">
+    <div id="devPasswordCard">
+      <h3>Dev Mode</h3>
+      <p class="muted" style="margin-bottom:10px;">Masukkan password untuk melihat provider AI &amp; log pemanggilan.</p>
+      <input type="password" id="devPasswordInput" placeholder="Password">
+      <div id="devPasswordError"></div>
+      <div class="row" style="gap:8px;">
+        <button class="btn secondary" id="devCancelBtn" style="flex:1;">Batal</button>
+        <button class="btn" id="devSubmitBtn" style="flex:1;">Masuk</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="devPanel">
+    <div id="devResizeHandle"></div>
+    <div class="dev-panel-inner">
+      <h3>Dev Log <span class="dev-close" id="devCloseBtn">Tutup ✕</span></h3>
+      <div class="dev-row">
+        <span class="muted" style="font-size:0.72rem;">Paksa provider:</span>
+        <select id="devProviderSelect">
+          <option value="">Auto (fallback normal)</option>
+          <option value="groq">groq</option>
+          <option value="cerebras">cerebras</option>
+          <option value="gemini">gemini</option>
+          <option value="mistral">mistral</option>
+          <option value="nvidia">nvidia</option>
+          <option value="deepseek">deepseek</option>
+          <option value="huggingface">huggingface</option>
+          <option value="cloudflare">cloudflare</option>
+          <option value="ollama-cloud">ollama-cloud</option>
+          <option value="ollama">ollama</option>
+        </select>
+        <button class="btn secondary" id="devClearLogBtn" style="font-size:0.68rem; padding:6px 10px;">Bersihkan log</button>
+      </div>
+    </div>
+    <div id="devLogList"></div>
+  </div>
+
+  <div id="app"></div>
+  <script src="app.js"></script>
+  <script>
+    var Theme = (function () {
+      var root = document.documentElement;
+      function isLight() { return root.getAttribute("data-theme") === "light"; }
+      function set(light) {
+        if (light) {
+          root.setAttribute("data-theme", "light");
+          try { localStorage.setItem("osce-theme", "light"); } catch (e) {}
+        } else {
+          root.removeAttribute("data-theme");
+          try { localStorage.setItem("osce-theme", "dark"); } catch (e) {}
+        }
+        sync();
+      }
+      function toggle() { set(!isLight()); }
+      function sync() {
+        var sw = document.getElementById("settingsThemeSwitch");
+        var label = document.getElementById("settingsThemeLabel");
+        if (sw) sw.classList.toggle("on", isLight());
+        if (label) label.textContent = isLight() ? "Tema Terang" : "Tema Gelap";
+      }
+      return { toggle: toggle, sync: sync };
+    })();
+
+    var DevMode = (function () {
+      // Lightweight client-side gate — NOT real security (the password
+      // check happens in the browser, visible to anyone who opens
+      // devtools). It's just meant to keep casual cohort-mates from
+      // poking at internals, not to protect anything sensitive. Don't put
+      // real secrets behind this.
+      var DEV_PASSWORD = "Admin123";
+      var overlay = document.getElementById("devOverlay");
+      var panel = document.getElementById("devPanel");
+      var input = document.getElementById("devPasswordInput");
+      var errorEl = document.getElementById("devPasswordError");
+      var providerSelect = document.getElementById("devProviderSelect");
+      var devSwitch = document.getElementById("settingsDevSwitch");
+
+      function isUnlocked() {
+        try { return sessionStorage.getItem("devModeUnlocked") === "1"; } catch (e) { return false; }
+      }
+      function setUnlocked() {
+        try { sessionStorage.setItem("devModeUnlocked", "1"); } catch (e) {}
+      }
+      function isPanelOpen() { return panel.classList.contains("show"); }
+      function syncSwitch() { devSwitch.classList.toggle("on", isPanelOpen()); }
+      function showPanel() {
+        window.__devModeOn = true;
+        panel.classList.add("show");
+        syncSwitch();
+        renderLog();
+        if (window.__onDevModeChange) window.__onDevModeChange();
+      }
+      function hidePanel() {
+        panel.classList.remove("show");
+        syncSwitch();
+        // __devModeOn deliberately stays true here — closing the log panel
+        // isn't "locking" dev mode again (that needs a page reload), it's
+        // still unlocked for the session; only the panel itself hides.
+      }
+
+      function toggleFromSettings() {
+        if (isPanelOpen()) { hidePanel(); return; }
+        if (isUnlocked()) { showPanel(); return; }
+        SettingsPanel.hide();
+        overlay.classList.add("show");
+        input.value = "";
+        errorEl.textContent = "";
+        input.focus();
+      }
+
+      document.getElementById("devCancelBtn").addEventListener("click", function () {
+        overlay.classList.remove("show");
+      });
+      document.getElementById("devSubmitBtn").addEventListener("click", trySubmit);
+      input.addEventListener("keydown", function (e) { if (e.key === "Enter") trySubmit(); });
+      function trySubmit() {
+        if (input.value === DEV_PASSWORD) {
+          setUnlocked();
+          overlay.classList.remove("show");
+          showPanel();
+        } else {
+          errorEl.textContent = "Password salah.";
+        }
+      }
+
+      providerSelect.addEventListener("change", function () {
+        window.__forceProvider = providerSelect.value || null;
+      });
+
+      document.getElementById("devClearLogBtn").addEventListener("click", function () {
+        window.__devLog = [];
+        renderLog();
+      });
+      document.getElementById("devCloseBtn").addEventListener("click", hidePanel);
+
+      function renderLog() {
+        var list = document.getElementById("devLogList");
+        var log = window.__devLog || [];
+        if (!log.length) {
+          list.innerHTML = '<p class="muted" style="font-size:0.75rem;">Belum ada pemanggilan API di sesi ini.</p>';
+          return;
+        }
+        list.innerHTML = log.map(function (e) {
+          var cls = e.status === "OK" ? "ok" : "fail";
+          var providerOrStatus = e.status === "OK" ? (e.provider || "-") : "GAGAL";
+          return '<div class="dev-log-entry ' + cls + '">' +
+            '<span class="dev-time">' + e.time + '</span>' +
+            '<span>' + e.endpoint + '</span>' +
+            '<span class="dev-provider">' + providerOrStatus + '</span>' +
+            '<span>' + (e.latency != null ? e.latency + "ms" : "") + '</span>' +
+            (e.detail ? '<span class="dev-detail">' + String(e.detail).slice(0, 220) + '</span>' : '') +
+            '</div>';
+        }).join("");
+      }
+
+      window.addEventListener("devlog:update", function () {
+        if (isPanelOpen()) renderLog();
+      });
+
+      // ---- resize handle: drag the top bar to change panel height ----
+      (function () {
+        var handle = document.getElementById("devResizeHandle");
+        var dragging = false;
+        function clampHeight(h) {
+          var min = 120, max = window.innerHeight * 0.85;
+          return Math.max(min, Math.min(max, h));
+        }
+        function onMove(clientY) {
+          panel.style.height = clampHeight(window.innerHeight - clientY) + "px";
+        }
+        handle.addEventListener("pointerdown", function (e) {
+          dragging = true;
+          handle.classList.add("dragging");
+          handle.setPointerCapture(e.pointerId);
+        });
+        handle.addEventListener("pointermove", function (e) {
+          if (!dragging) return;
+          onMove(e.clientY);
+        });
+        function stopDrag() { dragging = false; handle.classList.remove("dragging"); }
+        handle.addEventListener("pointerup", stopDrag);
+        handle.addEventListener("pointercancel", stopDrag);
+      })();
+
+      // Auto-restore panel state if already unlocked from a previous
+      // action this session (e.g. user re-rendered the page). The panel
+      // itself starts CLOSED even if unlocked — only the log list re-opens
+      // on demand, so it never pops back open unexpectedly mid-session —
+      // but dev tags on chat bubbles still show, matching prior behavior.
+      if (isUnlocked()) { window.__devModeOn = true; }
+      syncSwitch();
+
+      return { toggleFromSettings: toggleFromSettings };
+    })();
+
+    var SettingsPanel = (function () {
+      var toggleBtn = document.getElementById("settingsToggle");
+      var overlay = document.getElementById("settingsOverlay");
+      var panel = document.getElementById("settingsPanel");
+      function show() {
+        overlay.classList.add("show");
+        panel.classList.add("show");
+        toggleBtn.classList.add("on");
+      }
+      function hide() {
+        overlay.classList.remove("show");
+        panel.classList.remove("show");
+        toggleBtn.classList.remove("on");
+      }
+      function toggle() { panel.classList.contains("show") ? hide() : show(); }
+      toggleBtn.addEventListener("click", toggle);
+      overlay.addEventListener("click", hide);
+      document.getElementById("settingsThemeSwitch").addEventListener("click", function () { Theme.toggle(); });
+      document.getElementById("settingsDevSwitch").addEventListener("click", function () { DevMode.toggleFromSettings(); });
+      return { show: show, hide: hide };
+    })();
+
+    Theme.sync();
+
+    // PWA: daftarkan service worker — cache app shell saja, /api/* tidak
+    // pernah di-cache (lihat sw.js), jadi data kasus selalu live.
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("sw.js").catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

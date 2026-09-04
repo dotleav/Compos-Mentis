@@ -1,0 +1,109 @@
+{
+  "id": "integ_32",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 32 - Integumen",
+  "judulKasus": "Bu Rina, 39 tahun, tangan kering, merah, dan perih setelah mencuci piring",
+  "identitas": "Rina, 39 tahun, Ibu rumah tangga",
+  "skenarioAwal": "Seorang wanita 39 tahun datang dengan keluhan kedua tangan kering dan perih sejak 2 minggu.",
+  "keluhanUtama": "Kedua telapak tangan kering, kemerahan, dan terasa perih terutama setelah mencuci piring, sejak 2 minggu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Keluhan memberat setelah kontak dengan sabun cuci piring",
+        "Tidak ada riwayat kontak dengan bahan baru selain deterjen yang biasa dipakai",
+        "Rasa perih lebih dominan dibanding gatal"
+      ],
+      "rpd": "Tidak ada riwayat dermatitis atopik",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Mencuci piring dan pakaian tanpa sarung tangan setiap hari"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "eritema, skuama, dan fisura pada kedua telapak tangan dan sela jari, batas tidak tegas, tanpa vesikel",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Dermatitis Kontak Iritan",
+    "differensialBenar": [
+      "Dermatitis kontak iritan",
+      "Dermatitis kontak alergika",
+      "Dermatitis atopik tangan",
+      "Tinea manus"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Kortikosteroid topikal potensi ringan-sedang jangka pendek",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Desoximetasone cream 0,25% tube 5 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol (maksimal 2 minggu)",
+      "benar": false
+    },
+    {
+      "opsi": "Emolien untuk memperbaiki fungsi sawar kulit",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Urea cream 10% tube 20 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol",
+      "benar": false
+    },
+    {
+      "opsi": "Melanjutkan kontak bahan iritan tanpa proteksi selama pengobatan",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gunakan sarung tangan (dalam sarung tangan katun, luar sarung tangan karet) saat mencuci",
+      "benar": true
+    },
+    {
+      "opsi": "Gunakan pelembap secara rutin untuk menjaga sawar kulit",
+      "benar": true
+    },
+    {
+      "opsi": "Mencuci tangan dengan sabun antiseptik keras berulang kali tanpa pelembap",
+      "benar": false
+    },
+    {
+      "opsi": "Hindari/kurangi kontak dengan bahan iritan (deterjen, sabun keras)",
+      "benar": true
+    }
+  ]
+}

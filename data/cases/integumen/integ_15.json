@@ -1,0 +1,124 @@
+{
+  "id": "integ_15",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 15 - Integumen",
+  "judulKasus": "Bp. Rian, 27 tahun, luka tidak nyeri di kemaluan",
+  "identitas": "Rian, 27 tahun, Karyawan swasta",
+  "skenarioAwal": "Seorang laki-laki 27 tahun datang dengan keluhan luka di kemaluan yang tidak nyeri.",
+  "keluhanUtama": "Muncul luka tunggal di penis sejak 3 minggu, tidak nyeri, tidak gatal, tidak kunjung sembuh",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Luka berbatas tegas dengan dasar bersih",
+        "Riwayat hubungan seksual berisiko tanpa kondom 1 bulan lalu",
+        "Tidak ada keluhan keluar cairan dari kemaluan"
+      ],
+      "rpd": "Tidak ada riwayat infeksi menular seksual sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Berganti-ganti pasangan seksual"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_lokalis_genital",
+        "nama": "Status Lokalis genital",
+        "temuan": "ulkus tunggal, bulat, batas tegas, tepi indurasi (keras), dasar bersih, tidak nyeri tekan (ulkus durum) di sulkus koronarius *Pembesaran KGB inguinal bilateral, konsistensi kenyal, tidak nyeri tekan (bubo indolen)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_tes_serologi_non-treponemal_vdrlrpr",
+        "nama": "Tes serologi non-treponemal (VDRL/RPR)",
+        "temuan": "reaktif",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_tes_serologi_treponemal_tphatppa",
+        "nama": "Tes serologi treponemal (TPHA/TPPA)",
+        "temuan": "reaktif",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_mikroskop_lapangan_gelap_dari_dasar_ulku",
+        "nama": "Mikroskop lapangan gelap dari dasar ulkus",
+        "temuan": "dapat ditemukan Treponema pallidum",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Sifilis Stadium 1 (Sifilis Primer)",
+    "differensialBenar": [
+      "Sifilis primer",
+      "Herpes genitalis",
+      "Ulkus mole (chancroid)",
+      "Limfogranuloma venereum"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Terapi lini pertama untuk sifilis primer/sekunder",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Benzatin Benzilpenisilin G 2,4 juta IU injeksi vial No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S: injeksi intramuskular dosis tunggal (dibagi 2 bokong @1,2 juta IU)",
+      "benar": false
+    },
+    {
+      "opsi": "Bila alergi penisilin: doksisiklin",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Doxycycline tab 100 mg No. XXVIII",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd tab I (selama 14 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Terapi antibiotik topikal saja pada ulkus (tidak mengatasi infeksi sistemik)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Pasangan seksual harus diperiksa dan diobati bersamaan untuk mencegah penularan ulang",
+      "benar": true
+    },
+    {
+      "opsi": "Gunakan kondom dan hindari hubungan seksual berisiko untuk mencegah penularan IMS",
+      "benar": true
+    },
+    {
+      "opsi": "Melanjutkan hubungan seksual tanpa pengobatan tuntas dan tanpa proteksi",
+      "benar": false
+    },
+    {
+      "opsi": "Tawarkan skrining IMS lain (HIV, gonore, klamidia) dan pemeriksaan pasangan",
+      "benar": true
+    }
+  ]
+}
