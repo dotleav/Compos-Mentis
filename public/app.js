@@ -61,12 +61,55 @@ function clearSessionStorage() {
 // before an accidental refresh/close actually happens.
 window.addEventListener("beforeunload", saveSessionToStorage);
 
+// ---------- RIWAYAT LATIHAN (localStorage, per-browser) ----------
+const RIWAYAT_KEY = "osce-riwayat-v1";
+const RIWAYAT_MAX = 200; // max entries kept
+
+function loadRiwayat() {
+  try {
+    return JSON.parse(localStorage.getItem(RIWAYAT_KEY) || "[]");
+  } catch { return []; }
+}
+function saveRiwayat(list) {
+  try { localStorage.setItem(RIWAYAT_KEY, JSON.stringify(list.slice(0, RIWAYAT_MAX))); } catch {}
+}
+function clearRiwayat() {
+  try { localStorage.removeItem(RIWAYAT_KEY); } catch {}
+}
+
+/**
+ * Append one completed session to riwayat.
+ * Called at the end of renderReveal() once we have ev + empatiScore.
+ */
+function appendRiwayat({ judulKasus, kategori, dkBenar, empatiScore, durasiDetik }) {
+  const list = loadRiwayat();
+  list.unshift({
+    tanggal: new Date().toISOString(),
+    judulKasus: judulKasus || "(tanpa judul)",
+    kategori: kategori || "-",
+    dkBenar: !!dkBenar,
+    empatiScore: empatiScore || 0,
+    durasiDetik: durasiDetik || 0,
+  });
+  saveRiwayat(list);
+}
+
+function riwayatStats(list) {
+  const total = list.length;
+  const benar = list.filter((r) => r.dkBenar).length;
+  return {
+    total,
+    pctBenar: total ? Math.round((benar / total) * 100) : 0,
+  };
+}
+
 function resetState(kasus) {
   state = {
     screen: "session",
     kategori: kasus.kategori,       // kept internally for API calls; NEVER shown in UI
     id: kasus.id,
     kasus,
+    sessionStartMs: Date.now(),     // for durasi perhitungan
     ddMaster: state && state.ddMaster ? state.ddMaster : [],
     ddMasterGrouped: state && state.ddMasterGrouped ? state.ddMasterGrouped : null,
     stepIndex: 0,
@@ -137,43 +180,28 @@ function pushDevLog(entry) {
 async function showLanding() {
   const cats = await api("/cases/categories");
   const selected = new Set(cats); // default: all selected
-  const presets = [
-    { id: "all", label: "Semua Stase", categories: new Set(cats) },
-    { id: "cardio", label: "Kardiovaskular", categories: new Set(["kardio"].filter((c) => cats.includes(c))) },
-    // Category pools, not a filter on individual cases' urgency.
-    { id: "emergency", label: "Gawat Darurat", categories: new Set(["kardio", "respi", "neurologi"].filter((c) => cats.includes(c))) },
-  ];
-  let starting = false;
 
   function allSelectLabel() {
     return selected.size === cats.length ? "Batalkan Semua" : "Pilih Semua";
   }
 
-  function syncCategorySelection() {
-    app.querySelectorAll("[data-cat]").forEach((el) => el.classList.toggle("selected", selected.has(el.dataset.cat)));
-    document.getElementById("selectAllBtn").textContent = allSelectLabel();
-    document.getElementById("startBtn").disabled = starting || selected.size === 0;
-    document.getElementById("warnMsg").style.display = selected.size === 0 ? "block" : "none";
-    presets.forEach((preset) => {
-      const button = app.querySelector(`[data-preset="${preset.id}"]`);
-      button.disabled = preset.categories.size === 0;
-      button.setAttribute("aria-pressed", String(preset.categories.size > 0 && selected.size === preset.categories.size && [...preset.categories].every((c) => selected.has(c))));
-    });
-  }
+  const riwayat = loadRiwayat();
+  const stats = riwayatStats(riwayat);
 
   app.innerHTML = `
-    <div class="hero-eyebrow"><span class="dot"></span>Simulator Clinical Reasoning</div>
-    <h1>Compos <span>Mentis</span></h1>
-    <p class="muted">Latih anamnesis, pemeriksaan fisik, penunjang, diagnosis, dan tatalaksana lewat kasus yang diperankan AI — pilih Stase di bawah, lalu mulai.</p>
-    <div class="hero-stats">
-      <div class="hero-stat"><div class="num">${cats.length}</div><div class="label">Stase Tersedia</div></div>
-      <div class="hero-stat"><div class="num">10</div><div class="label">Tahap per Sesi</div></div>
-    </div>
-
-    <div class="section-label">Mulai Cepat</div>
-    <div class="quick-start-presets" role="group" aria-label="Mulai cepat">
-      ${presets.map((preset) => `<button type="button" class="btn secondary" data-preset="${preset.id}" aria-pressed="false">${preset.label}</button>`).join("")}
-    </div>
+    <h1>CR <span>Simulator</span></h1>
+    <p class="muted">Pilih kategori/Stase Clinical Reasoning yang ingin dilatih, lalu tekan Mulai. Kasus akan diacak dari kategori yang kamu pilih.</p>
+    ${stats.total > 0 ? `
+    <div class="riwayat-hero">
+      <div class="riwayat-stat">
+        <span class="riwayat-stat-val">${stats.total}</span>
+        <span class="riwayat-stat-lbl">Sesi Selesai</span>
+      </div>
+      <div class="riwayat-stat">
+        <span class="riwayat-stat-val" style="color:${stats.pctBenar >= 70 ? "var(--green)" : stats.pctBenar >= 50 ? "var(--yellow)" : "var(--red)"};">${stats.pctBenar}%</span>
+        <span class="riwayat-stat-lbl">Diagnosis Benar</span>
+      </div>
+    </div>` : ""}
     <div class="cat-toolbar">
       <button class="btn secondary" id="selectAllBtn">${allSelectLabel()}</button>
     </div>
@@ -200,8 +228,7 @@ async function showLanding() {
       <p class="muted" id="devCaseWarn" style="margin-top:10px; display:none; color:var(--red); font-size:0.78rem;"></p>
     </div>
 
-    <div class="section-label">Kasus Anda Sendiri</div>
-    <div class="card" id="customCaseCard">
+    <div class="card" id="customCaseCard" style="margin-top:22px;">
       <h3 class="dev-picker-title">Custom Case</h3>
       <p class="muted" style="margin-bottom:14px;">
         Upload file .docx yang sudah diisi pakai template kasus — akan otomatis dikonversi jadi kasus yang bisa langsung dimainkan. Tidak ikut kotak centang kategori di atas, tapi bisa langsung dimulai dari daftar di bawah.
@@ -223,38 +250,38 @@ async function showLanding() {
 
       <div id="driveSection"></div>
     </div>
+
+    <div class="card" id="riwayatCard" style="margin-top:22px;">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+        <h3 class="dev-picker-title" style="margin-bottom:0;">Riwayat Latihan</h3>
+        <button class="btn secondary" id="hapusRiwayatBtn" style="font-size:0.7rem; padding:5px 10px; display:${riwayat.length ? 'inline-block' : 'none'};">Hapus Semua</button>
+      </div>
+      <div id="riwayatList"></div>
+    </div>
   `;
   app.querySelectorAll("[data-cat]").forEach((el) =>
     el.addEventListener("click", () => {
       const c = el.dataset.cat;
-      if (selected.has(c)) selected.delete(c);
-      else selected.add(c);
-      syncCategorySelection();
+      if (selected.has(c)) { selected.delete(c); el.classList.remove("selected"); }
+      else { selected.add(c); el.classList.add("selected"); }
+      document.getElementById("selectAllBtn").textContent = allSelectLabel();
     })
   );
-  presets.forEach((preset) => {
-    app.querySelector(`[data-preset="${preset.id}"]`).addEventListener("click", () => {
-      selected.clear();
-      preset.categories.forEach((c) => selected.add(c));
-      syncCategorySelection();
-    });
-  });
   document.getElementById("selectAllBtn").addEventListener("click", () => {
     const shouldSelectAll = selected.size !== cats.length;
     selected.clear();
-    if (shouldSelectAll) cats.forEach((c) => selected.add(c));
-    syncCategorySelection();
-  });
-  syncCategorySelection();
-  document.getElementById("startBtn").addEventListener("click", async () => {
-    if (starting) return;
+    app.querySelectorAll("[data-cat]").forEach((el) => {
+      if (shouldSelectAll) { selected.add(el.dataset.cat); el.classList.add("selected"); }
+      else { el.classList.remove("selected"); }
+    });
+    document.getElementById("selectAllBtn").textContent = allSelectLabel();
+  });  document.getElementById("startBtn").addEventListener("click", async () => {
     if (selected.size === 0) {
       document.getElementById("warnMsg").style.display = "block";
       return;
     }
     const btn = document.getElementById("startBtn");
-    starting = true;
-    syncCategorySelection();
+    btn.disabled = true;
     btn.textContent = "Menyiapkan kasus...";
     try {
       const kasus = await api("/cases/random", {
@@ -270,8 +297,7 @@ async function showLanding() {
       }
       renderSession();
     } catch (e) {
-      starting = false;
-      syncCategorySelection();
+      btn.disabled = false;
       btn.textContent = "Mulai →";
       alert(`Gagal memuat kasus: ${e.message}`);
     }
@@ -565,6 +591,57 @@ async function showLanding() {
     }, 3000);
   }
   renderDriveSection();
+
+  // ---- Riwayat Latihan ----
+  function formatDurasi(detik) {
+    if (!detik || detik < 0) return "-";
+    const m = Math.floor(detik / 60);
+    const s = detik % 60;
+    return m > 0 ? `${m}m ${s}s` : `${s}s`;
+  }
+  function formatTanggal(iso) {
+    try {
+      return new Date(iso).toLocaleString("id-ID", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
+    } catch { return iso; }
+  }
+
+  function renderRiwayatList() {
+    const list = loadRiwayat();
+    const el = document.getElementById("riwayatList");
+    if (!el) return;
+    const hapusBtn = document.getElementById("hapusRiwayatBtn");
+    if (hapusBtn) hapusBtn.style.display = list.length ? "inline-block" : "none";
+    if (list.length === 0) {
+      el.innerHTML = `<p class="muted" style="font-size:0.85rem;">Belum ada sesi yang selesai. Selesaikan satu sesi sampai kunci jawaban untuk menyimpan riwayat.</p>`;
+      return;
+    }
+    el.innerHTML = list.map((r, i) => `
+      <div class="riwayat-row">
+        <div class="riwayat-row-main">
+          <span class="riwayat-dkIcon" style="color:${r.dkBenar ? "var(--green)" : "var(--red)"};">${r.dkBenar ? "✓" : "✗"}</span>
+          <span class="riwayat-judul">${escapeHtml(r.judulKasus)}</span>
+          <span class="riwayat-badge">${STASE_LABELS[r.kategori] || r.kategori}</span>
+        </div>
+        <div class="riwayat-row-meta">
+          <span>Empati: ${r.empatiScore}/4</span>
+          <span>${formatDurasi(r.durasiDetik)}</span>
+          <span class="riwayat-tanggal">${formatTanggal(r.tanggal)}</span>
+        </div>
+      </div>`).join("");
+  }
+
+  renderRiwayatList();
+
+  const hapusBtn = document.getElementById("hapusRiwayatBtn");
+  if (hapusBtn) {
+    hapusBtn.addEventListener("click", () => {
+      if (!confirm("Hapus semua riwayat latihan? Aksi ini tidak dapat dibatalkan.")) return;
+      clearRiwayat();
+      renderRiwayatList();
+      // Reload page to refresh hero stats
+      showLanding();
+    });
+  }
 }
 
 // ---------- SESSION SHELL ----------
@@ -574,16 +651,10 @@ function renderSession() {
     <a href="#" class="back" id="backBtn">&larr; Selesai sesi</a>
     <h1 style="margin-top:10px;">Sesi Clinical Reasoning</h1>
     <div class="step-nav" style="margin-top:14px;">
-      ${STEPS.map((s, i) => `<button type="button" class="step-pill ${i === state.stepIndex ? "active" : i < state.stepIndex ? "done" : ""}" ${i >= state.stepIndex ? "disabled" : ""} ${i === state.stepIndex ? 'aria-current="step"' : ""}>${s.label}</button>`).join("")}
+      ${STEPS.map((s, i) => `<span class="step-pill ${i === state.stepIndex ? "active" : i < state.stepIndex ? "done" : ""}">${s.label}</span>`).join("")}
     </div>
     <div id="stepBody"></div>
   `;
-  app.querySelectorAll(".step-pill").forEach((pill, i) => {
-    if (i >= state.stepIndex) return;
-    pill.style.cursor = "pointer";
-    pill.title = `Kembali ke ${STEPS[i].label}`;
-    pill.onclick = () => { state.stepIndex = i; renderSession(); };
-  });
   document.getElementById("backBtn").addEventListener("click", (e) => { e.preventDefault(); clearSessionStorage(); showLanding(); });
   // Let a vertical mouse wheel/trackpad scroll the step tabs horizontally
   // (desktop/web). Touch devices already scroll it natively by dragging —
@@ -799,33 +870,10 @@ function renderDDStep(stateKey, title, instructions, { carryFromKey, seededFlagK
 }
 
 // ---------- STEP 3: ANAMNESIS (AI patient chat) ----------
-const PATIENT_MOOD_ITEMS = [
-  { label: "Nama pasien", pattern: /\b(?:nama(?:nya|mu)?|panggilan|dipanggil)\b/i },
-  { label: "Pekerjaan", pattern: /\b(?:pekerjaan(?:nya|mu)?|bekerja|kerja(?:nya)?)\b/i },
-  { label: "Tempat tinggal", pattern: /\b(?:tempat\s+tinggal|tinggal(?:nya)?|alamat(?:nya|mu)?|domisili)\b/i },
-  { label: "Pendamping", pattern: /\b(?:pendamping(?:nya)?|pengantar|(?:di|meng)antar(?:kan)?|ditemani|menemani)\b|\b(?:datang|ke\s*sini)\b[^.!?\n]{0,40}\b(?:(?:bersama|sama|dengan)\s+siapa|sendiri(?:an)?)\b/i },
-];
-
-function renderPatientMood() {
-  const mood = document.getElementById("patientMood");
-  if (!mood) return;
-  // Derive from user messages so refreshes/revisits work without extra state or API calls.
-  const messages = state.anamnesisHistory.filter((entry) => entry.role === "user");
-  const matched = PATIENT_MOOD_ITEMS.map((item) => messages.some((entry) => item.pattern.test(entry.content)));
-  const count = matched.filter(Boolean).length;
-  mood.innerHTML = `
-    <span class="patient-mood-label">Mood pasien</span>
-    <span class="patient-mood-hearts" aria-hidden="true">${PATIENT_MOOD_ITEMS.map((item, i) => `<span class="patient-mood-heart ${matched[i] ? "lit" : ""}" title="${item.label}: ${matched[i] ? "terdeteksi" : "belum terdeteksi"}">${matched[i] ? "♥" : "♡"}</span>`).join("")}</span>
-    <span class="sr-only">${count} dari 4 topik terdeteksi.${count ? ` ${PATIENT_MOOD_ITEMS.filter((_, i) => matched[i]).map((item) => item.label).join(", ")}.` : ""}</span>`;
-}
-
 function renderAnamnesis(body) {
   body.innerHTML = `
     <div class="card">
-      <div class="chat-header">
-        <h2 style="font-size:1.05rem;">Anamnesis</h2>
-        <div class="patient-mood" id="patientMood" role="status" aria-live="polite" aria-atomic="true"></div>
-      </div>
+      <h2 style="font-size:1.05rem; margin-bottom:12px;">Anamnesis</h2>
       <p class="muted" style="margin-bottom:12px;">Ajukan pertanyaan seperti pada pasien sungguhan. Pasien akan menjawab sesuai perannya.</p>
       <div class="chat-log" id="chatLog"></div>
       <div class="row">
@@ -874,7 +922,6 @@ function renderAnamnesis(body) {
 function renderChatLog() {
   const log = document.getElementById("chatLog");
   if (!log) return;
-  renderPatientMood();
   log.innerHTML = state.anamnesisHistory.map((h) =>
     `<div class="bubble ${h.role === "user" ? "user" : "patient"}">${escapeHtml(h.content)}${
       window.__devModeOn && h._provider ? `<div class="dev-tag">${h._provider}</div>` : ""
@@ -1210,6 +1257,23 @@ async function renderReveal(body) {
     { key: "pendamping", label: "Menanyakan siapa yang mengantar/menemani pasien" },
   ];
   const empatiScore = empatiItems.filter((it) => empati[it.key]).length;
+
+  // Save completed session to riwayat (once per reveal, guarded by revealSaved flag)
+  if (!state.revealSaved) {
+    state.revealSaved = true;
+    const durasiDetik = state.sessionStartMs
+      ? Math.round((Date.now() - state.sessionStartMs) / 1000)
+      : 0;
+    appendRiwayat({
+      judulKasus: state.kasus.judulKasus || state.kasus.nama || state.id,
+      kategori: state.kategori,
+      dkBenar: ev.dk.correct,
+      empatiScore,
+      durasiDetik,
+    });
+    saveSessionToStorage(); // persist revealSaved flag
+  }
+
   body.innerHTML = `
     <div class="card">
       <h2 style="font-size:1.1rem; color:${ev.dk.correct ? "var(--green)" : "var(--red)"};">
@@ -1307,3 +1371,4 @@ function escapeHtml(str) {
     showLanding();
   }
 })();
+

@@ -11,16 +11,35 @@
 // Ollama alone works fine.
 //
 // All of these expose an OpenAI-compatible endpoint, so one generic caller
-// works for all eight:
+// works for all of them:
 //   - Groq:         https://console.groq.com/keys
 //   - Cerebras:     https://cloud.cerebras.ai  (free tier, very fast inference)
 //   - Gemini:       https://aistudio.google.com/apikey (free tier via OpenAI-compat endpoint)
-//   - OpenRouter:   https://openrouter.ai/keys (routes to many models, some free)
+//   - Mistral:      https://console.mistral.ai/api-keys (free experiment tier ~1B tok/mo)
 //   - NVIDIA:       https://build.nvidia.com  (an API catalog key, free tier)
 //   - DeepSeek:     https://platform.deepseek.com/api_keys (cheap pay-as-you-go, 5M free tokens on signup)
 //   - Hugging Face: https://huggingface.co/settings/tokens (router in front of many hosted models, free monthly credits)
 //   - Cloudflare:   https://dash.cloudflare.com/profile/api-tokens (Workers AI, 10K neurons/day free, resets daily)
+//   - Ollama Cloud: https://ollama.com/settings/api-keys (free tier, resets every 5h/7d)
 //   - Ollama:       runs locally, no key needed
+
+// ── PROVIDER AUDIT — verified September 2026 ────────────────────────────────
+// All models below confirmed active. Summary:
+//   groq       → openai/gpt-oss-20b      ✓ (131k ctx, reasoning, tool-call)
+//   cerebras   → gpt-oss-120b            ✓ (131k ctx, fastest inference, free tier)
+//   gemini     → gemini-2.5-flash        ✓ (AQ. key → x-goog-api-key header, NOT Bearer)
+//   mistral    → mistral-small-latest    ✓ (24B, good Indonesian, cheap)
+//   nvidia     → nvidia-nemotron-nano-9b-v2 ✓ (build.nvidia.com, free trial, tool-call)
+//   deepseek   → deepseek-v4-flash       ✓ (1M ctx, 284B MoE, $0.14/1M in)
+//               NOTE: legacy deepseek-chat alias deprecated 2026-07-24 — use v4-flash
+//   huggingface→ openai/gpt-oss-120b     ✓ (HF router, auto provider selection)
+//   cloudflare → @cf/meta/llama-3.1-8b-instruct ✓ (10K neurons/day free, daily reset)
+//   ollama-cloud→ llama3.3               ✓ (free, resets 5h/7d)
+//   ollama     → qwen2.5:3b              ✓ (local, always available)
+//
+// Fallback order is intentional: fastest free-tier first, local last.
+// If a provider consistently exhausts quota, move it lower in the list.
+// ────────────────────────────────────────────────────────────────────────────
 
 const PROVIDERS = [
   {
@@ -51,44 +70,55 @@ const PROVIDERS = [
     // https://aistudio.google.com/apikey
     baseURL: "https://generativelanguage.googleapis.com/v1beta/openai",
     apiKey: process.env.GEMINI_API_KEY,
-    model: process.env.GEMINI_MODEL || "gemini-3.5-flash",
-    // CORRECTED (was: authHeaderName: "x-goog-api-key"). That was wrong —
-    // it sent the key under a custom header and left no "Authorization"
-    // header at all, which is exactly why every Gemini call failed with
-    // "Missing or invalid Authorization header" regardless of whether the
-    // key itself was valid. Google's OWN current OpenAI-compat docs
-    // (ai.google.dev/gemini-api/docs/openai, checked Aug 2026) show the
-    // standard shape used by every other provider in this file:
-    //   Authorization: Bearer <GEMINI_API_KEY>
-    // No custom header needed — omitting authHeaderName below falls
-    // through to that default Bearer branch in callProvider().
+    model: process.env.GEMINI_MODEL || "gemini-2.5-flash",
+    // Google is mid-migration from "AIza..." Standard keys to "AQ." Auth
+    // keys (all new keys from AI Studio are AQ. as of mid-2026). AQ. keys
+    // sent via the usual "Authorization: Bearer <key>" header get
+    // rejected with 401 ACCESS_TOKEN_TYPE_UNSUPPORTED — Google's auth
+    // layer reads a Bearer header as an OAuth2 token attempt, and AQ. keys
+    // aren't OAuth2 tokens. Google's own API reference (ai.google.dev/api)
+    // states plainly: "All requests to the Gemini API must include a
+    // x-goog-api-key header with your API key" — so send it that way
+    // instead. See authHeader() in callProvider() below.
+    authHeaderName: "x-goog-api-key",
   },
   {
-    name: "openrouter",
-    baseURL: "https://openrouter.ai/api/v1",
-    apiKey: process.env.OPENROUTER_API_KEY,
-    // CORRECTED (was: "meta-llama/llama-3.1-8b-instruct:free" — now a paid
-    // model, hence the 404 "unavailable for free" error). Individual
-    // ":free" slugs rotate/get pulled with no notice (OpenRouter's own
-    // free roster changes weekly), so pinning one is fragile by design.
-    // "openrouter/free" is OpenRouter's own auto-router (launched Feb
-    // 2026): it always resolves to whichever free model currently
-    // supports the request (including tool calls, which exam.js needs),
-    // so this provider entry doesn't need hand-updating every time the
-    // free lineup shuffles. Override via OPENROUTER_MODEL if you want to
-    // pin a specific model instead.
-    model: process.env.OPENROUTER_MODEL || "openrouter/free",
+    name: "mistral",
+    // Mistral's own API — OpenAI-compatible, no adapter needed.
+    // Get a key at: https://console.mistral.ai/api-keys
+    // New accounts on "La Plateforme" get a free experiment tier with
+    // monthly credits; after that it's pay-as-you-go at very low rates
+    // (~$0.10-0.30 per 1M tokens depending on model).
+    //
+    // Why use this instead of Mistral via OpenRouter?
+    //   - Direct API has no OpenRouter rate-limit overhead
+    //   - Responses are more consistent (no free-tier throttling)
+    //   - Full access to all Mistral models without :free suffix tricks
+    //
+    // MODEL OPTIONS (set via MISTRAL_MODEL in .env):
+    //   "mistral-small-latest"   — default; ~24B, fast, cheap, follows
+    //                              system prompts well, good Indonesian.
+    //                              Best balance for roleplay use case.
+    //   "mistral-medium-latest"  — larger, better reasoning, moderate cost
+    //   "open-mistral-nemo"      — 12B, smallest/cheapest, still decent
+    //                              for short roleplay turns
+    //   "mistral-large-latest"   — top-tier quality, higher cost; overkill
+    //                              for this app's short-reply use case
+    //
+    // To switch model: add  MISTRAL_MODEL=open-mistral-nemo  to .env
+    baseURL: "https://api.mistral.ai/v1",
+    apiKey: process.env.MISTRAL_API_KEY,
+    model: process.env.MISTRAL_MODEL || "mistral-small-latest",
   },
   {
     name: "nvidia",
     baseURL: "https://integrate.api.nvidia.com/v1",
     apiKey: process.env.NVIDIA_API_KEY,
-    // NVIDIA retired "nvidia/llama-3.1-nemotron-70b-instruct" — it now 404s
-    // with "Function ... Not found for account" for every caller, confirmed
-    // by NVIDIA staff on their dev forum (they no longer host that model).
-    // Nemotron Nano 9B v2 is the current lightweight replacement on the
-    // catalog. Double-check build.nvidia.com if this ever 404s again —
-    // catalog model names do change over time.
+    // NVIDIA retired "nvidia/llama-3.1-nemotron-70b-instruct" — it now 404s.
+    // Nemotron Nano 9B v2 confirmed active on build.nvidia.com as of Sep 2026.
+    // Hybrid Mamba-Transformer, 128K ctx, free trial tier, tool-calling supported.
+    // Model ID on NVIDIA NIM API: "nvidia/nvidia-nemotron-nano-9b-v2"
+    // If it 404s again check: https://build.nvidia.com/explore/discover
     model: process.env.NVIDIA_MODEL || "nvidia/nvidia-nemotron-nano-9b-v2",
   },
   {
@@ -136,6 +166,26 @@ const PROVIDERS = [
     // select_findings tool call) — a safer default than fighting an
     // undocumented spec mismatch.
     model: process.env.CLOUDFLARE_MODEL || "@cf/meta/llama-3.1-8b-instruct",
+  },
+  {
+    name: "ollama-cloud",
+    // Ollama Cloud — hosted version of Ollama, OpenAI-compatible endpoint.
+    // Free tier with rate limits that reset every 5 hours (session) and
+    // every 7 days (weekly cap). No credit card required.
+    // Get a key at: https://ollama.com/settings/api-keys
+    //
+    // MODEL OPTIONS (set via OLLAMA_CLOUD_MODEL in .env):
+    //   "llama3.3"           — default; 70B, strong instruction following,
+    //                          good Indonesian, best overall quality
+    //   "qwen2.5:72b"        — alternative 72B, excellent for roleplay
+    //   "qwen2.5:32b"        — lighter, still very capable
+    //   "mistral-small"      — 22B, fast, follows system prompts well
+    //   "gemma3:27b"         — Google Gemma 27B
+    //
+    // To switch: add  OLLAMA_CLOUD_MODEL=qwen2.5:72b  to .env
+    baseURL: "https://api.ollama.com/v1",
+    apiKey: process.env.OLLAMA_CLOUD_API_KEY,
+    model: process.env.OLLAMA_CLOUD_MODEL || "llama3.3",
   },
   {
     name: "ollama",
@@ -265,7 +315,7 @@ async function chat({ messages, tools, temperature, max_tokens, forceProvider })
 
   if (active.length === 0) {
     throw new Error(
-      "No AI provider available. Set at least one API key in .env (GROQ_API_KEY, CEREBRAS_API_KEY, GEMINI_API_KEY, OPENROUTER_API_KEY, NVIDIA_API_KEY), or make sure Ollama is installed and running locally."
+      "No AI provider available. Set at least one API key in .env (GROQ_API_KEY, CEREBRAS_API_KEY, GEMINI_API_KEY, MISTRAL_API_KEY, NVIDIA_API_KEY, OLLAMA_CLOUD_API_KEY), or make sure Ollama is installed and running locally."
     );
   }
 

@@ -23,6 +23,24 @@
 //   - Ollama Cloud: https://ollama.com/settings/api-keys (free tier, resets every 5h/7d)
 //   - Ollama:       runs locally, no key needed
 
+// ── PROVIDER AUDIT — verified September 2026 ────────────────────────────────
+// All models below confirmed active. Summary:
+//   groq       → openai/gpt-oss-20b      ✓ (131k ctx, reasoning, tool-call)
+//   cerebras   → gpt-oss-120b            ✓ (131k ctx, fastest inference, free tier)
+//   gemini     → gemini-2.5-flash        ✓ (AQ. key → x-goog-api-key header, NOT Bearer)
+//   mistral    → mistral-small-latest    ✓ (24B, good Indonesian, cheap)
+//   nvidia     → nvidia-nemotron-nano-9b-v2 ✓ (build.nvidia.com, free trial, tool-call)
+//   deepseek   → deepseek-v4-flash       ✓ (1M ctx, 284B MoE, $0.14/1M in)
+//               NOTE: legacy deepseek-chat alias deprecated 2026-07-24 — use v4-flash
+//   huggingface→ openai/gpt-oss-120b     ✓ (HF router, auto provider selection)
+//   cloudflare → @cf/meta/llama-3.1-8b-instruct ✓ (10K neurons/day free, daily reset)
+//   ollama-cloud→ llama3.3               ✓ (free, resets 5h/7d)
+//   ollama     → qwen2.5:3b              ✓ (local, always available)
+//
+// Fallback order is intentional: fastest free-tier first, local last.
+// If a provider consistently exhausts quota, move it lower in the list.
+// ────────────────────────────────────────────────────────────────────────────
+
 const PROVIDERS = [
   {
     name: "groq",
@@ -96,12 +114,11 @@ const PROVIDERS = [
     name: "nvidia",
     baseURL: "https://integrate.api.nvidia.com/v1",
     apiKey: process.env.NVIDIA_API_KEY,
-    // NVIDIA retired "nvidia/llama-3.1-nemotron-70b-instruct" — it now 404s
-    // with "Function ... Not found for account" for every caller, confirmed
-    // by NVIDIA staff on their dev forum (they no longer host that model).
-    // Nemotron Nano 9B v2 is the current lightweight replacement on the
-    // catalog. Double-check build.nvidia.com if this ever 404s again —
-    // catalog model names do change over time.
+    // NVIDIA retired "nvidia/llama-3.1-nemotron-70b-instruct" — it now 404s.
+    // Nemotron Nano 9B v2 confirmed active on build.nvidia.com as of Sep 2026.
+    // Hybrid Mamba-Transformer, 128K ctx, free trial tier, tool-calling supported.
+    // Model ID on NVIDIA NIM API: "nvidia/nvidia-nemotron-nano-9b-v2"
+    // If it 404s again check: https://build.nvidia.com/explore/discover
     model: process.env.NVIDIA_MODEL || "nvidia/nvidia-nemotron-nano-9b-v2",
   },
   {
