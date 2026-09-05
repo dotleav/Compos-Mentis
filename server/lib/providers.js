@@ -27,7 +27,7 @@
 // All models below confirmed active. Summary:
 //   groq       → openai/gpt-oss-20b      ✓ (131k ctx, reasoning, tool-call)
 //   cerebras   → gpt-oss-120b            ✓ (131k ctx, fastest inference, free tier)
-//   gemini     → gemini-2.5-flash        ✓ (AQ. key → x-goog-api-key header, NOT Bearer)
+//   gemini     → gemini-2.5-flash        ✓ (Authorization: Bearer header on /v1beta/openai/ path)
 //   mistral    → mistral-small-latest    ✓ (24B, good Indonesian, cheap)
 //   nvidia     → nvidia-nemotron-nano-9b-v2 ✓ (build.nvidia.com, free trial, tool-call)
 //   deepseek   → deepseek-v4-flash       ✓ (1M ctx, 284B MoE, $0.14/1M in)
@@ -71,16 +71,10 @@ const PROVIDERS = [
     baseURL: "https://generativelanguage.googleapis.com/v1beta/openai",
     apiKey: process.env.GEMINI_API_KEY,
     model: process.env.GEMINI_MODEL || "gemini-2.5-flash",
-    // Google is mid-migration from "AIza..." Standard keys to "AQ." Auth
-    // keys (all new keys from AI Studio are AQ. as of mid-2026). AQ. keys
-    // sent via the usual "Authorization: Bearer <key>" header get
-    // rejected with 401 ACCESS_TOKEN_TYPE_UNSUPPORTED — Google's auth
-    // layer reads a Bearer header as an OAuth2 token attempt, and AQ. keys
-    // aren't OAuth2 tokens. Google's own API reference (ai.google.dev/api)
-    // states plainly: "All requests to the Gemini API must include a
-    // x-goog-api-key header with your API key" — so send it that way
-    // instead. See authHeader() in callProvider() below.
-    authHeaderName: "x-goog-api-key",
+    // The OpenAI-compat endpoint (/v1beta/openai/) uses standard
+    // Authorization: Bearer <key> — confirmed working Sep 2026.
+    // (x-goog-api-key works for native Gemini endpoints but returns 400
+    // on the OpenAI-compat path.)
   },
   {
     name: "mistral",
@@ -172,7 +166,13 @@ const PROVIDERS = [
     // Ollama Cloud — hosted version of Ollama, OpenAI-compatible endpoint.
     // Free tier with rate limits that reset every 5 hours (session) and
     // every 7 days (weekly cap). No credit card required.
-    // Get a key at: https://ollama.com/settings/api-keys
+    // Get a key at: https://ollama.com/settings/keys
+    //
+    // ENDPOINT (verified Sep 2026):
+    // Base URL is https://ollama.com — NOT api.ollama.com (that subdomain
+    // does not exist). Chat completions go to:
+    //   POST https://ollama.com/v1/chat/completions
+    // Model list: GET https://ollama.com/v1/models
     //
     // MODEL OPTIONS (set via OLLAMA_CLOUD_MODEL in .env):
     //   "llama3.3"           — default; 70B, strong instruction following,
@@ -181,9 +181,10 @@ const PROVIDERS = [
     //   "qwen2.5:32b"        — lighter, still very capable
     //   "mistral-small"      — 22B, fast, follows system prompts well
     //   "gemma3:27b"         — Google Gemma 27B
+    //   "kimi-k2.6"          — Kimi K2.6, strong reasoning, available on Ollama Cloud
     //
     // To switch: add  OLLAMA_CLOUD_MODEL=qwen2.5:72b  to .env
-    baseURL: "https://api.ollama.com/v1",
+    baseURL: "https://ollama.com/v1",
     apiKey: process.env.OLLAMA_CLOUD_API_KEY,
     model: process.env.OLLAMA_CLOUD_MODEL || "llama3.3",
   },
