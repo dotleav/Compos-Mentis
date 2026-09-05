@@ -16,6 +16,22 @@ const STASE_LABELS = {
   lainnya: "Lainnya",
 };
 
+const STASE_ICONS = {
+  endokrin: "⚖️",
+  gastro: "🩺",
+  genitourinaria: "🫘",
+  hematoimun: "🩸",
+  integumen: "🧴",
+  kardio: "❤️",
+  respi: "🫁",
+  mata: "👁️",
+  muskuloskeletal: "🦴",
+  neurologi: "🧠",
+  psikiatri: "💭",
+  tht: "👂",
+  lainnya: "📋",
+};
+
 let rxCardSeq = 0;
 
 const STEPS = [
@@ -202,21 +218,24 @@ async function showLanding() {
         <span class="riwayat-stat-lbl">Diagnosis Benar</span>
       </div>
     </div>` : ""}
-    <div class="cat-toolbar">
-      <button class="btn secondary" id="selectAllBtn">${allSelectLabel()}</button>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:8px;" id="catGrid">
-      ${cats.map((c) => `<div class="cat-check selected" data-cat="${c}">
-        <span class="box"></span>
-        <span class="label">${STASE_LABELS[c] || c}</span>
-      </div>`).join("")}
-    </div>
-    <div class="row" style="margin-top:22px;">
-      <button class="btn" id="startBtn">Mulai →</button>
-    </div>
-    <p class="muted" id="warnMsg" style="margin-top:10px; display:none; color:var(--red);">Pilih minimal satu kategori.</p>
 
-    <div class="card" id="devCasePicker" style="display:none; margin-top:22px;">
+    <div class="card" id="startCard">
+      <div class="section-head">
+        <h2 class="section-title">Pilih Stase</h2>
+        <button class="btn secondary" id="selectAllBtn">${allSelectLabel()}</button>
+      </div>
+      <div class="cat-grid" id="catGrid">
+        ${cats.map((c) => `<div class="cat-check selected" data-cat="${c}">
+          <span class="box"></span>
+          <span class="cat-icon">${STASE_ICONS[c] || "📋"}</span>
+          <span class="label">${STASE_LABELS[c] || c}</span>
+        </div>`).join("")}
+      </div>
+      <button class="btn btn-start" id="startBtn">Mulai Sesi →</button>
+      <p class="muted" id="warnMsg" style="margin-top:10px; display:none; color:var(--red);">Pilih minimal satu kategori.</p>
+    </div>
+
+    <div class="card" id="devCasePicker" style="display:none;">
       <h3 class="dev-picker-title">Dev Mode — Pilih Kasus Manual</h3>
       <label class="dev-picker-label muted" for="devCatSelect">Kategori</label>
       <select id="devCatSelect">
@@ -228,7 +247,7 @@ async function showLanding() {
       <p class="muted" id="devCaseWarn" style="margin-top:10px; display:none; color:var(--red); font-size:0.78rem;"></p>
     </div>
 
-    <div class="card" id="customCaseCard" style="margin-top:22px;">
+    <div class="card" id="customCaseCard">
       <h3 class="dev-picker-title">Custom Case</h3>
       <p class="muted" style="margin-bottom:14px;">
         Upload file .docx yang sudah diisi pakai template kasus — akan otomatis dikonversi jadi kasus yang bisa langsung dimainkan. Tidak ikut kotak centang kategori di atas, tapi bisa langsung dimulai dari daftar di bawah.
@@ -251,8 +270,8 @@ async function showLanding() {
       <div id="driveSection"></div>
     </div>
 
-    <div class="card" id="riwayatCard" style="margin-top:22px;">
-      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+    <div class="card" id="riwayatCard">
+      <div class="section-head" style="margin-bottom:12px;">
         <h3 class="dev-picker-title" style="margin-bottom:0;">Riwayat Latihan</h3>
         <button class="btn secondary" id="hapusRiwayatBtn" style="font-size:0.7rem; padding:5px 10px; display:${riwayat.length ? 'inline-block' : 'none'};">Hapus Semua</button>
       </div>
