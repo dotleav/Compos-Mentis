@@ -1,0 +1,113 @@
+{
+  "id": "integ_17",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 17 - Integumen",
+  "judulKasus": "Bp. Hendra, 33 tahun, gatal dan bercak merah bersisik di area jenggot",
+  "identitas": "Hendra, 33 tahun, Peternak",
+  "skenarioAwal": "Seorang laki-laki 33 tahun datang dengan keluhan gatal di area jenggot sejak 3 minggu.",
+  "keluhanUtama": "Bercak merah bersisik dan gatal di area dagu dan rahang sejak 3 minggu, sebagian rambut jenggot rontok",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Gatal memberat saat berkeringat",
+        "Bekerja sebagai peternak sapi",
+        "Tidak membaik dengan sabun antiseptik biasa"
+      ],
+      "rpd": "Tidak ada riwayat penyakit kulit sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Sering kontak langsung dengan hewan ternak tanpa sarung tangan"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "plak eritematosa berbatas tegas dengan skuama dan pustul folikular di area jenggot, disertai rambut yang mudah patah/rontok",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_kerokan_kulit_koh_10-20",
+        "nama": "Kerokan kulit + KOH 10-20%",
+        "temuan": "tampak hifa bersepta",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tinea Barbe",
+    "differensialBenar": [
+      "Tinea barbe",
+      "Folikulitis bakterial",
+      "Akne vulgaris",
+      "Pseudofolikulitis barbae"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antijamur oral sistemik karena melibatkan folikel rambut",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Griseofulvin tab 500 mg No. XXX",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab I (selama 4 minggu)",
+      "benar": false
+    },
+    {
+      "opsi": "Antijamur topikal tambahan",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Ketoconazole cream 2% tube 10 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol",
+      "benar": false
+    },
+    {
+      "opsi": "Antibiotik topikal saja (tidak menyasar penyebab jamur)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gunakan sarung tangan saat kontak dengan hewan ternak",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan berbagi alat cukur dengan orang lain",
+      "benar": true
+    },
+    {
+      "opsi": "Bercukur pada area lesi aktif (dapat menyebarkan infeksi)",
+      "benar": false
+    }
+  ]
+}

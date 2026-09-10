@@ -1,0 +1,116 @@
+{
+  "id": "integ_25",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 25 - Integumen",
+  "judulKasus": "Bu Wati, 46 tahun, kemerahan gatal di lipatan payudara",
+  "identitas": "Wati, 46 tahun, Ibu rumah tangga",
+  "skenarioAwal": "Seorang wanita 46 tahun dengan obesitas datang dengan keluhan kemerahan gatal di lipatan bawah payudara.",
+  "keluhanUtama": "Kemerahan dan gatal di lipatan bawah payudara sejak 2 minggu, terasa perih terutama saat berkeringat",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Area kemerahan basah dan terdapat bintik-bintik kecil di sekitarnya (lesi satelit)",
+        "Memberat pada cuaca panas",
+        "Riwayat diabetes melitus tipe 2"
+      ],
+      "rpd": "Diabetes melitus tipe 2 sejak 5 tahun, kontrol tidak teratur",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Obesitas, jarang mengeringkan lipatan kulit"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "plak eritematosa basah, berbatas tegas, dikelilingi papul-pustul satelit di sekitar lesi utama, di regio inframammae bilateral",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pf_gula_darah_sewaktu",
+        "nama": "Gula Darah Sewaktu",
+        "temuan": "260 mg/dL",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_kerokan_kulit_koh_10-20",
+        "nama": "Kerokan kulit + KOH 10-20%",
+        "temuan": "tampak pseudohifa dan blastospora",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula Darah Sewaktu",
+        "temuan": "260 mg/dL",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Kandidosis Kutis (Intertriginosa)",
+    "differensialBenar": [
+      "Kandidosis intertriginosa",
+      "Tinea kruris/korporis",
+      "Eritrasma",
+      "Dermatitis intertriginosa"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antijamur topikal golongan azol/polien",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Nystatin cream tube 15 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd applic loc dol",
+      "benar": false
+    },
+    {
+      "opsi": "Kortikosteroid topikal poten sebagai monoterapi tanpa antijamur",
+      "benar": false
+    },
+    {
+      "opsi": "Rujuk ke dokter umum/puskesmas untuk optimalisasi kontrol gula darah (DM sebagai faktor predisposisi)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kontrol gula darah dengan baik karena hiperglikemia mempermudah pertumbuhan jamur Candida",
+      "benar": true
+    },
+    {
+      "opsi": "Turunkan berat badan dan jaga lipatan kulit tetap kering dan sejuk",
+      "benar": true
+    },
+    {
+      "opsi": "Membiarkan area lipatan lembap sepanjang hari",
+      "benar": false
+    },
+    {
+      "opsi": "Rujuk untuk optimalisasi kontrol gula darah",
+      "benar": true
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+Case Bank OSCE — Respirologi
+
+1. PPOK
+
+ID
+
+respi_01
+
+Kategori
+
+respirasi
+
+Nama
+
+PPOK
+
+Level
+
+3A
+
+Judul Kasus
+
+Pasien 65-70 tahun, sesak napas persisten memberat saat aktivitas
+
+Identitas
+
+Usia: 65-70, Pekerjaan: -, Alamat: -
+
+Keluhan Utama
+
+Sesak napas
+
+RPS
+
+Sesak napas terus menerus (persisten), memberat saat naik tangga dan beraktivitas
+
+Gejala lemas, nyeri dada ringan
+
+1 minggu yang lalu batuk, rasa seperti mau ngeluarin dahak
+
+Sesak napas 2 tahun secara terus menerus
+
+Batuk 1 minggu, makin parah
+
+Susah mengeluarkan dahak
+
+Istirahat dapat memperingan
+
+RPD
+
+Sudah minum obat tapi masih sesak
+
+2 bulan yang lalu sesak parah dan lemas lalu dirawat di RS
+
+Sudah vaksin COVID
+
+Ibu asma
+
+RPK
+
+Ibu asma
+
+Lifestyle
+
+Kalau panas suka buka kaca di jalan
+
+Sering keluar kota 1-2 jam
+
+Sudah berhenti merokok sejak 2 tahun lalu (merokok sudah dari remaja pas lulus SMA)
+
+Pemeriksaan Fisik
+
+KU: -
+
+Suhu: 36,9°C, TD: -, Nadi: 150, Nafas: 28, O2: 92% (pakai nasal canul)
+
+*Inspeksi: barrel chest (+)
+
+*Palpasi: nyeri (-), fremitus sedikit menurun di kanan kiri, pengembangan paru simetris
+
+*Perkusi: hipersomnor di kanan dan kiri
+
+*Auskultasi: vesikuler menurun, wheezing (+)
+
+TTV: TD 130/90, HR 105 (masih masuk reguler), RR 28x/menit, Suhu 36,9°C
+
+HTT (khususnya thorax): Inspeksi barrel chest (+), Palpasi nyeri (-) fremitus sedikit menurun di kanan kiri pengembangan paru simetris, Perkusi hipersomnor pengembangan paru 3-4 cm, Auskultasi vesikuler menurun wheezing di kedua lapang paru
+
+Mata: dbn, Bibir: pursed lips breathing (-), sianosis (-)
+
+Abdomen: dbn
+
+Ekstremitas: clubbing finger (-), CRT <2s, kak dbn
+
+Pemeriksaan Penunjang
+
+Darah rutin: dbn
+
+*X ray PPOK: (lihat hasil rontgen)
+
+*Spirometri: FEV 1 menurun
+
+DD Benar
+
+PPOK
+
+DD Pilihan
+
+PPOK
+
+Asma Bronkial
+
+Bronkitis
+
+Bronkiektasis
+
+Tatalaksana
+
++Oksigenasi
+
++LABA (Long-Acting Beta Agonist)
+
++LAMA (Long-Acting Muscarinic Antagonist)
+
++Ambroxol untuk batuk
+
+Edukasi
+
++Faktor resiko karena usia, paparan asap, dan rokok
+
++Penyakit bersifat progresif, persisten, irreversible
+
+
+
+
+
+2. Pneumonia Lobaris Basal Sinistra
+
+ID
+
+respi_02
+
+Kategori
+
+respirasi
+
+Nama
+
+Pneumonia Lobaris Basal Sinistra
+
+Level
+
+3A
+
+Judul Kasus
+
+Budi, 40 tahun, supir bus, batuk berdahak 1 minggu disertai demam
+
+Identitas
+
+Nama: Budi, Usia: 40, Pekerjaan: Supir Bus, Alamat: Godean
+
+Keluhan Utama
+
+Batuk
+
+RPS
+
+Batuk sudah 1 minggu, terus-menerus
+
+Dahak awalnya kuning, sekarang hijau kental; Darah (-)
+
+Demam + menggigil sejak 3 hari; dada terasa berat dan sesak saat bangun tidur pagi ini
+
+Sudah beli obat batuk di warung, tidak membaik
+
+RPD
+
+Batuk sejak 2 tahun, tapi ini terparah (progresif)
+
+Alergi (-), Asma (-)
+
+RPK
+
+Tidak ada yang mengalami gejala serupa
+
+Lifestyle
+
+Merokok 1 bungkus/hari
+
+Alkohol (-), Drugs (-)
+
+Lingkungan bersih, ventilasi baik
+
+Nafsu makan turun
+
+Pemeriksaan Fisik
+
+Status Kesadaran: CM, KU: Tampak sesak
+
+Status Gizi: BB 65 kg, TB 175 cm, BMI Normal
+
+TD: 130/80 mmHg, HR: 110x/mnt, RR: 24x/mnt, Suhu: 38,7°C
+
+Head to Toe - Mata: dbn, Bibir: Pursed lip breathing (+)
+
+Px. Dada Posterior: Inspeksi dbn, *Palpasi: Fremitus naik di paru basal kiri, *Perkusi: Redup di basal paru kiri, *Auskultasi: Suara napas bronkial; ronki (+) basal paru kiri
+
+Px. Dada Anterior: Inspeksi dbn, Palpasi: Fremitus naik basal kiri, Perkusi: Redup di basal paru kiri, Auskultasi: Suara napas bronkial; ronki (+) basal paru kiri
+
+Jantung: S1 S2 dbn, CTR normal
+
+Abdomen: dbn
+
+Ekstremitas: Edema (-), Akral hangat
+
+Pemeriksaan Penunjang
+
+*Foto Thorax (AP): Infiltrat pada paru basal kiri, Corakan bronkovaskular meningkat di hiler, CTR normal, Diafragma licin, Sudut costophrenicus lancip
+
+*Darah Lengkap: Leukositosis 14.000
+
+*Kultur Sputum: S. Pneumoniae (+)
+
+Pemeriksaan BTA: Negatif
+
+Analisis CURB-65: (Confusion, Urea >7 mmol/L, RR ≥30, Sistol <90/Diastol ≤60, Usia ≥65) → Jika ada: Rawat Inap
+
+DD Benar
+
+Pneumonia Lobaris Basal Sinistra
+
+DD Pilihan
+
+Pneumonia Lobaris Basal Sinistra
+
+TB
+
+Bronkitis Kronis
+
+Bronkiektasis
+
+Tatalaksana
+
++Batuk Berdahak: R/ Ambroxol tab mg 30 No. XXI s.p.r.n. 3.d.d tab. I
+
++Antibiotik Lini 1: R/ Co-amoxiclav tab mg 625 No. XV s.o.8.h tab. I (habiskan)
+
++Alternatif: R/ Azithromycin 500mg hari-1, lalu 250mg hari 2-5
+
++Atau: R/ Eritromisin tab mg 500 No. VII s.o.6.h tab. I (habiskan)
+
+Edukasi
+
+
+
+
+
+
+
+3. Bronkiektasis
+
+ID
+
+respi_03
+
+Kategori
+
+respirasi
+
+Nama
+
+Bronkiektasis
+
+Level
+
+3A
+
+Judul Kasus
+
+Joko, 42 tahun, buruh pabrik, berdahak 6 tahun dengan batuk darah
+
+Identitas
+
+Nama: Joko, Usia: 42, Pekerjaan: Buruh pabrik, Alamat: -
+
+Keluhan Utama
+
+Batuk berdahak berulang sejak 6 tahun
+
+RPS
+
+Sudah sejak 6 tahun, berdahak, dahak warna putih keruh
+
+Karakteristik dahak seperti berlapis, lengket, dan kental
+
+3 hari kambuh ada bercak merah (kadang ada darah, darah keluar lebih banyak di pagi, disertai gejala sesak)
+
+Nyeri tapi tidak terlalu, mudah lelah, penurunan nafsu makan
+
+RPD
+
+Belum pernah seperti ini sebelumnya, tidak ada minum obat apa-apa
+
+Riwayat vaksin lupa
+
+Ada riwayat sakit TB tapi sudah agak lama dan sudah dinyatakan sembuh
+
+Riwayat asma (-)
+
+RPK
+
+Riwayat keluarga (-)
+
+Lifestyle
+
+Riwayat merokok sejak remaja 1 bungkus per hari tapi sudah berhenti sejak 1 tahun yang lalu
+
+Makan teratur tapi nafsu makan menurun, jarang olahraga
+
+Kadang-kadang pakai masker
+
+Pemeriksaan Fisik
+
+KU: CM
+
+110/70, SpO2 94%, Nadi 103, Suhu 37,8°C, RR 28
+
+Fremitus normal
+
+Pengembangan normal
+
+Sonor
+
+*Ronki basah ⅔ inferior
+
+*Wheezing ⅔ inferior
+
+*Clubbing finger
+
+Pemeriksaan Penunjang
+
+Darah rutin: (lihat lampiran)
+
+Dahak: (lihat lampiran)
+
+*Rontgen: Tram track app, Signet ring, Honeycomb app
+
+CT Scan juga diminta
+
+DD Benar
+
+Bronkiektasis
+
+DD Pilihan
+
+Bronkiektasis
+
+PPOK
+
+Asma Bronkial
+
+Tatalaksana
+
++Cipcofloxacin IV
+
++Asetilsistein buat batuk
+
++Kortikosteroid budesonide inhalasi
+
++Berikan O2 nasal canule 4L, simulasi untuk pantau 15 menit ada perubahan 15
+
++Minta CT scan juga
+
+Edukasi
+
++Pakai masker
+
++Hindari paparan asap
+
++Tidak berkumpul dengan orang batuk
+
++Vaksin flu
+
++Konsul spesialis
+
++Rujuk fisioterapi dada biar dahak cepat hilang
+
+
+
+
+
+4. Bronkitis Akut
+
+ID
+
+respi_04
+
+Kategori
+
+respirasi
+
+Nama
+
+Bronkitis Akut
+
+Level
+
+3A
+
+Judul Kasus
+
+Budi, 20 tahun, mahasiswa, batuk 1 minggu dengan dahak kuning
+
+Identitas
+
+Nama: Budi, Usia: 20, Pekerjaan: Mahasiswa, Alamat: -
+
+Keluhan Utama
+
+Batuk
+
+RPS
+
+Batuk sudah 1 minggu, sepanjang hari, paling sering sore dan malam
+
+Batuk berdahak berwarna kuning
+
+Sempat bersin dan demam, sudah tidak
+
+Memperingan: istirahat dan minum air putih, tapi memburuk lagi
+
+Memburuk di luar kos
+
+Keluhan lain: lelah, nyeri otot, tenggorokan nyeri
+
+Belum pernah diobati
+
+RPD
+
+Tidak pernah mengalami seperti ini
+
+Alergi (-)
+
+RPK
+
+Ada teman kuliah yang memiliki gejala serupa
+
+Lifestyle
+
+SAD (-)
+
+Lingkungan baik
+
+Pola makan tidak teratur, banyak makan mie instan
+
+Pemeriksaan Fisik
+
+Status Kesadaran: CM
+
+VS: TD 110/70 mmHg, HR 80x/mnt, RR 22x/mnt, Suhu 37,5°C
+
+Kepala-leher: dbn
+
+Px. Dada Posterior: Inspeksi dbn, Palpasi dbn, Perkusi dbn, *Auskultasi: Ronki basah (+), Wheezing (+) bilateral
+
+Px. Dada Anterior: Inspeksi dbn, Palpasi dbn, Perkusi dbn, Auskultasi: Ronki (+), Wheezing (+) bilateral
+
+Jantung: S1 S2 dbn
+
+Abdomen: dbn
+
+Ekstremitas: Edema (-), Akral hangat
+
+Pemeriksaan Penunjang
+
+*Foto Thorax (AP): Kedua apex paru tenang, Air bronkogram (+), Corakan bronkovaskular meningkat di hiler, Kedua sinus lancip, Diafragma licin, COR: CTR <0,5, Tak tampak jelas tanda TB paru
+
+Darah Lengkap: Eosinofil turun
+
+Sputum: dbn
+
+DD Benar
+
+Bronkitis Akut
+
+DD Pilihan
+
+Bronkitis Akut
+
+Bronkitis Kronik
+
+Asma Bronchial
+
+Tatalaksana
+
++Batuk Berdahak: R/ Ambroxol tab mg 30 No. XXI s.p.r.n. 3.d.d tab. I
+
++Demam: R/ Paracetamol tab mg 500 No. XXI s.p.r.n 3.d.d tab. I
+
+Notes: Bronkitis akut umumnya disebabkan virus, tidak perlu antibiotik kecuali ada bukti infeksi bakteri
+
+Edukasi
+
++Pakai masker
+
++Etika batuk yang benar
+
++Biasanya disebabkan oleh virus (sama seperti flu)
+
++Perbanyak istirahat dan minum air putih
+
++Kontrol jika tidak membaik dalam 1-2 minggu
+
+
+
+
+
+5. TB (Kasus Baru)
+
+ID
+
+respi_05
+
+Kategori
+
+respirasi
+
+Nama
+
+TB (Kasus Baru)
+
+Level
+
+3A
+
+Judul Kasus
+
+Pasien dengan batuk berdahak 2 bulan, dahak ada darah
+
+Identitas
+
+-
+
+Keluhan Utama
+
+Batuk berdahak
+
+RPS
+
+Batuk berdahak sejak 2 bulan yang lalu
+
+Dahak warna kuning hingga hijau kental; ada darahnya
+
+Sudah minum obat warung + vitamin, tapi tidak membaik
+
+RPD
+
+Belum pernah seperti ini sebelumnya
+
+Asma (-)
+
+Metabolic disease (-)
+
+Alergi (-)
+
+RPK
+
+
+
+Lifestyle
+
+
+
+Pemeriksaan Fisik
+
+*Auskultasi: Ronki di apex paru
+
+Perkusi: sonor semua (harus ada pekak di apex paru tapi gua lupa)
+
+Fremitus meningkat
+
+Abdomen: dbn
+
+Ekstremitas: dbn
+
+Pemeriksaan Penunjang
+
+*Kultur Sputum BTA: Sewaktu I → + (Positif); Pagi → - (negatif)
+
+*TCM: Mycobacterium tuberculosis DETECTED; Rifampicin Resistance: NOT DETECTED
+
+DD Benar
+
+TB (Kasus Baru)
+
+DD Pilihan
+
+TB (Kasus Baru)
+
+Pneumonia
+
+Pneumonia Lobaris
+
+Tatalaksana
+
++TB (OAT): R/ 4KDT TB Kategori I Fase Intensif tab. No. CXX s.1.d.d tab. IV p.c
+
++R/ Rifampisin tab mg 150 No. XXX s.1.d.d tab. I
+
++R/ Isoniazid tab mg 75 No. XXX s.1.d.d tab. I
+
++R/ Pirazinamid tab mg 400 No. XXX s.1.d.d tab. I
+
++R/ Etambutol tab mg 275 No. XXX s.1.d.d tab. I
+
+Edukasi
+
++Efek samping obat dijelaskan dari masing-masing:
+
++Rifampisin → Pipis merah, kulitnya menghitam, mual sakit perut
+
++Etambutol → Gangguan Penglihatan, kulitnya menghitam
+
++Isoniazid → Kesemutan, kaki panas, telinga berdenging, tangannya kesemutan, gatal-gatal
+
++Pirazinamid → nyeri sendi
+
++Bilang akan dicek HIV karena sesuai anjuran WHO semua pasien yang diduga TB harus melakukan pengecekan untuk HIV
+
+
+

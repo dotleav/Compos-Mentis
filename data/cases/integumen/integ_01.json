@@ -1,0 +1,110 @@
+{
+  "id": "integ_01",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 1 - Integumen",
+  "judulKasus": "Tono, 10 tahun, ada kutil di jari tangan sejak 3 bulan",
+  "identitas": "Tono, 10 tahun, Pelajar",
+  "skenarioAwal": "Seorang anak laki-laki 10 tahun dibawa ibunya ke puskesmas dengan keluhan benjolan kasar di jari tangan.",
+  "keluhanUtama": "Benjolan kasar di jari tangan sejak 3 bulan, awalnya kecil lalu membesar",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Tidak nyeri, kadang gatal ringan",
+        "Anak suka menggigit kuku dan bermain di tanah",
+        "Tidak ada demam"
+      ],
+      "rpd": "Tidak ada riwayat kutil sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Sering bermain di luar ruangan tanpa alas kaki/sarung tangan",
+        "Kebiasaan menggigit kuku"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik, tidak tampak sakit",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "papul verukosa multipel, permukaan kasar/hiperkeratotik, warna sesuai kulit hingga keabuan, batas tegas, di dorsum digiti II-IV manus dekstra",
+        "signifikan": true,
+        "wajibLapor": true,
+        "image": "pf_status_dermatologisujud_kelainan_kulit_u.png"
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_nyeri_tekan",
+        "nama": "Nyeri tekan",
+        "temuan": "tidak ada",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Veruka Vulgaris",
+    "differensialBenar": [
+      "Veruka vulgaris",
+      "Moluskum kontagiosum",
+      "Klavus (callus)",
+      "Keratosis seboroik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Terapi destruksi lokal: asam salisilat topikal konsentrasi tinggi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Acidum salicylicum 20% in Collodion flexile ad 10 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S.u.e (oleskan tipis 1x/hari pada lesi malam hari, lindungi kulit sekitar dengan vaselin, kerok lapisan hiperkeratotik sebelum aplikasi)",
+      "benar": false
+    },
+    {
+      "opsi": "Alternatif bila fasilitas tersedia: elektrokauterisasi atau krioterapi nitrogen cair",
+      "benar": true
+    },
+    {
+      "opsi": "Eksisi luas tanpa indikasi (berisiko jaringan parut, bukan tatalaksana lini pertama)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jangan menggigit atau menggaruk kutil karena dapat menyebar (autoinokulasi)",
+      "benar": true
+    },
+    {
+      "opsi": "Jaga kebersihan tangan, hindari kontak langsung dengan lesi orang lain",
+      "benar": true
+    },
+    {
+      "opsi": "Memencet atau memotong sendiri lesi di rumah",
+      "benar": false
+    },
+    {
+      "opsi": "Lesi veruka disebabkan virus HPV dan dapat sembuh sendiri dalam beberapa bulan hingga tahun",
+      "benar": true
+    }
+  ]
+}

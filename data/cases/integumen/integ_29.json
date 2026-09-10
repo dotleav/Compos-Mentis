@@ -1,0 +1,101 @@
+{
+  "id": "integ_29",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 29 - Integumen",
+  "judulKasus": "Bp. Iwan, 31 tahun, gatal hebat di area kemaluan",
+  "identitas": "Iwan, 31 tahun, Pelaut",
+  "skenarioAwal": "Seorang laki-laki 31 tahun datang dengan keluhan gatal hebat di rambut kemaluan sejak 1 minggu.",
+  "keluhanUtama": "Gatal hebat di rambut kemaluan sejak 1 minggu, terutama malam hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Terdapat bercak kebiruan kecil di kulit sekitar rambut kemaluan",
+        "Riwayat berhubungan seksual dengan pasangan baru 3 minggu lalu",
+        "Tidak ada keluhan keluar cairan dari kemaluan"
+      ],
+      "rpd": "Tidak ada riwayat IMS sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Sering berganti pasangan seksual"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_lokalis_genital",
+        "nama": "Status Lokalis genital",
+        "temuan": "ditemukan kutu (Phthirus pubis) dan telur melekat pada rambut pubis, disertai makula sebiru-biruan (maculae ceruleae) pada kulit sekitarnya",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ekskoriasi_akibat_garukan",
+        "nama": "Ekskoriasi akibat garukan",
+        "temuan": "ada",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Pedikulosis Pubis",
+    "differensialBenar": [
+      "Pedikulosis pubis",
+      "Skabies",
+      "Dermatitis kontak area genital",
+      "Folikulitis pubis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Permetrin krim",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Permethrin 5% cream tube 30 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S ue, oleskan pada area rambut pubis dan sekitarnya, diamkan 8-10 jam lalu bilas, ulangi setelah 7 hari",
+      "benar": false
+    },
+    {
+      "opsi": "Cukur rambut pubis dapat membantu mempercepat eradikasi (opsional)",
+      "benar": true
+    },
+    {
+      "opsi": "Menggunakan losion permetrin konsentrasi untuk kepala tanpa penyesuaian pada area genital sensitif",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Obati pasangan seksual secara bersamaan untuk mencegah penularan berulang",
+      "benar": true
+    },
+    {
+      "opsi": "Cuci pakaian dalam dan seprai dengan air panas",
+      "benar": true
+    },
+    {
+      "opsi": "Melakukan hubungan seksual sebelum pengobatan tuntas",
+      "benar": false
+    },
+    {
+      "opsi": "Tawarkan skrining IMS lain (sifilis, gonore, HIV)",
+      "benar": true
+    }
+  ]
+}

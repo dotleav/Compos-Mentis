@@ -1,0 +1,105 @@
+{
+  "id": "integ_35",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 35 - Integumen",
+  "judulKasus": "By. Arka, 8 bulan, kulit kemerahan di area popok",
+  "identitas": "Arka, 8 bulan tahun",
+  "skenarioAwal": "Seorang bayi laki-laki 8 bulan dibawa ibunya dengan keluhan kulit kemerahan di area popok.",
+  "keluhanUtama": "Kulit kemerahan dan tampak lecet di area yang tertutup popok sejak 4 hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bayi rewel terutama saat popok diganti atau area tersebut disentuh",
+        "Popok jarang diganti karena bayi tidur lama di malam hari",
+        "Tidak demam"
+      ],
+      "rpd": "Tidak ada riwayat alergi sebelumnya",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Menggunakan popok sekali pakai, frekuensi penggantian kurang dari 4x/hari"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "aktif, rewel bila area popok disentuh",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "eritema konfluens pada area yang kontak langsung dengan popok (bokong, paha bagian dalam, area genital), dengan sedikit erosi, cekungan lipatan kulit relatif tidak terkena",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Napkin Eczema (Dermatitis Popok)",
+    "differensialBenar": [
+      "Dermatitis popok",
+      "Kandidosis popok",
+      "Dermatitis seboroik",
+      "Psoriasis area popok"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Krim pelindung berbasis zinc oxide sebagai barrier",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Zinc oxide ointment tube 20 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 3-4 dd applic loc dol pada tiap penggantian popok",
+      "benar": false
+    },
+    {
+      "opsi": "Kortikosteroid topikal ringan bila peradangan cukup berat",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Hydrocortisone cream 1% tube 5 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 1-2 dd applic loc dol selama beberapa hari",
+      "benar": false
+    },
+    {
+      "opsi": "Menggunakan bedak tabur pada area popok yang lembap (dapat menggumpal dan memperparah iritasi)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Ganti popok lebih sering (setiap 3-4 jam atau segera setelah BAK/BAB) dan bersihkan area dengan lembut",
+      "benar": true
+    },
+    {
+      "opsi": "Biarkan area popok terbuka tanpa popok beberapa saat setiap hari untuk mengeringkan kulit",
+      "benar": true
+    },
+    {
+      "opsi": "Menggunakan tisu basah beralkohol/berpewangi untuk membersihkan area popok",
+      "benar": false
+    }
+  ]
+}

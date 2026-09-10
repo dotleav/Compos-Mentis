@@ -1,0 +1,133 @@
+{
+  "id": "integ_13",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 13 - Integumen",
+  "judulKasus": "An. Putri, 9 tahun, benjolan di leher yang pecah menjadi luka bernanah",
+  "identitas": "Putri, 9 tahun, Pelajar SD",
+  "skenarioAwal": "Seorang anak perempuan 9 tahun dibawa orang tuanya dengan keluhan benjolan di leher yang sudah pecah.",
+  "keluhanUtama": "Benjolan di leher kiri sejak 3 bulan, awalnya keras tidak nyeri, kemudian melunak dan pecah membentuk luka bernanah sejak 2 minggu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Berat badan sulit naik dan nafsu makan menurun",
+        "Batuk lama lebih dari 3 minggu",
+        "Keringat malam hari"
+      ],
+      "rpd": "Tidak ada riwayat imunisasi BCG yang jelas",
+      "rpk": "Kakek serumah sedang menjalani pengobatan TB paru",
+      "lifestyle": [
+        "Tinggal serumah dengan penderita TB, ventilasi rumah kurang baik"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "tampak sakit ringan, gizi kurang",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "suhu 37,3°C, lainnya dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "ulkus dengan tepi bergaung (undermined), dasar granulasi, disertai sinus yang mengeluarkan cairan seropurulen, di regio colli sinistra.",
+        "signifikan": true,
+        "wajibLapor": true,
+        "image": "pf_status_dermatologisujud_kelainan_kulit_u.png"
+      },
+      {
+        "id": "pf_palpasi_kelenjar_getah_bening",
+        "nama": "Palpasi kelenjar getah bening",
+        "temuan": "Pembesaran KGB colli multipel, konsistensi kenyal, sebagian saling melekat (matted)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_uji_tuberkulin_mantoux",
+        "nama": "Uji tuberkulin (Mantoux)",
+        "temuan": "indurasi >10 mm (positif)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_foto_toraks",
+        "nama": "Foto toraks",
+        "temuan": "gambaran TB paru primer/lesi lama",
+        "signifikan": false,
+        "wajibLapor": true,
+        "image": "pnj_foto_toraks.png"
+      },
+      {
+        "id": "pnj_bta_sputumpus",
+        "nama": "BTA sputum/pus",
+        "temuan": "dapat ditemukan BTA positif",
+        "signifikan": false,
+        "wajibLapor": true,
+        "image": "pnj_bta_sputumpus.png"
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Skrofuloderma",
+    "differensialBenar": [
+      "Skrofuloderma",
+      "Limfadenitis TB dengan fistel",
+      "Limfadenitis piogenik",
+      "Aktinomikosis servikofasial"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Obat Anti Tuberkulosis (OAT) kategori 1 sesuai berat badan, fase intensif 2 bulan",
+      "benar": true
+    },
+    {
+      "opsi": "R/ FDC RHZE (Rifampisin/Isoniazid/Pirazinamid/Etambutol) tab sesuai dosis BB No. LVI",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd tab (pagi hari, sebelum makan, selama 2 bulan) dilanjutkan fase lanjutan RH 4 bulan",
+      "benar": false
+    },
+    {
+      "opsi": "Perawatan luka/sinus secara rutin dengan kompres NaCl 0,9%",
+      "benar": true
+    },
+    {
+      "opsi": "Pastikan status gizi diperbaiki selama pengobatan",
+      "benar": true
+    },
+    {
+      "opsi": "Pemberian antibiotik non-OAT saja tanpa terapi tuberkulosis definitif",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Pengobatan harus dituntaskan sesuai jadwal (6-9 bulan) meskipun luka sudah membaik, untuk mencegah resistensi",
+      "benar": true
+    },
+    {
+      "opsi": "Lakukan skrining TB pada seluruh anggota keluarga serumah",
+      "benar": true
+    },
+    {
+      "opsi": "Menghentikan OAT begitu keluhan mereda",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "integ_12",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 12 - Integumen",
+  "judulKasus": "Bu Marni, 55 tahun, tungkai bengkak kemerahan disertai demam",
+  "identitas": "Marni, 55 tahun, Pedagang",
+  "skenarioAwal": "Seorang wanita 55 tahun datang dengan keluhan tungkai kanan bengkak, merah, dan nyeri disertai demam.",
+  "keluhanUtama": "Tungkai bawah kanan bengkak dan merah sejak 2 hari, terasa panas dan nyeri, disertai demam tinggi mendadak",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Batas kemerahan tegas dan meninggi",
+        "Demam disertai menggigil",
+        "Riwayat luka kecil di kaki 4 hari sebelumnya"
+      ],
+      "rpd": "Riwayat diabetes melitus tipe 2",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Jarang menggunakan alas kaki di rumah, kontrol gula darah tidak teratur"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "tampak sakit sedang",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "suhu 38,7°C, TD 130/80 mmHg, nadi 96x/menit",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "plak eritematosa, edema, hangat pada perabaan, dengan batas tegas dan sedikit meninggi (peau d'orange) di regio cruris dekstra",
+        "signifikan": true,
+        "wajibLapor": true,
+        "image": "pf_status_dermatologisujud_kelainan_kulit_u.png"
+      },
+      {
+        "id": "pf_gula_darah_sewaktu",
+        "nama": "Gula Darah Sewaktu",
+        "temuan": "210 mg/dL",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_nyeri_tekan",
+        "nama": "Nyeri tekan",
+        "temuan": "ada, disertai limfadenopati inguinal ipsilateral",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula Darah Sewaktu",
+        "temuan": "210 mg/dL",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Erisipelas",
+    "differensialBenar": [
+      "Erisipelas",
+      "Selulitis",
+      "Deep vein thrombosis (DVT)",
+      "Dermatitis kontak"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antibiotik oral lini pertama untuk kasus ringan-sedang",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amoxicillin tab 500 mg No. XXI",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd tab I (selama 7-10 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Analgetik-antipiretik",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Paracetamol tab 500 mg No. X",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd tab I prn demam/nyeri",
+      "benar": false
+    },
+    {
+      "opsi": "Elevasi tungkai dan istirahat",
+      "benar": true
+    },
+    {
+      "opsi": "Rujuk bila demam tinggi menetap, tanda sepsis, atau tidak membaik dalam 48-72 jam",
+      "benar": true
+    },
+    {
+      "opsi": "Menunda terapi antibiotik sambil menunggu hasil kultur",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kontrol gula darah secara rutin untuk mempercepat penyembuhan dan mencegah kekambuhan",
+      "benar": true
+    },
+    {
+      "opsi": "Rawat dan lindungi luka kecil di kaki agar tidak menjadi pintu masuk infeksi",
+      "benar": true
+    },
+    {
+      "opsi": "Menghentikan antibiotik saat gejala mulai membaik sebelum waktunya",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": "kard_12",
+  "kategori": "kardio",
+  "level": "3A",
+  "nama": "Hipotensi Ortostatik",
+  "judulKasus": "Perempuan 70 tahun, pusing berputar dan hampir pingsan setiap kali berdiri dari duduk",
+  "identitas": "Pasien, perempuan, 70 tahun",
+  "skenarioAwal": "Seorang pasien perempuan 70 tahun, datang ke poli dengan keluhan pusing dan hampir pingsan setiap kali berdiri.",
+  "keluhanUtama": "Pusing dan hampir pingsan saat berdiri",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Pusing dan pandangan gelap tiap kali berdiri dari duduk atau tidur, berlangsung 30-60 detik",
+        "Hampir jatuh 3x dalam sebulan terakhir",
+        "Membaik bila kembali duduk",
+        "Tidak ada nyeri kepala hebat, tidak ada defisit neurologis menetap",
+        "Tidak ada keluhan telinga berdenging atau perasaan berputar murni (menyingkirkan BPPV)"
+      ],
+      "rpd": "HT (amlodipin 10mg + bisoprolol 5mg + HCT 25mg — 3 antihipertensi). DM (metformin + glibenklamid). Tidak ada riwayat Parkinson.",
+      "rpk": "Tidak ada penyakit keluarga yang relevan",
+      "lifestyle": [
+        "Lansia 70 tahun, tinggal sendiri",
+        "Minum obat teratur",
+        "Kurang minum air putih",
+        "Sering berdiri mendadak dari kasur"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "Tampak baik saat duduk, pusing saat berdiri",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tes_ortostatik",
+        "nama": "Tes ortostatik",
+        "temuan": "TD berbaring 150/90, TD setelah berdiri 1 menit 110/65 (turun sistolik >20 mmHg dan diastolik >10 mmHg) — POSITIF ortostatik HR tidak meningkat kompensasi (abnormal) — curiga neuropati otonom (DM)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_neurologis",
+        "nama": "Neurologis",
+        "temuan": "tidak ada defisit fokal Tidak ada tanda dehidrasi",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_tes_ortostatik_lying-standing_bp",
+        "nama": "Tes ortostatik (lying-standing BP)",
+        "temuan": "penurunan sistolik 40 mmHg — ortostatik signifikan",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "sinus bradikardi 54x/mnt — kemungkinan bisoprolol terlalu dosis tinggi",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gds",
+        "nama": "GDS",
+        "temuan": "88 mg/dL — tidak hipoglikemia",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_darah_rutin",
+        "nama": "Darah rutin",
+        "temuan": "Hb 12,8 — tidak ada anemia bermakna",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_elektrolit",
+        "nama": "Elektrolit",
+        "temuan": "Na 138, K 3,5 — dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Hipotensi Ortostatik",
+    "differensialBenar": [
+      "Hipotensi Ortostatik",
+      "BPPV",
+      "Sinkop Vasovagal",
+      "Aritmia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Review dan kurangi/hentikan obat penyebab: turunkan dosis antihipertensi (terutama HCT dan bisoprolol) atau pertimbangkan penggantian",
+      "benar": true
+    },
+    {
+      "opsi": "Non-farmakologis: bangkit perlahan (head-up tilt bertahap), stoking kompresi elastis, cukupi cairan 2L/hari",
+      "benar": true
+    },
+    {
+      "opsi": "Tingkatkan asupan garam dan cairan bila tidak ada kontraindikasi (jantung normal)",
+      "benar": true
+    },
+    {
+      "opsi": "Fludrokortison 0,1mg/hari bila tindakan konservatif gagal dan tidak ada kontraindikasi",
+      "benar": true
+    },
+    {
+      "opsi": "Naikkan semua dosis antihipertensi untuk mengontrol tekanan darah berbaring",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Berdiri perlahan — duduk dulu di tepi kasur 30 detik sebelum berdiri",
+      "benar": true
+    },
+    {
+      "opsi": "Minum air putih cukup (minimal 8 gelas/hari) dan hindari dehidrasi",
+      "benar": true
+    },
+    {
+      "opsi": "Pasang pegangan di kamar mandi dan tempat tidur untuk mencegah jatuh",
+      "benar": true
+    },
+    {
+      "opsi": "Hipotensi ortostatik bisa diabaikan karena hanya masalah posisi, bukan penyakit serius",
+      "benar": false
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "integ_31",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 31 - Integumen",
+  "judulKasus": "An. Kayla, 5 tahun, bentol-bentol gatal di kaki setelah bermain di taman",
+  "identitas": "Kayla, 5 tahun, Pelajar TK",
+  "skenarioAwal": "Seorang anak perempuan 5 tahun dibawa ibunya dengan keluhan bentol-bentol gatal di tungkai.",
+  "keluhanUtama": "Muncul bentol-bentol kemerahan gatal di kedua tungkai bawah sejak 1 hari setelah bermain di taman sore hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bentol muncul mendadak setelah bermain di rerumputan",
+        "Terdapat titik merah di tengah beberapa bentol",
+        "Tidak demam"
+      ],
+      "rpd": "Tidak ada riwayat alergi obat/makanan",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Sering bermain di area rerumputan sore hari"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "papul urtika multipel dengan punctum sentral (bekas gigitan) di regio cruris bilateral, disertai eritema di sekitarnya",
+        "signifikan": true,
+        "wajibLapor": true
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Reaksi Gigitan Serangga (Insect Bite Reaction)",
+    "differensialBenar": [
+      "Reaksi gigitan serangga",
+      "Skabies",
+      "Urtikaria akut",
+      "Varisela stadium awal"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antihistamin oral untuk mengurangi gatal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Cetirizine syrup 5 mg/5 ml fl No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 1 dd Cth I",
+      "benar": false
+    },
+    {
+      "opsi": "Kortikosteroid topikal ringan untuk lesi yang meradang",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Hydrocortisone cream 1% tube 5 g No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol",
+      "benar": false
+    },
+    {
+      "opsi": "Menggaruk lesi hingga luka terbuka (risiko infeksi sekunder/impetigo)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gunakan lotion anti-nyamuk dan pakaian tertutup saat beraktivitas di area rerumputan/taman sore hari",
+      "benar": true
+    },
+    {
+      "opsi": "Potong kuku anak untuk mengurangi risiko infeksi sekunder akibat garukan",
+      "benar": true
+    },
+    {
+      "opsi": "Memberikan salep/obat oles yang tidak jelas komposisinya pada lesi",
+      "benar": false
+    }
+  ]
+}

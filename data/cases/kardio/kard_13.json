@@ -1,0 +1,141 @@
+{
+  "id": "kard_13",
+  "kategori": "kardio",
+  "level": "3A",
+  "nama": "Deep Vein Thrombosis (DVT)",
+  "judulKasus": "Perempuan 45 tahun, kaki kiri bengkak, merah, dan nyeri mendadak setelah penerbangan 12 jam",
+  "identitas": "Pasien, perempuan, 45 tahun",
+  "skenarioAwal": "Seorang pasien perempuan 45 tahun, datang ke IGD dengan keluhan kaki kiri bengkak dan nyeri mendadak setelah penerbangan panjang.",
+  "keluhanUtama": "Kaki kiri bengkak dan nyeri mendadak",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Kaki kiri bengkak mendadak sejak kemarin, 12 jam setelah penerbangan 12 jam dari Eropa",
+        "Nyeri di betis kiri, makin nyeri saat berjalan atau meremas betis",
+        "Kulit di betis kiri terasa hangat dan kemerahan",
+        "Tidak ada demam tinggi, tidak ada nanah",
+        "Sesak napas ringan sejak tadi pagi (curiga emboli paru)"
+      ],
+      "rpd": "Minum pil KB (kontrasepsi oral kombinasi) 2 tahun terakhir. Tidak ada riwayat DVT sebelumnya. Tidak ada keganasan.",
+      "rpk": "Ibu ada riwayat DVT",
+      "lifestyle": [
+        "Eksekutif, sering perjalanan jauh",
+        "Selama penerbangan tidak bergerak, tidak banyak minum",
+        "Tidak merokok"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_ku",
+        "nama": "KU",
+        "temuan": "Tampak kesakitan saat berjalan, tidak sesak berat",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_ttv",
+        "nama": "TTV",
+        "temuan": "TD 125/80 mmHg, HR 96x/mnt, RR 20x/mnt, SpO2 96%",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tungkai_kiri",
+        "nama": "Tungkai kiri",
+        "temuan": "bengkak nyata dibanding kanan, eritema dan hangat di betis *Homans sign (+) — nyeri saat dorsofleksi kaki kiri (tidak spesifik, namun mendukung) *Lingkar betis kiri 3cm lebih besar dari kanan Tidak ada tanda syok, tidak ada sianosis",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_usg_doppler_vena_tungkai_kiri",
+        "nama": "USG Doppler vena tungkai kiri",
+        "temuan": "thrombus (+) di vena poplitea dan vena femoralis superfisial kiri — noncompressible",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_d-dimer",
+        "nama": "D-Dimer",
+        "temuan": "3200 ng/mL (meningkat signifikan)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_wells_score_dvt",
+        "nama": "Wells Score DVT",
+        "temuan": "3 poin (probabilitas tinggi)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ct_pulmonary_angiography_ctpa",
+        "nama": "CT Pulmonary Angiography (CTPA)",
+        "temuan": "filling defect di arteri pulmonalis kanan (emboli paru bersamaan)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_darah_rutin",
+        "nama": "Darah rutin",
+        "temuan": "dalam batas normal, tidak ada leukositosis",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Deep Vein Thrombosis (DVT) Tungkai Kiri",
+    "differensialBenar": [
+      "Deep Vein Thrombosis (DVT) Tungkai Kiri",
+      "Selulitis",
+      "Ruptur Kista Baker",
+      "Tromboflebitis Superfisial"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antikoagulan segera: heparin UFH IV atau LMWH (enoksaparin 1mg/kgBB/12 jam SC)",
+      "benar": true
+    },
+    {
+      "opsi": "Transisi ke antikoagulan oral: warfarin (INR 2-3) atau NOAC (rivaroksaban/apiksaban) selama minimal 3-6 bulan",
+      "benar": true
+    },
+    {
+      "opsi": "Hentikan kontrasepsi oral — pil KB meningkatkan risiko trombosis, ganti dengan metode non-hormonal",
+      "benar": true
+    },
+    {
+      "opsi": "Stoking kompresi medis untuk mengurangi post-thrombotic syndrome",
+      "benar": true
+    },
+    {
+      "opsi": "Bedrest total dan tidak boleh digerakkan sampai terapi antikoagulan penuh",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Pada penerbangan panjang: gerakkan kaki tiap 1-2 jam, berjalan di lorong pesawat, minum air putih cukup",
+      "benar": true
+    },
+    {
+      "opsi": "Antikoagulan harus diminum rutin minimal 3-6 bulan — jangan berhenti sendiri karena risiko emboli paru",
+      "benar": true
+    },
+    {
+      "opsi": "Konsultasikan kontrasepsi alternatif yang aman dengan dokter",
+      "benar": true
+    },
+    {
+      "opsi": "DVT yang sudah diobati tidak bisa kambuh lagi setelah antikoagulan selesai",
+      "benar": false
+    }
+  ]
+}

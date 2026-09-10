@@ -1,0 +1,24 @@
+CARA PASANG
+===========
+
+1. Copy 3 file berikut ke dalam folder scripts/ di project Compos-Mentis kamu
+   (timpa docx-to-case.js yang lama):
+
+     docx-to-case.js
+     CASE_TEMPLATE.docx
+     CASE_TEMPLATE_GUIDE.md
+
+2. Buka package.json di root project Compos-Mentis kamu, tambahkan baris ini
+   di dalam "dependencies" (lihat package.json.reference buat contoh lengkap):
+
+     "fast-xml-parser": "^5.10.1",
+
+3. Di terminal, masuk ke folder project Compos-Mentis, lalu jalankan:
+
+     npm install
+
+4. Baru bisa dipakai:
+
+     node scripts/docx-to-case.js path/ke/file.docx --kategori endokrin
+
+Baca CASE_TEMPLATE_GUIDE.md untuk aturan lengkap format tabelnya.

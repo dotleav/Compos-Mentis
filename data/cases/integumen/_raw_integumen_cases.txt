@@ -1,0 +1,4902 @@
+Kasus 1 — Tono, 10 tahun, ada kutil di jari tangan sejak 3 bulan
+
+ID
+
+integ_01
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 1 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Tono, 10 tahun, ada kutil di jari tangan sejak 3 bulan
+
+Identitas
+
+Nama: Tono, Usia: 10, Pekerjaan: Pelajar, Alamat: -
+
+Skenario Awal
+
+Seorang anak laki-laki 10 tahun dibawa ibunya ke puskesmas dengan keluhan benjolan kasar di jari tangan.
+
+Keluhan Utama
+
+Benjolan kasar di jari tangan sejak 3 bulan, awalnya kecil lalu membesar
+
+RPS
+
+Tidak nyeri, kadang gatal ringan
+
+Anak suka menggigit kuku dan bermain di tanah
+
+Tidak ada demam
+
+RPD
+
+Tidak ada riwayat kutil sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Sering bermain di luar ruangan tanpa alas kaki/sarung tangan
+
+Kebiasaan menggigit kuku
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik, tidak tampak sakit
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul verukosa multipel, permukaan kasar/hiperkeratotik, warna sesuai kulit hingga keabuan, batas tegas, di dorsum digiti II-IV manus dekstra
+
+
+
+Tanda vital: dalam batas normal
+
+Nyeri tekan: tidak ada
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Veruka Vulgaris
+
+DD Diferensial Benar
+
+Veruka vulgaris
+
+Moluskum kontagiosum
+
+Klavus (callus)
+
+Keratosis seboroik
+
+Tatalaksana
+
++Terapi destruksi lokal: asam salisilat topikal konsentrasi tinggi
+
+R/ Acidum salicylicum 20% in Collodion flexile ad 10 g No. I
+
+S.u.e (oleskan tipis 1x/hari pada lesi malam hari, lindungi kulit sekitar dengan vaselin, kerok lapisan hiperkeratotik sebelum aplikasi)
+
++Alternatif bila fasilitas tersedia: elektrokauterisasi atau krioterapi nitrogen cair
+
+-Eksisi luas tanpa indikasi (berisiko jaringan parut, bukan tatalaksana lini pertama)
+
+Edukasi
+
++Jangan menggigit atau menggaruk kutil karena dapat menyebar (autoinokulasi)
+
++Jaga kebersihan tangan, hindari kontak langsung dengan lesi orang lain
+
+-Memencet atau memotong sendiri lesi di rumah
+
++Lesi veruka disebabkan virus HPV dan dapat sembuh sendiri dalam beberapa bulan hingga tahun
+
+
+
+Kasus 2 — An. Bila, 6 tahun, muncul bintil-bintil kecil mengkilat di perut
+
+ID
+
+integ_02
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 2 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Bila, 6 tahun, muncul bintil-bintil kecil mengkilat di perut
+
+Identitas
+
+Nama: Bila, Usia: 6, Pekerjaan: Pelajar TK, Alamat: -
+
+Skenario Awal
+
+Seorang anak perempuan 6 tahun dibawa ke puskesmas dengan keluhan bintil-bintil kecil di badan.
+
+Keluhan Utama
+
+Muncul bintil-bintil kecil mengkilat di perut dan lengan sejak 1 bulan, jumlah bertambah banyak
+
+RPS
+
+Tidak nyeri, kadang sedikit gatal
+
+Anak memiliki riwayat dermatitis atopik
+
+Tidak ada demam
+
+RPD
+
+Riwayat dermatitis atopik sejak bayi
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Sering berbagi handuk dengan saudara di rumah
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul multipel bentuk kubah, mengkilat, dengan umbilikasi sentral, ukuran 2-5 mm, tersebar di regio abdomen dan lengan atas
+
+
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Moluskum Kontagiosum
+
+DD Diferensial Benar
+
+Moluskum kontagiosum
+
+Veruka vulgaris
+
+Folikulitis
+
+Milia
+
+Tatalaksana
+
++Tindakan enukleasi/kuretase lesi dengan kuret khusus setelah anestesi topikal bila lesi mengganggu
+
++Alternatif topikal: tretinoin krim untuk mempercepat resolusi
+
+R/ Tretinoin cream 0,05% tube 5 g No. I
+
+S 1 dd applic loc dol (oleskan malam hari pada tiap lesi, hindari kulit sehat)
+
+-Insisi luas atau eksisi bedah (tidak diperlukan untuk lesi jinak self-limiting ini)
+
+Edukasi
+
++Hindari menggaruk lesi karena dapat menyebar ke area lain (autoinokulasi)
+
++Jangan berbagi handuk/pakaian dengan anggota keluarga lain selama lesi masih ada
+
+-Boleh berenang bersama tanpa menutup lesi
+
++Moluskum kontangiosum disebabkan virus poxvirus dan akan sembuh sendiri dalam 6-12 bulan tanpa jaringan parut
+
+
+
+Kasus 3 — Bp. Herman, 58 tahun, nyeri dan bintil berair di pinggang sebelah kanan
+
+ID
+
+integ_03
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 3 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Herman, 58 tahun, nyeri dan bintil berair di pinggang sebelah kanan
+
+Identitas
+
+Nama: Herman, Usia: 58, Pekerjaan: Pensiunan, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 58 tahun datang ke poli dengan keluhan nyeri terbakar disertai bintil berair di pinggang kanan.
+
+Keluhan Utama
+
+Nyeri seperti terbakar di pinggang kanan sejak 4 hari, diikuti muncul bintil berair 1 hari yang lalu
+
+RPS
+
+Nyeri hebat mendahului lesi kulit 2-3 hari
+
+Bintil tersusun berkelompok mengikuti satu sisi tubuh
+
+Demam ringan
+
+RPD
+
+Riwayat cacar air saat usia 8 tahun
+
+RPK
+
+Tidak ada riwayat keluarga dengan keluhan serupa
+
+Lifestyle
+
+Aktivitas sehari-hari normal, tidak ada riwayat imunosupresi
+
+Pemeriksaan Fisik
+
+Keadaan umum: tampak sakit ringan, kesadaran compos mentis
+
+Tanda vital: suhu 37,8°C, lainnya dalam batas normal
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): vesikel berkelompok di atas dasar eritema, tersusun sesuai dermatom torakal unilateral (setinggi Th10 kanan), tidak melewati garis tengah tubuh
+
+
+
+Nyeri tekan pada area lesi: ada
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Herpes Zoster Tanpa Komplikasi
+
+DD Diferensial Benar
+
+Herpes zoster
+
+Herpes simpleks
+
+Dermatitis kontak alergika
+
+Varisela
+
+Tatalaksana
+
++Antivirus oral, idealnya diberikan <72 jam sejak onset lesi
+
+R/ Acyclovir tab 800 mg No. XXXV
+
+S 5 dd tab I (selama 7 hari)
+
++Analgetik untuk nyeri neuropatik
+
+R/ Paracetamol tab 500 mg No. XV
+
+S 3 dd tab I prn nyeri
+
++Kompres basah dengan larutan NaCl 0,9% pada vesikel yang pecah
+
+-Pemberian kortikosteroid sistemik rutin tanpa indikasi khusus
+
+Edukasi
+
++Jaga lesi tetap kering dan bersih untuk mencegah infeksi sekunder
+
++Segera kontrol bila nyeri menetap setelah lesi sembuh (curiga neuralgia pasca-herpetik) atau bila lesi mengenai area mata
+
+-Menggaruk atau memecahkan vesikel sendiri
+
+
+
+Kasus 4 — An. Dimas, 5 tahun, demam dan ruam kemerahan di seluruh tubuh
+
+ID
+
+integ_04
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 4 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Dimas, 5 tahun, demam dan ruam kemerahan di seluruh tubuh
+
+Identitas
+
+Nama: Dimas, Usia: 5, Pekerjaan: Pelajar TK, Alamat: -
+
+Skenario Awal
+
+Seorang anak laki-laki 5 tahun dibawa orang tuanya dengan keluhan demam tinggi disertai ruam kemerahan.
+
+Keluhan Utama
+
+Demam tinggi sejak 4 hari, diikuti ruam kemerahan yang dimulai dari wajah lalu menyebar ke tubuh sejak 1 hari
+
+RPS
+
+Batuk pilek dan mata merah berair sejak awal demam
+
+Ruam dimulai dari belakang telinga dan wajah lalu menyebar ke badan dan ekstremitas
+
+Tidak ada riwayat imunisasi campak
+
+RPD
+
+Tidak ada riwayat penyakit serupa sebelumnya
+
+RPK
+
+Ada teman sekolah dengan keluhan serupa 2 minggu lalu
+
+Lifestyle
+
+Belum mendapat imunisasi MR/campak lengkap
+
+Pemeriksaan Fisik
+
+Keadaan umum: tampak sakit sedang, kesadaran compos mentis
+
+Tanda vital: suhu 38,9°C, lainnya dalam batas normal
+
+*Status Generalis: konjungtivitis, koriza
+
+*Rongga mulut: bercak Koplik (bintik putih keabuan dasar eritema di mukosa bukal)
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): ruam makulopapular eritematosa generalisata, dimulai dari belakang telinga dan wajah, menyebar sentrifugal ke badan dan ekstremitas
+
+
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Morbili (Campak) Tanpa Komplikasi
+
+DD Diferensial Benar
+
+Morbili
+
+Rubella
+
+Eksantema virus lain (roseola, demam skarlatina)
+
+Reaksi alergi obat
+
+Tatalaksana
+
++Terapi suportif, tidak ada antivirus spesifik
+
+R/ Paracetamol syrup 120 mg/5 ml fl No. I
+
+S 3-4 dd Cth I prn demam
+
++Suplementasi vitamin A sesuai usia untuk mengurangi risiko komplikasi
+
+R/ Vitamin A kapsul 200.000 IU No. II
+
+S 1 dd kapsul I (hari 1 dan hari 2)
+
++Cukupi asupan cairan dan istirahat
+
+-Pemberian antibiotik rutin tanpa tanda infeksi bakteri sekunder
+
+Edukasi
+
++Isolasi di rumah selama masa penularan (4 hari sebelum sampai 4 hari sesudah ruam muncul)
+
++Segera kontrol bila timbul sesak napas, kejang, atau penurunan kesadaran (tanda komplikasi)
+
+-Tetap masuk sekolah selama masih demam dan berruam
+
+
+
+Kasus 5 — An. Rara, 7 tahun, muncul bintil berair gatal di seluruh tubuh
+
+ID
+
+integ_05
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 5 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Rara, 7 tahun, muncul bintil berair gatal di seluruh tubuh
+
+Identitas
+
+Nama: Rara, Usia: 7, Pekerjaan: Pelajar SD, Alamat: -
+
+Skenario Awal
+
+Seorang anak perempuan 7 tahun dibawa ke puskesmas dengan keluhan demam dan bintil berair yang gatal.
+
+Keluhan Utama
+
+Demam ringan disertai bintil-bintil berisi cairan yang gatal di badan sejak 2 hari, menyebar ke wajah dan tungkai
+
+RPS
+
+Bintil muncul bergelombang, ada yang masih berupa bintik merah, ada yang sudah berair, ada yang sudah berkrusta
+
+Gatal terutama malam hari
+
+Teman sekelas ada yang cacar air 2 minggu lalu
+
+RPD
+
+Belum pernah menderita cacar air sebelumnya
+
+RPK
+
+Kakak kandung sedang menderita cacar air
+
+Lifestyle
+
+Belum imunisasi varisela
+
+Pemeriksaan Fisik
+
+Keadaan umum: tampak sakit ringan
+
+Tanda vital: suhu 37,9°C, lainnya dalam batas normal
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): lesi polimorfik (makula, papul, vesikel, dan krusta dalam berbagai stadium sekaligus/'tear drop') tersebar generalisata termasuk kulit kepala, sentripetal (lebih banyak di badan)
+
+
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Varisela Tanpa Komplikasi
+
+DD Diferensial Benar
+
+Varisela
+
+Herpes zoster diseminata
+
+Impetigo bulosa
+
+Reaksi gigitan serangga multipel
+
+Tatalaksana
+
++Antivirus oral bila datang dalam 24-72 jam onset ruam
+
+R/ Acyclovir tab 400 mg No. LI
+
+S 4 dd tab I (selama 7 hari, dosis anak 20 mg/kgBB/kali)
+
++Antipiretik
+
+R/ Paracetamol syrup 120 mg/5 ml fl No. I
+
+S 3-4 dd Cth I prn demam
+
++Losio penenang untuk gatal
+
+R/ Calamine lotion fl No. I
+
+S ue applic loc dol 3 dd (oleskan tipis pada lesi)
+
+-Pemberian aspirin (berisiko Reye's syndrome pada anak)
+
+Edukasi
+
++Isolasi di rumah sampai seluruh lesi mengering menjadi krusta
+
++Potong kuku anak dan jaga kebersihan untuk mencegah infeksi sekunder akibat garukan
+
+-Menggaruk lesi hingga pecah
+
+
+
+Kasus 6 — Nn. Wulan, 24 tahun, muncul bintil berair nyeri di bibir
+
+ID
+
+integ_06
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 6 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Nn. Wulan, 24 tahun, muncul bintil berair nyeri di bibir
+
+Identitas
+
+Nama: Wulan, Usia: 24, Pekerjaan: Karyawan swasta, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 24 tahun datang dengan keluhan bintil berair nyeri di sudut bibir yang berulang.
+
+Keluhan Utama
+
+Muncul bintil berkelompok berisi cairan di sudut bibir kiri sejak 2 hari disertai rasa nyeri dan panas
+
+RPS
+
+Keluhan serupa pernah dialami sebelumnya terutama saat kelelahan atau demam
+
+Diawali rasa gatal/kesemutan sebelum bintil muncul
+
+Tidak ada demam saat ini
+
+RPD
+
+Riwayat keluhan serupa berulang sejak 2 tahun lalu
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Akhir-akhir ini kurang tidur karena beban kerja
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): vesikel berkelompok di atas dasar eritema di area perioral, sebagian sudah pecah membentuk erosi dan krusta
+
+
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Herpes Simpleks Tanpa Komplikasi
+
+DD Diferensial Benar
+
+Herpes simpleks labialis
+
+Impetigo
+
+Stomatitis aftosa
+
+Herpes zoster
+
+Tatalaksana
+
++Antivirus oral, paling efektif diberikan pada fase prodromal
+
+R/ Acyclovir tab 200 mg No. XXV
+
+S 5 dd tab I (selama 5 hari)
+
++Analgetik ringan bila nyeri
+
+R/ Paracetamol tab 500 mg No. X
+
+S 3 dd tab I prn nyeri
+
+-Kompres dengan bahan tidak steril/tidak dianjurkan (misal air liur, odol)
+
+Edukasi
+
++Hindari kontak langsung (berciuman, berbagi alat makan) selama lesi masih aktif
+
++Kenali gejala prodromal (kesemutan/gatal) agar terapi dapat dimulai lebih awal saat kambuh
+
+-Memecahkan vesikel dengan jarum atau kuku
+
+
+
+Kasus 7 — An. Fajar, 6 tahun, luka berkrusta kekuningan di sekitar hidung dan mulut
+
+ID
+
+integ_07
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 7 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Fajar, 6 tahun, luka berkrusta kekuningan di sekitar hidung dan mulut
+
+Identitas
+
+Nama: Fajar, Usia: 6, Pekerjaan: Pelajar SD, Alamat: -
+
+Skenario Awal
+
+Seorang anak laki-laki 6 tahun dibawa ibunya dengan keluhan luka berkrusta di wajah.
+
+Keluhan Utama
+
+Muncul lepuh kecil di sekitar hidung yang cepat pecah dan mengering menjadi krusta kekuningan sejak 5 hari
+
+RPS
+
+Awalnya berupa gelembung kecil berisi cairan, mudah pecah
+
+Sedikit gatal
+
+Tidak ada demam
+
+RPD
+
+Riwayat pilek dan sering mengorek hidung
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Kebersihan diri kurang terjaga, jarang cuci tangan
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): erosi dengan krusta tebal berwarna kuning keemasan seperti madu (honey-colored crust) di sekitar nares dan sudut mulut
+
+
+
+Tanda vital: dalam batas normal
+
+Pembesaran KGB regional: tidak ada
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Impetigo Krustosa
+
+DD Diferensial Benar
+
+Impetigo
+
+Herpes simpleks
+
+Dermatitis perioral
+
+Tinea fasialis
+
+Tatalaksana
+
++Antibiotik topikal lini pertama untuk lesi terlokalisir
+
+R/ Mupirocin cream 2% tube 5 g No. I
+
+S 3 dd applic loc dol (oleskan tipis setelah krusta dibersihkan)
+
++Bila lesi luas/multipel, tambahkan antibiotik oral
+
+R/ Cefadroxil syrup 125 mg/5 ml fl No. I
+
+S 2 dd Cth I (selama 7 hari)
+
++Bersihkan krusta dengan kompres NaCl 0,9% sebelum aplikasi salep
+
+-Antibiotik topikal saja pada lesi yang sudah luas dan menyebar
+
+Edukasi
+
++Jaga kebersihan tangan dan potong kuku untuk mencegah penyebaran (autoinokulasi)
+
++Gunakan handuk dan alat mandi terpisah dari anggota keluarga lain selama sakit
+
+-Kontak dekat dengan bayi atau anak lain selama lesi masih aktif
+
+
+
+Kasus 8 — Bp. Yanto, 45 tahun, luka bernanah dan berkrusta tebal di tungkai
+
+ID
+
+integ_08
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 8 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Yanto, 45 tahun, luka bernanah dan berkrusta tebal di tungkai
+
+Identitas
+
+Nama: Yanto, Usia: 45, Pekerjaan: Buruh bangunan, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 45 tahun datang dengan keluhan luka di tungkai bawah yang tidak kunjung sembuh.
+
+Keluhan Utama
+
+Luka di tungkai bawah kanan sejak 2 minggu, awalnya lecet kecil kemudian membesar dan berkrusta tebal
+
+RPS
+
+Riwayat tergores saat bekerja di proyek
+
+Luka terasa nyeri dan tampak kotor
+
+Tidak rutin membersihkan luka
+
+RPD
+
+Tidak ada riwayat diabetes melitus
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Bekerja di lingkungan kurang higienis, jarang memakai alas kaki tertutup
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): ulkus dangkal berbentuk 'punched-out' tertutup krusta tebal berwarna kuning kehijauan, dikelilingi halo eritema, di regio tibia anterior dekstra
+
+
+
+Nyeri tekan: ada
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Impetigo Ulseratif (Ektima)
+
+DD Diferensial Benar
+
+Ektima
+
+Ulkus tropikum
+
+Ulkus diabetikum
+
+Pioderma gangrenosum
+
+Tatalaksana
+
++Antibiotik sistemik karena lesi lebih dalam dari impetigo biasa
+
+R/ Cefadroxil tab 500 mg No. XIV
+
+S 2 dd tab I (selama 7 hari)
+
++Bersihkan luka dan angkat krusta secara perlahan, kompres NaCl 0,9%
+
++Antibiotik topikal setelah krusta terangkat
+
+R/ Mupirocin cream 2% tube 5 g No. I
+
+S 2 dd applic loc dol
+
+-Menutup luka rapat tanpa dibersihkan terlebih dahulu
+
+Edukasi
+
++Jaga luka tetap bersih dan kering, gunakan alas kaki tertutup saat bekerja
+
++Segera kontrol bila luka meluas, demam, atau nanah bertambah banyak
+
+-Membiarkan luka tanpa perawatan
+
+
+
+Kasus 9 — Bp. Andi, 30 tahun, bintil-bintil merah gatal di area jenggot
+
+ID
+
+integ_09
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 9 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Andi, 30 tahun, bintil-bintil merah gatal di area jenggot
+
+Identitas
+
+Nama: Andi, Usia: 30, Pekerjaan: Wiraswasta, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 30 tahun datang dengan keluhan bintil kemerahan gatal di area dagu setelah bercukur.
+
+Keluhan Utama
+
+Muncul bintil-bintil merah kecil disertai gatal di area dagu dan leher sejak 1 minggu setelah bercukur
+
+RPS
+
+Bintil terasa gatal dan sedikit nyeri
+
+Menggunakan pisau cukur yang sama berulang kali
+
+Tidak ada demam
+
+RPD
+
+Tidak ada riwayat penyakit kulit sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Rutin bercukur dengan pisau cukur manual, jarang mengganti pisau
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul dan pustul multipel miliar dengan dasar eritema di sekitar folikel rambut, tersebar di regio mandibula dan colli
+
+
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Folikulitis Superfisialis
+
+DD Diferensial Benar
+
+Folikulitis superfisialis
+
+Akne vulgaris
+
+Tinea barbe
+
+Pseudofolikulitis barbae
+
+Tatalaksana
+
++Antibiotik topikal
+
+R/ Clindamycin gel 1% tube 15 g No. I
+
+S 2 dd applic loc dol
+
++Kompres hangat pada area lesi
+
++Bila luas dapat ditambah antibiotik oral
+
+R/ Cephalexin tab 500 mg No. XX
+
+S 4 dd tab I (selama 5-7 hari)
+
+-Ekstraksi paksa/memencet pustul
+
+Edukasi
+
++Ganti pisau cukur secara rutin dan gunakan alat cukur bersih
+
++Hindari bercukur terlalu dekat dengan kulit (rapat) selama proses penyembuhan
+
+-Berbagi alat cukur dengan orang lain
+
+
+
+Kasus 10 — Bp. Joko, 40 tahun, benjolan nyeri bernanah di leher belakang
+
+ID
+
+integ_10
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 10 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Joko, 40 tahun, benjolan nyeri bernanah di leher belakang
+
+Identitas
+
+Nama: Joko, Usia: 40, Pekerjaan: Sopir, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 40 tahun datang dengan keluhan benjolan nyeri di leher belakang yang membesar.
+
+Keluhan Utama
+
+Benjolan merah nyeri di leher belakang sejak 5 hari, semakin membesar dan berisi nanah
+
+RPS
+
+Benjolan awalnya kecil dan keras, lama-kelamaan melunak di tengah
+
+Demam ringan
+
+Nyeri bertambah saat leher digerakkan
+
+RPD
+
+Riwayat diabetes melitus tipe 2 tidak terkontrol
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Jarang mengganti pakaian saat berkeringat karena sering mengemudi jarak jauh
+
+Pemeriksaan Fisik
+
+Keadaan umum: tampak sakit ringan
+
+Tanda vital: suhu 37,7°C, lainnya dalam batas normal
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): nodul eritematosa nyeri tekan dengan fluktuasi di regio nuchal, disertai pustul di puncak
+
+
+
+*Gula Darah Sewaktu: 240 mg/dL
+
+Pemeriksaan Penunjang
+
+*Gula Darah Sewaktu: 240 mg/dL (mendukung kecurigaan DM tidak terkontrol sebagai faktor predisposisi)
+
+DD Benar
+
+Furunkel
+
+DD Diferensial Benar
+
+Furunkel
+
+Karbunkel
+
+Kista epidermal terinfeksi
+
+Hidradenitis supurativa
+
+Tatalaksana
+
++Insisi dan drainase bila sudah fluktuatif
+
++Antibiotik oral sistemik
+
+R/ Cephalexin tab 500 mg No. XX
+
+S 4 dd tab I (selama 5-7 hari)
+
++Kompres hangat untuk mempercepat maturasi lesi
+
++Rujuk untuk evaluasi dan tatalaksana DM yang mendasari
+
+-Memencet lesi sebelum matang/fluktuatif
+
+Edukasi
+
++Jaga kebersihan kulit dan segera obati luka kecil untuk mencegah infeksi
+
++Kontrol gula darah secara rutin karena DM meningkatkan risiko infeksi kulit berulang
+
+-Memencet sendiri benjolan di rumah
+
+
+
+Kasus 11 — Bu Sinta, 38 tahun, bercak kecoklatan gatal ringan di lipat paha
+
+ID
+
+integ_11
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 11 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bu Sinta, 38 tahun, bercak kecoklatan gatal ringan di lipat paha
+
+Identitas
+
+Nama: Sinta, Usia: 38, Pekerjaan: Ibu rumah tangga, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 38 tahun datang dengan keluhan bercak kecoklatan di lipat paha yang sudah lama tidak sembuh.
+
+Keluhan Utama
+
+Bercak kecoklatan di kedua lipat paha sejak 3 bulan, gatal ringan, tidak membaik dengan bedak antijamur
+
+RPS
+
+Bercak melebar perlahan
+
+Lebih terasa gatal saat berkeringat
+
+Sudah mencoba bedak antijamur namun tidak membaik
+
+RPD
+
+Obesitas, IMT 31 kg/m2
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Berkeringat berlebih, jarang mengeringkan lipatan kulit dengan baik
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+Tanda vital: dalam batas normal
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): patch eritematosa kecoklatan, berbatas tegas, dengan skuama halus di regio inguinal bilateral
+
+
+
+Pemeriksaan Penunjang
+
+*Pemeriksaan lampu Wood: fluoresensi merah bata (coral red)
+
+DD Benar
+
+Eritrasma
+
+DD Diferensial Benar
+
+Eritrasma
+
+Tinea kruris
+
+Kandidosis intertriginosa
+
+Dermatitis seboroik
+
+Tatalaksana
+
++Antibiotik topikal
+
+R/ Clindamycin solution 1% fl 30 ml No. I
+
+S 2 dd applic loc dol
+
++Bila luas, antibiotik oral makrolid
+
+R/ Erythromycin tab 500 mg No. XX
+
+S 4 dd tab I (selama 7-14 hari)
+
+-Bedak antijamur/anti-fungal saja tanpa antibiotik (target kumannya bakteri, bukan jamur)
+
+Edukasi
+
++Keringkan lipatan kulit secara rutin dan gunakan pakaian longgar berbahan menyerap keringat
+
++Turunkan berat badan untuk mengurangi gesekan dan kelembapan pada lipatan kulit
+
+-Menggunakan pakaian ketat terus-menerus
+
+
+
+Kasus 12 — Bu Marni, 55 tahun, tungkai bengkak kemerahan disertai demam
+
+ID
+
+integ_12
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 12 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bu Marni, 55 tahun, tungkai bengkak kemerahan disertai demam
+
+Identitas
+
+Nama: Marni, Usia: 55, Pekerjaan: Pedagang, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 55 tahun datang dengan keluhan tungkai kanan bengkak, merah, dan nyeri disertai demam.
+
+Keluhan Utama
+
+Tungkai bawah kanan bengkak dan merah sejak 2 hari, terasa panas dan nyeri, disertai demam tinggi mendadak
+
+RPS
+
+Batas kemerahan tegas dan meninggi
+
+Demam disertai menggigil
+
+Riwayat luka kecil di kaki 4 hari sebelumnya
+
+RPD
+
+Riwayat diabetes melitus tipe 2
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Jarang menggunakan alas kaki di rumah, kontrol gula darah tidak teratur
+
+Pemeriksaan Fisik
+
+Keadaan umum: tampak sakit sedang
+
+Tanda vital: suhu 38,7°C, TD 130/80 mmHg, nadi 96x/menit
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak eritematosa, edema, hangat pada perabaan, dengan batas tegas dan sedikit meninggi (peau d'orange) di regio cruris dekstra
+
+
+
+*Gula Darah Sewaktu: 210 mg/dL
+
+Nyeri tekan: ada, disertai limfadenopati inguinal ipsilateral
+
+Pemeriksaan Penunjang
+
+*Gula Darah Sewaktu: 210 mg/dL
+
+DD Benar
+
+Erisipelas
+
+DD Diferensial Benar
+
+Erisipelas
+
+Selulitis
+
+Deep vein thrombosis (DVT)
+
+Dermatitis kontak
+
+Tatalaksana
+
++Antibiotik oral lini pertama untuk kasus ringan-sedang
+
+R/ Amoxicillin tab 500 mg No. XXI
+
+S 3 dd tab I (selama 7-10 hari)
+
++Analgetik-antipiretik
+
+R/ Paracetamol tab 500 mg No. X
+
+S 3 dd tab I prn demam/nyeri
+
++Elevasi tungkai dan istirahat
+
++Rujuk bila demam tinggi menetap, tanda sepsis, atau tidak membaik dalam 48-72 jam
+
+-Menunda terapi antibiotik sambil menunggu hasil kultur
+
+Edukasi
+
++Kontrol gula darah secara rutin untuk mempercepat penyembuhan dan mencegah kekambuhan
+
++Rawat dan lindungi luka kecil di kaki agar tidak menjadi pintu masuk infeksi
+
+-Menghentikan antibiotik saat gejala mulai membaik sebelum waktunya
+
+Kasus 13 — An. Putri, 9 tahun, benjolan di leher yang pecah menjadi luka bernanah
+
+ID
+
+integ_13
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 13 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Putri, 9 tahun, benjolan di leher yang pecah menjadi luka bernanah
+
+Identitas
+
+Nama: Putri, Usia: 9, Pekerjaan: Pelajar SD, Alamat: -
+
+Skenario Awal
+
+Seorang anak perempuan 9 tahun dibawa orang tuanya dengan keluhan benjolan di leher yang sudah pecah.
+
+Keluhan Utama
+
+Benjolan di leher kiri sejak 3 bulan, awalnya keras tidak nyeri, kemudian melunak dan pecah membentuk luka bernanah sejak 2 minggu
+
+RPS
+
+Berat badan sulit naik dan nafsu makan menurun
+
+Batuk lama lebih dari 3 minggu
+
+Keringat malam hari
+
+RPD
+
+Tidak ada riwayat imunisasi BCG yang jelas
+
+RPK
+
+Kakek serumah sedang menjalani pengobatan TB paru
+
+Lifestyle
+
+Tinggal serumah dengan penderita TB, ventilasi rumah kurang baik
+
+Pemeriksaan Fisik
+
+Keadaan umum: tampak sakit ringan, gizi kurang
+
+Tanda vital: suhu 37,3°C, lainnya dalam batas normal
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): ulkus dengan tepi bergaung (undermined), dasar granulasi, disertai sinus yang mengeluarkan cairan seropurulen, di regio colli sinistra. 
+
+
+
+*Palpasi kelenjar getah bening: Pembesaran KGB colli multipel, konsistensi kenyal, sebagian saling melekat (matted)
+
+Pemeriksaan Penunjang
+
+*Uji tuberkulin (Mantoux): indurasi >10 mm (positif)
+
+!Foto toraks: gambaran TB paru primer/lesi lama
+
+
+
+!BTA sputum/pus: dapat ditemukan BTA positif
+
+
+
+DD Benar
+
+Skrofuloderma
+
+DD Diferensial Benar
+
+Skrofuloderma
+
+Limfadenitis TB dengan fistel
+
+Limfadenitis piogenik
+
+Aktinomikosis servikofasial
+
+Tatalaksana
+
++Obat Anti Tuberkulosis (OAT) kategori 1 sesuai berat badan, fase intensif 2 bulan
+
+R/ FDC RHZE (Rifampisin/Isoniazid/Pirazinamid/Etambutol) tab sesuai dosis BB No. LVI
+
+S 1 dd tab (pagi hari, sebelum makan, selama 2 bulan) dilanjutkan fase lanjutan RH 4 bulan
+
++Perawatan luka/sinus secara rutin dengan kompres NaCl 0,9%
+
++Pastikan status gizi diperbaiki selama pengobatan
+
+-Pemberian antibiotik non-OAT saja tanpa terapi tuberkulosis definitif
+
+Edukasi
+
++Pengobatan harus dituntaskan sesuai jadwal (6-9 bulan) meskipun luka sudah membaik, untuk mencegah resistensi
+
++Lakukan skrining TB pada seluruh anggota keluarga serumah
+
+-Menghentikan OAT begitu keluhan mereda
+
+
+
+Kasus 14 — Bp. Slamet, 35 tahun, bercak putih baal di lengan sejak 6 bulan
+
+ID
+
+integ_14
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 14 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Slamet, 35 tahun, bercak putih baal di lengan sejak 6 bulan
+
+Identitas
+
+Nama: Slamet, Usia: 35, Pekerjaan: Petani, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 35 tahun datang dengan keluhan bercak putih di lengan yang terasa baal.
+
+Keluhan Utama
+
+Muncul bercak putih di lengan kiri sejak 6 bulan, tidak gatal namun terasa baal bila disentuh
+
+RPS
+
+Bercak tidak nyeri dan tidak gatal
+
+Area bercak tidak berkeringat dibanding kulit sekitar
+
+Tidak ada riwayat kontak dengan penderita kusta yang diketahui
+
+RPD
+
+Tidak ada riwayat penyakit kulit kronis sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa yang diketahui
+
+Lifestyle
+
+Tinggal di daerah endemis kusta
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): makula hipopigmentasi, batas tegas, permukaan kering, di regio brachium sinistra
+
+*Tes sensibilitas (raba, nyeri, suhu) pada lesi: menurun/hilang
+
+*Perabaan saraf tepi (n. ulnaris sinistra): penebalan, tidak nyeri tekan
+
+Kekuatan motorik ekstremitas: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Pemeriksaan BTA kerokan kulit (skin smear): untuk menentukan indeks basiler dan klasifikasi PB/MB
+
+DD Benar
+
+Morbus Hansen (Lepra) tipe Pausibasilar
+
+DD Diferensial Benar
+
+Lepra (kusta)
+
+Pitiriasis versikolor
+
+Tinea korporis
+
+Vitiligo
+
+Tatalaksana
+
++Multi Drug Therapy (MDT) sesuai klasifikasi PB (Pausibasilar), regimen dewasa 6 blister
+
+R/ MDT-PB (Rifampisin 600 mg + Dapson 100 mg) blister dewasa No. VI
+
+S: Rifampisin 600 mg diminum 1x/bulan secara diawasi (dosis pertama di depan petugas), Dapson 100 mg diminum 1x/hari selama 6 bulan
+
++Pemeriksaan kontak serumah untuk deteksi dini
+
+-Menghentikan pengobatan begitu bercak memudar sebelum 6 bulan selesai
+
+Edukasi
+
++Lindungi area mati rasa dari trauma, panas, dan benda tajam untuk mencegah luka dan kecacatan
+
++Minum obat teratur dan tuntas sesuai jadwal untuk mencegah resistensi dan kecacatan
+
+-Mengucilkan diri karena stigma; kusta tidak menular setelah dosis pertama MDT diminum
+
++Kusta dapat disembuhkan total dengan MDT yang dituntaskan — bukan penyakit yang memalukan atau kutukan
+
+
+
+Kasus 15 — Bp. Rian, 27 tahun, luka tidak nyeri di kemaluan
+
+ID
+
+integ_15
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 15 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Rian, 27 tahun, luka tidak nyeri di kemaluan
+
+Identitas
+
+Nama: Rian, Usia: 27, Pekerjaan: Karyawan swasta, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 27 tahun datang dengan keluhan luka di kemaluan yang tidak nyeri.
+
+Keluhan Utama
+
+Muncul luka tunggal di penis sejak 3 minggu, tidak nyeri, tidak gatal, tidak kunjung sembuh
+
+RPS
+
+Luka berbatas tegas dengan dasar bersih
+
+Riwayat hubungan seksual berisiko tanpa kondom 1 bulan lalu
+
+Tidak ada keluhan keluar cairan dari kemaluan
+
+RPD
+
+Tidak ada riwayat infeksi menular seksual sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Berganti-ganti pasangan seksual
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+*Status Lokalis genital: ulkus tunggal, bulat, batas tegas, tepi indurasi (keras), dasar bersih, tidak nyeri tekan (ulkus durum) di sulkus koronarius
+
+*Pembesaran KGB inguinal bilateral, konsistensi kenyal, tidak nyeri tekan (bubo indolen)
+
+Pemeriksaan Penunjang
+
+*Tes serologi non-treponemal (VDRL/RPR): reaktif
+
+Tes serologi treponemal (TPHA/TPPA): reaktif
+
+Mikroskop lapangan gelap dari dasar ulkus: dapat ditemukan Treponema pallidum
+
+DD Benar
+
+Sifilis Stadium 1 (Sifilis Primer)
+
+DD Diferensial Benar
+
+Sifilis primer
+
+Herpes genitalis
+
+Ulkus mole (chancroid)
+
+Limfogranuloma venereum
+
+Tatalaksana
+
++Terapi lini pertama untuk sifilis primer/sekunder
+
+R/ Benzatin Benzilpenisilin G 2,4 juta IU injeksi vial No. I
+
+S: injeksi intramuskular dosis tunggal (dibagi 2 bokong @1,2 juta IU)
+
++Bila alergi penisilin: doksisiklin
+
+R/ Doxycycline tab 100 mg No. XXVIII
+
+S 2 dd tab I (selama 14 hari)
+
+-Terapi antibiotik topikal saja pada ulkus (tidak mengatasi infeksi sistemik)
+
+Edukasi
+
++Pasangan seksual harus diperiksa dan diobati bersamaan untuk mencegah penularan ulang
+
++Gunakan kondom dan hindari hubungan seksual berisiko untuk mencegah penularan IMS
+
+-Melanjutkan hubungan seksual tanpa pengobatan tuntas dan tanpa proteksi
+
++Tawarkan skrining IMS lain (HIV, gonore, klamidia) dan pemeriksaan pasangan
+
+
+
+Kasus 16 — An. Bagas, 8 tahun, rambut rontok berbercak disertai gatal di kulit kepala
+
+ID
+
+integ_16
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 16 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Bagas, 8 tahun, rambut rontok berbercak disertai gatal di kulit kepala
+
+Identitas
+
+Nama: Bagas, Usia: 8, Pekerjaan: Pelajar SD, Alamat: -
+
+Skenario Awal
+
+Seorang anak laki-laki 8 tahun dibawa ibunya dengan keluhan bercak botak di kepala.
+
+Keluhan Utama
+
+Muncul bercak botak disertai gatal di kulit kepala sejak 1 bulan, rambut mudah patah di area tersebut
+
+RPS
+
+Gatal terutama saat berkeringat
+
+Menggunakan sisir bersama dengan sepupu yang punya keluhan serupa
+
+Tidak demam
+
+RPD
+
+Tidak ada riwayat penyakit kulit sebelumnya
+
+RPK
+
+Sepupu serumah memiliki keluhan serupa
+
+Lifestyle
+
+Sering bertukar topi dan sisir dengan teman
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): patch alopesia dengan skuama, terdapat rambut yang patah setinggi permukaan kulit ('black dot'), di region parietal
+
+*Pemeriksaan lampu Wood: dapat berfluoresensi hijau kekuningan (tergantung spesies jamur)
+
+Pembesaran KGB oksipital: dapat ditemukan
+
+Pemeriksaan Penunjang
+
+*Kerokan kulit kepala + KOH 10-20%: tampak hifa dan/atau spora pada batang rambut
+
+DD Benar
+
+Tinea Kapitis
+
+DD Diferensial Benar
+
+Tinea kapitis
+
+Alopesia areata
+
+Dermatitis seboroik kapitis
+
+Trikotilomania
+
+Tatalaksana
+
++Antijamur oral sistemik (terapi topikal tidak adekuat karena jamur menginfeksi folikel rambut)
+
+R/ Griseofulvin tab 500 mg No. XXX (dosis anak 15-20 mg/kgBB/hari)
+
+S 1 dd tab I (selama 4-6 minggu, diminum bersama makanan berlemak)
+
++Shampoo antijamur sebagai terapi tambahan
+
+R/ Ketoconazole shampoo 2% fl 60 ml No. I
+
+S 2-3x/minggu, dibiarkan 5 menit sebelum dibilas
+
+-Terapi topikal (krim antijamur) saja tanpa obat oral
+
+Edukasi
+
++Jangan berbagi sisir, topi, bantal, atau handuk dengan orang lain selama masih terinfeksi
+
++Obati juga sumber penularan (hewan peliharaan atau anggota keluarga yang terinfeksi) bila ada
+
+-Menghentikan obat begitu rambut mulai tumbuh sebelum 4-6 minggu
+
+
+
+Kasus 17 — Bp. Hendra, 33 tahun, gatal dan bercak merah bersisik di area jenggot
+
+ID
+
+integ_17
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 17 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Hendra, 33 tahun, gatal dan bercak merah bersisik di area jenggot
+
+Identitas
+
+Nama: Hendra, Usia: 33, Pekerjaan: Peternak, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 33 tahun datang dengan keluhan gatal di area jenggot sejak 3 minggu.
+
+Keluhan Utama
+
+Bercak merah bersisik dan gatal di area dagu dan rahang sejak 3 minggu, sebagian rambut jenggot rontok
+
+RPS
+
+Gatal memberat saat berkeringat
+
+Bekerja sebagai peternak sapi
+
+Tidak membaik dengan sabun antiseptik biasa
+
+RPD
+
+Tidak ada riwayat penyakit kulit sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Sering kontak langsung dengan hewan ternak tanpa sarung tangan
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak eritematosa berbatas tegas dengan skuama dan pustul folikular di area jenggot, disertai rambut yang mudah patah/rontok
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+*Kerokan kulit + KOH 10-20%: tampak hifa bersepta
+
+DD Benar
+
+Tinea Barbe
+
+DD Diferensial Benar
+
+Tinea barbe
+
+Folikulitis bakterial
+
+Akne vulgaris
+
+Pseudofolikulitis barbae
+
+Tatalaksana
+
++Antijamur oral sistemik karena melibatkan folikel rambut
+
+R/ Griseofulvin tab 500 mg No. XXX
+
+S 1 dd tab I (selama 4 minggu)
+
++Antijamur topikal tambahan
+
+R/ Ketoconazole cream 2% tube 10 g No. I
+
+S 2 dd applic loc dol
+
+-Antibiotik topikal saja (tidak menyasar penyebab jamur)
+
+Edukasi
+
++Gunakan sarung tangan saat kontak dengan hewan ternak
+
++Jangan berbagi alat cukur dengan orang lain
+
+-Bercukur pada area lesi aktif (dapat menyebarkan infeksi)
+
+
+
+Kasus 18 — Nn. Dewi, 20 tahun, bercak merah gatal berbentuk cincin di pipi
+
+ID
+
+integ_18
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 18 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Nn. Dewi, 20 tahun, bercak merah gatal berbentuk cincin di pipi
+
+Identitas
+
+Nama: Dewi, Usia: 20, Pekerjaan: Mahasiswa, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 20 tahun datang dengan keluhan bercak merah gatal di pipi berbentuk cincin.
+
+Keluhan Utama
+
+Muncul bercak merah gatal berbentuk cincin di pipi kanan sejak 2 minggu, meluas perlahan
+
+RPS
+
+Gatal terutama malam hari dan saat berkeringat
+
+Bagian tengah lesi tampak lebih tenang dibanding tepinya
+
+Sempat memakai krim wajah baru sebelum muncul keluhan
+
+RPD
+
+Tidak ada riwayat alergi kulit sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Memiliki kucing peliharaan di rumah
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak anular eritematosa dengan tepi aktif meninggi berskuama dan central healing, di regio genae dekstra
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+*Kerokan kulit + KOH 10-20%: tampak hifa bersepta
+
+DD Benar
+
+Tinea Fasialis
+
+DD Diferensial Benar
+
+Tinea fasialis
+
+Dermatitis kontak alergika
+
+Dermatitis seboroik
+
+Lupus eritematosus kutaneus
+
+Tatalaksana
+
++Antijamur topikal
+
+R/ Ketoconazole cream 2% tube 10 g No. I
+
+S 2 dd applic loc dol (selama 2-4 minggu, lanjutkan 1 minggu setelah lesi hilang)
+
++Bila luas/tidak respons topikal, tambahkan antijamur oral
+
+R/ Griseofulvin tab 500 mg No. XXX
+
+S 1 dd tab I selama 4 minggu
+
+-Kortikosteroid topikal poten tanpa antijamur (dapat memperburuk lesi/tinea inkognito)
+
+Edukasi
+
++Keringkan wajah dengan baik dan hindari produk perawatan wajah yang oklusif selama pengobatan
+
++Periksa dan obati hewan peliharaan bila dicurigai sebagai sumber penularan
+
+-Menggunakan salep kortikosteroid dari apotek tanpa resep untuk gatal di wajah
+
+
+
+Kasus 19 — Bp. Agus, 29 tahun, bercak merah gatal berbentuk cincin di punggung
+
+ID
+
+integ_19
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 19 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Agus, 29 tahun, bercak merah gatal berbentuk cincin di punggung
+
+Identitas
+
+Nama: Agus, Usia: 29, Pekerjaan: Kuli bangunan, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 29 tahun datang dengan keluhan bercak gatal berbentuk cincin yang meluas di punggung.
+
+Keluhan Utama
+
+Bercak merah gatal berbentuk bulat seperti cincin di punggung sejak 3 minggu, semakin melebar
+
+RPS
+
+Gatal terutama saat berkeringat
+
+Bagian tengah lesi tampak lebih tenang dari tepinya
+
+Sudah mencoba bedak namun tidak membaik
+
+RPD
+
+Tidak ada riwayat penyakit kulit kronis
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Bekerja di luar ruangan dan sering berkeringat, jarang ganti baju
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak anular eritematosa dengan tepi aktif meninggi berskuama dan central clearing, multipel, di regio dorsum
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+*Kerokan kulit + KOH 10-20%: tampak hifa panjang bersepta
+
+DD Benar
+
+Tinea Korporis
+
+DD Diferensial Benar
+
+Tinea korporis
+
+Pitiriasis rosea
+
+Dermatitis numularis
+
+Psoriasis vulgaris
+
+Tatalaksana
+
++Antijamur topikal untuk lesi terbatas
+
+R/ Miconazole cream 2% tube 10 g No. I
+
+S 2 dd applic loc dol (selama 2-4 minggu)
+
++Bila lesi luas (>3 area), antijamur oral
+
+R/ Griseofulvin tab 500 mg No. XXX
+
+S 1 dd tab I selama 2-4 minggu
+
+-Menghentikan obat segera setelah gatal hilang meski lesi kulit belum bersih total
+
+Edukasi
+
++Jaga kulit tetap kering, ganti pakaian yang basah oleh keringat sesegera mungkin
+
++Jangan berbagi handuk atau pakaian dengan orang lain
+
+-Menggunakan pakaian ketat dan lembap dalam waktu lama
+
+
+
+Kasus 20 — Bu Yuli, 42 tahun, telapak tangan kering bersisik dan gatal
+
+ID
+
+integ_20
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 20 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bu Yuli, 42 tahun, telapak tangan kering bersisik dan gatal
+
+Identitas
+
+Nama: Yuli, Usia: 42, Pekerjaan: Petugas laundry, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 42 tahun datang dengan keluhan telapak tangan kering dan bersisik sejak 1 bulan.
+
+Keluhan Utama
+
+Telapak tangan kanan kering, bersisik, dan sedikit gatal sejak 1 bulan, garis-garis kulit tampak lebih jelas
+
+RPS
+
+Hanya mengenai satu telapak tangan
+
+Kulit tangan yang lain (kiri) normal
+
+Sering kontak dengan air dan deterjen
+
+RPD
+
+Tidak ada riwayat dermatitis kontak sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Bekerja sebagai petugas laundry, tangan sering basah dan kontak deterjen
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): hiperkeratosis dan skuama difus dengan aksentuasi garis kulit (skin lines) pada telapak tangan kanan, unilateral
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+*Kerokan kulit + KOH 10-20%: tampak hifa bersepta
+
+DD Benar
+
+Tinea Manus
+
+DD Diferensial Benar
+
+Tinea manus
+
+Dermatitis kontak iritan
+
+Dermatitis atopik tangan
+
+Psoriasis palmaris
+
+Tatalaksana
+
++Antijamur topikal
+
+R/ Terbinafine cream 1% tube 10 g No. I
+
+S 2 dd applic loc dol (selama 2-4 minggu)
+
++Emolien untuk mengurangi kekeringan kulit
+
+R/ Urea cream 10% tube 20 g No. I
+
+S 2 dd applic loc dol
+
+-Menghentikan terapi topikal terlalu cepat (<2 minggu) karena tampak sudah tidak gatal
+
+Edukasi
+
++Gunakan sarung tangan saat mencuci atau kontak dengan air dan deterjen
+
++Keringkan tangan dengan baik setelah kontak air
+
+-Bekerja tanpa proteksi tangan dalam waktu lama pada lingkungan basah
+
+
+
+Kasus 21 — Bp. Rudi, 50 tahun, kuku kaki menebal dan rapuh sejak 1 tahun
+
+ID
+
+integ_21
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 21 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Rudi, 50 tahun, kuku kaki menebal dan rapuh sejak 1 tahun
+
+Identitas
+
+Nama: Rudi, Usia: 50, Pekerjaan: Petani, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 50 tahun datang dengan keluhan kuku jempol kaki menebal dan berubah warna.
+
+Keluhan Utama
+
+Kuku jempol kaki kanan menebal, rapuh, dan berubah warna kekuningan sejak 1 tahun, perlahan meluas ke kuku lain
+
+RPS
+
+Tidak nyeri
+
+Kuku mudah rapuh dan terkelupas
+
+Riwayat tinea pedis berulang
+
+RPD
+
+Riwayat tinea pedis kronik yang tidak diobati tuntas
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Sering bekerja di sawah tanpa alas kaki tertutup, kaki sering lembap
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): kuku hallux pedis dekstra menebal (hiperkeratosis subungual), rapuh, diskolorasi kuning kecoklatan, distrofik
+
+Sela jari kaki: tampak maserasi ringan
+
+Pemeriksaan Penunjang
+
+*Kerokan subungual + KOH 10-20%: tampak hifa bersepta
+
+DD Benar
+
+Tinea Unguium (Onikomikosis)
+
+DD Diferensial Benar
+
+Tinea unguium
+
+Onikomikosis kandida
+
+Psoriasis kuku
+
+Distrofi kuku traumatik
+
+Tatalaksana
+
++Antijamur oral sistemik (terapi lini utama karena penetrasi topikal ke matriks kuku terbatas)
+
+R/ Terbinafine tab 250 mg No. XC
+
+S 1 dd tab I (kuku kaki selama 12 minggu, kuku tangan 6 minggu)
+
++Obati tinea pedis yang menyertai secara bersamaan
+
+-Terapi cat kuku antijamur (nail lacquer) sebagai monoterapi tanpa obat oral pada kasus luas
+
+Edukasi
+
++Jaga kaki tetap kering, gunakan alas kaki terbuka/berbahan menyerap keringat
+
++Terapi memerlukan waktu lama (berbulan-bulan); kuku baru yang sehat tumbuh secara bertahap
+
+-Menghentikan obat oral sebelum masa terapi selesai karena merasa sudah membaik
+
++Potong kuku yang terinfeksi secara berkala
+
+
+
+Kasus 22 — Bp. Dedi, 34 tahun, gatal dan bercak merah di lipat paha
+
+ID
+
+integ_22
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 22 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Dedi, 34 tahun, gatal dan bercak merah di lipat paha
+
+Identitas
+
+Nama: Dedi, Usia: 34, Pekerjaan: Sopir angkot, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 34 tahun datang dengan keluhan gatal di lipat paha sejak 2 minggu.
+
+Keluhan Utama
+
+Bercak merah gatal di kedua lipat paha sejak 2 minggu, meluas ke arah paha bagian dalam
+
+RPS
+
+Gatal hebat terutama saat berkeringat
+
+Bagian tepi lesi tampak lebih aktif dan meninggi
+
+Sering menggunakan celana ketat saat bekerja
+
+RPD
+
+Tidak ada riwayat DM
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Duduk lama saat mengemudi, sering berkeringat di area lipat paha
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak eritematosa dengan tepi aktif meninggi berskuama dan central clearing di regio inguinal bilateral meluas ke paha medial
+
+Skrotum: tidak terlibat
+
+Pemeriksaan Penunjang
+
+*Kerokan kulit + KOH 10-20%: tampak hifa bersepta
+
+DD Benar
+
+Tinea Kruris
+
+DD Diferensial Benar
+
+Tinea kruris
+
+Kandidosis intertriginosa
+
+Eritrasma
+
+Dermatitis kontak iritan
+
+Tatalaksana
+
++Antijamur topikal
+
+R/ Clotrimazole cream 1% tube 10 g No. I
+
+S 2 dd applic loc dol (selama 2-4 minggu)
+
++Bila luas atau rekuren, antijamur oral
+
+R/ Itraconazole tab 100 mg No. XIV
+
+S 2 dd tab I (selama 7 hari)
+
+-Kortikosteroid topikal poten sebagai monoterapi (dapat memperburuk/menyamarkan lesi jamur)
+
+Edukasi
+
++Kenakan pakaian dalam longgar dan berbahan katun yang menyerap keringat
+
++Keringkan lipat paha setelah mandi/berkeringat sebelum berpakaian
+
+-Menggunakan celana ketat dan lembap dalam waktu lama
+
+
+
+Kasus 23 — Bp. Anton, 27 tahun, gatal dan kulit mengelupas di sela jari kaki
+
+ID
+
+integ_23
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 23 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Anton, 27 tahun, gatal dan kulit mengelupas di sela jari kaki
+
+Identitas
+
+Nama: Anton, Usia: 27, Pekerjaan: Anggota TNI, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 27 tahun datang dengan keluhan gatal di sela-sela jari kaki sejak 3 minggu.
+
+Keluhan Utama
+
+Gatal dan kulit mengelupas di sela jari kaki ke-3 dan ke-4 kedua kaki sejak 3 minggu, kadang basah dan berbau
+
+RPS
+
+Gatal memberat setelah memakai sepatu bot seharian
+
+Kulit tampak putih maserasi di sela jari
+
+Sudah 2 tahun rutin memakai sepatu boot tertutup untuk dinas
+
+RPD
+
+Tidak ada riwayat DM
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Memakai sepatu tertutup dalam waktu lama setiap hari, kaki sering berkeringat
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): maserasi, skuama, dan fisura pada sela jari kaki III-IV bilateral, disertai eritema ringan
+
+Bau kaki (bromhidrosis): ada
+
+Pemeriksaan Penunjang
+
+*Kerokan kulit + KOH 10-20%: tampak hifa bersepta
+
+DD Benar
+
+Tinea Pedis
+
+DD Diferensial Benar
+
+Tinea pedis
+
+Kandidosis interdigital
+
+Eritrasma interdigital
+
+Dermatitis kontak
+
+Tatalaksana
+
++Antijamur topikal
+
+R/ Miconazole cream 2% tube 10 g No. I
+
+S 2 dd applic loc dol (selama 2-4 minggu)
+
+R/ Miconazole powder 2% fl 20 g No. I
+
+S 2 dd taburkan pada sela jari dan dalam sepatu
+
+Edukasi
+
++Keringkan sela jari kaki dengan baik setelah mandi, gunakan kaus kaki katun dan ganti setiap hari
+
++Bila memungkinkan, gunakan sepatu berventilasi dan hindari sepatu tertutup terus-menerus
+
+-Berjalan tanpa alas kaki di tempat umum lembap (kolam renang, kamar mandi umum)
+
++Bedak antijamur untuk menjaga kaki tetap kering
+
+-Menggunakan sepatu yang sama tanpa dijemur/dikeringkan selama pengobatan
+
+
+
+Kasus 24 — Nn. Sari, 19 tahun, bercak putih di punggung yang tidak gatal
+
+ID
+
+integ_24
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 24 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Nn. Sari, 19 tahun, bercak putih di punggung yang tidak gatal
+
+Identitas
+
+Nama: Sari, Usia: 19, Pekerjaan: Mahasiswa, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 19 tahun datang dengan keluhan bercak putih di punggung sejak 2 bulan.
+
+Keluhan Utama
+
+Muncul bercak putih multipel di punggung dan dada sejak 2 bulan, lebih terlihat setelah berjemur
+
+RPS
+
+Sedikit gatal terutama saat berkeringat
+
+Bercak semakin terlihat kontras setelah kulit sekitarnya menggelap karena sinar matahari
+
+Tidak nyeri
+
+RPD
+
+Tidak ada riwayat penyakit kulit kronis
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Aktivitas fisik tinggi, sering berkeringat, tinggal di iklim tropis lembap
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): makula hipopigmentasi multipel, bulat-lonjong, dengan skuama halus (fine scale/collarette sign saat digores kuku), di regio punggung dan dada
+
+*Pemeriksaan lampu Wood: fluoresensi kuning keemasan (golden yellow)
+
+Pemeriksaan Penunjang
+
+*Kerokan kulit + KOH 10-20%: tampak hifa pendek dan spora bergerombol ('spaghetti and meatball appearance')
+
+DD Benar
+
+Pitiriasis Versikolor
+
+DD Diferensial Benar
+
+Pitiriasis versikolor
+
+Vitiligo
+
+Pitiriasis alba
+
+Morbus Hansen (lepra) tipe pausibasilar
+
+Tatalaksana
+
++Antijamur topikal
+
+R/ Ketoconazole shampoo 2% fl 60 ml No. I
+
+S ue, oleskan pada lesi diamkan 5-10 menit lalu bilas, 3x/minggu selama 2-4 minggu
+
++Alternatif krim antijamur
+
+R/ Miconazole cream 2% tube 10 g No. I
+
+S 2 dd applic loc dol
+
++Bila luas/rekuren dapat ditambah antijamur oral
+
+R/ Itraconazole tab 100 mg No. VII
+
+S 1 dd tab I selama 7 hari
+
+Edukasi
+
++Jelaskan bahwa perubahan warna kulit dapat menetap beberapa bulan setelah jamur mati, bukan berarti terapi gagal
+
++Jaga kulit tetap kering dan gunakan pakaian yang menyerap keringat
+
+-Berjemur berlebihan untuk 'menyamakan' warna kulit
+
+-Menghentikan terapi begitu bercak tidak terasa gatal (perubahan warna kulit butuh waktu lebih lama untuk kembali normal)
+
+
+
+Kasus 25 — Bu Wati, 46 tahun, kemerahan gatal di lipatan payudara
+
+ID
+
+integ_25
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 25 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bu Wati, 46 tahun, kemerahan gatal di lipatan payudara
+
+Identitas
+
+Nama: Wati, Usia: 46, Pekerjaan: Ibu rumah tangga, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 46 tahun dengan obesitas datang dengan keluhan kemerahan gatal di lipatan bawah payudara.
+
+Keluhan Utama
+
+Kemerahan dan gatal di lipatan bawah payudara sejak 2 minggu, terasa perih terutama saat berkeringat
+
+RPS
+
+Area kemerahan basah dan terdapat bintik-bintik kecil di sekitarnya (lesi satelit)
+
+Memberat pada cuaca panas
+
+Riwayat diabetes melitus tipe 2
+
+RPD
+
+Diabetes melitus tipe 2 sejak 5 tahun, kontrol tidak teratur
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Obesitas, jarang mengeringkan lipatan kulit
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak eritematosa basah, berbatas tegas, dikelilingi papul-pustul satelit di sekitar lesi utama, di regio inframammae bilateral
+
+*Gula Darah Sewaktu: 260 mg/dL
+
+Pemeriksaan Penunjang
+
+*Kerokan kulit + KOH 10-20%: tampak pseudohifa dan blastospora
+
+*Gula Darah Sewaktu: 260 mg/dL
+
+DD Benar
+
+Kandidosis Kutis (Intertriginosa)
+
+DD Diferensial Benar
+
+Kandidosis intertriginosa
+
+Tinea kruris/korporis
+
+Eritrasma
+
+Dermatitis intertriginosa
+
+Tatalaksana
+
++Antijamur topikal golongan azol/polien
+
+R/ Nystatin cream tube 15 g No. I
+
+S 3 dd applic loc dol
+
+-Kortikosteroid topikal poten sebagai monoterapi tanpa antijamur
+
++Rujuk ke dokter umum/puskesmas untuk optimalisasi kontrol gula darah (DM sebagai faktor predisposisi)
+
+Edukasi
+
++Kontrol gula darah dengan baik karena hiperglikemia mempermudah pertumbuhan jamur Candida
+
++Turunkan berat badan dan jaga lipatan kulit tetap kering dan sejuk
+
+-Membiarkan area lipatan lembap sepanjang hari
+
++Rujuk untuk optimalisasi kontrol gula darah
+
+
+
+Kasus 26 — An. Doni, 7 tahun, garis merah berkelok gatal hebat di telapak kaki
+
+ID
+
+integ_26
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 26 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Doni, 7 tahun, garis merah berkelok gatal hebat di telapak kaki
+
+Identitas
+
+Nama: Doni, Usia: 7, Pekerjaan: Pelajar SD, Alamat: -
+
+Skenario Awal
+
+Seorang anak laki-laki 7 tahun dibawa ibunya dengan keluhan garis kemerahan berkelok yang sangat gatal di kaki.
+
+Keluhan Utama
+
+Muncul garis kemerahan berkelok-kelok di telapak kaki kanan sejak 5 hari, sangat gatal terutama malam hari
+
+RPS
+
+Garis merah tampak bergerak/memanjang setiap hari
+
+Riwayat bermain di pasir pantai tanpa alas kaki 1 minggu lalu
+
+Tidak demam
+
+RPD
+
+Tidak ada riwayat penyakit kulit sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Sering bermain di tanah/pasir tanpa alas kaki
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): lesi berupa terowongan (burrow) linear serpiginosa, eritematosa, sedikit meninggi, di plantar pedis dekstra
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis berdasarkan gambaran khas dan riwayat paparan
+
+DD Benar
+
+Cutaneous Larva Migrans
+
+DD Diferensial Benar
+
+Cutaneous larva migrans
+
+Skabies
+
+Dermatitis kontak
+
+Larva currens (strongiloidiasis)
+
+Tatalaksana
+
++Antihelmintik oral
+
+R/ Albendazole tab 400 mg No. III
+
+S 1 dd tab I (selama 3 hari)
+
++Antihistamin untuk mengurangi gatal
+
+R/ Cetirizine syrup 5 mg/5 ml fl No. I
+
+S 1 dd Cth I
+
+-Membiarkan tanpa terapi menunggu sembuh sendiri (dapat berlangsung berminggu-minggu dan sangat mengganggu)
+
+Edukasi
+
++Selalu gunakan alas kaki saat berjalan di tanah/pasir yang mungkin terkontaminasi tinja hewan
+
++Hindari duduk/berbaring langsung di pasir pantai tanpa alas
+
+-Menggaruk lesi hingga luka terbuka (risiko infeksi sekunder)
+
+
+
+Kasus 27 — Bp. Karto, 48 tahun, kaki bengkak besar sejak 1 tahun disertai demam berulang
+
+ID
+
+integ_27
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 27 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Karto, 48 tahun, kaki bengkak besar sejak 1 tahun disertai demam berulang
+
+Identitas
+
+Nama: Karto, Usia: 48, Pekerjaan: Petani, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 48 tahun datang dengan keluhan tungkai kiri membengkak semakin besar.
+
+Keluhan Utama
+
+Tungkai kiri membengkak progresif sejak 1 tahun, disertai episode demam dan nyeri berulang di area selangkangan
+
+RPS
+
+Bengkak awalnya hilang timbul, kini menetap dan semakin besar
+
+Demam berulang disertai nyeri di lipat paha (limfadenitis)
+
+Kulit tungkai menebal dan mengeras
+
+RPD
+
+Tidak ada riwayat penyakit jantung/ginjal
+
+RPK
+
+Tetangga di kampung ada yang mengalami keluhan serupa
+
+Lifestyle
+
+Tinggal di daerah endemis filariasis, sering beraktivitas di luar rumah malam hari tanpa kelambu
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik, tampak tungkai membesar
+
+*Status Lokalis: limfedema tungkai kiri derajat sedang, kulit menebal dan mengeras (kutis verukosa) pada tahap lanjut
+
+*Pembesaran KGB inguinal kiri, nyeri tekan saat episode akut
+
+Tanda vital: dalam batas normal saat pemeriksaan
+
+Pemeriksaan Penunjang
+
+*Apusan darah tebal malam hari (untuk mikrofilaria): dapat ditemukan mikrofilaria
+
+Rapid test antigen filaria (bila tersedia): dapat reaktif
+
+DD Benar
+
+Filariasis (Limfedema Filaria)
+
+DD Diferensial Benar
+
+Filariasis
+
+Limfedema non-filaria (post-trauma/infeksi lain)
+
+Deep vein thrombosis kronik
+
+Selulitis kronik
+
+Tatalaksana
+
++Program eliminasi filariasis: dietilkarbamazin (DEC) kombinasi albendazole
+
+R/ Dietilkarbamazin sitrat tab 100 mg No. XXXVI
+
+S 3 dd tab I (selama 12 hari)
+
+R/ Albendazole tab 400 mg No. I
+
+S 1 dd tab I (dosis tunggal, diminum bersama DEC hari pertama)
+
++Perawatan limfedema: kebersihan kaki, elevasi tungkai, dan latihan gerak untuk mencegah perburukan
+
++Antibiotik bila ada tanda infeksi bakteri sekunder/limfadenitis akut
+
+R/ Amoxicillin tab 500 mg No. XV
+
+S 3 dd tab I selama 5 hari
+
+-Menunda pengobatan sampai bengkak sangat besar (perawatan dini mencegah kecacatan permanen)
+
+Edukasi
+
++Gunakan kelambu saat tidur dan lakukan pemberantasan sarang nyamuk untuk mencegah penularan
+
++Rawat kaki dengan baik (cuci, keringkan, gunakan alas kaki) untuk mencegah infeksi berulang yang memperburuk limfedema
+
+-Menggaruk atau melukai kulit tungkai yang bengkak
+
+
+
+Kasus 28 — An. Nayla, 8 tahun, gatal hebat di kulit kepala
+
+ID
+
+integ_28
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 28 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Nayla, 8 tahun, gatal hebat di kulit kepala
+
+Identitas
+
+Nama: Nayla, Usia: 8, Pekerjaan: Pelajar SD, Alamat: -
+
+Skenario Awal
+
+Seorang anak perempuan 8 tahun dibawa ibunya dengan keluhan gatal hebat di kepala sejak 2 minggu.
+
+Keluhan Utama
+
+Gatal hebat di kulit kepala terutama di belakang telinga dan tengkuk sejak 2 minggu
+
+RPS
+
+Sering menggaruk kepala hingga timbul luka lecet
+
+Teman sekelas ada yang mengalami keluhan serupa
+
+Tidak demam
+
+RPD
+
+Tidak ada riwayat penyakit kulit kepala sebelumnya
+
+RPK
+
+Kakak kandung memiliki keluhan serupa
+
+Lifestyle
+
+Sering bertukar sisir dan kerudung dengan teman sekolah
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): ditemukan kutu (Pediculus humanus capitis) dan telur (nits) berwarna putih melekat kuat pada batang rambut, terutama di regio oksipital dan retroaurikular
+
+Terdapat ekskoriasi akibat garukan
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis dengan ditemukannya kutu/telur
+
+DD Benar
+
+Pedikulosis Kapitis
+
+DD Diferensial Benar
+
+Pedikulosis kapitis
+
+Dermatitis seboroik kapitis
+
+Tinea kapitis
+
+Skabies kepala (pada bayi)
+
+Tatalaksana
+
++Permetrin losion sebagai lini pertama
+
+R/ Permethrin 1% lotion fl 60 ml No. I
+
+S ue, aplikasikan ke rambut dan kulit kepala yang sudah dicuci dan agak kering, diamkan 10 menit, bilas, ulangi setelah 7 hari
+
++Sisir rambut dengan sisir bergigi rapat (nit comb) untuk mengangkat telur setelah aplikasi
+
++Cuci sisir, topi, sarung bantal dengan air panas
+
+-Mencukur habis rambut sebagai satu-satunya terapi (tidak diperlukan, dapat menimbulkan trauma psikologis anak)
+
+Edukasi
+
++Obati serentak seluruh anggota keluarga yang terinfeksi untuk mencegah penularan berulang
+
++Jangan berbagi sisir, topi, bantal, atau kerudung dengan orang lain
+
+-Menggaruk kepala hingga luka terbuka
+
+
+
+Kasus 29 — Bp. Iwan, 31 tahun, gatal hebat di area kemaluan
+
+ID
+
+integ_29
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 29 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Iwan, 31 tahun, gatal hebat di area kemaluan
+
+Identitas
+
+Nama: Iwan, Usia: 31, Pekerjaan: Pelaut, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 31 tahun datang dengan keluhan gatal hebat di rambut kemaluan sejak 1 minggu.
+
+Keluhan Utama
+
+Gatal hebat di rambut kemaluan sejak 1 minggu, terutama malam hari
+
+RPS
+
+Terdapat bercak kebiruan kecil di kulit sekitar rambut kemaluan
+
+Riwayat berhubungan seksual dengan pasangan baru 3 minggu lalu
+
+Tidak ada keluhan keluar cairan dari kemaluan
+
+RPD
+
+Tidak ada riwayat IMS sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Sering berganti pasangan seksual
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+*Status Lokalis genital: ditemukan kutu (Phthirus pubis) dan telur melekat pada rambut pubis, disertai makula sebiru-biruan (maculae ceruleae) pada kulit sekitarnya
+
+Ekskoriasi akibat garukan: ada
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis; dianjurkan skrining IMS lain
+
+DD Benar
+
+Pedikulosis Pubis
+
+DD Diferensial Benar
+
+Pedikulosis pubis
+
+Skabies
+
+Dermatitis kontak area genital
+
+Folikulitis pubis
+
+Tatalaksana
+
++Permetrin krim
+
+R/ Permethrin 5% cream tube 30 g No. I
+
+S ue, oleskan pada area rambut pubis dan sekitarnya, diamkan 8-10 jam lalu bilas, ulangi setelah 7 hari
+
++Cukur rambut pubis dapat membantu mempercepat eradikasi (opsional)
+
+-Menggunakan losion permetrin konsentrasi untuk kepala tanpa penyesuaian pada area genital sensitif
+
+Edukasi
+
++Obati pasangan seksual secara bersamaan untuk mencegah penularan berulang
+
++Cuci pakaian dalam dan seprai dengan air panas
+
+-Melakukan hubungan seksual sebelum pengobatan tuntas
+
++Tawarkan skrining IMS lain (sifilis, gonore, HIV)
+
+
+
+Kasus 30 — An. Rafi, 12 tahun, gatal hebat malam hari di sela jari tangan
+
+ID
+
+integ_30
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 30 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Rafi, 12 tahun, gatal hebat malam hari di sela jari tangan
+
+Identitas
+
+Nama: Rafi, Usia: 12, Pekerjaan: Santri di pondok pesantren, Alamat: -
+
+Skenario Awal
+
+Seorang anak laki-laki 12 tahun, santri pondok pesantren, datang dengan keluhan gatal hebat di sela jari.
+
+Keluhan Utama
+
+Gatal hebat terutama malam hari di sela jari tangan, pergelangan tangan, dan perut sejak 3 minggu
+
+RPS
+
+Gatal dirasakan memberat malam hari sehingga mengganggu tidur
+
+Beberapa teman sekamar di asrama memiliki keluhan serupa
+
+Muncul bintil-bintil kecil di area gatal
+
+RPD
+
+Tidak ada riwayat penyakit kulit kronis sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga di rumah dengan keluhan serupa
+
+Lifestyle
+
+Tinggal di asrama padat penghuni, berbagi handuk dan sarung dengan teman
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul dan vesikel multipel disertai terowongan (kunikulus) berkelok halus, di sela-sela jari tangan, pergelangan tangan volar, dan periumbilikal
+
+Ekskoriasi akibat garukan: banyak
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus untuk diagnosis; bila tersedia, pemeriksaan mikroskopis kerokan kulit dapat menemukan tungau/telur/skibala Sarcoptes scabiei
+
+DD Benar
+
+Skabies
+
+DD Diferensial Benar
+
+Skabies
+
+Pedikulosis korporis
+
+Dermatitis atopik
+
+Reaksi gigitan serangga
+
+Tatalaksana
+
++Permetrin krim sebagai lini pertama
+
+R/ Permethrin 5% cream tube 30 g No. I
+
+S ue, oleskan ke seluruh tubuh dari leher ke bawah (termasuk sela jari dan lipatan), diamkan 8-12 jam (semalam), bilas, ulangi setelah 1 minggu
+
++Antihistamin oral untuk mengurangi gatal
+
+R/ Cetirizine tab 10 mg No. X
+
+S 1 dd tab I
+
++Obati seluruh kontak serumah/seasrama secara bersamaan meski tanpa gejala
+
+-Mengobati hanya pasien tanpa mengobati kontak erat (menyebabkan reinfeksi berulang)
+
+Edukasi
+
++Cuci seluruh pakaian, sprei, dan handuk dengan air panas serta jemur di bawah sinar matahari
+
++Gatal dapat menetap 2-4 minggu setelah terapi berhasil akibat reaksi alergi terhadap tungau mati, bukan berarti terapi gagal
+
+-Berbagi handuk, sarung, atau pakaian dengan teman satu kamar
+
+
+
+Kasus 31 — An. Kayla, 5 tahun, bentol-bentol gatal di kaki setelah bermain di taman
+
+ID
+
+integ_31
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 31 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Kayla, 5 tahun, bentol-bentol gatal di kaki setelah bermain di taman
+
+Identitas
+
+Nama: Kayla, Usia: 5, Pekerjaan: Pelajar TK, Alamat: -
+
+Skenario Awal
+
+Seorang anak perempuan 5 tahun dibawa ibunya dengan keluhan bentol-bentol gatal di tungkai.
+
+Keluhan Utama
+
+Muncul bentol-bentol kemerahan gatal di kedua tungkai bawah sejak 1 hari setelah bermain di taman sore hari
+
+RPS
+
+Bentol muncul mendadak setelah bermain di rerumputan
+
+Terdapat titik merah di tengah beberapa bentol
+
+Tidak demam
+
+RPD
+
+Tidak ada riwayat alergi obat/makanan
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Sering bermain di area rerumputan sore hari
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul urtika multipel dengan punctum sentral (bekas gigitan) di regio cruris bilateral, disertai eritema di sekitarnya
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Reaksi Gigitan Serangga (Insect Bite Reaction)
+
+DD Diferensial Benar
+
+Reaksi gigitan serangga
+
+Skabies
+
+Urtikaria akut
+
+Varisela stadium awal
+
+Tatalaksana
+
++Antihistamin oral untuk mengurangi gatal
+
+R/ Cetirizine syrup 5 mg/5 ml fl No. I
+
+S 1 dd Cth I
+
++Kortikosteroid topikal ringan untuk lesi yang meradang
+
+R/ Hydrocortisone cream 1% tube 5 g No. I
+
+S 2 dd applic loc dol
+
+-Menggaruk lesi hingga luka terbuka (risiko infeksi sekunder/impetigo)
+
+Edukasi
+
++Gunakan lotion anti-nyamuk dan pakaian tertutup saat beraktivitas di area rerumputan/taman sore hari
+
++Potong kuku anak untuk mengurangi risiko infeksi sekunder akibat garukan
+
+-Memberikan salep/obat oles yang tidak jelas komposisinya pada lesi
+
+
+
+Kasus 32 — Bu Rina, 39 tahun, tangan kering, merah, dan perih setelah mencuci piring
+
+ID
+
+integ_32
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 32 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bu Rina, 39 tahun, tangan kering, merah, dan perih setelah mencuci piring
+
+Identitas
+
+Nama: Rina, Usia: 39, Pekerjaan: Ibu rumah tangga, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 39 tahun datang dengan keluhan kedua tangan kering dan perih sejak 2 minggu.
+
+Keluhan Utama
+
+Kedua telapak tangan kering, kemerahan, dan terasa perih terutama setelah mencuci piring, sejak 2 minggu
+
+RPS
+
+Keluhan memberat setelah kontak dengan sabun cuci piring
+
+Tidak ada riwayat kontak dengan bahan baru selain deterjen yang biasa dipakai
+
+Rasa perih lebih dominan dibanding gatal
+
+RPD
+
+Tidak ada riwayat dermatitis atopik
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Mencuci piring dan pakaian tanpa sarung tangan setiap hari
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): eritema, skuama, dan fisura pada kedua telapak tangan dan sela jari, batas tidak tegas, tanpa vesikel
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis dan anamnesis paparan
+
+DD Benar
+
+Dermatitis Kontak Iritan
+
+DD Diferensial Benar
+
+Dermatitis kontak iritan
+
+Dermatitis kontak alergika
+
+Dermatitis atopik tangan
+
+Tinea manus
+
+Tatalaksana
+
++Kortikosteroid topikal potensi ringan-sedang jangka pendek
+
+R/ Desoximetasone cream 0,25% tube 5 g No. I
+
+S 2 dd applic loc dol (maksimal 2 minggu)
+
++Emolien untuk memperbaiki fungsi sawar kulit
+
+R/ Urea cream 10% tube 20 g No. I
+
+S 2 dd applic loc dol
+
+-Melanjutkan kontak bahan iritan tanpa proteksi selama pengobatan
+
+Edukasi
+
++Gunakan sarung tangan (dalam sarung tangan katun, luar sarung tangan karet) saat mencuci
+
++Gunakan pelembap secara rutin untuk menjaga sawar kulit
+
+-Mencuci tangan dengan sabun antiseptik keras berulang kali tanpa pelembap
+
++Hindari/kurangi kontak dengan bahan iritan (deterjen, sabun keras)
+
+
+
+Kasus 33 — An. Zahra, 4 tahun, kulit kering gatal berulang sejak bayi
+
+ID
+
+integ_33
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 33 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+An. Zahra, 4 tahun, kulit kering gatal berulang sejak bayi
+
+Identitas
+
+Nama: Zahra, Usia: 4, Pekerjaan: Pelajar TK, Alamat: -
+
+Skenario Awal
+
+Seorang anak perempuan 4 tahun dibawa ibunya dengan keluhan kulit gatal dan kering berulang.
+
+Keluhan Utama
+
+Kulit gatal dan kering di lipat siku dan lipat lutut sejak bayi, hilang timbul, memberat saat cuaca dingin/kering
+
+RPS
+
+Riwayat keluhan serupa sejak usia 6 bulan
+
+Riwayat asma dan rinitis alergi pada ayah
+
+Sering menggaruk hingga kulit menebal
+
+RPD
+
+Riwayat dermatitis atopik sejak bayi
+
+RPK
+
+Ayah memiliki riwayat asma dan rinitis alergi
+
+Lifestyle
+
+Sering menggunakan sabun mandi dengan pewangi kuat
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): kulit kering (xerosis) generalisata, plak likenifikasi dengan eritema ringan dan ekskoriasi di fossa cubiti dan fossa poplitea bilateral
+
+Dennie-Morgan fold (lipatan infraorbital ganda): ada
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis berdasarkan kriteria mayor-minor dermatitis atopik
+
+DD Benar
+
+Dermatitis Atopik
+
+DD Diferensial Benar
+
+Dermatitis atopik
+
+Dermatitis kontak
+
+Dermatitis numularis
+
+Skabies
+
+Tatalaksana
+
++Emolien digunakan rutin setiap hari sebagai dasar terapi
+
+R/ Cetaphil moisturizing cream tube 100 g No. I
+
+S 2-3 dd applic loc dol (seluruh tubuh, terutama setelah mandi)
+
++Kortikosteroid topikal potensi ringan saat fase aktif/flare
+
+R/ Hydrocortisone cream 1% tube 10 g No. I
+
+S 2 dd applic loc dol pada lesi aktif (maksimal 1-2 minggu)
+
++Antihistamin bila gatal mengganggu tidur
+
+R/ Cetirizine syrup 5 mg/5 ml fl No. I
+
+S 1 dd Cth I malam hari
+
+Edukasi
+
++Mandi dengan air hangat suam-suam kuku, gunakan sabun lembut tanpa pewangi, dan oleskan pelembap segera setelah mandi (dalam 3 menit)
+
++Kenali dan hindari faktor pencetus (udara kering, wol, keringat berlebih, stres)
+
+-Menggaruk lesi hingga luka (dapat menyebabkan infeksi sekunder)
+
+-Mandi dengan air panas dan sabun antiseptik/berpewangi kuat
+
+
+
+Kasus 34 — Bp. Bambang, 52 tahun, bercak bulat gatal dan basah di tungkai
+
+ID
+
+integ_34
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 34 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Bambang, 52 tahun, bercak bulat gatal dan basah di tungkai
+
+Identitas
+
+Nama: Bambang, Usia: 52, Pekerjaan: Pensiunan, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 52 tahun datang dengan keluhan bercak bulat seperti koin di tungkai bawah.
+
+Keluhan Utama
+
+Bercak bulat seperti koin, gatal, dan kadang basah/berair di tungkai bawah kanan sejak 1 bulan
+
+RPS
+
+Lesi dimulai dari bintik-bintik kecil yang bergabung membentuk bercak bulat
+
+Gatal hebat terutama malam hari
+
+Kulit di sekitar lesi cenderung kering
+
+RPD
+
+Riwayat kulit kering kronis (xerosis) terutama saat musim kemarau
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Jarang menggunakan pelembap kulit, sering mandi dengan air panas
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): plak berbentuk koin (numular), berbatas tegas, eritematosa dengan vesikel-papul dan eksudasi/krusta di permukaan, dikelilingi kulit kering, di regio pretibial dekstra
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Dermatitis Numularis
+
+DD Diferensial Benar
+
+Dermatitis numularis
+
+Tinea korporis
+
+Psoriasis vulgaris
+
+Dermatitis kontak
+
+Tatalaksana
+
++Kortikosteroid topikal potensi sedang
+
+R/ Betamethasone valerate cream 0,1% tube 10 g No. I
+
+S 2 dd applic loc dol (selama 2 minggu, lalu evaluasi)
+
++Emolien untuk memperbaiki kulit kering di sekitarnya
+
+R/ Urea cream 10% tube 20 g No. I
+
+S 2 dd applic loc dol
+
++Antihistamin bila gatal mengganggu
+
+R/ Cetirizine tab 10 mg No. X
+
+S 1 dd tab I malam hari
+
+-Kompres dengan bahan tradisional yang tidak jelas kebersihannya pada lesi basah
+
+Edukasi
+
++Hindari mandi air panas dan sabun yang keras/berpewangi
+
++Gunakan pelembap secara rutin, terutama di musim kering
+
+-Menggaruk lesi meskipun sangat gatal
+
+
+
+Kasus 35 — By. Arka, 8 bulan, kulit kemerahan di area popok
+
+ID
+
+integ_35
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 35 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+By. Arka, 8 bulan, kulit kemerahan di area popok
+
+Identitas
+
+Nama: Arka, Usia: 8 bulan, Pekerjaan: -, Alamat: -
+
+Skenario Awal
+
+Seorang bayi laki-laki 8 bulan dibawa ibunya dengan keluhan kulit kemerahan di area popok.
+
+Keluhan Utama
+
+Kulit kemerahan dan tampak lecet di area yang tertutup popok sejak 4 hari
+
+RPS
+
+Bayi rewel terutama saat popok diganti atau area tersebut disentuh
+
+Popok jarang diganti karena bayi tidur lama di malam hari
+
+Tidak demam
+
+RPD
+
+Tidak ada riwayat alergi sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Menggunakan popok sekali pakai, frekuensi penggantian kurang dari 4x/hari
+
+Pemeriksaan Fisik
+
+Keadaan umum: aktif, rewel bila area popok disentuh
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): eritema konfluens pada area yang kontak langsung dengan popok (bokong, paha bagian dalam, area genital), dengan sedikit erosi, cekungan lipatan kulit relatif tidak terkena
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Napkin Eczema (Dermatitis Popok)
+
+DD Diferensial Benar
+
+Dermatitis popok
+
+Kandidosis popok
+
+Dermatitis seboroik
+
+Psoriasis area popok
+
+Tatalaksana
+
++Krim pelindung berbasis zinc oxide sebagai barrier
+
+R/ Zinc oxide ointment tube 20 g No. I
+
+S 3-4 dd applic loc dol pada tiap penggantian popok
+
++Kortikosteroid topikal ringan bila peradangan cukup berat
+
+R/ Hydrocortisone cream 1% tube 5 g No. I
+
+S 1-2 dd applic loc dol selama beberapa hari
+
+-Menggunakan bedak tabur pada area popok yang lembap (dapat menggumpal dan memperparah iritasi)
+
+Edukasi
+
++Ganti popok lebih sering (setiap 3-4 jam atau segera setelah BAK/BAB) dan bersihkan area dengan lembut
+
++Biarkan area popok terbuka tanpa popok beberapa saat setiap hari untuk mengeringkan kulit
+
+-Menggunakan tisu basah beralkohol/berpewangi untuk membersihkan area popok
+
+
+
+Kasus 36 — Bp. Wawan, 36 tahun, kulit kepala berketombe tebal dan gatal
+
+ID
+
+integ_36
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 36 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Wawan, 36 tahun, kulit kepala berketombe tebal dan gatal
+
+Identitas
+
+Nama: Wawan, Usia: 36, Pekerjaan: Karyawan kantor, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 36 tahun datang dengan keluhan ketombe berlebih dan gatal di kulit kepala.
+
+Keluhan Utama
+
+Ketombe tebal berminyak disertai gatal di kulit kepala sejak 2 bulan, juga muncul kemerahan di sekitar alis dan lipat hidung
+
+RPS
+
+Keluhan memberat saat stres dan kurang tidur
+
+Kulit kepala terasa berminyak
+
+Sisik kekuningan mudah terkelupas
+
+RPD
+
+Tidak ada riwayat penyakit kulit kronis lain
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Sering begadang karena pekerjaan, jarang keramas
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): skuama kekuningan berminyak di atas dasar eritema pada kulit kepala, glabela, alis, dan lipat nasolabial
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Dermatitis Seboroik
+
+DD Diferensial Benar
+
+Dermatitis seboroik
+
+Psoriasis vulgaris
+
+Tinea kapitis
+
+Dermatitis atopik
+
+Tatalaksana
+
++Shampoo antijamur/antiseboroik untuk kulit kepala
+
+R/ Ketoconazole shampoo 2% fl 60 ml No. I
+
+S 2-3x/minggu, oleskan dan diamkan 5 menit sebelum dibilas
+
++Kortikosteroid topikal ringan untuk lesi wajah
+
+R/ Hydrocortisone cream 1% tube 5 g No. I
+
+S 1-2 dd applic loc dol pada area wajah yang meradang
+
+-Kortikosteroid poten jangka panjang di wajah (risiko atrofi kulit dan rebound)
+
+Edukasi
+
++Kelola stres dan istirahat cukup karena dapat memicu kekambuhan
+
++Keramas secara teratur dan jaga kulit kepala tetap bersih
+
+-Menggaruk kulit kepala hingga luka
+
+
+
+Kasus 37 — Nn. Intan, 22 tahun, muncul bercak di dada lalu menyebar ke badan berpola khas
+
+ID
+
+integ_37
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 37 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Nn. Intan, 22 tahun, muncul bercak di dada lalu menyebar ke badan berpola khas
+
+Identitas
+
+Nama: Intan, Usia: 22, Pekerjaan: Karyawan swasta, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 22 tahun datang dengan keluhan bercak kemerahan yang menyebar ke seluruh badan.
+
+Keluhan Utama
+
+Muncul satu bercak besar di dada sekitar 10 hari lalu, diikuti bercak-bercak lebih kecil serupa di badan sejak 4 hari terakhir
+
+RPS
+
+Bercak pertama (herald patch) lebih besar dari bercak-bercak berikutnya
+
+Gatal ringan
+
+Riwayat flu ringan sebelum bercak muncul
+
+RPD
+
+Tidak ada riwayat penyakit kulit kronis
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Aktivitas normal, tidak ada paparan bahan kimia baru
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): herald patch (plak oval soliter dengan skuama collarette) di regio dada, diikuti lesi-lesi lebih kecil serupa tersebar mengikuti garis lipatan kulit (Christmas tree pattern) di badan
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis; dapat dipertimbangkan tes serologi sifilis bila gambaran atipikal untuk menyingkirkan sifilis sekunder
+
+DD Benar
+
+Pitiriasis Rosea
+
+DD Diferensial Benar
+
+Pitiriasis rosea
+
+Tinea korporis
+
+Sifilis sekunder
+
+Psoriasis gutata
+
+Tatalaksana
+
++Antihistamin oral bila gatal mengganggu
+
+R/ Cetirizine tab 10 mg No. X
+
+S 1 dd tab I prn gatal
+
++Emolien untuk mengurangi kekeringan kulit
+
+-Kortikosteroid sistemik jangka panjang tanpa indikasi (tidak diperlukan pada kasus tanpa komplikasi)
+
+Edukasi
+
++Jelaskan bahwa kondisi ini akan sembuh sendiri dalam beberapa minggu tanpa jaringan parut
+
++Hindari paparan sinar matahari berlebihan dan mandi air panas yang dapat memperburuk gatal
+
+-Khawatir berlebihan dan mencoba berbagai obat oles tanpa anjuran dokter
+
++Kondisi ini bersifat self-limiting dan akan sembuh sendiri dalam 6-8 minggu tanpa jaringan parut
+
+
+
+Kasus 38 — Nn. Cindy, 17 tahun, jerawat di wajah sejak 1 tahun
+
+ID
+
+integ_38
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 38 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Nn. Cindy, 17 tahun, jerawat di wajah sejak 1 tahun
+
+Identitas
+
+Nama: Cindy, Usia: 17, Pekerjaan: Pelajar SMA, Alamat: -
+
+Skenario Awal
+
+Seorang remaja perempuan 17 tahun datang dengan keluhan jerawat di wajah yang mengganggu penampilan.
+
+Keluhan Utama
+
+Muncul komedo dan jerawat kecil di dahi, hidung, dan pipi sejak 1 tahun, jumlah tidak terlalu banyak
+
+RPS
+
+Jerawat memberat menjelang menstruasi
+
+Tidak ada nyeri hebat atau jerawat besar meradang
+
+Sering memencet jerawat sendiri
+
+RPD
+
+Tidak ada riwayat penyakit kulit kronis
+
+RPK
+
+Ibu memiliki riwayat jerawat saat remaja
+
+Lifestyle
+
+Sering menggunakan kosmetik oil-based, jarang membersihkan wajah sebelum tidur
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): komedo terbuka dan tertutup, beberapa papul dan pustul kecil, jumlah <20 lesi, tanpa nodul/kista, di regio frontal, nasal, dan malar
+
+Skar/jaringan parut: tidak ada
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Akne Vulgaris Ringan
+
+DD Diferensial Benar
+
+Akne vulgaris ringan
+
+Dermatitis perioral
+
+Folikulitis wajah
+
+Rosasea
+
+Tatalaksana
+
++Retinoid topikal sebagai terapi lini pertama komedo
+
+R/ Tretinoin cream 0,025% tube 10 g No. I
+
+S 1 dd applic loc dol malam hari (mulai selang sehari untuk adaptasi)
+
++Benzoil peroksida untuk lesi inflamasi
+
+R/ Benzoyl peroxide gel 2,5% tube 15 g No. I
+
+S 1 dd applic loc dol pagi hari
+
+-Memencet/mengorek jerawat sendiri (risiko infeksi dan jaringan parut)
+
+Edukasi
+
++Gunakan produk perawatan wajah berlabel 'non-comedogenic' dan bersihkan wajah 2x sehari dengan pembersih lembut
+
++Hasil terapi topikal membutuhkan waktu 6-8 minggu untuk terlihat, gunakan secara konsisten
+
+-Sering mencuci wajah berlebihan atau menggunakan scrub kasar
+
+
+
+Kasus 39 — Bu Lestari, 33 tahun, benjolan nyeri berulang di ketiak
+
+ID
+
+integ_39
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 39 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bu Lestari, 33 tahun, benjolan nyeri berulang di ketiak
+
+Identitas
+
+Nama: Lestari, Usia: 33, Pekerjaan: Karyawan pabrik, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 33 tahun datang dengan keluhan benjolan nyeri berulang di kedua ketiak.
+
+Keluhan Utama
+
+Benjolan nyeri di kedua ketiak yang hilang timbul dan berulang sejak 1 tahun, kadang pecah mengeluarkan nanah berbau
+
+RPS
+
+Benjolan muncul di lokasi yang sama berulang kali
+
+Meninggalkan bekas luka/jaringan parut setelah sembuh
+
+Memberat saat berkeringat atau memakai deodoran tertentu
+
+RPD
+
+Obesitas, IMT 30 kg/m2
+
+RPK
+
+Ibu kandung memiliki riwayat keluhan serupa
+
+Lifestyle
+
+Perokok aktif, obesitas, sering berkeringat berlebih di ketiak
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): nodul inflamasi nyeri berulang, sebagian disertai sinus/abses yang mengeluarkan pus, serta jaringan parut (skar) dari lesi sebelumnya, di regio aksila bilateral
+
+Komedo ganda (double comedones): dapat ditemukan
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis berdasarkan lokasi khas dan riwayat rekuren
+
+DD Benar
+
+Hidradenitis Supurativa
+
+DD Diferensial Benar
+
+Hidradenitis supurativa
+
+Furunkel/karbunkel
+
+Limfadenitis aksila
+
+Kista epidermal terinfeksi
+
+Tatalaksana
+
++Antibiotik oral untuk mengendalikan peradangan dan infeksi
+
+R/ Clindamycin tab 300 mg No. XX
+
+S 2 dd tab I (selama 10 hari)
+
++Kompres hangat pada lesi aktif
+
++Insisi drainase bila terdapat abses matang/fluktuatif
+
++Rujuk ke spesialis kulit bila rekuren berat/kronik untuk pertimbangan terapi lanjutan
+
+-Menunggu lesi pecah sendiri tanpa evaluasi dan terapi (dapat memperberat jaringan parut)
+
+Edukasi
+
++Turunkan berat badan dan hentikan kebiasaan merokok karena keduanya faktor risiko utama
+
++Kenakan pakaian longgar dan hindari deodoran/produk iritan pada area ketiak
+
+-Memencet atau mengorek benjolan sendiri
+
+
+
+Kasus 40 — Bu Fitri, 29 tahun, bintil-bintil merah kecil di sekitar mulut
+
+ID
+
+integ_40
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 40 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bu Fitri, 29 tahun, bintil-bintil merah kecil di sekitar mulut
+
+Identitas
+
+Nama: Fitri, Usia: 29, Pekerjaan: Karyawan swasta, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 29 tahun datang dengan keluhan bintil kemerahan di sekitar mulut sejak 1 bulan.
+
+Keluhan Utama
+
+Muncul bintil-bintil kecil kemerahan di sekitar mulut sejak 1 bulan, terasa sedikit gatal dan perih
+
+RPS
+
+Rutin menggunakan krim wajah mengandung steroid yang dibeli bebas selama 2 bulan terakhir
+
+Keluhan memberat saat berhenti memakai krim tersebut
+
+Area sekitar bibir (vermilion border) tidak terkena
+
+RPD
+
+Tidak ada riwayat penyakit kulit kronis
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Sering mengganti-ganti produk skincare tanpa anjuran dokter
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul dan pustul kecil eritematosa di sekitar mulut, dagu, dan lipat nasolabial, dengan zona sempit kulit normal di sekitar vermilion bibir (perioral sparing)
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Dermatitis Perioral
+
+DD Diferensial Benar
+
+Dermatitis perioral
+
+Akne vulgaris
+
+Rosasea
+
+Dermatitis kontak alergika
+
+Tatalaksana
+
++Hentikan penggunaan kortikosteroid topikal wajah (langkah utama meskipun gejala dapat memburuk sementara/rebound)
+
++Antibiotik topikal
+
+R/ Metronidazole gel 0,75% tube 15 g No. I
+
+S 2 dd applic loc dol
+
++Bila berat/luas, antibiotik oral golongan tetrasiklin
+
+R/ Doxycycline tab 100 mg No. XXVIII
+
+S 2 dd tab I (selama 4-6 minggu)
+
+-Melanjutkan atau mengganti dengan krim steroid lain untuk 'mengatasi' kekambuhan
+
+Edukasi
+
++Hindari produk kosmetik/skincare yang berat dan mengandung steroid tanpa resep dokter
+
++Jelaskan bahwa gejala dapat memburuk sementara (2-4 minggu) setelah menghentikan steroid sebelum membaik
+
+-Mencoba mengatasi kekambuhan dengan mengoleskan kembali krim steroid
+
+
+
+Kasus 41 — By. Kanaya, 3 bulan, bintil merah kecil di leher dan punggung
+
+ID
+
+integ_41
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 41 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+By. Kanaya, 3 bulan, bintil merah kecil di leher dan punggung
+
+Identitas
+
+Nama: Kanaya, Usia: 3 bulan, Pekerjaan: -, Alamat: -
+
+Skenario Awal
+
+Seorang bayi perempuan 3 bulan dibawa ibunya dengan keluhan bintil-bintil merah kecil di leher dan punggung.
+
+Keluhan Utama
+
+Muncul bintil-bintil merah kecil di leher, punggung, dan dada sejak 3 hari, terutama saat cuaca panas
+
+RPS
+
+Bayi tampak rewel dan sering menangis karena gatal/panas
+
+Bayi sering dibedong rapat dan dipakaikan baju tebal
+
+Tidak demam
+
+RPD
+
+Tidak ada riwayat penyakit kulit sebelumnya
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Sering dibedong rapat, jarang di ruangan berventilasi baik
+
+Pemeriksaan Fisik
+
+Keadaan umum: aktif, rewel
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): papul dan vesikel kecil (1-2 mm) eritematosa multipel di regio colli, dorsum, dan dada, terutama pada area lipatan dan tertutup pakaian
+
+Tanda vital: dalam batas normal
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Miliaria (Biang Keringat)
+
+DD Diferensial Benar
+
+Miliaria
+
+Dermatitis atopik infantil
+
+Eritema toksikum neonatorum
+
+Folikulitis
+
+Tatalaksana
+
++Losio penenang bila diperlukan
+
+R/ Calamine lotion fl 60 ml No. I
+
+S ue applic loc dol 2-3 dd
+
+-Menggunakan bedak tabur tebal pada kulit lembap/berkeringat (dapat menyumbat pori dan memperberat)
+
+Edukasi
+
++Kenakan pakaian tipis dan longgar berbahan katun, hindari membedong terlalu rapat
+
++Jaga ruangan tetap sejuk dan berventilasi baik, mandikan bayi dengan air hangat suam-suam kuku
+
+-Membedong bayi rapat sepanjang hari pada cuaca panas
+
++Jaga bayi tetap sejuk dan kering, kurangi pakaian berlapis
+
+
+
+Kasus 42 — Bu Nita, 26 tahun, bentol-bentol gatal mendadak di seluruh tubuh setelah makan udang
+
+ID
+
+integ_42
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 42 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bu Nita, 26 tahun, bentol-bentol gatal mendadak di seluruh tubuh setelah makan udang
+
+Identitas
+
+Nama: Nita, Usia: 26, Pekerjaan: Karyawan swasta, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 26 tahun datang dengan keluhan bentol-bentol gatal mendadak di seluruh tubuh.
+
+Keluhan Utama
+
+Muncul bentol-bentol kemerahan gatal mendadak di seluruh tubuh sejak 2 jam setelah makan udang
+
+RPS
+
+Bentol berpindah-pindah lokasi dan hilang dalam beberapa jam lalu muncul lagi di tempat lain
+
+Tidak ada sesak napas atau pembengkakan bibir/wajah
+
+Riwayat alergi makanan laut sebelumnya
+
+RPD
+
+Riwayat alergi makanan laut (udang) sejak remaja
+
+RPK
+
+Ibu memiliki riwayat alergi obat
+
+Lifestyle
+
+Baru pertama kali mencoba menu udang saus baru di restoran
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik, tidak tampak sesak
+
+Tanda vital: dalam batas normal, saturasi oksigen 99%
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): wheal (urtika) multipel, eritematosa, batas tegas, ukuran bervariasi, tersebar generalisata, sebagian tampak menyatu (konfluens)
+
+Angioedema wajah/bibir/lidah: tidak ada
+
+Auskultasi paru: vesikuler, tidak ada wheezing
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus pada episode akut tanpa tanda bahaya, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Urtikaria Akut
+
+DD Diferensial Benar
+
+Urtikaria akut
+
+Angioedema
+
+Reaksi gigitan serangga multipel
+
+Erupsi obat
+
+Tatalaksana
+
++Antihistamin H1 non-sedatif lini pertama
+
+R/ Loratadine tab 10 mg No. X
+
+S 1 dd tab I
+
++Bila gatal berat dapat ditambah antihistamin sedatif malam hari
+
+R/ Cetirizine tab 10 mg No. V
+
+S 1 dd tab I malam hari
+
+-Pemberian kortikosteroid sistemik rutin pada urtikaria akut tanpa komplikasi (bukan lini pertama)
+
+Edukasi
+
++Segera ke IGD bila muncul sesak napas, bengkak wajah/bibir/lidah, atau pusing hebat (tanda anafilaksis)
+
++Catat dan hindari makanan/obat yang menjadi pencetus di masa mendatang
+
+-Mencoba kembali makanan pencetus untuk 'memastikan' alergi tanpa pengawasan medis
+
++Hindari makanan pencetus (udang/makanan laut) di kemudian hari
+
+
+
+Kasus 43 — Bp. Surya, 41 tahun, ruam kemerahan gatal di seluruh tubuh setelah minum obat
+
+ID
+
+integ_43
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 43 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Surya, 41 tahun, ruam kemerahan gatal di seluruh tubuh setelah minum obat
+
+Identitas
+
+Nama: Surya, Usia: 41, Pekerjaan: Pegawai negeri, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 41 tahun datang dengan keluhan ruam kemerahan gatal di seluruh tubuh sejak 1 hari setelah minum antibiotik.
+
+Keluhan Utama
+
+Muncul ruam kemerahan gatal simetris di badan dan lengan sejak 1 hari setelah mengonsumsi antibiotik amoxicillin untuk sakit gigi
+
+RPS
+
+Ruam muncul 2 hari setelah mulai minum obat
+
+Tidak ada sesak napas atau bengkak wajah
+
+Tidak demam tinggi, tidak ada lepuh/luka pada mukosa mulut atau mata
+
+RPD
+
+Riwayat alergi penisilin ringan pernah dialami saat kecil (tidak dikonfirmasi)
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Baru pertama kali dalam beberapa tahun terakhir mengonsumsi antibiotik golongan penisilin
+
+Pemeriksaan Fisik
+
+Keadaan umum: baik, tidak tampak sesak
+
+Tanda vital: dalam batas normal
+
+!*Status Dermatologis/Ujud Kelainan Kulit (UKK): makula dan papul eritematosa, simetris, konfluens sebagian, tersebar di badan dan ekstremitas atas, tanpa vesikel/bula
+
+!Mukosa mulut dan mata: tidak ditemukan erosi/lesi (menyingkirkan tanda bahaya Stevens-Johnson Syndrome)
+
+Nikolsky sign: negatif
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus pada kasus ringan tanpa keterlibatan mukosa/sistemik, diagnosis ditegakkan secara klinis dan riwayat konsumsi obat
+
+DD Benar
+
+Exanthematous Drug Eruption
+
+DD Diferensial Benar
+
+Exanthematous drug eruption
+
+Urtikaria akut
+
+Morbili
+
+Sindrom Stevens-Johnson (bila ada keterlibatan mukosa/bula)
+
+Tatalaksana
+
++Hentikan segera obat yang dicurigai sebagai penyebab (amoxicillin)
+
++Antihistamin oral
+
+R/ Cetirizine tab 10 mg No. X
+
+S 1 dd tab I
+
++Kortikosteroid topikal ringan bila gatal signifikan
+
+R/ Hydrocortisone cream 1% tube 10 g No. I
+
+S 2 dd applic loc dol
+
+-Melanjutkan obat penyebab sambil 'menunggu' apakah ruam membaik sendiri
+
+Edukasi
+
++Catat nama obat penyebab pada rekam medis dan sampaikan ke pasien agar dihindari di masa depan (termasuk golongan obat yang sama)
+
++Segera kembali ke fasilitas kesehatan bila muncul demam tinggi, lepuh/kulit mengelupas, atau luka di mulut/mata (tanda bahaya reaksi obat berat)
+
+-Mengonsumsi kembali obat yang sama di kemudian hari tanpa konsultasi dokter
+
+
+
+Kasus 44 — Bp. Eko, 26 tahun, luka robek di tangan akibat kecelakaan kerja
+
+ID
+
+integ_44
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 44 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bp. Eko, 26 tahun, luka robek di tangan akibat kecelakaan kerja
+
+Identitas
+
+Nama: Eko, Usia: 26, Pekerjaan: Buruh pabrik, Alamat: -
+
+Skenario Awal
+
+Seorang laki-laki 26 tahun dibawa ke UGD dengan luka robek di lengan bawah akibat tersangkut mesin.
+
+Keluhan Utama
+
+Luka robek di lengan bawah kiri sejak 30 menit yang lalu setelah tersangkut mesin di tempat kerja
+
+RPS
+
+Perdarahan aktif namun dapat dikendalikan dengan penekanan
+
+Nyeri hebat pada area luka
+
+Tidak ada mati rasa atau kelemahan gerak jari
+
+RPD
+
+Tidak ada riwayat penyakit perdarahan
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Bekerja di pabrik dengan mesin tanpa alat pelindung diri lengkap
+
+Pemeriksaan Fisik
+
+Keadaan umum: tampak kesakitan, kesadaran compos mentis
+
+Tanda vital: TD 120/80 mmHg, nadi 92x/menit, dalam batas normal lainnya
+
+*Status Lokalis: luka robek (vulnus laseratum) tepi tidak rata sepanjang 6 cm di regio antebrachii sinistra, kedalaman mencapai subkutis, perdarahan aktif ringan
+
+*Pemeriksaan neurovaskular distal (sensibilitas, pengisian kapiler, gerak jari): dalam batas normal
+
+Riwayat imunisasi tetanus: tidak diketahui pasti/tidak lengkap
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus untuk luka superfisial tanpa kecurigaan fraktur/cedera struktur dalam; foto rontgen bila dicurigai benda asing atau fraktur
+
+DD Benar
+
+Vulnus Laseratum
+
+DD Diferensial Benar
+
+Vulnus laseratum
+
+Vulnus punctum
+
+Cedera tendon/saraf (bila ada defisit neurovaskular)
+
+Fraktur terbuka (bila dicurigai)
+
+Tatalaksana
+
++Irigasi luka dengan NaCl 0,9% dan debridement jaringan nekrotik/kotor
+
++Penjahitan luka (hecting) primer bila luka bersih dan <6-8 jam sejak kejadian
+
++Profilaksis tetanus sesuai status imunisasi (tetanus toksoid ± Human Tetanus Immunoglobulin bila status tidak jelas/luka kotor)
+
++Antibiotik oral profilaksis
+
+R/ Amoxicillin tab 500 mg No. XV
+
+S 3 dd tab I (selama 5 hari)
+
++Analgetik
+
+R/ Asam mefenamat tab 500 mg No. X
+
+S 3 dd tab I prn nyeri
+
+-Menjahit luka yang sudah kotor/lebih dari 8 jam tanpa debridement adekuat (risiko infeksi)
+
+Edukasi
+
++Jaga luka tetap kering dan bersih, kontrol ganti balut sesuai jadwal, dan kontrol untuk angkat jahitan (biasanya 7-14 hari tergantung lokasi)
+
++Segera kontrol bila luka bengkak, kemerahan meluas, keluar nanah, atau demam (tanda infeksi)
+
+-Membiarkan luka basah/terkena air kotor sebelum sembuh
+
+
+
+Kasus 45 — Bu Ratna, 34 tahun, luka bakar di tangan akibat tersiram air panas
+
+ID
+
+integ_45
+
+Kategori
+
+integumen
+
+Nama
+
+Kasus 45 - Integumen
+
+Level
+
+4A
+
+Judul Kasus
+
+Bu Ratna, 34 tahun, luka bakar di tangan akibat tersiram air panas
+
+Identitas
+
+Nama: Ratna, Usia: 34, Pekerjaan: Ibu rumah tangga, Alamat: -
+
+Skenario Awal
+
+Seorang wanita 34 tahun datang dengan keluhan luka bakar di tangan setelah tersiram air panas saat memasak.
+
+Keluhan Utama
+
+Tangan kanan tersiram air panas 1 jam yang lalu saat memasak, terasa nyeri hebat dan muncul lepuhan
+
+RPS
+
+Nyeri hebat pada area yang terkena
+
+Muncul lepuhan (bula) berisi cairan bening pada sebagian area
+
+Sudah dialiri air keran sesaat setelah kejadian
+
+RPD
+
+Tidak ada riwayat penyakit kronis
+
+RPK
+
+Tidak ada anggota keluarga dengan keluhan serupa
+
+Lifestyle
+
+Memasak menggunakan panci besar tanpa alas pelindung tangan
+
+Pemeriksaan Fisik
+
+Keadaan umum: tampak kesakitan, kesadaran compos mentis
+
+Tanda vital: dalam batas normal
+
+*Status Lokalis: pada dorsum manus dekstra tampak area eritema tanpa bula (derajat 1) seluas ±2%, serta area dengan bula berisi cairan jernih, dasar merah muda, nyeri saat disentuh (derajat 2 superfisial) seluas ±3%
+
+Total luas luka bakar: ±5% total body surface area (Rule of Nine/telapak tangan pasien)
+
+Jalan napas, tanda inhalation injury: tidak ada
+
+Pemeriksaan Penunjang
+
+Tidak diperlukan pemeriksaan penunjang khusus untuk luka bakar derajat 1-2 luas terbatas, diagnosis ditegakkan secara klinis
+
+DD Benar
+
+Luka Bakar Derajat 1 dan 2 (Luas Terbatas)
+
+DD Diferensial Benar
+
+Luka bakar termal derajat 1-2
+
+Dermatitis kontak akut
+
+Selulitis (bila terjadi infeksi sekunder)
+
+Luka bakar derajat 3 (bila kedalaman lebih dalam)
+
+Tatalaksana
+
++Dinginkan area luka dengan air mengalir suhu ruang selama 15-20 menit bila masih dalam periode akut
+
++Krim antimikroba topikal untuk luka derajat 2
+
+R/ Silver sulfadiazine cream 1% tube 20 g No. I
+
+S 1-2 dd applic loc dol setelah luka dibersihkan, tutup dengan kasa steril
+
++Analgetik
+
+R/ Paracetamol tab 500 mg No. X
+
+S 3 dd tab I prn nyeri
+
++Profilaksis tetanus sesuai status imunisasi
+
+-Mengoleskan pasta gigi, kecap, atau bahan rumah tangga lain pada luka bakar
+
+Edukasi
+
++Jaga luka tetap bersih dan lakukan ganti balut sesuai anjuran hingga luka mengering
+
++Segera kontrol/rujuk bila luas luka bertambah, tanda infeksi (nanah, bau, demam), atau luka bakar mengenai wajah/tangan/genital/luas >10% (butuh penanganan lebih lanjut)
+
+-Membiarkan luka terbuka tanpa penutup di lingkungan kotor
+
++Jangan pecahkan bula, biarkan sebagai pelindung alami; bula yang sudah pecah dibersihkan dan ditutup
+
+
+

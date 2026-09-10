@@ -1,0 +1,131 @@
+{
+  "id": "integ_44",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 44 - Integumen",
+  "judulKasus": "Bp. Eko, 26 tahun, luka robek di tangan akibat kecelakaan kerja",
+  "identitas": "Eko, 26 tahun, Buruh pabrik",
+  "skenarioAwal": "Seorang laki-laki 26 tahun dibawa ke UGD dengan luka robek di lengan bawah akibat tersangkut mesin.",
+  "keluhanUtama": "Luka robek di lengan bawah kiri sejak 30 menit yang lalu setelah tersangkut mesin di tempat kerja",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Perdarahan aktif namun dapat dikendalikan dengan penekanan",
+        "Nyeri hebat pada area luka",
+        "Tidak ada mati rasa atau kelemahan gerak jari"
+      ],
+      "rpd": "Tidak ada riwayat penyakit perdarahan",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Bekerja di pabrik dengan mesin tanpa alat pelindung diri lengkap"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "tampak kesakitan, kesadaran compos mentis",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 120/80 mmHg, nadi 92x/menit, dalam batas normal lainnya",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_lokalis",
+        "nama": "Status Lokalis",
+        "temuan": "luka robek (vulnus laseratum) tepi tidak rata sepanjang 6 cm di regio antebrachii sinistra, kedalaman mencapai subkutis, perdarahan aktif ringan",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_pemeriksaan_neurovaskular_distal_sensibi",
+        "nama": "Pemeriksaan neurovaskular distal (sensibilitas, pengisian kapiler, gerak jari)",
+        "temuan": "dalam batas normal",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_riwayat_imunisasi_tetanus",
+        "nama": "Riwayat imunisasi tetanus",
+        "temuan": "tidak diketahui pasti/tidak lengkap",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Vulnus Laseratum",
+    "differensialBenar": [
+      "Vulnus laseratum",
+      "Vulnus punctum",
+      "Cedera tendon/saraf (bila ada defisit neurovaskular)",
+      "Fraktur terbuka (bila dicurigai)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Irigasi luka dengan NaCl 0,9% dan debridement jaringan nekrotik/kotor",
+      "benar": true
+    },
+    {
+      "opsi": "Penjahitan luka (hecting) primer bila luka bersih dan <6-8 jam sejak kejadian",
+      "benar": true
+    },
+    {
+      "opsi": "Profilaksis tetanus sesuai status imunisasi (tetanus toksoid ± Human Tetanus Immunoglobulin bila status tidak jelas/luka kotor)",
+      "benar": true
+    },
+    {
+      "opsi": "Antibiotik oral profilaksis",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Amoxicillin tab 500 mg No. XV",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd tab I (selama 5 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Analgetik",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Asam mefenamat tab 500 mg No. X",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd tab I prn nyeri",
+      "benar": false
+    },
+    {
+      "opsi": "Menjahit luka yang sudah kotor/lebih dari 8 jam tanpa debridement adekuat (risiko infeksi)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga luka tetap kering dan bersih, kontrol ganti balut sesuai jadwal, dan kontrol untuk angkat jahitan (biasanya 7-14 hari tergantung lokasi)",
+      "benar": true
+    },
+    {
+      "opsi": "Segera kontrol bila luka bengkak, kemerahan meluas, keluar nanah, atau demam (tanda infeksi)",
+      "benar": true
+    },
+    {
+      "opsi": "Membiarkan luka basah/terkena air kotor sebelum sembuh",
+      "benar": false
+    }
+  ]
+}

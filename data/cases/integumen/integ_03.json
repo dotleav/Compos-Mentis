@@ -1,0 +1,117 @@
+{
+  "id": "integ_03",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 3 - Integumen",
+  "judulKasus": "Bp. Herman, 58 tahun, nyeri dan bintil berair di pinggang sebelah kanan",
+  "identitas": "Herman, 58 tahun, Pensiunan",
+  "skenarioAwal": "Seorang laki-laki 58 tahun datang ke poli dengan keluhan nyeri terbakar disertai bintil berair di pinggang kanan.",
+  "keluhanUtama": "Nyeri seperti terbakar di pinggang kanan sejak 4 hari, diikuti muncul bintil berair 1 hari yang lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Nyeri hebat mendahului lesi kulit 2-3 hari",
+        "Bintil tersusun berkelompok mengikuti satu sisi tubuh",
+        "Demam ringan"
+      ],
+      "rpd": "Riwayat cacar air saat usia 8 tahun",
+      "rpk": "Tidak ada riwayat keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Aktivitas sehari-hari normal, tidak ada riwayat imunosupresi"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "tampak sakit ringan, kesadaran compos mentis",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "suhu 37,8°C, lainnya dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "vesikel berkelompok di atas dasar eritema, tersusun sesuai dermatom torakal unilateral (setinggi Th10 kanan), tidak melewati garis tengah tubuh",
+        "signifikan": true,
+        "wajibLapor": true,
+        "image": "pf_status_dermatologisujud_kelainan_kulit_u.png"
+      },
+      {
+        "id": "pf_nyeri_tekan_pada_area_lesi",
+        "nama": "Nyeri tekan pada area lesi",
+        "temuan": "ada",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Herpes Zoster Tanpa Komplikasi",
+    "differensialBenar": [
+      "Herpes zoster",
+      "Herpes simpleks",
+      "Dermatitis kontak alergika",
+      "Varisela"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antivirus oral, idealnya diberikan <72 jam sejak onset lesi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Acyclovir tab 800 mg No. XXXV",
+      "benar": false
+    },
+    {
+      "opsi": "S 5 dd tab I (selama 7 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Analgetik untuk nyeri neuropatik",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Paracetamol tab 500 mg No. XV",
+      "benar": false
+    },
+    {
+      "opsi": "S 3 dd tab I prn nyeri",
+      "benar": false
+    },
+    {
+      "opsi": "Kompres basah dengan larutan NaCl 0,9% pada vesikel yang pecah",
+      "benar": true
+    },
+    {
+      "opsi": "Pemberian kortikosteroid sistemik rutin tanpa indikasi khusus",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jaga lesi tetap kering dan bersih untuk mencegah infeksi sekunder",
+      "benar": true
+    },
+    {
+      "opsi": "Segera kontrol bila nyeri menetap setelah lesi sembuh (curiga neuralgia pasca-herpetik) atau bila lesi mengenai area mata",
+      "benar": true
+    },
+    {
+      "opsi": "Menggaruk atau memecahkan vesikel sendiri",
+      "benar": false
+    }
+  ]
+}

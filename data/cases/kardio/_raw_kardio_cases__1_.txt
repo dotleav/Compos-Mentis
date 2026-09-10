@@ -1,0 +1,1790 @@
+Kasus 1: Atrial Fibrilasi
+
+ID
+
+kard_01
+
+Kategori
+
+kardio
+
+Nama
+
+Atrial Fibrilasi
+
+Level
+
+3B
+
+Judul Kasus
+
+James, 43 tahun, karyawan swasta, dada berdebar berulang
+
+Identitas
+
+James, 43 tahun, Karyawan swasta
+
+Skenario Awal
+
+Seorang pasien 43 tahun, datang ke poli dengan keluhan dada berdebar.
+
+Keluhan Utama
+
+Dada berdebar
+
+RPS
+
+Dada berdebar sejak 1 hari - seminggu
+
+Semakin terasa berdebar, terus menerus
+
+Semakin berdebar saat beraktivitas; saat istirahat tetap berdebar
+
+Keluhan lain (-)
+
+RPD
+
+Pernah seperti ini sebelumnya selama 5 bulan Alergi (-) Riwayat hipertensi (+) 2 tahun Merokok sudah berhenti, 10 tahun lalu Makanan bervariasi: lemak, gorengan
+
+RPK
+
+Riwayat hipertensi ayah (+)
+
+Lifestyle
+
+Bisa biasa aja
+
+Pemeriksaan Fisik
+
+TD: 130/80 mmHg
+
+Suhu: 36,5°C
+
+Nadi: 155x/menit
+
+Nafas: 22x/menit
+
+SpO2: 96%
+
+Mulut: sianosis (-)
+
+Inspeksi: dalam batas normal
+
+Palpasi: iktus kordis teraba SIC 5, impuls tidak teraba, kardiomegali (-)
+
+Auskultasi: S1 & S2 irregular (suara tambahan sulit dievaluasi), pulmo: ronki (-), wheezing (-) *Pulsus Defisit (+)
+
+JVP: 5+2
+
+Pemeriksaan Penunjang
+
+!*EKG: Gelombang P tidak tampak (digantikan gelombang fibrilasi/fibrillatory waves), respons ventrikel ireguler (irregularly irregular), interval R-R bervariasi, HR ±150x/menit.
+
+
+
+Darah lengkap: 
+
+
+
+Elektrolit (K, Na, Cl):
+
+
+
+Fungsi Tiroid:
+
+
+
+DD Benar
+
+Atrial Fibrilasi
+
+DD Diferensial Benar
+
+Atrial Flutter
+
+Hiperkalemia
+
+PAC
+
+Tatalaksana
+
++Kontrol Laju (Rate Control) - jika stabil
+
++R/ Bisoprolol tab mg 5 No. XXX s.1.d.d tab. I
+
++Antikoagulan (CHA2DS2-VASc score)
+
++R/ Warfarin tab mg 2 No. XXX s.1.d.d tab. I
+
+Edukasi
+
++Rujuk Sp.JP
+
++Minum obat secara teratur
+
+-Jangan menghentikan obat sendiri
+
++Kontrol rutin
+
++Hindari pemicu (stres, kafein berlebih)
+
++Segera ke IGD kalau ada tanda perburukan
+
+ 
+
+Kasus 2: SVT (Supraventrikular Takikardia)
+
+ID
+
+kard_02
+
+Kategori
+
+kardio
+
+Nama
+
+SVT (Supraventrikular Takikardia)
+
+Level
+
+3B
+
+Judul Kasus
+
+Aldrik, 37 tahun, karyawan swasta, dada berdebar saat aktivitas
+
+Identitas
+
+Aldrik, 37 tahun, Karyawan swasta, tinggal di Jetis
+
+Skenario Awal
+
+Seorang pasien 37 tahun, datang ke poli dengan keluhan dada berdebar.
+
+Keluhan Utama
+
+Dada berdebar
+
+RPS
+
+Berdebar saat beraktivitas
+
+Sudah 2 jam, terus menerus
+
+Tidak sesak
+
+Tidak menjalar
+
+Tidak pingsan (sinkop negatif)
+
+Belum diobati
+
+RPD
+
+Sebelumnya sudah pernah tapi tidak dibawa ke RS Trauma: -
+
+RPK
+
+Hipertensi: - 
+
+DM: -
+
+Lifestyle
+
+HT: -
+
+Rokok: -
+
+Kopi: -
+
+Pemeriksaan Fisik
+
+KU: Kompos mentis
+
+Suhu: 36,8°C
+
+TD: 115/79 mmHg
+
+HR: 160 bpm, reguler
+
+RR: 22x/menit
+
+Thorax Inspeksi: pergerakan dada simetris, ictus cordis terlihat
+
+Palpasi: pulsasi ventrikel dextra teraba, sistolik epigastrium
+
+Perkusi: aorta dalam batas normal, batas jantung dextra et sinistra dalam batas normal
+
+Auskultasi: napas vesikuler, aorta bruit, ictus cordis dalam batas normal, katup aorta dalam batas normal, katup pulmonal dalam batas normal
+
+CRT dan akral: periksa
+
+Pemeriksaan Penunjang
+
+!*EKG: Takikardi reguler, kompleks QRS sempit (narrow complex), gelombang P sulit diidentifikasi (tertutup gelombang T), HR ±160x/menit.
+
+
+
+Pemeriksaan Elektrolit: 
+
+
+
+Pemeriksaan Darah rutin: 
+
+
+
+Cek fungsi ginjal: 
+
+
+
+!Rontgen: dalam batas normal 
+
+
+
+DD Benar
+
+Supraventrikular Takikardia (SVT)
+
+DD Diferensial Benar
+
+Atrial Flutter
+
+Atrial Fibrilasi
+
+Tatalaksana
+
++TAHAP PERTAMA: Pijat Karotis (cek bruit dulu) → 2 jari, 5-10 detik
+
++TAHAP KEDUA: Modified Valsalva Maneuver → mengejan 15 detik lalu baringkan dengan kaki diangkat
+
++FARMAKO jika gagal: Adenosin IV bolus cepat 6mg/2mL No. II, flush NaCl 0.9% 20cc
+
++Jika gagal ulang: Adenosin 12mg/4mL No. II (maks 2x 12mg)
+
++Jika adenosin gagal: R/ Inj. Diltiazem 5mg/mL, 5mL No. I, bolus IV pelan 2 menit
+
++Oral take-home (pencegahan kambuh): R/ Bisoprolol tab mg 2,5 No. X s.1.d.d tab I (pagi)
+
+-Tidak dilakukan manuver vagal sebelum farmako
+
+Edukasi
+
++Rujuk Sp.JP untuk observasi
+
++Ajarkan pasien vagal maneuver jika perlu
+
++Gangguan jalur listrik kecil di jantung yang bikin jantung berdenyut terlalu cepat dan beraturan, namanya SVT. Ini biasanya tidak berbahaya/mengancam nyawa, tapi memang bisa mengganggu kenyamanan
+
++Hindari pemicu: kafein, alkohol, kurang tidur, stres berlebihan
+
+-Berhenti obat sendiri
+
+ 
+
+Kasus 3: CHF (Congestive Heart Failure)
+
+ID
+
+kard_03
+
+Kategori
+
+kardio
+
+Nama
+
+CHF (Congestive Heart Failure)
+
+Level
+
+3B
+
+Judul Kasus
+
+Siti, 73 tahun, pensiunan, sesak napas 6 bulan terakhir
+
+Identitas
+
+Siti, 73 tahun, Pensiunan
+
+Skenario Awal
+
+Seorang wanita 73 tahun, datang ke poli dengan keluhan sesak napas / napas tidak lega.
+
+Keluhan Utama
+
+Sesak napas / napas tidak lega
+
+RPS
+
+Sesak napas sejak 6 bulan terakhir
+
+Tiap malam hari terasa sesak
+
+Tidak ada nyeri dada
+
+Tidak ada jantung berdebar-debar
+
+Jika beraktivitas sedang-berat memburuk
+
+Membaik jika istirahat, tapi nanti gitu lagi
+
+RPD
+
+Tidak ada riwayat serupa sebelumnya Tidak pernah pingsan Punya DM & Hipertensi Obat rutin: Amlodipine + Metformin
+
+RPK
+
+Ibu: DM Ayah: gagal jantung, gagal ginjal
+
+Lifestyle
+
+Kegiatan sehari-hari biasa
+
+Pemeriksaan Fisik
+
+KU: CM, tampak sesak
+
+Suhu: 36,7°C
+
+TD: 160/80 mmHg
+
+SpO2: 95%
+
+RR: 24x/menit Tidak sianosis Edema tungkai bilateral (+) 
+
+CRT: dalam batas normal 
+
+Akral: teraba hangat 
+
+*Palpasi Iktus Kordis: di SIC 6 linea axillaris anterior
+
+Perkusi: Batas jantung kanan dalam batas normal, Batas kiri jantung pembesaran SIC6 Perut timpani
+
+*Auskultasi: Ada bunyi Gallop di katup pulmonal (diperiksa katup aorta, pulmonal, tricuspid, mitral) Ada ronki positif pada setengah basal paru bilateral Fremitus meningkat
+
+JVP: 5 + 4 (abnormal)
+
+Pemeriksaan Penunjang
+
+*NT-proBNP:
+
+
+
+!*EKG: Sinus takikardi, tanda hipertrofi ventrikel kiri (LVH) dengan strain pattern.
+
+
+
+
+
+
+
+
+
+
+
+!*X-ray: Kardiomegali (cardiothoracic ratio >50%), tanda bendungan paru (kongesti vaskular/edema interstitial).
+
+
+
+DD Benar
+
+Gagal Jantung (CHF)
+
+DD Diferensial Benar
+
+Hipertensi Pulmoner
+
+Pneumonia berat
+
+Tatalaksana
+
+-4 Pilar CHF:
+
++R/ Tab. Furosemide 40 mg No. X S 1 d d tab I (Pagi)
+
++R/ Tab. Captopril 12,5 mg No. XXX S 3 d d tab I (1 jam sebelum makan)
+
++R/ Tab. Bisoprolol 1,25 mg No. X S 1 d d tab I (Pagi)
+
++R/ Tab. Dapagliflozin 10 mg No. X S 1 d d tab I (Pagi)
+
+Edukasi
+
++Rujuk Sp.JP untuk ekokardiografi dll
+
++Jangan terlalu banyak minum agar jantungnya ga terlalu berat kerjanya dan biar gak makin sesek, minum 1,5-2 liter/hari
+
++Hindari makan terlalu banyak garam/MSG/kemasan
+
++Hindari gorengan
+
++Kontrol rutin, jangan stop obat sendiri
+
+-Tidak perlu timbang berat badan rutin di rumah
+
+ 
+
+Kasus 4: Krisis Hipertensi Urgensi
+
+ID
+
+kard_04
+
+Kategori
+
+kardio
+
+Nama
+
+Krisis Hipertensi Urgensi
+
+Level
+
+3B
+
+Judul Kasus
+
+Ainz Ooal Gown, 23 tahun, PNS, kepala dan leher nyeri, TD ≥ 180/110 mmHg
+
+Identitas
+
+Ainz Ooal Gown, 23 tahun, PNS
+
+Skenario Awal
+
+Seorang pasien 23 tahun, datang ke poli dengan keluhan kepala dan leher nyeri.
+
+Keluhan Utama
+
+Kepala dan leher nyeri
+
+RPS
+
+Nyeri terasa di seluruh kepala, menjalar ke leher terasa kaku, 2 hari yang lalu terasa memberat
+
+Mulai terasa sejak 1 minggu yang lalu
+
+Karakteristik nyeri seperti ditekan, memberat ketika beraktivitas
+
+RPD
+
+Pernah seperti ini 1 minggu yang lalu, belum diobati Ada minum obat hipertensi yaitu amlodipine sejak lama
+
+RPK
+
+Riwayat bapak: kolesterol dan hipertensi, karena sakit jantung Riwayat ibu: hipertensi dan DM
+
+Lifestyle
+
+Riwayat merokok 12 batang
+
+Suka makan gorengan dan fast food
+
+Suka yang asin-asin
+
+Jarang olahraga
+
+Jarang minum air
+
+Pemeriksaan Fisik
+
+*TD: 200/110 mmHg (≥180/110 mmHg syarat krisis HT)
+
+Suhu: 37°C
+
+RR: 20x/menit
+
+HR: 88x/menit
+
+HTT - cek visus dan funduskopi: ada lateralisasi tapi masih normal
+
+Fungsi Motorik dan Sensorik: Periksa kekuatan otot keempat ekstremitas (tangan dan kaki) secara simetris Nyeri ketok kostovertebra (+)
+
+Pemeriksaan Penunjang
+
+!*EKG: Tanda hipertrofi ventrikel kiri (LVH), irama sinus, tidak tampak tanda iskemia akut.
+
+
+
+!*rontgen/Xray: Cor dan pulmo dalam batas normal, tidak tampak tanda edema paru akut atau kardiomegali.
+
+
+
+DD Benar
+
+Krisis Hipertensi Urgensi
+
+DD Diferensial Benar
+
+Hipertensi Emergensi
+
+Syok Kardiogenik
+
+Tatalaksana
+
++Short acting antihipertensi
+
++R/ Captopril 25mg tab No. X s.p.r.n tab 1
+
++Diuretik: R/ Furosemide tab mg 40 No. X S 1.d.d tab I (pagi)
+
+-Langsung intravena tanpa evaluasi klinis dahulu
+
+Edukasi
+
++Minum obat antihipertensi sesuai resep dan teratur
+
++Jangan menghentikan atau mengubah dosis obat tanpa anjuran dokter
+
++Kontrol tekanan darah secara rutin sesuai jadwal
+
++Batasi konsumsi garam (diet rendah garam) dan hindari makanan tinggi natrium
+
++Perbanyak konsumsi buah, sayur, dan makanan bergizi seimbang
+
++Lakukan aktivitas fisik atau olahraga secara teratur sesuai kondisi
+
++Jaga berat badan ideal
+
++Hindari merokok, alkohol, dan batasi konsumsi kafein berlebihan
+
++Kelola stres dan istirahat yang cukup
+
++Minum obat penyakit penyerta (misal diabetes atau kolesterol) secara teratur bila ada
+
++Segera ke IGD bila muncul tanda bahaya: nyeri dada, sesak napas, sakit kepala hebat, gangguan penglihatan, kelemahan/baal salah satu sisi tubuh, sulit bicara, kejang, atau penurunan kesadaran
+
+-Karena tekanan darah sangat tinggi, harus diturunkan secepat mungkin dalam hitungan menit
+
+ 
+
+Kasus 5: Hipertensi Esensial dengan Dislipidemia
+
+ID
+
+kard_05
+
+Kategori
+
+kardio
+
+Nama
+
+Hipertensi Esensial dengan Dislipidemia
+
+Level
+
+3A
+
+Judul Kasus
+
+Andri, 47 tahun, karyawan swasta, nyeri leher tidak menjalar
+
+Identitas
+
+Andri, 47 tahun, Karyawan swasta
+
+Skenario Awal
+
+Seorang pasien 47 tahun, datang ke poli dengan keluhan nyeri leher tidak menjalar.
+
+Keluhan Utama
+
+Nyeri leher tidak menjalar
+
+RPS
+
+Nyeri leher tidak menjalar
+
+Sudah 2 minggu
+
+Memburuk saat lagi cape
+
+Belum pernah seperti ini
+
+Pusing saat nyeri leher
+
+Udah minum obat amlodipin → ga membaik
+
+Ada hipertensi sejak 1 tahun lalu
+
+RPD
+
+Ibu: hipertensi Ayah: meninggal karena stroke
+
+RPK
+
+Ibu: hipertensi Ayah: meninggal karena stroke
+
+Lifestyle
+
+Suka makan gorengan & minum soda & minum kopi (gapake gula) 1 cangkir sehari
+
+Jarang makan sayur hijau
+
+Merokok sehari 12 batang
+
+Jarang olahraga
+
+Alergi obat: ada alergi obat (perlu ditanyakan)
+
+Pemeriksaan Fisik
+
+TD: 170/100 (minum amlodipine tetap tinggi)
+
+Suhu: 36,5°C
+
+Nadi: 80x/menit
+
+Nafas: 20x/menit
+
+Inspeksi: dalam batas normal
+
+Palpasi: dalam batas normal
+
+Perkusi: dalam batas normal
+
+Auskultasi: dalam batas normal
+
+Pemeriksaan Penunjang
+
+!*Profil lipid: dislipidemia
+
+
+
+Darah rutin: dbn
+
+
+
+!Rontgen: dalam batas normal
+
+
+
+!EKG: dalam batas normal
+
+
+
+DD Benar
+
+Hipertensi Esensial dengan Dislipidemia
+
+DD Diferensial Benar
+
+Tension Headache
+
+Hipertensi Sekunder (ada penyakit yang mendasar)
+
+Tatalaksana
+
++Hipertensi:
+
++R/ Amlodiplin tab mg 5 No X s.1.d.d tab 1
+
+-Atau
+
++R/ Captopril 25mg tab No. X s.p.r.n tab 1
+
+-Atau
+
++R/ Candesartan tab mg 16 No. XXI s.1.d.d tab 1 h.s
+
++Dislipidemia:
+
++R/ Simvastatin tab mg 10 No X s.1.d.d tab 1 h.s
+
+Edukasi
+
++Mengatur pola makan
+
++Olahraga
+
++Makan sayur buah
+
++Jelaskan cara mengukur tensi berapa kali sehari
+
++Evaluasi → perlu kontrol atau tidak
+
+-Obat boleh dihentikan sendiri kalau tensi sudah normal beberapa hari
+
+ 
+
+
+
+kard_06 — Sindrom Koroner Akut — STEMI
+
+ID
+
+kard_06
+
+Kategori
+
+kardio
+
+Nama
+
+Sindrom Koroner Akut — STEMI
+
+Level
+
+3B
+
+Judul Kasus
+
+Ferlix 58 tahun, nyeri dada kiri menjalar ke lengan kiri mendadak saat istirahat
+
+Identitas
+
+Ferlix, laki-laki, 58 tahun
+
+Skenario Awal
+
+Seorang pasien laki-laki 58 tahun, datang ke IGD dengan nyeri dada kiri mendadak yang menjalar ke lengan kiri.
+
+Keluhan Utama
+
+Nyeri dada kiri mendadak
+
+RPS
+
+Nyeri dada kiri seperti ditekan batu besar, menjalar ke lengan kiri dan rahang, sejak 1 jam
+
+Nyeri terus-menerus, tidak membaik dengan istirahat atau perubahan posisi
+
+Berkeringat dingin, mual, lemas
+
+Sesak napas ringan
+
+Tidak ada riwayat nyeri serupa sebelumnya
+
+RPD
+
+Hipertensi 10 tahun (minum amlodipine). DM tipe 2 (metformin). Perokok aktif 30 pak-tahun.
+
+RPK
+
+Ayah meninggal mendadak usia 55 tahun, diduga serangan jantung
+
+Lifestyle
+
+Perokok aktif 1,5 pak/hari sejak usia 20 tahun
+
+Diet tinggi lemak dan garam
+
+Jarang olahraga
+
+Stres pekerjaan tinggi sebagai supervisor pabrik
+
+Pemeriksaan Fisik
+
+*Kesan Umum: Tampak kesakitan, pucat, berkeringat dingin
+
+*TTV: TD 90/60 mmHg
+
+*HR: 104x/mnt
+
+*RR 24x/mnt
+
+*Suhu: 36,8°C
+
+* SpO2: Sp02 94%
+
+*Auskultasi Jantung: S1 S2 melemah, S3 gallop (+)
+
+*Auskultasi Paru: ronki basah halus di basal bilateral
+
+*Ekstremitas: akral dingin
+
+*CRT: >3 detik
+
+Pemeriksaan Penunjang
+
+!*EKG: irama sinus dengan elevasi segmen ST pada lead II, III, dan aVF. Elevasi ST yang lebih tinggi pada lead III dibandingkan lead II mengarah pada oklusi arteri koroner kanan (RCA) dominan. Selain itu, tampak gelombang Q patologis pada lead II, III, dan aVF, yang menunjukkan bahwa STEMI telah memasuki fase subakut. 
+
+
+
+
+
+!*Foto Thorax AP: kardiomegali, corakan vaskular paru meningkat (redistribusi), tidak ada pneumothorax
+
+
+
+
+
+*Enzim jantung/Biomarker jantung/Troponin/CKMB:
+
+
+
+Darah rutin:
+
+
+
+GDS:
+
+
+
+
+
+DD Benar
+
+STEMI (ST-Elevation Myocardial Infarction)
+
+DD Diferensial Benar
+
+STEMI (ST-Elevation Myocardial Infarction)
+
+NSTEMI
+
+Angina Tidak Stabil
+
+Diseksi Aorta
+
+Tatalaksana
+
++MONA: Morfin IV 2-4 mg (nyeri), Oksigen bila SpO2 <94%, Nitrat sublingual (bila TD>90), Aspirin 320mg loading
+
++Antiplatelet ganda (DAPT): aspirin 320mg + tikagrelol 180mg (atau klopidogrel 600mg) loading segera
+
++Antikoagulan: heparin IV bolus 60 IU/kgBB (maks 4000 IU) lanjut infus
+
++Reperfusi SEGERA: PCI primer (target door-to-balloon <90 menit) — pilihan utama bila fasilitas tersedia
+
++Trombolitik (streptokinase/alteplase) bila PCI tidak tersedia dalam 120 menit dan tidak ada kontraindikasi
+
+-Tunggu hasil troponin serial 6 jam sebelum memulai terapi pada STEMI
+
+Edukasi
+
++Henti merokok total — merokok melipatgandakan risiko serangan jantung ulang
+
++Minum obat jantung (aspirin, statin, beta blocker, ACE inhibitor) seumur hidup — jangan berhenti tanpa konsultasi
+
++Kenali tanda serangan jantung ulang dan segera ke IGD — jangan tunggu
+
+-Setelah STEMI, aktivitas fisik harus dihentikan total seumur hidup
+
+
+
+kard_07 — NSTEMI / Angina Tidak Stabil
+
+ID
+
+kard_07
+
+Kategori
+
+kardio
+
+Nama
+
+NSTEMI / Angina Tidak Stabil
+
+Level
+
+3B
+
+Judul Kasus
+
+Marciella, 62 tahun, nyeri dada saat jalan kaki 100 meter, makin sering, pernah hilang sendiri
+
+Identitas
+
+Marciella, perempuan, 62 tahun
+
+Skenario Awal
+
+Seorang pasien perempuan 62 tahun, datang ke poli dengan keluhan nyeri dada yang makin sering terjadi saat aktivitas ringan.
+
+Keluhan Utama
+
+Nyeri dada saat aktivitas
+
+RPS
+
+Nyeri dada seperti tertekan saat jalan kaki 100 meter atau naik tangga sejak 3 minggu
+
+Nyeri membaik dalam 5-10 menit dengan istirahat
+
+Makin sering — dulu hanya saat olahraga berat, kini saat jalan pelan pun nyeri
+
+Tadi malam nyeri muncul saat istirahat (rest angina) — baru pertama kali
+
+Tidak menjalar, tidak ada keringat dingin berlebihan
+
+Sesak napas ringan saat nyeri
+
+RPD
+
+Hipertensi 5 tahun (amlodipin). Kolesterol tinggi tidak diobati. Tidak ada DM.
+
+RPK
+
+Ibu meninggal karena penyakit jantung usia 65 tahun
+
+Lifestyle
+
+Tidak merokok
+
+Jarang olahraga sejak pensiun
+
+Diet tinggi lemak jenuh
+
+Stres mengurus cucu sendirian
+
+Pemeriksaan Fisik
+
+KU: Tampak cemas, tidak sesak saat istirahat
+
+TTV: TD 155/95 mmHg, HR 88x/mnt, RR 18x/mnt, Suhu 36,6°C, SpO2 97%
+
+Jantung: S1 S2 reguler, tidak ada murmur atau gallop
+
+Paru: vesikuler normal, tidak ada ronki
+
+Ekstremitas: akral hangat, tidak ada edema
+
+Pemeriksaan Penunjang
+
+*EKG: depresi segmen ST horizontal pada lead inferior (II, III, aVF) dan prekordial lateral terutama V4–V6 
+
+
+
+*Troponin I: 0,08 ng/mL 
+
+
+
+!*Foto Thorax: kardiomegali ringan, tidak ada edema paru
+
+
+
+Profil lipid: 
+
+
+
+Ekokardiografi: 
+
+
+
+DD Benar
+
+Angina Tidak Stabil (Unstable Angina)
+
+DD Diferensial Benar
+
+Angina Tidak Stabil (Unstable Angina)
+
+NSTEMI
+
+STEMI
+
+Refluks Gastroesofageal
+
+Tatalaksana
+
++Rawat inap, tirah baring, monitoring EKG kontinu dan troponin serial
+
++DAPT: aspirin 160mg + klopidogrel 300mg loading, lanjut aspirin 80mg + klopidogrel 75mg
+
++Antikoagulan: fondaparinux SC 2,5mg/hari atau heparin
+
++Beta bloker (bisoprolol 2,5-5mg) dan statin intensitas tinggi (atorvastatin 40-80mg)
+
++Rujuk kardiologi untuk pertimbangan kateterisasi (angiografi koroner) dan revaskularisasi
+
+-Nitrat sublingual bisa diberikan seumur hidup sebagai satu-satunya terapi angina
+
+Edukasi
+
++Angina tidak stabil adalah peringatan pra-serangan jantung — harus ditangani segera
+
++Minum statin dan antiplatelet sesuai resep — jangan berhenti sendiri
+
++Pantau tekanan darah dan kolesterol secara rutin
+
+-Angina yang hilang sendiri tidak berbahaya dan tidak perlu diobati
+
+
+
+kard_08 — Edema Paru Akut
+
+ID
+
+kard_08
+
+Kategori
+
+kardio
+
+Nama
+
+Edema Paru Akut
+
+Level
+
+3B
+
+Judul Kasus
+
+Subiowo 65 tahun, sesak napas berat mendadak tengah malam, duduk tegak, batuk berbusa merah muda
+
+Identitas
+
+Subiowo, laki-laki, 65 tahun
+
+Skenario Awal
+
+Seorang pasien laki-laki 65 tahun, diantar ke IGD tengah malam dengan sesak napas berat mendadak.
+
+Keluhan Utama
+
+Sesak napas berat mendadak
+
+RPS
+
+Sesak napas berat mendadak saat tidur 2 jam lalu, sampai duduk tegak karena tidak bisa berbaring (ortopnea)
+
+Batuk dahak berbusa warna merah muda (pink frothy sputum)
+
+Berkeringat dingin
+
+Tidak ada demam
+
+Riwayat sesak makin berat 1 minggu ini saat naik tangga
+
+Kaki bengkak bilateral sejak 2 minggu
+
+RPD
+
+CHF sudah diketahui 3 tahun (EF 30%). HT, DM. Biasa minum furosemid, ramipril, bisoprolol — 3 hari terakhir tidak minum furosemid karena obat habis.
+
+RPK
+
+Tidak ada penyakit keluarga yang relevan
+
+Lifestyle
+
+Minum garam berlebihan 3 hari terakhir
+
+Tidak olahraga
+
+Perokok mantan (berhenti 5 tahun lalu)
+
+Pemeriksaan Fisik
+
+*KU: Tampak sangat sesak, duduk tegak (tripod position), tidak bisa berbaring
+
+*TTV: TD 180/110 mmHg, HR 120x/mnt, RR 36x/mnt, Suhu 36,7°C, SpO2 80% udara ruangan
+
+*Auskultasi paru: ronki basah kasar di seluruh lapang paru bilateral — tanda edema alveolar
+
+*Jantung: S3 gallop (+), JVP meningkat (5cm di atas sudut sternum)
+
+*Ekstremitas: edema pitting tungkai bilateral sampai lutut, akral dingin
+
+Pemeriksaan Penunjang
+
+!*Foto Thorax AP: edema paru (opasitas butterfly/bat wing bilateral), kardiomegali, efusi pleura bilateral, garis Kerley B (+)
+
+
+
+*EKG: sinus takikardia, LVH, tidak ada elevasi ST akut
+
+
+
+
+
+BNP/NT-proBNP: 
+
+
+
+Troponin: 
+
+
+
+AGD: 
+
+
+
+DD Benar
+
+Edema Paru Akut
+
+DD Diferensial Benar
+
+Edema Paru Akut
+
+Eksaserbasi PPOK
+
+Asma Bronkial
+
+Pneumonia Berat
+
+Tatalaksana
+
++Posisi duduk tegak (90°), oksigen aliran tinggi via NRM atau NIV (CPAP/BiPAP) untuk SpO2 ≥94%
+
++Furosemid IV 40-80mg bolus segera — diuretik adalah tulang punggung terapi
+
++Nitrogliserin IV atau sublingual bila TD sistolik >100 mmHg — vasodilator untuk mengurangi preload dan afterload
+
++Morfin IV 2-4mg untuk mengurangi kecemasan dan preload (gunakan dengan hati-hati)
+
++Rawat ICU/ICCU, monitoring SpO2, tekanan darah, dan urin output ketat
+
+-Beta bloker dosis tinggi diberikan segera untuk menurunkan denyut jantung pada edema paru akut
+
+Edukasi
+
++Jangan pernah berhenti minum furosemid tanpa konsultasi dokter — penghentian mendadak bisa menyebabkan edema paru
+
++Batasi garam <2g/hari dan cairan <1,5 liter/hari
+
++Timbang badan tiap pagi — kenaikan >2kg dalam 2 hari = tanda retensi cairan, segera ke dokter
+
+-Edema paru akut cukup ditangani di rumah dengan menambah dosis furosemid sendiri
+
+
+
+kard_09 — Endokarditis Infektif
+
+ID
+
+kard_09
+
+Kategori
+
+kardio
+
+Nama
+
+Endokarditis Infektif
+
+Level
+
+3B
+
+Judul Kasus
+
+Aldrich, 35 tahun, demam 3 minggu, murmur baru, riwayat pengguna narkoba suntik
+
+Identitas
+
+Aldrich, laki-laki, 35 tahun
+
+Skenario Awal
+
+Seorang pasien laki-laki 35 tahun, datang dengan demam 3 minggu yang tidak membaik dan ditemukan murmur jantung baru.
+
+Keluhan Utama
+
+Demam 3 minggu tidak membaik
+
+RPS
+
+Demam hilang timbul sejak 3 minggu, menggigil, keringat malam
+
+Lemas dan penurunan nafsu makan
+
+Sesak napas ringan saat aktivitas
+
+Nyeri sendi berpindah-pindah
+
+Tidak ada batuk darah, tidak ada batuk produktif bermakna
+
+RPD
+
+Pengguna narkoba suntik aktif. Tidak ada riwayat penyakit jantung sebelumnya. HIV belum pernah diperiksa.
+
+RPK
+
+Tidak ada penyakit keluarga yang relevan
+
+Lifestyle
+
+Pengguna heroin IV, berbagi jarum suntik
+
+Tidak bekerja tetap
+
+Higiene buruk
+
+Pemeriksaan Fisik
+
+KU: Tampak sakit sedang-berat, pucat
+
+*TTV: TD 110/65 mmHg, HR 104x/mnt, RR 22x/mnt, Suhu 39,1°C
+
+*Jantung: murmur regurgitasi trikuspid baru (bising holosistolik di tepi kiri sternum bawah, meningkat saat inspirasi)
+
+*Mata: Roth spot (+) pada funduskopi — perdarahan retina dengan pusat pucat
+
+*Tangan: Osler nodes (+) di ujung jari (nyeri), Janeway lesion (+) di telapak tangan (tidak nyeri)
+
+Splenomegali ringan (+)
+
+Kulit: bekas luka suntikan di lengan bilateral
+
+Pemeriksaan Penunjang
+
+*Ekokardiografi transtorakal (TTE): 
+
+
+
+*Kultur darah (3 set dari 3 tempat berbeda):
+
+
+
+Darah rutin: 
+
+
+
+
+
+Urinalisis:
+
+
+
+!*Foto Thorax: infiltrat multipel bilateral (emboli paru septik pada EI katup kanan)
+
+
+
+DD Benar
+
+Endokarditis Infektif
+
+DD Diferensial Benar
+
+Endokarditis Infektif
+
+TB Milier
+
+Demam Reumatik Akut
+
+Sepsis Bakteremia
+
+Tatalaksana
+
++Antibiotik IV jangka panjang (4-6 minggu): oksasilin/kloksasilin 2g/4 jam (MSSA) atau vankomisin (MRSA) sesuai hasil sensitivitas
+
++Rawat inap ICU/bangsal jantung, monitoring komplikasi emboli (stroke, emboli paru, abses)
+
++Konsultasi kardiologi dan bedah toraks untuk evaluasi indikasi operasi (vegetasi besar, gagal terapi, gagal jantung berat)
+
++Rujuk program rehabilitasi adiksi narkoba
+
+-Antibiotik oral 1 minggu sudah cukup untuk endokarditis infektif ringan
+
+Edukasi
+
++Berhenti menggunakan narkoba suntik — risiko kematian dari endokarditis sangat tinggi bila berlanjut
+
++Jangan berbagi jarum suntik — risiko HIV dan hepatitis C juga sangat tinggi
+
++Periksa HIV dan hepatitis C setelah kondisi stabil
+
+-Endokarditis yang sudah sembuh tidak bisa kambuh lagi
+
+
+
+kard_10 — Penyakit Jantung Reumatik
+
+ID
+
+kard_10
+
+Kategori
+
+kardio
+
+Nama
+
+Penyakit Jantung Reumatik
+
+Level
+
+3A
+
+Judul Kasus
+
+Perempuan 22 tahun, sesak progresif, murmur mitral, riwayat demam reumatik berulang masa kecil
+
+Identitas
+
+Pasien, perempuan, 22 tahun
+
+Skenario Awal
+
+Seorang pasien perempuan 22 tahun, datang ke poli dengan sesak napas yang makin berat saat aktivitas.
+
+Keluhan Utama
+
+Sesak napas saat aktivitas
+
+RPS
+
+Sesak napas saat aktivitas makin berat 6 bulan terakhir — dulu hanya saat olahraga, kini saat berjalan 50 meter
+
+Batuk kering sesekali, tidak ada hemoptisis
+
+Berdebar-debar, kadang tidak beraturan
+
+Tidak ada nyeri dada
+
+Kedua kaki bengkak ringan
+
+RPD
+
+Riwayat demam reumatik (sakit tenggorokan berulang, sendi bengkak pindah-pindah, jantung berdebar) usia 8-15 tahun, tidak pernah mendapat profilaksis penisilin rutin.
+
+RPK
+
+Ibu ada riwayat penyakit jantung
+
+Lifestyle
+
+Ibu rumah tangga, 2 anak kecil
+
+Tidak merokok, tidak alkohol
+
+Ekonomi menengah ke bawah, jarang kontrol ke dokter
+
+Pemeriksaan Fisik
+
+KU: Tampak sesak ringan, malar flush (+) — pipi kemerahan khas stenosis mitral
+
+*TTV: TD 110/70 mmHg, HR 96x/mnt (ireguler), RR 22x/mnt, SpO2 95%
+
+*Jantung: opening snap (+), murmur diastolik rumbling di apex (mid-diastolik, low-pitched) — khas stenosis mitral
+
+JVP meningkat, tidak ada hepatomegali
+
+Paru: ronki basah halus di basal bilateral (kongesti)
+
+Ekstremitas: edema pitting bilateral ringan
+
+Pemeriksaan Penunjang
+
+*EKG: Atrial fibrilasi (ireguler tanpa gelombang P), P mitrale tidak terlihat
+
+*Foto Thorax PA: kardiomegali dengan pembesaran atrium kiri (double contour kanan), pinggang jantung hilang, edema interstitial
+
+*Ekokardiografi: area katup mitral 1,2 cm² (stenosis berat, normal >4cm²), gradien rata-rata 12 mmHg, skor Wilkins 8
+
+Darah rutin: dalam batas normal
+
+DD Benar
+
+Penyakit Jantung Reumatik — Stenosis Mitral
+
+DD Diferensial Benar
+
+Penyakit Jantung Reumatik — Stenosis Mitral
+
+Kardiomiopati Dilatasi
+
+Hipertensi Pulmonal
+
+Endokarditis Infektif
+
+Tatalaksana
+
++Profilaksis demam reumatik: benzatin penisilin G 1,2 juta IU IM tiap 3-4 minggu seumur hidup (atau minimal sampai usia 40 tahun)
+
++Diuretik (furosemid) untuk mengurangi kongesti
+
++Rate control untuk AF: beta bloker (bisoprolol) atau digoksin
+
++Antikoagulan warfarin (INR 2-3) karena AF pada stenosis mitral — risiko tromboemboli sangat tinggi
+
++Rujuk kardiologi untuk pertimbangan ballon mitral valvuloplasty (BMV) atau operasi
+
+-Stenosis mitral ringan tidak perlu terapi apapun, cukup dipantau setiap 10 tahun
+
+Edukasi
+
++Profilaksis penisilin harus dilanjutkan rutin untuk mencegah serangan demam reumatik ulang yang memperparah kerusakan katup
+
++Tidak perlu membatasi aktivitas fisik ringan-sedang — pantau gejala
+
++Warfarin harus diminum rutin dan kontrol INR tiap bulan — jangan berhenti sendiri
+
+-Penyakit jantung reumatik hanya terjadi pada orang tua dan tidak bisa mengenai anak muda
+
+
+
+kard_11 — Perikarditis Akut
+
+ID
+
+kard_11
+
+Kategori
+
+kardio
+
+Nama
+
+Perikarditis Akut
+
+Level
+
+3A
+
+Judul Kasus
+
+Laki-laki 28 tahun, nyeri dada tajam membaik condong ke depan, demam ringan, setelah flu 2 minggu lalu
+
+Identitas
+
+Pasien, laki-laki, 28 tahun
+
+Skenario Awal
+
+Seorang pasien laki-laki 28 tahun, datang ke IGD dengan nyeri dada yang aneh — membaik saat membungkuk ke depan.
+
+Keluhan Utama
+
+Nyeri dada yang membaik saat membungkuk ke depan
+
+RPS
+
+Nyeri dada tajam, seperti ditusuk, sejak 2 hari
+
+Nyeri memburuk saat berbaring telentang dan menarik napas dalam
+
+Nyeri MEMBAIK saat duduk membungkuk ke depan (posisi tripod) — sangat khas perikarditis
+
+Demam ringan 37,8°C
+
+Pernah flu dan batuk pilek 2 minggu lalu, sudah sembuh
+
+Tidak menjalar ke lengan, tidak ada keringat dingin
+
+RPD
+
+Tidak ada riwayat penyakit jantung atau autoimun. Tidak ada riwayat TB.
+
+RPK
+
+Tidak ada penyakit keluarga yang relevan
+
+Lifestyle
+
+Mahasiswa, aktif olahraga
+
+Tidak merokok, tidak alkohol
+
+Pemeriksaan Fisik
+
+KU: Tampak kesakitan saat berbaring, membaik saat duduk membungkuk
+
+TTV: TD 120/80 mmHg, HR 98x/mnt, RR 20x/mnt, Suhu 37,9°C
+
+*Auskultasi jantung: pericardial friction rub (+) — terdengar 3 komponen (sistolik, diastolik awal, diastolik akhir) — PATOGNOMONIK
+
+Paru: vesikuler normal
+
+Tidak ada JVP meningkat, tidak ada pulsus paradoksus (menyingkirkan tamponade)
+
+Pemeriksaan Penunjang
+
+*EKG: elevasi ST konkaf (saddle-shaped/cekung ke atas) di hampir semua lead, depresi PR interval — khas perikarditis
+
+*CRP dan LED: meningkat — tanda inflamasi
+
+Troponin I: sedikit meningkat (0,4 ng/mL) — mioperikarditis tidak bisa disingkirkan
+
+Ekokardiografi: efusi perikard minimal, fungsi sistolik normal, tidak ada tamponade
+
+Darah rutin: leukositosis ringan
+
+DD Benar
+
+Perikarditis Akut
+
+DD Diferensial Benar
+
+Perikarditis Akut
+
+STEMI
+
+Pleuritis
+
+Diseksi Aorta
+
+Tatalaksana
+
++NSAID: aspirin 750mg-1000mg tiap 8 jam selama 1-2 minggu (lini pertama perikarditis viral)
+
++Kolkisin 0,5mg 2x/hari selama 3 bulan — terbukti mencegah rekurensi perikarditis
+
++Batasi aktivitas fisik berat sampai gejala hilang dan CRP normal
+
++Kortikosteroid hanya bila NSAID gagal atau ada kontraindikasi — bukan lini pertama karena meningkatkan risiko rekurensi
+
+-Kortikosteroid dosis tinggi adalah terapi utama semua perikarditis akut
+
+Edukasi
+
++Perikarditis viral biasanya sembuh dalam 2-6 minggu dengan terapi yang tepat
+
++Hindari olahraga berat sampai gejala hilang dan CRP kembali normal
+
++Minum kolkisin sampai habis — menghentikan lebih awal meningkatkan risiko kambuh
+
+-Perikarditis tidak perlu diobati karena sembuh sendiri dalam beberapa hari
+
+
+
+kard_12 — Hipotensi Ortostatik
+
+ID
+
+kard_12
+
+Kategori
+
+kardio
+
+Nama
+
+Hipotensi Ortostatik
+
+Level
+
+3A
+
+Judul Kasus
+
+Perempuan 70 tahun, pusing berputar dan hampir pingsan setiap kali berdiri dari duduk
+
+Identitas
+
+Pasien, perempuan, 70 tahun
+
+Skenario Awal
+
+Seorang pasien perempuan 70 tahun, datang ke poli dengan keluhan pusing dan hampir pingsan setiap kali berdiri.
+
+Keluhan Utama
+
+Pusing dan hampir pingsan saat berdiri
+
+RPS
+
+Pusing dan pandangan gelap tiap kali berdiri dari duduk atau tidur, berlangsung 30-60 detik
+
+Hampir jatuh 3x dalam sebulan terakhir
+
+Membaik bila kembali duduk
+
+Tidak ada nyeri kepala hebat, tidak ada defisit neurologis menetap
+
+Tidak ada keluhan telinga berdenging atau perasaan berputar murni (menyingkirkan BPPV)
+
+RPD
+
+HT (amlodipin 10mg + bisoprolol 5mg + HCT 25mg — 3 antihipertensi). DM (metformin + glibenklamid). Tidak ada riwayat Parkinson.
+
+RPK
+
+Tidak ada penyakit keluarga yang relevan
+
+Lifestyle
+
+Lansia 70 tahun, tinggal sendiri
+
+Minum obat teratur
+
+Kurang minum air putih
+
+Sering berdiri mendadak dari kasur
+
+Pemeriksaan Fisik
+
+KU: Tampak baik saat duduk, pusing saat berdiri
+
+*Tes ortostatik: TD berbaring 150/90, TD setelah berdiri 1 menit 110/65 (turun sistolik >20 mmHg dan diastolik >10 mmHg) — POSITIF ortostatik
+
+HR tidak meningkat kompensasi (abnormal) — curiga neuropati otonom (DM)
+
+Neurologis: tidak ada defisit fokal
+
+Tidak ada tanda dehidrasi
+
+Pemeriksaan Penunjang
+
+*Tes ortostatik (lying-standing BP): penurunan sistolik 40 mmHg — ortostatik signifikan
+
+EKG: sinus bradikardi 54x/mnt — kemungkinan bisoprolol terlalu dosis tinggi
+
+GDS: 88 mg/dL — tidak hipoglikemia
+
+Darah rutin: Hb 12,8 — tidak ada anemia bermakna
+
+Elektrolit: Na 138, K 3,5 — dalam batas normal
+
+DD Benar
+
+Hipotensi Ortostatik
+
+DD Diferensial Benar
+
+Hipotensi Ortostatik
+
+BPPV
+
+Sinkop Vasovagal
+
+Aritmia
+
+Tatalaksana
+
++Review dan kurangi/hentikan obat penyebab: turunkan dosis antihipertensi (terutama HCT dan bisoprolol) atau pertimbangkan penggantian
+
++Non-farmakologis: bangkit perlahan (head-up tilt bertahap), stoking kompresi elastis, cukupi cairan 2L/hari
+
++Tingkatkan asupan garam dan cairan bila tidak ada kontraindikasi (jantung normal)
+
++Fludrokortison 0,1mg/hari bila tindakan konservatif gagal dan tidak ada kontraindikasi
+
+-Naikkan semua dosis antihipertensi untuk mengontrol tekanan darah berbaring
+
+Edukasi
+
++Berdiri perlahan — duduk dulu di tepi kasur 30 detik sebelum berdiri
+
++Minum air putih cukup (minimal 8 gelas/hari) dan hindari dehidrasi
+
++Pasang pegangan di kamar mandi dan tempat tidur untuk mencegah jatuh
+
+-Hipotensi ortostatik bisa diabaikan karena hanya masalah posisi, bukan penyakit serius
+
+
+
+kard_13 — Deep Vein Thrombosis (DVT)
+
+ID
+
+kard_13
+
+Kategori
+
+kardio
+
+Nama
+
+Deep Vein Thrombosis (DVT)
+
+Level
+
+3A
+
+Judul Kasus
+
+Perempuan 45 tahun, kaki kiri bengkak, merah, dan nyeri mendadak setelah penerbangan 12 jam
+
+Identitas
+
+Pasien, perempuan, 45 tahun
+
+Skenario Awal
+
+Seorang pasien perempuan 45 tahun, datang ke IGD dengan keluhan kaki kiri bengkak dan nyeri mendadak setelah penerbangan panjang.
+
+Keluhan Utama
+
+Kaki kiri bengkak dan nyeri mendadak
+
+RPS
+
+Kaki kiri bengkak mendadak sejak kemarin, 12 jam setelah penerbangan 12 jam dari Eropa
+
+Nyeri di betis kiri, makin nyeri saat berjalan atau meremas betis
+
+Kulit di betis kiri terasa hangat dan kemerahan
+
+Tidak ada demam tinggi, tidak ada nanah
+
+Sesak napas ringan sejak tadi pagi (curiga emboli paru)
+
+RPD
+
+Minum pil KB (kontrasepsi oral kombinasi) 2 tahun terakhir. Tidak ada riwayat DVT sebelumnya. Tidak ada keganasan.
+
+RPK
+
+Ibu ada riwayat DVT
+
+Lifestyle
+
+Eksekutif, sering perjalanan jauh
+
+Selama penerbangan tidak bergerak, tidak banyak minum
+
+Tidak merokok
+
+Pemeriksaan Fisik
+
+KU: Tampak kesakitan saat berjalan, tidak sesak berat
+
+TTV: TD 125/80 mmHg, HR 96x/mnt, RR 20x/mnt, SpO2 96%
+
+*Tungkai kiri: bengkak nyata dibanding kanan, eritema dan hangat di betis
+
+*Homans sign (+) — nyeri saat dorsofleksi kaki kiri (tidak spesifik, namun mendukung)
+
+*Lingkar betis kiri 3cm lebih besar dari kanan
+
+Tidak ada tanda syok, tidak ada sianosis
+
+Pemeriksaan Penunjang
+
+*USG Doppler vena tungkai kiri: thrombus (+) di vena poplitea dan vena femoralis superfisial kiri — noncompressible
+
+*D-Dimer: 3200 ng/mL (meningkat signifikan)
+
+Wells Score DVT: 3 poin (probabilitas tinggi)
+
+CT Pulmonary Angiography (CTPA): filling defect di arteri pulmonalis kanan (emboli paru bersamaan)
+
+Darah rutin: dalam batas normal, tidak ada leukositosis
+
+DD Benar
+
+Deep Vein Thrombosis (DVT) Tungkai Kiri
+
+DD Diferensial Benar
+
+Deep Vein Thrombosis (DVT) Tungkai Kiri
+
+Selulitis
+
+Ruptur Kista Baker
+
+Tromboflebitis Superfisial
+
+Tatalaksana
+
++Antikoagulan segera: heparin UFH IV atau LMWH (enoksaparin 1mg/kgBB/12 jam SC)
+
++Transisi ke antikoagulan oral: warfarin (INR 2-3) atau NOAC (rivaroksaban/apiksaban) selama minimal 3-6 bulan
+
++Hentikan kontrasepsi oral — pil KB meningkatkan risiko trombosis, ganti dengan metode non-hormonal
+
++Stoking kompresi medis untuk mengurangi post-thrombotic syndrome
+
+-Bedrest total dan tidak boleh digerakkan sampai terapi antikoagulan penuh
+
+Edukasi
+
++Pada penerbangan panjang: gerakkan kaki tiap 1-2 jam, berjalan di lorong pesawat, minum air putih cukup
+
++Antikoagulan harus diminum rutin minimal 3-6 bulan — jangan berhenti sendiri karena risiko emboli paru
+
++Konsultasikan kontrasepsi alternatif yang aman dengan dokter
+
+-DVT yang sudah diobati tidak bisa kambuh lagi setelah antikoagulan selesai
+
+
+

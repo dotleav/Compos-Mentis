@@ -1,0 +1,114 @@
+{
+  "id": "integ_11",
+  "kategori": "integumen",
+  "level": "4A",
+  "nama": "Kasus 11 - Integumen",
+  "judulKasus": "Bu Sinta, 38 tahun, bercak kecoklatan gatal ringan di lipat paha",
+  "identitas": "Sinta, 38 tahun, Ibu rumah tangga",
+  "skenarioAwal": "Seorang wanita 38 tahun datang dengan keluhan bercak kecoklatan di lipat paha yang sudah lama tidak sembuh.",
+  "keluhanUtama": "Bercak kecoklatan di kedua lipat paha sejak 3 bulan, gatal ringan, tidak membaik dengan bedak antijamur",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Bercak melebar perlahan",
+        "Lebih terasa gatal saat berkeringat",
+        "Sudah mencoba bedak antijamur namun tidak membaik"
+      ],
+      "rpd": "Obesitas, IMT 31 kg/m2",
+      "rpk": "Tidak ada anggota keluarga dengan keluhan serupa",
+      "lifestyle": [
+        "Berkeringat berlebih, jarang mengeringkan lipatan kulit dengan baik"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum",
+        "nama": "Keadaan umum",
+        "temuan": "baik",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "dalam batas normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_dermatologisujud_kelainan_kulit_u",
+        "nama": "Status Dermatologis/Ujud Kelainan Kulit (UKK)",
+        "temuan": "patch eritematosa kecoklatan, berbatas tegas, dengan skuama halus di regio inguinal bilateral",
+        "signifikan": true,
+        "wajibLapor": true,
+        "image": "pf_status_dermatologisujud_kelainan_kulit_u.png"
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_pemeriksaan_lampu_wood",
+        "nama": "Pemeriksaan lampu Wood",
+        "temuan": "fluoresensi merah bata (coral red)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Eritrasma",
+    "differensialBenar": [
+      "Eritrasma",
+      "Tinea kruris",
+      "Kandidosis intertriginosa",
+      "Dermatitis seboroik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antibiotik topikal",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Clindamycin solution 1% fl 30 ml No. I",
+      "benar": false
+    },
+    {
+      "opsi": "S 2 dd applic loc dol",
+      "benar": false
+    },
+    {
+      "opsi": "Bila luas, antibiotik oral makrolid",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Erythromycin tab 500 mg No. XX",
+      "benar": false
+    },
+    {
+      "opsi": "S 4 dd tab I (selama 7-14 hari)",
+      "benar": false
+    },
+    {
+      "opsi": "Bedak antijamur/anti-fungal saja tanpa antibiotik (target kumannya bakteri, bukan jamur)",
+      "benar": false
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Keringkan lipatan kulit secara rutin dan gunakan pakaian longgar berbahan menyerap keringat",
+      "benar": true
+    },
+    {
+      "opsi": "Turunkan berat badan untuk mengurangi gesekan dan kelembapan pada lipatan kulit",
+      "benar": true
+    },
+    {
+      "opsi": "Menggunakan pakaian ketat terus-menerus",
+      "benar": false
+    }
+  ]
+}
