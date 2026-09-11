@@ -3,6 +3,30 @@ const path = require("path");
 
 const CASES_DIR = path.join(__dirname, "..", "..", "data", "cases");
 
+// ── IN-MEMORY CASE CACHE ─────────────────────────────────────────────────────
+// Cases are static JSON on disk — reading them fresh on every API call is
+// pure I/O waste. Cache them in a module-level Map on first access.
+// invalidateCache(kategori, id) is called by customCases.js after upload so
+// new custom cases appear immediately without a restart.
+const _caseCache = new Map();     // key: "kategori/id"
+const _ddMasterCache = { flat: null, grouped: null };
+
+function _cacheKey(kategori, id) { return `${kategori}/${id}`; }
+
+function invalidateCache(kategori, id) {
+  if (id) {
+    _caseCache.delete(_cacheKey(kategori, id));
+  } else {
+    // invalidate entire category (e.g. after bulk upload)
+    for (const k of _caseCache.keys()) {
+      if (k.startsWith(`${kategori}/`)) _caseCache.delete(k);
+    }
+  }
+  // dd-master may have changed too (new diagnoses in uploaded cases)
+  _ddMasterCache.flat = null;
+  _ddMasterCache.grouped = null;
+}
+
 /** List all categories (subfolders of data/cases) shown as checkboxes on the
  * landing screen. Folders starting with "_" (e.g. "_custom", where uploaded
  * Custom Case docx conversions land — see server/routes/customCases.js) are
@@ -46,18 +70,24 @@ function pickRandomCase(kategoriList) {
 
 /** Load the FULL case (including groundTruth) — server-side use only */
 function loadCase(kategori, id) {
+  const key = _cacheKey(kategori, id);
+  if (_caseCache.has(key)) return _caseCache.get(key);
   const file = path.join(CASES_DIR, kategori, `${id}.json`);
   if (!fs.existsSync(file)) return null;
-  return JSON.parse(fs.readFileSync(file, "utf-8"));
+  const parsed = JSON.parse(fs.readFileSync(file, "utf-8"));
+  _caseCache.set(key, parsed);
+  return parsed;
 }
 
 /** The master list of ALL diagnosis names across every case + their related
  * differentials — used to populate the searchable DD picker so students see
  * a large, realistic pool of diseases instead of just the ~3 tied to one case. */
 function loadDdMaster() {
+  if (_ddMasterCache.flat) return _ddMasterCache.flat;
   const file = path.join(CASES_DIR, "_dd_master.json");
   if (!fs.existsSync(file)) return [];
-  return JSON.parse(fs.readFileSync(file, "utf-8"));
+  _ddMasterCache.flat = JSON.parse(fs.readFileSync(file, "utf-8"));
+  return _ddMasterCache.flat;
 }
 
 /** Return a copy of a case safe to send to the browser (no ground truth / no answers).
@@ -88,6 +118,7 @@ function stripGroundTruth(fullCase) {
  * since disease names are inconsistently Indonesian/English and don't
  * always turn up in a plain substring search. */
 function loadDdMasterGrouped() {
+  if (_ddMasterCache.grouped) return _ddMasterCache.grouped;
   const master = loadDdMaster();
   const tagged = new Set();
   const grouped = {};
@@ -105,6 +136,7 @@ function loadDdMasterGrouped() {
   }
   const lainnya = master.filter((m) => !tagged.has(m)).sort((a, b) => a.localeCompare(b));
   if (lainnya.length) grouped.lainnya = lainnya;
+  _ddMasterCache.grouped = grouped;
   return grouped;
 }
 
@@ -118,5 +150,6 @@ function shuffle(arr) {
 
 module.exports = {
   listCategories, listCaseIds, listCases, pickRandomCase,
-  loadCase, loadDdMaster, loadDdMasterGrouped, stripGroundTruth, CASES_DIR,
+  loadCase, loadDdMaster, loadDdMasterGrouped, stripGroundTruth,
+  invalidateCache, CASES_DIR,
 };

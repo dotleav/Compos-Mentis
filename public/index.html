@@ -86,8 +86,10 @@
           <option value="ollama-cloud">ollama-cloud</option>
           <option value="ollama">ollama</option>
         </select>
+        <button class="btn secondary" id="devHealthBtn" style="font-size:0.68rem; padding:6px 10px;" title="Cek status provider">Status</button>
         <button class="btn secondary" id="devClearLogBtn" style="font-size:0.68rem; padding:6px 10px;">Bersihkan log</button>
       </div>
+      <div id="devHealthPanel" style="display:none; padding:8px 12px; font-size:0.72rem; border-top:1px solid var(--border);"></div>
     </div>
     <div id="devLogList"></div>
   </div>
@@ -188,6 +190,26 @@
       document.getElementById("devClearLogBtn").addEventListener("click", function () {
         window.__devLog = [];
         renderLog();
+      });
+
+      document.getElementById("devHealthBtn").addEventListener("click", async function () {
+        var healthPanel = document.getElementById("devHealthPanel");
+        healthPanel.innerHTML = '<span class="muted">Mengambil status provider...</span>';
+        healthPanel.style.display = "block";
+        try {
+          var res = await fetch("/api/health/providers");
+          var data = await res.json();
+          healthPanel.innerHTML = data.providers.map(function (p) {
+            var icon = !p.configured ? "⚫" : p.coolingDown ? "🔴" : "🟢";
+            var label = p.name;
+            var extra = p.coolingDown
+              ? " — cooling " + Math.ceil(p.remainingMs / 1000) + "s"
+              : !p.configured ? " — no key" : "";
+            return '<span style="margin-right:12px;">' + icon + " " + label + extra + "</span>";
+          }).join("");
+        } catch (e) {
+          healthPanel.innerHTML = '<span style="color:var(--red)">Gagal: ' + e.message + '</span>';
+        }
       });
       document.getElementById("devCloseBtn").addEventListener("click", hidePanel);
 

@@ -13,6 +13,7 @@ const fs = require("fs");
 const store = require("../lib/customCaseStore");
 const drive = require("../lib/googleDrive");
 const { isSafeSlug } = require("../lib/sanitize");
+const { invalidateCache } = require("../lib/caseLoader");
 
 const router = express.Router();
 
@@ -96,6 +97,10 @@ router.post("/upload", (req, res) => {
       }
     }
 
+    // Invalidate caseLoader cache for custom cases so they're visible immediately
+    // without requiring a server restart.
+    invalidateCache("_custom");
+
     res.json({ ...entry, driveSynced, driveError });
   });
 });
@@ -106,6 +111,7 @@ router.delete("/:uploadId", (req, res) => {
   if (!isSafeSlug(uploadId)) return res.status(400).json({ error: "Invalid uploadId" });
   const ok = store.deleteUpload(uploadId);
   if (!ok) return res.status(404).json({ error: "Upload not found" });
+  invalidateCache("_custom"); // remove deleted cases from cache
   res.json({ ok: true });
 });
 

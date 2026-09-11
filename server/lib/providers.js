@@ -216,6 +216,47 @@ const PROVIDERS = [
   },
 ];
 
+// ── CIRCUIT BREAKER ─────────────────────────────────────────────────────────
+// Tracks when a provider should be skipped due to recent failure.
+// cooldowns: Map<providerName, failUntilMs>
+// On 429/503/529 (rate limit / overload) we parse Retry-After if present,
+// otherwise apply COOLDOWN_DEFAULT_MS. On other errors we skip without
+// penalising the provider (might be a one-off network blip).
+const cooldowns = new Map();
+const COOLDOWN_DEFAULT_MS = 60_000; // 60s default when Retry-After absent
+const COOLDOWN_MAX_MS = 300_000;    // hard cap at 5 minutes
+
+function setCooldown(providerName, retryAfterHeader) {
+  let ms = COOLDOWN_DEFAULT_MS;
+  if (retryAfterHeader) {
+    const parsed = parseInt(retryAfterHeader, 10);
+    if (!isNaN(parsed) && parsed > 0) ms = Math.min(parsed * 1000, COOLDOWN_MAX_MS);
+  }
+  cooldowns.set(providerName, Date.now() + ms);
+}
+
+function isCoolingDown(providerName) {
+  const until = cooldowns.get(providerName);
+  if (!until) return false;
+  if (Date.now() >= until) { cooldowns.delete(providerName); return false; }
+  return true;
+}
+
+// Returns a snapshot of all current cooldowns — used by /api/health/providers.
+function getCooldownStatus() {
+  const now = Date.now();
+  const out = {};
+  for (const [name, until] of cooldowns) {
+    if (until > now) out[name] = { coolingUntil: new Date(until).toISOString(), remainingMs: until - now };
+  }
+  return out;
+}
+
+// ── PROVIDER REQUEST TIMEOUT ─────────────────────────────────────────────────
+// A stalled Ollama or slow cloud provider can hang the request indefinitely.
+// 20s covers slow cold-start Ollama pulls; cloud providers should respond in <5s.
+const PROVIDER_TIMEOUT_MS = Number(process.env.PROVIDER_TIMEOUT_MS) || 20_000;
+
 // Models that "think" internally before answering (gpt-oss family, NVIDIA
 // Nemotron Nano/Super) spend a chunk of the completion's token budget on a
 // hidden reasoning phase BEFORE they ever emit visible answer text. If
@@ -262,6 +303,8 @@ async function callProvider(provider, { messages, tools, temperature, max_tokens
   }
 
   let res;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), PROVIDER_TIMEOUT_MS);
   try {
     // Almost every provider here wants "Authorization: Bearer <key>" — the
     // one exception is Gemini (see its authHeaderName comment above), which
@@ -276,15 +319,23 @@ async function callProvider(provider, { messages, tools, temperature, max_tokens
       method: "POST",
       headers,
       body: JSON.stringify(body),
+      signal: controller.signal,
     });
   } catch (err) {
+    if (err.name === "AbortError") {
+      throw new Error(`[${provider.name}] timeout after ${PROVIDER_TIMEOUT_MS}ms`);
+    }
     throw new Error(`[${provider.name}] network error: ${err.message}`);
+  } finally {
+    clearTimeout(timeoutId);
   }
 
   if (!res.ok) {
     const text = await res.text().catch(() => "");
     const err = new Error(`[${provider.name}] request failed (${res.status}): ${text}`);
     err.status = res.status;
+    // Attach Retry-After so the circuit breaker in chat() can use it.
+    err.retryAfter = res.headers.get("retry-after") || res.headers.get("x-ratelimit-reset-requests");
     throw err;
   }
 
@@ -353,10 +404,22 @@ async function chat({ messages, tools, temperature, max_tokens, forceProvider, u
   let lastErr;
   const attempts = [];
   for (const provider of active) {
+    // Circuit breaker: skip providers that are cooling down after a recent
+    // rate-limit or overload, unless this is the only provider we have.
+    if (isCoolingDown(provider.name) && active.length > 1) {
+      const until = cooldowns.get(provider.name);
+      const remainSec = Math.ceil((until - Date.now()) / 1000);
+      attempts.push(`${provider.name}: cooling (${remainSec}s left)`);
+      continue;
+    }
     try {
       const data = await callProvider(provider, { messages, tools, temperature, max_tokens });
       return { ...data, _provider: provider.name };
     } catch (err) {
+      // Rate-limit / overload → back off this provider for a while.
+      if (err.status === 429 || err.status === 503 || err.status === 529) {
+        setCooldown(provider.name, err.retryAfter);
+      }
       console.warn(`[provider fallback] ${provider.name} failed, trying next. Reason: ${err.message}`);
       attempts.push(`${provider.name}: ${err.message}`);
       lastErr = err;
@@ -375,4 +438,4 @@ async function chat({ messages, tools, temperature, max_tokens, forceProvider, u
   throw combined;
 }
 
-module.exports = { chat, PROVIDERS };
+module.exports = { chat, PROVIDERS, getCooldownStatus };

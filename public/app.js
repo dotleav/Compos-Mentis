@@ -873,29 +873,123 @@ function renderAnamnesis(body) {
     const message = input.value.trim();
     if (!message) return;
     input.value = "";
+    const sendBtn = document.getElementById("chatSend");
+    if (sendBtn) sendBtn.disabled = true;
     state.anamnesisHistory.push({ role: "user", content: message });
     renderChatLog();
     saveSessionToStorage();
     appendLoadingBubble();
+
     try {
-      const { reply, _provider } = await api("/chat/anamnesis", {
-        method: "POST",
-        body: JSON.stringify({
-          kategori: state.kategori, id: state.id,
-          history: state.anamnesisHistory.slice(0, -1),
-          message,
-          forceProvider: window.__forceProvider || undefined,
-        }),
+      await sendWithStream({
+        message,
+        kategori: state.kategori,
+        id: state.id,
+        history: state.anamnesisHistory.slice(0, -1),
+        forceProvider: window.__forceProvider || undefined,
       });
-      console.debug("[anamnesis] answered by provider:", _provider);
-      state.anamnesisHistory.push({ role: "assistant", content: reply, _provider });
     } catch (e) {
-      const shown = (window.__devModeOn && e.detail) ? `[Error: ${e.message} — ${e.detail}]` : `[Error: ${e.message}]`;
+      const shown = (window.__devModeOn && e.detail)
+        ? `[Error: ${e.message} — ${e.detail}]`
+        : `[Error: ${e.message}]`;
+      removeLoadingBubble();
       state.anamnesisHistory.push({ role: "assistant", content: shown });
+      renderChatLog();
     }
-    renderChatLog();
+
     saveSessionToStorage();
+    if (sendBtn) sendBtn.disabled = false;
   };
+
+  /**
+   * Streams the anamnesis reply via SSE. Updates the loading bubble with
+   * tokens as they arrive, then commits the full reply to state.
+   * Falls back to the buffered endpoint if SSE fails before any tokens land.
+   */
+  async function sendWithStream({ message, kategori, id, history, forceProvider }) {
+    const body = JSON.stringify({ kategori, id, message, history, forceProvider });
+    let res;
+    try {
+      res = await fetch("/api/chat/anamnesis-stream", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body,
+      });
+    } catch (err) {
+      // Network failure before response — fall back to buffered
+      return sendBuffered({ message, kategori, id, history, forceProvider });
+    }
+
+    if (!res.ok || !res.body) {
+      return sendBuffered({ message, kategori, id, history, forceProvider });
+    }
+
+    const loadingBubble = document.getElementById("loadingBubble");
+    let accumulated = "";
+    let provider = null;
+    let gotAnyToken = false;
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let sseBuffer = "";
+
+    try {
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        sseBuffer += decoder.decode(value, { stream: true });
+        const lines = sseBuffer.split("\n");
+        sseBuffer = lines.pop();
+        for (const line of lines) {
+          const trimmed = line.trim();
+          if (!trimmed.startsWith("data:")) continue;
+          const raw = trimmed.slice(5).trim();
+          let evt;
+          try { evt = JSON.parse(raw); } catch { continue; }
+          if (evt.error) throw new Error(evt.error);
+          if (evt.delta) {
+            gotAnyToken = true;
+            accumulated += evt.delta;
+            if (loadingBubble) {
+              loadingBubble.textContent = accumulated;
+              loadingBubble.classList.remove("loading");
+              const log = document.getElementById("chatLog");
+              if (log) log.scrollTop = log.scrollHeight;
+            }
+          }
+          if (evt.done) {
+            provider = evt.provider || null;
+          }
+        }
+      }
+    } catch (err) {
+      if (!gotAnyToken) {
+        // Zero tokens received — safe to fall back
+        removeLoadingBubble();
+        return sendBuffered({ message, kategori, id, history, forceProvider });
+      }
+      // Mid-stream failure — show what we got with an error suffix
+      accumulated += " [...]";
+    }
+
+    removeLoadingBubble();
+    if (accumulated) {
+      state.anamnesisHistory.push({ role: "assistant", content: accumulated, _provider: provider });
+      renderChatLog();
+    }
+    if (provider) console.debug("[anamnesis stream] answered by provider:", provider);
+  }
+
+  async function sendBuffered({ message, kategori, id, history, forceProvider }) {
+    const { reply, _provider } = await api("/chat/anamnesis", {
+      method: "POST",
+      body: JSON.stringify({ kategori, id, history, message, forceProvider }),
+    });
+    removeLoadingBubble();
+    console.debug("[anamnesis buffered] answered by provider:", _provider);
+    state.anamnesisHistory.push({ role: "assistant", content: reply, _provider });
+    renderChatLog();
+  }
   document.getElementById("chatSend").addEventListener("click", send);
   input.addEventListener("keydown", (e) => { if (e.key === "Enter") send(); });
 
@@ -925,6 +1019,10 @@ function appendLoadingBubble() {
   div.textContent = "Pasien sedang menjawab...";
   log.appendChild(div);
   log.scrollTop = log.scrollHeight;
+}
+
+function removeLoadingBubble() {
+  document.getElementById("loadingBubble")?.remove();
 }
 
 // ---------- PF / PENUNJANG (AI matching) ----------
