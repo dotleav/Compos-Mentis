@@ -13,6 +13,7 @@ const STASE_LABELS = {
   neurologi: "Neurologi",
   psikiatri: "Psikiatri",
   tht: "THT",
+  kegawatdaruratan: "Kegawatdaruratan",
   lainnya: "Lainnya",
 };
 
@@ -31,7 +32,19 @@ const STEPS = [
   { key: "reveal", label: "Kunci Jawaban" },
 ];
 
+// A kegawatdaruratan (emergency-arrival) case inserts one extra step right
+// after "Kasus" and before "DD Awal" — the normal 10-step flow stays hidden
+// (nextDisabled) until the patient is stabilized inside that step.
+function currentSteps() {
+  const steps = STEPS.slice();
+  if (state && state.kasus && state.kasus.kegawatdaruratan) {
+    steps.splice(1, 0, { key: "emergency", label: "Kegawatdaruratan" });
+  }
+  return steps;
+}
+
 let state = null;
+let emergencyActionSeq = 0;
 
 // ---------- SESSION PERSISTENCE (sessionStorage) ----------
 // sessionStorage (not localStorage) is used on purpose: it's scoped to
@@ -130,6 +143,17 @@ function resetState(kasus) {
     temuanLaporan: {},     // { [findingId]: essayText } — student's own report for image findings with wajibLapor
     evaluation: null,
     revealData: null,
+    emergency: kasus.kegawatdaruratan
+      ? {
+          monitorList: [],     // [{id, nama, temuan}] — filled as vitals get checked/administered
+          tindakanDone: [],    // ids of tindakanBenar already successfully administered
+          wajibDone: [],       // subset of tindakanDone that were wajib:true (for the stability threshold)
+          stabil: false,
+          meninggal: false,
+          chatKiri: [],        // [{role, content, action?}] — Tindakan chat
+          chatKanan: [],       // [{role, content}] — Pemeriksaan chat
+        }
+      : null,
   };
 }
 
@@ -632,12 +656,13 @@ async function showLanding() {
 
 // ---------- SESSION SHELL ----------
 function renderSession() {
-  const stepKey = STEPS[state.stepIndex].key;
+  const steps = currentSteps();
+  const stepKey = steps[state.stepIndex].key;
   app.innerHTML = `
     <a href="#" class="back" id="backBtn">&larr; Selesai sesi</a>
     <h1 style="margin-top:10px;">Sesi Clinical Reasoning</h1>
     <div class="step-nav" style="margin-top:14px;">
-      ${STEPS.map((s, i) => `<span class="step-pill ${i === state.stepIndex ? "active" : i < state.stepIndex ? "done" : ""}">${s.label}</span>`).join("")}
+      ${steps.map((s, i) => `<span class="step-pill ${i === state.stepIndex ? "active" : i < state.stepIndex ? "done" : ""}">${s.label}</span>`).join("")}
     </div>
     <div id="stepBody"></div>
   `;
@@ -658,6 +683,7 @@ function renderSession() {
   const body = document.getElementById("stepBody");
   const renderers = {
     read: renderRead,
+    emergency: renderEmergency,
     dd1: renderDDStep("ddInitial", "Penyakit apa saja yang muncul di benakmu...?", "Tuliskan sebanyak mungkin diagnosis banding yang terpikirkan hanya dari keluhan utama di atas. Gunakan kolom pencarian untuk menemukan nama penyakit."),
     anamnesis: renderAnamnesis,
     dd2: renderDDStep("ddRevisi1", "DD Revisi 1", "Setelah anamnesis, revisi daftar diagnosis bandingmu — eliminasi yang tidak relevan, tambahkan yang baru terpikirkan.", { carryFromKey: "ddInitial", seededFlagKey: "ddRevisi1Seeded" }),
@@ -702,6 +728,215 @@ function renderRead(body) {
       </div>
     </div>`;
   stepNav(body, { back: null, next: () => { state.stepIndex++; renderSession(); } });
+}
+
+// ---------- KEGAWATDARURATAN (emergency-arrival stabilization) ----------
+function upsertMonitor(id, nama, temuan) {
+  const list = state.emergency.monitorList;
+  const existing = list.find((m) => m.id === id);
+  if (existing) { existing.temuan = temuan; if (nama) existing.nama = nama; }
+  else list.push({ id, nama: nama || id, temuan });
+}
+
+function renderMonitor() {
+  const el = document.getElementById("monitorBody");
+  if (!el) return;
+  const em = state.emergency;
+  if (em.meninggal) {
+    el.innerHTML = `<div class="monitor-flatline">PASIEN MENINGGAL DUNIA — flatline</div>`;
+    return;
+  }
+  if (em.monitorList.length === 0) {
+    el.innerHTML = `<p class="muted" style="margin:0;">Monitor belum terpasang. Lakukan pemeriksaan di sisi kanan untuk membaca tanda vital.</p>`;
+    return;
+  }
+  el.innerHTML = `<div class="monitor-grid">${em.monitorList
+    .map((m) => `<div class="monitor-item"><span class="monitor-label">${escapeHtml(m.nama)}</span><span class="monitor-value">${escapeHtml(m.temuan)}</span></div>`)
+    .join("")}</div>`;
+}
+
+function renderEmergency(body) {
+  const em = state.emergency;
+  const kd = state.kasus.kegawatdaruratan;
+  body.innerHTML = `
+    <div class="card" style="border-left-color:var(--red);">
+      <h2 style="font-size:1.05rem; margin-bottom:6px;">🚨 Kegawatdaruratan</h2>
+      <p class="muted">${escapeHtml(kd.kondisiAwal || "")}</p>
+      <p class="muted" style="margin-top:8px; font-size:0.8rem;">Stabilkan pasien dulu — beri tindakan di panel kiri, periksa tanda vital/ABCDE di panel kanan. Langkah 10-tahap OSCE baru muncul setelah pasien stabil.</p>
+    </div>
+    <div class="card monitor-panel">
+      <div class="monitor-head">Monitor Pasien</div>
+      <div id="monitorBody"></div>
+    </div>
+    <div class="emergency-split">
+      <div class="card emergency-panel">
+        <h3 class="emergency-panel-title">💉 Tindakan</h3>
+        <p class="muted" style="font-size:0.78rem; margin-bottom:10px;">Ketik obat/tindakan yang ingin diberikan (mis. "berikan epinefrin IM").</p>
+        <div class="chat-log" id="chatKiri" style="max-height:320px;"></div>
+        <div class="row">
+          <input type="text" id="kiriInput" placeholder="Tindakan/obat..." style="flex:1;">
+          <button class="btn" id="kiriSend">Kirim</button>
+        </div>
+      </div>
+      <div class="card emergency-panel">
+        <h3 class="emergency-panel-title">🩺 Pemeriksaan</h3>
+        <p class="muted" style="font-size:0.78rem; margin-bottom:10px;">Ketik pemeriksaan tanda vital/ABCDE (mis. "cek nadi", "gimana napasnya").</p>
+        <div class="chat-log" id="chatKanan" style="max-height:320px;"></div>
+        <div class="row">
+          <input type="text" id="kananInput" placeholder="Pemeriksaan..." style="flex:1;">
+          <button class="btn" id="kananSend">Periksa</button>
+        </div>
+      </div>
+    </div>
+    <div id="emergencyNav"></div>
+  `;
+  renderMonitor();
+  renderChatKiri();
+  renderChatKanan();
+
+  function renderChatKiri() {
+    const log = document.getElementById("chatKiri");
+    if (!log) return;
+    log.innerHTML = em.chatKiri.map((h) => {
+      if (h.role === "system") return `<div class="bubble system">${escapeHtml(h.content)}</div>`;
+      const btn = h.action && h.action.pending
+        ? `<button class="btn action-btn" data-action-id="${h.action.id}" style="margin-top:8px;">${h.action.label || "Lakukan Tindakan"}</button>`
+        : "";
+      return `<div class="bubble ${h.role === "user" ? "user" : "patient"}">${escapeHtml(h.content)}${btn}</div>`;
+    }).join("") || `<div class="bubble system">Belum ada tindakan diberikan.</div>`;
+    log.scrollTop = log.scrollHeight;
+    log.querySelectorAll("[data-action-id]").forEach((b) => b.addEventListener("click", () => {
+      const entry = em.chatKiri.find((h) => h.action && h.action.id === b.dataset.actionId);
+      if (entry) applyTindakan(entry);
+    }));
+  }
+
+  function renderChatKanan() {
+    const log = document.getElementById("chatKanan");
+    if (!log) return;
+    log.innerHTML = em.chatKanan.map((h) =>
+      `<div class="bubble ${h.role === "user" ? "user" : "patient"}">${escapeHtml(h.content)}</div>`
+    ).join("") || `<div class="bubble system">Belum ada pemeriksaan dilakukan.</div>`;
+    log.scrollTop = log.scrollHeight;
+  }
+
+  function lockPanels() {
+    ["kiriInput", "kiriSend", "kananInput", "kananSend"].forEach((idAttr) => {
+      const elm = document.getElementById(idAttr);
+      if (elm) elm.disabled = true;
+    });
+  }
+
+  function checkStability() {
+    const ambang = (kd.ambangStabil) || 3;
+    if (!em.stabil && em.wajibDone.length >= ambang) {
+      em.stabil = true;
+      em.chatKiri.push({ role: "system", content: "✅ Pasien mulai stabil! Tombol \"Lanjut\" di bawah sudah aktif — lanjutkan ke tahap OSCE berikutnya." });
+      renderChatKiri();
+      renderNav();
+    }
+  }
+
+  function applyTindakan(entry) {
+    entry.action.pending = false;
+    const r = entry.action.result;
+    if (r.hasil === "kontraindikasi") {
+      em.meninggal = true;
+      em.chatKiri.push({ role: "system", content: `💀 Pasien meninggal dunia. ${r.alasan || ""} Anda harus menyampaikan kabar duka ini kepada keluarga pasien.` });
+      lockPanels();
+      renderNav();
+    } else if (r.hasil === "benar") {
+      if (!em.tindakanDone.includes(r.id)) {
+        em.tindakanDone.push(r.id);
+        if (r.wajib) em.wajibDone.push(r.id);
+      }
+      em.chatKiri.push({ role: "assistant", content: r.efek || "Kondisi pasien membaik." });
+      if (r.efekVital) Object.entries(r.efekVital).forEach(([vid, val]) => upsertMonitor(vid, null, val));
+      checkStability();
+    } else {
+      em.chatKiri.push({ role: "assistant", content: `Pasien masih tidak stabil. ${r.alasan || ""}`.trim() });
+    }
+    renderChatKiri();
+    renderMonitor();
+    saveSessionToStorage();
+  }
+
+  const kiriInput = document.getElementById("kiriInput");
+  const kiriSend = async () => {
+    if (em.stabil || em.meninggal) return;
+    const pesan = kiriInput.value.trim();
+    if (!pesan) return;
+    kiriInput.value = "";
+    document.getElementById("kiriSend").disabled = true;
+    em.chatKiri.push({ role: "user", content: pesan });
+    renderChatKiri();
+    try {
+      const r = await api("/emergency/tindakan", {
+        method: "POST",
+        body: JSON.stringify({ kategori: state.kategori, id: state.id, pesan, done: em.tindakanDone, forceProvider: window.__forceProvider || undefined }),
+      });
+      const actionId = `act${++emergencyActionSeq}`;
+      em.chatKiri.push({ role: "assistant", content: `Instruksi diterima: "${pesan}". Siap dilakukan?`, action: { id: actionId, pending: true, result: r } });
+    } catch (e) {
+      em.chatKiri.push({ role: "assistant", content: `[Error: ${e.message}]` });
+    }
+    renderChatKiri();
+    saveSessionToStorage();
+    const btn = document.getElementById("kiriSend");
+    if (btn) btn.disabled = false;
+  };
+  document.getElementById("kiriSend").addEventListener("click", kiriSend);
+  kiriInput.addEventListener("keydown", (e) => { if (e.key === "Enter") kiriSend(); });
+
+  const kananInput = document.getElementById("kananInput");
+  const kananSend = async () => {
+    if (em.meninggal) return;
+    const query = kananInput.value.trim();
+    if (!query) return;
+    kananInput.value = "";
+    document.getElementById("kananSend").disabled = true;
+    em.chatKanan.push({ role: "user", content: query });
+    renderChatKanan();
+    try {
+      const { results } = await api("/emergency/periksa", {
+        method: "POST",
+        body: JSON.stringify({ kategori: state.kategori, id: state.id, query, done: em.monitorList.map((m) => m.id), forceProvider: window.__forceProvider || undefined }),
+      });
+      results.forEach((r) => {
+        em.chatKanan.push({ role: "assistant", content: `${r.nama !== query ? r.nama + ": " : ""}${r.temuan}` });
+        if (!r.tidakBisa && r.id) upsertMonitor(r.id, r.nama, r.temuan);
+      });
+    } catch (e) {
+      em.chatKanan.push({ role: "assistant", content: `[Error: ${e.message}]` });
+    }
+    renderChatKanan();
+    renderMonitor();
+    saveSessionToStorage();
+    const btn = document.getElementById("kananSend");
+    if (btn) btn.disabled = false;
+  };
+  document.getElementById("kananSend").addEventListener("click", kananSend);
+  kananInput.addEventListener("keydown", (e) => { if (e.key === "Enter") kananSend(); });
+
+  function renderNav() {
+    const nav = document.getElementById("emergencyNav");
+    if (!nav) return;
+    if (em.meninggal) {
+      nav.innerHTML = `<p class="muted" style="margin-top:16px; color:var(--red);">Sesi berakhir — pasien meninggal dunia.</p>
+        <div class="row" style="margin-top:10px;"><button class="btn secondary" id="endSession">Sesi Baru</button></div>`;
+      document.getElementById("endSession").addEventListener("click", () => { clearSessionStorage(); showLanding(); });
+      return;
+    }
+    nav.innerHTML = "";
+    stepNav(nav, {
+      back: () => { state.stepIndex--; renderSession(); },
+      next: () => { state.stepIndex++; renderSession(); },
+      nextDisabled: !em.stabil,
+      nextLabel: em.stabil ? "Lanjut →" : "Stabilkan pasien dulu",
+    });
+  }
+  renderNav();
+  if (em.meninggal) lockPanels();
 }
 
 // ---------- SEARCHABLE DIAGNOSIS PICKER (shared by DD1/DD2/DD3/Final) ----------

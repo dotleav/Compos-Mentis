@@ -28,6 +28,35 @@
  *   - Tatalaksana / Edukasi lines: prefix "+" = correct option, "-" = wrong
  *     option (defaults to wrong if no prefix given).
  *
+ *   OPTIONAL — Kegawatdaruratan (emergency-arrival case): add these rows to
+ *   turn a case into one that opens with an unstable/unconscious patient
+ *   (see data/cases/_SCHEMA.md for the full runtime behavior). Presence of
+ *   "Kegawatdaruratan Kondisi Awal" is what switches it on — every other
+ *   row in this block is optional too, but a case with none of the rest
+ *   will just never let the student stabilize the patient.
+ *     - "Kegawatdaruratan Kondisi Awal": free text, narrative shown above
+ *       the blank monitor.
+ *     - "Kegawatdaruratan Ambang Stabil": a number — how many distinct
+ *       wajib(+) actions are needed to stabilize. Defaults to the count of
+ *       "+" lines in Tindakan Benar (min 1) if omitted/invalid.
+ *     - "Kegawatdaruratan Vital & Survei Primer": one line per vital sign
+ *       or ABCDE item —
+ *         Nama: Stabil=<normal reading> | Tidak Stabil=<unstable reading>
+ *       e.g. "TD: Stabil=118/76 mmHg | Tidak Stabil=78/45 mmHg". These
+ *       become normal Pemeriksaan Fisik items too (shown with the STABLE
+ *       reading once the patient is stabilized) — the unstable reading is
+ *       only ever shown during the emergency step itself.
+ *     - "Kegawatdaruratan Tindakan Benar": one correct stabilizing
+ *       action per line —
+ *         +Nama tindakan | efek: teks efek | vital: Nama1=nilai1, Nama2=nilai2
+ *       "+" marks it as counting toward Ambang Stabil (omit for optional
+ *       add-ons that help narratively but aren't required). "vital" names
+ *       must match the names used in the Vital & Survei Primer row above.
+ *     - "Kegawatdaruratan Kontraindikasi": one dangerous/contraindicated
+ *       action per line — "Nama tindakan: alasan kenapa berbahaya".
+ *       Requesting anything matching this (or anything else the AI judges
+ *       clearly dangerous for this specific emergency) ends the session.
+ *
  * Usage:
  *   node scripts/docx-to-case.js <path-to.docx> --kategori kardio
  *
@@ -77,6 +106,14 @@ const FIELD_ALIASES = {
   ddDifferensial: ["dd diferensial", "diferensial benar", "dd differensial", "differensial benar", "diagnosis banding benar", "dd pilihan", "pilihan dd", "differential diagnosis"],
   tatalaksana: ["tatalaksana"],
   edukasi: ["edukasi"],
+  // Optional — see the "Kegawatdaruratan" section further down in this file's
+  // header comment and in scripts/CASE_TEMPLATE_GUIDE.md. Presence of
+  // "kdKondisiAwal" is what turns a case into an emergency-arrival case.
+  kdKondisiAwal: ["kegawatdaruratan kondisi awal", "kondisi awal kegawatdaruratan", "kondisi awal igd"],
+  kdAmbangStabil: ["kegawatdaruratan ambang stabil", "ambang stabil"],
+  kdVitalPrimer: ["kegawatdaruratan vital & survei primer", "kegawatdaruratan vital dan survei primer", "vital & survei primer", "kegawatdaruratan vital"],
+  kdTindakanBenar: ["kegawatdaruratan tindakan benar", "kegawatdaruratan tindakan", "tindakan stabilisasi"],
+  kdTindakanKontraindikasi: ["kegawatdaruratan kontraindikasi", "tindakan kontraindikasi"],
 };
 
 function normLabel(s) {
@@ -346,6 +383,89 @@ function parseIdentitas(paragraphs) {
   return parts.join(", ") || "-";
 }
 
+// ---------- Kegawatdaruratan (emergency-arrival) parsing — all optional ----------
+
+// "Nama: Stabil=<x> | Tidak Stabil=<y>" lines -> pemeriksaanFisik entries
+// (kelompok "vital"/"survei_primer", temuan = STABLE reading, reused later
+// by the normal Pem. Fisik step) + a parallel kondisiUnstabil map keyed by
+// the same generated id, read only during the emergency step.
+function parseKdVitalPrimer(paragraphs) {
+  const VITAL_KEYWORDS = ["td", "tekanan darah", "nadi", "laju napas", "rr", "pernapasan", "respirasi", "spo2", "saturasi", "suhu", "kesadaran", "gcs"];
+  const PRIMER_KEYWORDS = ["airway", "breathing", "circulation", "disability", "exposure"];
+  const items = [];
+  const kondisiUnstabil = {};
+  for (const line of linesOf(paragraphs)) {
+    const idx = line.indexOf(":");
+    if (idx === -1) continue;
+    const nama = line.slice(0, idx).trim();
+    const rest = line.slice(idx + 1).trim();
+    let stabil = null;
+    let tidakStabil = null;
+    for (const seg of rest.split("|")) {
+      const eq = seg.indexOf("=");
+      if (eq === -1) continue;
+      const k = seg.slice(0, eq).trim().toLowerCase();
+      const v = seg.slice(eq + 1).trim();
+      if (k.startsWith("tidak stabil")) tidakStabil = v;
+      else if (k.startsWith("stabil")) stabil = v;
+    }
+    const namaLower = nama.toLowerCase();
+    let kelompok = "vital";
+    if (PRIMER_KEYWORDS.some((k) => namaLower.includes(k))) kelompok = "survei_primer";
+    else if (!VITAL_KEYWORDS.some((k) => namaLower.includes(k))) {
+      console.warn(`  ⚠ "${nama}" di baris Kegawatdaruratan Vital & Survei Primer tidak dikenali sebagai vital/ABCDE — dianggap "vital".`);
+    }
+    const id = `kd_${slugify(nama)}`;
+    items.push({ id, kelompok, nama, temuan: stabil || "-", signifikan: false });
+    if (tidakStabil) kondisiUnstabil[id] = tidakStabil;
+    if (!stabil) console.warn(`  ⚠ "${nama}": tidak ada "Stabil=..." — temuan normal diisi "-".`);
+    if (!tidakStabil) console.warn(`  ⚠ "${nama}": tidak ada "Tidak Stabil=..." — pemeriksaan ini tidak akan tampak berubah di monitor darurat.`);
+  }
+  return { items, kondisiUnstabil };
+}
+
+// "+Nama tindakan | efek: teks | vital: TD=95/62 mmHg, Nadi=112x/menit"
+// "+" = wajib (counts toward ambangStabil), "-"/none = optional. "efek" and
+// "vital" segments are both optional; "vital" keys must match the same
+// slugified names used in the Vital & Survei Primer rows above.
+function parseKdTindakanBenar(paragraphs) {
+  return linesOf(paragraphs).map((line) => {
+    let text = line.trim();
+    let wajib = false;
+    if (text.startsWith("+")) { wajib = true; text = text.slice(1).trim(); }
+    else if (text.startsWith("-")) { text = text.slice(1).trim(); }
+    const segs = text.split("|").map((s) => s.trim());
+    const nama = segs[0];
+    let efek = null;
+    let efekVital = null;
+    for (const seg of segs.slice(1)) {
+      const idx = seg.indexOf(":");
+      if (idx === -1) continue;
+      const key = seg.slice(0, idx).trim().toLowerCase();
+      const val = seg.slice(idx + 1).trim();
+      if (key === "efek") efek = val;
+      else if (key === "vital") {
+        efekVital = {};
+        val.split(",").forEach((pair) => {
+          const eq = pair.indexOf("=");
+          if (eq === -1) return;
+          efekVital[`kd_${slugify(pair.slice(0, eq).trim())}`] = pair.slice(eq + 1).trim();
+        });
+      }
+    }
+    return { id: `tx_${slugify(nama)}`, nama, wajib, efek, efekVital };
+  });
+}
+
+// "Nama tindakan: alasan berbahaya" lines -> [{nama, alasan}]
+function parseKdTindakanKontraindikasi(paragraphs) {
+  return linesOf(paragraphs).map((line) => {
+    const idx = line.indexOf(":");
+    if (idx === -1) return { nama: line.trim(), alasan: "" };
+    return { nama: line.slice(0, idx).trim(), alasan: line.slice(idx + 1).trim() };
+  });
+}
+
 // ---------- Main conversion ----------
 
 async function main() {
@@ -408,6 +528,32 @@ async function main() {
     const pfItems = fields.pemeriksaanFisik ? parseFindingList(fields.pemeriksaanFisik, "pf") : [];
     const penunjangItems = fields.penunjang ? parseFindingList(fields.penunjang, "pnj") : [];
 
+    // Kegawatdaruratan is entirely optional — signalled by the presence of
+    // a "Kegawatdaruratan Kondisi Awal" row. Vital & survei primer items
+    // merge straight into pfItems (kelompok-tagged) so the normal Pem.
+    // Fisik step + reveal screen work unchanged once the patient stabilizes.
+    let kegawatdaruratan;
+    if (fields.kdKondisiAwal) {
+      const kondisiAwal = linesOf(fields.kdKondisiAwal).join(" ");
+      const ambangRaw = fields.kdAmbangStabil ? parseInt(linesOf(fields.kdAmbangStabil).join(""), 10) : NaN;
+      const { items: kdVitalItems, kondisiUnstabil } = fields.kdVitalPrimer
+        ? parseKdVitalPrimer(fields.kdVitalPrimer)
+        : { items: [], kondisiUnstabil: {} };
+      pfItems.push(...kdVitalItems);
+      const tindakanBenar = fields.kdTindakanBenar ? parseKdTindakanBenar(fields.kdTindakanBenar) : [];
+      const tindakanKontraindikasi = fields.kdTindakanKontraindikasi ? parseKdTindakanKontraindikasi(fields.kdTindakanKontraindikasi) : [];
+      const wajibCount = tindakanBenar.filter((t) => t.wajib).length;
+      if (!tindakanBenar.length) console.warn(`  ⚠ [${id}] Kegawatdaruratan aktif tapi tidak ada "Tindakan Benar" — pasien tidak akan pernah bisa distabilkan.`);
+      if (!kdVitalItems.length) console.warn(`  ⚠ [${id}] Kegawatdaruratan aktif tapi tidak ada baris "Vital & Survei Primer" — monitor akan selalu kosong.`);
+      kegawatdaruratan = {
+        kondisiAwal,
+        ambangStabil: Number.isFinite(ambangRaw) && ambangRaw > 0 ? ambangRaw : Math.max(1, wajibCount || 3),
+        kondisiUnstabil,
+        tindakanBenar,
+        tindakanKontraindikasi,
+      };
+    }
+
     // Resolve + copy images for ANY finding that has one attached — Pemeriksaan
     // Fisik and Pemeriksaan Penunjang are treated identically. (Previously
     // only penunjangItems images were ever written to disk; pfItems images
@@ -465,6 +611,7 @@ async function main() {
       identitas,
       skenarioAwal,
       keluhanUtama,
+      ...(kegawatdaruratan ? { kegawatdaruratan } : {}),
       groundTruth: {
         riwayat: {
           rps: fields.rps ? parseBulletList(fields.rps) : [],

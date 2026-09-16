@@ -79,6 +79,53 @@ live at `data/images/<kategori>/<id>/<filename>`.
 }
 ```
 
+## Kegawatdaruratan (emergency-arrival cases) — optional
+
+Add a top-level `kegawatdaruratan` object to open the case with an unstable/
+unconscious patient. When present, the frontend inserts a "Kegawatdaruratan"
+step right after "Kasus" and before "DD Awal": the normal 10-step OSCE UI is
+hidden until the patient is stabilized. Screen splits into a patient monitor
+(blank until checked) above two chat panels — left ("Tindakan": drugs/first
+line stabilization, each AI reply comes with a "Lakukan Tindakan" button)
+and right ("Pemeriksaan": vitals/primary-survey only, free text).
+
+```jsonc
+"kegawatdaruratan": {
+  "kondisiAwal": "Narasi 1-2 kalimat kondisi pasien saat tiba, ditampilkan di atas monitor kosong.",
+  "ambangStabil": 3,  // jumlah tindakan wajib:true berbeda yang harus benar sebelum dianggap stabil
+  // Bacaan TIDAK STABIL, dipakai HANYA oleh endpoint /api/emergency/periksa,
+  // key harus sama persis dengan id item groundTruth.pemeriksaanFisik yang
+  // berkelompok "vital" atau "survei_primer" di bawah — item itu sendiri
+  // menyimpan bacaan NORMAL/stabil (dipakai lagi nanti di step Pem. Fisik
+  // biasa setelah pasien stabil, jadi tidak ada kontradiksi).
+  "kondisiUnstabil": {
+    "vs_td": "78/45 mmHg",
+    "sp_airway": "Stridor ringan, edema orofaring"
+  },
+  "tindakanBenar": [
+    {
+      "id": "epinefrin_im",
+      "nama": "Epinefrin IM 0.3-0.5mg (1:1000), paha anterolateral",
+      "wajib": true,
+      "efek": "Bengkak wajah mulai berkurang, tekanan darah merangkak naik.",
+      "efekVital": { "vs_td": "95/62 mmHg" }   // opsional, update parsial monitor, key = id vital di atas
+    }
+  ],
+  "tindakanKontraindikasi": [
+    { "nama": "Beta blocker / propranolol", "alasan": "Memperberat syok anafilaksis, melawan kerja epinefrin." }
+  ]
+}
+```
+
+- The matching engine for both `/api/emergency/tindakan` (free-text drug/
+  action orders) and `/api/emergency/periksa` (vitals/ABCDE only — nothing
+  needing patient mobility/cooperation) is LLM-driven forced tool-use, same
+  deterministic-lookup philosophy as `/api/exam/perform`: the model only
+  classifies/matches, it never invents a clinical value or outcome text.
+- Reaching `ambangStabil` distinct `wajib:true` correct actions marks the
+  patient stable and un-grays "Lanjut" into the normal 10-step flow.
+- A `hasil: "kontraindikasi"` match ends the session (patient dies).
+
 ## Design notes
 
 - **Anamnesis** is free-form chat. The whole `groundTruth.riwayat` + `identitas` +

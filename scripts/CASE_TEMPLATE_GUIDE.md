@@ -27,6 +27,43 @@
 | Tatalaksana | satu baris = satu opsi. Awali `+` = benar, `-` = salah. |
 | Edukasi | sama seperti Tatalaksana |
 
+### Kegawatdaruratan (opsional) — pasien datang tidak stabil/tidak sadar
+
+Tambahkan baris-baris ini (semuanya di bawah baris Edukasi, urutan bebas) kalau
+kasusnya harus dibuka dengan stabilisasi dulu (lihat `data/cases/_SCHEMA.md`
+untuk detail perilaku di aplikasi). **Baris "Kegawatdaruratan Kondisi Awal"
+yang menentukan apakah fitur ini aktif** — kalau baris itu kosong/tidak ada,
+kasus berjalan normal seperti biasa (10 langkah langsung).
+
+| Field | Isi |
+|---|---|
+| Kegawatdaruratan Kondisi Awal | narasi 1-2 kalimat, ditampilkan di atas monitor kosong. |
+| Kegawatdaruratan Ambang Stabil | angka — berapa tindakan **wajib** (`+`) berbeda yang harus benar sebelum pasien dianggap stabil. Boleh kosong → default = jumlah baris `+` di Tindakan Benar (minimal 1). |
+| Kegawatdaruratan Vital & Survei Primer | satu baris = satu tanda vital / item ABCDE, format `Nama: Stabil=<normal> \| Tidak Stabil=<tidak stabil>`. Nilai "Stabil" dipakai lagi nanti di step Pemeriksaan Fisik biasa setelah pasien stabil — jadi konsisten, tidak kontradiksi. |
+| Kegawatdaruratan Tindakan Benar | satu tindakan stabilisasi yang benar per baris, format `+Nama tindakan \| efek: teks efek \| vital: Nama1=nilai1, Nama2=nilai2`. Awali `+` = wajib (dihitung ke Ambang Stabil), tanpa awalan/`-` = opsional (efek narasi tapi tidak wajib). Bagian `vital:` opsional — nama di situ harus SAMA PERSIS dengan nama di baris Vital & Survei Primer di atas. |
+| Kegawatdaruratan Kontraindikasi | satu tindakan berbahaya per baris, format `Nama tindakan: alasan kenapa berbahaya`. Kalau mahasiswa minta sesuatu yang cocok dengan ini (atau AI menilai jelas berbahaya secara klinis untuk kasus ini walau tidak tertulis), sesi berakhir — pasien meninggal. |
+
+Contoh (syok anafilaktik):
+
+```
+Kegawatdaruratan Kondisi Awal: Pasien tampak lemas, napas berbunyi, wajah bengkak setelah disengat lebah.
+Kegawatdaruratan Ambang Stabil: 3
+Kegawatdaruratan Vital & Survei Primer:
+TD: Stabil=118/76 mmHg | Tidak Stabil=78/45 mmHg
+Nadi: Stabil=88x/menit | Tidak Stabil=132x/menit, lemah
+Airway: Stabil=Bebas | Tidak Stabil=Stridor ringan, edema orofaring
+Kegawatdaruratan Tindakan Benar:
++Epinefrin IM 0.3-0.5mg | efek: Bengkak berkurang, TD naik | vital: TD=95/62 mmHg
++Oksigen NRM 10-15 L/menit | efek: Saturasi membaik
+-Kortikosteroid IV | efek: Mencegah reaksi bifasik
+Kegawatdaruratan Kontraindikasi:
+Beta blocker/propranolol: Melawan kerja epinefrin, memperberat syok
+```
+
+Field lain (RPS, Pemeriksaan Fisik "khas", DD, Tatalaksana, Edukasi, dst) tetap
+diisi seperti biasa — dipakai untuk 10 langkah OSCE normal setelah pasien
+berhasil distabilkan.
+
 ### Soal gambar (EKG/rontgen/ruam kulit/deformitas sendi/dsb — SEMUA temuan bisa)
 
 Word menyimpan tiap gambar sebagai paragraf tersendiri di dalam sel tabel.

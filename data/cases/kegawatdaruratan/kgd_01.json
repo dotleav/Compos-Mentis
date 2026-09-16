@@ -1,0 +1,143 @@
+{
+  "id": "kgd_01",
+  "kategori": "kegawatdaruratan",
+  "level": "4A",
+  "nama": "Syok Anafilaktik",
+  "judulKasus": "Rian, 28 tahun, kurir paket, dibawa ke IGD tidak sadar penuh setelah disengat lebah",
+  "identitas": "Rian, 28 tahun, kurir paket",
+  "skenarioAwal": "Seorang pria dibawa keluarganya ke IGD dalam kondisi lemas, sesak, dan bengkak di wajah setelah disengat lebah 15 menit lalu. Anda dokter jaga IGD. Stabilkan pasien terlebih dahulu.",
+  "keluhanUtama": "Sesak napas dan bengkak wajah mendadak setelah disengat lebah",
+
+  "kegawatdaruratan": {
+    "kondisiAwal": "Pasien tampak lemas di brankar, napas berbunyi, wajah dan bibir bengkak, keluarga panik. Monitor belum terpasang.",
+    "ambangStabil": 3,
+    "kondisiUnstabil": {
+      "vs_kesadaran": "Somnolen, GCS E3M5V4",
+      "vs_td": "78/45 mmHg",
+      "vs_nadi": "132x/menit, teraba cepat dan lemah",
+      "vs_rr": "30x/menit, cepat dan dangkal",
+      "vs_spo2": "86% udara ruangan",
+      "vs_suhu": "37,1°C",
+      "sp_airway": "Stridor ringan, edema orofaring, lidah sedikit membengkak",
+      "sp_breathing": "Wheezing bilateral, retraksi interkostal, penggunaan otot bantu napas",
+      "sp_circulation": "Akral dingin, CRT >3 detik, nadi perifer lemah",
+      "sp_disability": "GCS E3M5V4, pupil isokor 3mm/3mm, reflek cahaya (+/+)",
+      "sp_exposure": "Urtikaria generalisata, angioedema wajah dan bibir, bekas sengatan di lengan kiri"
+    },
+    "tindakanBenar": [
+      {
+        "id": "epinefrin_im",
+        "nama": "Epinefrin IM 0.3-0.5mg (1:1000), paha anterolateral, dapat diulang tiap 5-15 menit",
+        "wajib": true,
+        "efek": "Bengkak wajah mulai berkurang, tekanan darah merangkak naik, napas mulai lebih longgar.",
+        "efekVital": { "vs_td": "96/60 mmHg", "vs_nadi": "112x/menit, mulai lebih kuat", "sp_airway": "Stridor berkurang, edema mulai mereda" }
+      },
+      {
+        "id": "iv_line_cairan",
+        "nama": "Pasang 1-2 jalur IV besar + loading cairan kristaloid (NaCl 0,9% / RL) cepat 1-2 liter",
+        "wajib": true,
+        "efek": "Perfusi membaik, akral mulai teraba hangat.",
+        "efekVital": { "sp_circulation": "Akral mulai hangat, CRT membaik <2 detik" }
+      },
+      {
+        "id": "oksigen_nrm",
+        "nama": "Oksigen non-rebreathing mask 10-15 L/menit",
+        "wajib": true,
+        "efek": "Saturasi oksigen perlahan naik, sianosis tidak berkembang.",
+        "efekVital": { "vs_spo2": "94% dengan O2 NRM" }
+      },
+      {
+        "id": "posisi_syok",
+        "nama": "Posisikan terlentang dengan kaki ditinggikan (posisi syok/trendelenburg), kecuali jika muntah/distres napas berat",
+        "wajib": false,
+        "efek": "Membantu perfusi otak dan jantung sementara resusitasi berlangsung."
+      },
+      {
+        "id": "kortikosteroid_iv",
+        "nama": "Kortikosteroid IV (mis. metilprednisolon 1-2mg/kgBB atau hidrokortison)",
+        "wajib": false,
+        "efek": "Membantu mencegah reaksi anafilaksis bifasik/berulang, efeknya baru terasa beberapa jam kemudian."
+      },
+      {
+        "id": "antihistamin_iv",
+        "nama": "Antihistamin H1 IV (mis. difenhidramin)",
+        "wajib": false,
+        "efek": "Meredakan gejala kulit (urtikaria, gatal) sebagai terapi tambahan, bukan lini pertama."
+      },
+      {
+        "id": "hentikan_pajanan",
+        "nama": "Hentikan/singkirkan sumber alergen (mis. cabut sengat, hentikan obat/infus pencetus bila ada)",
+        "wajib": false,
+        "efek": "Mencegah perburukan lebih lanjut akibat pajanan alergen yang berlanjut."
+      }
+    ],
+    "tindakanKontraindikasi": [
+      { "nama": "Beta blocker / propranolol IV", "alasan": "Melawan kerja epinefrin dan dapat memperberat bronkospasme serta hipotensi pada syok anafilaksis — kontraindikasi relatif-berat pada kondisi akut ini." },
+      { "nama": "Epinefrin IV bolus dosis penuh tanpa indikasi henti jantung", "alasan": "Risiko aritmia fatal dan krisis hipertensi pada pasien tanpa henti jantung; epinefrin lini pertama pada anafilaksis diberikan IM, bukan bolus IV." },
+      { "nama": "Antihipertensi (mis. captopril, amlodipin) untuk 'menurunkan tekanan darah'", "alasan": "Pasien sedang syok/hipotensi, bukan hipertensi — pemberian ini akan memperparah syok dan dapat berakibat fatal." },
+      { "nama": "Diuretik (mis. furosemide)", "alasan": "Pasien hipovolemik relatif akibat kebocoran kapiler pada anafilaksis; diuretik memperberat syok." }
+    ]
+  },
+
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Disengat lebah di lengan kiri sekitar 15-20 menit sebelum tiba di IGD saat sedang mengantar paket",
+        "Setelah disengat, muncul bentol merah gatal yang cepat meluas, lalu wajah dan bibir membengkak",
+        "Diikuti sesak napas, suara serak, dan rasa lemas hingga hampir pingsan",
+        "Tidak ada muntah/diare",
+        "Belum pernah minum obat apapun sebelum dibawa ke IGD"
+      ],
+      "rpd": "Riwayat alergi sengatan serangga sebelumnya (+) — pernah bentol-bentol setelah disengat tawon 2 tahun lalu tapi tidak seberat ini. Riwayat asma (-). Riwayat alergi obat/makanan (-).",
+      "rpk": "Tidak ada anggota keluarga dengan riwayat alergi berat serupa.",
+      "lifestyle": ["Bekerja sebagai kurir, sering di luar ruangan", "Tidak merokok", "Tidak ada kebiasaan khusus lain"]
+    },
+    "pemeriksaanFisik": [
+      { "id": "vs_kesadaran", "kelompok": "vital", "nama": "Kesadaran", "temuan": "Compos mentis, GCS E4M6V5", "signifikan": false },
+      { "id": "vs_td", "kelompok": "vital", "nama": "Tekanan Darah", "temuan": "118/76 mmHg", "signifikan": false },
+      { "id": "vs_nadi", "kelompok": "vital", "nama": "Nadi", "temuan": "88x/menit, reguler, kuat angkat", "signifikan": false },
+      { "id": "vs_rr", "kelompok": "vital", "nama": "Laju Napas", "temuan": "18x/menit", "signifikan": false },
+      { "id": "vs_spo2", "kelompok": "vital", "nama": "SpO2", "temuan": "98% udara ruangan", "signifikan": false },
+      { "id": "vs_suhu", "kelompok": "vital", "nama": "Suhu", "temuan": "36,8°C", "signifikan": false },
+      { "id": "sp_airway", "kelompok": "survei_primer", "nama": "Airway", "temuan": "Bebas, tidak ada stridor/obstruksi", "signifikan": false },
+      { "id": "sp_breathing", "kelompok": "survei_primer", "nama": "Breathing", "temuan": "Simetris, tidak ada wheezing/retraksi", "signifikan": false },
+      { "id": "sp_circulation", "kelompok": "survei_primer", "nama": "Circulation", "temuan": "Akral hangat, CRT <2 detik", "signifikan": false },
+      { "id": "sp_disability", "kelompok": "survei_primer", "nama": "Disability", "temuan": "GCS E4M6V5, pupil isokor 3mm/3mm", "signifikan": false },
+      { "id": "sp_exposure", "kelompok": "survei_primer", "nama": "Exposure", "temuan": "Urtikaria residual ringan, edema wajah sudah jauh berkurang, bekas sengatan di lengan kiri", "signifikan": true },
+      { "id": "pf_kulit", "kelompok": "khas", "nama": "Kulit", "temuan": "Bekas sengatan lebah di lengan kiri dengan eritema lokal, sisa urtikaria di badan", "signifikan": true },
+      { "id": "pf_thorax", "kelompok": "khas", "nama": "Auskultasi Paru", "temuan": "Vesikuler +/+, ronki (-), wheezing (-) — sudah membaik setelah tatalaksana awal", "signifikan": true }
+    ],
+    "penunjang": [
+      { "id": "pnj_darah_lengkap", "nama": "Darah Lengkap", "temuan": "Leukosit 11.200/uL (sedikit meningkat), eosinofil dalam batas normal, Hb/Ht dalam batas normal", "signifikan": false },
+      { "id": "pnj_triptase", "nama": "Serum Triptase", "temuan": "Meningkat dibanding nilai dasar (diambil dalam 1-3 jam setelah onset) — mendukung diagnosis anafilaksis", "signifikan": true },
+      { "id": "pnj_ekg", "nama": "EKG", "temuan": "Sinus takikardia ringan, tidak ada tanda iskemia", "signifikan": false }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+
+  "dd": {
+    "benar": "Syok Anafilaktik",
+    "differensialBenar": ["Angioedema Alergi", "Syok Septik", "Reaksi Vasovagal", "Asma Eksaserbasi Akut"]
+  },
+
+  "tatalaksana": [
+    { "opsi": "Epinefrin IM 0.3-0.5mg, dapat diulang tiap 5-15 menit sesuai respons", "benar": true },
+    { "opsi": "Oksigenasi dan pasang jalur IV + loading kristaloid", "benar": true },
+    { "opsi": "Kortikosteroid IV untuk cegah reaksi bifasik", "benar": true },
+    { "opsi": "Antihistamin IV sebagai terapi tambahan gejala kulit", "benar": true },
+    { "opsi": "Observasi minimal 6-24 jam untuk memantau reaksi bifasik", "benar": true },
+    { "opsi": "R/ Propranolol tab mg 10 No. X s.2.d.d tab. I", "benar": false },
+    { "opsi": "Pulangkan begitu sesak berkurang tanpa observasi lanjutan", "benar": false }
+  ],
+
+  "edukasi": [
+    { "opsi": "Hindari pajanan alergen penyebab (sengatan serangga sejenis) di kemudian hari", "benar": true },
+    { "opsi": "Bawa selalu epinefrin auto-injector (mis. EpiPen) jika tersedia/diresepkan", "benar": true },
+    { "opsi": "Segera ke IGD terdekat bila gejala serupa muncul kembali, jangan ditunda", "benar": true },
+    { "opsi": "Gunakan gelang/kartu identitas alergi", "benar": true },
+    { "opsi": "Reaksi ini tidak akan berulang sehingga tidak perlu tindakan pencegahan khusus", "benar": false }
+  ]
+}

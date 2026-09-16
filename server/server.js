@@ -7,6 +7,7 @@ const casesRouter = require("./routes/cases");
 const chatRouter = require("./routes/chat");
 const chatStreamRouter = require("./routes/chatStream");
 const examRouter = require("./routes/exam");
+const emergencyRouter = require("./routes/emergency");
 const customCasesRouter = require("./routes/customCases");
 const driveRouter = require("./routes/drive");
 const keysRouter = require("./routes/keys");
@@ -57,6 +58,7 @@ app.use("/api/cases", casesRouter);
 app.use("/api/chat", chatRouter);
 app.use("/api/chat", chatStreamRouter); // streaming SSE variant
 app.use("/api/exam", examRouter);
+app.use("/api/emergency", emergencyRouter);
 app.use("/api/custom-cases", customCasesRouter);
 app.use("/api/drive", driveRouter);
 app.use("/api/keys", keysRouter);

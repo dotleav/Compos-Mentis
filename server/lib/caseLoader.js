@@ -99,7 +99,7 @@ function loadDdMaster() {
  * skenarioAwal (a deliberately vague one-liner) is shown up front. */
 function stripGroundTruth(fullCase) {
   if (!fullCase) return null;
-  const { groundTruth, dd, tatalaksana, edukasi, identitas, keluhanUtama, ...rest } = fullCase;
+  const { groundTruth, dd, tatalaksana, edukasi, identitas, keluhanUtama, kegawatdaruratan, ...rest } = fullCase;
   return {
     ...rest,
     // options are shown, but not which are "benar" (checked server-side on submit)
@@ -107,6 +107,12 @@ function stripGroundTruth(fullCase) {
     // "benar" first in the source JSON, which would otherwise leak a pattern)
     tatalaksanaPilihan: shuffle((tatalaksana || []).map((t) => t.opsi)),
     edukasiPilihan: shuffle((edukasi || []).map((e) => e.opsi)),
+    // Only the narrative intro is client-safe — tindakanBenar/kontraindikasi
+    // are the answer key for the emergency step and stay server-side only,
+    // looked up fresh via loadCase() inside server/routes/emergency.js.
+    kegawatdaruratan: kegawatdaruratan
+      ? { kondisiAwal: kegawatdaruratan.kondisiAwal, ambangStabil: kegawatdaruratan.ambangStabil }
+      : null,
   };
 }
 
