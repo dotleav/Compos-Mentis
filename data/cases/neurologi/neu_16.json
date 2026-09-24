@@ -1,0 +1,65 @@
+{
+  "id": "neu_16",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Slamet, 50 tahun, petani",
+  "keluhanUtama": "rahang kaku, sulit membuka mulut sejak 2 hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "5 hari lalu tertusuk paku berkarat di kaki saat bertani, luka tidak dirawat/tidak vaksin tetanus, sejak 2 hari muncul kekakuan rahang (trismus) progresif, sulit menelan, kekakuan leher & perut (perut papan/opistotonus), spasme umum dipicu rangsangan ringan (cahaya, suara,"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU CM, tampak kesakitan & cemas, trismus jelas (lockjaw) Rhesus sardonicus (ekspresi wajah khas akibat kontraksi otot wajah) Rigiditas abdomen (\"perut papan\"), opistotonus saat spasme Spasme dapat spontan (reflex spasm) atau dipicu stimulus; otot",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Darah perifer lengkap, GDS, SGOT/SGPT, albumin, elektrolit, ureum, kreatinin, CPK (rhabdomiolisis) EKG & rontgen toraks PA/AP (skrining komplikasi kardiak/paru) Diagnosis klinis — tidak ada uji konfirmasi laboratorium spesifik",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tetanus",
+    "differensialBenar": [
+      "Meningoensefa litis",
+      "Poliomielitis",
+      "Rabies",
+      "Lesi Orofaring",
+      "Tonsilitis Berat",
+      "Tetani (hipokalsemia)",
+      "Keracunan Strychnine",
+      "Reaksi Fenotiazine"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Sedasi & kontrol spasme: R/ Diazepam inj IV No.sesuai kebutuhan — S bolus lambat naik bertahap per 5mg hingga spasme terkontrol tanpa sedasi berlebihan/hipoventilasi, atau 10-20mg IV tiap 4-6 jam (dosis tinggi hingga 600mg/hari pada kasus berat, awasi asidosis) Netralisasi toksin & sumber infeksi: Human Tetanus Immunoglobulin (HTIG) dosis sesuai berat kasus + debridemen luka + antibiotik (metronidazol IV sebagai lini pertama membunuh C. tetani) Suportif: proteksi jalan napas (pertimbangkan",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan pentingnya perawatan luka segera & imunisasi tetanus (toksoid) setiap luka kotor/tertusuk benda tajam; booster tetanus dewasa tiap 10 tahun; rawat di ruang tenang minim stimulus (cahaya/suara) untuk kurangi spasme; edukasi keluarga tanda bahaya (kesulitan bernapas) segera lapor",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan rahang kaku, sulit membuka mulut sejak 2 hari."
+}

@@ -1,0 +1,59 @@
+{
+  "id": "neu_39",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Joko, 27 tahun, pekerja bangunan",
+  "keluhanUtama": "",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "jatuh dari ketinggian ±8 meter 2 jam lalu, langsung tidak bisa menggerakkan kedua tungkai dan mati rasa dari pusar ke bawah, tidak bisa BAK (retensi urin), tidak ada riwayat pingsan"
+      ],
+      "rpd": "sebelumnya sehat, tidak ada kelainan tulang belakang",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Primary survey ABC dulu (curiga multitrauma) Inspeksi: deformitas tulang belakang area torakal, nyeri tekan/step-off vertebra Motorik: paraplegia komplit (0/5) kedua tungkai; sensorik: anestesi total setinggi umbilikus ke bawah (level T10) dan di bawahnya Refleks spinal: awal hilang (fase syok spinal) — tanda pemulihan syok spinal ditandai",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Foto polos vertebra (AP/lateral) sesuai letak lesi; CT scan/MRI vertebra bila foto konvensional meragukan atau untuk rencana operasi Darah perifer & urin lengkap, ureum, kreatinin, GDS, elektrolit, AGD SSEP & MEP atas indikasi ASIA Score untuk klasifikasi derajat & prognosis (ASIA A = komplit)",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Complete Spinal Cord Transection / Cedera Medula Spinalis Komplit",
+    "differensialBenar": [
+      "Cedera Medula Spinalis Inkomplit",
+      "Tetra/parapar esis non-traumatik ec infeksi/tumor"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "A (Airway): jaga jalan napas lapang B (Breathing): oksigen bila sesak, intubasi bila cedera servikal atas dengan paralisis diafragma C (Circulation): bila syok neurogenik (hipotensi+bradikardia+akral hangat) — cairan TIDAK menaikkan TD, berikan vasopresor: R/ Dopamin infus titrasi No.I — S IV drip titrasi; Atropin 0,5-2,0mg IV bila bradikardia berat Bila syok hipovolemik: kristaloid (NaCl 0,9%/RL) ± koloid (albumin 5%) Imobilisasi & stabilisasi: cervical collar bila servikal, torakolumbal brace/korset lumbal sesuai level Stabilisasi medis: kateter urin (indwelling→intermiten), NGT sesuai indikasi, pencegahan tukak lambung (sukralfat",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan saat masuk RS (rencana rawat, biaya, pengobatan, prosedur, masa pemulihan & latihan, manajemen nyeri, risiko&komplikasi) ; prognosis diperkirakan berdasarkan ASIA score — cedera komplit (ASIA A) prognosis pemulihan motorik buruk; edukasi keluarga soal kemungkinan kecacatan menetap & kebutuhan rehabilitasi jangka panjang (bladder/bowel training, kursi roda)",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan yang belum diketahui."
+}

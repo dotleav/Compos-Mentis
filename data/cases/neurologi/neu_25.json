@@ -1,0 +1,67 @@
+{
+  "id": "neu_25",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Bapak Wardi, 60 tahun",
+  "keluhanUtama": "",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "ditemukan tergeletak tidak sadar, tidak diketahui onset pasti, tidak ada saksi. Riwayat sebelumnya sehat menurut keluarga"
+      ],
+      "rpd": "diabetes melitus tipe 2, konsumsi obat hipoglikemik oral, riwayat hipertensi",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Kesadaran: tidak dapat dibangunkan adekuat dengan stimulus kuat yang sesuai (definisi koma) Pemeriksaan cermat: GCS & FOUR score, respons nyeri, fungsi motorik, membuka mata & verbal, N.kranialis (gerak bola mata, pupil, refleks kornea, refleks batuk/gag reflex) Tanda vital lengkap: TD, nadi, napas (pola/frekuensi ), SpO2, suhu",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "GDS cito (singkirkan hipoglikemia — sering reversibel cepat) Analisis gas darah, elektrolit, glukosa, kalsium, osmolaritas, skrining toksik obat (NAPA), fungsi ginjal/hati CT/MRI kepala (perdarahan, efek massa, kelainan struktural), pencitraan vaskular (oklusi pembuluh besar), EEG, pungsi lumbal atas indikasi",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Koma",
+    "differensialBenar": [
+      "Locked-in Syndrome",
+      "Cedera Otak Anoksik",
+      "Infark/Perdar ahan Otak",
+      "Neoplasma Otak",
+      "Ensefalopati Hipertensi",
+      "Hipoglikemia",
+      "Ensefalopati Metabolik",
+      "Myxedema",
+      "Status Epileptikus",
+      "Ensefalopati Toksik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Prinsip B1-B6 & tata laksana koma: 1) Kendalikan gula darah — R/ Dekstrosa 40% 25mL bolus IV bila GDS rendah 2) Turunkan tekanan intrakranial bila ada tanda peningkatan TIK 3) Hentikan kejang bila ada 4) Obati infeksi bila ditemukan 5) Kendalikan kelainan asam basa & elektrolit 6) Kendalikan suhu tubuh 7) Berikan tiamin (terutama bila curiga defisiensi/alkoholisme, sebelum dekstrosa pada kasus meragukan) 8) Berikan antidotum spesifik bila keracunan diketahui 9) Kendalikan agitasi Indikasi rawat inap: penurunan kesadaran dengan hemodinamik tidak stabil, atau kejang",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan sebelum masuk RS (rencana rawat, biaya, pengobatan, prosedur, masa pemulihan, manajemen nyeri, risiko&komplikasi) ; jelaskan mengenai koma serta risiko & komplikasi selama perawatan; jelaskan faktor risiko & pencegahan rekurensi; discharge planning; prognosis ad vitam/fungsionam /sanationam umumnya dubia ad malam — sampaikan realistis ke keluarga",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan yang belum diketahui."
+}

@@ -1,0 +1,60 @@
+{
+  "id": "neu_58",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Rian, 26 tahun, buruh",
+  "keluhanUtama": "susah konsentrasi & lupa-lupa sejak jatuh dari motor 2 bulan lalu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "2 bulan lalu kecelakaan motor dengan benturan kepala ringan, sempat pingsan singkat <5 menit lalu sadar (cedera kepala ringan/concussion), sejak itu nyeri kepala"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Pemeriksaan fisik umum & neurologis dalam batas normal (tanpa defisit fokal); pemeriksaan kognisi sederhana (MMSE/MoCA) dapat menunjukkan keluhan subjektif gangguan",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Darah perifer lengkap, elektrolit (Na,K,Cl), ureum/kreatinin , GDS, SGOT/SGPT, PT/APTT/fibrin ogen (atas indikasi); CT/MRI kepala umumnya normal pada PCS murni (dilakukan untuk singkirkan lesi",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Amnesia Pasca Trauma / Postconcussion Syndrome",
+    "differensialBenar": [
+      "Posttraumatic Stress Disorder",
+      "gangguan psikiatri (depresi/ansie tas/apatis)",
+      "demensia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Individual sesuai keluhan utama pasien Farmakologis simtomatik: R/ Ibuprofen tab 400mg No.X — S prn 3dd tab I p.o. p.c. (nyeri kepala) R/ Melatonin tab 3mg No.X — S 1dd tab I p.o. malam (gangguan tidur; alternatif benzodiazepin jangka pendek) Bila gangguan mood/kognitif menonjol: golongan SSRI Nonfarmakologis: vestibular physical therapy, cognitive",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Edukasi & dukungan keluarga penting selama pemulihan; jelaskan gejala PCS umumnya membaik namun prognosis fungsional dubia (bervariasi antarindividu, ad vitam & ad sanationam bonam); hindari aktivitas berisiko",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan susah konsentrasi & lupa-lupa sejak jatuh dari motor 2 bulan lalu."
+}

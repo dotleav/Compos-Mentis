@@ -1,0 +1,64 @@
+{
+  "id": "neu_33",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Pak Suryo, 68 tahun, pensiunan",
+  "keluhanUtama": "tangan gemetar saat istirahat, gerakan makin lambat sejak 1 tahun",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "tremor tangan kanan saat istirahat (menghilang saat beraktivitas), gerakan makin lambat (bradikinesia), kaku otot terutama lengan kanan-leher, jalan makin kaku dengan langkah kecil-kecil, penciuman menurun beberapa tahun terakhir, konstipasi kronis, kadang bicara pelan dan monoton"
+      ],
+      "rpd": "tidak ada riwayat stroke/trauma",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Tanda motorik: bradikinesia, tremor istirahat (resting tremor) tangan kanan, rigiditas (cogwheel) leher & ekstremitas kanan, gait freezing, postur membungkuk, tanpa diskinesia/disto nia (belum ada terapi levodopa) Tanda nonmotorik: hiposmia, konstipasi, gangguan tidur",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Kriteria diagnosis klinis UK Parkinson Disease Brain Bank Society atau MDS 2015 (bradikinesia + minimal 1 dari tremor istirahat/rigidit as, tanpa red flag atipikal) CT/MRI kepala (singkirkan penyebab sekunder: NPH, lesi vaskular, tumor), MRI fungsional/SPEC T-PET (DAT scan) bila diagnosis meragukan",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Penyakit Parkinson",
+    "differensialBenar": [
+      "Tremor Esensial",
+      "Parkinsonism Vaskular",
+      "Multiple System Atrophy",
+      "Progressive Supranuclear Palsy",
+      "Corticobasal Degeneration",
+      "Normal Pressure Hydrocephalus",
+      "Demensia Lewy Body"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Farmakologi (motorik): R/ Levodopa/Carbidopa tab 100/25mg No.XXX — S 3 dd tab ½-1 p.o., mulai dosis rendah titrasi naik bertahap sesuai respons Alternatif tahap awal (usia lebih muda, gejala ringan): R/ Pramipexole tab 0,25mg No.XXX — S 3 dd tab I p.o., titrasi naik bertahap (agonis dopamin, tunda efek samping motor fluctuation levodopa jangka panjang) Tambahan bila perlu: R/ Amantadin tab 100mg No.XX — S 2 dd tab I p.o. (nondopaminergik, terutama untuk diskinesia tahap lanjut) Nonfarmakologi: edukasi & komunikasi, fisioterapi (gait training, latihan keseimbangan), terapi wicara (bila disartria), terapi okupasi",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan gejala & tanda penyakit yang bersifat progresif kronis, tidak dapat disembuhkan namun dapat dikendalikan dengan terapi; edukasi kepatuhan minum obat tepat waktu (levodopa sensitif waktu makan & jadwal); latihan fisik teratur (gait & balance training) untuk mencegah jatuh; dukungan keluarga penting untuk aktivitas sehari-hari; pantau gejala nonmotorik",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan tangan gemetar saat istirahat, gerakan makin lambat sejak 1 tahun."
+}

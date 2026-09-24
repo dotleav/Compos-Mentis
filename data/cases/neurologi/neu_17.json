@@ -1,0 +1,63 @@
+{
+  "id": "neu_17",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Pak Made, 28 tahun, peternak",
+  "keluhanUtama": "takut air, gelisah, sejak digigit anjing",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "digigit anjing liar di lengan 6 minggu lalu, luka tidak dicuci/tidak vaksin. 3 hari lalu mulai nyeri & kesemutan di area bekas gigitan (sudah sembuh), demam, malaise, cemas berlebihan. 1 hari ini muncul hidrofobia (takut air/menelan), aerofobia (takut hembusan angin ke wajah memicu spasme faring), hipersalivasi,"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU agitasi, kesadaran fluktuatif, demam tinggi persisten Bekas luka gigitan sudah sembuh namun ada parestesia/gata l di area tersebut, mioedema (+) Stadium eksitasi: hiperhidrosis, hipersalivasi, hiperlakrimasi, pupil dilatasi, kontraksi faring/napas",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Kurang bermakna — diagnosis rabies bersifat klinis, ditegakkan dengan riwayat gigitan (+) dan hewan yang menggigit mati dalam 1 minggu; pemeriksaan lab spesifik (deteksi antigen/PCR) bila tersedia bersifat konfirmasi, tidak menunda terapi",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Rabies",
+    "differensialBenar": [
+      "Tetanus",
+      "Ensefalitis (viral lain)",
+      "Intoksikasi obat",
+      "Japanese Encephalitis",
+      "Herpes Simpleks",
+      "Ensefalitis Pasca-vaksinas i"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Fase awal/pra-gejala (pencegahan, seharusnya dilakukan sejak digigit): cuci luka air sabun 5-10 menit + desinfektan (alkohol 40-70%/tinktura yodii); Serum Anti Rabies (SAR) 40 IU/kgBB (heterolog)/20 IU/kgBB (homolog) infiltrasi luka+IM; Vaksin Anti Rabies (VAR) 0,5mL IM regimen hari 0,3,7,14,28 (Essen/WHO) atau 0,7,21 (Zagreb/Depkes) Fase lanjut (sudah bergejala, kasus ini): TIDAK ADA terapi kuratif — hanya suportif: isolasi pasien (hindari rangsang pemicu spasme, cegah penularan), stabilisasi jalan napas/hemodinamik, kontrol",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Prognosis buruk (hampir selalu fatal) setelah gejala muncul — fokus edukasi pada PENCEGAHAN: segera cuci luka gigitan hewan dengan air sabun mengalir, segera ke fasyankes untuk SAR+VAR dalam <10 hari, jangan tunggu hewan menunjukkan gejala rabies; edukasi keluarga untuk isolasi & perawatan",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan takut air, gelisah, sejak digigit anjing."
+}

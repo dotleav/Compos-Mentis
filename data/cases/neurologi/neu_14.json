@@ -1,0 +1,60 @@
+{
+  "id": "neu_14",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Mbak Fina, 25 tahun, karyawan",
+  "keluhanUtama": "demam, bingung, kejang sejak 2 hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "onset akut <3 hari: demam, nyeri kepala, malaise, flu-like symptom (limfadenopati, nyeri otot), diikuti perubahan status mental (bingung, letargis) berlangsung >24 jam, disertai kejang parsial, halusinasi (gangguan neuropsikiatri)"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU somnolen, disorientasi Pemeriksaan neurologi umum: dapat ditemukan afasia, ataksia, gangguan gerak (tremor); funduskopi cek papiledema; MMSE terganggu",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Kriteria mayor: perubahan status mental >24 jam tanpa sebab lain Kriteria minor (≥2 possible, ≥3 probable): kejang, demam ≥38°C dalam 72 jam, defisit fokal baru, LCS pleositosis (≥5/mm³), neuroimaging abnormal sesuai ensefalitis, EEG abnormal sesuai",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Ensefalitis Viral",
+    "differensialBenar": [
+      "Meningoensefa litis Bakterial",
+      "Meningoensefa litis TB",
+      "Ensefalitis Autoimun"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Asiklovir inj 10-15mg/kgBB IV No.XXX — S tiap 8 jam IV selama 10 hari (dapat diperpanjang 14-21 hari bila imunosupresi atau PCR tetap positif), diberikan empiris sejak dicurigai ensefalitis Terapi umum: stabilisasi jalan napas, hemodinamik, kontrol TIK, kontrol kejang & suhu tubuh Terapi rehabilitasi bertahap (terapi wicara, menelan, fisioterapi) sesuai gejala sisa",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan penyakit dan rencana terapi termasuk kemungkinan tindakan invasif (trakeostomi bila perlu); jelaskan perkembangan penyakit secara berkala; konseling gizi; jadwal obat dan kontrol jelas; prognosis fungsional dubia — perlu rehabilitasi jangka panjang",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan demam, bingung, kejang sejak 2 hari."
+}

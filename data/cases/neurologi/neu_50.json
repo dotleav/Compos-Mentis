@@ -1,0 +1,62 @@
+{
+  "id": "neu_50",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Pak Slamet, 55 tahun, riwayat konsumsi alkohol berat >15 tahun",
+  "keluhanUtama": "kaki kebas dan lemah, jalan sempoyongan, sudah beberapa bulan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "kesemutan & baal simetris dimulai dari ujung kaki, perlahan naik ke proksimal (onset perlahan tidak disadari, khas neuropati toksik),"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Distribusi sensorik stocking-glove simetris distal-ke-proksi mal, kelemahan motorik distal ringan, hiporefleks/are fleksia tendon Achilles, gaya berjalan ataksik (gangguan propioseptif —",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "EMG/KHS — pola polineuropati aksonal simetris distal (trias polineuropati: gangguan sensorik stocking-glove, kelemahan distal, hiporefleks); darah rutin, fungsi hati (SGOT/SGPT),",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Neuropati Simetris — Neuropati Alkohol & Toksik",
+    "differensialBenar": [
+      "Neuropati diabetik",
+      "CIDP",
+      "neuropati nutrisional",
+      "neuropati toksik obat/logam berat",
+      "neuropati defisiensi B12"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Hentikan konsumsi alkohol (etiologi utama, terapi kunci) R/ Tiamin (Vitamin B1) inj 100mg No.VII — S 1dd IM/IV selama 7 hari, lanjut oral R/ Neurotropik (Vit. B1+B6+B12) tab No.XXX — S 1dd tab I p.o. R/ Gabapentin tab 100mg No.XXI — S 3dd tab I p.o. titrasi (bila disertai nyeri neuropatik) Nutrisi adekuat, fisioterapi untuk gangguan gait/ataksia Algoritma: identifikasi & hentikan penyebab toksik →",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Berhenti konsumsi alkohol total (kunci keberhasilan terapi); asupan gizi seimbang & suplementasi vitamin rutin; jelaskan perbaikan berlangsung lambat (bulan-tahun) — perlu kesabaran & kepatuhan; libatkan keluarga",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kaki kebas dan lemah, jalan sempoyongan, sudah beberapa bulan."
+}

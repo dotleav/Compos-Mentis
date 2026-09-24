@@ -1,0 +1,60 @@
+{
+  "id": "neu_47",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Ibu Tati, 50 tahun, penjahit",
+  "keluhanUtama": "nyeri bahu & lengan kanan sejak 2 minggu, kadang terasa sampai dada",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "nyeri bahu kanan tumpul-pegal (nosiseptik, akibat tendinitis rotator cuff dari gerakan berulang menjahit), memberat saat mengangkat lengan, disertai kadang nyeri menjalar ke area dada kiri (nyeri rujukan/referred pain, perlu skrining kardiak) dan sesekali"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Palpasi bahu kanan: nyeri tekan area rotator cuff, gerakan aktif abduksi terbatas nyeri (nyeri nosiseptik muskuloskeletal khas — memburuk dengan gerakan/tekana n, membaik dengan istirahat) Pemeriksaan jantung & EKG untuk",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Rontgen bahu/USG muskuloskeletal (evaluasi tendinitis/robek an rotator cuff) EKG & enzim jantung bila nyeri dada mengarah kardiak (menyingkirkan sindrom koroner akut sebagai penyebab nyeri rujukan) Skala nyeri (VAS/NRS) & kuesioner",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Nyeri Nosiseptik, Nyeri Campuran, Nyeri Rujukan",
+    "differensialBenar": [
+      "Nyeri Neuropatik",
+      "Nyeri Psikogenik",
+      "Nyeri Viseral Murni"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Nyeri nosiseptik (WHO Analgesic Ladder — mulai step 1): R/ Parasetamol tab 500mg No.XX — S 3 dd tab I p.o. p.c. Bila kurang: R/ Natrium diklofenak tab 50mg No.X — S 2 dd tab I p.o. p.c. (NSAID) Bila ada komponen neuropatik (nyeri campuran): tambahkan R/ Gabapentin tab 100mg No.XXI — S 3 dd tab I p.o., titrasi naik sesuai respons Nonfarmakologis: fisioterapi bahu (peregangan & penguatan rotator cuff), kompres hangat, modifikasi aktivitas (kurangi gerakan repetitif berlebihan)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan perbedaan sumber nyeri (nosiseptik dari jaringan, rujukan dari organ lain, neuropatik dari saraf) agar pasien memahami mengapa nyeri terasa di lokasi berbeda dari sumbernya; perbaiki ergonomi kerja (posisi menjahit, istirahat berkala); latihan peregangan rutin; segera ke IGD bila nyeri dada",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan nyeri bahu & lengan kanan sejak 2 minggu, kadang terasa sampai dada."
+}

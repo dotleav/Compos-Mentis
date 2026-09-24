@@ -1,0 +1,62 @@
+{
+  "id": "neu_24",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Hasan, 55 tahun, riwayat sirosis hati",
+  "keluhanUtama": "bingung, bicara ngelantur, mengantuk terus 2 hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "perubahan status mental bertahap 2 hari: awalnya bingung ringan, disorientasi waktu/tempat, lalu makin mengantuk, bicara tidak nyambung, tanpa demam, tanpa trauma kepala, tanpa kejang"
+      ],
+      "rpd": "sirosis hati (hepatitis B kronik), riwayat konstipasi 4 hari, tidak patuh minum laktulosa",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU somnolen, disorientasi tempat/waktu/ orang, GCS E3V4M6 Asteriksis (flapping tremor) saat tangan diekstensikan (khas ensefalopati metabolik/hepa tik) Tanpa defisit neurologis fokal lateralisasi, tanpa tanda meningeal Ikterik ringan, ascites, spider nevi (stigmata sirosis)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Elektrolit, glukosa, fungsi hati (kadar amonia darah), fungsi ginjal, analisis gas darah, kadar obat/toksin (NAPZA) bila dicurigai CT/MRI kepala untuk menyingkirkan lesi struktural (perdarahan, infark, tumor) EEG bila dicurigai status epileptikus nonkonvulsif; pungsi lumbal bila curiga infeksi SSP",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Ensefalopati",
+    "differensialBenar": [
+      "Ensefalitis",
+      "Meningitis",
+      "Stroke",
+      "Status Epileptikus Non-konvulsif",
+      "Intoksikasi"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Prinsip umum: identifikasi & atasi penyebab dasar (di sini: ensefalopati hepatikum akibat konstipasi + infeksi tersembunyi) R/ Laktulosa syr 15mL No.I botol — S 3-4 dd 15-30mL p.o. titrasi sampai BAB lunak 2-3x/hari (menurunkan produksi amonia usus) R/ Rifaksimin tab 550mg No.XIV — S 2 dd tab I p.o. (menurunkan bakteri penghasil amonia usus) Koreksi elektrolit/gula darah bila abnormal, hentikan obat sedatif/hepatotoksik, cari & atasi pencetus (infeksi, perdarahan GI, dehidrasi) Algoritma: stabilisasi ABC→cari & obati penyebab dasar→pantau kesadaran serial (GCS)→rawat inap bila GCS turun progresif",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan rencana rawat, biaya, prosedur, dan tindakan pemulihan sebelum masuk RS; jelaskan faktor risiko & pencegahan kekambuhan (kepatuhan laktulosa, hindari konstipasi, hindari obat sedatif); edukasi keluarga tanda bahaya perburukan kesadaran untuk segera kembali ke RS; discharge planning jelas",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan bingung, bicara ngelantur, mengantuk terus 2 hari."
+}

@@ -1,0 +1,63 @@
+{
+  "id": "neu_38",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Bambang, 40 tahun, epilepsi diketahui, putus obat 1 minggu",
+  "keluhanUtama": "kejang terus-menerus tidak berhenti",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "kejang tonik-klonik umum berlangsung >5 menit tanpa henti saat tiba di IGD, atau kejang berulang 2x tanpa pulihnya kesadaran di antaranya (kriteria"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Tanda vital & pemeriksaan umum: cari tanda ke arah penyebab (demam, tanda infeksi, jejas trauma) atau akibat SE (hipoksia, aspirasi) Pemeriksaan neurologis: tentukan tipe SE (konvulsif jelas terlihat vs",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Kriteria SE konvulsif: bangkitan >5 menit ATAU bangkitan berulang ≥2x tanpa pulihnya kesadaran di antaranya (T1); konsekuensi jangka panjang (T2) dapat terjadi setelah 30 menit Darah lengkap, ureum,",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Status Epileptikus",
+    "differensialBenar": [
+      "Bangkitan Non-epileptik Psikogenik",
+      "Sindrom Hiperventilasi/ Serangan Panik",
+      "Movement Disorder (asteriksis",
+      "hemibalismus",
+      "chorea",
+      "atetosis)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Algoritma tata laksana SE konvulsif (prinsip umum ABC + terminasi kejang bertahap): 0-5 menit (stabilisasi): ABC, oksigen, akses IV, cek GDS (koreksi bila hipoglikemia) 5-20 menit (lini pertama — benzodiazepin): R/ Diazepam inj IV 10mg No.II — S bolus IV lambat (2-5mg/menit), dapat diulang 1x setelah 5 menit bila kejang belum berhenti (maks 2 dosis); atau Lorazepam IV 0,1mg/kgBB bila tersedia",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan mengenai status epileptikus, risiko, kemungkinan perawatan di ruang intensif, dan komplikasi selama perawatan; jelaskan faktor risiko & pencegahan rekurensi — tekankan bahaya putus obat OAB mendadak, pastikan",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kejang terus-menerus tidak berhenti."
+}

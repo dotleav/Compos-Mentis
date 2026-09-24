@@ -1,0 +1,60 @@
+{
+  "id": "neu_15",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Karim, 30 tahun, baru pulang dari Papua",
+  "keluhanUtama": "demam menggigil, tidak sadar",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "demam tinggi menggigil berkeringat 3 hari, nyeri kepala, mual muntah, diare, nyeri otot, kesadaran menurun progresif hari ke-3, tidak bisa dibangunkan"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Demam ≥37,5°C aksila, konjungtiva/tel apak tangan pucat, splenomegali & hepatomegali (+, keadaan agak kronis) Manifestasi berat: kesadaran menurun (GCS<10",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Apusan darah tebal & tipis: identifikasi Plasmodium falciparum bentuk aseksual Kriteria malaria serebral: koma tak terbangunkan (GCS<10) + parasit aseksual P.falciparum +",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Malaria Serebral",
+    "differensialBenar": [
+      "Infeksi SSP lain (meningitis/en sefalitis)",
+      "Ensefalopati metabolik/sep tik",
+      "Lesi desak ruang intrakranial"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Lini pertama: R/ Artesunat inj IV 2,4mg/kgBB No.III — S bolus IV pada jam 0, 12, 24, lalu tiap 24 jam sampai sadar/ membaik, lanjut DHP (Dihidroartemisinin + Piperakuin) oral setelah sadar Lini kedua (bila artesunat tak tersedia): R/ Kina drip IV 20mg/kgBB No.I — S drip dalam dekstrosa 5%/NaCl 0,9% selama 4 jam (dosis awal), dilanjutkan dosis",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kontrol pasca rawat inap sesuai jadwal; edukasi pencegahan malaria (kelambu, repelan, kemoprofilaksis bila ke daerah endemik); prognosis lebih baik pada dewasa yang mendapat artesunat dibanding kina;",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan demam menggigil, tidak sadar."
+}

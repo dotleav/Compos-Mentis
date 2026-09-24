@@ -1,0 +1,63 @@
+{
+  "id": "neu_18",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Pak Yudi, 38 tahun, guru",
+  "keluhanUtama": "pusing berputar terus-menerus 2 hari, tidak bisa jalan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "vertigo (spinning) mendadak, terus-menerus sudah 2 hari (>24 jam, bukan episodik seperti BPPV), memberat dengan gerakan kepala/badan, disertai mual muntah hebat, sempat flu-like syndrome 1 minggu sebelumnya. Tidak ada gangguan pendengaran atau tinnitus"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU tampak sakit, sulit berjalan karena unsteadiness Rinne/Weber normal (tanpa gangguan dengar) Head Impulse Test (HIT): penurunan fungsi VOR jelas pada satu sisi (sisi lesi) Nistagmus spontan perifer horizontal-torsi onal, direction-fixed, menguat tanpa fiksasi visual",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Vestibular elektrofisiologi (tes kalori, vHIT, VEMP) bila tersedia untuk konfirmasi Audiometri (menyingkirkan keterlibatan auditori) Pencitraan (MRI) bila curiga sebab sentral (skew deviation, gaze-evoked nystagmus, defisit neurologis)",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Neuritis Vestibularis / Acute Unilateral Vestibulopath y",
+    "differensialBenar": [
+      "Gangguan Vestibular Sentral",
+      "Migrain Vestibular",
+      "BPPV",
+      "Penyakit Meniere",
+      "Labirintitis",
+      "Stroke Fossa Posterior"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Simptomatik (vestibular suppressant, hanya beberapa hari pertama): R/ Betahistin mesilat tab 6mg No.XV — S 3dd tab I p.o. (atau diazepam/dimenhidrinat jangka pendek) Kortikosteroid: R/ Metilprednisolon tab 16mg No.XX — S setara 100mg/hari, tapering turun 20mg tiap 4 hari Rehabilitasi vestibular: dimulai secepatnya setelah fase akut mereda untuk mempercepat kompensasi sentral",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jangan bergantung pada obat penekan vestibular lebih dari beberapa hari — dapat menghambat kompensasi alami; mulai latihan rehabilitasi vestibular begera setelah gejala akut mereda; prognosis umumnya baik namun fungsional dubia ad bonam (bisa ada residual unsteadiness); kontrol ulang bila muncul gangguan",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan pusing berputar terus-menerus 2 hari, tidak bisa jalan."
+}

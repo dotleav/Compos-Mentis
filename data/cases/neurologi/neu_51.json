@@ -1,0 +1,60 @@
+{
+  "id": "neu_51",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Andi, 24 tahun, kecelakaan motor",
+  "keluhanUtama": "lengan kanan lemah total & mati rasa sejak kecelakaan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "kecelakaan motor 1 hari lalu, lengan kanan tertarik keras saat jatuh (traksi bahu-leher — mekanisme khas cedera pleksus brakialis), langsung lemah total lengan"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Kelemahan motorik lengan kanan sesuai distribusi pleksus brakialis (pola upper vs lower trunk tergantung level lesi), sensorik hilang di lengan-bahu-ta ngan, refleks",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Foto polos servikal (fraktur, avulsi radiks), foto klavikula/humer us/toraks (fraktur costae, deviasi diafragma tanda cedera n. frenikus); CT myelografi 3-4 minggu pascatrauma",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Pleksopati — Cedera Pleksus Brakialis Traumatik",
+    "differensialBenar": [
+      "Radikulopati servikal",
+      "Thoracic outlet syndrome",
+      "cedera saraf perifer distal"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Akut: rehabilitasi medis pertahankan ROM sendi & cegah kekakuan, splint posisi fisiologis sendi tangan R/ Natrium diklofenak tab 50mg No.X — S 2dd tab I p.o. p.c. Post akut (trauma berat/avulsi): pembedahan rekonstruksi saraf pleksus brakialis dalam 6 bulan pertama pascacedera (operasi lebih lambat → keberhasilan lebih rendah)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan sebagian cedera dapat sembuh, sebagian menyebabkan masalah sementara/perma nen (sendi kaku, nyeri, mati rasa, atrofi otot, cacat permanen); edukasi rehabilitasi fisioterapi & latihan fisik rutin",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan lengan kanan lemah total & mati rasa sejak kecelakaan."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "neu_10",
+  "kategori": "neurologi",
+  "level": "4",
+  "identitas": "An. Bagas, 2 tahun",
+  "keluhanUtama": "kejang saat demam tinggi",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "demam 39°C sejak 4 jam, kejang 1x, seluruh tubuh (umum tonik-klonik), <5 menit, sadar kembali spontan tanpa defisit pasca kejang, tidak berulang dalam 24 jam ini"
+      ],
+      "rpd": "kejang demam pertama kali, tumbuh kembang normal",
+      "rpk": "ayah riwayat kejang demam waktu kecil",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU CM pasca kejang, sadar penuh, tanpa defisit neurologis fokal Suhu 39°C, tanda rangsang meningeal (-), ubun-ubun tidak cembung Fokus infeksi: faring hiperemis (ISPA)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Umumnya tidak perlu pemeriksaan penunjang rutin (EEG/pencitraa n tidak diindikasikan pada kejang demam sederhana khas) Cari sumber demam (darah rutin, urin rutin atas indikasi klinis)",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Kejang Demam Sederhana",
+    "differensialBenar": [
+      "Kejang Demam Komplikata",
+      "Meningitis",
+      "Ensefalitis",
+      "Epilepsi dengan demam interkuren"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Saat kejang (bila >5 menit, tidak berlaku disini karena sudah berhenti): R/ Diazepam rektal 5mg (BB<10kg) atau 10mg (BB≥10kg) No.II — S 1x pemberian rektal bila kejang berulang, dapat diulang 1x setelah 5 menit bila kejang belum berhenti Antipiretik: R/ Paracetamol syr 120mg/5mL No.I botol — S 4 dd 1 cth (sesuai BB 10-15mg/kgBB) p.o. bila demam ≥38°C Tidak rutin diberikan antikonvulsan rumatan pada kejang demam sederhana",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kejang demam sederhana umumnya jinak, tidak menyebabkan kerusakan otak; ajarkan orang tua P3K kejang di rumah (baringkan miring, jangan masukkan benda ke mulut, catat durasi); sediakan diazepam rektal di rumah untuk antisipasi; segera ke IGD bila kejang >5 menit atau berulang dalam 24 jam",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kejang saat demam tinggi."
+}

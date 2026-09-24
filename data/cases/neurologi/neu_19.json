@@ -1,0 +1,62 @@
+{
+  "id": "neu_19",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Bayi Ny. Ani, usia 5 hari, lahir kurang bulan",
+  "keluhanUtama": "kuning, kepala kecil, kejang",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "BBLR, mikrosefali sejak lahir, ikterik hari ke-2, petechiae kulit, sejak hari ke-4 muncul kejang fokal berulang"
+      ],
+      "rpd": "ibu riwayat demam ringan seperti flu trimester 1, tidak diperiksa TORCH saat hamil",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU letargis, mikrosefali (lingkar kepala di bawah persentil 3), hepatosplenome gali, ikterik, petechiae/purp ura kulit (\"blueberry muffin baby\") Pendengaran: berisiko tuli sensorineural (skrining OAE) Neurologis: kejang, tonus abnormal",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Serologi IgM CMV bayi (+), PCR CMV urin/saliva/dara h (gold standard diagnosis kongenital, sampel diambil <3 minggu usia) USG kepala/MRI: kalsifikasi periventrikular, ventrikulomegali Fungsi hati, hitung darah lengkap (trombositopeni a), skrining",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Infeksi Sitomegaloviru s (CMV) Kongenital",
+    "differensialBenar": [
+      "TORCH lain (Toksoplasmosi s",
+      "Rubella",
+      "Herpes)",
+      "Sepsis Neonatal",
+      "Kernikterus"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Valgansiklovir syr 16mg/kgBB/dosis No.sesuai kebutuhan — S 2 dd p.o. selama 6 bulan (terapi lini pertama CMV kongenital simtomatik, mulai <1 bulan usia) Alternatif bila tidak dapat oral: Gansiklovir IV 6mg/kgBB tiap 12 jam Pantau efek samping: neutropenia (cek darah rutin berkala)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Skrining TORCH rutin pada kehamilan berisiko; jelaskan risiko gejala sisa jangka panjang (tuli sensorineural progresif, gangguan perkembangan, kejang) meski sudah diobati; perlu pemantauan pendengaran & tumbuh kembang berkala jangka panjang; dukungan keluarga untuk",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kuning, kepala kecil, kejang."
+}

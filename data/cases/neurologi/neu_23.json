@@ -1,0 +1,54 @@
+{
+  "id": "neu_23",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "An. Budi, 5 tahun, tidak imunisasi lengkap",
+  "keluhanUtama": "",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU CM (kesadaran umumnya baik,",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Isolasi virus polio dari spesimen tinja",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Poliomielitis",
+    "differensialBenar": []
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Tidak ada terapi antivirus spesifik — tata laksana suportif:",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Tekankan pentingnya imunisasi polio",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan yang belum diketahui."
+}

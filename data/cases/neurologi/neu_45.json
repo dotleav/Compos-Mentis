@@ -1,0 +1,61 @@
+{
+  "id": "neu_45",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Rudi, 65 tahun",
+  "keluhanUtama": "",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "jatuh terpeleset dengan leher hiperekstensi (mekanisme khas central cord syndrome, sering pada lansia dengan spondilosis servikal yang sudah ada), langsung merasa kelemahan kedua lengan lebih berat dibanding tungkai, disertai baal & kesemutan tangan,"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Primary survey ABC dulu, cervical collar terpasang Motorik: kelemahan ekstremitas atas (distal>proksim al) lebih berat dibanding ekstremitas bawah (pola khas central cord syndrome — serat motorik lengan lebih sentral/medial di traktus kortikospinalis",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Foto polos servikal AP/lateral, CT/MRI servikal CITO (evaluasi kanal spinal, kompresi, edema medula, level lesi — MRI lebih sensitif untuk cedera medula tanpa fraktur tulang jelas, sering terjadi pada lansia dengan kanal sempit akibat spondilosis) Darah perifer & urin lengkap,",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Trauma Medula Spinalis (Cedera Inkomplit — Central Cord Syndrome)",
+    "differensialBenar": [
+      "Cedera Medula Spinalis Komplit",
+      "Anterior Cord Syndrome",
+      "Brown-Séquar d Syndrome",
+      "HNP Servikal Akut"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "A (Airway): proteksi jalan napas, cervical collar dipertahankan sampai terbukti stabil B (Breathing): oksigen, awasi fungsi pernapasan (waspada level tinggi mengganggu diafragma) C (Circulation): awasi syok neurogenik (hipotensi+bradikardia+akral hangat) — bila terjadi, vasopresor (dopamin/norepinefrin), bukan cairan agresif Imobilisasi: cervical collar dipertahankan, hindari manipulasi leher Stabilisasi medis: kateter urin bila perlu, NGT sesuai indikasi, pencegahan tukak lambung",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan mekanisme cedera & pola kelemahan khas (lengan lebih berat dari tungkai) serta prognosis pemulihan yang umumnya lebih baik dibanding cedera komplit — banyak pasien central cord syndrome mengalami pemulihan parsial bertahap; edukasi keluarga soal rencana rawat, biaya, prosedur, & pentingnya",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan yang belum diketahui."
+}

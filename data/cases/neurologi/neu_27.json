@@ -1,0 +1,63 @@
+{
+  "id": "neu_27",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Herman, 65 tahun, pensiunan",
+  "keluhanUtama": "tiba-tiba lengan kanan lemas & bicara pelo, sekarang sudah normal lagi",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "1 jam lalu tiba-tiba lengan kanan lemah dan bicara pelo, berlangsung ±15 menit, kemudian pulih sempurna tanpa gejala sisa sebelum tiba di IGD (2 jam sejak onset, total <24 jam)"
+      ],
+      "rpd": "hipertensi, dislipidemia, tidak rutin kontrol",
+      "rpk": "ayah stroke Faktor risiko vaskular: HT, DM, dislipidemia, fibrilasi atrial, penyakit jantung katup, riwayat stroke sebelumnya",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Primary survey (ABC) & tanda vital stabil Pemeriksaan neurologi fokus: NIHSS (saat ini 0, karena gejala sudah pulih), GCS normal, pupil & N.kranialis normal, kekuatan motorik normal, skrining menelan normal, tanpa defisit sensorik/otono m, funduskopi: cek papiledema",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "CT/MRI kepala tanpa kontras + DWI (gold standard, cari infark akut tersembunyi) EKG (skrining AF), lab: hematologi rutin, LED, kimia darah, fungsi ginjal, PT/APTT, GDS, HbA1c, profil lipid Ekokardiografi, USG karotis + TCD, CT/MR angiografi karotis-serebral bila curiga stenosis ABCD2 Score: untuk stratifikasi risiko stroke (0-3 rendah, 4-5 sedang, 6-7 tinggi) —",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Transient Ischemic Attack / TIA",
+    "differensialBenar": [
+      "Epilepsi Parsial",
+      "Migren Klasik",
+      "Sinkop",
+      "Paroxysmal Ataxia Familial",
+      "Reversible Ischemic Neurological Deficit (RIND)",
+      "Stroke Iskemik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Best Medical Therapy (BMT): R/ Aspirin tab 100mg No.XXX — S 1 dd tab I p.o. Alternatif: R/ Clopidogrel tab 75mg No.XXX — S 1 dd tab I p.o.; atau kombinasi aspirin 25mg+dipiridamol 2x200mg Bila ABCD2≥4 (risiko sedang-tinggi): dual antiplatelet (aspirin 81mg + clopidogrel 75mg/hari) mulai 12-24 jam onset hingga 21-90 hari, lanjut antiplatelet tunggal Antidislipidemia: R/ Atorvastatin tab 80mg No.XXX — S 1 dd tab I p.o. malam (target LDL<70mg/dL) Antihipertensi: target TDS<140mmHg (jangka panjang <130/80mmHg) Bila etiologi kardioemboli (AF nonvalvular): DOAC/warfarin seumur hidup sesuai profil risiko",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan risiko stroke di kemudian hari (TIA adalah warning sign) — evaluasi & tata laksana cepat menurunkan risiko stroke berulang secara signifikan; jelaskan rencana perawatan, biaya, prosedur; evaluasi & kendalikan faktor risiko vaskular ketat; discharge planning jelas; kembali segera bila muncul gejala neurologis lagi",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan tiba-tiba lengan kanan lemas & bicara pelo, sekarang sudah normal lagi."
+}

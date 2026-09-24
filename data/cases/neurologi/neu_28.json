@@ -1,0 +1,59 @@
+{
+  "id": "neu_28",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Ibu Yuli, 48 tahun, wiraswasta",
+  "keluhanUtama": "nyeri kepala paling hebat seumur hidup, mendadak",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "nyeri kepala mendadak sangat hebat (\"thunderclap headache\", VAS 9-10, \"worst headache ever\") saat sedang beraktivitas (mengangkat barang), mencapai puncak dalam hitungan detik, disertai muntah proyektil, leher kaku, silau (fotofobia), sempat pingsan sesaat lalu sadar kembali"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Primary survey stabil; TD tinggi (reaktif nyeri), GCS E4V5M6 (dapat menurun sesuai derajat) Tanda rangsang meningeal (+): kaku kuduk, Kernig, Brudzinski NIHSS: cek defisit fokal (dapat muncul akibat vasospasme/lok asi aneurisma), funduskopi: papiledema/per",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Ottawa SAH Rule (usia>15th, sadar, nyeri kepala non-trauma onset baru berat dalam 1 jam): investigasi bila usia≥40th, nyeri/kaku leher, penurunan kesadaran tersaksikan, onset saat beraktivitas, thunderclap headache, atau keterbatasan fleksi leher CT Scan kepala tanpa kontras +",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Perdarahan Subarachnoid Spontan",
+    "differensialBenar": [
+      "Stroke Hemoragik (bila belum CT scan)",
+      "Meningitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Pencegahan vasospasme: R/ Nimodipin tab 60mg No.LXXXIV — S 6 dd tab I p.o. (atau 2mg/jam IV bila enteral tak memungkinkan), mulai dalam 96 jam onset, selama 21 hari, syarat tidak hipotensi/dalam vasopresor Tata laksana vasospasme simtomatik: hentikan nimodipin+antihipertensi+diureti k sementara, albumin 5% 250 mL IV, dobutamin 2-15 mcg/kg/menit, tingkatkan TD sistolik (MAP maks 120mmHg), vasodilator intraarteri/angioplasti serebral pada vasospasme berat (diskusi neurointervensi) Hidrosefalus: simtomatik akut → EVD/drainase lumbar urgent; kronik → diversi permanen",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan penyakit & risiko komplikasinya (rebleeding, vasospasme, hidrosefalus); jelaskan faktor risiko & pencegahan rekurensi (kontrol TD ketat, berhenti rokok); jelaskan rencana perawatan, biaya, prosedur tindakan invasif serta risikonya; skrining depresi & ansietas pascaperdarahan; rehabilitasi & neurorestorasi bertahap jangka",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan nyeri kepala paling hebat seumur hidup, mendadak."
+}

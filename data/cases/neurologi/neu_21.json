@@ -1,0 +1,61 @@
+{
+  "id": "neu_21",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "An. Dimas, 4 tahun",
+  "keluhanUtama": "berat badan tidak naik, sering sakit",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "gagal tumbuh (growth faltering) sejak usia 1 tahun, infeksi berulang (diare kronik, ISPA berulang, kandidiasis oral berulang), belum pernah diperiksa status HIV"
+      ],
+      "rpd": "lahir dari ibu HIV+ yang tidak mendapat PMTCT lengkap, tidak ASI eksklusif jelas",
+      "rpk": "ibu HIV+ terkonfirmasi",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU gizi kurang-buruk (BB/TB di bawah -2SD), kandidiasis oral (+), limfadenopati generalisata, hepatosplenome gali ringan Neurologis: pada tahap ini umumnya belum ada defisit neurologis nyata (tanpa komplikasi) — perkembangan motorik perlu dipantau (risiko ensefalopati HIV bila terlambat terapi)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tes serologi HIV (anak >18 bulan: rapid test/ELISA; <18 bulan: PCR DNA/RNA HIV karena antibodi maternal masih ada) Hitung CD4 & persentase CD4, viral load HIV Skrining TB (karena koinfeksi sering), darah rutin, fungsi hati/ginjal sebelum mulai ARV",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "HIV/AIDS pada Anak tanpa Komplikasi Neurologis",
+    "differensialBenar": [
+      "Ensefalopati metabolik lain",
+      "Malnutrisi berat",
+      "TB Milier",
+      "Gagal Tumbuh sebab lain"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Terapi antiretroviral (ARV) lini pertama anak: R/ Kombinasi Abacavir + Lamivudin + Dolutegravir (atau Lopinavir/ritonavir bila usia <20kg dan DTG belum tersedia) dosis sesuai BB — S 1-2 dd p.o. sesuai regimen, dimulai segera setelah diagnosis tanpa menunda Profilaksis infeksi oportunistik: R/ Kotrimoksazol syr sesuai BB — S 1 dd p.o. (profilaksis Pneumocystis jirovecii pneumonia) dimulai bersamaan ARV Dukungan nutrisi intensif (terapi gizi buruk bila ada), imunisasi dikejar sesuai status imun (hindari vaksin hidup bila CD4 sangat rendah)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kepatuhan ARV seumur hidup sangat penting — jelaskan pada pengasuh pentingnya minum obat teratur tanpa putus; dukungan psikososial & pencegahan stigma; skrining rutin tumbuh kembang dan neurologis untuk deteksi dini ensefalopati HIV; edukasi keluarga soal pencegahan penularan & pemeriksaan HIV anggota keluarga lain",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan berat badan tidak naik, sering sakit."
+}

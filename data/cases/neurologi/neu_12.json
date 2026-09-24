@@ -1,0 +1,63 @@
+{
+  "id": "neu_12",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Bayi Ny. Dewi, usia 3 hari, lahir cukup bulan",
+  "keluhanUtama": "kejang berulang",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "sejak 12 jam lalu tampak gerakan abnormal berulang: mengedip-ngedip, mengunyah, gerakan bersepeda pada kaki (subtle seizure khas neonatus), disertai"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU: letargis, tonus menurun, refleks primitif lemah Suhu normal, ubun-ubun tidak cembung Gerakan abnormal episodik: deviasi mata, gerakan oral-bukal, gerakan",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "GDS cito (singkirkan hipoglikemia), elektrolit (kalsium, magnesium, natrium) Darah rutin, kultur darah, pungsi lumbal (singkirkan meningitis neonatal)",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Kejang pada Neonatus",
+    "differensialBenar": [
+      "Ensefalopati Hipoksik-Iske mik",
+      "Hipoglikemia",
+      "Hipokalsemia",
+      "Meningitis Neonatal",
+      "Perdarahan Intrakranial",
+      "Kelainan"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Koreksi metabolik segera bila ditemukan: R/ Dekstrosa 10% bolus 2mL/kgBB IV bila hipoglikemia (GDS<45mg/dL); R/ Kalsium glukonat 10% 2mL/kgBB IV perlahan bila hipokalsemia Antikonvulsan lini pertama: R/ Fenobarbital inj 20mg/kgBB IV loading dose No.I — S bolus IV perlahan (maks 1mg/kg/menit), dapat ditambah",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kejang neonatus sering subtle dan sulit dikenali — edukasi tenaga kesehatan/orang tua untuk observasi gerakan abnormal berulang; jelaskan pentingnya evaluasi penyebab dasar (metabolik, infeksi, struktural) karena",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kejang berulang."
+}

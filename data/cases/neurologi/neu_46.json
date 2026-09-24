@@ -1,0 +1,60 @@
+{
+  "id": "neu_46",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Deni, 19 tahun",
+  "keluhanUtama": "",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "KLL motor 2 jam lalu, kepala terbentur bagian dasar tengkorak, sempat pingsan singkat, sekarang"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Tanda fraktur basis kranii (khas, muncul beberapa jam-hari pasca trauma):- Racoon eyes (ekimosis periorbital bilateral, fraktur fossa",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "CT scan kepala tanpa kontras dengan potongan tulang (bone window) — visualisasi garis fraktur dasar tengkorak, melibatkan tulang temporal (tersering),",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Fraktur Basis Kranii",
+    "differensialBenar": [
+      "Epidural/Subd ural Hematoma",
+      "Kontusio Cerebri",
+      "Cedera Nervus Kranialis Traumatik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Nonbedah (mayoritas kasus, konservatif): tirah baring elevasi kepala 30-45°, hindari menunduk/mengejan/meniup hidung keras (mencegah pneumocephalus & memperlambat penutupan kebocoran CSF spontan) Hindari pemasangan NGT via hidung pada dugaan fraktur basis kranii fossa anterior",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Edukasi tanda bahaya yang harus segera dilaporkan: cairan bening terus mengalir dari hidung/telinga, demam tinggi, kaku leher (curiga meningitis akibat kebocoran CSF);",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan yang belum diketahui."
+}

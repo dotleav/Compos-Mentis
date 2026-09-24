@@ -1,0 +1,61 @@
+{
+  "id": "neu_34",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "An. Fajar, 9 tahun",
+  "keluhanUtama": "sering berkedip-kedip dan wajah menyeringai sendiri",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "gerakan cepat otot wajah tanpa arti/tujuan sejak 6 bulan, berupa kedipan mata berulang dan wajah menyeringai, muncul tiba-tiba, singkat, sering,"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Pemeriksaan tampak gerakan cepat otot wajah tanpa arti & tujuan (kedipan mata, wajah menyeringai), gerakan dapat ditekan sesaat secara sadar oleh anak namun muncul kembali",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Diagnosis klinis: anamnesis & PF menunjukkan gerakan tanpa disadari, tiba-tiba, singkat, sering, tanpa diduga, berulang, intermiten, tanpa tujuan, melelahkan, intensitas bervariasi pada",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tics Fasialis",
+    "differensialBenar": [
+      "Blefarospasme",
+      "Mioklonus Fokal",
+      "Sinkinesia Pasca-Bell's Palsy",
+      "Sindrom Tourette"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Lini pertama (edukasi & observasi bila ringan, tics sering membaik sendiri seiring usia): Bila mengganggu fungsi/kualitas hidup: R/ Haloperidol tab 0,5mg No.X — S 1 dd tab I p.o. malam, dosis rendah titrasi hati-hati (neuroleptik tipikal) Alternatif lebih ditoleransi: R/ Risperidon tab 0,5mg No.X — S 1 dd tab I p.o. malam (neuroleptik atipikal)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Menghindari faktor pencetus terutama stres/kecemasan pada anak (tekanan akademik, konflik keluarga); jelaskan pada orang tua & guru bahwa tics bukan disengaja anak — hindari menegur/memper",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan sering berkedip-kedip dan wajah menyeringai sendiri."
+}

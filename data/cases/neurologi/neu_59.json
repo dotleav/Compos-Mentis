@@ -1,0 +1,61 @@
+{
+  "id": "neu_59",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Bapak Joko, 68 tahun, pensiunan guru",
+  "keluhanUtama": "mulai sering lupa, tapi masih bisa urus diri sendiri",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "sejak ±1 tahun mulai sering lupa nama orang baru dikenal & janji kecil,"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Pemeriksaan fisik & neurologis umum dalam batas normal, tanpa tanda fokal, gait normal, tanpa rigiditas/tremo r/parkinsonism",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "MMSE & MoCA-Ina — skor 1-1,5 SD di bawah rata-rata usia/pendidikan (bukan level demensia); penilaian ADL/IADL",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Mild Cognitive Impairment / MCI",
+    "differensialBenar": [
+      "Demensia Alzheimer",
+      "demensia vaskular",
+      "demensia badan Lewy",
+      "efek samping"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Nonfarmakologis (lini utama): Strategi komunikasi, pelatihan keterampilan ADL, perencanaan kegiatan, teknologi bantu (telecare/adaptive aids) Stimulasi kognisi, pelatihan kognisi & rehabilitasi kognisi Olahraga rutin, program rehabilitasi & intervensi kombinasi",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan MCI adalah kondisi transisi, bukan demensia, namun perlu pemantauan berkala; latih keluarga mendukung strategi kompensasi",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan mulai sering lupa, tapi masih bisa urus diri sendiri."
+}

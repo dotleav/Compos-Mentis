@@ -1,0 +1,65 @@
+{
+  "id": "neu_30",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Ibu Wulan, 45 tahun, guru",
+  "keluhanUtama": "vertigo hilang timbul, telinga kiri berdenging & terasa penuh",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "episode vertigo spontan berulang, tiap episode berlangsung 20 menit-beberapa jam, disertai penurunan pendengaran telinga kiri berfluktuasi, tinitus, dan rasa penuh di telinga kiri. Sudah 4x episode dalam 2 bulan"
+      ],
+      "rpd": "tidak ada riwayat serupa sebelumnya",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Fungsi pendengaran: Rinne/Weber menunjukkan tuli sensorineural telinga kiri HINTS (head impulse test, nistagmus, test of skew), gait & postur (tandem gait, Romberg), koordinasi normal di luar serangan",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Kriteria Meniere Definite: ≥2 episode vertigo spontan 20 menit-12 jam + audiometri tuli sensorineural frekuensi rendah-sedang salah satu telinga + gejala aural (tuli, tinitus, rasa penuh) berfluktuasi + bukan diagnosis vestibular lain Audiometri (pure tone, verbal), timpanometri, refleks akustik, otoacoustic emissions MRI inner ear protokol hidrops endolimfatik,",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Penyakit Meniere",
+    "differensialBenar": [
+      "Migren Vestibular",
+      "Stroke/Iskemi a",
+      "BPPV",
+      "Labirintitis",
+      "Neuritis Vestibular",
+      "Autoimun (MS)",
+      "Otosifilis",
+      "Infeksi (Lyme disease)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Simtomatik (saat serangan): R/ Betahistin mesilat tab 24mg No.XX — S 2 dd tab I p.o. Maintenance (kurangi frekuensi serangan): R/ Hidroklorotiazid tab 25mg No.XXX — S 1 dd tab I p.o. (diuretik) ± lanjutkan betahistin Modifikasi diet & gaya hidup: rendah garam Bila tidak responsif terapi oral: steroid intratimpani (deksametason/metilprednisolon 0,4-0,8mL, 1-3/4 sesi tiap 3-7 hari) Bila tetap aktif & gagal terapi non-ablatif: gentamisin intratimpani Bila gagal semua & pendengaran tidak berfungsi: operasi ablatif (labirintektomi) Rehabilitasi vestibular: hanya untuk gangguan keseimbangan kronik/instabilitas interiktal/pasca ablatif, tidak untuk serangan akut",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Edukasi mengenai gejala penyakit, perjalanan penyakit yang bersifat episodik-progresif , cara mengatasi gejala saat serangan, pilihan terapi bertahap (oral→intratimpan i→ablatif) dan luaran yang diharapkan; anjurkan diet rendah garam & kelola stres; pantau fungsi pendengaran berkala karena dapat memburuk progresif",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan vertigo hilang timbul, telinga kiri berdenging & terasa penuh."
+}

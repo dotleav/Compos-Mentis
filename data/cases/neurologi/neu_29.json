@@ -1,0 +1,62 @@
+{
+  "id": "neu_29",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Bu Marni, 52 tahun, pedagang",
+  "keluhanUtama": "nyeri kepala hebat, penglihatan kabur, bingung, tekanan darah sangat tinggi",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "nyeri kepala berat progresif sejak pagi, mual muntah, penglihatan kabur/buram kedua mata, sejak 2 jam terakhir mulai bingung dan gelisah, tanpa kelemahan sisi tubuh yang jelas"
+      ],
+      "rpd": "hipertensi 10 tahun, putus obat antihipertensi 2 minggu terakhir",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU gelisah-bingung, GCS E3V4M5 TD sangat tinggi: 220/130 mmHg (hipertensi emergensi), nadi teraba kuat Funduskopi: papiledema bilateral, perdarahan retina/eksudat (retinopati hipertensif grade III-IV) Tanpa defisit neurologis fokal lateralisasi yang jelas (membedakan dari stroke) — bila ada defisit fokal, pikirkan stroke sebagai komplikasi",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "CT/MRI kepala: edema vasogenik bilateral predominan parieto-oksipital (khas PRES), menyingkirkan perdarahan/infa rk Elektrolit, fungsi ginjal (skrining penyakit ginjal sebagai penyebab/kompl ikasi), urinalisis (proteinuria), EKG, funduskopi Singkirkan sebab sekunder hipertensi (stenosis arteri renalis, feokromositoma ) bila klinis mendukung",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Ensefalopati Hipertensi",
+    "differensialBenar": [
+      "Stroke Hemoragik",
+      "Stroke Iskemik",
+      "PRES (Posterior Reversible Encephalopath y Syndrome)",
+      "Perdarahan Subaraknoid",
+      "Eklampsia (bila hamil)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Turunkan TD secara terkontrol/bertahap (bukan drastis — hindari hipoperfusi serebral): R/ Nikardipin infus titrasi — S IV drip mulai 5mg/jam, titrasi naik 2,5mg/jam tiap 5-15 menit (maks 15mg/jam), target penurunan MAP 20-25% dalam jam pertama, lanjut ke TD ~160/100mmHg dalam 2-6 jam berikutnya Alternatif: R/ Labetalol inj IV bolus 20mg, dapat diulang/drip titrasi Hindari penurunan TD terlalu cepat (risiko iskemia serebral/miokard/ginjal) Setelah stabil, transisi ke antihipertensi oral kerja lama untuk kontrol jangka panjang; kontrol kejang bila muncul (benzodiazepin/fenitoin); pantau ketat di ICU/HCU",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Tekankan kepatuhan minum obat antihipertensi teratur, jangan putus obat mendadak; kontrol tekanan darah rutin di fasyankes; kenali tanda bahaya (nyeri kepala hebat mendadak, gangguan penglihatan, bingung) segera ke IGD; edukasi keluarga soal pentingnya rawat inap & pemantauan ketat TD selama fase akut; evaluasi & tangani penyebab sekunder hipertensi bila ditemukan",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan nyeri kepala hebat, penglihatan kabur, bingung, tekanan darah sangat tinggi."
+}

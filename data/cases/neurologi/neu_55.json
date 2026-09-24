@@ -1,0 +1,62 @@
+{
+  "id": "neu_55",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Ibu Sri, 32 tahun, karyawan",
+  "keluhanUtama": "kelopak mata kanan turun & penglihatan dobel, memberat sore hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "ptosis kelopak mata kanan sejak 2 bulan, awalnya ringan pagi hari lalu memberat menjelang sore/setelah beraktivitas (fatigability khas), diplopia intermiten, 2 minggu terakhir mulai sulit menelan makanan padat & suara sengau di akhir hari, membaik setelah istirahat"
+      ],
+      "rpd": "tidak ada riwayat serupa, tidak konsumsi obat pemicu",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Ptosis kelopak mata kanan memberat dengan sustained upward gaze (uji fatigability), diplopia pada pergerakan bola mata tertentu, kekuatan motorik ekstremitas normal saat awal namun menurun setelah kontraksi berulang, tanpa atrofi otot, refleks fisiologis & sensorik normal (membedakan dari penyakit neuromuskular lain)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Ice pack test (perbaikan ptosis setelah kompres es 2 menit); Repetitive Nerve Stimulation (RNS) — penurunan amplitudo >10% pada frekuensi 2-3Hz (sensitivitas 53-100% MG generalisata, 10-20% MG okular); Single Fiber EMG (spesifisitas tinggi); serologi antibodi anti-AChR, anti-MuSK, anti-LRP4; CT/MRI toraks wajib pada semua pasien MG —",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Miastenia Gravis",
+    "differensialBenar": [
+      "Botulisme",
+      "Sindrom Lambert-Eaton",
+      "Oftalmopatia tiroid",
+      "Stroke batang otak",
+      "Distrofi okulofaringeal"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Terapi simtomatik lini pertama: R/ Piridostigmin tab 60mg No.XXX — S 4dd tab I p.o. (dosis awal 30-60mg tiap 4-6 jam, titrasi sesuai respons, diminum 30-60 menit sebelum makan bila gejala bulbar) Bila respons tak memuaskan, tambahkan imunosupresan: R/ Prednison tab 5mg No.XXX — S 1dd tab I p.o. pagi, titrasi naik bertahap (dosis diturunkan serendah mungkin bila kombinasi imunosupresan jangka panjang) Lini kedua (gagal 3 bulan lini pertama): Azatioprin 2-3mg/kgBB/hari, atau mikofenolat mofetil 1440-2000mg/hari, metotreksat 15-25mg/minggu MG berat/eksaserbasi: plasmaferesis atau IVIG Timektomi: diindikasikan pada MG dengan timoma Algoritma: MG okular ringan → piridostigmin ± steroid dosis rendah; MG generalisata → piridostigmin + imunosupresan;",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kenali & hindari faktor pencetus krisis (infeksi, obat golongan makrolid/aminogli kosid/antiaritmia/ beta-bloker/kalsi um antagonis, stres, kurang tidur, haid, kehamilan); patuh minum obat teratur, jangan hentikan mendadak; kenali tanda bahaya perburukan (sesak, sulit menelan, suara sengau memberat) segera ke IGD; kontrol rutin evaluasi timus & efek samping obat",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kelopak mata kanan turun & penglihatan dobel, memberat sore hari."
+}

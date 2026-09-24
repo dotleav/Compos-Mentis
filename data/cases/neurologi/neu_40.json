@@ -1,0 +1,61 @@
+{
+  "id": "neu_40",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Joko (lanjutan kasus cedera medula spinalis di atas), 27 tahun",
+  "keluhanUtama": "tidak bisa kencing sejak kecelakaan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "sejak cedera medula spinalis torakal 2 minggu lalu, tidak bisa merasakan"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Palpasi suprapubik: kandung kemih teraba penuh/distensi (buli-buli teraba sampai umbilikus) Sensasi perineum &",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Urinalisis & kultur urin (skrining infeksi berulang, komplikasi tersering neurogenic bladder) USG saluran kemih (residu",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Neurogenic Bladder",
+    "differensialBenar": [
+      "Infeksi Saluran Kemih",
+      "Batu Saluran Kemih",
+      "Retensi Urin ec BPH/striktur uretra",
+      "Overactive"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Fase awal (retensi, syok spinal): Kateterisasi intermiten bersih (Clean Intermittent Catheterization/CIC) tiap 4-6 jam — metode pilihan jangka panjang untuk mencegah komplikasi kateter menetap",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Ajarkan pasien/keluarga teknik kateterisasi intermiten bersih secara mandiri di rumah; jadwal berkemih/kateter isasi teratur untuk cegah",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan tidak bisa kencing sejak kecelakaan."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "neu_54",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "(lanjutan kasus SGB di atas) Pak Anto, 30 tahun",
+  "keluhanUtama": "makin sesak, sulit menelan, 6 jam ini",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "kelemahan SGB 4 hari, 6 jam terakhir kelemahan naik ke otot pernapasan & bulbar, sesak progresif, suara lemah, sulit menelan liur sendiri, gelisah"
+      ],
+      "rpd": "SGB terdiagnosis 4 hari lalu, arah kelemahan asenden cepat",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Takipnea, penggunaan otot bantu napas, paradoxical breathing, suara napas dangkal, single breath counting test rendah, kelemahan bulbar berat (disfagia, disfonia), kelemahan leher (head drop); SpO2 dapat masih normal meski gagal napas mengancam — tidak boleh diandalkan sendiri",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Spirometri — kapasitas vital paru (indikasi intubasi bila 12-15mL/kgBB, atau 15-19mL/kgBB disertai paralisis bulbar); tekanan inspirasi/ekspir asi maksimal <30cmH2O; analisis gas darah — PCO2>48mmHg atau PO2<56mmHg (tanda lanjut/late)",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Sindrom Guillain-Barré dengan Gagal Napas",
+    "differensialBenar": [
+      "Krisis Miastenik",
+      "Botulisme dengan gagal napas",
+      "Critical Illness Neuropathy",
+      "cedera medula spinalis servikal tinggi"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Kriteria intubasi: kapasitas vital 12-15mL/kgBB atau paralisis bulbar dengan VC 15-19mL/kgBB, tekanan inspirasi/ekspirasi maks <30cmH2O, PCO2>48mmHg atau PO2<56mmHg — intubasi elektif lebih baik daripada emergensi Ventilasi mekanik invasif sesuai kriteria, hindari neuromuscular blocking nondepolarizing kerja panjang Lanjutkan/mulai IVIG 0,4g/kgBB/hari selama 5 hari bila belum diberikan Trakeostomi bila diperkirakan ventilator >2 minggu Profilaksis DVT, suctioning berkala, perawatan ICU Algoritma: tanda ancaman gagal napas (VC turun cepat, bulbar berat) → intubasi elektif dini → ventilasi mekanik → terapi imun (IVIG/PE) tetap dilanjutkan → weaning bertahap sesuai perbaikan kekuatan otot leher/bulbar",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan kondisi kegawatdaruratan & kebutuhan perawatan intensif/ventilato r kepada keluarga (rencana rawat, biaya, prosedur); jelaskan intubasi elektif lebih aman daripada menunggu gagal napas total; dukung psikologis pasien selama bergantung ventilator (dapat sadar penuh namun tak bisa bicara/bergerak); rehabilitasi & weaning bertahap begitu ada perbaikan klinis",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan makin sesak, sulit menelan, 6 jam ini."
+}

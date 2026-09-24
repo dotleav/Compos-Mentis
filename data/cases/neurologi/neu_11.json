@@ -1,0 +1,60 @@
+{
+  "id": "neu_11",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "An. Rani, 3 tahun",
+  "keluhanUtama": "",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "demam 38,5°C, kejang 2x dalam 6 jam, tiap episode fokal (mata mendelik"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU somnolen ringan pasca kejang, membaik dalam observasi",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "EEG dianjurkan untuk evaluasi fokus epileptogenik MRI kepala bila kejang fokal berulang/atipika",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Kejang Demam Kompleks/Kom plikata",
+    "differensialBenar": [
+      "Meningitis",
+      "Ensefalitis",
+      "Epilepsi"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Akut: R/ Diazepam rektal 10mg No.II — S 1x rektal saat kejang, ulang 1x setelah 5 menit bila belum berhenti bila kejang >5 menit di IGD:",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kejang demam kompleks berisiko lebih tinggi berulang dan sedikit meningkatkan risiko epilepsi dibanding tipe",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan yang belum diketahui."
+}

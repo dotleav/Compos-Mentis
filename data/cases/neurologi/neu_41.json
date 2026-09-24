@@ -1,0 +1,62 @@
+{
+  "id": "neu_41",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Ibu Painem, 58 tahun, riwayat kanker payudara",
+  "keluhanUtama": "kedua tungkai makin lemah 3 hari, nyeri punggung hebat",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "nyeri punggung tengah progresif 2 minggu, 3 hari terakhir kedua tungkai makin lemah (awalnya bisa jalan, sekarang butuh dipapah), baal naik dari kaki ke arah perut (sensory level), 1 hari ini mulai sulit menahan BAK — perburukan cepat dan progresif (kegawatdaruratan neurologis)"
+      ],
+      "rpd": "kanker payudara terdiagnosis 3 tahun lalu, riwayat mastektomi, kontrol tidak teratur belakangan",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Inspeksi/palpas i: nyeri tekan lokal vertebra torakal Motorik: paraparesis progresif kedua tungkai (kekuatan 3/5), refleks fisiologis meningkat di bawah level lesi (tanda UMN), Babinski (+) bilateral Sensorik: level sensorik jelas (batas jelas gangguan sensasi) setinggi torakal — kunci membedakan dari polineuropati Retensi urin (kandung kemih teraba penuh),",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "MRI vertebra + kontras CITO (modalitas pilihan, jangan tunda) — cari massa/fragmen yang menekan medula, level kompresi, etiologi (metastasis, abses, HNP) Darah rutin, LED/CRP (bila curiga infeksi/abses), petanda tumor bila curiga metastasis Foto polos vertebra sebagai skrining awal bila MRI tidak segera tersedia",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Acute Medulla Compression / Kompresi Medula Spinalis Akut",
+    "differensialBenar": [
+      "Cedera Medula Spinalis Traumatik",
+      "Mielitis Transversa",
+      "Abses Epidural Spinal",
+      "Tumor Spinal Metastasis",
+      "HNP Berat"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "KEGAWATDARURATAN — tata laksana secepatnya untuk cegah kecacatan permanen: Bila curiga kompresi akibat tumor/metastasis: R/ Deksametason inj IV 10mg bolus No.I — S dilanjutkan 4mg IV tiap 6 jam (turunkan edema peritumoral, beri secepatnya sebelum MRI bila klinis kuat, jangan tunda) Konsul bedah saraf/onkologi radiasi CITO untuk dekompresi bedah dan/atau radioterapi definitif sesuai etiologi & operabilitas Bila curiga abses epidural spinal: antibiotik empiris broad-spectrum IV segera + konsul bedah saraf untuk drainase/dekompresi cito Bila HNP masif dengan kompresi: konsul bedah saraf untuk dekompresi bedah urgent Indikasi operatif mutlak: defisit neurologis progresif memburuk, fraktur/dislokasi labil, kompresi oleh",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan kegawatdaruratan kondisi — kecepatan penanganan (jam, bukan hari) menentukan apakah kelemahan dapat pulih atau menetap permanen; jelaskan rencana rawat, biaya, prosedur tindakan (steroid, operasi/radiotera pi) serta risikonya secara jelas ke pasien/keluarga; edukasi tanda bahaya yang mengharuskan segera ke IGD (kelemahan tungkai progresif, gangguan BAK/BAB) terutama pada pasien dengan riwayat kanker",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kedua tungkai makin lemah 3 hari, nyeri punggung hebat."
+}

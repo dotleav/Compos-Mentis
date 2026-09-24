@@ -1,0 +1,56 @@
+{
+  "id": "neu_52",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Pak Wawan, 50 tahun, kebiasaan duduk bersila lama",
+  "keluhanUtama": "kaki kanan susah diangkat, tersandung-sandung saat jalan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Foot drop kanan (dorsofleksi & eversi kaki lemah, kekuatan 2/5), steppage",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "EMG/KHS — konfirmasi lokasi lesi fokal di caput fibula (perlambatan konduksi",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Peroneal Palsy / Neuropati Peroneus Komunis",
+    "differensialBenar": [
+      "Radikulopati"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Hindari tekanan berulang pada caput fibula (hindari duduk bersila/menyilang kaki lama) Ankle-foot orthosis (AFO)/splint untuk cegah foot drop & bantu gait",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Hindari posisi/kebiasaan yang menekan caput fibula (duduk bersila, jongkok lama,",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kaki kanan susah diangkat, tersandung-sandung saat jalan."
+}

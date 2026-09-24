@@ -1,0 +1,61 @@
+{
+  "id": "neu_31",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Pak Slamet, 62 tahun, pensiunan PNS",
+  "keluhanUtama": "pusing goyang, jalan sempoyongan, penglihatan dobel",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "pusing dirasakan sebagai rasa goyang/melayang (bukan berputar jelas), onset mendadak, disertai"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Pemeriksaan sensorik: hemihipestesi wajah/tubuh satu sisi Tes nistagmus: bidireksional (khas sentral, beda dari perifer yang unilateral)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Darah rutin, elektrolit, GDS bila ada indikasi dari anamnesis/PF CT Scan atau MRI Brain — wajib pada kecurigaan vertigo sentral (beda dengan",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Vertigo Sentral",
+    "differensialBenar": [
+      "Stroke Vertebrobasile r",
+      "Penyakit Demielinisasi (MS)",
+      "Penyakit Meniere",
+      "Neuritis Vestibularis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Latihan vestibular Brandt-Daroff: duduk tegak tepi tempat tidur, tungkai menggantung, mata tertutup, baringkan cepat ke satu sisi tahan 30 detik, duduk kembali 30 detik, ulangi sisi lain — dilakukan 3x/hari (pagi-siang-malam) @5 kali ulangan, selama 2-3 minggu",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Keluarga turut mendukung dan memotivasi pasien mencari pertolongan medis segera bila gejala menetap/member at; jelaskan bahwa vertigo sentral berbeda dari vertigo perifer —",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan pusing goyang, jalan sempoyongan, penglihatan dobel."
+}

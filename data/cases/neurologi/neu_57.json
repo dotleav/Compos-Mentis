@@ -1,0 +1,60 @@
+{
+  "id": "neu_57",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Herman, 48 tahun, MG dengan piridostigmin dosis tinggi",
+  "keluhanUtama": "lemas berat, mual muntah, keringat berlebih, air liur banyak",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "2 hari terakhir menambah sendiri dosis piridostigmin karena merasa gejala MG memberat, kini lemas seluruh tubuh makin berat, disertai mual, muntah, diare, kram perut, keringat berlebihan, air liur berlebih, pandangan"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Kelemahan otot flaksid (mirip krisis miastenik secara klinis), namun disertai tanda kolinergik nikotinik & muskarinik: fasikulasi otot, miosis pupil bilateral, hipersalivasi, hiperlakrimasi, bradikardia/hip otensi ringan, hiperperistaltik — pola SLUDGE (Salivasi, Lakrimasi,",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Diagnosis klinis berdasar riwayat peningkatan dosis antikolinesteras e + gejala kolinergik; tes Edrophonium (Tensilon) — kontroversial & berisiko, memperberat kelemahan pada krisis kolinergik (berbeda dengan krisis miastenik yang membaik dengan tes ini), hanya",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Krisis Kolinergik",
+    "differensialBenar": [
+      "Krisis Miastenik",
+      "keracunan organofosfat",
+      "keracunan karbamat"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Hentikan segera semua obat antikolinesterase (piridostigmin) R/ Atropin sulfat inj IV 0,5-1mg No.sesuai kebutuhan — S bolus IV lambat, dapat diulang tiap 3-5 menit hingga gejala muskarinik membaik, maksimal hingga 1,2mg dosis awal (mengatasi gejala muskarinik, TIDAK memperbaiki kelemahan otot napas/nikotinik) Dukungan respirasi: NIV/intubasi bila ada tanda gagal napas (atropin tidak mengatasi kelemahan otot napas — perlu ventilasi mekanik sampai krisis reda) Setelah stabil: mulai kembali piridostigmin dosis lebih rendah dengan pengawasan ketat,",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Tekankan bahaya menaikkan dosis obat sendiri tanpa konsultasi dokter; jelaskan perbedaan krisis miastenik (perburukan MG, butuh lebih banyak obat) vs krisis kolinergik (kelebihan obat, harus dihentikan) — edukasi keluarga cara membedakan tanda; edukasi kepatuhan dosis piridostigmin sesuai resep",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan lemas berat, mual muntah, keringat berlebih, air liur banyak."
+}

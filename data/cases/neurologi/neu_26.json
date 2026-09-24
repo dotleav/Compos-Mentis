@@ -1,0 +1,61 @@
+{
+  "id": "neu_26",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Bu Nita, 33 tahun, ibu rumah tangga",
+  "keluhanUtama": "nyeri kepala berulang, tidak selalu sama polanya",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "nyeri kepala berulang sejak beberapa tahun, pola bervariasi antar episode (kadang unilateral kadang bilateral, kadang berdenyut kadang menekan), intensitas sedang, kadang disertai mual ringan, tidak selalu memenuhi kriteria lengkap migrain dengan/tanpa aura, tidak ada gejala neurologis fokal atau aura visual yang jelas"
+      ],
+      "rpd": "nyeri kepala sejak remaja, pola tidak konsisten",
+      "rpk": "ibu ada riwayat nyeri kepala berulang",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU CM, vital sign dbn Pemeriksaan neurologis umum & N.kranialis: dalam batas normal Tidak ditemukan tanda fokal atau tanda peningatan TIK",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak rutin diperlukan pada nyeri kepala primer tanpa red flag Pertimbangkan neuroimaging (CT/MRI) bila pola berubah drastis, onset setelah usia 50 tahun, ada defisit neurologis, atau red flag lain (SNOOP4: Systemic symptoms, Neurologic signs, Onset sudden, Older age, Pattern change, Papilledema, Positional, Precipitated by valsava)",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Migren Tidak Spesifik / Unspecified Migraine",
+    "differensialBenar": [
+      "Migrain dengan Aura",
+      "TTH",
+      "Nyeri Kepala Sekunder",
+      "Sinusitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Simtomatik: R/ Ibuprofen tab 400mg No.X — S prn 2-3 dd tab I p.o. p.c. saat nyeri R/ Domperidon tab 10mg No.X — S prn 3 dd tab I p.o. bila mual Bila frekuensi tinggi/mengganggu (pertimbangkan profilaksis seperti migrain klasik): R/ Propranolol tab 20mg No.LX — S 2 dd tab I p.o., titrasi sesuai respons, evaluasi 6-8 minggu Algoritma: klasifikasi ulang jenis nyeri kepala dengan diary terstruktur (durasi, lokasi, kualitas, gejala penyerta) untuk membedakan migrain vs TTH vs campuran → sesuaikan terapi",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Anjurkan pencatatan diary nyeri kepala terperinci untuk membantu klasifikasi lebih akurat pada kunjungan berikutnya; identifikasi & hindari pencetus umum (kurang tidur, stres, dehidrasi, makanan tertentu); hindari penggunaan analgetik berlebihan (>2 hari/minggu, risiko medication-overus e headache); rujuk ke spesialis saraf bila pola tetap tidak jelas atau tidak respons terapi",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan nyeri kepala berulang, tidak selalu sama polanya."
+}

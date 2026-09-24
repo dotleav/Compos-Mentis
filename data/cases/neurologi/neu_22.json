@@ -1,0 +1,54 @@
+{
+  "id": "neu_22",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "An. Reza, 8 tahun, HIV+ sejak lahir (terapi ARV tidak teratur)",
+  "keluhanUtama": "",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU letargis, GCS turun, hemiparesis kiri, tanda rangsang",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "CD4 count (biasanya sangat rendah <200 atau <15% pada anak,",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "HIV/AIDS dengan Komplikasi Neurologis",
+    "differensialBenar": []
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Bila curiga toksoplasmosis serebral (lesi ring-enhancing): R/ Pirimetamin + Sulfadiazin + Asam folinat dosis sesuai BB — S p.o. sesuai regimen, terapi",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Komplikasi neurologis pada AIDS mencerminkan imunosupresi",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan yang belum diketahui."
+}

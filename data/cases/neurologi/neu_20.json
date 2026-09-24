@@ -1,0 +1,61 @@
+{
+  "id": "neu_20",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Bayi Ny. Sari, usia 7 hari, lahir di rumah ditolong dukun",
+  "keluhanUtama": "tidak bisa menyusu, badan kaku",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "3 hari terakhir bayi tiba-tiba tidak mau/tidak bisa menetek (trismus fungsional), rewel berlebihan (irritable), diikuti kekakuan seluruh tubuh dan spasme saat disentuh/berisik, riwayat tali pusat dipotong dengan alat tidak steril dan diberi ramuan tradisional"
+      ],
+      "rpd": "ibu tidak pernah imunisasi TT saat hamil",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Trismus (kesulitan menetek karena rahang kaku), risus sardonicus, opistotonus, spasme umum dipicu rangsang ringan (cahaya/suara/ sentuhan) Tali pusat: tampak kotor/infeksi, tidak terawat Kesadaran biasanya tetap baik di antara spasme",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Diagnosis klinis (tidak ada tes konfirmasi laboratorium spesifik) Darah rutin, GDS, elektrolit (kalsium) untuk menyingkirkan tetani hipokalsemia Kultur darah bila curiga sepsis neonatal sebagai DD",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Tetanus Neonatorum",
+    "differensialBenar": [
+      "Sepsis Neonatal",
+      "Meningitis Neonatal",
+      "Hipokalsemia/ Tetani",
+      "Kejang Neonatus penyebab lain"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Netralisasi toksin: Human Tetanus Immunoglobulin (HTIG) dosis sesuai berat kasus IM, secepatnya Perawatan tali pusat: debridemen & antiseptik pada sisa tali pusat/luka infeksi Antibiotik: R/ Metronidazol inj IV 7,5mg/kgBB No.sesuai kebutuhan — S tiap 8 jam IV selama 7-10 hari Kontrol spasme: R/ Diazepam inj IV 0,1-0,3mg/kgBB No.sesuai kebutuhan — S bolus lambat IV, titrasi hati-hati (risiko depresi napas pada neonatus) Rawat di ruang tenang minim stimulus, dukungan nutrisi via NGT bila trismus berat, pertimbangkan ventilator bila spasme laring/gagal napas",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Edukasi penting: persalinan & perawatan tali pusat higienis (potong dengan alat steril, jangan beri ramuan tradisional pada tali pusat); imunisasi TT ibu hamil (2 dosis) mencegah tetanus neonatorum; prognosis serius, perlu rawat ICU/NICU; edukasi keluarga soal risiko kematian dan pentingnya perawatan intensif",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan tidak bisa menyusu, badan kaku."
+}

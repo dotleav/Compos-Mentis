@@ -1,0 +1,66 @@
+{
+  "id": "neu_53",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Pak Anto, 30 tahun, karyawan",
+  "keluhanUtama": "kaki lemas naik ke atas, sejak 4 hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "2 minggu sebelumnya diare (infeksi gastrointestinal antesenden), 4 hari ini kelemahan mulai dari kedua tungkai, progresif asenden ke lengan, relatif simetris, disertai parestesia/hipestesi ujung distal, tanpa demam saat onset, mulai khawatir sesak napas"
+      ],
+      "rpd": "tidak ada riwayat serupa",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Kelemahan motorik tipe lower motor neuron ekstremitas bawah>atas, simetris, arefleksia/hipo refleksia generalisata, dapat disertai paresis N. kranialis (VII, IX, X bilateral — diplegia fasialis, disfagia), gejala disotonom (instabilitas TD, takikardia/brad ikardia), counting test & tes fungsi menelan untuk",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Pungsi lumbal — disosiasi sitoalbumin (protein meningkat, jumlah sel normal, ditemukan pada 80% kasus); elektrodiagnosti k — gambaran poliradikuloneur opati/polineurop ati motorik atau sensorimotor, sural sparing; spirometri (parameter indikasi ventilasi); serum antibodi gangliosida (anti-GM1, anti-GD1a,",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Sindrom Guillain-Barré / SGB",
+    "differensialBenar": [
+      "Mielitis flaksid akut",
+      "CIDP",
+      "Miastenia Gravis",
+      "gangguan elektrolit",
+      "Tick paralysis",
+      "Sindrom Lambert-Eaton",
+      "botulisme",
+      "polimiositis",
+      "neuropati vaskulitis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Imunoterapi: R/ Immunoglobulin IV (IVIG) inj 0,4g/kgBB/hari No.V — S drip IV selama 5 hari (alternatif 1g/kgBB/hari selama 2 hari) Alternatif: Plasmaferesis 200-250mL/kgBB, 5 sesi, interval 24-48 jam (pilihan bila kadar IgA rendah/kontraindikasi IVIG) — kombinasi IVIG+PE tidak dianjurkan Profilaksis DVT: Heparin 5000-20.000 IU/12jam SC/IV atau Enoksaparin 40mg/24jam SC Pantau fungsi respirasi ketat (kapasitas vital, tanda gagal napas) Algoritma: diagnosis SGB → nilai skor disabilitas GBS & fungsi respirasi (mEGOS/mEGRIS) → nonambulant/perburukan cepat → IVIG/plasmaferesis dalam 2-4 minggu onset (efek lebih baik bila <2 minggu) → pantau",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan perjalanan penyakit monofasik (progresif hingga maks. 4 minggu, perbaikan bertahap 2-4 minggu berikutnya); tekankan observasi ketat tanda sesak napas/gangguan menelan — segera lapor; rehabilitasi fisioterapi dini cegah kontraktur & optimalkan pemulihan fungsional; dukungan psikologis pasien & keluarga karena perjalanan",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kaki lemas naik ke atas, sejak 4 hari."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "neu_44",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Karto, 75 tahun, riwayat jatuh di kamar mandi 3 minggu lalu",
+  "keluhanUtama": "makin pelupa, jalan sempoyongan sejak 1 minggu",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "3 minggu lalu terjatuh di kamar mandi, kepala terbentur ringan, tidak ada penurunan kesadaran saat itu, tampak baik-baik saja. Sejak 1 minggu ini keluarga menyadari makin pelupa, bicara melantur, jalan sempoyongan, dan mengantuk berlebihan — perburukan"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "GCS turun bertahap (saat ini E3V4M6), disorientasi Pupil dapat anisokor bila sudah ada efek massa signifikan Kelemahan motorik ringan sisi kontralateral (lateralisasi) Tanda peningkatan TIK: nyeri kepala, mual (dapat tidak jelas pada kasus kronik)",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "CT scan kepala: gambaran perdarahan berbentuk bulan sabit/konkaf (crescent) mengikuti lekukan permukaan otak, sulkus & girus — dapat hipodens (kronik, >3 minggu), isodens (subakut), atau hiperdens (akut) Lab: darah lengkap, koagulasi (PENTING — pasien konsumsi",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Subdural Hematoma / Perdarahan Subdural",
+    "differensialBenar": [
+      "Epidural Hematoma",
+      "Intracerebral Hematoma",
+      "Kontusio Cerebri",
+      "Stroke Hemoragik (bila tanpa riwayat trauma jelas pada lansia)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Nonbedah bila kecil/asimtomatik: observasi ketat, tirah baring elevasi kepala 30°, hentikan/reversal antiplatelet sesuai kondisi, analgetik simtomatik Tata laksana TIK meningkat bila ada: R/ Manitol 20% infus — S 0,5-1g/kgBB habis maks 30 menit, ulang 0,25-0,5g/kgBB tiap 4-6 jam Bila pasien konsumsi antiplatelet/antikoagulan: pertimbangkan hentikan sementara & reversal sesuai obat (misal vitamin K untuk warfarin) Indikasi operasi (konsul bedah saraf): SDH akut dengan midline shift>5mm atau thickness>10mm; ATAU GCS<9, thickness<10mm, midline shift<5mm TETAPI GCS",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Edukasi keluarga bahwa gejala SDH kronik pada lansia dapat muncul lambat (minggu) setelah trauma ringan yang terlupakan — penting menanyakan riwayat jatuh pada lansia dengan perubahan kognisi/perilaku baru; jelaskan rencana tindakan (observasi vs operasi) dan risikonya; edukasi pencegahan jatuh pada lansia (pegangan kamar",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan makin pelupa, jalan sempoyongan sejak 1 minggu."
+}

@@ -1,0 +1,63 @@
+{
+  "id": "neu_32",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Ibu Sumiati, 72 tahun, pensiunan",
+  "keluhanUtama": "sering lupa, sudah 1 tahun makin parah",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "gangguan memori bertahap sejak 1 tahun, sering bertanya/bercerita berulang, salah meletakkan barang, lupa janji, mulai tersesat di rute yang familiar. Kesulitan mengelola keuangan & merencanakan aktivitas kompleks. Mulai ada perubahan perilaku: apatis, menarik diri sosial. Onset bertahap (bukan mendadak)"
+      ],
+      "rpd": "hipertensi lama, tidak ada riwayat stroke",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Pemeriksaan fisik umum & neurologis: dalam batas normal (gangguan motorik baru muncul di tahap akhir) Pemeriksaan kognisi sederhana: AD8-INA, MMSE, Clock Drawing Test, MoCA-Ina — skor di bawah normal sesuai usia/pendidikan Pemeriksaan aktivitas fungsional: ADL/IADL Katz atau Lawton —",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Kriteria NINCDS-ADRD A 2011: gangguan fungsi kognitif memengaruhi aktivitas sehari-hari, penurunan dari fungsi sebelumnya, bukan akibat delirium/ganggu an psikiatri mayor, terdeteksi dari anamnesis+peme riksaan kognitif objektif, minimal 2 domain terganggu (memori baru, fungsi eksekutif,",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Demensia (Alzheimer)",
+    "differensialBenar": [
+      "Demensia Vaskular",
+      "Demensia Badan Lewy",
+      "Demensia Frontotempora l",
+      "Mild Cognitive Impairment",
+      "Delirium",
+      "Depresi (pseudodemens ia)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Nonfarmakologi: stimulasi & pelatihan kognisi, terapi orientasi realitas, terapi reminiscence, pelatihan ADL, aktivitas fisik/rehabilitasi, manajemen perilaku (musik, aromaterapi, terapi cahaya) Farmakologi — Alzheimer ringan-sedang: R/ Donepezil tab 5mg No.XXX — S 1 dd tab I p.o. malam, dosis awal 2,5-5mg naik tiap 4-8mgg sampai 10mg/hari Alternatif: R/ Rivastigmin patch 4,6mg No.XXX — S tempel 1x/hari, naik ke 9,5mg setelah 4mgg; atau Galantamin 4mg/12jam naik ke 8mg/12jam setelah 4mgg Sedang-berat: kombinasi penyekat kolinesterase + R/ Memantin tab 5mg No.XXX — S 1 dd tab I p.o., naik tiap minggu sampai 10mg/12jam",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Jelaskan diagnosis demensia, etiologi, dan kondisi terkait secara jelas kepada pasien & keluarga; jelaskan perjalanan penyakit yang progresif dan kemungkinan komplikasi (ketergantungan ADL, gangguan perilaku); latih keluarga sebagai caregiver (strategi komunikasi, keamanan rumah, pencegahan tersesat); rawat inap bila ada gangguan perilaku berat yang",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan sering lupa, sudah 1 tahun makin parah."
+}

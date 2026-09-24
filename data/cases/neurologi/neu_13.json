@@ -1,0 +1,61 @@
+{
+  "id": "neu_13",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Anto, 40 tahun, buruh",
+  "keluhanUtama": "demam tinggi, kaku leher, nyeri kepala hebat",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "demam tinggi mendadak 24 jam, menggigil, nyeri kepala berat, fotofobia, mual muntah, disertai kejang 1x, kesadaran mulai menurun"
+      ],
+      "rpd": "riwayat sinusitis kronik",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU tampak sakit berat, kesadaran menurun (somnolen) Tanda rangsang meningeal (+): kaku kuduk (+), Kernig (+), Brudzinski (+) Papiledema bila onset sudah beberapa jam;",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Pungsi lumbal (diagnosis pasti): cairan otak keruh kehijauan, leukosit & protein sangat tinggi, glukosa turun sampai mendekati 0mg% Darah tepi: leukositosis",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Meningitis Bakterialis",
+    "differensialBenar": [
+      "Meningitis Serosa (TB",
+      "jamur)",
+      "Ensefalitis",
+      "Abses Otak"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Kausal: R/ Ceftriaxone inj 2 gram No.XX — S 2 dd 2 gram IV selama 10-14 hari Simptomatik: kortikosteroid, antipiretik, antikonvulsan, anti-edema otak sesuai indikasi Suportif: kebutuhan kalori/protein/nutrien via IV atau NGT Bila kesadaran tidak membaik dengan terapi, LP ulang minimal",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kontrol dan minum obat teratur (kepatuhan antibiotik penuh 10-14 hari penting mencegah relaps/resistensi); kenali komplikasi (gangguan pendengaran, defisit neurologis, hidrosefalus); rawat inap wajib bila ada tanda TIK",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan demam tinggi, kaku leher, nyeri kepala hebat."
+}

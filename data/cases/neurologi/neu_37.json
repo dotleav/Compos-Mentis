@@ -1,0 +1,59 @@
+{
+  "id": "neu_37",
+  "kategori": "neurologi",
+  "level": "4",
+  "identitas": "Ibu Wati, 30 tahun",
+  "keluhanUtama": "",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "epilepsi terdiagnosis 3 tahun lalu oleh spesialis saraf, bebas kejang 18 bulan terakhir dengan OAB dosis stabil, datang untuk"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "KU CM, tidak ada keluhan kejang berulang Pemeriksaan neurologis rutin: dalam batas normal, tidak ada efek samping obat yang mengganggu (tidak ada",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Tidak perlu pemeriksaan penunjang baru bila kondisi stabil dan tidak ada perubahan klinis — cukup evaluasi klinis rutin Kadar OAB dalam darah bila dicurigai",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Epilepsi Rujuk Balik",
+    "differensialBenar": [
+      "— (kasus kontrol rutin pasien epilepsi terkontrol",
+      "bukan diagnosis banding baru)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Lanjutkan OAB dosis yang sama sesuai resep spesialis saraf sebelumnya (program rujuk balik — dokter puskesmas/faskes primer melanjutkan resep, bukan mengubah dosis/jenis obat tanpa konsultasi ulang) Contoh kelanjutan resep: R/ Karbamazepin tab 200mg No.LX — S 2 dd tab I p.o. (sesuai resep terakhir spesialis)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Edukasi kepatuhan minum obat teratur tanpa putus meski sudah lama bebas kejang; jangan menghentikan OAB sendiri karena risiko kejang berulang/status epileptikus;",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan yang belum diketahui."
+}

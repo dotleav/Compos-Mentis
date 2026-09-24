@@ -1,0 +1,62 @@
+{
+  "id": "neu_35",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Pak Doni, 35 tahun, buruh pabrik",
+  "keluhanUtama": "kejang seluruh tubuh 1x, baru pertama kali",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "kejang tonik-klonik umum 1x, disaksikan rekan kerja, berlangsung ±3 menit, disertai lidah tergigit dan mengompol, pasca kejang bingung selama 20 menit (postictal confusion) lalu sadar penuh. Tidak ada demam,"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Pemeriksaan fisik umum & neurologis pasca kejang: cari tanda trauma kepala, tanda infeksi SSP, kelainan kongenital, tanda kecanduan alkohol/NAPZA , tanda keganasan Cari tanda defisit",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "GDS, elektrolit, fungsi ginjal/hati, skrining toksik (alkohol/NAPZA ) untuk cari pencetus akut simtomatik EEG (evaluasi aktivitas epileptiform), CT/MRI kepala (cari lesi struktural) Kriteria diagnosis",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Kejang (Bangkitan)",
+    "differensialBenar": [
+      "Sinkop",
+      "Serangan Panik/Psikogen ik Non-epileptik",
+      "TIA",
+      "Migren dengan Aura",
+      "Gangguan Gerak Paroksismal"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Bila kejang sudah berhenti spontan (seperti kasus ini): tidak perlu obat antikonvulsan akut, observasi pasca kejang Cari & atasi pencetus akut (bila kejang simtomatik akut: demam, hipoglikemia, gangguan elektrolit, putus alkohol, dll) OAB rumatan TIDAK rutin dimulai setelah kejang tunggal tanpa provokasi, kecuali ditemukan faktor risiko rekurensi tinggi (lesi struktural pada pencitraan, EEG epileptiform jelas, riwayat cedera otak sebelumnya) — bila",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Edukasi mengenai penghindaran faktor pencetus (kelelahan, kurang tidur, stres, alkohol); jelaskan bahwa 1x kejang belum tentu epilepsi — perlu evaluasi lanjutan; hindari aktivitas berisiko (berenang sendiri, mengemudi, bekerja di ketinggian) sampai",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kejang seluruh tubuh 1x, baru pertama kali."
+}

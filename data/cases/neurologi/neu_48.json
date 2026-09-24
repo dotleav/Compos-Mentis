@@ -1,0 +1,61 @@
+{
+  "id": "neu_48",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Pak Hartono, 58 tahun, diabetes 12 tahun",
+  "keluhanUtama": "kaki terasa terbakar & kesemutan terus-menerus, memberat malam hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "rasa terbakar (burning), kesemutan, dan seperti ditusuk-tusuk jarum pada kedua telapak"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Sensorik: penurunan sensasi nyeri-suhu-raba pola \"stocking-glove \" (distal simetris) kedua kaki, hilangnya sensasi getar (garpu tala) dan propriosepsi ringan",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "DN4 questionnaire atau painDETECT untuk konfirmasi komponen neuropatik (skor tinggi mendukung nyeri neuropatik)",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Nyeri Neuropatik",
+    "differensialBenar": [
+      "Nyeri Nosiseptik",
+      "Nyeri Campuran",
+      "Fibromialgia",
+      "Complex Regional Pain Syndrome"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Lini pertama nyeri neuropatik: R/ Gabapentin tab 300mg No.XXX — S 3 dd tab I p.o., mulai 300mg/hari titrasi naik bertahap sampai 1800-3600mg/hari sesuai respons & toleransi Alternatif: R/ Pregabalin tab 75mg No.XXX — S 2 dd tab I p.o., titrasi naik sampai 300-600mg/hari Alternatif/kombinasi: R/ Amitriptilin tab 25mg No.X — S",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kontrol gula darah ketat & teratur sangat penting mencegah perburukan neuropati; periksa kaki setiap hari untuk deteksi dini luka (risiko ulkus diabetik akibat hilangnya sensasi protektif); gunakan alas kaki",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kaki terasa terbakar & kesemutan terus-menerus, memberat malam hari."
+}

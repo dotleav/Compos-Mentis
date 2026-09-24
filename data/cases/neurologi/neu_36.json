@@ -1,0 +1,62 @@
+{
+  "id": "neu_36",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Ibu Reni, 27 tahun, karyawan",
+  "keluhanUtama": "kejang berulang sejak 2 tahun, sudah 5x",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "kejang tonik-klonik umum berulang, episode pertama 2 tahun lalu, sejak itu total 5x kejang dengan interval bervariasi 2-6 bulan, masing-masing didahului aura rasa aneh di perut (epigastric rising sensation), lalu kejang seluruh tubuh 2-3 menit, tergigit"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Pemeriksaan fisik umum & neurologis di antara bangkitan: dalam batas normal, tidak ada tanda trauma kepala/infeksi SSP/kelainan kongenital saat ini Tidak ditemukan defisit neurologis fokal menetap",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Kriteria diagnosis epilepsi (ILAE): ≥2 bangkitan tanpa provokasi berselang >24 jam (terpenuhi — 5x kejang dalam 2 tahun) Klasifikasi sindrom epilepsi sesuai bentuk bangkitan, EEG, dan brain imaging EEG: cari gambaran epileptiform",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Epilepsi",
+    "differensialBenar": [
+      "Sinkop",
+      "Serangan Panik/Psikogen ik Non-epileptik",
+      "Migren dengan Aura",
+      "Gangguan Gerak Paroksismal",
+      "TIA"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Pilihan OAB dewasa dengan bangkitan parsial (lini pertama): R/ Karbamazepin tab 200mg No.XXX — S 2 dd tab I p.o., mulai 100-200mg/hari, naik bertahap dalam 1-4 minggu sampai dosis rumatan 400-1600mg/hari (2-3x/hari) Alternatif lini pertama: R/ Levetiracetam tab 500mg No.LX — S 2 dd tab I p.o., mulai 500-1000mg/hari, naik setelah 2 minggu bila perlu sampai 1000-3000mg/hari Alternatif: R/ Asam Valproat tab 250mg No.XL — S 2-3 dd tab I p.o., mulai 400-500mg/hari naik setelah 7 hari sampai 500-2500mg/hari (hindari pada",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Edukasi minum obat & kontrol ulang secara teratur — jangan menghentikan OAB sendiri walau sudah bebas kejang; edukasi penghindaran faktor pencetus (kelelahan, kurang tidur, stres, alkohol); edukasi epilepsi pada wanita (interaksi OAB dengan kontrasepsi hormonal, risiko teratogenik",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan kejang berulang sejak 2 tahun, sudah 5x."
+}

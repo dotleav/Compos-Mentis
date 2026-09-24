@@ -1,0 +1,61 @@
+{
+  "id": "neu_43",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "Andi, 22 tahun, mahasiswa",
+  "keluhanUtama": "",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "KLL motor 3 jam lalu, sempat pingsan sebentar di lokasi, lalu sadar kembali dan bisa bicara normal (lucid interval — khas EDH), 1 jam kemudian mulai nyeri kepala hebat, muntah proyektil, dan kesadaran menurun progresif. Tidak pakai helm"
+      ],
+      "rpd": "tidak ada riwayat penyakit sebelumnya",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Primary survey (ABCDE): Airway (GCS turun→proteksi jalan napas+collar neck), Breathing (SpO2 target>90%), Circulation (target TDS>100mmHg) GCS turun dari 15 ke 10 (sedang), pupil mulai anisokor kanan (tanda herniasi awal) Tanda Cushing (awasi): hipertensi, bradikardia, bradipnea — tanda TIK meningkat lanjut",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "CT scan kepala tanpa kontras CITO: gambaran perdarahan epidural berbentuk lensa cembung (biconvex) berwarna hiperdens di bawah tulang tengkorak di atas duramater, biasanya akibat robeknya arteri meningea media di daerah temporal, dapat disertai fraktur tulang temporal Lab rutin: darah lengkap, koagulasi (PT/APTT), GDS, elektrolit",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Epidural Hematoma / Perdarahan Epidural",
+    "differensialBenar": [
+      "Subdural Hematoma",
+      "Intracerebral Hematoma",
+      "Kontusio Cerebri",
+      "Diffuse Axonal Injury"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Nonbedah (stabilisasi awal): oksigenasi nasal kanul 2-5L/menit, collar neck sampai terbukti tanpa cedera servikal, tirah baring elevasi kepala 30°, IVFD NaCl 0,9%/12jam R/ Ketorolac inj IV 30mg No.VI — S 2x1 IV selama 3 hari (analgetik) Tata laksana TIK meningkat: R/ Manitol 20% infus — S 0,5-1g/kgBB habis dalam maks 30 menit, ulang 0,25-0,5g/kgBB tiap 4-6 jam (3-5 hari) Bila perdarahan intrakranial: R/ Asam traneksamat inj IV — S loading 1gram dalam 10 menit, lanjut rumatan 1gram tiap 8 jam IV Indikasi operasi CITO (konsul bedah saraf segera): volume perdarahan >30cc, midline shift >5mm, hematom thickness >15mm, atau GCS<9 dengan pupil anisokor — kraniotomi evakuasi hematom",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Edukasi pasien & keluarga mengenai kondisi kegawatdaruratan (EDH klasik dapat memburuk cepat setelah lucid interval — perlu observasi ketat/operasi segera); edukasi pemakaian helm sebagai pencegahan utama cedera kepala pada pengendara motor; jelaskan rencana operasi, risiko, dan prognosis; edukasi keselamatan berkendara",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan yang belum diketahui."
+}

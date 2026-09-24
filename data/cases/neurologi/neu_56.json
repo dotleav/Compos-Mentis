@@ -1,0 +1,61 @@
+{
+  "id": "neu_56",
+  "kategori": "neurologi",
+  "level": "3B",
+  "identitas": "(lanjutan kasus di atas) Ibu Sri, 32 tahun, MG terdiagnosis 6 bulan",
+  "keluhanUtama": "sesak berat, tidak bisa menelan sama sekali",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "2 hari batuk-pilek (infeksi saluran napas atas sebagai pencetus), gejala MG memberat cepat — ptosis berat bilateral, disfagia total, suara sengau berat, sesak napas progresif, 3 jam terakhir penggunaan otot bantu napas"
+      ],
+      "rpd": "MG terdiagnosis 6 bulan lalu, kepatuhan obat piridostigmin+prednis on baik sebelumnya",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Penurunan kesadaran ringan, takikardia, takipnea, diaforesis, penggunaan otot bantu napas, staccato speech, sianosis dapat muncul, perburukan ptosis/diplopia/ disartria/disfo nia/disfagia/ke lemahan bulbar lain & ekstremitas, Single Breath Counting Test ≤15, pasien tidak dapat batuk efektif",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Spirometri — Force Vital Capacity, NIF <-20cmH2O, PEF <40cmH2O; MGCS (Myasthenia Gravis Composite Scale) versi Indonesia — peningkatan skor ≥3 poin; skrining pencetus (kultur, rontgen toraks cari pneumonia sebagai pemicu)",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Krisis Miastenik",
+    "differensialBenar": [
+      "Krisis Kolinergik",
+      "Sindrom Lambert-Eaton dengan gagal napas",
+      "Botulisme",
+      "SGB"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Kriteria intubasi: FVC<1L atau <15mL/kgBB, NIF<-20cmH2O, PEF<40cmH2O, atau perburukan usaha napas meski NIV Bila belum kriteria mutlak: NIV (BiPAP) — tekanan ekspirasi 1cmH2O/10kgBB, inspirasi 5cmH2O di atas tekanan ekspirasi Terapi krisis: R/ Immunoglobulin IV (IVIG) inj 400mg/kgBB/hari No.V — S drip IV selama 5 hari; atau Plasma Exchange 200-250mg/kgBB minimal 5 kali, interval 24-48 jam Atasi faktor pencetus: antibiotik bila infeksi terbukti; hindari obat yang memperberat MG Trakeostomi bila diperkirakan ventilator >2 minggu (faktor risiko: usia>50th, kapasitas vital puncak<25mL/kgBB hari 1&6 pascaintubasi, bikarbonat serum>30mmol/L)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Penjelasan sebelum rawat inap (rencana rawat, biaya, prosedur, manajemen nyeri, risiko&komplikasi) ; jelaskan tanda krisis miastenik & langkah sebelum dibawa ke RS; jelaskan faktor risiko & pencegahan rekurensi (patuh obat, hindari obat pencetus, vaksinasi cegah infeksi); discharge planning jelas; mortalitas MG tidak diterapi 25-31% — tekankan pentingnya kepatuhan terapi jangka panjang",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan sesak berat, tidak bisa menelan sama sekali."
+}

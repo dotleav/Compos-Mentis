@@ -1,0 +1,66 @@
+{
+  "id": "neu_42",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Pak Agus, 48 tahun, sopir truk",
+  "keluhanUtama": "nyeri leher menjalar ke lengan kanan, jari tangan kesemutan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "nyeri leher tajam seperti terbakar/tersayat menjalar ke lengan kanan sampai jari 3-4 tangan (distribusi C7), memberat saat batuk/bersin/mengej an (peningkatan tekanan intratekal), disertai baal jari 3-4 dan sedikit kelemahan ekstensi pergelangan tangan kanan"
+      ],
+      "rpd": "pekerjaan sopir dengan postur leher menunduk lama,",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Palpasi mencakup regio oksipital, leher anterior, klavikula, skapula, otot servikotorakal Motorik: kelemahan ekstensor pergelangan tangan & trisep kanan (sesuai C7) Refleks: refleks trisep menurun kanan (sesuai C7) Sensorik: defisit sensoris jari 3-4 tangan kanan Tes provokasi: Spurling test",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "Radiologis: Rontgen vertebra servikal, CT scan/MRI servikal (gold standard, evaluasi kompresi radiks & level pasti), ENMG atas indikasi Lab: darah rutin, GDS, koagulasi (bila rencana intervensi), CRP/LED atas indikasi Kriteria diagnosis: nyeri/defisit sensoris leher menjalar ke",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Radicular Syndrome / Cervical Disc Disorder dengan Radikulopati",
+    "differensialBenar": [
+      "HNP Servikal",
+      "Spondilosis/Sp ondilolistesis Servikal",
+      "Stenosis Kanalis Spinalis",
+      "Nyeri Miofasial",
+      "Fibromialgia",
+      "Pleksopati Brakialis",
+      "Mononeuropati Perifer",
+      "Nyeri Kepala Servikogenik",
+      "Artropati"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "NSAID (lini pertama): R/ Natrium diklofenak tab 50mg No.XV — S tiap 8-12 jam p.o. (maks 150mg/hari); alt: Asam mefenamat 500-650mg tiap 4 jam (maks 4g/hari); Ibuprofen 400mg tiap 4 jam (maks 1200mg/hari) Bila risiko GI: tambahkan PPI/sukralfat/H2-blocker; bila risiko kardiovaskular: parasetamol 500-1000mg/hari (maks 4g/hari) sebagai alternatif lebih aman Nyeri radikular akut berat: R/ Metilprednisolon tab 4mg No.XXI — S tapering dose sesuai skema (glukokortikoid untuk sindrom nyeri radikuler akut berat) Muscle relaxant (lini 2-3 untuk nyeri akut berat): R/ Eperisone",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Edukasi diagnosis penyakit secara jelas; perbaiki ergonomi kerja (posisi leher saat mengemudi, hindari menunduk lama); latihan postur & peregangan leher teratur; hindari mengangkat beban berat/gerakan mendadak leher; kembali kontrol segera bila muncul gangguan BAB/BAK atau kelemahan memberat (tanda bahaya perlu evaluasi bedah)",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan nyeri leher menjalar ke lengan kanan, jari tangan kesemutan."
+}

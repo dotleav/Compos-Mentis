@@ -1,0 +1,62 @@
+{
+  "id": "neu_49",
+  "kategori": "neurologi",
+  "level": "3A",
+  "identitas": "Ibu Yanti, 45 tahun, penjahit",
+  "keluhanUtama": "tangan kanan kesemutan, terutama malam hari",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "parestesia & rasa seperti tersengat listrik jari 1-3 & setengah radial jari 4 tangan kanan 3 bulan, memberat malam hari sampai membangunkan dari tidur, mereda dengan memijat/menggerakk an tangan/meninggikan tangan, pekerjaan menjahit dengan gerakan pergelangan tangan repetitif"
+      ],
+      "rpd": "tidak ada riwayat DM/hipotiroid",
+      "rpk": "-Catatan: prinsip serupa berlaku pada entrapment lain — tarsal tunnel",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_umum",
+        "kelompok": "pemeriksaan",
+        "nama": "Pemeriksaan Fisik",
+        "temuan": "Phalen's test (+), Tinel's sign (+) di pergelangan tangan, Torniquet test (+), Flick's sign (+), thenar wasting pada kasus lanjut, kekuatan motorik & sensibilitas jari 1-3 terganggu, refleks fisiologis normal, fungsi otonom tangan dievaluasi",
+        "signifikan": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pp_umum",
+        "nama": "Pemeriksaan Penunjang",
+        "temuan": "EMG/KHS — dapat menunjukkan fibrilasi, gelombang polifasik pada otot thenar, KHS menurun & masa laten distal memanjang (normal pada 15-31% kasus CTS); rontgen pergelangan tangan (singkirkan fraktur/artritis ); USG luas penampang n. medianus; GDS/fungsi tiroid bila etiologi tidak jelas",
+        "signifikan": false,
+        "image": null
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Neuropati Jeratan: Carpal Tunnel Syndrome, Tarsal Tunnel Syndrome, Neuropati Ulnaris, Peroneal Palsy",
+    "differensialBenar": [
+      "Radikulopati servikal/lumba l",
+      "Thoracic outlet syndrome",
+      "Pronator teres syndrome",
+      "de Quervain's syndrome",
+      "polineuropati"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Konservatif: Istirahatkan pergelangan tangan, bidai posisi netral (dipakai terus-menerus/hanya malam hari 2-3 minggu) R/ Ibuprofen tab 400mg No.X — S 3dd tab I p.o. p.c. Nerve gliding exercise (latihan ROM ekstremitas atas & leher) Injeksi lokal: Deksametason 1-4mg/mL atau Metilprednisolon 20-40mg intraterowongan karpal (jarum no.23/25, sudut 30°), dapat diulang tiap 7-10 hari maks 3-4 kali (hati-hati usia <30 tahun) R/ Piridoksin (Vitamin B6) tab 100mg No.XXX — S 1dd tab I-III p.o. selama 3 bulan (manfaat kontroversial, kurangi nyeri) Operatif: bila gagal konservatif/gangguan sensorik berat/atrofi thenar Algoritma: konservatif 6-8 minggu → gagal atau red flag",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Berperan aktif dalam pengobatan, kurangi pergerakan/gerak an repetitif pergelangan tangan yang memicu; modifikasi ergonomi pekerjaan; kontrol bila muncul kelemahan menetap/atrofi otot thenar",
+      "benar": true
+    }
+  ],
+  "skenarioAwal": "Seorang pasien datang dengan keluhan tangan kanan kesemutan, terutama malam hari."
+}
