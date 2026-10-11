@@ -1,0 +1,3031 @@
+diff --git a/data/cases/psikiatri/psi_01_skizofrenia_paranoid_tan.json b/data/cases/psikiatri/psi_01_skizofrenia_paranoid_tan.json
+new file mode 100644
+index 0000000..686a427
+--- /dev/null
++++ b/data/cases/psikiatri/psi_01_skizofrenia_paranoid_tan.json
+@@ -0,0 +1,148 @@
++{
++  "id": "psi_01_skizofrenia_paranoid_tan",
++  "kategori": "psikiatri",
++  "level": "4",
++  "nama": "Kasus 1",
++  "judulKasus": "Skizofrenia Paranoid tanpa penyulit — F20.0",
++  "identitas": "Andi, 26 tahun, laki-laki, buruh pabrik (sudah 4 bulan berhenti kerja)",
++  "skenarioAwal": "Seorang laki-laki 26 tahun datang ke poli dengan keluhan perubahan perilaku dalam beberapa bulan terakhir.",
++  "keluhanUtama": "Sering mendengar bisikan dan merasa dikejar-kejar",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "8 bulan: curiga tetangga & rekan kerja ingin mencelakai, mengunci diri, menutup jendela",
++        "5 bulan: mendengar suara yang mengomentari perbuatannya dan memerintah, merasa pikirannya bisa dibaca orang lain/disiarkan",
++        "Menarik diri, tidak mandi, tidur kacau, bicara sedikit; fungsi kerja/sosial menurun jelas",
++        "Tidak ada demam, trauma kepala, kejang"
++      ],
++      "rpd": "belum pernah berobat jiwa; disangkal penggunaan NAPZA/alkohol",
++      "rpk": "paman dengan gangguan jiwa",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU tampak sakit ringan-sedang, kesadaran CM (GCS E4V5M6)",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 120/80, N 84x/mnt, RR 18x/mnt, T 36,8°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_gizi",
++        "nama": "Status gizi",
++        "temuan": "Normal",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_neurologis",
++        "nama": "Neurologis",
++        "temuan": "Lateralisasi (-), meningeal sign (-), tidak ada tremor/rigiditas",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Penampilan kurang rapi, kontak mata minim, curiga; Afek tumpul/inappropriate, mood curiga; Waham kejar, waham siar pikiran; halusinasi auditorik komentar & imperatif; Orientasi baik, memori baik; RTA terganggu; tilikan derajat 1 (menyangkal sakit)",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_darah_perifer_lengkap",
++        "nama": "Darah perifer lengkap",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_fungsi_ginjal_dan_hati",
++        "nama": "Fungsi ginjal dan hati",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_urin_napza",
++        "nama": "Urin NAPZA",
++        "temuan": "Negatif.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Skizofrenia Paranoid tanpa penyulit",
++    "differensialBenar": [
++      "Gangguan psikotik akut dan sementara",
++      "Skizoafektif",
++      "Gangguan waham menetap",
++      "Psikosis akibat zat/organik",
++      "Episode manik/depresi berat dengan ciri psikotik"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "Antipsikotik (pilih satu):\nR/ Risperidon tab 2 mg No. LX\nS 2.d.d tab I",
++      "benar": true
++    },
++    {
++      "opsi": "atau",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Haloperidol tab 5 mg No. LX\nS 2.d.d tab I",
++      "benar": true
++    },
++    {
++      "opsi": "Bila muncul EPS (Extrapyramidal Syndrome):\nR/ Trihexyphenidyl tab 2 mg No. XXX\nS 2.d.d tab I (hanya selama EPS)",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Penyakit otak yang dapat dikontrol, bukan kutukan/guna-guna",
++      "benar": true
++    },
++    {
++      "opsi": "Minum obat teratur, jangan berhenti sendiri (kekambuhan)",
++      "benar": true
++    },
++    {
++      "opsi": "Efek samping: kaku, gemetar, mengantuk, perlu lapor",
++      "benar": true
++    },
++    {
++      "opsi": "Keluarga: tidak berdebat dengan waham, tidak mengejek, awasi kepatuhan obat",
++      "benar": true
++    },
++    {
++      "opsi": "Hindari alkohol/NAPZA",
++      "benar": true
++    },
++    {
++      "opsi": "Kontrol rutin; segera ke RS bila agresif/ide bunuh diri",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_02_skizofrenia_dengan_penyu.json b/data/cases/psikiatri/psi_02_skizofrenia_dengan_penyu.json
+new file mode 100644
+index 0000000..e569636
+--- /dev/null
++++ b/data/cases/psikiatri/psi_02_skizofrenia_dengan_penyu.json
+@@ -0,0 +1,97 @@
++{
++  "id": "psi_02_skizofrenia_dengan_penyu",
++  "kategori": "psikiatri",
++  "level": "4",
++  "nama": "Kasus 2",
++  "judulKasus": "Skizofrenia dengan penyulit: Efek Samping Obat (EPS) — F20 + G21.1",
++  "identitas": "Dedi, 30 tahun, laki-laki, wiraswasta",
++  "skenarioAwal": "Seorang laki-laki 30 tahun datang ke poli dengan keluhan pada badan dan tangan yang mengganggu aktivitas.",
++  "keluhanUtama": "Badan kaku dan tangan gemetar sejak minum obat",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "Penderita skizofrenia, 3 minggu lalu haloperidol dinaikkan dari 5 mg ke 15 mg/hari",
++        "1 minggu terakhir tangan gemetar saat istirahat, badan kaku, jalan pelan, air liur sering menetes, ekspresi wajah datar",
++        "Tidak demam, kesadaran baik, gejala psikotik membaik"
++      ],
++      "rpd": "skizofrenia 2 tahun; tidak ada penyakit saraf lain",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU sedang, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 120/80, N 80x/mnt, RR 18x/mnt, T 36,9°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_neurologis",
++        "nama": "Neurologis",
++        "temuan": "Tremor istirahat halus (pill-rolling), rigiditas cogwheel pada ekstremitas atas; Bradikinesia, wajah topeng, langkah kecil, ayunan lengan berkurang, sialorea; Tidak ada rigiditas lead-pipe berat, kesadaran dan suhu normal (menyingkirkan SNM); Tidak ada gerakan melirik/leher memutar (menyingkirkan distonia)",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Skizofrenia dengan penyulit: Efek Samping Obat (EPS)",
++    "differensialBenar": [
++      "Distonia akut",
++      "Akatisia",
++      "Parkinsonisme sekunder obat",
++      "Diskinesia tardif",
++      "Penyakit Parkinson",
++      "Sindrom neuroleptik maligna"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Haloperidol tab 5 mg No. XXX\nS 2.d.d tab I (turunkan dari 15 mg/hari)",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Trihexyphenidyl tab 2 mg No. LX\nS 2.d.d tab I",
++      "benar": true
++    },
++    {
++      "opsi": "Reevaluasi 1–2 minggu; antikolinergik dihentikan bertahap setelah EPS teratasi",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Gemetar/kaku adalah efek samping obat, bukan penyakit baru",
++      "benar": true
++    },
++    {
++      "opsi": "Jangan hentikan obat sendiri; sampaikan ke dokter",
++      "benar": true
++    },
++    {
++      "opsi": "Efek samping antikolinergik: mulut kering, sulit BAK, pandangan kabur, sembelit",
++      "benar": true
++    },
++    {
++      "opsi": "Segera ke IGD bila demam tinggi, kaku sangat berat, kesadaran turun",
++      "benar": true
++    },
++    {
++      "opsi": "Kontrol teratur untuk penyesuaian dosis",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_03_skizofrenia_dengan_penye.json b/data/cases/psikiatri/psi_03_skizofrenia_dengan_penye.json
+new file mode 100644
+index 0000000..5703f94
+--- /dev/null
++++ b/data/cases/psikiatri/psi_03_skizofrenia_dengan_penye.json
+@@ -0,0 +1,146 @@
++{
++  "id": "psi_03_skizofrenia_dengan_penye",
++  "kategori": "psikiatri",
++  "level": "3A",
++  "nama": "Kasus 3",
++  "judulKasus": "Skizofrenia dengan penyerta (komorbid Diabetes Melitus tipe 2) — F20 + E11",
++  "identitas": "Heru, 40 tahun, laki-laki, tidak bekerja",
++  "skenarioAwal": "Seorang laki-laki 40 tahun datang ke poli untuk kontrol rutin dengan keluhan lemas dan sering buang air kecil.",
++  "keluhanUtama": "Haus terus, sering kencing, badan lemas",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "Skizofrenia 10 tahun, 1 tahun terakhir risperidon 4 mg/hari lalu olanzapin; BB naik 12 kg",
++        "1 bulan: sering haus, BAK malam >3x, lemas, luka kaki lama sembuh",
++        "Waham dan halusinasi terkontrol, kepatuhan minum obat baik"
++      ],
++      "rpd": "DM tipe 2 baru diketahui; hipertensi (-)",
++      "rpk": "ayah DM",
++      "lifestyle": [
++        "banyak makan manis",
++        "jarang aktivitas",
++        "merokok"
++      ]
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU sedang, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 135/85, N 88x/mnt, RR 20x/mnt, T 36,8°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_antropometri",
++        "nama": "Antropometri",
++        "temuan": "TB 168 cm, BB 92 kg, IMT 32,6 (obesitas II), lingkar perut 105 cm",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_kulit",
++        "nama": "Kulit",
++        "temuan": "Acanthosis nigricans leher",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_kaki",
++        "nama": "Kaki",
++        "temuan": "Sensibilitas monofilamen menurun, ulkus kecil kering tumit tanpa tanda infeksi",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Afek datar, tilikan cukup, tidak ada waham/halusinasi aktif",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "GDS 320 mg/dL",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_gula_darah_puasa",
++        "nama": "Gula darah puasa",
++        "temuan": "GDP 210 mg/dL",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_hba1c",
++        "nama": "HbA1c",
++        "temuan": "9,8%",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Skizofrenia dengan penyerta (komorbid Diabetes Melitus tipe 2)",
++    "differensialBenar": [
++      "Hiperglikemia akibat antipsikotik atipikal",
++      "Sindrom metabolik",
++      "DM tipe 2 tidak terkontrol",
++      "Skizofrenia dengan penyalahgunaan zat"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "Antipsikotik (netral metabolik):\nR/ Haloperidol tab 5 mg No. LX\nS 2.d.d tab I [verifikasi, atau aripiprazol bila tersedia]",
++      "benar": true
++    },
++    {
++      "opsi": "Antidiabetik:\nR/ Metformin tab 500 mg No. XC\nS 3.d.d tab I p.c.",
++      "benar": true
++    },
++    {
++      "opsi": "Hentikan olanzapin bertahap, jangan putus mendadak",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Diet DM: batasi gula, nasi, minuman manis; porsi kecil teratur",
++      "benar": true
++    },
++    {
++      "opsi": "Olahraga jalan kaki 30 menit, 5x/minggu",
++      "benar": true
++    },
++    {
++      "opsi": "Obat jiwa tetap diminum; jangan hentikan sendiri karena takut gemuk",
++      "benar": true
++    },
++    {
++      "opsi": "Rawat kaki setiap hari, pakai alas kaki",
++      "benar": true
++    },
++    {
++      "opsi": "Cek gula darah berkala; kenali gejala hipoglikemia",
++      "benar": true
++    },
++    {
++      "opsi": "Berhenti merokok",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_04_gangguan_psikotik_akut_d.json b/data/cases/psikiatri/psi_04_gangguan_psikotik_akut_d.json
+new file mode 100644
+index 0000000..6c3a7f8
+--- /dev/null
++++ b/data/cases/psikiatri/psi_04_gangguan_psikotik_akut_d.json
+@@ -0,0 +1,144 @@
++{
++  "id": "psi_04_gangguan_psikotik_akut_d",
++  "kategori": "psikiatri",
++  "level": "4",
++  "nama": "Kasus 4",
++  "judulKasus": "Gangguan Psikotik Akut dan Sementara — F23",
++  "identitas": "Dewi, 28 tahun, perempuan, ibu rumah tangga",
++  "skenarioAwal": "Seorang perempuan 28 tahun datang ke poli dengan keluhan perubahan perilaku yang mendadak.",
++  "keluhanUtama": "Tiba-tiba bicara kacau dan ketakutan",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "5 hari lalu mendadak gelisah, bicara tidak nyambung, mengatakan ada yang ingin membunuhnya",
++        "Mendengar suara-suara, melihat bayangan, tidur nyaris tidak ada, perilaku berubah-ubah (kadang menangis, kadang marah)",
++        "2 minggu sebelumnya anaknya meninggal mendadak",
++        "Tidak ada demam, trauma kepala, atau konsumsi zat"
++      ],
++      "rpd": "tidak pernah gangguan jiwa",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU tampak gelisah, CM (GCS E4V5M6)",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 120/80, N 96x/mnt, RR 20x/mnt, T 36,9°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_neurologis",
++        "nama": "Neurologis",
++        "temuan": "Lateralisasi (-), meningeal sign (-)",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Perilaku gelisah, afek labil; Bicara inkoheren, waham kejar tidak sistematis; Halusinasi auditorik & visual, perilaku berubah cepat; Orientasi baik; tilikan buruk",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_darah_perifer_lengkap",
++        "nama": "Darah perifer lengkap",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_elektrolit",
++        "nama": "Elektrolit",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_fungsi_tiroid",
++        "nama": "Fungsi tiroid",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_urin_napza",
++        "nama": "Urin NAPZA",
++        "temuan": "Negatif.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gangguan Psikotik Akut dan Sementara",
++    "differensialBenar": [
++      "Skizofrenia",
++      "Gangguan afektif bipolar manik psikotik",
++      "Psikosis akibat zat",
++      "Delirium",
++      "Reaksi stres akut"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Risperidon tab 2 mg No. XXVIII\nS 2.d.d tab I",
++      "benar": true
++    },
++    {
++      "opsi": "atau",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Haloperidol tab 5 mg No. XXVIII\nS 2.d.d tab I",
++      "benar": true
++    },
++    {
++      "opsi": "Bila EPS:\nR/ Trihexyphenidyl tab 2 mg No. XIV\nS 1–2.d.d tab I",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Gejala dapat membaik penuh dalam waktu singkat, namun bisa kambuh",
++      "benar": true
++    },
++    {
++      "opsi": "Minum obat teratur sesuai anjuran dokter",
++      "benar": true
++    },
++    {
++      "opsi": "Dukungan emosional keluarga setelah kehilangan (duka)",
++      "benar": true
++    },
++    {
++      "opsi": "Kurangi stresor; tidur cukup",
++      "benar": true
++    },
++    {
++      "opsi": "Awasi tanda kambuh: tidak tidur, curiga, bicara kacau",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_05_gangguan_skizoafektif.json b/data/cases/psikiatri/psi_05_gangguan_skizoafektif.json
+new file mode 100644
+index 0000000..439409a
+--- /dev/null
++++ b/data/cases/psikiatri/psi_05_gangguan_skizoafektif.json
+@@ -0,0 +1,113 @@
++{
++  "id": "psi_05_gangguan_skizoafektif",
++  "kategori": "psikiatri",
++  "level": "3A",
++  "nama": "Kasus 5",
++  "judulKasus": "Gangguan Skizoafektif — F25",
++  "identitas": "Rina, 32 tahun, perempuan, guru",
++  "skenarioAwal": "Seorang perempuan 32 tahun datang ke poli dengan keluhan gangguan perasaan dan pikiran.",
++  "keluhanUtama": "Mendengar suara dan merasa sangat sedih sekaligus bersemangat berlebihan",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "3 bulan: mendengar suara yang mengomentari, curiga kepala sekolah menyabotase",
++        "Pada saat yang sama (2 minggu terakhir) mood meningkat, tidur 3 jam/hari, boros, merasa punya misi khusus",
++        "Sebelumnya episode murung 1 tahun lalu"
++      ],
++      "rpd": "-",
++      "rpk": "kakak bipolar",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU sedang, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 120/80, N 92x/mnt, RR 20x/mnt, T 36,8°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Afek euforik-iritabel, ada mood congruent grandiosity; Waham kejar & kebesaran; halusinasi auditorik komentar; Tilikan buruk",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_laboratorium_penyingkir_organik",
++        "nama": "Laboratorium penyingkir organik",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_tsh",
++        "nama": "TSH",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_urin_napza",
++        "nama": "Urin NAPZA",
++        "temuan": "Negatif.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gangguan Skizoafektif",
++    "differensialBenar": [
++      "Skizofrenia",
++      "Gangguan afektif bipolar dengan ciri psikotik",
++      "Depresi berat dengan ciri psikotik",
++      "Psikosis akibat zat"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Risperidon tab 2 mg No. LX\nS 2.d.d tab I",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Asam valproat tab 500 mg No. LX\nS 2.d.d tab I\n[verifikasi: dosis valproat 20–30 mg/kgBB; cek fungsi hati & trombosit]",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Penyakit kronik kambuhan yang memerlukan pengobatan jangka panjang",
++      "benar": true
++    },
++    {
++      "opsi": "Jangan hentikan obat tanpa dokter",
++      "benar": true
++    },
++    {
++      "opsi": "Efek samping valproat: mual, tremor, BB naik, kerontokan rambut; wajib kontrol lab",
++      "benar": true
++    },
++    {
++      "opsi": "Hindari kehamilan tanpa konsultasi (teratogenik)",
++      "benar": true
++    },
++    {
++      "opsi": "Jaga pola tidur teratur, hindari alkohol",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_06_gangguan_afektif_bipolar.json b/data/cases/psikiatri/psi_06_gangguan_afektif_bipolar.json
+new file mode 100644
+index 0000000..21fcdd3
+--- /dev/null
++++ b/data/cases/psikiatri/psi_06_gangguan_afektif_bipolar.json
+@@ -0,0 +1,146 @@
++{
++  "id": "psi_06_gangguan_afektif_bipolar",
++  "kategori": "psikiatri",
++  "level": "3A",
++  "nama": "Kasus 6",
++  "judulKasus": "Gangguan Afektif Bipolar, episode kini manik — F31.1/F31.2",
++  "identitas": "Budi, 30 tahun, laki-laki, sales",
++  "skenarioAwal": "Seorang laki-laki 30 tahun datang ke poli dengan keluhan gangguan tidur.",
++  "keluhanUtama": "Tidak tidur-tidur tapi tidak capek, banyak ide",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "7 hari: tidur 2 jam/malam, banyak bicara, merasa sangat energik dan hebat",
++        "Boros (membeli mobil kredit), ganti-ganti rencana usaha, mudah marah bila dibantah",
++        "Merasa dapat mengendalikan banyak orang"
++      ],
++      "rpd": "2 tahun lalu episode murung 2 bulan; tidak ada konsumsi zat",
++      "rpk": "ibu bipolar",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU baik, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 130/80, N 98x/mnt, RR 20x/mnt, T 36,8°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tiroid",
++        "nama": "Tiroid",
++        "temuan": "Tidak membesar",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Bicara cepat banyak (logorea), flight of ideas; Mood euforik/iritabel, waham kebesaran",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_tsh",
++        "nama": "TSH",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_ureum_dan_kreatinin",
++        "nama": "Ureum dan kreatinin",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_elektrolit",
++        "nama": "Elektrolit",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_ekg",
++        "nama": "EKG",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_urin_napza",
++        "nama": "Urin NAPZA",
++        "temuan": "Negatif.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gangguan Afektif Bipolar, episode kini manik",
++    "differensialBenar": [
++      "Skizoafektif",
++      "Skizofrenia",
++      "Mania akibat zat/organik (hipertiroid, steroid)",
++      "ADHD dewasa",
++      "Gangguan kepribadian"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Haloperidol tab 5 mg No. XXVIII\nS 2.d.d tab I",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Asam valproat tab 500 mg No. XXVIII\nS 2.d.d tab I\n[verifikasi: alternatif litium karbonat tab 400 mg; target kadar 0,6–1,2 mEq/L]",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Bipolar: naik-turun mood yang kambuhan, perlu obat jangka panjang",
++      "benar": true
++    },
++    {
++      "opsi": "Jaga ritme tidur; hindari alkohol dan begadang",
++      "benar": true
++    },
++    {
++      "opsi": "Hindari keputusan keuangan besar saat mood tinggi",
++      "benar": true
++    },
++    {
++      "opsi": "Keluarga mengenali tanda awal kambuh (tidur berkurang, bicara banyak)",
++      "benar": true
++    },
++    {
++      "opsi": "Waspada fase depresi, laporkan ide bunuh diri",
++      "benar": true
++    },
++    {
++      "opsi": "Efek samping obat dan perlunya cek darah berkala",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_07_gangguan_depresif_berat.json b/data/cases/psikiatri/psi_07_gangguan_depresif_berat.json
+new file mode 100644
+index 0000000..970870b
+--- /dev/null
++++ b/data/cases/psikiatri/psi_07_gangguan_depresif_berat.json
+@@ -0,0 +1,136 @@
++{
++  "id": "psi_07_gangguan_depresif_berat",
++  "kategori": "psikiatri",
++  "level": "3A",
++  "nama": "Kasus 7",
++  "judulKasus": "Gangguan Depresif Berat dengan Ciri Psikotik — F32.3",
++  "identitas": "Ny. Sumi, 45 tahun, perempuan, pedagang",
++  "skenarioAwal": "Seorang perempuan 45 tahun datang ke poli dengan keluhan lemas dan perasaan tidak enak.",
++  "keluhanUtama": "Merasa berdosa dan ingin mati",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "2 bulan: murung hampir sepanjang hari, tidak tertarik apa pun, lemas, tidak mau makan, BB turun 6 kg",
++        "Terbangun dini hari, merasa bersalah karena “dosa besar”, yakin tubuhnya membusuk",
++        "Mendengar suara yang menyalahkan dan menyuruhnya mengakhiri hidup",
++        "Pernah memikirkan cara gantung diri"
++      ],
++      "rpd": "episode serupa ringan 3 tahun lalu",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU lemah, CM, kurus (IMT 17)",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 100/70, N 78x/mnt, RR 18x/mnt, T 36,6°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_hidrasi",
++        "nama": "Hidrasi",
++        "temuan": "Dehidrasi ringan, turgor menurun",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Psikomotor melambat, afek depresif, kontak minimal; Waham dosa dan nihilistik, halusinasi auditorik menuduh; Ide bunuh diri aktif dengan rencana, tilikan buruk",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_darah_perifer_lengkap",
++        "nama": "Darah perifer lengkap",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_elektrolit",
++        "nama": "Elektrolit",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_tsh",
++        "nama": "TSH",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_fungsi_hati_dan_ginjal",
++        "nama": "Fungsi hati dan ginjal",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gangguan Depresif Berat dengan Ciri Psikotik",
++    "differensialBenar": [
++      "Depresi berat tanpa psikotik",
++      "Skizoafektif tipe depresif",
++      "Gangguan bipolar episode depresi",
++      "Demensia dengan depresi",
++      "Depresi akibat kondisi medis"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Sertralin tab 50 mg No. XXX\nS 1.d.d tab I pagi",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Risperidon tab 2 mg No. XXX\nS 1.d.d tab I malam",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Depresi berat adalah penyakit, bukan kurang iman atau kelemahan",
++      "benar": true
++    },
++    {
++      "opsi": "Keluarga mengawasi 24 jam, singkirkan benda berbahaya",
++      "benar": true
++    },
++    {
++      "opsi": "Obat butuh 2–4 minggu untuk bekerja; jangan berhenti sendiri",
++      "benar": true
++    },
++    {
++      "opsi": "Segera bawa ke IGD bila ada percobaan bunuh diri",
++      "benar": true
++    },
++    {
++      "opsi": "Dukungan keluarga, aktivitas ringan, makan bertahap",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_08_delirium_akibat_kondisi.json b/data/cases/psikiatri/psi_08_delirium_akibat_kondisi.json
+new file mode 100644
+index 0000000..ab6987f
+--- /dev/null
++++ b/data/cases/psikiatri/psi_08_delirium_akibat_kondisi.json
+@@ -0,0 +1,136 @@
++{
++  "id": "psi_08_delirium_akibat_kondisi",
++  "kategori": "psikiatri",
++  "level": "3B",
++  "nama": "Kasus 8",
++  "judulKasus": "Delirium akibat kondisi medis umum, bukan alkohol/zat psikoaktif — F05",
++  "identitas": "Kakek Sardi, 74 tahun, laki-laki, diantar keluarga",
++  "skenarioAwal": "Seorang laki-laki 74 tahun, diantar keluarga, datang ke IGD dengan keluhan perubahan kesadaran dan perilaku yang mendadak.",
++  "keluhanUtama": "Tiba-tiba bingung, bicara ngawur, malam gelisah",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "3 hari lalu demam, batuk, BAK nyeri; 1 hari ini mendadak bingung, tidak mengenali anak, tidur malam kacau, siang mengantuk",
++        "Melihat ular di kamar, menarik infus/selang bila dirawat",
++        "Gejala naik turun dalam sehari"
++      ],
++      "rpd": "DM, hipertensi; tidak pernah pikun sebelumnya",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU sakit sedang, GCS E4V4M6 (fluktuatif)",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 150/90, N 104x/mnt, RR 24x/mnt, T 38,4°C",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_dehidrasi",
++        "nama": "Dehidrasi",
++        "temuan": "Mukosa kering",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_paru",
++        "nama": "Paru",
++        "temuan": "Ronki basah kasar basal kanan; nyeri ketok CVA (+)",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Atensi sangat terganggu, disorientasi waktu-tempat, bicara inkoheren; Halusinasi visual, gelisah, siklus tidur-bangun terbalik",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_neurologis",
++        "nama": "Neurologis",
++        "temuan": "Lateralisasi (-), flapping tremor (-)",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_darah_perifer_lengkap",
++        "nama": "Darah perifer lengkap",
++        "temuan": "Leukositosis",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_urinalisis",
++        "nama": "Urinalisis",
++        "temuan": "Piuria",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Delirium akibat kondisi medis umum, bukan alkohol/zat psikoaktif",
++    "differensialBenar": [
++      "Demensia",
++      "Skizofrenia/psikosis akut",
++      "Depresi berat",
++      "Putus zat",
++      "Gangguan bipolar manik"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Haloperidol tab 0,5 mg No. XV\nS 1–2.d.d tab I p.r.n. agitasi",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Tiamin tab 50 mg No. X\nS 1.d.d tab I\n[verifikasi: dosis geriatri; hindari benzodiazepin kecuali putus alkohol/sedatif]",
++      "benar": true
++    },
++    {
++      "opsi": "Terapi etiologi (antibiotik sesuai pneumonia/ISK) sesuai pedoman",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Delirium keadaan darurat yang bisa membaik bila penyebab diobati",
++      "benar": true
++    },
++    {
++      "opsi": "Keluarga mendampingi, ruangan terang saat siang dan tenang malam",
++      "benar": true
++    },
++    {
++      "opsi": "Letakkan jam/kalender, kacamata, alat bantu dengar",
++      "benar": true
++    },
++    {
++      "opsi": "Hindari restrain kecuali terpaksa",
++      "benar": true
++    },
++    {
++      "opsi": "Hindari obat penenang berlebih",
++      "benar": true
++    },
++    {
++      "opsi": "Segera ke IGD bila gelisah berat atau kesadaran menurun",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_09_demensia_dengan_gejala_t.json b/data/cases/psikiatri/psi_09_demensia_dengan_gejala_t.json
+new file mode 100644
+index 0000000..ac75ad5
+--- /dev/null
++++ b/data/cases/psikiatri/psi_09_demensia_dengan_gejala_t.json
+@@ -0,0 +1,188 @@
++{
++  "id": "psi_09_demensia_dengan_gejala_t",
++  "kategori": "psikiatri",
++  "level": "3A",
++  "nama": "Kasus 9",
++  "judulKasus": "Demensia dengan gejala tambahan: waham, halusinasi, depresi — F00–F03",
++  "identitas": "Slamet, 72 tahun, laki-laki, pensiunan guru, diantar keluarga",
++  "skenarioAwal": "Seorang laki-laki 72 tahun, diantar keluarga, datang ke poli dengan keluhan perubahan ingatan dan perilaku.",
++  "keluhanUtama": "Pikun dan curiga istri selingkuh",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "2 tahun: lupa hal baru, lupa letak barang, tersesat dekat rumah, sulit mengurus uang",
++        "3 bulan: yakin istri berselingkuh dan mencuri, melihat orang asing di rumah malam hari, mudah marah, tidur terbalik",
++        "Onset bertahap, tidak mendadak"
++      ],
++      "rpd": "hipertensi 10 tahun",
++      "rpk": "ibu pikun di usia 70-an",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU sedang, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 150/90, N 80x/mnt, RR 18x/mnt, T 36,7°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_neurologis",
++        "nama": "Neurologis",
++        "temuan": "Lateralisasi (-), refleks primitif (glabella, grasp) bisa (+), gait normal",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Orientasi waktu dan tempat terganggu, atensi menurun, memori baru terganggu; MMSE 17/30 (<24 abnormal), clock drawing abnormal; Waham curiga/cemburu, halusinasi visual, afek labil, tilikan buruk",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_darah_perifer_lengkap",
++        "nama": "Darah perifer lengkap",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_elektrolit",
++        "nama": "Elektrolit",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_ureum_dan_kreatinin",
++        "nama": "Ureum dan kreatinin",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_fungsi_hati",
++        "nama": "Fungsi hati",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_tsh",
++        "nama": "TSH",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_vitamin_b12",
++        "nama": "Vitamin B12",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_folat",
++        "nama": "Folat",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_mmse",
++        "nama": "MMSE",
++        "temuan": "17/30 (<24 abnormal)",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_clock_drawing_test",
++        "nama": "Clock drawing test",
++        "temuan": "Abnormal",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_ct_mri_kepala",
++        "nama": "CT/MRI kepala",
++        "temuan": "Atrofi kortikal dan hipokampus; SOL, NPH, dan infark disingkirkan.",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Demensia dengan gejala tambahan: waham, halusinasi, depresi",
++    "differensialBenar": [
++      "Delirium",
++      "Depresi pada lansia (pseudodemensia)",
++      "Mild Cognitive Impairment",
++      "Penyebab reversibel (hipotiroid, defisiensi B12, NPH, hematoma subdural)"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Donepezil tab 5 mg No. XXX\nS 1.d.d tab I malam (naikkan ke 10 mg setelah 4–6 minggu)",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Risperidon tab 1 mg No. XV\nS 1.d.d tab ½ malam [verifikasi; risiko mortalitas pada demensia]",
++      "benar": true
++    },
++    {
++      "opsi": "Kontrol faktor vaskular: antihipertensi sesuai pedoman",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Penyakit progresif, bukan pikun biasa; bantu keluarga paham perjalanannya",
++      "benar": true
++    },
++    {
++      "opsi": "Rutinitas harian tetap, jam/kalender besar, lampu malam",
++      "benar": true
++    },
++    {
++      "opsi": "Amankan rumah (kompor, pintu), gelang identitas",
++      "benar": true
++    },
++    {
++      "opsi": "Jangan berdebat dengan waham, alihkan perhatian",
++      "benar": true
++    },
++    {
++      "opsi": "Aktivitas fisik dan sosial ringan",
++      "benar": true
++    },
++    {
++      "opsi": "Perhatikan kelelahan caregiver",
++      "benar": true
++    },
++    {
++      "opsi": "Efek samping donepezil: mual, bradikardia",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_10_gaduh_gelisah_organik_de.json b/data/cases/psikiatri/psi_10_gaduh_gelisah_organik_de.json
+new file mode 100644
+index 0000000..d0aa1db
+--- /dev/null
++++ b/data/cases/psikiatri/psi_10_gaduh_gelisah_organik_de.json
+@@ -0,0 +1,115 @@
++{
++  "id": "psi_10_gaduh_gelisah_organik_de",
++  "kategori": "psikiatri",
++  "level": "3B",
++  "nama": "Kasus 10",
++  "judulKasus": "Gaduh Gelisah Organik (delirium, demensia, penggunaan zat psikoaktif)",
++  "identitas": "Tn. Joko, 55 tahun, laki-laki, diantar keluarga",
++  "skenarioAwal": "Seorang laki-laki 55 tahun, diantar keluarga, datang ke IGD dengan keluhan perilaku tidak terkendali.",
++  "keluhanUtama": "Mengamuk, tidak mengenali orang, sejak semalam",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "2 hari lalu berhenti minum alkohol mendadak (peminum berat 10 tahun)",
++        "Gemetar, keringat dingin, melihat serangga, mengamuk, tidak tahu tempat dan waktu",
++        "Tidak ada trauma kepala; makan minum kurang"
++      ],
++      "rpd": "-",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU gelisah berat, GCS E4V4M6",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 160/100, N 120x/mnt, RR 24x/mnt, T 37,9°C",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_otonom_dan_pupil",
++        "nama": "Tanda otonom dan pupil",
++        "temuan": "Diaforesis, tremor kasar, pupil midriasis",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_neurologis",
++        "nama": "Neurologis",
++        "temuan": "Lateralisasi (-); hepar teraba 3 jari (hepatomegali)",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gaduh Gelisah Organik (delirium, demensia, penggunaan zat psikoaktif)",
++    "differensialBenar": [
++      "Gaduh gelisah non-organik",
++      "Putus alkohol/delirium tremens",
++      "Intoksikasi stimulan",
++      "Hipoglikemia",
++      "Lesi SSP"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "Putus alkohol:\nR/ Diazepam inj 5 mg/mL amp 2 mL No. II\nS.pro inj IV pelan 10 mg",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Tiamin inj 100 mg No. III\nS.i.d.d inj IM, diberikan sebelum glukosa",
++      "benar": true
++    },
++    {
++      "opsi": "R/ NaCl 0,9% infus fl No. II  S gtt sesuai kebutuhan",
++      "benar": true
++    },
++    {
++      "opsi": "[Penyebab non-alkohol (delirium/demensia): haloperidol dosis rendah, hindari benzodiazepin]",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Putus alkohol dapat mengancam jiwa; jangan berhenti mendadak tanpa pengawasan",
++      "benar": true
++    },
++    {
++      "opsi": "Perlu rawat inap & detoksifikasi",
++      "benar": true
++    },
++    {
++      "opsi": "Keluarga: jangan diikat kasar, amankan benda berbahaya",
++      "benar": true
++    },
++    {
++      "opsi": "Setelah pulih: program rehabilitasi alkohol, dukungan keluarga",
++      "benar": true
++    },
++    {
++      "opsi": "Konseling nutrisi dan fungsi hati",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_11_gaduh_gelisah_non_organi.json b/data/cases/psikiatri/psi_11_gaduh_gelisah_non_organi.json
+new file mode 100644
+index 0000000..788a016
+--- /dev/null
++++ b/data/cases/psikiatri/psi_11_gaduh_gelisah_non_organi.json
+@@ -0,0 +1,114 @@
++{
++  "id": "psi_11_gaduh_gelisah_non_organi",
++  "kategori": "psikiatri",
++  "level": "4",
++  "nama": "Kasus 11",
++  "judulKasus": "Gaduh Gelisah Non-organik (psikosis, gangguan mood, cemas, reaksi stres akut, gangguan disosiatif, RM)",
++  "identitas": "Tn. Eko, 27 tahun, laki-laki, diantar keluarga",
++  "skenarioAwal": "Seorang laki-laki 27 tahun, diantar keluarga, datang ke IGD dengan keluhan perilaku tidak terkendali.",
++  "keluhanUtama": "Mengamuk dan memecahkan barang",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "1 minggu: tidak tidur, bicara sendiri, curiga, tadi pagi memukul orang dan merusak barang",
++        "Tidak ada demam, trauma kepala, atau penggunaan zat (alloanamnesis)",
++        "Riwayat putus obat skizofrenia 2 bulan"
++      ],
++      "rpd": "skizofrenia",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU gelisah, CM (E4V5M6)",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 140/90, N 110x/mnt, RR 22x/mnt, T 36,9°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_neurologis",
++        "nama": "Neurologis",
++        "temuan": "Kaku (-), tremor (-), kejang (-)",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Agitasi psikomotor, nada tinggi, mengancam, kontak sulit; Waham kejar, halusinasi auditorik imperatif; Orientasi baik; RTA terganggu",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gaduh Gelisah Non-organik (psikosis, gangguan mood, cemas, reaksi stres akut, gangguan disosiatif, RM)",
++    "differensialBenar": [
++      "Gaduh gelisah organik",
++      "Intoksikasi zat",
++      "Akatisia",
++      "Gangguan kepribadian dengan agresi"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "Algoritma: 1) amankan diri & lingkungan, minimal 2–3 orang 2) de-eskalasi verbal 3) bila gagal: farmakoterapi 4) restrain singkat bila perlu dengan pengawasan 5) pantau tiap 15–30 menit 6) rujuk rawat inap setelah stabil",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Haloperidol inj 5 mg/mL amp No. III\nS.pro inj IM 5 mg, ulang 30–60 menit bila perlu",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Diazepam inj 5 mg/mL amp 2 mL No. II\nS.pro inj IV pelan 10 mg (hindari IM)",
++      "benar": true
++    },
++    {
++      "opsi": "Setelah tenang: R/ Risperidon tab 2 mg No. XIV, S 2.d.d tab I\n[verifikasi batas dosis harian & pantau napas/tekanan darah]",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Keluarga tetap tenang, jangan menantang atau memarahi",
++      "benar": true
++    },
++    {
++      "opsi": "Bawa ke fasilitas kesehatan saat gejala awal muncul",
++      "benar": true
++    },
++    {
++      "opsi": "Minum obat teratur; putus obat = penyebab utama kambuh",
++      "benar": true
++    },
++    {
++      "opsi": "Singkirkan benda tajam/berbahaya",
++      "benar": true
++    },
++    {
++      "opsi": "Kontrol rutin setelah pulang",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_12_percobaan_bunuh_diri.json b/data/cases/psikiatri/psi_12_percobaan_bunuh_diri.json
+new file mode 100644
+index 0000000..0a5a98c
+--- /dev/null
++++ b/data/cases/psikiatri/psi_12_percobaan_bunuh_diri.json
+@@ -0,0 +1,110 @@
++{
++  "id": "psi_12_percobaan_bunuh_diri",
++  "kategori": "psikiatri",
++  "level": "3B",
++  "nama": "Kasus 12",
++  "judulKasus": "Percobaan Bunuh Diri — T-code/X60–X84 + gangguan depresi",
++  "identitas": "Nn. Rina, 21 tahun, perempuan, mahasiswi, diantar teman",
++  "skenarioAwal": "Seorang perempuan 21 tahun, diantar teman, datang ke IGD dengan keluhan mual dan nyeri ulu hati.",
++  "keluhanUtama": "Minum banyak pil, ingin mati",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "3 jam lalu menelan ± 20 tablet parasetamol 500 mg setelah putus dengan pacar dan gagal ujian",
++        "Menulis pesan perpisahan, sempat mengirim pesan ke teman",
++        "1 bulan terakhir murung, tidak berminat, sulit tidur, merasa tidak berguna",
++        "Mual, nyeri ulu hati ringan"
++      ],
++      "rpd": "pernah menyayat lengan",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU sedang, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 110/70, N 98x/mnt, RR 20x/mnt, T 36,8°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_abdomen",
++        "nama": "Abdomen",
++        "temuan": "Nyeri tekan epigastrium ringan, hepar tidak membesar",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_lengan_kiri",
++        "nama": "Lengan kiri",
++        "temuan": "Bekas luka sayatan lama (superficial)",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Afek depresif, kontak baik, ide bunuh diri persisten, rencana tegas, tilikan terbatas",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Percobaan Bunuh Diri",
++    "differensialBenar": [
++      "Intoksikasi tidak sengaja",
++      "Parasuicide/NSSI",
++      "Gangguan psikotik dengan perintah bunuh diri",
++      "Gangguan penyesuaian"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ N-asetilsistein infus: 150 mg/kgBB dalam D5% 200 mL selama 60 menit, lalu 50 mg/kgBB dalam 500 mL selama 4 jam, lalu 100 mg/kgBB dalam 1000 mL selama 16 jam\n[verifikasi dosis dan ketersediaan]",
++      "benar": true
++    },
++    {
++      "opsi": "Terapi depresi setelah stabil medis (oleh Sp.KJ)",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Ide bunuh diri adalah tanda penyakit yang bisa diobati",
++      "benar": true
++    },
++    {
++      "opsi": "Jangan biarkan sendirian; singkirkan akses obat/benda berbahaya",
++      "benar": true
++    },
++    {
++      "opsi": "Keluarga tidak menyalahkan; dengarkan tanpa menghakimi",
++      "benar": true
++    },
++    {
++      "opsi": "Rencana keselamatan (safety plan) tertulis, kontak orang tepercaya",
++      "benar": true
++    },
++    {
++      "opsi": "Layanan krisis (mis. 119 ext 8)",
++      "benar": true
++    },
++    {
++      "opsi": "Kontrol psikiater teratur",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_13_distonia_akut_akibat_oba.json b/data/cases/psikiatri/psi_13_distonia_akut_akibat_oba.json
+new file mode 100644
+index 0000000..445498b
+--- /dev/null
++++ b/data/cases/psikiatri/psi_13_distonia_akut_akibat_oba.json
+@@ -0,0 +1,115 @@
++{
++  "id": "psi_13_distonia_akut_akibat_oba",
++  "kategori": "psikiatri",
++  "level": "4",
++  "nama": "Kasus 13",
++  "judulKasus": "Distonia Akut akibat obat dan Parkinsonisme — G24.0, G21.1",
++  "identitas": "Tn. Fajar, 24 tahun, laki-laki, mahasiswa",
++  "skenarioAwal": "Seorang laki-laki 24 tahun datang ke IGD dengan keluhan pada leher dan mata.",
++  "keluhanUtama": "Leher menoleh sendiri, mata melirik ke atas",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "3 jam setelah suntikan haloperidol 5 mg IM di IGD karena gaduh gelisah",
++        "Tiba-tiba leher terpelintir ke kanan, mata melirik ke atas, lidah terasa tebal dan menjulur, nyeri dan cemas",
++        "Kesadaran baik, tidak demam, tidak kejang"
++      ],
++      "rpd": "pertama kali mendapat antipsikotik",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU cemas, CM (GCS 15)",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 130/80, N 100x/mnt, RR 20x/mnt, T 36,8°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_leher_mata_dan_lidah",
++        "nama": "Leher, mata, dan lidah",
++        "temuan": "Tortikolis ke kanan, krisis okulogirik (mata deviasi ke atas), protrusi lidah, trismus ringan",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_kekuatan_otot_dan_refleks",
++        "nama": "Kekuatan otot dan refleks",
++        "temuan": "Kekuatan otot normal, refleks normal, tidak ada rigiditas lead-pipe",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_demam_dan_kekakuan",
++        "nama": "Demam dan kekakuan",
++        "temuan": "Tidak ada demam/kaku seluruh tubuh (SNM disingkirkan)",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Distonia Akut akibat obat dan Parkinsonisme",
++    "differensialBenar": [
++      "Kejang",
++      "Tetanus",
++      "Hipokalsemia (tetani)",
++      "Sindrom neuroleptik maligna",
++      "Konversi",
++      "Penyakit Parkinson"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Difenhidramin inj 10 mg/mL amp No. I\nS.pro inj IM/IV pelan 25–50 mg (2,5–5 mL)",
++      "benar": true
++    },
++    {
++      "opsi": "atau",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Diazepam inj 5 mg/mL amp 2 mL No. I\nS.pro inj IV pelan 5–10 mg",
++      "benar": true
++    },
++    {
++      "opsi": "Lanjutan:\nR/ Trihexyphenidyl tab 2 mg No. XIV\nS 2.d.d tab I",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Kaku/ memelintir adalah efek samping obat, bukan kejang atau penyakit baru",
++      "benar": true
++    },
++    {
++      "opsi": "Mudah ditangani dan tidak berbahaya bila dikenali cepat",
++      "benar": true
++    },
++    {
++      "opsi": "Beritahu dokter berikutnya riwayat reaksi ini",
++      "benar": true
++    },
++    {
++      "opsi": "Minum obat pelindung sesuai anjuran",
++      "benar": true
++    },
++    {
++      "opsi": "Kembali ke IGD bila sulit menelan/bernapas",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_14_sindrom_neuroleptik_mali.json b/data/cases/psikiatri/psi_14_sindrom_neuroleptik_mali.json
+new file mode 100644
+index 0000000..f90673a
+--- /dev/null
++++ b/data/cases/psikiatri/psi_14_sindrom_neuroleptik_mali.json
+@@ -0,0 +1,129 @@
++{
++  "id": "psi_14_sindrom_neuroleptik_mali",
++  "kategori": "psikiatri",
++  "level": "3B",
++  "nama": "Kasus 14",
++  "judulKasus": "Sindrom Neuroleptik Maligna — G21.0",
++  "identitas": "Tn. Wahyu, 29 tahun, laki-laki, diantar keluarga",
++  "skenarioAwal": "Seorang laki-laki 29 tahun, diantar keluarga, datang ke IGD dengan keluhan demam dan penurunan kesadaran.",
++  "keluhanUtama": "Demam tinggi, kaku seluruh badan, kesadaran turun",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "2 hari demam tinggi, kaku semua anggota gerak, banyak keringat, bicara menurun, kesadaran menurun",
++        "Tidak ada riwayat infeksi atau trauma kepala"
++      ],
++      "rpd": "skizofrenia 4 tahun",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU berat, GCS E3V3M5",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 170/110 (labil), N 130x/mnt, RR 28x/mnt, T 39,8°C",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_otonom_dan_hidrasi",
++        "nama": "Tanda otonom dan hidrasi",
++        "temuan": "Diaforesis, sialorea, tampak dehidrasi",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_kaku_kuduk_dan_klonus",
++        "nama": "Kaku kuduk dan klonus",
++        "temuan": "Tidak ada kaku kuduk, tidak ada klonus (menyingkirkan serotonin/meningitis)",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_analisis_gas_darah",
++        "nama": "Analisis gas darah",
++        "temuan": "Asidosis metabolik",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_ureum_dan_kreatinin",
++        "nama": "Ureum dan kreatinin",
++        "temuan": "Gagal ginjal akut",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_urinalisis",
++        "nama": "Urinalisis",
++        "temuan": "Mioglobinuria",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Sindrom Neuroleptik Maligna",
++    "differensialBenar": [
++      "Sindrom serotonin",
++      "Hipertermia maligna",
++      "Katatonia maligna",
++      "Heat stroke",
++      "Sepsis/meningitis",
++      "Distonia akut"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ NaCl 0,9% infus fl No. IV, S gtt cepat sesuai defisit cairan",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Bromokriptin tab 2,5 mg No. XXI\nS 3.d.d tab I via NGT",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Dantrolen inj 20 mg vial\nS 1–2,5 mg/kgBB IV [verifikasi, rujuk]",
++      "benar": true
++    },
++    {
++      "opsi": "Kompres/ cooling blanket aktif",
++      "benar": true
++    },
++    {
++      "opsi": "Benzodiazepin untuk rigiditas dan agitasi",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Kondisi mengancam jiwa; harus dirawat di RS",
++      "benar": true
++    },
++    {
++      "opsi": "Keluarga: kenali tanda awal (demam, kaku, keringat) dan segera ke IGD",
++      "benar": true
++    },
++    {
++      "opsi": "Jangan menaikkan dosis/ mengganti obat sendiri",
++      "benar": true
++    },
++    {
++      "opsi": "Pastikan hidrasi cukup selama pengobatan",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_15_gangguan_depresif_ringan.json b/data/cases/psikiatri/psi_15_gangguan_depresif_ringan.json
+new file mode 100644
+index 0000000..9d047d0
+--- /dev/null
++++ b/data/cases/psikiatri/psi_15_gangguan_depresif_ringan.json
+@@ -0,0 +1,140 @@
++{
++  "id": "psi_15_gangguan_depresif_ringan",
++  "kategori": "psikiatri",
++  "level": "4",
++  "nama": "Kasus 15",
++  "judulKasus": "Gangguan Depresif Ringan–Sedang — F32.0/F32.1",
++  "identitas": "Ny. Sari, 35 tahun, perempuan, ibu rumah tangga",
++  "skenarioAwal": "Seorang perempuan 35 tahun datang ke poli dengan keluhan tidak bersemangat.",
++  "keluhanUtama": "Sedih terus dan tidak bersemangat",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "4 minggu: murung hampir tiap hari, kehilangan minat mengurus rumah, mudah lelah, sulit konsentrasi",
++        "Tidur terganggu (bangun dini hari), nafsu makan turun, BB turun 3 kg",
++        "Merasa tidak berguna, tidak ada ide bunuh diri aktif",
++        "Pencetus: konflik berkepanjangan dengan mertua"
++      ],
++      "rpd": "-",
++      "rpk": "ibu pernah depresi",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU baik, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 110/70, N 76x/mnt, RR 18x/mnt, T 36,7°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_gizi",
++        "nama": "Status gizi",
++        "temuan": "Normal",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tiroid",
++        "nama": "Tiroid",
++        "temuan": "Tidak membesar",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_konjungtiva",
++        "nama": "Konjungtiva",
++        "temuan": "Tidak pucat",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Penampilan kurang rapi, psikomotor melambat ringan; Afek depresif, tanpa waham/halusinasi; Ide bunuh diri pasif/aktif (-), tilikan baik, PHQ-9 = 12",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_phq_9",
++        "nama": "PHQ-9",
++        "temuan": "Skor 12",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_tsh",
++        "nama": "TSH",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_darah_perifer_lengkap",
++        "nama": "Darah perifer lengkap",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gangguan Depresif Ringan–Sedang",
++    "differensialBenar": [
++      "Gangguan penyesuaian dengan mood depresif",
++      "Distimia",
++      "Depresi akibat kondisi medis (hipotiroid, anemia)",
++      "Gangguan bipolar episode depresi",
++      "Duka cita normal"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Fluoksetin kaps 20 mg No. XXX\nS 1.d.d cap I pagi",
++      "benar": true
++    },
++    {
++      "opsi": "atau",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Sertralin tab 50 mg No. XXX\nS 1.d.d tab I pagi",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Depresi adalah penyakit yang dapat diobati, bukan kelemahan",
++      "benar": true
++    },
++    {
++      "opsi": "Efek obat baru terasa 2–4 minggu; minum teratur",
++      "benar": true
++    },
++    {
++      "opsi": "Efek samping awal: mual, gelisah, sulit tidur; biasanya membaik",
++      "benar": true
++    },
++    {
++      "opsi": "Aktivitas fisik rutin, jadwal tidur teratur, aktivitas menyenangkan bertahap",
++      "benar": true
++    },
++    {
++      "opsi": "Libatkan keluarga; segera ke dokter bila muncul ide bunuh diri",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_16_gangguan_panik.json b/data/cases/psikiatri/psi_16_gangguan_panik.json
+new file mode 100644
+index 0000000..ba28f50
+--- /dev/null
++++ b/data/cases/psikiatri/psi_16_gangguan_panik.json
+@@ -0,0 +1,150 @@
++{
++  "id": "psi_16_gangguan_panik",
++  "kategori": "psikiatri",
++  "level": "3A",
++  "nama": "Kasus 16",
++  "judulKasus": "Gangguan Panik — F41.0",
++  "identitas": "Dina, 29 tahun, perempuan, karyawan swasta",
++  "skenarioAwal": "Seorang perempuan 29 tahun datang ke poli dengan keluhan berdebar-debar.",
++  "keluhanUtama": "Dada berdebar hebat, sesak, merasa mau mati",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "2 minggu: 3 kali serangan mendadak saat di kantor/di mobil; berdebar, sesak, gemetar, keringat dingin, kesemutan, rasa akan pingsan/mati",
++        "Puncak 10 menit, reda sendiri dalam ±30 menit",
++        "Sekarang takut serangan berulang, menghindari berkendara sendiri",
++        "Tidak ada pencetus jelas; kafein 4 cangkir/hari"
++      ],
++      "rpd": "-",
++      "rpk": "ibu penderita cemas",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU baik, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 120/80, N 98x/mnt (saat serangan 130x/mnt), RR 20x/mnt (28x saat serangan), T 36,7°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_jantung_dan_paru",
++        "nama": "Jantung dan paru",
++        "temuan": "Dbn",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tiroid",
++        "nama": "Tiroid",
++        "temuan": "Tidak membesar",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tremor",
++        "nama": "Tremor",
++        "temuan": "Halus saat serangan",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Cemas antisipatori, tilikan baik",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_ekg",
++        "nama": "EKG",
++        "temuan": "Sinus takikardia, tanpa iskemia",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_tsh_dan_ft4",
++        "nama": "TSH dan fT4",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_darah_perifer_lengkap",
++        "nama": "Darah perifer lengkap",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gangguan Panik",
++    "differensialBenar": [
++      "Infark miokard/aritmia",
++      "Hipertiroid",
++      "Feokromositoma",
++      "Asma",
++      "Agorafobia",
++      "GAD",
++      "Penggunaan kafein/stimulan",
++      "Hipoglikemia"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Sertralin tab 50 mg No. XI\nS 1.d.d tab ½ (hari 1–7), selanjutnya tab I (hari 8–14)",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Alprazolam tab 0,5 mg No. X\nS.p.r.n. 2.d.d tab ½ (maks 2 minggu)\n[verifikasi: batasi benzodiazepin karena risiko ketergantungan]",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Serangan panik tidak berbahaya dan tidak menyebabkan kematian/gila",
++      "benar": true
++    },
++    {
++      "opsi": "Saat serangan: duduk, napas perut lambat (tarik 4 detik, tahan, embus 6 detik)",
++      "benar": true
++    },
++    {
++      "opsi": "Kurangi kafein, alkohol, rokok",
++      "benar": true
++    },
++    {
++      "opsi": "Jangan menghindari situasi; hadapi bertahap",
++      "benar": true
++    },
++    {
++      "opsi": "SSRI efek 2–4 minggu; cemas bisa meningkat di awal",
++      "benar": true
++    },
++    {
++      "opsi": "Jangan hentikan obat mendadak",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_17_gangguan_anxietas_menyel.json b/data/cases/psikiatri/psi_17_gangguan_anxietas_menyel.json
+new file mode 100644
+index 0000000..124f890
+--- /dev/null
++++ b/data/cases/psikiatri/psi_17_gangguan_anxietas_menyel.json
+@@ -0,0 +1,145 @@
++{
++  "id": "psi_17_gangguan_anxietas_menyel",
++  "kategori": "psikiatri",
++  "level": "3A",
++  "nama": "Kasus 17",
++  "judulKasus": "Gangguan Anxietas Menyeluruh / GAD — F41.1",
++  "identitas": "Tn. Bayu, 38 tahun, laki-laki, manajer",
++  "skenarioAwal": "Seorang laki-laki 38 tahun datang ke poli dengan keluhan sulit tidur dan badan tegang.",
++  "keluhanUtama": "Cemas terus, tegang, susah tidur",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        ">6 bulan khawatir berlebihan akan pekerjaan, keuangan, kesehatan anak",
++        "Otot tegang, sakit kepala tegang, mudah lelah, sulit konsentrasi, mudah marah, sulit tidur",
++        "Sulit mengendalikan rasa khawatir, mengganggu pekerjaan",
++        "Tidak ada serangan panik; tidak ada konsumsi alkohol berlebihan"
++      ],
++      "rpd": "-",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU baik, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 130/85, N 90x/mnt, RR 20x/mnt, T 36,8°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_penampilan_umum_dan_tremor",
++        "nama": "Penampilan umum dan tremor",
++        "temuan": "Tampak tegang, keringat telapak tangan, tremor halus",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tiroid",
++        "nama": "Tiroid",
++        "temuan": "Tidak membesar",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_jantung_dan_paru",
++        "nama": "Jantung dan paru",
++        "temuan": "Dbn",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Cemas mengambang, afek cemas, tilikan baik; HARS 22 (sedang)",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_hars",
++        "nama": "HARS",
++        "temuan": "Skor 22 (sedang)",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_tsh",
++        "nama": "TSH",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_darah_perifer_lengkap",
++        "nama": "Darah perifer lengkap",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gangguan Anxietas Menyeluruh / GAD",
++    "differensialBenar": [
++      "Hipertiroid",
++      "Gangguan panik",
++      "Fobia sosial",
++      "OCD",
++      "Campuran anxietas-depresif",
++      "Efek kafein/obat",
++      "Gangguan penyesuaian"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Sertralin tab 50 mg No. XXX\nS 1.d.d tab I pagi",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Diazepam tab 2 mg No. XX\nS 2.d.d tab I (maks 10 hari)\n[verifikasi: alternatif escitalopram 10 mg, buspiron]",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Cemas berlebihan bisa diobati dan tidak berbahaya bagi jantung",
++      "benar": true
++    },
++    {
++      "opsi": "Latihan relaksasi dan napas dalam harian",
++      "benar": true
++    },
++    {
++      "opsi": "Kurangi kafein, alkohol, rokok; olahraga teratur",
++      "benar": true
++    },
++    {
++      "opsi": "Tidur teratur, batasi waktu khawatir (jadwalkan “waktu cemas” 15 menit)",
++      "benar": true
++    },
++    {
++      "opsi": "Benzodiazepin hanya jangka pendek karena risiko ketergantungan",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_18_gangguan_campuran_anxiet.json b/data/cases/psikiatri/psi_18_gangguan_campuran_anxiet.json
+new file mode 100644
+index 0000000..929066a
+--- /dev/null
++++ b/data/cases/psikiatri/psi_18_gangguan_campuran_anxiet.json
+@@ -0,0 +1,143 @@
++{
++  "id": "psi_18_gangguan_campuran_anxiet",
++  "kategori": "psikiatri",
++  "level": "3A",
++  "nama": "Kasus 18",
++  "judulKasus": "Gangguan Campuran Anxietas dan Depresif — F41.2",
++  "identitas": "Ny. Lia, 42 tahun, perempuan, pegawai bank",
++  "skenarioAwal": "Seorang perempuan 42 tahun datang ke poli dengan keluhan badan terasa tidak enak.",
++  "keluhanUtama": "Cemas dan sedih bersamaan, badan terasa tidak enak",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "1 bulan: gelisah, khawatir, jantung berdebar, sulit tidur",
++        "Bersamaan sedih, mudah lelah, kurang minat, konsentrasi turun",
++        "Gejala keduanya ringan–sedang; tidak ada yang memenuhi kriteria penuh gangguan cemas atau depresi",
++        "Pencetus: beban kerja, kondisi ekonomi"
++      ],
++      "rpd": "-",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU baik, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 120/80, N 86x/mnt, RR 18x/mnt, T 36,7°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tiroid",
++        "nama": "Tiroid",
++        "temuan": "Dbn",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_jantung_dan_paru",
++        "nama": "Jantung dan paru",
++        "temuan": "Dbn",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Afek cemas-depresif, tanpa psikotik, tidak ada ide bunuh diri, tilikan baik; PHQ-9 = 8, HARS = 15",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_phq_9",
++        "nama": "PHQ-9",
++        "temuan": "Skor 8",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_hars",
++        "nama": "HARS",
++        "temuan": "Skor 15",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_tsh",
++        "nama": "TSH",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_darah_perifer_lengkap",
++        "nama": "Darah perifer lengkap",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gangguan Campuran Anxietas dan Depresif",
++    "differensialBenar": [
++      "GAD",
++      "Depresi ringan–sedang",
++      "Gangguan penyesuaian",
++      "Hipotiroid/hipertiroid",
++      "Gangguan somatoform"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Sertralin tab 50 mg No. XV\nS 1.d.d tab ½ pagi (naik bertahap sesuai respons)",
++      "benar": true
++    },
++    {
++      "opsi": "Benzodiazepin tidak rutin, hanya p.r.n. singkat bila sangat mengganggu",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Gejala cemas-sedih sering muncul bersama akibat stres",
++      "benar": true
++    },
++    {
++      "opsi": "Atur jadwal kerja-istirahat, kurangi stresor",
++      "benar": true
++    },
++    {
++      "opsi": "Olahraga ringan, tidur teratur, dukungan sosial",
++      "benar": true
++    },
++    {
++      "opsi": "Latihan relaksasi harian",
++      "benar": true
++    },
++    {
++      "opsi": "Kembali bila gejala memberat atau muncul ide bunuh diri",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_19_gangguan_stres_pasca_tra.json b/data/cases/psikiatri/psi_19_gangguan_stres_pasca_tra.json
+new file mode 100644
+index 0000000..e1fa72a
+--- /dev/null
++++ b/data/cases/psikiatri/psi_19_gangguan_stres_pasca_tra.json
+@@ -0,0 +1,106 @@
++{
++  "id": "psi_19_gangguan_stres_pasca_tra",
++  "kategori": "psikiatri",
++  "level": "3B",
++  "nama": "Kasus 19",
++  "judulKasus": "Gangguan Stres Pasca Trauma / PTSD — F43.1",
++  "identitas": "Tn. Aji, 33 tahun, laki-laki, pengemudi",
++  "skenarioAwal": "Seorang laki-laki 33 tahun datang ke poli dengan keluhan sulit tidur.",
++  "keluhanUtama": "Terbayang kecelakaan terus, takut naik kendaraan",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "3 bulan lalu mengalami kecelakaan lalu lintas berat, sahabat meninggal",
++        "Teringat kejadian berulang (flashback), mimpi buruk, bereaksi hebat bila mendengar bunyi rem",
++        "Menghindari jalan raya dan kendaraan, merasa kosong/mati rasa, menjauh dari keluarga",
++        "Mudah terkejut, waspada berlebihan, sulit tidur, mudah marah",
++        "Gejala muncul dalam 6 bulan setelah trauma; >1 bulan"
++      ],
++      "rpd": "-",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU baik, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 135/85, N 94x/mnt, RR 20x/mnt, T 36,8°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_neurologis",
++        "nama": "Neurologis",
++        "temuan": "Dbn (tidak ada defisit pascatrauma kepala)",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Cemas, hiperwaspada, afek terbatas, tampak menghindari topik kecelakaan, tidak psikotik; tilikan baik",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gangguan Stres Pasca Trauma / PTSD",
++    "differensialBenar": [
++      "Reaksi stres akut",
++      "Gangguan penyesuaian",
++      "Depresi berat",
++      "Gangguan panik",
++      "Cedera otak traumatik",
++      "Penyalahgunaan zat"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Sertralin tab 50 mg No. XXX\nS 1.d.d tab I pagi",
++      "benar": true
++    },
++    {
++      "opsi": "Mimpi buruk (rujuk/indikasi spesialis):\nR/ Prazosin tab 1 mg No. XV\nS 1.d.d tab I malam",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Reaksi ini umum setelah trauma dan dapat diobati",
++      "benar": true
++    },
++    {
++      "opsi": "Jangan memaksa diri melupakan; hadapi pemicu bertahap bersama terapis",
++      "benar": true
++    },
++    {
++      "opsi": "Hindari alkohol/obat penenang sendiri",
++      "benar": true
++    },
++    {
++      "opsi": "Rutinitas tidur, olahraga, dukungan sosial",
++      "benar": true
++    },
++    {
++      "opsi": "Keluarga: dengarkan tanpa memaksa bercerita",
++      "benar": true
++    },
++    {
++      "opsi": "Segera ke dokter bila muncul ide bunuh diri",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_20_gangguan_penyesuaian.json b/data/cases/psikiatri/psi_20_gangguan_penyesuaian.json
+new file mode 100644
+index 0000000..3cd0c1c
+--- /dev/null
++++ b/data/cases/psikiatri/psi_20_gangguan_penyesuaian.json
+@@ -0,0 +1,99 @@
++{
++  "id": "psi_20_gangguan_penyesuaian",
++  "kategori": "psikiatri",
++  "level": "4",
++  "nama": "Kasus 20",
++  "judulKasus": "Gangguan Penyesuaian — F43.2",
++  "identitas": "Tn. Rangga, 28 tahun, laki-laki, karyawan pabrik",
++  "skenarioAwal": "Seorang laki-laki 28 tahun datang ke poli dengan keluhan sulit tidur dan tidak enak badan.",
++  "keluhanUtama": "Sedih, cemas, sulit tidur sejak di-PHK",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "3 minggu lalu di-PHK; 2 minggu terakhir murung, cemas tentang uang, sulit tidur, sulit konsentrasi, menarik diri dari teman",
++        "Fungsi sosial terganggu ringan, masih bisa mengurus keluarga",
++        "Tidak ada waham/halusinasi atau ide bunuh diri"
++      ],
++      "rpd": "-",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU baik, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 120/80, N 82x/mnt, RR 18x/mnt, T 36,7°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_pemeriksaan_fisik_umum",
++        "nama": "Pemeriksaan fisik umum",
++        "temuan": "Pemeriksaan fisik dbn",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Afek campuran cemas-sedih, tidak psikotik, tilikan baik; gejala belum memenuhi kriteria depresi/GAD",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Gangguan Penyesuaian",
++    "differensialBenar": [
++      "Reaksi stres akut",
++      "Depresi ringan–sedang",
++      "GAD",
++      "PTSD",
++      "Duka cita normal"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Diazepam tab 2 mg No. V\nS.p.r.n. 1.d.d tab I malam (maks 5 hari)",
++      "benar": true
++    },
++    {
++      "opsi": "Obat tidak wajib; prioritas non-farmakologis",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Reaksi wajar terhadap tekanan hidup dan umumnya membaik dalam beberapa bulan",
++      "benar": true
++    },
++    {
++      "opsi": "Susun rencana (mencari kerja, dukungan keuangan, program pelatihan)",
++      "benar": true
++    },
++    {
++      "opsi": "Pertahankan rutinitas tidur, makan, dan olahraga",
++      "benar": true
++    },
++    {
++      "opsi": "Bicara dengan keluarga/teman, hindari alkohol",
++      "benar": true
++    },
++    {
++      "opsi": "Datang kembali bila gejala >6 bulan atau memberat",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_21_anoreksia_nervosa.json b/data/cases/psikiatri/psi_21_anoreksia_nervosa.json
+new file mode 100644
+index 0000000..57be91b
+--- /dev/null
++++ b/data/cases/psikiatri/psi_21_anoreksia_nervosa.json
+@@ -0,0 +1,121 @@
++{
++  "id": "psi_21_anoreksia_nervosa",
++  "kategori": "psikiatri",
++  "level": "3A",
++  "nama": "Kasus 21",
++  "judulKasus": "Anoreksia Nervosa — F50.0 (payung F5)",
++  "identitas": "Cindy, 19 tahun, perempuan, mahasiswi, diantar ibunya",
++  "skenarioAwal": "Seorang perempuan 19 tahun, diantar ibunya, datang ke poli dengan keluhan berat badan menurun.",
++  "keluhanUtama": "Makin kurus tetapi merasa masih gemuk",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "6 bulan: BB turun 15 kg, membatasi makan, takut sekali gemuk",
++        "Olahraga berlebihan, menghitung kalori, kadang memakai pencahar",
++        "Haid berhenti 4 bulan, sering lemas dan pusing",
++        "Menyangkal masalah; menolak ke dokter"
++      ],
++      "rpd": "-",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU lemah, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 90/60 (ortostatik turun), N 48x/mnt, RR 16x/mnt, T 36,0°C",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_antropometri",
++        "nama": "Antropometri",
++        "temuan": "TB 160 cm, BB 39 kg, IMT 15,2 (sangat kurang)",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_kulit_dan_ekstremitas",
++        "nama": "Kulit dan ekstremitas",
++        "temuan": "Lanugo, kulit kering, rambut rontok, akral dingin, edema tungkai ringan",
++        "signifikan": true,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_status_mental",
++        "nama": "Status mental",
++        "temuan": "Distorsi citra tubuh, tilikan buruk",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_ekg",
++        "nama": "EKG",
++        "temuan": "Bradikardia; interval QT perlu dievaluasi",
++        "signifikan": true,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Anoreksia Nervosa",
++    "differensialBenar": [
++      "Bulimia nervosa",
++      "Hipertiroid",
++      "Penyakit saluran cerna kronik",
++      "Keganasan",
++      "Depresi berat",
++      "TB",
++      "DM tipe 1"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Multivitamin-mineral tab No. XXX\nS 1.d.d tab I",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Tiamin tab 50 mg No. XXX\nS 1.d.d tab I (cegah sindrom refeeding)",
++      "benar": true
++    },
++    {
++      "opsi": "Koreksi elektrolit bila perlu",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Anoreksia nervosa adalah gangguan jiwa serius yang butuh terapi tim",
++      "benar": true
++    },
++    {
++      "opsi": "Pemulihan berat badan dan pola makan bertahap; jangan mendadak",
++      "benar": true
++    },
++    {
++      "opsi": "Keluarga: terapi berbasis keluarga, hindari komentar bentuk tubuh",
++      "benar": true
++    },
++    {
++      "opsi": "Hindari pencahar/diuretik sendiri",
++      "benar": true
++    },
++    {
++      "opsi": "Segera ke IGD bila pingsan, nyeri dada, atau sesak",
++      "benar": true
++    }
++  ]
++}
+diff --git a/data/cases/psikiatri/psi_22_depresi_pascasalin.json b/data/cases/psikiatri/psi_22_depresi_pascasalin.json
+new file mode 100644
+index 0000000..96369d1
+--- /dev/null
++++ b/data/cases/psikiatri/psi_22_depresi_pascasalin.json
+@@ -0,0 +1,133 @@
++{
++  "id": "psi_22_depresi_pascasalin",
++  "kategori": "psikiatri",
++  "level": "3A",
++  "nama": "Kasus 22",
++  "judulKasus": "Depresi Pascasalin — F53.0",
++  "identitas": "Ny. Ani, 27 tahun, perempuan, ibu baru, diantar suaminya",
++  "skenarioAwal": "Seorang perempuan 27 tahun, diantar suaminya, datang ke poli dengan keluhan lemas dan sering menangis.",
++  "keluhanUtama": "Menangis terus dan tidak mau menyusui",
++  "groundTruth": {
++    "riwayat": {
++      "rps": [
++        "3 minggu pasca persalinan normal anak pertama",
++        "2 minggu murung, menangis tiba-tiba, merasa tidak mampu jadi ibu, bersalah",
++        "Sulit tidur walau bayi tidur, nafsu makan turun, tidak berminat merawat bayi",
++        "Pernah terpikir lebih baik tidak ada; tidak ada pikiran menyakiti bayi, tidak ada waham/halusinasi"
++      ],
++      "rpd": "-",
++      "rpk": "-",
++      "lifestyle": []
++    },
++    "pemeriksaanFisik": [
++      {
++        "id": "pf_keadaan_umum_dan_kesadaran",
++        "nama": "Keadaan umum dan kesadaran",
++        "temuan": "KU lemah, CM",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tanda_vital",
++        "nama": "Tanda vital",
++        "temuan": "TD 110/70, N 80x/mnt, RR 18x/mnt, T 36,8°C",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_konjungtiva",
++        "nama": "Konjungtiva",
++        "temuan": "Tidak pucat",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_tiroid",
++        "nama": "Tiroid",
++        "temuan": "Dbn",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_payudara",
++        "nama": "Payudara",
++        "temuan": "Dbn",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pf_lokia_dan_perineum",
++        "nama": "Lokia dan perineum",
++        "temuan": "Baik",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "penunjang": [
++      {
++        "id": "pnj_hemoglobin",
++        "nama": "Hemoglobin",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_tsh",
++        "nama": "TSH",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      },
++      {
++        "id": "pnj_gula_darah_sewaktu",
++        "nama": "Gula darah sewaktu",
++        "temuan": "Dalam batas normal.",
++        "signifikan": false,
++        "wajibLapor": false
++      }
++    ],
++    "defaultNormal": {
++      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
++      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
++    }
++  },
++  "dd": {
++    "benar": "Depresi Pascasalin",
++    "differensialBenar": [
++      "Baby blues",
++      "Psikosis puerperal",
++      "Hipotiroid pascasalin",
++      "Anemia berat",
++      "Perdarahan/infeksi pascasalin",
++      "Gangguan bipolar"
++    ]
++  },
++  "tatalaksana": [
++    {
++      "opsi": "R/ Sertralin tab 50 mg No. XXX\nS 1.d.d tab ½ (hari 1–7) selanjutnya tab I (naik bertahap)",
++      "benar": true
++    },
++    {
++      "opsi": "R/ Tablet tambah darah (Fe) No. XXX\nS 1.d.d tab I\n[verifikasi keamanan laktasi dan dosis awal]",
++      "benar": true
++    }
++  ],
++  "edukasi": [
++    {
++      "opsi": "Depresi pascasalin sering terjadi dan dapat diobati; bukan karena ibu lemah",
++      "benar": true
++    },
++    {
++      "opsi": "Bagi tugas mengurus bayi, istirahat cukup, dukungan suami dan keluarga",
++      "benar": true
++    },
++    {
++      "opsi": "Tetap boleh menyusui dengan obat yang sesuai",
++      "benar": true
++    },
++    {
++      "opsi": "Kontrol rutin dan skrining ulang EPDS",
++      "benar": true
++    }
++  ]
++}
+diff --git a/server/lib/caseLoader.js b/server/lib/caseLoader.js
+index f3cd12f..a861c80 100644
+--- a/server/lib/caseLoader.js
++++ b/server/lib/caseLoader.js
+@@ -85,8 +85,18 @@ function loadCase(kategori, id) {
+ function loadDdMaster() {
+   if (_ddMasterCache.flat) return _ddMasterCache.flat;
+   const file = path.join(CASES_DIR, "_dd_master.json");
+-  if (!fs.existsSync(file)) return [];
+-  _ddMasterCache.flat = JSON.parse(fs.readFileSync(file, "utf-8"));
++  const names = new Set(fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf-8")) : []);
++  // Union with every case's own diagnoses so a freshly added case is always
++  // findable in the search picker, even before _dd_master.json is updated.
++  for (const kategori of listCategories()) {
++    for (const id of listCaseIds(kategori)) {
++      const dd = (loadCase(kategori, id) || {}).dd;
++      if (!dd) continue;
++      if (dd.benar) names.add(dd.benar);
++      (dd.differensialBenar || []).forEach((d) => names.add(d));
++    }
++  }
++  _ddMasterCache.flat = [...names];
+   return _ddMasterCache.flat;
+ }
+ 
