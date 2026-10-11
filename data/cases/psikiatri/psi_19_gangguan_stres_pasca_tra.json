@@ -1,0 +1,106 @@
+{
+  "id": "psi_19_gangguan_stres_pasca_tra",
+  "kategori": "psikiatri",
+  "level": "3B",
+  "nama": "Kasus 19",
+  "judulKasus": "Gangguan Stres Pasca Trauma / PTSD — F43.1",
+  "identitas": "Tn. Aji, 33 tahun, laki-laki, pengemudi",
+  "skenarioAwal": "Seorang laki-laki 33 tahun datang ke poli dengan keluhan sulit tidur.",
+  "keluhanUtama": "Terbayang kecelakaan terus, takut naik kendaraan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "3 bulan lalu mengalami kecelakaan lalu lintas berat, sahabat meninggal",
+        "Teringat kejadian berulang (flashback), mimpi buruk, bereaksi hebat bila mendengar bunyi rem",
+        "Menghindari jalan raya dan kendaraan, merasa kosong/mati rasa, menjauh dari keluarga",
+        "Mudah terkejut, waspada berlebihan, sulit tidur, mudah marah",
+        "Gejala muncul dalam 6 bulan setelah trauma; >1 bulan"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU baik, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 135/85, N 94x/mnt, RR 20x/mnt, T 36,8°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_neurologis",
+        "nama": "Neurologis",
+        "temuan": "Dbn (tidak ada defisit pascatrauma kepala)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Cemas, hiperwaspada, afek terbatas, tampak menghindari topik kecelakaan, tidak psikotik; tilikan baik",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Stres Pasca Trauma / PTSD",
+    "differensialBenar": [
+      "Reaksi stres akut",
+      "Gangguan penyesuaian",
+      "Depresi berat",
+      "Gangguan panik",
+      "Cedera otak traumatik",
+      "Penyalahgunaan zat"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Sertralin tab 50 mg No. XXX\nS 1.d.d tab I pagi",
+      "benar": true
+    },
+    {
+      "opsi": "Mimpi buruk (rujuk/indikasi spesialis):\nR/ Prazosin tab 1 mg No. XV\nS 1.d.d tab I malam",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Reaksi ini umum setelah trauma dan dapat diobati",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan memaksa diri melupakan; hadapi pemicu bertahap bersama terapis",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari alkohol/obat penenang sendiri",
+      "benar": true
+    },
+    {
+      "opsi": "Rutinitas tidur, olahraga, dukungan sosial",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga: dengarkan tanpa memaksa bercerita",
+      "benar": true
+    },
+    {
+      "opsi": "Segera ke dokter bila muncul ide bunuh diri",
+      "benar": true
+    }
+  ]
+}

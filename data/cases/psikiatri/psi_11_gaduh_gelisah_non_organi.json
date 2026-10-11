@@ -1,0 +1,114 @@
+{
+  "id": "psi_11_gaduh_gelisah_non_organi",
+  "kategori": "psikiatri",
+  "level": "4",
+  "nama": "Kasus 11",
+  "judulKasus": "Gaduh Gelisah Non-organik (psikosis, gangguan mood, cemas, reaksi stres akut, gangguan disosiatif, RM)",
+  "identitas": "Tn. Eko, 27 tahun, laki-laki, diantar keluarga",
+  "skenarioAwal": "Seorang laki-laki 27 tahun, diantar keluarga, datang ke IGD dengan keluhan perilaku tidak terkendali.",
+  "keluhanUtama": "Mengamuk dan memecahkan barang",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "1 minggu: tidak tidur, bicara sendiri, curiga, tadi pagi memukul orang dan merusak barang",
+        "Tidak ada demam, trauma kepala, atau penggunaan zat (alloanamnesis)",
+        "Riwayat putus obat skizofrenia 2 bulan"
+      ],
+      "rpd": "skizofrenia",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU gelisah, CM (E4V5M6)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 140/90, N 110x/mnt, RR 22x/mnt, T 36,9°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_neurologis",
+        "nama": "Neurologis",
+        "temuan": "Kaku (-), tremor (-), kejang (-)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Agitasi psikomotor, nada tinggi, mengancam, kontak sulit; Waham kejar, halusinasi auditorik imperatif; Orientasi baik; RTA terganggu",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gaduh Gelisah Non-organik (psikosis, gangguan mood, cemas, reaksi stres akut, gangguan disosiatif, RM)",
+    "differensialBenar": [
+      "Gaduh gelisah organik",
+      "Intoksikasi zat",
+      "Akatisia",
+      "Gangguan kepribadian dengan agresi"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Algoritma: 1) amankan diri & lingkungan, minimal 2–3 orang 2) de-eskalasi verbal 3) bila gagal: farmakoterapi 4) restrain singkat bila perlu dengan pengawasan 5) pantau tiap 15–30 menit 6) rujuk rawat inap setelah stabil",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Haloperidol inj 5 mg/mL amp No. III\nS.pro inj IM 5 mg, ulang 30–60 menit bila perlu",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Diazepam inj 5 mg/mL amp 2 mL No. II\nS.pro inj IV pelan 10 mg (hindari IM)",
+      "benar": true
+    },
+    {
+      "opsi": "Setelah tenang: R/ Risperidon tab 2 mg No. XIV, S 2.d.d tab I\n[verifikasi batas dosis harian & pantau napas/tekanan darah]",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Keluarga tetap tenang, jangan menantang atau memarahi",
+      "benar": true
+    },
+    {
+      "opsi": "Bawa ke fasilitas kesehatan saat gejala awal muncul",
+      "benar": true
+    },
+    {
+      "opsi": "Minum obat teratur; putus obat = penyebab utama kambuh",
+      "benar": true
+    },
+    {
+      "opsi": "Singkirkan benda tajam/berbahaya",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol rutin setelah pulang",
+      "benar": true
+    }
+  ]
+}

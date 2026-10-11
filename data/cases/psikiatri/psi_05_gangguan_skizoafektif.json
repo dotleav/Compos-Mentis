@@ -1,0 +1,113 @@
+{
+  "id": "psi_05_gangguan_skizoafektif",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "nama": "Kasus 5",
+  "judulKasus": "Gangguan Skizoafektif — F25",
+  "identitas": "Rina, 32 tahun, perempuan, guru",
+  "skenarioAwal": "Seorang perempuan 32 tahun datang ke poli dengan keluhan gangguan perasaan dan pikiran.",
+  "keluhanUtama": "Mendengar suara dan merasa sangat sedih sekaligus bersemangat berlebihan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "3 bulan: mendengar suara yang mengomentari, curiga kepala sekolah menyabotase",
+        "Pada saat yang sama (2 minggu terakhir) mood meningkat, tidur 3 jam/hari, boros, merasa punya misi khusus",
+        "Sebelumnya episode murung 1 tahun lalu"
+      ],
+      "rpd": "-",
+      "rpk": "kakak bipolar",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU sedang, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 120/80, N 92x/mnt, RR 20x/mnt, T 36,8°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Afek euforik-iritabel, ada mood congruent grandiosity; Waham kejar & kebesaran; halusinasi auditorik komentar; Tilikan buruk",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_laboratorium_penyingkir_organik",
+        "nama": "Laboratorium penyingkir organik",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_tsh",
+        "nama": "TSH",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_urin_napza",
+        "nama": "Urin NAPZA",
+        "temuan": "Negatif.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Skizoafektif",
+    "differensialBenar": [
+      "Skizofrenia",
+      "Gangguan afektif bipolar dengan ciri psikotik",
+      "Depresi berat dengan ciri psikotik",
+      "Psikosis akibat zat"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Risperidon tab 2 mg No. LX\nS 2.d.d tab I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Asam valproat tab 500 mg No. LX\nS 2.d.d tab I\n[verifikasi: dosis valproat 20–30 mg/kgBB; cek fungsi hati & trombosit]",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Penyakit kronik kambuhan yang memerlukan pengobatan jangka panjang",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan hentikan obat tanpa dokter",
+      "benar": true
+    },
+    {
+      "opsi": "Efek samping valproat: mual, tremor, BB naik, kerontokan rambut; wajib kontrol lab",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari kehamilan tanpa konsultasi (teratogenik)",
+      "benar": true
+    },
+    {
+      "opsi": "Jaga pola tidur teratur, hindari alkohol",
+      "benar": true
+    }
+  ]
+}

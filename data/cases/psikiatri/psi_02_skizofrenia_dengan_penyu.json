@@ -1,0 +1,97 @@
+{
+  "id": "psi_02_skizofrenia_dengan_penyu",
+  "kategori": "psikiatri",
+  "level": "4",
+  "nama": "Kasus 2",
+  "judulKasus": "Skizofrenia dengan penyulit: Efek Samping Obat (EPS) — F20 + G21.1",
+  "identitas": "Dedi, 30 tahun, laki-laki, wiraswasta",
+  "skenarioAwal": "Seorang laki-laki 30 tahun datang ke poli dengan keluhan pada badan dan tangan yang mengganggu aktivitas.",
+  "keluhanUtama": "Badan kaku dan tangan gemetar sejak minum obat",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Penderita skizofrenia, 3 minggu lalu haloperidol dinaikkan dari 5 mg ke 15 mg/hari",
+        "1 minggu terakhir tangan gemetar saat istirahat, badan kaku, jalan pelan, air liur sering menetes, ekspresi wajah datar",
+        "Tidak demam, kesadaran baik, gejala psikotik membaik"
+      ],
+      "rpd": "skizofrenia 2 tahun; tidak ada penyakit saraf lain",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU sedang, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 120/80, N 80x/mnt, RR 18x/mnt, T 36,9°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_neurologis",
+        "nama": "Neurologis",
+        "temuan": "Tremor istirahat halus (pill-rolling), rigiditas cogwheel pada ekstremitas atas; Bradikinesia, wajah topeng, langkah kecil, ayunan lengan berkurang, sialorea; Tidak ada rigiditas lead-pipe berat, kesadaran dan suhu normal (menyingkirkan SNM); Tidak ada gerakan melirik/leher memutar (menyingkirkan distonia)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Skizofrenia dengan penyulit: Efek Samping Obat (EPS)",
+    "differensialBenar": [
+      "Distonia akut",
+      "Akatisia",
+      "Parkinsonisme sekunder obat",
+      "Diskinesia tardif",
+      "Penyakit Parkinson",
+      "Sindrom neuroleptik maligna"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Haloperidol tab 5 mg No. XXX\nS 2.d.d tab I (turunkan dari 15 mg/hari)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Trihexyphenidyl tab 2 mg No. LX\nS 2.d.d tab I",
+      "benar": true
+    },
+    {
+      "opsi": "Reevaluasi 1–2 minggu; antikolinergik dihentikan bertahap setelah EPS teratasi",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gemetar/kaku adalah efek samping obat, bukan penyakit baru",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan hentikan obat sendiri; sampaikan ke dokter",
+      "benar": true
+    },
+    {
+      "opsi": "Efek samping antikolinergik: mulut kering, sulit BAK, pandangan kabur, sembelit",
+      "benar": true
+    },
+    {
+      "opsi": "Segera ke IGD bila demam tinggi, kaku sangat berat, kesadaran turun",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol teratur untuk penyesuaian dosis",
+      "benar": true
+    }
+  ]
+}

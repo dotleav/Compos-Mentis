@@ -1,0 +1,146 @@
+{
+  "id": "psi_03_skizofrenia_dengan_penye",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "nama": "Kasus 3",
+  "judulKasus": "Skizofrenia dengan penyerta (komorbid Diabetes Melitus tipe 2) — F20 + E11",
+  "identitas": "Heru, 40 tahun, laki-laki, tidak bekerja",
+  "skenarioAwal": "Seorang laki-laki 40 tahun datang ke poli untuk kontrol rutin dengan keluhan lemas dan sering buang air kecil.",
+  "keluhanUtama": "Haus terus, sering kencing, badan lemas",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "Skizofrenia 10 tahun, 1 tahun terakhir risperidon 4 mg/hari lalu olanzapin; BB naik 12 kg",
+        "1 bulan: sering haus, BAK malam >3x, lemas, luka kaki lama sembuh",
+        "Waham dan halusinasi terkontrol, kepatuhan minum obat baik"
+      ],
+      "rpd": "DM tipe 2 baru diketahui; hipertensi (-)",
+      "rpk": "ayah DM",
+      "lifestyle": [
+        "banyak makan manis",
+        "jarang aktivitas",
+        "merokok"
+      ]
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU sedang, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 135/85, N 88x/mnt, RR 20x/mnt, T 36,8°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_antropometri",
+        "nama": "Antropometri",
+        "temuan": "TB 168 cm, BB 92 kg, IMT 32,6 (obesitas II), lingkar perut 105 cm",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_kulit",
+        "nama": "Kulit",
+        "temuan": "Acanthosis nigricans leher",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_kaki",
+        "nama": "Kaki",
+        "temuan": "Sensibilitas monofilamen menurun, ulkus kecil kering tumit tanpa tanda infeksi",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Afek datar, tilikan cukup, tidak ada waham/halusinasi aktif",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "GDS 320 mg/dL",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gula_darah_puasa",
+        "nama": "Gula darah puasa",
+        "temuan": "GDP 210 mg/dL",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_hba1c",
+        "nama": "HbA1c",
+        "temuan": "9,8%",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Skizofrenia dengan penyerta (komorbid Diabetes Melitus tipe 2)",
+    "differensialBenar": [
+      "Hiperglikemia akibat antipsikotik atipikal",
+      "Sindrom metabolik",
+      "DM tipe 2 tidak terkontrol",
+      "Skizofrenia dengan penyalahgunaan zat"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antipsikotik (netral metabolik):\nR/ Haloperidol tab 5 mg No. LX\nS 2.d.d tab I [verifikasi, atau aripiprazol bila tersedia]",
+      "benar": true
+    },
+    {
+      "opsi": "Antidiabetik:\nR/ Metformin tab 500 mg No. XC\nS 3.d.d tab I p.c.",
+      "benar": true
+    },
+    {
+      "opsi": "Hentikan olanzapin bertahap, jangan putus mendadak",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Diet DM: batasi gula, nasi, minuman manis; porsi kecil teratur",
+      "benar": true
+    },
+    {
+      "opsi": "Olahraga jalan kaki 30 menit, 5x/minggu",
+      "benar": true
+    },
+    {
+      "opsi": "Obat jiwa tetap diminum; jangan hentikan sendiri karena takut gemuk",
+      "benar": true
+    },
+    {
+      "opsi": "Rawat kaki setiap hari, pakai alas kaki",
+      "benar": true
+    },
+    {
+      "opsi": "Cek gula darah berkala; kenali gejala hipoglikemia",
+      "benar": true
+    },
+    {
+      "opsi": "Berhenti merokok",
+      "benar": true
+    }
+  ]
+}

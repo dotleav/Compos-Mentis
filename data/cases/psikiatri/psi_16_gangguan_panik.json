@@ -1,0 +1,150 @@
+{
+  "id": "psi_16_gangguan_panik",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "nama": "Kasus 16",
+  "judulKasus": "Gangguan Panik — F41.0",
+  "identitas": "Dina, 29 tahun, perempuan, karyawan swasta",
+  "skenarioAwal": "Seorang perempuan 29 tahun datang ke poli dengan keluhan berdebar-debar.",
+  "keluhanUtama": "Dada berdebar hebat, sesak, merasa mau mati",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "2 minggu: 3 kali serangan mendadak saat di kantor/di mobil; berdebar, sesak, gemetar, keringat dingin, kesemutan, rasa akan pingsan/mati",
+        "Puncak 10 menit, reda sendiri dalam ±30 menit",
+        "Sekarang takut serangan berulang, menghindari berkendara sendiri",
+        "Tidak ada pencetus jelas; kafein 4 cangkir/hari"
+      ],
+      "rpd": "-",
+      "rpk": "ibu penderita cemas",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU baik, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 120/80, N 98x/mnt (saat serangan 130x/mnt), RR 20x/mnt (28x saat serangan), T 36,7°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_jantung_dan_paru",
+        "nama": "Jantung dan paru",
+        "temuan": "Dbn",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tiroid",
+        "nama": "Tiroid",
+        "temuan": "Tidak membesar",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tremor",
+        "nama": "Tremor",
+        "temuan": "Halus saat serangan",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Cemas antisipatori, tilikan baik",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "Sinus takikardia, tanpa iskemia",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_tsh_dan_ft4",
+        "nama": "TSH dan fT4",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_darah_perifer_lengkap",
+        "nama": "Darah perifer lengkap",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Panik",
+    "differensialBenar": [
+      "Infark miokard/aritmia",
+      "Hipertiroid",
+      "Feokromositoma",
+      "Asma",
+      "Agorafobia",
+      "GAD",
+      "Penggunaan kafein/stimulan",
+      "Hipoglikemia"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Sertralin tab 50 mg No. XI\nS 1.d.d tab ½ (hari 1–7), selanjutnya tab I (hari 8–14)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Alprazolam tab 0,5 mg No. X\nS.p.r.n. 2.d.d tab ½ (maks 2 minggu)\n[verifikasi: batasi benzodiazepin karena risiko ketergantungan]",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Serangan panik tidak berbahaya dan tidak menyebabkan kematian/gila",
+      "benar": true
+    },
+    {
+      "opsi": "Saat serangan: duduk, napas perut lambat (tarik 4 detik, tahan, embus 6 detik)",
+      "benar": true
+    },
+    {
+      "opsi": "Kurangi kafein, alkohol, rokok",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan menghindari situasi; hadapi bertahap",
+      "benar": true
+    },
+    {
+      "opsi": "SSRI efek 2–4 minggu; cemas bisa meningkat di awal",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan hentikan obat mendadak",
+      "benar": true
+    }
+  ]
+}

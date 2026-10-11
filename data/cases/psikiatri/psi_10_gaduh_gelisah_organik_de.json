@@ -1,0 +1,115 @@
+{
+  "id": "psi_10_gaduh_gelisah_organik_de",
+  "kategori": "psikiatri",
+  "level": "3B",
+  "nama": "Kasus 10",
+  "judulKasus": "Gaduh Gelisah Organik (delirium, demensia, penggunaan zat psikoaktif)",
+  "identitas": "Tn. Joko, 55 tahun, laki-laki, diantar keluarga",
+  "skenarioAwal": "Seorang laki-laki 55 tahun, diantar keluarga, datang ke IGD dengan keluhan perilaku tidak terkendali.",
+  "keluhanUtama": "Mengamuk, tidak mengenali orang, sejak semalam",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "2 hari lalu berhenti minum alkohol mendadak (peminum berat 10 tahun)",
+        "Gemetar, keringat dingin, melihat serangga, mengamuk, tidak tahu tempat dan waktu",
+        "Tidak ada trauma kepala; makan minum kurang"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU gelisah berat, GCS E4V4M6",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 160/100, N 120x/mnt, RR 24x/mnt, T 37,9°C",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_otonom_dan_pupil",
+        "nama": "Tanda otonom dan pupil",
+        "temuan": "Diaforesis, tremor kasar, pupil midriasis",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_neurologis",
+        "nama": "Neurologis",
+        "temuan": "Lateralisasi (-); hepar teraba 3 jari (hepatomegali)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gaduh Gelisah Organik (delirium, demensia, penggunaan zat psikoaktif)",
+    "differensialBenar": [
+      "Gaduh gelisah non-organik",
+      "Putus alkohol/delirium tremens",
+      "Intoksikasi stimulan",
+      "Hipoglikemia",
+      "Lesi SSP"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Putus alkohol:\nR/ Diazepam inj 5 mg/mL amp 2 mL No. II\nS.pro inj IV pelan 10 mg",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Tiamin inj 100 mg No. III\nS.i.d.d inj IM, diberikan sebelum glukosa",
+      "benar": true
+    },
+    {
+      "opsi": "R/ NaCl 0,9% infus fl No. II  S gtt sesuai kebutuhan",
+      "benar": true
+    },
+    {
+      "opsi": "[Penyebab non-alkohol (delirium/demensia): haloperidol dosis rendah, hindari benzodiazepin]",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Putus alkohol dapat mengancam jiwa; jangan berhenti mendadak tanpa pengawasan",
+      "benar": true
+    },
+    {
+      "opsi": "Perlu rawat inap & detoksifikasi",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga: jangan diikat kasar, amankan benda berbahaya",
+      "benar": true
+    },
+    {
+      "opsi": "Setelah pulih: program rehabilitasi alkohol, dukungan keluarga",
+      "benar": true
+    },
+    {
+      "opsi": "Konseling nutrisi dan fungsi hati",
+      "benar": true
+    }
+  ]
+}

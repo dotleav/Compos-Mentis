@@ -1,0 +1,146 @@
+{
+  "id": "psi_06_gangguan_afektif_bipolar",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "nama": "Kasus 6",
+  "judulKasus": "Gangguan Afektif Bipolar, episode kini manik — F31.1/F31.2",
+  "identitas": "Budi, 30 tahun, laki-laki, sales",
+  "skenarioAwal": "Seorang laki-laki 30 tahun datang ke poli dengan keluhan gangguan tidur.",
+  "keluhanUtama": "Tidak tidur-tidur tapi tidak capek, banyak ide",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "7 hari: tidur 2 jam/malam, banyak bicara, merasa sangat energik dan hebat",
+        "Boros (membeli mobil kredit), ganti-ganti rencana usaha, mudah marah bila dibantah",
+        "Merasa dapat mengendalikan banyak orang"
+      ],
+      "rpd": "2 tahun lalu episode murung 2 bulan; tidak ada konsumsi zat",
+      "rpk": "ibu bipolar",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU baik, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 130/80, N 98x/mnt, RR 20x/mnt, T 36,8°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tiroid",
+        "nama": "Tiroid",
+        "temuan": "Tidak membesar",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Bicara cepat banyak (logorea), flight of ideas; Mood euforik/iritabel, waham kebesaran",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_tsh",
+        "nama": "TSH",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ureum_dan_kreatinin",
+        "nama": "Ureum dan kreatinin",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_elektrolit",
+        "nama": "Elektrolit",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_urin_napza",
+        "nama": "Urin NAPZA",
+        "temuan": "Negatif.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Afektif Bipolar, episode kini manik",
+    "differensialBenar": [
+      "Skizoafektif",
+      "Skizofrenia",
+      "Mania akibat zat/organik (hipertiroid, steroid)",
+      "ADHD dewasa",
+      "Gangguan kepribadian"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Haloperidol tab 5 mg No. XXVIII\nS 2.d.d tab I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Asam valproat tab 500 mg No. XXVIII\nS 2.d.d tab I\n[verifikasi: alternatif litium karbonat tab 400 mg; target kadar 0,6–1,2 mEq/L]",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Bipolar: naik-turun mood yang kambuhan, perlu obat jangka panjang",
+      "benar": true
+    },
+    {
+      "opsi": "Jaga ritme tidur; hindari alkohol dan begadang",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari keputusan keuangan besar saat mood tinggi",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga mengenali tanda awal kambuh (tidur berkurang, bicara banyak)",
+      "benar": true
+    },
+    {
+      "opsi": "Waspada fase depresi, laporkan ide bunuh diri",
+      "benar": true
+    },
+    {
+      "opsi": "Efek samping obat dan perlunya cek darah berkala",
+      "benar": true
+    }
+  ]
+}

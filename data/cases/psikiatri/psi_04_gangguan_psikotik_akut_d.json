@@ -1,0 +1,144 @@
+{
+  "id": "psi_04_gangguan_psikotik_akut_d",
+  "kategori": "psikiatri",
+  "level": "4",
+  "nama": "Kasus 4",
+  "judulKasus": "Gangguan Psikotik Akut dan Sementara — F23",
+  "identitas": "Dewi, 28 tahun, perempuan, ibu rumah tangga",
+  "skenarioAwal": "Seorang perempuan 28 tahun datang ke poli dengan keluhan perubahan perilaku yang mendadak.",
+  "keluhanUtama": "Tiba-tiba bicara kacau dan ketakutan",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "5 hari lalu mendadak gelisah, bicara tidak nyambung, mengatakan ada yang ingin membunuhnya",
+        "Mendengar suara-suara, melihat bayangan, tidur nyaris tidak ada, perilaku berubah-ubah (kadang menangis, kadang marah)",
+        "2 minggu sebelumnya anaknya meninggal mendadak",
+        "Tidak ada demam, trauma kepala, atau konsumsi zat"
+      ],
+      "rpd": "tidak pernah gangguan jiwa",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU tampak gelisah, CM (GCS E4V5M6)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 120/80, N 96x/mnt, RR 20x/mnt, T 36,9°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_neurologis",
+        "nama": "Neurologis",
+        "temuan": "Lateralisasi (-), meningeal sign (-)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Perilaku gelisah, afek labil; Bicara inkoheren, waham kejar tidak sistematis; Halusinasi auditorik & visual, perilaku berubah cepat; Orientasi baik; tilikan buruk",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_darah_perifer_lengkap",
+        "nama": "Darah perifer lengkap",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_elektrolit",
+        "nama": "Elektrolit",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_fungsi_tiroid",
+        "nama": "Fungsi tiroid",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_urin_napza",
+        "nama": "Urin NAPZA",
+        "temuan": "Negatif.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Psikotik Akut dan Sementara",
+    "differensialBenar": [
+      "Skizofrenia",
+      "Gangguan afektif bipolar manik psikotik",
+      "Psikosis akibat zat",
+      "Delirium",
+      "Reaksi stres akut"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Risperidon tab 2 mg No. XXVIII\nS 2.d.d tab I",
+      "benar": true
+    },
+    {
+      "opsi": "atau",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Haloperidol tab 5 mg No. XXVIII\nS 2.d.d tab I",
+      "benar": true
+    },
+    {
+      "opsi": "Bila EPS:\nR/ Trihexyphenidyl tab 2 mg No. XIV\nS 1–2.d.d tab I",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gejala dapat membaik penuh dalam waktu singkat, namun bisa kambuh",
+      "benar": true
+    },
+    {
+      "opsi": "Minum obat teratur sesuai anjuran dokter",
+      "benar": true
+    },
+    {
+      "opsi": "Dukungan emosional keluarga setelah kehilangan (duka)",
+      "benar": true
+    },
+    {
+      "opsi": "Kurangi stresor; tidur cukup",
+      "benar": true
+    },
+    {
+      "opsi": "Awasi tanda kambuh: tidak tidur, curiga, bicara kacau",
+      "benar": true
+    }
+  ]
+}

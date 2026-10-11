@@ -1,0 +1,133 @@
+{
+  "id": "psi_22_depresi_pascasalin",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "nama": "Kasus 22",
+  "judulKasus": "Depresi Pascasalin — F53.0",
+  "identitas": "Ny. Ani, 27 tahun, perempuan, ibu baru, diantar suaminya",
+  "skenarioAwal": "Seorang perempuan 27 tahun, diantar suaminya, datang ke poli dengan keluhan lemas dan sering menangis.",
+  "keluhanUtama": "Menangis terus dan tidak mau menyusui",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "3 minggu pasca persalinan normal anak pertama",
+        "2 minggu murung, menangis tiba-tiba, merasa tidak mampu jadi ibu, bersalah",
+        "Sulit tidur walau bayi tidur, nafsu makan turun, tidak berminat merawat bayi",
+        "Pernah terpikir lebih baik tidak ada; tidak ada pikiran menyakiti bayi, tidak ada waham/halusinasi"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU lemah, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 110/70, N 80x/mnt, RR 18x/mnt, T 36,8°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_konjungtiva",
+        "nama": "Konjungtiva",
+        "temuan": "Tidak pucat",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tiroid",
+        "nama": "Tiroid",
+        "temuan": "Dbn",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_payudara",
+        "nama": "Payudara",
+        "temuan": "Dbn",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_lokia_dan_perineum",
+        "nama": "Lokia dan perineum",
+        "temuan": "Baik",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_hemoglobin",
+        "nama": "Hemoglobin",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_tsh",
+        "nama": "TSH",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Depresi Pascasalin",
+    "differensialBenar": [
+      "Baby blues",
+      "Psikosis puerperal",
+      "Hipotiroid pascasalin",
+      "Anemia berat",
+      "Perdarahan/infeksi pascasalin",
+      "Gangguan bipolar"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Sertralin tab 50 mg No. XXX\nS 1.d.d tab ½ (hari 1–7) selanjutnya tab I (naik bertahap)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Tablet tambah darah (Fe) No. XXX\nS 1.d.d tab I\n[verifikasi keamanan laktasi dan dosis awal]",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Depresi pascasalin sering terjadi dan dapat diobati; bukan karena ibu lemah",
+      "benar": true
+    },
+    {
+      "opsi": "Bagi tugas mengurus bayi, istirahat cukup, dukungan suami dan keluarga",
+      "benar": true
+    },
+    {
+      "opsi": "Tetap boleh menyusui dengan obat yang sesuai",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol rutin dan skrining ulang EPDS",
+      "benar": true
+    }
+  ]
+}

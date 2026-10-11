@@ -1,0 +1,140 @@
+{
+  "id": "psi_15_gangguan_depresif_ringan",
+  "kategori": "psikiatri",
+  "level": "4",
+  "nama": "Kasus 15",
+  "judulKasus": "Gangguan Depresif Ringan–Sedang — F32.0/F32.1",
+  "identitas": "Ny. Sari, 35 tahun, perempuan, ibu rumah tangga",
+  "skenarioAwal": "Seorang perempuan 35 tahun datang ke poli dengan keluhan tidak bersemangat.",
+  "keluhanUtama": "Sedih terus dan tidak bersemangat",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "4 minggu: murung hampir tiap hari, kehilangan minat mengurus rumah, mudah lelah, sulit konsentrasi",
+        "Tidur terganggu (bangun dini hari), nafsu makan turun, BB turun 3 kg",
+        "Merasa tidak berguna, tidak ada ide bunuh diri aktif",
+        "Pencetus: konflik berkepanjangan dengan mertua"
+      ],
+      "rpd": "-",
+      "rpk": "ibu pernah depresi",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU baik, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 110/70, N 76x/mnt, RR 18x/mnt, T 36,7°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_gizi",
+        "nama": "Status gizi",
+        "temuan": "Normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tiroid",
+        "nama": "Tiroid",
+        "temuan": "Tidak membesar",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_konjungtiva",
+        "nama": "Konjungtiva",
+        "temuan": "Tidak pucat",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Penampilan kurang rapi, psikomotor melambat ringan; Afek depresif, tanpa waham/halusinasi; Ide bunuh diri pasif/aktif (-), tilikan baik, PHQ-9 = 12",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_phq_9",
+        "nama": "PHQ-9",
+        "temuan": "Skor 12",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_tsh",
+        "nama": "TSH",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_darah_perifer_lengkap",
+        "nama": "Darah perifer lengkap",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Depresif Ringan–Sedang",
+    "differensialBenar": [
+      "Gangguan penyesuaian dengan mood depresif",
+      "Distimia",
+      "Depresi akibat kondisi medis (hipotiroid, anemia)",
+      "Gangguan bipolar episode depresi",
+      "Duka cita normal"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Fluoksetin kaps 20 mg No. XXX\nS 1.d.d cap I pagi",
+      "benar": true
+    },
+    {
+      "opsi": "atau",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Sertralin tab 50 mg No. XXX\nS 1.d.d tab I pagi",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Depresi adalah penyakit yang dapat diobati, bukan kelemahan",
+      "benar": true
+    },
+    {
+      "opsi": "Efek obat baru terasa 2–4 minggu; minum teratur",
+      "benar": true
+    },
+    {
+      "opsi": "Efek samping awal: mual, gelisah, sulit tidur; biasanya membaik",
+      "benar": true
+    },
+    {
+      "opsi": "Aktivitas fisik rutin, jadwal tidur teratur, aktivitas menyenangkan bertahap",
+      "benar": true
+    },
+    {
+      "opsi": "Libatkan keluarga; segera ke dokter bila muncul ide bunuh diri",
+      "benar": true
+    }
+  ]
+}

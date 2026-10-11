@@ -1,0 +1,121 @@
+{
+  "id": "psi_21_anoreksia_nervosa",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "nama": "Kasus 21",
+  "judulKasus": "Anoreksia Nervosa — F50.0 (payung F5)",
+  "identitas": "Cindy, 19 tahun, perempuan, mahasiswi, diantar ibunya",
+  "skenarioAwal": "Seorang perempuan 19 tahun, diantar ibunya, datang ke poli dengan keluhan berat badan menurun.",
+  "keluhanUtama": "Makin kurus tetapi merasa masih gemuk",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "6 bulan: BB turun 15 kg, membatasi makan, takut sekali gemuk",
+        "Olahraga berlebihan, menghitung kalori, kadang memakai pencahar",
+        "Haid berhenti 4 bulan, sering lemas dan pusing",
+        "Menyangkal masalah; menolak ke dokter"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU lemah, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 90/60 (ortostatik turun), N 48x/mnt, RR 16x/mnt, T 36,0°C",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_antropometri",
+        "nama": "Antropometri",
+        "temuan": "TB 160 cm, BB 39 kg, IMT 15,2 (sangat kurang)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_kulit_dan_ekstremitas",
+        "nama": "Kulit dan ekstremitas",
+        "temuan": "Lanugo, kulit kering, rambut rontok, akral dingin, edema tungkai ringan",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Distorsi citra tubuh, tilikan buruk",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_ekg",
+        "nama": "EKG",
+        "temuan": "Bradikardia; interval QT perlu dievaluasi",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Anoreksia Nervosa",
+    "differensialBenar": [
+      "Bulimia nervosa",
+      "Hipertiroid",
+      "Penyakit saluran cerna kronik",
+      "Keganasan",
+      "Depresi berat",
+      "TB",
+      "DM tipe 1"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Multivitamin-mineral tab No. XXX\nS 1.d.d tab I",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Tiamin tab 50 mg No. XXX\nS 1.d.d tab I (cegah sindrom refeeding)",
+      "benar": true
+    },
+    {
+      "opsi": "Koreksi elektrolit bila perlu",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Anoreksia nervosa adalah gangguan jiwa serius yang butuh terapi tim",
+      "benar": true
+    },
+    {
+      "opsi": "Pemulihan berat badan dan pola makan bertahap; jangan mendadak",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga: terapi berbasis keluarga, hindari komentar bentuk tubuh",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari pencahar/diuretik sendiri",
+      "benar": true
+    },
+    {
+      "opsi": "Segera ke IGD bila pingsan, nyeri dada, atau sesak",
+      "benar": true
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "id": "psi_09_demensia_dengan_gejala_t",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "nama": "Kasus 9",
+  "judulKasus": "Demensia dengan gejala tambahan: waham, halusinasi, depresi — F00–F03",
+  "identitas": "Slamet, 72 tahun, laki-laki, pensiunan guru, diantar keluarga",
+  "skenarioAwal": "Seorang laki-laki 72 tahun, diantar keluarga, datang ke poli dengan keluhan perubahan ingatan dan perilaku.",
+  "keluhanUtama": "Pikun dan curiga istri selingkuh",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "2 tahun: lupa hal baru, lupa letak barang, tersesat dekat rumah, sulit mengurus uang",
+        "3 bulan: yakin istri berselingkuh dan mencuri, melihat orang asing di rumah malam hari, mudah marah, tidur terbalik",
+        "Onset bertahap, tidak mendadak"
+      ],
+      "rpd": "hipertensi 10 tahun",
+      "rpk": "ibu pikun di usia 70-an",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU sedang, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 150/90, N 80x/mnt, RR 18x/mnt, T 36,7°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_neurologis",
+        "nama": "Neurologis",
+        "temuan": "Lateralisasi (-), refleks primitif (glabella, grasp) bisa (+), gait normal",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Orientasi waktu dan tempat terganggu, atensi menurun, memori baru terganggu; MMSE 17/30 (<24 abnormal), clock drawing abnormal; Waham curiga/cemburu, halusinasi visual, afek labil, tilikan buruk",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_darah_perifer_lengkap",
+        "nama": "Darah perifer lengkap",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_elektrolit",
+        "nama": "Elektrolit",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ureum_dan_kreatinin",
+        "nama": "Ureum dan kreatinin",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_fungsi_hati",
+        "nama": "Fungsi hati",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_tsh",
+        "nama": "TSH",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_vitamin_b12",
+        "nama": "Vitamin B12",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_folat",
+        "nama": "Folat",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_mmse",
+        "nama": "MMSE",
+        "temuan": "17/30 (<24 abnormal)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_clock_drawing_test",
+        "nama": "Clock drawing test",
+        "temuan": "Abnormal",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ct_mri_kepala",
+        "nama": "CT/MRI kepala",
+        "temuan": "Atrofi kortikal dan hipokampus; SOL, NPH, dan infark disingkirkan.",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Demensia dengan gejala tambahan: waham, halusinasi, depresi",
+    "differensialBenar": [
+      "Delirium",
+      "Depresi pada lansia (pseudodemensia)",
+      "Mild Cognitive Impairment",
+      "Penyebab reversibel (hipotiroid, defisiensi B12, NPH, hematoma subdural)"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Donepezil tab 5 mg No. XXX\nS 1.d.d tab I malam (naikkan ke 10 mg setelah 4–6 minggu)",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Risperidon tab 1 mg No. XV\nS 1.d.d tab ½ malam [verifikasi; risiko mortalitas pada demensia]",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol faktor vaskular: antihipertensi sesuai pedoman",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Penyakit progresif, bukan pikun biasa; bantu keluarga paham perjalanannya",
+      "benar": true
+    },
+    {
+      "opsi": "Rutinitas harian tetap, jam/kalender besar, lampu malam",
+      "benar": true
+    },
+    {
+      "opsi": "Amankan rumah (kompor, pintu), gelang identitas",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan berdebat dengan waham, alihkan perhatian",
+      "benar": true
+    },
+    {
+      "opsi": "Aktivitas fisik dan sosial ringan",
+      "benar": true
+    },
+    {
+      "opsi": "Perhatikan kelelahan caregiver",
+      "benar": true
+    },
+    {
+      "opsi": "Efek samping donepezil: mual, bradikardia",
+      "benar": true
+    }
+  ]
+}

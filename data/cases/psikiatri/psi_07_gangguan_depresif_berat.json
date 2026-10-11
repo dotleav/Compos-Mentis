@@ -1,0 +1,136 @@
+{
+  "id": "psi_07_gangguan_depresif_berat",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "nama": "Kasus 7",
+  "judulKasus": "Gangguan Depresif Berat dengan Ciri Psikotik — F32.3",
+  "identitas": "Ny. Sumi, 45 tahun, perempuan, pedagang",
+  "skenarioAwal": "Seorang perempuan 45 tahun datang ke poli dengan keluhan lemas dan perasaan tidak enak.",
+  "keluhanUtama": "Merasa berdosa dan ingin mati",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "2 bulan: murung hampir sepanjang hari, tidak tertarik apa pun, lemas, tidak mau makan, BB turun 6 kg",
+        "Terbangun dini hari, merasa bersalah karena “dosa besar”, yakin tubuhnya membusuk",
+        "Mendengar suara yang menyalahkan dan menyuruhnya mengakhiri hidup",
+        "Pernah memikirkan cara gantung diri"
+      ],
+      "rpd": "episode serupa ringan 3 tahun lalu",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU lemah, CM, kurus (IMT 17)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 100/70, N 78x/mnt, RR 18x/mnt, T 36,6°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_hidrasi",
+        "nama": "Hidrasi",
+        "temuan": "Dehidrasi ringan, turgor menurun",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Psikomotor melambat, afek depresif, kontak minimal; Waham dosa dan nihilistik, halusinasi auditorik menuduh; Ide bunuh diri aktif dengan rencana, tilikan buruk",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_darah_perifer_lengkap",
+        "nama": "Darah perifer lengkap",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_elektrolit",
+        "nama": "Elektrolit",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_tsh",
+        "nama": "TSH",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_fungsi_hati_dan_ginjal",
+        "nama": "Fungsi hati dan ginjal",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Depresif Berat dengan Ciri Psikotik",
+    "differensialBenar": [
+      "Depresi berat tanpa psikotik",
+      "Skizoafektif tipe depresif",
+      "Gangguan bipolar episode depresi",
+      "Demensia dengan depresi",
+      "Depresi akibat kondisi medis"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Sertralin tab 50 mg No. XXX\nS 1.d.d tab I pagi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Risperidon tab 2 mg No. XXX\nS 1.d.d tab I malam",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Depresi berat adalah penyakit, bukan kurang iman atau kelemahan",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga mengawasi 24 jam, singkirkan benda berbahaya",
+      "benar": true
+    },
+    {
+      "opsi": "Obat butuh 2–4 minggu untuk bekerja; jangan berhenti sendiri",
+      "benar": true
+    },
+    {
+      "opsi": "Segera bawa ke IGD bila ada percobaan bunuh diri",
+      "benar": true
+    },
+    {
+      "opsi": "Dukungan keluarga, aktivitas ringan, makan bertahap",
+      "benar": true
+    }
+  ]
+}

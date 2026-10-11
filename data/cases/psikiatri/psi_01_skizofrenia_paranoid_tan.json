@@ -1,0 +1,148 @@
+{
+  "id": "psi_01_skizofrenia_paranoid_tan",
+  "kategori": "psikiatri",
+  "level": "4",
+  "nama": "Kasus 1",
+  "judulKasus": "Skizofrenia Paranoid tanpa penyulit — F20.0",
+  "identitas": "Andi, 26 tahun, laki-laki, buruh pabrik (sudah 4 bulan berhenti kerja)",
+  "skenarioAwal": "Seorang laki-laki 26 tahun datang ke poli dengan keluhan perubahan perilaku dalam beberapa bulan terakhir.",
+  "keluhanUtama": "Sering mendengar bisikan dan merasa dikejar-kejar",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "8 bulan: curiga tetangga & rekan kerja ingin mencelakai, mengunci diri, menutup jendela",
+        "5 bulan: mendengar suara yang mengomentari perbuatannya dan memerintah, merasa pikirannya bisa dibaca orang lain/disiarkan",
+        "Menarik diri, tidak mandi, tidur kacau, bicara sedikit; fungsi kerja/sosial menurun jelas",
+        "Tidak ada demam, trauma kepala, kejang"
+      ],
+      "rpd": "belum pernah berobat jiwa; disangkal penggunaan NAPZA/alkohol",
+      "rpk": "paman dengan gangguan jiwa",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU tampak sakit ringan-sedang, kesadaran CM (GCS E4V5M6)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 120/80, N 84x/mnt, RR 18x/mnt, T 36,8°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_gizi",
+        "nama": "Status gizi",
+        "temuan": "Normal",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_neurologis",
+        "nama": "Neurologis",
+        "temuan": "Lateralisasi (-), meningeal sign (-), tidak ada tremor/rigiditas",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Penampilan kurang rapi, kontak mata minim, curiga; Afek tumpul/inappropriate, mood curiga; Waham kejar, waham siar pikiran; halusinasi auditorik komentar & imperatif; Orientasi baik, memori baik; RTA terganggu; tilikan derajat 1 (menyangkal sakit)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_darah_perifer_lengkap",
+        "nama": "Darah perifer lengkap",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_fungsi_ginjal_dan_hati",
+        "nama": "Fungsi ginjal dan hati",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_urin_napza",
+        "nama": "Urin NAPZA",
+        "temuan": "Negatif.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Skizofrenia Paranoid tanpa penyulit",
+    "differensialBenar": [
+      "Gangguan psikotik akut dan sementara",
+      "Skizoafektif",
+      "Gangguan waham menetap",
+      "Psikosis akibat zat/organik",
+      "Episode manik/depresi berat dengan ciri psikotik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "Antipsikotik (pilih satu):\nR/ Risperidon tab 2 mg No. LX\nS 2.d.d tab I",
+      "benar": true
+    },
+    {
+      "opsi": "atau",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Haloperidol tab 5 mg No. LX\nS 2.d.d tab I",
+      "benar": true
+    },
+    {
+      "opsi": "Bila muncul EPS (Extrapyramidal Syndrome):\nR/ Trihexyphenidyl tab 2 mg No. XXX\nS 2.d.d tab I (hanya selama EPS)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Penyakit otak yang dapat dikontrol, bukan kutukan/guna-guna",
+      "benar": true
+    },
+    {
+      "opsi": "Minum obat teratur, jangan berhenti sendiri (kekambuhan)",
+      "benar": true
+    },
+    {
+      "opsi": "Efek samping: kaku, gemetar, mengantuk, perlu lapor",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga: tidak berdebat dengan waham, tidak mengejek, awasi kepatuhan obat",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari alkohol/NAPZA",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol rutin; segera ke RS bila agresif/ide bunuh diri",
+      "benar": true
+    }
+  ]
+}

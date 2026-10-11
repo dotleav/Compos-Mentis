@@ -1,0 +1,115 @@
+{
+  "id": "psi_13_distonia_akut_akibat_oba",
+  "kategori": "psikiatri",
+  "level": "4",
+  "nama": "Kasus 13",
+  "judulKasus": "Distonia Akut akibat obat dan Parkinsonisme — G24.0, G21.1",
+  "identitas": "Tn. Fajar, 24 tahun, laki-laki, mahasiswa",
+  "skenarioAwal": "Seorang laki-laki 24 tahun datang ke IGD dengan keluhan pada leher dan mata.",
+  "keluhanUtama": "Leher menoleh sendiri, mata melirik ke atas",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "3 jam setelah suntikan haloperidol 5 mg IM di IGD karena gaduh gelisah",
+        "Tiba-tiba leher terpelintir ke kanan, mata melirik ke atas, lidah terasa tebal dan menjulur, nyeri dan cemas",
+        "Kesadaran baik, tidak demam, tidak kejang"
+      ],
+      "rpd": "pertama kali mendapat antipsikotik",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU cemas, CM (GCS 15)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 130/80, N 100x/mnt, RR 20x/mnt, T 36,8°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_leher_mata_dan_lidah",
+        "nama": "Leher, mata, dan lidah",
+        "temuan": "Tortikolis ke kanan, krisis okulogirik (mata deviasi ke atas), protrusi lidah, trismus ringan",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_kekuatan_otot_dan_refleks",
+        "nama": "Kekuatan otot dan refleks",
+        "temuan": "Kekuatan otot normal, refleks normal, tidak ada rigiditas lead-pipe",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_demam_dan_kekakuan",
+        "nama": "Demam dan kekakuan",
+        "temuan": "Tidak ada demam/kaku seluruh tubuh (SNM disingkirkan)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Distonia Akut akibat obat dan Parkinsonisme",
+    "differensialBenar": [
+      "Kejang",
+      "Tetanus",
+      "Hipokalsemia (tetani)",
+      "Sindrom neuroleptik maligna",
+      "Konversi",
+      "Penyakit Parkinson"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Difenhidramin inj 10 mg/mL amp No. I\nS.pro inj IM/IV pelan 25–50 mg (2,5–5 mL)",
+      "benar": true
+    },
+    {
+      "opsi": "atau",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Diazepam inj 5 mg/mL amp 2 mL No. I\nS.pro inj IV pelan 5–10 mg",
+      "benar": true
+    },
+    {
+      "opsi": "Lanjutan:\nR/ Trihexyphenidyl tab 2 mg No. XIV\nS 2.d.d tab I",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kaku/ memelintir adalah efek samping obat, bukan kejang atau penyakit baru",
+      "benar": true
+    },
+    {
+      "opsi": "Mudah ditangani dan tidak berbahaya bila dikenali cepat",
+      "benar": true
+    },
+    {
+      "opsi": "Beritahu dokter berikutnya riwayat reaksi ini",
+      "benar": true
+    },
+    {
+      "opsi": "Minum obat pelindung sesuai anjuran",
+      "benar": true
+    },
+    {
+      "opsi": "Kembali ke IGD bila sulit menelan/bernapas",
+      "benar": true
+    }
+  ]
+}

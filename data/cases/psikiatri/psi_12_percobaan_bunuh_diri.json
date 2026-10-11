@@ -1,0 +1,110 @@
+{
+  "id": "psi_12_percobaan_bunuh_diri",
+  "kategori": "psikiatri",
+  "level": "3B",
+  "nama": "Kasus 12",
+  "judulKasus": "Percobaan Bunuh Diri — T-code/X60–X84 + gangguan depresi",
+  "identitas": "Nn. Rina, 21 tahun, perempuan, mahasiswi, diantar teman",
+  "skenarioAwal": "Seorang perempuan 21 tahun, diantar teman, datang ke IGD dengan keluhan mual dan nyeri ulu hati.",
+  "keluhanUtama": "Minum banyak pil, ingin mati",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "3 jam lalu menelan ± 20 tablet parasetamol 500 mg setelah putus dengan pacar dan gagal ujian",
+        "Menulis pesan perpisahan, sempat mengirim pesan ke teman",
+        "1 bulan terakhir murung, tidak berminat, sulit tidur, merasa tidak berguna",
+        "Mual, nyeri ulu hati ringan"
+      ],
+      "rpd": "pernah menyayat lengan",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU sedang, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 110/70, N 98x/mnt, RR 20x/mnt, T 36,8°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_abdomen",
+        "nama": "Abdomen",
+        "temuan": "Nyeri tekan epigastrium ringan, hepar tidak membesar",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_lengan_kiri",
+        "nama": "Lengan kiri",
+        "temuan": "Bekas luka sayatan lama (superficial)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Afek depresif, kontak baik, ide bunuh diri persisten, rencana tegas, tilikan terbatas",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Percobaan Bunuh Diri",
+    "differensialBenar": [
+      "Intoksikasi tidak sengaja",
+      "Parasuicide/NSSI",
+      "Gangguan psikotik dengan perintah bunuh diri",
+      "Gangguan penyesuaian"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ N-asetilsistein infus: 150 mg/kgBB dalam D5% 200 mL selama 60 menit, lalu 50 mg/kgBB dalam 500 mL selama 4 jam, lalu 100 mg/kgBB dalam 1000 mL selama 16 jam\n[verifikasi dosis dan ketersediaan]",
+      "benar": true
+    },
+    {
+      "opsi": "Terapi depresi setelah stabil medis (oleh Sp.KJ)",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Ide bunuh diri adalah tanda penyakit yang bisa diobati",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan biarkan sendirian; singkirkan akses obat/benda berbahaya",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga tidak menyalahkan; dengarkan tanpa menghakimi",
+      "benar": true
+    },
+    {
+      "opsi": "Rencana keselamatan (safety plan) tertulis, kontak orang tepercaya",
+      "benar": true
+    },
+    {
+      "opsi": "Layanan krisis (mis. 119 ext 8)",
+      "benar": true
+    },
+    {
+      "opsi": "Kontrol psikiater teratur",
+      "benar": true
+    }
+  ]
+}

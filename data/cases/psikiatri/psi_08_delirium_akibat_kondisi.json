@@ -1,0 +1,136 @@
+{
+  "id": "psi_08_delirium_akibat_kondisi",
+  "kategori": "psikiatri",
+  "level": "3B",
+  "nama": "Kasus 8",
+  "judulKasus": "Delirium akibat kondisi medis umum, bukan alkohol/zat psikoaktif — F05",
+  "identitas": "Kakek Sardi, 74 tahun, laki-laki, diantar keluarga",
+  "skenarioAwal": "Seorang laki-laki 74 tahun, diantar keluarga, datang ke IGD dengan keluhan perubahan kesadaran dan perilaku yang mendadak.",
+  "keluhanUtama": "Tiba-tiba bingung, bicara ngawur, malam gelisah",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "3 hari lalu demam, batuk, BAK nyeri; 1 hari ini mendadak bingung, tidak mengenali anak, tidur malam kacau, siang mengantuk",
+        "Melihat ular di kamar, menarik infus/selang bila dirawat",
+        "Gejala naik turun dalam sehari"
+      ],
+      "rpd": "DM, hipertensi; tidak pernah pikun sebelumnya",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU sakit sedang, GCS E4V4M6 (fluktuatif)",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 150/90, N 104x/mnt, RR 24x/mnt, T 38,4°C",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_dehidrasi",
+        "nama": "Dehidrasi",
+        "temuan": "Mukosa kering",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_paru",
+        "nama": "Paru",
+        "temuan": "Ronki basah kasar basal kanan; nyeri ketok CVA (+)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Atensi sangat terganggu, disorientasi waktu-tempat, bicara inkoheren; Halusinasi visual, gelisah, siklus tidur-bangun terbalik",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_neurologis",
+        "nama": "Neurologis",
+        "temuan": "Lateralisasi (-), flapping tremor (-)",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_darah_perifer_lengkap",
+        "nama": "Darah perifer lengkap",
+        "temuan": "Leukositosis",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_urinalisis",
+        "nama": "Urinalisis",
+        "temuan": "Piuria",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Delirium akibat kondisi medis umum, bukan alkohol/zat psikoaktif",
+    "differensialBenar": [
+      "Demensia",
+      "Skizofrenia/psikosis akut",
+      "Depresi berat",
+      "Putus zat",
+      "Gangguan bipolar manik"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Haloperidol tab 0,5 mg No. XV\nS 1–2.d.d tab I p.r.n. agitasi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Tiamin tab 50 mg No. X\nS 1.d.d tab I\n[verifikasi: dosis geriatri; hindari benzodiazepin kecuali putus alkohol/sedatif]",
+      "benar": true
+    },
+    {
+      "opsi": "Terapi etiologi (antibiotik sesuai pneumonia/ISK) sesuai pedoman",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Delirium keadaan darurat yang bisa membaik bila penyebab diobati",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga mendampingi, ruangan terang saat siang dan tenang malam",
+      "benar": true
+    },
+    {
+      "opsi": "Letakkan jam/kalender, kacamata, alat bantu dengar",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari restrain kecuali terpaksa",
+      "benar": true
+    },
+    {
+      "opsi": "Hindari obat penenang berlebih",
+      "benar": true
+    },
+    {
+      "opsi": "Segera ke IGD bila gelisah berat atau kesadaran menurun",
+      "benar": true
+    }
+  ]
+}

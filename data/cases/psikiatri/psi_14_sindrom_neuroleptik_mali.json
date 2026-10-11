@@ -1,0 +1,129 @@
+{
+  "id": "psi_14_sindrom_neuroleptik_mali",
+  "kategori": "psikiatri",
+  "level": "3B",
+  "nama": "Kasus 14",
+  "judulKasus": "Sindrom Neuroleptik Maligna — G21.0",
+  "identitas": "Tn. Wahyu, 29 tahun, laki-laki, diantar keluarga",
+  "skenarioAwal": "Seorang laki-laki 29 tahun, diantar keluarga, datang ke IGD dengan keluhan demam dan penurunan kesadaran.",
+  "keluhanUtama": "Demam tinggi, kaku seluruh badan, kesadaran turun",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "2 hari demam tinggi, kaku semua anggota gerak, banyak keringat, bicara menurun, kesadaran menurun",
+        "Tidak ada riwayat infeksi atau trauma kepala"
+      ],
+      "rpd": "skizofrenia 4 tahun",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU berat, GCS E3V3M5",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 170/110 (labil), N 130x/mnt, RR 28x/mnt, T 39,8°C",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_otonom_dan_hidrasi",
+        "nama": "Tanda otonom dan hidrasi",
+        "temuan": "Diaforesis, sialorea, tampak dehidrasi",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_kaku_kuduk_dan_klonus",
+        "nama": "Kaku kuduk dan klonus",
+        "temuan": "Tidak ada kaku kuduk, tidak ada klonus (menyingkirkan serotonin/meningitis)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_analisis_gas_darah",
+        "nama": "Analisis gas darah",
+        "temuan": "Asidosis metabolik",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_ureum_dan_kreatinin",
+        "nama": "Ureum dan kreatinin",
+        "temuan": "Gagal ginjal akut",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_urinalisis",
+        "nama": "Urinalisis",
+        "temuan": "Mioglobinuria",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Sindrom Neuroleptik Maligna",
+    "differensialBenar": [
+      "Sindrom serotonin",
+      "Hipertermia maligna",
+      "Katatonia maligna",
+      "Heat stroke",
+      "Sepsis/meningitis",
+      "Distonia akut"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ NaCl 0,9% infus fl No. IV, S gtt cepat sesuai defisit cairan",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Bromokriptin tab 2,5 mg No. XXI\nS 3.d.d tab I via NGT",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Dantrolen inj 20 mg vial\nS 1–2,5 mg/kgBB IV [verifikasi, rujuk]",
+      "benar": true
+    },
+    {
+      "opsi": "Kompres/ cooling blanket aktif",
+      "benar": true
+    },
+    {
+      "opsi": "Benzodiazepin untuk rigiditas dan agitasi",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Kondisi mengancam jiwa; harus dirawat di RS",
+      "benar": true
+    },
+    {
+      "opsi": "Keluarga: kenali tanda awal (demam, kaku, keringat) dan segera ke IGD",
+      "benar": true
+    },
+    {
+      "opsi": "Jangan menaikkan dosis/ mengganti obat sendiri",
+      "benar": true
+    },
+    {
+      "opsi": "Pastikan hidrasi cukup selama pengobatan",
+      "benar": true
+    }
+  ]
+}

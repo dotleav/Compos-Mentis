@@ -1,0 +1,145 @@
+{
+  "id": "psi_17_gangguan_anxietas_menyel",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "nama": "Kasus 17",
+  "judulKasus": "Gangguan Anxietas Menyeluruh / GAD — F41.1",
+  "identitas": "Tn. Bayu, 38 tahun, laki-laki, manajer",
+  "skenarioAwal": "Seorang laki-laki 38 tahun datang ke poli dengan keluhan sulit tidur dan badan tegang.",
+  "keluhanUtama": "Cemas terus, tegang, susah tidur",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        ">6 bulan khawatir berlebihan akan pekerjaan, keuangan, kesehatan anak",
+        "Otot tegang, sakit kepala tegang, mudah lelah, sulit konsentrasi, mudah marah, sulit tidur",
+        "Sulit mengendalikan rasa khawatir, mengganggu pekerjaan",
+        "Tidak ada serangan panik; tidak ada konsumsi alkohol berlebihan"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU baik, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 130/85, N 90x/mnt, RR 20x/mnt, T 36,8°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_penampilan_umum_dan_tremor",
+        "nama": "Penampilan umum dan tremor",
+        "temuan": "Tampak tegang, keringat telapak tangan, tremor halus",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tiroid",
+        "nama": "Tiroid",
+        "temuan": "Tidak membesar",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_jantung_dan_paru",
+        "nama": "Jantung dan paru",
+        "temuan": "Dbn",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Cemas mengambang, afek cemas, tilikan baik; HARS 22 (sedang)",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_hars",
+        "nama": "HARS",
+        "temuan": "Skor 22 (sedang)",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_tsh",
+        "nama": "TSH",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_darah_perifer_lengkap",
+        "nama": "Darah perifer lengkap",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Anxietas Menyeluruh / GAD",
+    "differensialBenar": [
+      "Hipertiroid",
+      "Gangguan panik",
+      "Fobia sosial",
+      "OCD",
+      "Campuran anxietas-depresif",
+      "Efek kafein/obat",
+      "Gangguan penyesuaian"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Sertralin tab 50 mg No. XXX\nS 1.d.d tab I pagi",
+      "benar": true
+    },
+    {
+      "opsi": "R/ Diazepam tab 2 mg No. XX\nS 2.d.d tab I (maks 10 hari)\n[verifikasi: alternatif escitalopram 10 mg, buspiron]",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Cemas berlebihan bisa diobati dan tidak berbahaya bagi jantung",
+      "benar": true
+    },
+    {
+      "opsi": "Latihan relaksasi dan napas dalam harian",
+      "benar": true
+    },
+    {
+      "opsi": "Kurangi kafein, alkohol, rokok; olahraga teratur",
+      "benar": true
+    },
+    {
+      "opsi": "Tidur teratur, batasi waktu khawatir (jadwalkan “waktu cemas” 15 menit)",
+      "benar": true
+    },
+    {
+      "opsi": "Benzodiazepin hanya jangka pendek karena risiko ketergantungan",
+      "benar": true
+    }
+  ]
+}

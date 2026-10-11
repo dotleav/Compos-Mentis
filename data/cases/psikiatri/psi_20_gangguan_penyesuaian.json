@@ -1,0 +1,99 @@
+{
+  "id": "psi_20_gangguan_penyesuaian",
+  "kategori": "psikiatri",
+  "level": "4",
+  "nama": "Kasus 20",
+  "judulKasus": "Gangguan Penyesuaian — F43.2",
+  "identitas": "Tn. Rangga, 28 tahun, laki-laki, karyawan pabrik",
+  "skenarioAwal": "Seorang laki-laki 28 tahun datang ke poli dengan keluhan sulit tidur dan tidak enak badan.",
+  "keluhanUtama": "Sedih, cemas, sulit tidur sejak di-PHK",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "3 minggu lalu di-PHK; 2 minggu terakhir murung, cemas tentang uang, sulit tidur, sulit konsentrasi, menarik diri dari teman",
+        "Fungsi sosial terganggu ringan, masih bisa mengurus keluarga",
+        "Tidak ada waham/halusinasi atau ide bunuh diri"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU baik, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 120/80, N 82x/mnt, RR 18x/mnt, T 36,7°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_pemeriksaan_fisik_umum",
+        "nama": "Pemeriksaan fisik umum",
+        "temuan": "Pemeriksaan fisik dbn",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Afek campuran cemas-sedih, tidak psikotik, tilikan baik; gejala belum memenuhi kriteria depresi/GAD",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Penyesuaian",
+    "differensialBenar": [
+      "Reaksi stres akut",
+      "Depresi ringan–sedang",
+      "GAD",
+      "PTSD",
+      "Duka cita normal"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Diazepam tab 2 mg No. V\nS.p.r.n. 1.d.d tab I malam (maks 5 hari)",
+      "benar": true
+    },
+    {
+      "opsi": "Obat tidak wajib; prioritas non-farmakologis",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Reaksi wajar terhadap tekanan hidup dan umumnya membaik dalam beberapa bulan",
+      "benar": true
+    },
+    {
+      "opsi": "Susun rencana (mencari kerja, dukungan keuangan, program pelatihan)",
+      "benar": true
+    },
+    {
+      "opsi": "Pertahankan rutinitas tidur, makan, dan olahraga",
+      "benar": true
+    },
+    {
+      "opsi": "Bicara dengan keluarga/teman, hindari alkohol",
+      "benar": true
+    },
+    {
+      "opsi": "Datang kembali bila gejala >6 bulan atau memberat",
+      "benar": true
+    }
+  ]
+}

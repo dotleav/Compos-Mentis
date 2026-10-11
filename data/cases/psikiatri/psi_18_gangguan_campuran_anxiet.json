@@ -1,0 +1,143 @@
+{
+  "id": "psi_18_gangguan_campuran_anxiet",
+  "kategori": "psikiatri",
+  "level": "3A",
+  "nama": "Kasus 18",
+  "judulKasus": "Gangguan Campuran Anxietas dan Depresif — F41.2",
+  "identitas": "Ny. Lia, 42 tahun, perempuan, pegawai bank",
+  "skenarioAwal": "Seorang perempuan 42 tahun datang ke poli dengan keluhan badan terasa tidak enak.",
+  "keluhanUtama": "Cemas dan sedih bersamaan, badan terasa tidak enak",
+  "groundTruth": {
+    "riwayat": {
+      "rps": [
+        "1 bulan: gelisah, khawatir, jantung berdebar, sulit tidur",
+        "Bersamaan sedih, mudah lelah, kurang minat, konsentrasi turun",
+        "Gejala keduanya ringan–sedang; tidak ada yang memenuhi kriteria penuh gangguan cemas atau depresi",
+        "Pencetus: beban kerja, kondisi ekonomi"
+      ],
+      "rpd": "-",
+      "rpk": "-",
+      "lifestyle": []
+    },
+    "pemeriksaanFisik": [
+      {
+        "id": "pf_keadaan_umum_dan_kesadaran",
+        "nama": "Keadaan umum dan kesadaran",
+        "temuan": "KU baik, CM",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tanda_vital",
+        "nama": "Tanda vital",
+        "temuan": "TD 120/80, N 86x/mnt, RR 18x/mnt, T 36,7°C",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_tiroid",
+        "nama": "Tiroid",
+        "temuan": "Dbn",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_jantung_dan_paru",
+        "nama": "Jantung dan paru",
+        "temuan": "Dbn",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pf_status_mental",
+        "nama": "Status mental",
+        "temuan": "Afek cemas-depresif, tanpa psikotik, tidak ada ide bunuh diri, tilikan baik; PHQ-9 = 8, HARS = 15",
+        "signifikan": true,
+        "wajibLapor": false
+      }
+    ],
+    "penunjang": [
+      {
+        "id": "pnj_phq_9",
+        "nama": "PHQ-9",
+        "temuan": "Skor 8",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_hars",
+        "nama": "HARS",
+        "temuan": "Skor 15",
+        "signifikan": true,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_tsh",
+        "nama": "TSH",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_darah_perifer_lengkap",
+        "nama": "Darah perifer lengkap",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      },
+      {
+        "id": "pnj_gula_darah_sewaktu",
+        "nama": "Gula darah sewaktu",
+        "temuan": "Dalam batas normal.",
+        "signifikan": false,
+        "wajibLapor": false
+      }
+    ],
+    "defaultNormal": {
+      "pemeriksaanFisik": "Dalam batas normal, tidak ditemukan kelainan bermakna.",
+      "penunjang": "Hasil dalam batas normal, tidak ditemukan kelainan bermakna."
+    }
+  },
+  "dd": {
+    "benar": "Gangguan Campuran Anxietas dan Depresif",
+    "differensialBenar": [
+      "GAD",
+      "Depresi ringan–sedang",
+      "Gangguan penyesuaian",
+      "Hipotiroid/hipertiroid",
+      "Gangguan somatoform"
+    ]
+  },
+  "tatalaksana": [
+    {
+      "opsi": "R/ Sertralin tab 50 mg No. XV\nS 1.d.d tab ½ pagi (naik bertahap sesuai respons)",
+      "benar": true
+    },
+    {
+      "opsi": "Benzodiazepin tidak rutin, hanya p.r.n. singkat bila sangat mengganggu",
+      "benar": true
+    }
+  ],
+  "edukasi": [
+    {
+      "opsi": "Gejala cemas-sedih sering muncul bersama akibat stres",
+      "benar": true
+    },
+    {
+      "opsi": "Atur jadwal kerja-istirahat, kurangi stresor",
+      "benar": true
+    },
+    {
+      "opsi": "Olahraga ringan, tidur teratur, dukungan sosial",
+      "benar": true
+    },
+    {
+      "opsi": "Latihan relaksasi harian",
+      "benar": true
+    },
+    {
+      "opsi": "Kembali bila gejala memberat atau muncul ide bunuh diri",
+      "benar": true
+    }
+  ]
+}
